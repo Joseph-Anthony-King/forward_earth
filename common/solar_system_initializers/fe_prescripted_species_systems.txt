@@ -1,0 +1,3484 @@
+@distance = 50
+@base_moon_distance = 10
+
+### Sol System
+eta_cassiopeiae_with_sol_system_initializer = {
+	name = "NAME_Sol"
+	
+	class = "sc_g"
+	asteroids_distance = 145
+	flags = { empire_home_system sol_system sol }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Sol"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Mercury"
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		entity = "barren_planet_mercury_entity"
+	}
+	
+	planet = {
+		name = "NAME_Venus"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { realsol_venus }
+	}
+	
+	planet = {
+		name = "NAME_Earth"
+		class = "pc_continental"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		entity = "continental_planet_earth_entity"
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_earth }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				limit = { NOT = { any_country = { has_country_flag = human_1 } } }
+				random_list = {
+					# Space Age
+					80 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = "NAME_United_Nations_of_Earth"
+							name_list = "HUM3"
+		
+							room = "personality_federation_builders_room"
+							
+							authority = "auth_democratic"
+							civics = {
+								civic = civic_beacon_of_liberty
+								civic = civic_idealistic_foundation
+							}
+							government = gov_representative_democracy
+							
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+
+							flags = { human_1 }
+							
+							weapon = "tech_missiles_1"
+							ftl = warp
+							
+							city_graphical_culture = "mammalian_01"
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "dark_blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = default
+						}
+						last_created_country = {
+							set_graphical_culture = mammalian_01
+							set_country_flag = human_1
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}				
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_engineering_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_society_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_physics_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_energy_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_farmland_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_mineral_deposit			
+						}
+										
+						create_army = {
+							name = "1st Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "3rd Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "4th Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "5th Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						#science
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = science
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+
+								owner = {
+									create_leader = {
+										type = scientist
+										sub_type = survey
+										name = random
+										species = owner_main_species
+									}
+								}
+								set_leader = last_created_leader
+							}
+						}
+
+						#constructor
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = constructor
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+							}
+						}
+
+						#military
+						create_fleet = {
+							set_take_point = yes
+							effect = {
+								set_owner = last_created_country
+
+								while = {
+									count = 3
+									create_ship = {
+										name = random
+										random_existing_design = corvette
+									}
+								}
+
+								set_location = PREV
+							}
+						}
+                        create_spaceport = {
+                            owner = last_created_country
+                            initial_module = "missile_weapon"
+                        }
+                        spaceport = {
+                            set_spaceport_level = 1
+                        }
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+							set_building = "building_capital_1"
+							set_deposit = d_energy_deposit				
+							random_neighboring_tile = {					
+							}		
+						}
+
+						random_tile = {
+                            limit = { has_blocker = no has_building = no }
+                            set_building = "building_hydroponics_farm_1"
+                            set_deposit = d_rich_farmland_deposit
+                        }
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_hydroponics_farm_1"
+							set_deposit = d_rich_farmland_deposit						
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit					
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit					
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+						}	
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+						}
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_basic_science_lab_1"
+							random_list = {
+								33 = { 
+									set_deposit = d_engineering_deposit										
+								}
+								33 = { 
+									set_deposit = d_society_deposit											
+								}
+								33 = { 
+									set_deposit = d_physics_deposit											
+								}					
+							}					
+						}
+						while = {
+							count = 8
+							random_tile = {
+								limit = {
+									has_building = yes
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Early Space Age
+					10 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "dark_blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = early_space_age
+							set_country_flag = humans_early_space_age
+							set_country_flag = human_1
+							set_primitive_age = early_space_age
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}
+						while = {
+							count = 3			
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_decrepit_dwellings
+							}
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_failing_infrastructure		
+							}				
+						}					
+						create_army = {
+							name = "US Armed Forces West"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "US Armed Forces East"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Chinese PLA"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Russian Armed Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "EU Combined Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_fleet = {
+							name = "NAME_ISS_II" 
+							effect = {
+								set_owner = last_created_country
+								create_ship = {
+									name = "NAME_ISS_II"
+									design = "NAME_Space_Station"
+								}
+								set_location = PREV
+							}
+						}
+						while = {
+							count = 7
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_factory"
+								set_deposit = d_mineral_deposit
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_farm"
+								set_deposit = d_farmland_deposit
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Earth no civilization
+					10 = {
+					}
+				}
+			}
+		}
+		
+		moon = {
+			name = "NAME_Luna"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Mars"
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_new_mars_entity"
+		anomaly = "terraforming_candidate_category"
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_1_Ceres"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_2_Pallas"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_3_Juno"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_4_Vesta"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Jupiter"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			name = "NAME_Io"
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+			entity = "moon_jup_io_entity"
+		}
+		moon = {
+			name = "NAME_Europa"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+			entity = "moon_jup_europa_entity"
+		}
+		moon = {
+			name = "NAME_Ganymede"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+			entity = "moon_jup_ganymede_entity"
+		}
+		moon = {
+			name = "NAME_Callisto"
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+			entity = "moon_jup_callisto_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Saturn"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_saturn_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "NAME_Titan"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+			entity = "moon_sat_titan_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Uranus"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_uranus_entity"
+	}
+	
+	planet = {
+		name = "NAME_Neptune"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_neptune_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "NAME_Triton"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+}
+
+### Sol System
+space_age_sol_system_initializer = {
+	name = "NAME_Sol"
+	
+	class = "sc_g"
+	asteroids_distance = 145
+	flags = { empire_home_system sol_system sol }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Sol"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Mercury"
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		entity = "barren_planet_mercury_entity"
+	}
+	
+	planet = {
+		name = "NAME_Venus"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { realsol_venus }
+	}
+	
+	planet = {
+		name = "NAME_Earth"
+		class = "pc_continental"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		entity = "continental_planet_earth_entity"
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_earth }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				limit = { NOT = { any_country = { has_country_flag = human_1 } } }
+				random_list = {
+					# Space Age
+					80 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = "NAME_United_Nations_of_Earth"
+							name_list = "HUM3"
+		
+							room = "personality_federation_builders_room"
+							
+							authority = "auth_democratic"
+							civics = {
+								civic = civic_beacon_of_liberty
+								civic = civic_idealistic_foundation
+							}
+							government = gov_representative_democracy
+							
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+
+							flags = { human_1 }
+							
+							weapon = "tech_missiles_1"
+							ftl = warp
+							
+							city_graphical_culture = "mammalian_01"
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "dark_blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = default
+						}
+						last_created_country = {
+							set_graphical_culture = mammalian_01
+							set_country_flag = human_1
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}				
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_engineering_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_society_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_failing_infrastructure"
+							set_deposit = d_physics_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_energy_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_farmland_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_decrepit_dwellings"
+							set_deposit = d_rich_mineral_deposit			
+						}
+										
+						create_army = {
+							name = "1st Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "3rd Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "4th Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "5th Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						#science
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = science
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+
+								owner = {
+									create_leader = {
+										type = scientist
+										sub_type = survey
+										name = random
+										species = owner_main_species
+									}
+								}
+								set_leader = last_created_leader
+							}
+						}
+
+						#constructor
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = constructor
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+							}
+						}
+
+						#military
+						create_fleet = {
+							set_take_point = yes
+							effect = {
+								set_owner = last_created_country
+
+								while = {
+									count = 3
+									create_ship = {
+										name = random
+										random_existing_design = corvette
+									}
+								}
+
+								set_location = PREV
+							}
+						}
+                        create_spaceport = {
+                            owner = last_created_country
+                            initial_module = "missile_weapon"
+                        }
+                        spaceport = {
+                            set_spaceport_level = 1
+                        }
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+							set_building = "building_capital_1"
+							set_deposit = d_energy_deposit				
+							random_neighboring_tile = {					
+							}		
+						}
+
+						random_tile = {
+                            limit = { has_blocker = no has_building = no }
+                            set_building = "building_hydroponics_farm_1"
+                            set_deposit = d_rich_farmland_deposit
+                        }
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_hydroponics_farm_1"
+							set_deposit = d_rich_farmland_deposit						
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit					
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit					
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+						}	
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+						}
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_basic_science_lab_1"
+							random_list = {
+								33 = { 
+									set_deposit = d_engineering_deposit										
+								}
+								33 = { 
+									set_deposit = d_society_deposit											
+								}
+								33 = { 
+									set_deposit = d_physics_deposit											
+								}					
+							}					
+						}
+						while = {
+							count = 8
+							random_tile = {
+								limit = {
+									has_building = yes
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Early Space Age
+					10 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "dark_blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = early_space_age
+							set_country_flag = humans_early_space_age
+							set_country_flag = human_1
+							set_primitive_age = early_space_age
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}
+						while = {
+							count = 3			
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_decrepit_dwellings
+							}
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_failing_infrastructure		
+							}				
+						}					
+						create_army = {
+							name = "US Armed Forces West"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "US Armed Forces East"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Chinese PLA"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Russian Armed Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "EU Combined Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_fleet = {
+							name = "NAME_ISS_II" 
+							effect = {
+								set_owner = last_created_country
+								create_ship = {
+									name = "NAME_ISS_II"
+									design = "NAME_Space_Station"
+								}
+								set_location = PREV
+							}
+						}
+						while = {
+							count = 7
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_factory"
+								set_deposit = d_mineral_deposit
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_farm"
+								set_deposit = d_farmland_deposit
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Earth no civilization
+					10 = {
+					}
+				}
+			}
+		}
+		
+		moon = {
+			name = "NAME_Luna"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Mars"
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_new_mars_entity"
+		anomaly = "terraforming_candidate_category"
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_1_Ceres"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_2_Pallas"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_3_Juno"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_4_Vesta"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Jupiter"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			name = "NAME_Io"
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+			entity = "moon_jup_io_entity"
+		}
+		moon = {
+			name = "NAME_Europa"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+			entity = "moon_jup_europa_entity"
+		}
+		moon = {
+			name = "NAME_Ganymede"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+			entity = "moon_jup_ganymede_entity"
+		}
+		moon = {
+			name = "NAME_Callisto"
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+			entity = "moon_jup_callisto_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Saturn"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_saturn_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "NAME_Titan"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+			entity = "moon_sat_titan_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Uranus"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_uranus_entity"
+	}
+	
+	planet = {
+		name = "NAME_Neptune"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_neptune_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "NAME_Triton"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }	
+		initializer = "sol_with_deneb_system_initializer"
+	}
+}
+
+### Sol System
+primitive_sol_system_initializer = {
+	name = "NAME_Sol"
+	
+	class = "sc_g"
+	asteroids_distance = 145
+	flags = { sol_system sol }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Sol"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		entity = "barren_planet_mercury_entity"
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { realsol_venus }
+	}
+	
+	planet = {
+		class = "pc_continental"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		entity = "continental_planet_earth_entity"
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_earth }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				limit = { NOT = { any_country = { has_country_flag = human_1 } } }
+				random_list = {
+					# Early Space Age
+					25 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "circle.dds"
+								}
+								colors={
+									"dark_blue"
+									"black"
+									"null"
+									"null"
+								}
+							}
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = early_space_age
+							set_country_flag = humans_early_space_age
+							set_primitive_age = early_space_age
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}
+						while = {
+							count = 3			
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_decrepit_dwellings
+							}
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_failing_infrastructure		
+							}				
+						}					
+						create_army = {
+							name = "US Armed Forces West"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "US Armed Forces East"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Chinese PLA"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Russian Armed Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "EU Combined Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_fleet = {
+							name = "NAME_ISS_II" 
+							effect = {
+								set_owner = last_created_country
+								create_ship = {
+									name = "NAME_ISS_II"
+									design = "NAME_Space_Station"
+								}
+								set_location = PREV
+							}
+						}
+						while = {
+							count = 7
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_factory"
+								set_deposit = d_mineral_deposit
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_farm"
+								set_deposit = d_farmland_deposit
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Machine Age
+					25 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+							homeworld = this
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_materialist"
+								ethic = "ethic_fanatic_militarist"
+							}
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_7.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "circle.dds"
+								}
+								colors={
+									"dark_blue"
+									"red"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = machine_age
+							set_country_flag = humans_machine_age
+							set_primitive_age = machine_age
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = { 
+								ethic = "ethic_materialist"
+								ethic = "ethic_fanatic_militarist"
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						while = {
+							count = 3			
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_decrepit_dwellings
+							}
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_building = no
+									has_grown_pop = no
+								}
+								set_blocker = tb_failing_infrastructure		
+							}				
+						}					
+						create_army = {
+							name = "NAME_German_Wehrmacht"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_Soviet_Red_Army"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_US_Armed_Forces"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_British_Armed_Forces"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_Imperial_Japanese_Forces"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						while = {
+							count = 6
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}				
+						while = {
+							count = 3
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_factory"
+								set_deposit = d_mineral_deposit
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_farm"
+								set_deposit = d_farmland_deposit						
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Medieval
+					25 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_landed_nobility
+								civic = civic_flat_world_theory
+							}
+							species = last_created
+							ethos = random
+							flag = {
+								icon = {
+									category = "ornate"
+									file = "flag_ornate_11.dds"
+								}
+								background = {
+									category = "backgrounds"
+									file = "00_solid.dds"
+								}
+								colors = {
+									"dark_blue"
+									"dark_blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = late_medieval_age
+							set_country_flag = humans_late_medieval_age
+							set_primitive_age = late_medieval_age
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+						}
+						while = {
+							count = 3
+							create_army = {
+								name = "NAME_Feudal_Levies"
+								owner = last_created
+								species = last_created
+								type = "primitive_army"
+							}
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}					
+						while = {
+							count = 3
+							random_tile = {
+								limit = {
+									has_blocker = no
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = last_created
+								}
+							}
+						}
+						while = {
+							count = 4
+							random_tile = {
+								limit = { 
+									has_blocker = no 
+									has_building = no 
+									has_grown_pop = yes
+								}
+								set_building = "building_primitive_farm"
+								set_deposit = d_farmland_deposit
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+				}
+			}
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_new_mars_entity"
+		anomaly = "terraforming_candidate_category"
+		flags = { planet_mars }
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+			entity = "moon_jup_io_entity"
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+			entity = "moon_jup_europa_entity"
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+			entity = "moon_jup_ganymede_entity"
+		}
+		moon = {
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+			entity = "moon_jup_callisto_entity"
+		}
+	}
+
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_saturn_entity"
+		change_orbit = 7
+		
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+			entity = "moon_sat_titan_entity"
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_uranus_entity"
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_neptune_entity"
+		change_orbit = 4
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		initializer = "uncolonized_deneb_system_initializer"
+	}
+}
+
+### Sol System
+icarus_sol_system_initializer = {
+	name = "NAME_Sol"
+	
+	class = "sc_g"
+	asteroids_distance = 145
+	flags = { empire_home_system sol_system sol }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Sol"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Mercury"
+		class = "pc_barren"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		entity = "barren_planet_mercury_entity"
+	}
+	
+	planet = {
+		name = "NAME_Venus"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 16
+		has_ring = no
+		entity = "toxic_planet_venus_entity"
+	}
+	
+	planet = {
+		name = "NAME_Earth"
+		class = "pc_continental"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		entity = "continental_planet_earth_entity"
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_earth }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				generate_start_buildings_and_blockers = yes	
+			}
+		}
+		
+		moon = {
+			name = "NAME_Luna"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "cold_barren_planet_luna_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Mars"
+		class = "pc_barren_cold"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 15
+		has_ring = no
+		entity = "barren_planet_new_mars_entity"
+		anomaly = "terraforming_candidate_category"
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "Ceres"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Pallas"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Juno"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Vesta"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Jupiter"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			name = "NAME_Io"
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+			entity = "moon_jup_io_entity"
+		}
+		moon = {
+			name = "NAME_Europa"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+			entity = "moon_jup_europa_entity"
+		}
+		moon = {
+			name = "NAME_Ganymede"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+			entity = "moon_jup_ganymede_entity"
+		}
+		moon = {
+			name = "NAME_Callisto"
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+			entity = "moon_jup_callisto_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Saturn"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_saturn_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "NAME_Titan"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 320
+			has_ring = no
+			entity = "moon_sat_titan_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Uranus"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_uranus_entity"
+	}
+	
+	planet = {
+		name = "NAME_Neptune"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_neptune_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "NAME_Triton"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "sol_with_eta_cassiopeiae_system_initializer"
+	}
+}
+
+### Eta Cassiopeiae System
+eta_cassiopeiae_system_initializer = {
+	name = "NAME_Eta_Cassiopeiae"
+	class = "sc_g"
+	asteroids_distance = 200
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	usage = custom_empire
+	
+	planet = {
+		name = "Eta Cassiopeiae"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Inferno"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+		entity = "molten_planet_06_entity"
+		flags = { planet_inferno }
+	}
+	
+	planet = {
+		name = "NAME_Astraeus"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		flags = { planet_astraeus }
+		
+		moon = {
+			name = "NAME_Notus"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_notus }
+		}
+		moon = {
+			name = "NAME_Eurus"
+			class = pc_toxic
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			flags = { planet_eurus }
+		}		
+	}
+	
+	planet = {
+		name = "NAME_Aurora"
+		class = "pc_continental"
+		orbit_distance = 40
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		entity = "continental_planet_13_entity"
+		flags = { planet_aurora }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_noxious_swamp"
+				set_deposit = d_engineering_deposit			
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_noxious_swamp"
+				set_deposit = d_society_deposit			
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_massive_glacier"
+				set_deposit = d_physics_deposit			
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_massive_glacier"
+				set_deposit = d_rich_energy_deposit				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dangerous_wildlife"
+				set_deposit = d_rich_farmland_deposit				
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_blocker = "tb_dangerous_wildlife"
+				set_deposit = d_rich_mineral_deposit			
+			}
+
+			random_tile = {
+				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+				set_building = "building_capital_1"
+				set_deposit = d_energy_deposit				
+				random_neighboring_tile = {					
+				}
+				create_pop = {
+					species = last_created_country
+					ethos = last_created
+				}
+			}
+
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				set_deposit = d_rich_farmland_deposit
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				set_deposit = d_rich_farmland_deposit						
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
+				set_deposit = d_rich_energy_deposit
+
+				build_pop = {
+					name = buildable_robot_pop_1
+				}						
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
+				set_deposit = d_rich_energy_deposit
+
+				build_pop = {
+					name = buildable_robot_pop_1
+				}					
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				set_deposit = d_rich_mineral_deposit
+				
+				build_pop = {
+					name = buildable_robot_pop_1
+				}		
+			}	
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				set_deposit = d_rich_mineral_deposit
+				
+				build_pop = {
+					name = buildable_robot_pop_1
+				}		
+			}
+
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_basic_science_lab_1"
+				random_list = {
+					33 = { 
+						set_deposit = d_engineering_deposit										
+					}
+					33 = { 
+						set_deposit = d_society_deposit											
+					}
+					33 = { 
+						set_deposit = d_physics_deposit											
+					}					
+				}					
+			}
+			while = {
+				count = 8
+				random_tile = {
+					limit = {
+						has_building = yes
+						has_grown_pop = no
+						has_growing_pop = no
+					}
+					create_pop = {
+						species = owner_main_species
+					}
+				}
+			}
+			last_created_country = {
+				capital_scope = { set_name = "Aurora" }
+			}
+		}
+		
+		moon = {
+			name = "NAME_Tithonus"
+			class = "pc_arid"
+			orbit_distance = 15
+			orbit_angle = 40
+			size = 16
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			flags = { planet_tithonus }
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+	
+	planet = {
+		name = "NAME_Anemoi"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 35
+		has_ring = yes
+		entity = "gas_giant_11_entity"
+		flags = { planet_anemoi }
+		
+		moon = {
+			name = "NAME_Boreas"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 25
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_boreas }
+		}
+		moon = {
+			name = "NAME_Zephyrus"
+			class = pc_frozen
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			flags = { planet_zephyrus }
+		}		
+	}
+	
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Hyperion"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 0
+		size = 25
+		has_ring = yes
+		entity = "gas_giant_07_entity"
+		flags = { planet_hyperion }
+		
+		moon = {
+			name = "NAME_Selene"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 18
+			orbit_angle = 14
+			has_ring = no
+			flags = { planet_selene }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Eta_Cassiopeiae"
+		class = "pc_k_star"
+		orbit_distance = 100
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+		
+		moon = {
+			name = "NAME_Jackson's_Planet"
+			class = "pc_tundra"
+			orbit_distance = 30
+			orbit_angle = 0
+			size = 8
+			has_ring = no
+			flags = { jackson_s_planet }
+		}
+		moon = {
+			name = "NAME_Olympus"
+			class = pc_gas_giant
+			orbit_distance = 30
+			orbit_angle = 180
+			size = 35
+			has_ring = no
+			entity = "gas_giant_09_entity"
+			flags = { olympus_planet }
+		}	
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "eta_cassiopeiae_with_sol_system_initializer"
+	}
+}
+
+### Eta Cassiopeiae System
+sol_with_eta_cassiopeiae_system_initializer = {
+	name = "NAME_Eta_Cassiopeiae"
+	class = "sc_g"
+	asteroids_distance = 200
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	usage = custom_empire
+	
+	planet = {
+		name = "NAME_Eta_Cassiopeiae"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Inferno"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+		entity = "molten_planet_06_entity"
+		flags = { planet_inferno }
+	}
+	
+	planet = {
+		name = "NAME_Astraeus"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		flags = { planet_astraeus }
+		
+		moon = {
+			name = "NAME_Notus"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_notus }
+		}
+		moon = {
+			name = "NAME_Eurus"
+			class = pc_toxic
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			flags = { planet_eurus }
+		}		
+	}
+	
+	planet = {
+		name = "NAME_Aurora"
+		class = "pc_continental"
+		orbit_distance = 40
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		entity = "continental_planet_13_entity"
+		flags = { planet_aurora }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				limit = { NOT = { any_country = { has_country_flag = human_2 } } }
+				random_list = {
+					# Colonized
+					90 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = "NAME_Commonwealth_of_Aurora"
+							name_list = "HUM4"
+		
+							room = "personality_hegemonic_imperialists_room"
+
+							authority = "auth_oligarchic"
+							civics = {
+								civic = civic_meritocracy
+								civic = civic_citizen_service
+							}							
+							government = gov_citizen_stratocracy
+							
+							species = last_created
+							ethos = {
+								ethic = "ethic_militarist"
+								ethic = "ethic_fanatic_materialist"			
+							}
+							
+							weapon = "tech_lasers_1"
+							ftl = wormhole
+							
+							city_graphical_culture = "mammalian_01"
+
+							flag = {
+								icon= {
+									category = "human"
+									file = "flag_human_4.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "stripe.dds"
+								}
+								colors={
+									"red"
+									"black"
+									"null"
+									"null"
+								}
+							}
+							type = default
+						}
+						last_created_country = {
+							set_graphical_culture = mammalian_01
+							set_country_flag = human_2
+						}
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_fanatic_militarist"			
+							}
+						}
+						every_tile = {
+							limit = {
+								has_blocker = yes
+							}
+							remove_blocker = yes
+						}
+						random_tile = {
+							limit = { has_building = "building_colony_shelter" }
+							remove_building = yes
+						}				
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_noxious_swamp"
+							set_deposit = d_engineering_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_noxious_swamp"
+							set_deposit = d_society_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_massive_glacier"
+							set_deposit = d_physics_deposit			
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_massive_glacier"
+							set_deposit = d_rich_energy_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_dangerous_wildlife"
+							set_deposit = d_rich_farmland_deposit				
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_blocker = "tb_dangerous_wildlife"
+							set_deposit = d_rich_mineral_deposit			
+						}
+										
+						create_army = {
+							name = "1st Colonial Garrison"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Colonial Garrison"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "3rd Colonial Garrison"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "4th Colonial Garrison"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "5th Colonial Garrison"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						#science
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = science
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+
+								owner = {
+									create_leader = {
+										type = scientist
+										sub_type = survey
+										name = random
+										species = owner_main_species
+									}
+								}
+								set_leader = last_created_leader
+							}
+						}
+
+						#constructor
+						create_fleet = {
+							effect = {
+								set_owner = last_created_country
+
+								create_ship = {
+									name = random
+									random_existing_design = constructor
+								}
+
+								set_fleet_stance = evasive
+								set_location = PREV
+							}
+						}
+
+						#military
+						create_fleet = {
+							set_take_point = yes
+							effect = {
+								set_owner = last_created_country
+
+								while = {
+									count = 3
+									create_ship = {
+										name = random
+										random_existing_design = corvette
+									}
+								}
+
+								set_location = PREV
+							}
+						}
+						create_spaceport = {
+							owner = last_created_country
+							initial_module = "missile_weapon"
+						}
+						spaceport = {
+							set_spaceport_level = 1
+						}
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+							set_building = "building_capital_1"
+							set_deposit = d_energy_deposit				
+							random_neighboring_tile = {					
+							}
+							create_pop = {
+								species = last_created_country
+								ethos = last_created
+							}
+						}
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_hydroponics_farm_1"
+							set_deposit = d_rich_farmland_deposit
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_hydroponics_farm_1"
+							set_deposit = d_rich_farmland_deposit						
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit
+
+							build_pop = {
+								name = buildable_robot_pop_1
+							}						
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_power_plant_1"
+							set_deposit = d_rich_energy_deposit
+
+							build_pop = {
+								name = buildable_robot_pop_1
+							}					
+						}
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+							
+							build_pop = {
+								name = buildable_robot_pop_1
+							}		
+						}	
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_mining_network_1"
+							set_deposit = d_rich_mineral_deposit
+							
+							build_pop = {
+								name = buildable_robot_pop_1
+							}		
+						}
+
+						random_tile = {
+							limit = { has_blocker = no has_building = no }
+							set_building = "building_basic_science_lab_1"
+							random_list = {
+								33 = { 
+									set_deposit = d_engineering_deposit										
+								}
+								33 = { 
+									set_deposit = d_society_deposit											
+								}
+								33 = { 
+									set_deposit = d_physics_deposit											
+								}					
+							}					
+						}
+						while = {
+							count = 8
+							random_tile = {
+								limit = {
+									has_building = yes
+									has_grown_pop = no
+									has_growing_pop = no
+								}
+								create_pop = {
+									species = owner_main_species
+								}
+							}
+						}
+						last_created_country = {
+							capital_scope = { set_name = "Aurora" }
+						}
+					}
+					# Uncolonized
+					10 = {
+					}
+				}
+			}
+		}
+		
+		moon = {
+			name = "NAME_Tithonus"
+			class = "pc_arid"
+			orbit_distance = 15
+			orbit_angle = 40
+			size = 16
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			flags = { planet_tithonus }
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+	
+	planet = {
+		name = "NAME_Anemoi"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 35
+		has_ring = yes
+		entity = "gas_giant_11_entity"
+		flags = { planet_anemoi }
+		
+		moon = {
+			name = "NAME_Boreas"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 25
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_boreas }
+		}
+		moon = {
+			name = "NAME_Zephyrus"
+			class = pc_frozen
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			flags = { planet_zephyrus }
+		}		
+	}
+	
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Hyperion"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 0
+		size = 25
+		has_ring = yes
+		entity = "gas_giant_07_entity"
+		flags = { planet_hyperion }
+		
+		moon = {
+			name = "NAME_Selene"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 18
+			orbit_angle = 14
+			has_ring = no
+			flags = { planet_selene }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Eta_Cassiopeiae"
+		class = "pc_k_star"
+		orbit_distance = 100
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+		
+		moon = {
+			name = "NAME_Jackson's_Planet"
+			class = "pc_tundra"
+			orbit_distance = 30
+			orbit_angle = 0
+			size = 8
+			has_ring = no
+			flags = { planet_jackson_s_planet }
+		}
+		moon = {
+			name = "NAME_Olympus"
+			class = pc_gas_giant
+			orbit_distance = 30
+			orbit_angle = 180
+			size = 35
+			has_ring = no
+			entity = "gas_giant_09_entity"
+			flags = { planet_olympus }
+		}	
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Eta Cassiopeiae System
+uncolonized_eta_cassiopeiae_system_initializer = {
+	name = "Eta Cassiopeiae"
+	class = "sc_g"
+	asteroids_distance = 200
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	usage = custom_empire
+	
+	planet = {
+		name = "Eta Cassiopeiae"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+		entity = "molten_planet_06_entity"
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = pc_toxic
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+		}		
+	}
+	
+	planet = {
+		class = "pc_continental"
+		orbit_distance = 40
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		entity = "continental_planet_13_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			class = "pc_arid"
+			orbit_distance = 15
+			orbit_angle = 40
+			size = 16
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 35
+		has_ring = yes
+		entity = "gas_giant_11_entity"
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 25
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = pc_frozen
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 12
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+		}		
+	}
+	
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 0
+		size = 25
+		has_ring = yes
+		entity = "gas_giant_07_entity"
+		
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 18
+			orbit_angle = 14
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Eta Cassiopeiae"
+		class = "pc_k_star"
+		orbit_distance = 100
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_tundra"
+			orbit_distance = 30
+			orbit_angle = 0
+			size = 8
+			has_ring = no
+		}
+		moon = {
+			class = pc_gas_giant
+			orbit_distance = 30
+			orbit_angle = 180
+			size = 35
+			has_ring = no
+			entity = "gas_giant_09_entity"
+		}	
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1_first_colony"
+	}
+}

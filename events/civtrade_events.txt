@@ -1,0 +1,597 @@
+############################
+#
+# Civilian Trade Events
+#
+# Written by Kyoj1n
+#
+############################
+
+namespace = civtrade
+
+planet_event = {
+	id = civtrade.1
+	hide_window = yes
+	location = ROOT
+	
+	trigger = {
+		owner = {is_country_type = default
+		}
+		has_planet_flag = trade_planet	
+		not = { has_planet_flag = trader_out }
+		owner = {
+			check_variable = {
+				which = num_traders
+				value < 20
+			}
+		}
+		any_system = {
+			any_planet = { is_same_value = root }
+			any_ship_in_system = {
+				this.owner = {
+					not = {
+						is_hostile = root.owner
+					}				
+				}
+
+			}		
+		}
+
+		# any_pop = {
+			# member_of_faction = yes
+			# pop_faction = {
+				# is_pop_faction_type = prosperity
+			# }
+			# or = {
+				# has_living_standard = {
+					# type = living_standard_utopian
+				# }
+				# has_living_standard = {
+					# type = living_standard_good
+				# }
+				# has_living_standard = {
+					# type = living_standard_normal
+				# }	
+				# has_living_standard = {
+					# type = living_standard_normal
+				# }				
+			# }
+			# or = {
+			# has_citizenship_type = { type = citizenship_full }
+			# has_citizenship_type = { type = citizenship_limited }
+			# has_citizenship_type = { type = citizenship_caste_system }
+			# }
+			# has_migration_control = no
+		# }
+	}
+	is_triggered_only = yes
+	immediate = {
+		root.owner = {
+			save_event_target_as = home_country
+		}
+		root = {
+			set_timed_planet_flag = { flag = trader_out days = 30 }		
+		}
+		if = {
+			limit = {
+				count_pops = {
+					count > 5
+				}
+			}
+			set_variable = { 
+				which = population_size
+				value = 1
+			}
+		}
+
+		create_fleet = { name = "Civilian Trade Fleet" }
+			
+			last_created_fleet = {
+				set_owner = root.owner
+				set_fleet_stance = passive
+				save_event_target_as = trade_fleet
+				set_fleet_flag = civilian_trade_fleet
+				set_timed_fleet_flag = { flag = times_up days = 30 } 
+				if = {
+					random_list = { 
+						50 = { create_ship_design = {
+							design = "T1" 
+						   ftl = root.owner
+							}
+						}
+						50 = { create_ship_design = {
+							design = "T2" 
+						   ftl = root.owner
+							}
+						}
+					}
+				}			
+
+				if = {
+					limit = {
+						root = {
+							has_planet_flag = small_population
+						}	
+					}
+					set_variable = { 
+						which = number_of_stops
+						value = 1
+					}
+				}
+				if = {
+					limit = {
+						root = {
+							has_planet_flag = medium_population
+						}
+					}
+					set_variable = { 
+						which = number_of_stops
+						value = 2
+					}				
+				}			
+				if = {
+					limit = {
+						root = {
+							has_planet_flag = large_population
+						}
+					}
+					set_variable = { 
+						which = number_of_stops
+						value = 3
+					}
+				}	
+				create_ship = {
+					name = random
+					design = last_created_design
+					graphical_culture = "pirate_01"
+				}				
+				set_location = ROOT
+					queue_actions = {	
+						repeat = {
+							while = {
+								id = "civtrade.1.trigger.1"
+								check_variable = {
+									which = number_of_stops
+									value > 0
+								}
+							}
+							find_random_system = {
+								trigger = {
+									id = "civtrade.1.trigger.2"
+									# any_ship_in_system = {
+										# this.owner = {
+											# not = {
+												# is_hostile = root.owner
+											# }				
+										# }
+									# }
+									any_planet = {
+										is_colony = yes
+										exists = controller
+										controller = { is_same_value = event_target:home_country }						
+								    }		
+									distance = {
+										source = PREV
+										max_distance = 80
+										min_distance = 0
+									}
+								}	
+								found_system = {
+									move_to = THIS
+								}
+							}	
+								find_random_planet = {
+									trigger = {
+										id = "civtrade.1.trigger.3"
+										is_colony = yes							
+									}																	
+									found_planet = {
+										orbit_planet = THIS 
+										wait = {
+											duration = 10
+										}
+											
+										effect = {
+											id = civtrade.1.effect.1
+											this = { 
+												if = {
+													limit = {
+														has_edict = capacity_overload
+													}
+													owner = { country_event = { id = civtradebonus.6 } }
+												}
+												if = {
+													limit = {
+														has_edict = production_targets
+													}
+													owner = { country_event = { id = civtradebonus.5 } }
+												}
+												if = {
+													limit = {
+														not = { has_modifier = "trade_ship_arrived" }
+													}
+													add_modifier = {
+														modifier = "trade_ship_arrived"
+														days = 15
+													}													
+												}
+											}
+											event_target:trade_fleet = { fleet_event = { id = civtrade.2 } }
+										}
+									}												
+								}
+						}
+					}
+
+
+			}					
+			
+				
+	}
+			
+}
+
+fleet_event = {
+	id = civtrade.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_of_stops"
+						value = 3
+					}
+				}
+				set_variable = {
+					which = "number_of_stops"
+					value = 2
+				}
+				else = {
+					if = {
+						limit = {
+							check_variable = {
+								which = "number_of_stops"
+								value = 2											
+							}
+						}
+						set_variable = {
+							which = "number_of_stops"
+							value = 1
+						}
+						else = {
+							set_variable = {
+								which = "number_of_stops"
+								value = 0															
+							}
+							delete_fleet = this
+						}
+						
+					}
+						
+				}
+			}	
+		}
+	}
+}
+
+
+
+
+planet_event = {
+	id = civtrade.3
+	hide_window = yes
+	location = ROOT
+	trigger = {
+		has_owner = yes
+		owner = {
+			is_country_type = default
+			any_owned_planet = {
+				is_capital = no
+				is_colony = yes
+			}
+		
+		}
+
+	}
+	
+	immediate = {
+		root = {
+			set_planet_flag = trade_planet
+		}
+	}
+}
+
+
+# need to change these to look for trader factions and base the flags off of number of trader pops (?)
+planet_event = {
+	id = civtrade.4
+	hide_window = yes
+	location = ROOT
+	
+	trigger = {
+		# any_pop = {
+			# member_of_faction = yes
+			# pop_faction = {
+				# is_pop_faction_type = prosperity
+			# }
+			# or = {
+				# has_living_standard = {
+					# type = living_standard_utopian
+				# }
+				# has_living_standard = {
+					# type = living_standard_good
+				# }
+				# has_living_standard = {
+					# type = living_standard_normal
+				# }	
+				# has_living_standard = {
+					# type = living_standard_normal
+				# }				
+			# }
+			# or = {
+			# has_citizenship_type = { type = citizenship_full }
+			# has_citizenship_type = { type = citizenship_limited }
+			# has_citizenship_type = { type = citizenship_caste_system }
+			# }
+			# has_migration_control = no
+		# }
+		count_pops = {
+			count > 5
+		}
+		has_planet_flag = trade_planet
+	}
+	
+	immediate = {
+		root = {
+			if = {
+				limit = {
+					count_pops = {
+						count > 5
+					}
+				}
+				set_planet_flag = small_population		
+			}
+
+			if = {
+				limit = {
+						count_pops = {
+							count > 12
+						}				
+				}
+				remove_planet_flag = small_population
+				set_planet_flag = medium_population
+			}
+			
+			if = {
+				limit = {
+					count_pops = {
+						count > 18
+					}
+				}
+				remove_planet_flag = small_population
+				remove_planet_flag = medium_population
+				set_planet_flag = large_population										
+			}
+		}				
+	}
+}
+
+
+
+country_event = {
+	id = civtrade.5
+	hide_window = yes
+	location = ROOT
+	
+	trigger = {
+	}
+	
+	mean_time_to_happen = {
+		 days = 60
+	}
+	
+	immediate = {
+		every_country = {
+			limit = { 
+				is_country_type = default				
+			}
+			set_variable = {
+				which = num_traders
+				value = 0
+			}
+			save_event_target_as = has_traders
+			every_owned_ship = {
+				limit = {
+					OR = {
+						is_ship_size = civilian_trade_freighter
+						is_ship_size = civilian_trade_tanker
+					}
+				}
+				event_target:has_traders = {
+					change_variable = {
+					   which = num_traders
+					   value = 1
+					}					
+				}
+			}		
+			
+		}
+
+		
+		random_country = {
+			limit = {
+				check_variable = {
+					which = num_traders
+					value < 23
+				}
+			}
+			random_planet = {
+				limit = {
+					has_planet_flag = trade_planet
+					not = {
+						has_planet_flag = trader_out
+					}
+				}
+				random_list = {
+					10 = { }
+					90 = { planet_event = { id = civtrade.1 days = 15 random 5 } }
+				}
+			}
+		}
+	
+	}
+}
+
+
+# planet_event = {
+	# id = civtrade.6
+	# hide_window = yes
+	# location = ROOT
+	
+	# trigger = {
+		# any_pop = {
+			# member_of_faction = yes
+			# pop_faction = {
+				# is_pop_faction_type = prosperity
+			# }
+		# }
+		# count_pops = {
+			# count > 5
+		# }
+		# has_resource = {
+			# type = minerals
+			# amount > 30
+
+		# }
+	# }
+	
+	# immediate = {
+		# root = {
+			# if = {
+				# limit {
+					# has_resource = {
+						# type = minerals
+						# amount > 30
+					
+					# }
+				# }
+				# set_planet_flag = mineral_planet			
+			# }
+
+		# }		
+	# }
+# }
+
+country_event = {
+	id = civtrade.66
+	hide_window = yes
+	
+	trigger = {
+	
+	}
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			every_owned_ship = {
+				limit = {
+					or = {
+						is_ship_size = civilian_trade_freighter				
+						is_ship_size = civilian_trade_tanker	
+					}				
+				}
+										
+				fleet = {
+					delete_fleet = this
+				}
+			
+			}
+		
+		}
+	}
+}
+
+
+# fleet_event = {
+	# id = civtrade.7
+	# hide_window = yes
+	
+	# trigger = {
+
+		# or = {
+			# is_ship_size = civilian_trade_freighter				
+			# is_ship_size = civilian_trade_tanker	
+		# }
+	# }
+	
+	# immediate = {
+		# if = {
+			# limit = {
+				# not = { has_fleet_flag = times_up }	
+			# }
+		# delete_fleet = this				
+		# }
+							
+	# }
+# }	
+
+fleet_event = {
+	id = civtrade.55
+	hide_window = yes
+	
+	trigger = {
+				leader = {
+					leader_class = scientist
+				}
+
+				leader = {
+					leader_class = admiral
+				}					
+			
+
+				leader = {
+					leader_class = general
+				}					
+				exists = leader
+
+
+
+				
+	}
+	is_triggered_only = yes
+	
+	immediate = {						
+		if = {
+			limit = {
+				leader = {
+					leader_class = scientist
+				}					
+			}
+			kill_leader = { type = scientist show_notification = no }				
+		}
+		if = {
+			limit = {
+				leader = {
+					leader_class = admiral
+				}					
+			}
+			kill_leader = { type = admiral show_notification = no }				
+		}
+		if = {
+			limit = {
+				leader = {
+					leader_class = general
+				}					
+			}
+			kill_leader = { type = general show_notification = no }				
+		}
+
+
+			
+			
+	}
+		
+}
+

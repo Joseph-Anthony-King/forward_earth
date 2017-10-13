@@ -1,0 +1,297 @@
+# Tomb Planet 02
+entity = {
+	name = "nuked_planet_02_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_07_nuked_diffuse.dds"
+	texture_normal = "ig_arid_07_normal.dds"
+	texture_specular = "ig_arid_07_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_01_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_01_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_01_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 03
+entity = {
+	name = "nuked_planet_03_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_continental_09_nuked_diffuse.dds"
+	texture_normal = "ig_continental_09_normal.dds"
+	texture_specular = "ig_continental_09_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_02_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_02_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_02_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 04
+entity = {
+	name = "nuked_planet_04_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_desert_08_nuked_diffuse.dds"
+	texture_normal = "ig_desert_08_normal.dds"
+	texture_specular = "ig_desert_08_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_03_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_03_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_03_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 05
+entity = {
+	name = "nuked_planet_05_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_savannah_05_nuked_diffuse.dds"
+	texture_normal = "ig_savannah_05_normal.dds"
+	texture_specular = "ig_savannah_05_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_04_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_04_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_04_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 06
+entity = {
+	name = "nuked_planet_06_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_savannah_10_nuked_diffuse.dds"
+	texture_normal = "ig_savannah_10_normal.dds"
+	texture_specular = "ig_savannah_10_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_05_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_05_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_05_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 07
+entity = {
+	name = "nuked_planet_07_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_tropical_13_nuked_diffuse.dds"
+	texture_normal = "ig_tropical_13_normal.dds"
+	texture_specular = "ig_tropical_13_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_06_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_06_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_06_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 08
+entity = {
+	name = "nuked_planet_08_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_tundra_07_nuked_diffuse.dds"
+	texture_normal = "ig_tundra_07_normal.dds"
+	texture_specular = "ig_tundra_07_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_07_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_07_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_07_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 09
+entity = {
+	name = "nuked_planet_09_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_05_nuked_diffuse.dds"
+	texture_normal = "ig_ocean_05_normal.dds"
+	texture_specular = "ig_ocean_05_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_08_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_08_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_08_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}
+# Tomb Planet 10
+entity = {
+	name = "nuked_planet_10_entity"
+	pdxmesh = "nuked_planet_01_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_continental_11_nuked_diffuse.dds"
+	texture_normal = "ig_continental_11_normal.dds"
+	texture_specular = "ig_continental_11_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_09_diffuse.dds"
+	texture_normal = "ig_clouds_tomb_09_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_tomb_09_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	}
+}

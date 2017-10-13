@@ -1,0 +1,69 @@
+﻿l_russian:
+ 
+ #############################
+ # Civilian Trade Events
+ #############################
+  
+ 
+ #############################
+ # Civilian Trade modifiers
+ #############################
+  
+  
+
+ trade_network:0 "Торговая сеть"
+ trade_network_desc:0 "На ближайщем предприятии создана торговая сеть."
+
+ foreign_trade_network:0 "Чужая Торговая Сеть"
+ foreign_trade_network_desc:0 "Предприятие из соседнего государства создало торговую сеть."
+
+ trade_network_minerals:0 "Ресурсная торговая сеть"
+ trade_network_minerals_desc:0 "Ближайшее предприятие создаёт торговую сеть, ориентированную на экспорт минералов."
+
+ trade_network_energy:0 "Энергетическая торговая сеть"
+ trade_network_energy_desc:0 "Ближайшее предприятие создаёт торговую сеть, ориентированную на экспорт энергетических материалов."  
+
+ trade_network_farming:0 "Продовольственная торговая сеть"
+ trade_network_farming_desc:0 "Ближайшее предприятие создаёт торговую сеть, ориентированную на экспорт продовольствия. Обеспечивая рост численности населения."
+
+ trade_network_reeducation:0 "Становление Торговой Сети"
+ trade_network_reeducation_desc:0 "Мы получаем передачу с близлежащей планеты"  
+
+ trade_network_propaganda:0 "Новости Торговой Сети"
+ trade_network_propaganda_desc:0 "Мы в радиусе получения трансляций с близлежащей планеты, и у нас хорошие новости!"  
+
+ trade_network_infrastructure:0 "Инфраструктурная торговая сеть"
+ trade_network_infrastructure_desc:0 "Ближайшее предприятие создаёт торговую сеть, ориентированную на экспорт строительных материалов."  
+
+ trade_ship_arrived:0 "Торговое судно зашло в док"
+ trade_ship_arrived_desc:0 "Гражданское торговое судно из соседней колонии состыковалось и разгружает запасы ресурсов и потребительских товаров"  
+ 
+ circus_in_town:0 "Цирковой корабль прибыл в систему"
+ circus_in_town_desc: "Скорее сюда, приходите все! Великий цирк Кемплерера прибыл в систему. Приходите и посмотрите, какие волшебные, невероятные, потусторонние, а порой и пугающие существа и бродят по Rosette!"
+ 
+
+
+ ####################################
+ # Hull Sizes
+ ####################################  
+ 
+ civilian_trade_freighter:0 "Civilian Freighter"
+ civilian_trade_freighter_plural:0 "Civilian Freighters"
+ civilian_trade_tanker:0 "Civilian Tanker"
+ civilian_trade_tanker_plural:0 "Civilian Tankers"
+ 
+
+ ####################################
+ # War Demands
+ ####################################  
+  
+  
+ war_demand_trade_sanctions_header:1 "§HTrade Sanctions§!"
+ war_demand_trade_sanctions_subtext:0 "[parameter:country.GetName]"
+ war_demand_trade_sanctions_tooltip_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_content:1 "На [parameter:country.GetName] будут наложены санкции, запрещающие торговлю в течении 10 лет и ограничивающие её эффективность в течении 20 лет."
+ war_demand_trade_sanctions_tooltip_proper_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_proper_content:1 "$war_demand_trade_sanctions_tooltip_content$"
+
+ SMALL_CIVILIAN_FISSION_REACTOR:0 "Civilian Class Fission Reactor"
+ SMALL_CIVILIAN_FISSION_REACTOR_DESC:0 "Этот источник энергии генерирует энергию посредством деления атомного ядра, создавая вредные ядерные отходы. Гражданский проект"

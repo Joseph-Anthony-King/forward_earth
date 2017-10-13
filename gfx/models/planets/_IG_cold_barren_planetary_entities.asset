@@ -1,0 +1,739 @@
+@astroid_scale = 30
+# Cold Barren Planet 05
+entity = {
+	name = "cold_barren_planet_04_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_05_diffuse.dds"
+	texture_normal = "ig_cold_barren_05_normal.dds"
+	texture_specular = "ig_cold_barren_05_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 06
+entity = {
+	name = "cold_barren_planet_05_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_06_diffuse.dds"
+	texture_normal = "ig_cold_barren_06_normal.dds"
+	texture_specular = "ig_cold_barren_06_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 07
+entity = {
+	name = "cold_barren_planet_06_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_07_diffuse.dds"
+	texture_normal = "ig_cold_barren_07_normal.dds"
+	texture_specular = "ig_cold_barren_07_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 08
+entity = {
+	name = "cold_barren_planet_07_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_08_diffuse.dds"
+	texture_normal = "ig_cold_barren_08_normal.dds"
+	texture_specular = "ig_cold_barren_08_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 09
+entity = {
+	name = "cold_barren_planet_08_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_09_diffuse.dds"
+	texture_normal = "ig_cold_barren_09_normal.dds"
+	texture_specular = "ig_cold_barren_09_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 10
+entity = {
+	name = "cold_barren_planet_09_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_10_diffuse.dds"
+	texture_normal = "ig_cold_barren_10_normal.dds"
+	texture_specular = "ig_cold_barren_10_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 11
+entity = {
+	name = "cold_barren_planet_10_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_11_diffuse.dds"
+	texture_normal = "ig_cold_barren_11_normal.dds"
+	texture_specular = "ig_cold_barren_11_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 12
+entity = {
+	name = "cold_barren_planet_11_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_12_diffuse.dds"
+	texture_normal = "ig_cold_barren_12_normal.dds"
+	texture_specular = "ig_cold_barren_12_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 13
+entity = {
+	name = "cold_barren_planet_12_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_13_diffuse.dds"
+	texture_normal = "ig_cold_barren_13_normal.dds"
+	texture_specular = "ig_cold_barren_13_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 14
+entity = {
+	name = "cold_barren_planet_13_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_14_diffuse.dds"
+	texture_normal = "ig_cold_barren_14_normal.dds"
+	texture_specular = "ig_cold_barren_14_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 15
+entity = {
+	name = "cold_barren_planet_14_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_15_diffuse.dds"
+	texture_normal = "ig_cold_barren_15_normal.dds"
+	texture_specular = "ig_cold_barren_15_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 16
+entity = {
+	name = "cold_barren_planet_15_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_16_diffuse.dds"
+	texture_normal = "ig_cold_barren_16_normal.dds"
+	texture_specular = "ig_cold_barren_16_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 17
+entity = {
+	name = "cold_barren_planet_16_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_17_diffuse.dds"
+	texture_normal = "ig_cold_barren_17_normal.dds"
+	texture_specular = "ig_cold_barren_17_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 18
+entity = {
+	name = "cold_barren_planet_17_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_18_diffuse.dds"
+	texture_normal = "ig_cold_barren_18_normal.dds"
+	texture_specular = "ig_cold_barren_18_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 19
+entity = {
+	name = "cold_barren_planet_18_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_19_diffuse.dds"
+	texture_normal = "ig_cold_barren_19_normal.dds"
+	texture_specular = "ig_cold_barren_19_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 20
+entity = {
+	name = "cold_barren_planet_19_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_20_diffuse.dds"
+	texture_normal = "ig_cold_barren_20_normal.dds"
+	texture_specular = "ig_cold_barren_20_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 21
+entity = {
+	name = "cold_barren_planet_20_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_21_diffuse.dds"
+	texture_normal = "ig_cold_barren_21_normal.dds"
+	texture_specular = "ig_cold_barren_21_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 22
+entity = {
+	name = "cold_barren_planet_21_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_22_diffuse.dds"
+	texture_normal = "ig_cold_barren_22_normal.dds"
+	texture_specular = "ig_cold_barren_22_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 23
+entity = {
+	name = "cold_barren_planet_22_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_23_diffuse.dds"
+	texture_normal = "ig_cold_barren_23_normal.dds"
+	texture_specular = "ig_cold_barren_23_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 24
+entity = {
+	name = "cold_barren_planet_23_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_24_diffuse.dds"
+	texture_normal = "ig_cold_barren_24_normal.dds"
+	texture_specular = "ig_cold_barren_24_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 25
+entity = {
+	name = "cold_barren_planet_24_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_25_diffuse.dds"
+	texture_normal = "ig_cold_barren_25_normal.dds"
+	texture_specular = "ig_cold_barren_25_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 26
+entity = {
+	name = "cold_barren_planet_25_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_26_diffuse.dds"
+	texture_normal = "ig_cold_barren_26_normal.dds"
+	texture_specular = "ig_cold_barren_26_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 27
+entity = {
+	name = "cold_barren_planet_26_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_27_diffuse.dds"
+	texture_normal = "ig_cold_barren_27_normal.dds"
+	texture_specular = "ig_cold_barren_27_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 28
+entity = {
+	name = "cold_barren_planet_27_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_28_diffuse.dds"
+	texture_normal = "ig_cold_barren_28_normal.dds"
+	texture_specular = "ig_cold_barren_28_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 29
+entity = {
+	name = "cold_barren_planet_28_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_29_diffuse.dds"
+	texture_normal = "ig_cold_barren_29_normal.dds"
+	texture_specular = "ig_cold_barren_29_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 30
+entity = {
+	name = "cold_barren_planet_29_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_30_diffuse.dds"
+	texture_normal = "ig_cold_barren_30_normal.dds"
+	texture_specular = "ig_cold_barren_30_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 31
+entity = {
+	name = "cold_barren_planet_30_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_31_diffuse.dds"
+	texture_normal = "ig_cold_barren_31_normal.dds"
+	texture_specular = "ig_cold_barren_31_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 32
+entity = {
+	name = "cold_barren_planet_31_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_32_diffuse.dds"
+	texture_normal = "ig_cold_barren_32_normal.dds"
+	texture_specular = "ig_cold_barren_32_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 33
+entity = {
+	name = "cold_barren_planet_32_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_33_diffuse.dds"
+	texture_normal = "ig_cold_barren_33_normal.dds"
+	texture_specular = "ig_cold_barren_33_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 34
+entity = {
+	name = "cold_barren_planet_33_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_34_diffuse.dds"
+	texture_normal = "ig_cold_barren_34_normal.dds"
+	texture_specular = "ig_cold_barren_34_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 35
+entity = {
+	name = "cold_barren_planet_34_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_35_diffuse.dds"
+	texture_normal = "ig_cold_barren_35_normal.dds"
+	texture_specular = "ig_cold_barren_35_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 36
+entity = {
+	name = "cold_barren_planet_35_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_36_diffuse.dds"
+	texture_normal = "ig_cold_barren_36_normal.dds"
+	texture_specular = "ig_cold_barren_36_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 37
+entity = {
+	name = "cold_barren_planet_36_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_37_diffuse.dds"
+	texture_normal = "ig_cold_barren_37_normal.dds"
+	texture_specular = "ig_cold_barren_37_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 38
+entity = {
+	name = "cold_barren_planet_37_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_38_diffuse.dds"
+	texture_normal = "ig_cold_barren_38_normal.dds"
+	texture_specular = "ig_cold_barren_38_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 39
+entity = {
+	name = "cold_barren_planet_38_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_39_diffuse.dds"
+	texture_normal = "ig_cold_barren_39_normal.dds"
+	texture_specular = "ig_cold_barren_39_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 40
+entity = {
+	name = "cold_barren_planet_39_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_40_diffuse.dds"
+	texture_normal = "ig_cold_barren_40_normal.dds"
+	texture_specular = "ig_cold_barren_40_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 41
+entity = {
+	name = "cold_barren_planet_40_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_41_diffuse.dds"
+	texture_normal = "ig_cold_barren_41_normal.dds"
+	texture_specular = "ig_cold_barren_41_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 42
+entity = {
+	name = "cold_barren_planet_41_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_42_diffuse.dds"
+	texture_normal = "ig_cold_barren_42_normal.dds"
+	texture_specular = "ig_cold_barren_42_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 43
+entity = {
+	name = "cold_barren_planet_42_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_43_diffuse.dds"
+	texture_normal = "ig_cold_barren_43_normal.dds"
+	texture_specular = "ig_cold_barren_43_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 44
+entity = {
+	name = "cold_barren_planet_43_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_44_diffuse.dds"
+	texture_normal = "ig_cold_barren_44_normal.dds"
+	texture_specular = "ig_cold_barren_44_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Cold Barren Planet 45
+entity = {
+	name = "cold_barren_planet_44_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_cold_barren_45_diffuse.dds"
+	texture_normal = "ig_cold_barren_45_normal.dds"
+	texture_specular = "ig_cold_barren_45_specular.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

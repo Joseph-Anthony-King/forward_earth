@@ -1,0 +1,233 @@
+namespace = fe
+
+event = {
+	id = fe.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_2 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_1 } } }
+                    has_planet_flag = planet_earth
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+    }
+}
+
+event = {
+    id = fe.3
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = icarus_faction }
+                    has_planet_flag = planet_earth
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+    }
+}
+
+event = {
+	id = fe.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_inferno
+                }                
+            }
+            set_name = "Eta Cassiopeiae A I"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_astraeus
+                }                
+            }
+            set_name = "Eta Cassiopeiae A II"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_notus
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_eurus
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IIb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_aurora
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IIIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_tithonus
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IIIb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_anemoi
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IV"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_boreas
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IVa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_zephyrus
+                }                
+            }
+            set_name = "Eta Cassiopeiae A IVb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_hyperion
+                }                
+            }
+            set_name = "Eta Cassiopeiae A V"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_selene
+                }                
+            }
+            set_name = "Eta Cassiopeiae A Va"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = jackson_s_planet
+                }                
+            }
+            set_name = "Eta Cassiopeiae B I"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = olympus_planet
+                }                
+            }
+            set_name = "Eta Cassiopeiae B II"
+        }
+    }
+}
+
+event = {
+	id = fe.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        random_country = {
+            limit = {
+                NOT = { any_system = { has_star_flag = sol } }
+			}
+			random_system = {
+				limit = {
+					has_owner = no
+				}
+                random_list = {
+                    # Space age humans
+                    50 = { spawn_system = { initializer = "space_age_sol_system_initializer" } }
+                    # Primitive humans
+                    50 = { spawn_system = { initializer = "primitive_sol_system_initializer" } }
+                }
+			}
+        }
+    }
+}
+
+event = {
+    id = fe.5
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+
+        random_system = {
+            spawn_system = { initializer = "deneb_system" }
+        }
+    }
+}

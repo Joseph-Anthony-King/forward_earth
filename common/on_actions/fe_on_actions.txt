@@ -1,0 +1,16 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		fe.1
+		fe.2
+		fe.3
+		fe.4
+		fe.5
+	}
+}
+
+empire_init_add_technologies = {
+	events = {
+		fe.6
+	}
+}

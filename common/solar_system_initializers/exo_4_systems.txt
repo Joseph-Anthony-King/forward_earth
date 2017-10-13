@@ -1,0 +1,274 @@
+# systems with 4 planets and some are in habitable zone
+
+Upsilon_Andromedae_system_initializer = {
+    name = "Upsilon Andromedae"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Upsilon Andromedae A"
+        class = "pc_f_star"
+        size = 32
+        orbit_distance = 0
+        has_ring = no
+    }
+    planet = {
+        name = "Saffar"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 306
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Samh"
+        size = 30
+        orbit_distance = 35
+        orbit_angle = 56
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 8
+	moon = {
+		name = "Samh a"
+		orbit_distance = { min = 2 max = 3 }
+		class = "pc_molten"
+	}
+	moon = {
+		name = "Samh b"
+		size = { min = 10 max = 12 }
+		orbit_distance = 5
+	}
+	moon = {
+		name = "Samh c"
+		size = { min = 10 max = 12 }
+		orbit_distance = 5
+	}
+	moon = {
+		name = "Samh d"
+		size = { min = 4 max = 8 }
+		orbit_distance = { min = 3 max = 5 }
+		class = "pc_toxic"
+	}
+    }
+
+    planet = {
+        name = "Majriti"
+        size = 33
+        orbit_distance = 35
+        orbit_angle = 245
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 10
+	moon = {
+		name = "Majriti a"
+		size = { min = 4 max = 6 }
+		orbit_distance = { min = 3 max = 4 }
+		class = "pc_barren_cold"
+	}
+	moon = {
+		name = "Majriti b"
+		size = { min = 10 max = 16 }
+		orbit_distance = { min = 5 max = 6 }
+	}
+	moon = {
+		name = "Majriti c"
+		size = { min = 4 max = 8 }
+		orbit_distance = { min = 3 max = 6 }
+		class = "pc_frozen"
+	}
+    }
+
+    planet = {
+        name = "Upsilon Andromedae A e"
+        size = 26
+        orbit_distance = 60
+        orbit_angle = 28
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Upsilon Andromedae B"
+        class = "pc_m_star"
+        size = 20
+        orbit_distance = 200
+        orbit_angle = 66
+        has_ring = no
+    }
+}
+
+mu_Arae_system_initializer = {
+    name = "Mu Arae"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    asteroids_distance = 150
+
+    planet = {
+        name = "mu Arae"
+        class = "pc_g_star"
+        size = 31
+        orbit_distance = 0
+        orbit_angle = 208
+        has_ring = no
+    }
+
+    planet = {
+        name = "Dulcinea"
+        size = 20
+        orbit_distance = 30
+        orbit_angle = 269
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Rocinante"
+        size = 28
+        orbit_distance = 40
+        orbit_angle = 20
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 10
+	moon = {
+		name = "Rocinante a"
+		orbit_distance = 3
+	}
+	moon = {
+		name = "Rocinante b"
+		orbit_distance = 5
+	}
+    }
+
+    planet = {
+        name = "Quijote"
+        size = 32
+        orbit_distance = 25
+        orbit_angle = 195
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 10
+
+	moon = {
+		size = { min = 3 max = 7 }
+		orbit_distance = 3
+		name = "Quijote a"
+		class = "pc_barren_cold"
+	}
+	moon = {
+		size = { min = 10 max = 14 }
+		orbit_distance = { min = 3 max = 5 }
+		name = "Quijote b"
+	}
+	moon = {
+		size = { min = 10 max = 12 }
+		orbit_distance = { min = 5 max = 7 }
+		name = "Quijote c"
+	}
+    }
+
+    planet = {
+        name = "Sancho"
+        size = 33
+        orbit_distance = 100
+        orbit_angle = 210
+        class = random
+    }
+}
+
+lich_system_initializer = {
+    name = "Lich"
+    class = "sc_pulsar"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Lich"
+        class = "pc_pulsar"
+        size = 10
+        orbit_distance = 0
+        orbit_angle = 180
+        has_ring = no
+    }
+
+    planet = {
+        name = "Draugr"
+        size = 10
+        orbit_distance = 25
+        orbit_angle = 120
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Poltergeist"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 200
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Phobetor"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 95
+        has_ring = no
+        # class = "pc_barren"
+    }
+
+	change_orbit = 150
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 215
+}
+
+Wolf_1061_system_initializer = {
+    name = "Wolf 1061"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Wolf 1061"
+        class = "pc_m_star"
+        size = 15
+        orbit_distance = 0
+        orbit_angle = 112
+        has_ring = no
+    }
+
+    change_orbit = 25
+    planet = {
+        name = "Wolf 1061 b"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 243
+        has_ring = no
+        class = pc_molten
+    }
+    planet = {
+        name = "Wolf 1061 c"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 344
+        has_ring = no
+    }
+    planet = {
+        name = "Wolf 1061 d"
+        size = 25
+        orbit_distance = 45
+        orbit_angle = 142
+        has_ring = no
+    }
+
+}

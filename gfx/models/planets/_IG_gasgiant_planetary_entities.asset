@@ -1,0 +1,989 @@
+# Gas Giant 07
+entity = {
+	name = "gas_giant_06_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_07_diffuse.dds"
+	texture_normal = "ig_gasgiant_07_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+# Not really good + diffuse is white, droping idea
+#	##cloud texture override
+#	meshsettings = {
+#	name = "clouds_geosphereShape"
+#	texture_diffuse = "clouds_gasgiant_diffuse.dds"
+#	texture_normal = "clouds_gasgiant_normal.dds"
+#	texture_specular = "nospec.dds"
+#	}
+#	
+#	##cloud shadow texture override
+#	meshsettings = {
+#	name = "clouds_shadow_geosphereShape"
+#	texture_diffuse = "nodiffuse.dds"
+#	texture_normal = "nonormal.dds"
+#	texture_specular = "nospec.dds"
+#	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 08
+entity = {
+	name = "gas_giant_07_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_08_diffuse.dds"
+	texture_normal = "ig_gasgiant_08_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 09
+entity = {
+	name = "gas_giant_08_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_09_diffuse.dds"
+	texture_normal = "ig_gasgiant_09_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 10
+entity = {
+	name = "gas_giant_09_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_10_diffuse.dds"
+	texture_normal = "ig_gasgiant_10_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.35
+}
+# Gas Giant 11
+entity = {
+	name = "gas_giant_10_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_11_diffuse.dds"
+	texture_normal = "ig_gasgiant_11_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.15
+}
+# Gas Giant 12
+entity = {
+	name = "gas_giant_11_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_12_diffuse.dds"
+	texture_normal = "ig_gasgiant_12_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 13
+entity = {
+	name = "gas_giant_12_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_13_diffuse.dds"
+	texture_normal = "ig_gasgiant_13_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 14
+entity = {
+	name = "gas_giant_13_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_14_diffuse.dds"
+	texture_normal = "ig_gasgiant_14_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 15
+entity = {
+	name = "gas_giant_14_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_15_diffuse.dds"
+	texture_normal = "ig_gasgiant_15_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 16
+entity = {
+	name = "gas_giant_15_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_16_diffuse.dds"
+	texture_normal = "ig_gasgiant_16_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 17
+entity = {
+	name = "gas_giant_16_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_17_diffuse.dds"
+	texture_normal = "ig_gasgiant_17_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 18
+entity = {
+	name = "gas_giant_17_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_18_diffuse.dds"
+	texture_normal = "ig_gasgiant_18_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.1
+}
+# Gas Giant 19
+entity = {
+	name = "gas_giant_18_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_19_diffuse.dds"
+	texture_normal = "ig_gasgiant_19_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.15
+}
+# Gas Giant 20
+entity = {
+	name = "gas_giant_19_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_20_diffuse.dds"
+	texture_normal = "ig_gasgiant_20_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 21
+entity = {
+	name = "gas_giant_20_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_21_diffuse.dds"
+	texture_normal = "ig_gasgiant_21_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 22
+entity = {
+	name = "gas_giant_21_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_22_diffuse.dds"
+	texture_normal = "ig_gasgiant_22_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 23
+entity = {
+	name = "gas_giant_22_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_23_diffuse.dds"
+	texture_normal = "ig_gasgiant_23_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 24
+entity = {
+	name = "gas_giant_23_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_24_diffuse.dds"
+	texture_normal = "ig_gasgiant_24_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 25
+entity = {
+	name = "gas_giant_24_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_25_diffuse.dds"
+	texture_normal = "ig_gasgiant_25_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 26
+entity = {
+	name = "gas_giant_25_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_26_diffuse.dds"
+	texture_normal = "ig_gasgiant_26_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 27
+entity = {
+	name = "gas_giant_26_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_27_diffuse.dds"
+	texture_normal = "ig_gasgiant_27_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 28
+entity = {
+	name = "gas_giant_27_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_28_diffuse.dds"
+	texture_normal = "ig_gasgiant_28_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 29
+entity = {
+	name = "gas_giant_28_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_29_diffuse.dds"
+	texture_normal = "ig_gasgiant_29_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 30
+entity = {
+	name = "gas_giant_29_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_30_diffuse.dds"
+	texture_normal = "ig_gasgiant_30_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 31
+entity = {
+	name = "gas_giant_30_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_31_diffuse.dds"
+	texture_normal = "ig_gasgiant_31_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 32
+entity = {
+	name = "gas_giant_31_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_32_diffuse.dds"
+	texture_normal = "ig_gasgiant_32_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 33
+entity = {
+	name = "gas_giant_32_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_33_diffuse.dds"
+	texture_normal = "ig_gasgiant_33_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 34
+entity = {
+	name = "gas_giant_33_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_34_diffuse.dds"
+	texture_normal = "ig_gasgiant_34_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 35
+entity = {
+	name = "gas_giant_34_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_35_diffuse.dds"
+	texture_normal = "ig_gasgiant_35_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 36
+entity = {
+	name = "gas_giant_35_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_36_diffuse.dds"
+	texture_normal = "ig_gasgiant_36_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 37
+entity = {
+	name = "gas_giant_36_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_37_diffuse.dds"
+	texture_normal = "ig_gasgiant_37_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 38
+entity = {
+	name = "gas_giant_37_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_38_diffuse.dds"
+	texture_normal = "ig_gasgiant_38_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 39
+entity = {
+	name = "gas_giant_38_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_39_diffuse.dds"
+	texture_normal = "ig_gasgiant_39_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 40
+entity = {
+	name = "gas_giant_39_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_40_diffuse.dds"
+	texture_normal = "ig_gasgiant_40_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 41
+entity = {
+	name = "gas_giant_40_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_41_diffuse.dds"
+	texture_normal = "ig_gasgiant_41_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 42
+entity = {
+	name = "gas_giant_41_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_42_diffuse.dds"
+	texture_normal = "ig_gasgiant_42_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 43
+entity = {
+	name = "gas_giant_42_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_43_diffuse.dds"
+	texture_normal = "ig_gasgiant_43_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 44
+entity = {
+	name = "gas_giant_43_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_44_diffuse.dds"
+	texture_normal = "ig_gasgiant_44_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 45
+entity = {
+	name = "gas_giant_44_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_45_diffuse.dds"
+	texture_normal = "ig_gasgiant_45_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 46
+entity = {
+	name = "gas_giant_45_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_46_diffuse.dds"
+	texture_normal = "ig_gasgiant_46_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 47
+entity = {
+	name = "gas_giant_46_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_47_diffuse.dds"
+	texture_normal = "ig_gasgiant_47_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 48
+entity = {
+	name = "gas_giant_47_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_48_diffuse.dds"
+	texture_normal = "ig_gasgiant_48_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 49
+entity = {
+	name = "gas_giant_48_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_49_diffuse.dds"
+	texture_normal = "ig_gasgiant_49_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 50
+entity = {
+	name = "gas_giant_49_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_50_diffuse.dds"
+	texture_normal = "ig_gasgiant_50_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 51
+entity = {
+	name = "gas_giant_50_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_51_diffuse.dds"
+	texture_normal = "ig_gasgiant_51_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 52
+entity = {
+	name = "gas_giant_51_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_52_diffuse.dds"
+	texture_normal = "ig_gasgiant_52_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 53
+entity = {
+	name = "gas_giant_52_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_53_diffuse.dds"
+	texture_normal = "ig_gasgiant_53_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.15
+}
+# Gas Giant 54
+entity = {
+	name = "gas_giant_53_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_54_diffuse.dds"
+	texture_normal = "ig_gasgiant_54_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}
+# Gas Giant 55
+entity = {
+	name = "gas_giant_54_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_55_diffuse.dds"
+	texture_normal = "ig_gasgiant_55_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 56
+entity = {
+	name = "gas_giant_55_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_56_diffuse.dds"
+	texture_normal = "ig_gasgiant_56_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 57
+entity = {
+	name = "gas_giant_56_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_57_diffuse.dds"
+	texture_normal = "ig_gasgiant_57_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.3
+}
+# Gas Giant 58
+entity = {
+	name = "gas_giant_57_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_58_diffuse.dds"
+	texture_normal = "ig_gasgiant_58_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 59
+entity = {
+	name = "gas_giant_58_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_59_diffuse.dds"
+	texture_normal = "ig_gasgiant_59_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.2
+}
+# Gas Giant 60
+entity = {
+	name = "gas_giant_59_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_gasgiant_60_diffuse.dds"
+	texture_normal = "ig_gasgiant_60_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
+	}
+	scale = 1.25
+}

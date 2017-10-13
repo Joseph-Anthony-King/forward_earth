@@ -1,0 +1,170 @@
+# Shielded planets #02, 03, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 18, 19, 21, 24, 26; ALL dropped, not good enough
+# Shielded planets #04, 17, 20, 22, 23, 25; ALL good enough
+# Shielded planets 02
+entity = {
+	name = "shielded_planet_02_entity"
+	pdxmesh = "shielded_planet_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+		texture_diffuse = "planet_shieled_diffuse.dds" #it's just plain black, diffuse is painfully white otherwise.
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+		texture_diffuse = "ig_shielded_02.dds"
+		texture_normal = "nonormal.dds" #no normals, can't see the difference.
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_shielded_02.dds"
+		texture_normal = "nonormal.dds" #no normals, can't see the difference.
+		texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Shielded planets 03
+entity = {
+	name = "shielded_planet_03_entity"
+	pdxmesh = "shielded_planet_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+		texture_diffuse = "ig_shielded_03.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_shielded_03.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Shielded planets 04
+entity = {
+	name = "shielded_planet_04_entity"
+	pdxmesh = "shielded_planet_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+		texture_diffuse = "ig_shielded_04.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_shielded_04.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Shielded planets 05
+entity = {
+	name = "shielded_planet_05_entity"
+	pdxmesh = "shielded_planet_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+		texture_diffuse = "planet_shieled_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+		texture_diffuse = "ig_shielded_05.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_shielded_05.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

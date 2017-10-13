@@ -1,0 +1,1541 @@
+##
+# Exoplanets from Open Exoplanet Catalogue http://openexoplanetcatalogue.com
+# There are systems with more than 5 known planets so far
+#
+
+Gliese667_system_initializer = {
+	name = "Gliese 667"
+	
+	class = "sc_k"
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+
+	planet = {
+		name = "Gliese 667 A"
+		class = "pc_k_star"
+		orbit_distance = 25
+		orbit_angle = 20
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Gliese 667 B"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 20
+		has_ring = no
+	}
+
+	change_orbit = 120
+	planet = {
+		name = "Gliese 667 C"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = -90
+		size = 18
+		has_ring = no
+
+	moon = {
+		name = "Gliese 667 C b"
+		class = "pc_molten"
+		orbit_distance = 15
+		orbit_angle = 15
+		size = 22
+	}
+	
+	moon = {
+		name = "Gliese 667 C h"
+		class = "pc_toxic"
+		orbit_distance = 6
+		orbit_angle = 125
+		size = 15
+	}
+	
+	moon = {
+		name = "Gliese 667 C c"
+		class = "pc_barren"
+		orbit_distance = 8
+		orbit_angle = 120
+		size = 20
+	}
+	
+	moon = {
+		name = "Gliese 667 C f"
+		class = rl_habitable_normal
+		orbit_distance = 6
+		orbit_angle = 60
+		size = 18
+	}
+	
+	moon = {
+		name = "Gliese 667 C e"
+		class = "pc_barren"
+		orbit_distance = 10
+		orbit_angle = -160
+		size = 18
+	}
+	
+	moon = {
+		name = "Gliese 667 C d"
+		class = "pc_barren_cold"
+		orbit_distance = 15
+		orbit_angle = 170
+		size = 25
+	}
+	
+	moon = {
+		name = "Gliese 667 C g"
+		class = "pc_frozen"
+		orbit_distance = 15
+		orbit_angle = 125
+		size = 24
+	}
+	}
+}
+
+HD_10180_system_initializer = {
+	name = "HD 10180"
+	class = "sc_g"
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+	asteroids_distance = 140
+
+	planet = {
+		name = "HD 10180"
+		class = "pc_g_star"
+		size = 30
+	orbit_distance = 0
+	orbit_angle = 78
+	has_ring = no
+	}
+
+	planet = {
+		name = "HD 10180 b"
+		size = 20
+		orbit_distance = 20
+		orbit_angle = 181
+		has_ring = no
+		class = "pc_molten"
+	}
+
+	planet = {
+		name = "HD 10180 c"
+		size = 28
+		orbit_distance = 10
+		orbit_angle = 90
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 d"
+		size = 28
+		orbit_distance = 15
+		orbit_angle = 233
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 e"
+		size = 30
+		orbit_distance = 20
+		orbit_angle = 196
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 f"
+		size = 33
+		orbit_distance = 20
+		orbit_angle = 212
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 g"
+		size = 30
+		orbit_distance = 25
+		orbit_angle = 291
+		has_ring = no
+		class = "pc_gas_giant"
+		change_orbit = 10
+
+		moon = {
+			count = 1
+			name = "HD 10180g a "
+			orbit_distance = 3
+			size = { min = 5 max = 9 }
+		}
+
+		moon = {
+			count = 1
+			name = "HD 10180g b "
+			orbit_distance = 3
+			size = { min = 10 max = 12 }
+			class = rl_habitable_normal
+		}
+
+		moon = {
+			name = "HD 10180g c"
+			count = 1
+			orbit_distance = 3
+			size = { min = 6 max = 12 }
+		}
+	}
+
+	planet = {
+		name = "HD 10180 h"
+		size = 40
+		orbit_distance = 60
+		orbit_angle = 2
+		has_ring = yes
+		class = "pc_gas_giant"
+	}
+}
+
+Kepler_90_system_initializer = {
+    name = "Kepler-90"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-90"
+        class = star
+        size = 31
+        orbit_distance = 0
+        orbit_angle = 290
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-90 b"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 34
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-90 c"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 33
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-90 d"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = 121
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "Kepler-90 e"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = 344
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "Kepler-90 f"
+        size = 27
+        orbit_distance = 25
+        orbit_angle = 55
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Kepler-90 g"
+        size = 30
+        orbit_distance = 30
+        orbit_angle = 122
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Kepler-90 h"
+        size = 33
+        orbit_distance = 30
+        orbit_angle = 251
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 15
+    }
+
+	change_orbit = 125
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 300
+}
+
+Kepler_296_system_initializer = {
+	name = "Kepler-296"
+	class = "sc_m"
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+
+	planet = {
+		name = "Kepler-296 A"
+		class = "pc_m_star"
+		size = 20
+		orbit_distance = 0
+		orbit_angle = 45
+		has_ring = no
+	}
+	planet = {
+		name = "Kepler-296 c"
+		size = 22
+		orbit_distance = 20
+		orbit_angle = 200
+		has_ring = no
+		class = "pc_toxic"
+	}
+	planet = {
+		name = "Kepler-296 b"
+		size = 20
+		orbit_distance = 15
+		orbit_angle = 303
+		has_ring = no
+		class = "pc_barren"
+	}
+	planet = {
+	        name = "Kepler-296 d"
+	       	size = 24
+	        orbit_distance = 15
+	       	orbit_angle = 246
+	        has_ring = no
+	        class = "pc_barren"
+	}
+	planet = {
+	        name = "Kepler-296 e"
+	        size = 18
+	        orbit_distance = 20
+	        orbit_angle = 82
+	        has_ring = no
+	        class = rl_habitable_normal
+	}
+	planet = {
+	        name = "Kepler-296 f"
+	        size = 21
+	        orbit_distance = 20
+		orbit_angle = 279
+	        has_ring = no
+	        class = random
+	}
+
+	planet = {
+		name = "Kepler-296 B"
+	        class = "pc_m_star"
+	        size = 10
+	        orbit_distance = 180
+	        orbit_angle = 225
+	        has_ring = no
+	}
+}
+
+Kepler_62_system_initializer = {
+    name = "Kepler-62"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-62"
+        class = "pc_k_star"
+        size = 24
+        orbit_distance = 0
+        orbit_angle = 22
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-62 b"
+        size = 12
+        orbit_distance = 18
+        orbit_angle = 137
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 c"
+        size = 8
+        orbit_distance = 13
+        orbit_angle = 358
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 d"
+        size = 22
+        orbit_distance = 15
+        orbit_angle = 190
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 e"
+        size = 18
+        orbit_distance = 35
+        orbit_angle = 349
+        has_ring = no
+        class = rl_habitable_normal
+    }
+    planet = {
+        name = "Kepler-62 f"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 309
+        has_ring = no
+        class = "pc_toxic"
+    }
+}
+
+Kepler_186_system_initializer = {
+    name = "Kepler-186"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-186"
+        class = "pc_m_star"
+        size = 25
+        orbit_distance = 0
+        orbit_angle = 222
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-186 c"
+        size = 17
+        orbit_distance = 20
+        orbit_angle = 310
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-186 d"
+        size = 20
+        orbit_distance = 15
+        orbit_angle = 207
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-186 b"
+        size = 16
+        orbit_distance = 15
+        orbit_angle = 253
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-186 e"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 16
+        has_ring = no
+        class = rl_habitable_normal
+    }
+    planet = {
+        name = "Kepler-186 f"
+        size = 17
+        orbit_distance = 40
+        orbit_angle = 82
+        has_ring = no
+        class = "pc_frozen"
+    }
+}
+
+55_Cancri_system_initializer = {
+    name = "55 Cancri"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "55 Cancri A"
+        class = "pc_k_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 230
+        has_ring = no
+    }
+
+    planet = {
+        name = "Janssen"
+        size = 25
+        orbit_distance = 18
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Galileo"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 99
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Brahe"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 80
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Harriot"
+        size = 24
+        orbit_distance = 35
+        orbit_angle = 243
+        has_ring = no
+        class = "pc_gas_giant"
+	change_orbit = 10
+	
+	moon = {
+		name = "Harriot a"
+		orbit_distance = { min = 3 max = 5 }
+		size = { min = 4 max = 12 }
+	}
+	moon = {
+		name = "Harriot b"
+		orbit_distance = { min = 3 max = 5 }
+		size = { min = 10 max = 12 }
+	}
+	moon = {
+		name = "Harriot c"
+		orbit_distance = { min = 3 max = 5 }
+		size = { min = 6 max = 10 }
+	}
+    }
+    planet = {
+        name = "Lipperhey"
+        size = 35
+        orbit_distance = 70
+        orbit_angle = 265
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "55 Cancri B"
+        class = "pc_m_star"
+        size = 16
+        orbit_distance = 100
+        orbit_angle = 321
+        has_ring = no
+    }
+}
+
+tau_Ceti_system_initializer = {
+    name = "HD 10700" # tau Ceti name is used in game already for random systems
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroids_distance = 120
+
+    planet = {
+        name = "HD 10700"
+        class = "pc_g_star"
+        size = 23
+        orbit_distance = 0
+        orbit_angle = 180
+        has_ring = no
+    }
+    planet = {
+        name = "HD 10700 b"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 64
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "HD 10700 c"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 328
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "HD 10700 d"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 313
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "HD 10700 e"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 107
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "HD 10700 f"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 230
+        has_ring = no
+        class = random
+    }
+}
+
+HIP_41378_system_initializer = {
+    name = "HIP 41378"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "HIP 41378"
+        class = star
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 31
+        has_ring = no
+    }
+    planet = {
+        name = "HIP 41378 b"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 151
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "HIP 41378 c"
+        size = 21
+        orbit_distance = 15
+        orbit_angle = 10
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 d"
+        size = 26
+        orbit_distance = 30
+        orbit_angle = 78
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 e"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 181
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 f"
+        size = 28
+        orbit_distance = 50
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_barren"
+    }
+
+	change_orbit = 220
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 360
+}
+
+Kepler_102_system_initializer = {
+    name = "Kepler-102"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-102"
+        class = star
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 71
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-102 b"
+        size = 10
+        orbit_distance = 20
+        orbit_angle = 291
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-102 c"
+        size = 11
+        orbit_distance = 15
+        orbit_angle = 212
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-102 d"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = 196
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-102 e"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = 233
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-102 f"
+        size = 14
+        orbit_distance = 40
+        orbit_angle = 79
+        has_ring = no
+        class = "pc_barren"
+    }
+	change_orbit = 240
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 360
+}
+
+Kepler_122_system_initializer = {
+    name = "Kepler-122"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-122"
+        class = star
+        size = 30
+        orbit_distance = 0
+        orbit_angle = 2
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-122 b"
+        size = 23
+        orbit_distance = 22
+        orbit_angle = 251
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-122 c"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 290
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Kepler-122 d"
+        size = 22
+        orbit_distance = 22
+        orbit_angle = 122
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-122 e"
+        size = 24
+        orbit_distance = 23
+        orbit_angle = 55
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-122 f"
+        size = 17
+        orbit_distance = 25
+        orbit_angle = 344
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 330
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 440
+}
+
+Kepler_154_system_initializer = {
+    name = "Kepler-154"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-154"
+        class = star
+        size = 30
+        orbit_distance = 0
+        orbit_angle = 121
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-154 e"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 33
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-154 f"
+        size = 19
+        orbit_distance = 25
+        orbit_angle = 34
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-154 d"
+        size = 26
+        orbit_distance = 15
+        orbit_angle = 305
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-154 b"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 217
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-154 c"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 290
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+	change_orbit = 100
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 205
+}
+
+Kepler_169_system_initializer = {
+    name = "Kepler-169"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroids_distance = 120
+
+    planet = {
+        name = "Kepler-169"
+        class = "pc_k_star"
+        size = 22
+        orbit_distance = 0
+        orbit_angle = 262
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-169 b"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = 136
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-169 c"
+        size = 17
+        orbit_distance = 25
+        orbit_angle = 350
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-169 d"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 198
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-169 e"
+        size = 22
+        orbit_distance = 30
+        orbit_angle = 193
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-169 f"
+        size = 26
+        orbit_distance = 50
+        orbit_angle = 298
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 150
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 290
+}
+
+Kepler_20_system_initializer = {
+    name = "Kepler-20"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-20"
+        class = "pc_g_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 104
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-20 b"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 28
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 e"
+        size = 13
+        orbit_distance = 17
+        orbit_angle = 100
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 c"
+        size = 27
+        orbit_distance = 25
+        orbit_angle = 83
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 f"
+        size = 16
+        orbit_distance = 35
+        orbit_angle = 228
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-20 d"
+        size = 43
+        orbit_distance = 43
+        orbit_angle = 36
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 280
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 420
+}
+
+Kepler_238_system_initializer = {
+    name = "Kepler-238"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-238"
+        class = "pc_g_star"
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 131
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-238 b"
+        size = 20
+        orbit_distance = 25
+        orbit_angle = 337
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-238 c"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-238 d"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 75
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "Kepler-238 e"
+        size = 32
+        orbit_distance = 20
+        orbit_angle = 133
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-238 f"
+        size = 26
+        orbit_distance = 25
+        orbit_angle = 233
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 290
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 400
+}
+
+Kepler_292_system_initializer = {
+    name = "Kepler-292"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-292"
+        class = "pc_g_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 219
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-292 b"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 356
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-292 c"
+        size = 21
+        orbit_distance = 15
+        orbit_angle = 136
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-292 d"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 262
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-292 e"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 58
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-292 f"
+        size = 26
+        orbit_distance = 30
+        orbit_angle = 61
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 300
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 410
+}
+
+Kepler_32_system_initializer = {
+    name = "Kepler-32"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-32"
+        class = "pc_m_star"
+        size = 18
+        orbit_distance = 0
+        orbit_angle = 113
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-32 f"
+        size = 12
+        orbit_distance = 20
+        orbit_angle = 113
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 e"
+        size = 15
+        orbit_distance = 25
+        orbit_angle = 315
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 b"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 c"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 75
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-32 d"
+        size = 25
+        orbit_distance = 40
+        orbit_angle = 339
+        class = "pc_gas_giant"
+    }
+	change_orbit = 200
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 330
+}
+
+Kepler_33_system_initializer = {
+    name = "Kepler-33"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-33"
+        class = "pc_g_star"
+        size = 36
+        orbit_distance = 0
+        orbit_angle = 235
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-33 b"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 142
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-33 c"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 329
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-33 d"
+        size = 29
+        orbit_distance = 20
+        orbit_angle = 165
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-33 e"
+        size = 27
+        orbit_distance = 20
+        orbit_angle = 95
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-33 f"
+        size = 27
+        orbit_distance = 20
+        orbit_angle = 88
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+	change_orbit = 300
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 405
+}
+
+Kepler_444_system_initializer = {
+    name = "Kepler-444"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-444 A"
+        class = "pc_k_star"
+        size = 26
+        orbit_distance = 0
+        orbit_angle = 202
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-444 b"
+        size = 6
+        orbit_distance = 30
+        orbit_angle = 94
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 c"
+        size = 7
+        orbit_distance = 10
+        orbit_angle = 210
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 d"
+        size = 8
+        orbit_distance = 12
+        orbit_angle = 323
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 e"
+        size = 8
+        orbit_distance = 12
+        orbit_angle = 143
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 f"
+        size = 11
+        orbit_distance = 17
+        orbit_angle = 78
+        has_ring = no
+        class = random
+    }
+    planet = {
+	orbit_distance = 100
+	name = "Kepler-444 B"
+	class = "pc_m_star"
+	size = 10
+	has_ring = no
+	
+	moon = {
+	        name = "Kepler-444 C"
+	        class = "pc_m_star"
+	        size = 10
+	        orbit_distance = 10
+	        orbit_angle = 180
+	        has_ring = no
+	}
+    }
+}
+
+Kepler_55_system_initializer = {
+    name = "Kepler-55"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-55"
+        class = "pc_k_star"
+        size = 18
+        orbit_distance = 0
+        orbit_angle = 32
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-55 d"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 16
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 e"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 285
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 f"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 151
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 b"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 39
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-55 c"
+        size = 22
+        orbit_distance = 15
+        orbit_angle = 225
+        has_ring = no
+        class = "pc_barren"
+    }
+	change_orbit = 100
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 195
+}
+
+Kepler_80_system_initializer = {
+    name = "Kepler-80"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-80"
+        class = "pc_k_star"
+        size = 22
+        orbit_distance = 0
+        orbit_angle = 4
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-80 f"
+        size = 17
+        orbit_distance = 20
+        orbit_angle = 230
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-80 d"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 193
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-80 e"
+        size = 21
+        orbit_distance = 20
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-80 b"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 259
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-80 c"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 245
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+	change_orbit = 300
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 400
+}
+
+Kepler-84_system_initializer = {
+    name = "Kepler-84"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    asteroids_distance = 305
+    planet = {
+        name = "Kepler-84"
+        class = "pc_g_star"
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 40
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-84 d"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 315
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-84 b"
+        size = 24
+        orbit_distance = 15
+        orbit_angle = 156
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-84 c"
+        size = 26
+        orbit_distance = 15
+        orbit_angle = 163
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-84 e"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = 343
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "Kepler-84 f"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 94
+        has_ring = no
+        class = random
+    }
+
+	change_orbit = 300
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+	asteroids_distance = 405
+}
+

@@ -1,0 +1,238 @@
+# Arid Planet 04
+entity = {
+	name = "arid_planet_04_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_04_diffuse.dds"
+	texture_normal = "ig_arid_04_normal.dds"
+	texture_specular = "ig_arid_04_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_10_diffuse.dds"
+	texture_normal = "ig_clouds_medium_10_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_10_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 05
+entity = {
+	name = "arid_planet_05_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_05_diffuse.dds"
+	texture_normal = "ig_arid_05_normal.dds"
+	texture_specular = "ig_arid_05_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_09_diffuse.dds"
+	texture_normal = "ig_clouds_medium_09_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_09_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 06
+entity = {
+	name = "arid_planet_06_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_06_diffuse.dds"
+	texture_normal = "ig_arid_06_normal.dds"
+	texture_specular = "ig_arid_06_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_08_diffuse.dds"
+	texture_normal = "ig_clouds_medium_08_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_08_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 07
+entity = {
+	name = "arid_planet_07_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_07_diffuse.dds"
+	texture_normal = "ig_arid_07_normal.dds"
+	texture_specular = "ig_arid_07_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_04_diffuse.dds"
+	texture_normal = "ig_clouds_medium_04_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_04_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 08
+entity = {
+	name = "arid_planet_08_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_08_diffuse.dds"
+	texture_normal = "ig_arid_08_normal.dds"
+	texture_specular = "ig_arid_08_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_03_diffuse.dds"
+	texture_normal = "ig_clouds_medium_03_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_03_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 09
+entity = {
+	name = "arid_planet_09_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_09_diffuse.dds"
+	texture_normal = "ig_arid_09_normal.dds"
+	texture_specular = "ig_arid_09_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_02_diffuse.dds"
+	texture_normal = "ig_clouds_medium_02_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_02_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Arid Planet 10
+entity = {
+	name = "arid_planet_10_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_arid_10_diffuse.dds"
+	texture_normal = "ig_arid_10_normal.dds"
+	texture_specular = "ig_arid_10_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_01_diffuse.dds"
+	texture_normal = "ig_clouds_medium_01_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_01_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

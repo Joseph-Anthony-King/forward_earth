@@ -1,0 +1,34 @@
+# Anual planet class check for Mercury
+on_yearly_pulse = {
+	events = {
+		real_sol.1
+	}
+}
+
+# Anual planet class check for Venus
+on_yearly_pulse = {
+	events = {
+		real_sol.2
+	}
+}
+
+# Anual planet class check for Earth
+on_yearly_pulse = {
+	events = {
+		real_sol.3
+	}
+}
+
+# Anual planet class check for Moon
+on_yearly_pulse = {
+	events = {
+		real_sol.4
+	}
+}
+
+# Anual planet class check for Mars
+on_yearly_pulse = {
+	events = {
+		real_sol.5
+	}
+}

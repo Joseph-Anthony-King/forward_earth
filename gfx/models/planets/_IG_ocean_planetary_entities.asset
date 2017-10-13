@@ -1,0 +1,238 @@
+# Ocean Planet 04
+entity = {
+	name = "ocean_planet_04_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_04_diffuse.dds"
+	texture_normal = "ig_ocean_04_normal.dds"
+	texture_specular = "ig_ocean_04_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_01_diffuse.dds"
+	texture_normal = "ig_clouds_medium_01_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_01_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 05
+entity = {
+	name = "ocean_planet_05_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_05_diffuse.dds"
+	texture_normal = "ig_ocean_05_normal.dds"
+	texture_specular = "ig_ocean_05_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_02_diffuse.dds"
+	texture_normal = "ig_clouds_medium_02_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_02_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 06
+entity = {
+	name = "ocean_planet_06_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_06_diffuse.dds"
+	texture_normal = "ig_ocean_06_normal.dds"
+	texture_specular = "ig_ocean_06_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_03_diffuse.dds"
+	texture_normal = "ig_clouds_medium_03_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_03_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 07
+entity = {
+	name = "ocean_planet_07_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_07_diffuse.dds"
+	texture_normal = "ig_ocean_07_normal.dds"
+	texture_specular = "ig_ocean_07_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_04_diffuse.dds"
+	texture_normal = "ig_clouds_medium_04_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_04_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 08
+entity = {
+	name = "ocean_planet_08_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_08_diffuse.dds"
+	texture_normal = "ig_ocean_08_normal.dds"
+	texture_specular = "ig_ocean_08_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_05_diffuse.dds"
+	texture_normal = "ig_clouds_medium_05_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_05_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 09
+entity = {
+	name = "ocean_planet_09_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_09_diffuse.dds"
+	texture_normal = "ig_ocean_09_normal.dds"
+	texture_specular = "ig_ocean_09_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_06_diffuse.dds"
+	texture_normal = "ig_clouds_medium_06_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_06_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# Ocean Planet 10
+entity = {
+	name = "ocean_planet_10_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "ig_ocean_10_diffuse.dds"
+	texture_normal = "ig_ocean_10_normal.dds"
+	texture_specular = "ig_ocean_10_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_07_diffuse.dds"
+	texture_normal = "ig_clouds_medium_07_normal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "ig_clouds_medium_07_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

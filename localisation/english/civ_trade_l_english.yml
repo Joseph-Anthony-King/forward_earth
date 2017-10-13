@@ -1,0 +1,69 @@
+﻿l_english:
+
+ #############################
+ # Civilian Trade Events
+ #############################
+  
+ 
+ #############################
+ # Civilian Trade modifiers
+ #############################
+  
+  
+
+ trade_network:0 "Trade Network"
+ trade_network_desc:0 "A nearby planet has established a trade network."
+
+ foreign_trade_network:0 "Foreign Trade Network"
+ foreign_trade_network_desc:0 "A nearby planet from another empire has established a trade network."
+
+ trade_network_minerals:0 "Trade Network Minerals"
+ trade_network_minerals_desc:0 "A nearby planet has established a trade network focusing on their export of minerals."
+
+ trade_network_energy:0 "Trade Network Energy"
+ trade_network_energy_desc:0 "A nearby planet has established a trade network focusing on their export of energy."  
+
+ trade_network_farming:0 "Trade Network Food"
+ trade_network_farming_desc:0 "A nearby planet has established a trade network focusing on their export of food, provinding a boost in population growth."
+
+ trade_network_reeducation:0 "Trade Network Education"
+ trade_network_reeducation_desc:0 "We are within range to recieve the broadcasts from a nearby planet and they all reaffirm our most valued beliefs."  
+
+ trade_network_propaganda:0 "Trade Network News"
+ trade_network_propaganda_desc:0 "We are within range to recieve the broadcasts from a nearby planet and the news is good!"  
+
+ trade_network_infrastructure:0 "Trade Network Infrastructure"
+ trade_network_infrastructure_desc:0 "A nearby planet has established a trade network focusing on their export of building materials."  
+
+ trade_ship_arrived:0 "Trade Shipped Docked"
+ trade_ship_arrived_desc:0 "A civilian trade vessel from a nearby colony has docked and is unloading a supplies of resources and consumer goods."  
+ 
+ circus_in_town:0 "Circus ship in system"
+ circus_in_town_desc: "Come one come all! The great Kemplerer Circus is in system. Come aboard and see what mesmerizing, fantastic, otherworldly and on occasion terrifying creatures and attractions wander the Rosette!"
+ 
+
+
+ ####################################
+ # Hull Sizes
+ ####################################  
+ 
+ civilian_trade_freighter:0 "Civilian Freighter"
+ civilian_trade_freighter_plural:0 "Civilian Freighters"
+ civilian_trade_tanker:0 "Civilian Tanker"
+ civilian_trade_tanker_plural:0 "Civilian Tankers"
+ 
+
+ ####################################
+ # War Demands
+ ####################################  
+  
+  
+ war_demand_trade_sanctions_header:1 "§HTrade Sanctions§!"
+ war_demand_trade_sanctions_subtext:0 "[parameter:country.GetName]"
+ war_demand_trade_sanctions_tooltip_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_content:1 "[parameter:country.GetName] will have sanctions put on their trade network, restricting trade for 10 years and dampening its effects for 20."
+ war_demand_trade_sanctions_tooltip_proper_header:0 "$war_demand_trade_sanctions_header$"
+ war_demand_trade_sanctions_tooltip_proper_content:1 "$war_demand_trade_sanctions_tooltip_content$"
+
+ SMALL_CIVILIAN_FISSION_REACTOR:0 "Civilian Class Fission Reactor"
+ SMALL_CIVILIAN_FISSION_REACTOR_DESC:0 "This energy source generates power through induced fission, but it also produces harmful nuclear waste. Civilian Component"
