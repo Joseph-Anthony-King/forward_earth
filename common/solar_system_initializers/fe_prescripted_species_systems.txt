@@ -90,6 +90,8 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							name_list = "HUM3"
 		
 							room = "personality_federation_builders_room"
+
+							ship_prefix = "UNS"
 							
 							authority = "auth_democratic"
 							civics = {
@@ -807,6 +809,8 @@ space_age_sol_system_initializer = {
 							name_list = "HUM3"
 		
 							room = "personality_federation_builders_room"
+
+							ship_prefix = "UNS"
 							
 							authority = "auth_democratic"
 							civics = {
@@ -2385,7 +2389,7 @@ icarus_sol_system_initializer = {
 
 ### Eta Cassiopeiae System
 eta_cassiopeiae_system_initializer = {
-	name = "NAME_Eta_Cassiopeiae"
+	name = "Eta Cassiopeiae"
 	class = "sc_g"
 	asteroids_distance = 200
 
@@ -2692,7 +2696,7 @@ eta_cassiopeiae_system_initializer = {
 	}
 	
 	planet = {
-		name = "NAME_Eta_Cassiopeiae"
+		name = "Eta Cassiopeiae"
 		class = "pc_k_star"
 		orbit_distance = 100
 		orbit_angle = 180
@@ -2745,7 +2749,7 @@ eta_cassiopeiae_system_initializer = {
 
 ### Eta Cassiopeiae System
 sol_with_eta_cassiopeiae_system_initializer = {
-	name = "NAME_Eta_Cassiopeiae"
+	name = "Eta Cassiopeiae"
 	class = "sc_g"
 	asteroids_distance = 200
 
@@ -2763,7 +2767,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 	usage = custom_empire
 	
 	planet = {
-		name = "NAME_Eta_Cassiopeiae"
+		name = "Eta Cassiopeiae"
 		class = "pc_g_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -2854,6 +2858,8 @@ sol_with_eta_cassiopeiae_system_initializer = {
 							name_list = "HUM4"
 		
 							room = "personality_hegemonic_imperialists_room"
+
+							ship_prefix = "CAS"
 
 							authority = "auth_oligarchic"
 							civics = {
@@ -3236,7 +3242,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 	}
 	
 	planet = {
-		name = "NAME_Eta_Cassiopeiae"
+		name = "Eta Cassiopeiae"
 		class = "pc_k_star"
 		orbit_distance = 100
 		orbit_angle = 180

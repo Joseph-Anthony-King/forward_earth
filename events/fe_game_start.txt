@@ -22,7 +22,7 @@ event = {
 }
 
 event = {
-    id = fe.3
+    id = fe.2
     hide_window = yes
     is_triggered_only = yes
 
@@ -174,7 +174,7 @@ event = {
                 AND = {
                     any_country = { has_country_flag = human_1 }
                     any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
-                    has_planet_flag = jackson_s_planet
+                    has_planet_flag = planet_jackson_s_planet
                 }                
             }
             set_name = "Eta Cassiopeiae B I"
@@ -185,7 +185,7 @@ event = {
                 AND = {
                     any_country = { has_country_flag = human_1 }
                     any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
-                    has_planet_flag = olympus_planet
+                    has_planet_flag = planet_olympus
                 }                
             }
             set_name = "Eta Cassiopeiae B II"

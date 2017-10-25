@@ -104,7 +104,7 @@ humans2 = {
 	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
 	initializer = "eta_cassiopeiae_system_initializer"
-	system_name = "NAME_Eta Cassiopeiae"
+	system_name = "Eta Cassiopeiae"
 	
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
