@@ -1,7 +1,7 @@
 voor = {
 	name = "Voor Technocracy"
 	adjective = "PRESCRIPTED_adjective_voor"
-	spawn_enabled = no # yes / no / always
+	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_voor"
