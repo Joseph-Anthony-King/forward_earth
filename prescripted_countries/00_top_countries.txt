@@ -37,7 +37,7 @@ humans1 = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 	
-	graphical_culture = "mammalian_01"
+	graphical_culture = "humanoid_01"
 	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
