@@ -875,18 +875,9 @@ deneb_system = {
 			size = 18
 			starting_planet = yes
 			has_ring = no
-			entity = "continental_planet_01_entity"	
+			entity = "continental_planet_13_entity"	
 			tile_blockers = none
 			modifiers = none
-			flags = { planet_unity }
-			
-			init_effect = {
-				prevent_anomaly = yes
-			}
-		
-			init_effect = {
-				generate_start_buildings_and_blockers = yes		
-			}
 		}		
 	}
 	

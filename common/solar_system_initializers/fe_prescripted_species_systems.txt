@@ -2466,7 +2466,7 @@ eta_cassiopeiae_system_initializer = {
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "continental_planet_13_entity"
+		entity = "continental_planet_01_entity"
 		flags = { planet_aurora }
 		
 		init_effect = {
@@ -2828,7 +2828,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "continental_planet_13_entity"
+		entity = "continental_planet_01_entity"
 		flags = { planet_aurora }
 		
 		init_effect = {
@@ -3357,7 +3357,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "continental_planet_13_entity"
+		entity = "continental_planet_01_entity"
 		
 		init_effect = {
 			prevent_anomaly = yes
