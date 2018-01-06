@@ -875,7 +875,7 @@ deneb_system = {
 			size = 18
 			starting_planet = yes
 			has_ring = no
-			entity = "continental_planet_13_entity"	
+			entity = "continental_planet_01_entity"	
 			tile_blockers = none
 			modifiers = none
 		}		

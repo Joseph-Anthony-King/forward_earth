@@ -74,6 +74,20 @@ Yavin
 Yildun
 Zeta Iota
 
+It also includes the reclassification of hyperlanes as hyperstreams as included in my "Currents of Space" mod.
+
+Hyperspace Travel (short description): The hyper drive allows ships to temporarily breach the dimensions of hyperspace. Interstellar travel is fast but limited to the pre-existing dark matter hyperstream system upon which the galaxy is built.
+
+Hyperspace Travel: Like bubbles within a foam the galaxy is built around a lattice matrix of dark matter. Stars are distributed across the galaxy and form where three or more such bubbles meet, a consequence of which is the space between two bubbles form 'seams' between the stars through which hyperspace can be reach. Faster than light travel is theoretically possible along these hyperstreams.
+
+Hyperstream Breach Points: We have identified the existence of points in space where a ship expends less energy to "breach" their way into a hyperstream. This will lead to a new generation of hyper drives.
+
+Hyperspace Slipstreams: A new generation of hyper drives capable of accessing higher dimensional slipstreams that are present within hyperspace. This leads to dramatically improved drive performance."
+
+Hyperstream Mapping: Although we do not travel through hyperspace, mapping the galaxy's extensive hyperstream system gives us a clear advantage against those who do.
+
+The "Currents of Space" mod can be downloaded separately from here: http://steamcommunity.com/sharedfiles/filedetails/?id=1259335981
+
 I've also created a new galaxy texture that creates a default barred spiral galaxy, even when playing in an elipitical galaxy, this more closely resembles the current measurements of the Milky Way.
 
 In order resolve any possible conflicts I have included the following mods, I want to give a shout out to all the work our modding community has done! The following mods were included:
