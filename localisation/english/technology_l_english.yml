@@ -423,7 +423,7 @@
  tech_wormhole_generation_3:0 "Wormhole Containment Fields"
  tech_wormhole_generation_3_desc:0 "These containment fields allow for the creation of more powerful wormholes without the risk of triggering a sudden subspace energy cascade."
  tech_hyper_drive_1:0 "Hyperspace Travel"
- tech_hyper_drive_1_desc:0 "Like bubbles within a foam the galaxy is built around a lattice matrix of dark matter. Stars are distributed across the galaxy and form where three or more such bubbles meet, a consequence of which is the space between two bubbles form 'seams' between the stars through which hyperspace can be reach. Faster than light travel is theoretically possible along these hyperstreams."
+ tech_hyper_drive_1_desc:0 "Like bubbles within a foam the galaxy is built around a lattice matrix of dark matter. Stars are distributed across the galaxy and form where three or more such bubbles meet, a consequence of which is the space between two bubbles form 'seams' between the stars through which the focused application of dark energy gives one access to hyperspace. Faster than light travel is theoretically possible along these hyperstreams."
  tech_hyper_drive_2:0 "Hyperstream Breach Points"
  tech_hyper_drive_2_desc:0 "We have identified the existence of points in space where a ship expends less energy to "breach" their way into a hyperstream. This will lead to a new generation of hyper drives."
  tech_hyper_drive_3:0 "Hyperspace Slipstreams"
