@@ -400,6 +400,11 @@ sol_neighbor_t1_first_colony = {
 		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t2"
 	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "sol_neighbor_t4_second_colony"
+	}
 }
 
 
@@ -718,7 +723,7 @@ sol_neighbor_t3 = {
 }
 
 # Sol Neighbor Tier 2 Second Colony
-sol_neighbor_t2_second_colony = {
+sol_neighbor_t4_second_colony = {
 	name = "NAME_Sirius"
 	class = sc_a
 
@@ -782,9 +787,11 @@ sol_neighbor_t2_second_colony = {
 	}
 	
 	planet = {
-		count = { min = 0 max = 2 }
+		name = "Sirius B"
+		class = "pc_f_star"
+		size = 10
 		orbit_angle = { min = 90 max = 270 }
-		orbit_distance = 20
+		orbit_distance = 80
 	}
 }
 
