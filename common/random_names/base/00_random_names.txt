@@ -615,6 +615,7 @@ star_names = {
 	Ashimax
 	Ashnan
 	Ashur
+	Asi
 	Asimbu
 	Aslund
 	Asmodeus
@@ -624,7 +625,6 @@ star_names = {
 	Astapor
 	Astaroth
 	Astarte
-	Asus
 	Asya
 	Asyaliya
 	Asylum
