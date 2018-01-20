@@ -4099,7 +4099,7 @@ star_names = {
 	Risumedsem
 	Risyao'li
 	Riverrun
-	Rivwndell
+	Rivendell
 	Rixim
 	Rixx
 	Riyseerna
