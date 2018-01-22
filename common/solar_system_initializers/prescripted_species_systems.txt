@@ -360,16 +360,16 @@ sol_neighbor_t1_first_colony = {
 	planet = {
 		name = "Alpha Centauri A"
 		class = "pc_g_star"
-		orbit_distance = 120
+		orbit_distance = 130
 		orbit_angle = 0
 		size = 35
 		has_ring = no
 
 		moon = {
 			name = "Alpha Centauri A I"
-			class = "pc_barren"
+			class = "pc_molten"
 			orbit_distance = 40
-			orbit_angle = 180
+			orbit_angle = 0
 			size = 15
 			has_ring = yes
 		}
@@ -380,7 +380,7 @@ sol_neighbor_t1_first_colony = {
 		name = "Proxima Centauri"
 		class = "pc_m_star"
 		orbit_distance = 230
-		orbit_angle = 135
+		orbit_angle = 270
 		size = 15
 		has_ring = no
 		change_orbit = 4
@@ -715,11 +715,6 @@ sol_neighbor_t3 = {
 			orbit_distance = 5
 		}
 	}
-	
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
-		initializer = "sol_neighbor_t3"
-	}
 }
 
 # Sol Neighbor Tier 2 Second Colony
@@ -792,6 +787,11 @@ sol_neighbor_t4_second_colony = {
 		size = 5
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 80
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t3"
 	}
 }
 
