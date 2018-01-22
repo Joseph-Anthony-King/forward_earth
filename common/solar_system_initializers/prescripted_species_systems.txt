@@ -725,7 +725,7 @@ sol_neighbor_t3 = {
 # Sol Neighbor Tier 2 Second Colony
 sol_neighbor_t4_second_colony = {
 	name = "NAME_Sirius"
-	class = sc_a
+	class = sc_f
 
 	init_effect = {
 		every_neighbor_system = {
@@ -789,7 +789,7 @@ sol_neighbor_t4_second_colony = {
 	planet = {
 		name = "Sirius B"
 		class = "pc_f_star"
-		size = 10
+		size = 5
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 80
 	}
