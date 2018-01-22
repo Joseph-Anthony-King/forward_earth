@@ -76,7 +76,7 @@ Zeta Iota
 
 It also includes the reclassification of hyperlanes as hyperstreams as included in my "Currents of Space" mod.
 
-Hyperspace Travel (short description): The hyper drive allows ships to temporarily breach the dimensions of hyperspace. Interstellar travel is fast but limited to the pre-existing dark matter hyperstream system upon which the galaxy is built.
+Hyperspace Travel (short description): The hyper drive allows ships to temporarily breach the dimensions of hyperspace. Interstellar travel is fast but limited to the pre-existing hyperstream system upon which the galaxy is built.
 
 Hyperspace Travel: Like bubbles within a foam the galaxy is built around a lattice matrix of dark matter. Stars are distributed across the galaxy and form where three or more such bubbles meet, a consequence of which is the space between two bubbles form 'seams' between the stars through which the focused application of dark energy gives one access to hyperspace. Faster than light travel is theoretically possible along these hyperstreams.
 
@@ -100,6 +100,7 @@ Real Sol Textures by Alex FRD
 Humanity Emblems by ExtraNoise
 Civilian Trade by kyojin
 Exoplanets by Gogabor
+Keplers Binary Systems by Kepler68
 Immersive Galaxy - Nightfall by Dwaine
 Immersive Galaxy - Planet Variety, Inhabitable planets by Dwaine
 Immersive Galaxy - Planet Variety, Uninhabitable planets by Dwaine

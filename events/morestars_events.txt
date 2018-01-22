@@ -1,0 +1,63 @@
+##########################
+# MORE STAR CLASSES EVENTS
+# BY KEPLER68
+##########################
+
+#SPOILERS GO AWAY
+
+namespace = morebinarystars
+
+#Genius event made by mzilli. go give him love :)
+event = {
+	id = morebinarystars.1
+	title = OK
+	desc = OK
+	hide_window = yes
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_a
+			}
+			set_name = "[This.GetName] A"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_b
+			}
+			set_name = "[This.GetName] B"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_c
+			}
+			set_name = "[This.GetName] C"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_d
+			}
+			set_name = "[This.GetName] D"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_e
+			}
+			set_name = "[This.GetName] E"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_f
+			}
+			set_name = "[This.GetName] F"
+		}
+		every_planet = {
+			limit = {
+				has_planet_flag = morestars_binary_g
+			}
+			set_name = "[This.GetName] G"
+		}
+	}
+}
