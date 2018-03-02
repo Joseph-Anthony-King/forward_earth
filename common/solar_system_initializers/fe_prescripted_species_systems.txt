@@ -54,13 +54,14 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Earth"
-		class = "pc_continental"
+		class = "pc_nuked"
 		orbit_distance = 25
 		orbit_angle = 120
 		size = 16
 		starting_planet = yes
 		has_ring = no
-		entity = "continental_planet_earth_entity"
+		entity = "nuked_planet_earth_entity"
+		anomaly = "sol_wasteland_category"
 		tile_blockers = none
 		modifiers = none
 		flags = { planet_earth }
