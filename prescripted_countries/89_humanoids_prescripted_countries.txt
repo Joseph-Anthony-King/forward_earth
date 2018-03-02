@@ -27,12 +27,10 @@ voor = {
 	government = gov_technocratic_dictatorship
 	civics = { "civic_technocracy" "civic_environmentalist" }
 	
-	weapon = "tech_lasers_1"
-	ftl = hyperdrive
-	
 	planet_name = PRESCRIPTED_planet_name_voor
 	planet_class = "pc_arctic"
 	system_name = PRESCRIPTED_system_name_voor
+	initializer = ""
 
 	graphical_culture = "humanoid_01"
 	city_graphical_culture = "humanoid_01"

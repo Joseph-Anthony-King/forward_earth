@@ -29,9 +29,6 @@ humans1 = {
 
 	flags = { human_1 custom_start_screen }
 	
-	weapon = "tech_missiles_1"
-	ftl = warp
-	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
 	initializer = "sol_system_initializer"
@@ -97,9 +94,6 @@ humans2 = {
 	ethic = "ethic_fanatic_materialist"
 
 	flags = { human_2 custom_start_screen human_faction }
-	
-	weapon = "tech_lasers_1"
-	ftl = wormhole
 	
 	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"

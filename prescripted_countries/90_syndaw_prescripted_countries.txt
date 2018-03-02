@@ -38,9 +38,6 @@ tebrid = {
 	government = gov_machine_assimilator
 	civics = { "civic_machine_assimilator" "civic_machine_predictive_analysis" }
 	
-	weapon = "tech_lasers_1"
-	ftl = hyperdrive
-	
 	planet_name = "Tebri"
 	planet_class = "pc_ocean"
 	system_name = "Tebiron"
@@ -104,7 +101,7 @@ custodianship = {
 		name = "PRESCRIPTED_species_name_humans1"
 		plural = "PRESCRIPTED_species_plural_humans1"
 		adjective = "PRESCRIPTED_species_adjective_humans1"
-		name_list = "HUM3"
+		name_list = "HUMAN1"
 		trait = "trait_adaptive"
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
@@ -119,9 +116,6 @@ custodianship = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_servitor
 	civics = { "civic_machine_servitor" "civic_machine_delegated_functions" }
-	
-	weapon = "tech_missiles_1"
-	ftl = warp
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -194,9 +188,6 @@ icarus = {
 
 	flags = { icarus_faction custom_start_screen }
 	
-	weapon = "tech_lasers_1"
-	ftl = wormhole
-	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
 	system_name = "NAME_Sol"
@@ -260,9 +251,6 @@ xt489 = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_terminator
 	civics = { "civic_machine_terminator" "civic_machine_warbots" }
-	
-	weapon = "tech_mass_drivers_1"
-	ftl = wormhole
 	
 	planet_name = "PRESCRIPTED_planet_name_xt489"
 	planet_class = "pc_desert"

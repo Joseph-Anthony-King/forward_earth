@@ -49,9 +49,6 @@ xanid = {
 	ethic = "ethic_fanatic_authoritarian"
 	ethic = "ethic_xenophobe"
 	civics = { "civic_syncretic_evolution" "civic_corvee_system" }
-
-	weapon = "tech_missiles_1"
-	ftl = warp
 	
 	graphical_culture = "arthropoid_01"
 	city_graphical_culture = "arthropoid_01"
@@ -109,8 +106,6 @@ lokken = {
 	civics = { "civic_mechanists" "civic_technocracy" }
 	authority = "auth_oligarchic"
 	government = "gov_science_directorate"
-	ftl = hyperdrive
-	weapon = "tech_lasers_1"
 	planet_name=  "PRESCRIPTED_planet_name_lokken"
 	planet_class = "pc_arid"
 	system_name = "PRESCRIPTED_system_name_lokken"
@@ -178,9 +173,6 @@ ixidar = {
 	authority = "auth_hive_mind"
 	government = gov_hive_mind
 	civics = { "civic_hive_natural_neural_network" "civic_hive_pooled_knowledge" }
-
-	weapon = "tech_mass_drivers_1"
-	ftl = hyperdrive
 	
 	graphical_culture = "arthropoid_01"
 	city_graphical_culture = "arthropoid_01"

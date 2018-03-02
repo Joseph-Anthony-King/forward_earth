@@ -18,6 +18,8 @@ sol_system_initializer = {
 				set_star_flag = empire_cluster
 			}
 		}
+		
+		generate_home_system_resources = yes
 	}
 	
 	planet = {
@@ -68,9 +70,7 @@ sol_system_initializer = {
 		}
 		
 		init_effect = {
-			if = {
-				generate_start_buildings_and_blockers = yes	
-			}
+			generate_start_buildings_and_blockers = yes
 		}
 		
 		moon = {
@@ -93,7 +93,14 @@ sol_system_initializer = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_new_mars_entity"
-		anomaly = "terraforming_candidate_category"
+
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
+		
 		flags = { planet_mars }
 		
 		moon = {

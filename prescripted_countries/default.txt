@@ -13,9 +13,6 @@ default = {
 	
 	authority = "auth_democratic"
 	
-	weapon = "tech_missiles_1"
-	ftl = warp
-	
 	planet_name = ""
 	system_name = ""
 	planet_class = "pc_continental"

@@ -31,8 +31,6 @@ maweer = {
 	government="gov_irenic_dictatorship"
 
 	adjective = "PRESCRIPTED_adjective_maweer"
-	ftl = wormhole
-	weapon = "tech_mass_drivers_1"
 	planet_name = "PRESCRIPTED_planet_name_maweer"
 	planet_class = "pc_tropical"
 	system_name = "PRESCRIPTED_system_name_maweer"
