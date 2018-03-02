@@ -4167,8 +4167,8 @@ com_sol_system = {
 					civic = civic_idealistic_foundation
 				}
 				species = event_target:human_species
-				name_list = "HUM3"
-				#ship_prefix = "UNS"
+				name_list = "HUMAN1"
+				ship_prefix = "UNS"
 				ethos = {
 					ethic = "ethic_xenophile"
 					ethic = "ethic_fanatic_egalitarian"
