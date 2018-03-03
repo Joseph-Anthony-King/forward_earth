@@ -76,9 +76,9 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle"
-		event = { time = 0 node = "custom_animation_01" particle = "ai_01_large_station_core_effect" trigger_once = yes keep_particle = yes }}
+		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_core_effect" trigger_once = yes keep_particle = yes }}
 	state = { name = "moving" animation = "idle"
-		event = { time = 0 node = "custom_animation_01" particle = "ai_01_large_station_core_effect" trigger_once = yes keep_particle = yes }}
+		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_core_effect" trigger_once = yes keep_particle = yes }}
 	state = { name = "death" animation = "idle"
-		event = { time = 0 node = "custom_animation_01" particle = "ai_01_large_station_core_effect" trigger_once = yes keep_particle = yes }}
+		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_core_effect" trigger_once = yes keep_particle = yes }}
 }

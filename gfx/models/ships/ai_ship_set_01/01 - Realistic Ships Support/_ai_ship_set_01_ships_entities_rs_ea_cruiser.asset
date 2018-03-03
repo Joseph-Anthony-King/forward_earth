@@ -49,9 +49,9 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "ai_01_small_exhaust_idle_particle" trigger_once = yes keep_particle = yes }}
+		event = { time = 0 node = "engine_small_01" particle = "ai_ship_set_small_ship_exhaust_idle_particle" trigger_once = yes keep_particle = yes }}
 	state = { name = "moving" state_time = 5
-		event = { time = 0 node = "engine_small_01" particle = "ai_01_small_exhaust_moving_particle" trigger_once = yes keep_particle = yes }}
+		event = { time = 0 node = "engine_small_01" particle = "ai_ship_set_small_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }}
 	state = { name = "death" state_time = 3.5 chance = 1 looping = no	
 		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed }}
 		event = { time = 0.5 node = "part1" particle = "ship_burn_particle" }

@@ -71,20 +71,19 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5 animation_speed = 0
-		event = { time = 0 node = "part1" particle = "ai_01_large_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_1" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_2" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_3" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_4" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_5" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }}
+		event = { time = 0 node = "part1" particle = "ai_ship_set_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_1" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_2" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_3" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_4" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_5" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
 	state = { name = "moving" state_time = 5 animation_speed = 3
-		event = { time = 0 node = "part1" particle = "ai_01_large_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "part1" particle = "ai_01_large_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_1" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_2" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_3" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_4" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "A_5" particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }}
+		event = { time = 0 node = "part1" particle = "ai_ship_set_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_1" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_2" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_3" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_4" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "A_5" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
 	state = { name = "death" state_time = 3.5 chance = 1 looping = no	
 		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed }}
 		event = { time = 0.5 node = "part1" particle = "ship_burn_particle" }

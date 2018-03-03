@@ -31,7 +31,7 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
-		event = { time = 0 particle = "ai_01_small_station_core_effect" keep_particle = yes trigger_once = yes }}
+		event = { time = 0 particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
 	state = { name = "death" state_time = 5 looping = no
 		event = { time = 4.9 particle = "medium_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
 }
