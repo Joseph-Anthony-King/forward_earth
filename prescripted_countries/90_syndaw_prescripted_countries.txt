@@ -198,8 +198,8 @@ icarus = {
 
 	empire_flag={
 		icon={
-			category = "humanity"
-			file = "flag_humanity_44.dds"
+			category = "human"
+			file = "flag_human_nato.dds"
 		}
 		background = {
 			category = "backgrounds"
