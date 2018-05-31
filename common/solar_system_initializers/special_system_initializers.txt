@@ -825,7 +825,10 @@ special_init_02 = {
 special_init_03 = {
 	name = "NAME_Sol"
 	class = "sc_g"
-	asteroids_distance = 145
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
 
 	flags = { primitive_sol sol }
 	
@@ -1461,13 +1464,36 @@ special_init_03 = {
 			has_ring = no
 		}
 	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t3"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "uncolonized_eta_cassiopeiae_system_initializer"
+	}
 }
 
 # Sol System (Nuclear Wasteland)
 special_init_04 = {
 	name = "NAME_Sol"
 	class = "sc_g"
-	asteroids_distance = 145
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
 
 	flags = { nuked_sol sol }
 	
@@ -1669,6 +1695,26 @@ special_init_04 = {
 			orbit_angle = 115
 			has_ring = no
 		}
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t3"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "uncolonized_eta_cassiopeiae_system_initializer"
 	}
 }
 
