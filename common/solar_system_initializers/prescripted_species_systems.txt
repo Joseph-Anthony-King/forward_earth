@@ -874,7 +874,10 @@ sol_neighbor_t4_second_colony = {
 deneb_system = {
 	name = "NAME_Deneb"
 	class = "sc_a"
-	asteroids_distance = 90
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
 
 	init_effect = {
 		every_neighbor_system = {
