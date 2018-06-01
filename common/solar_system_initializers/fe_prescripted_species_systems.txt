@@ -2509,154 +2509,161 @@ eta_cassiopeiae_system_initializer = {
 				flags = { planet_eurus }
 			}		
 		}
-		
+
 		planet = {
-			name = "NAME_Aurora"
-			class = "pc_continental"
+			class = pc_asteroid
 			orbit_distance = 40
 			orbit_angle = 120
-			size = 16
-			starting_planet = yes
-			has_ring = no
-			tile_blockers = none
-			modifiers = none
-			entity = "continental_planet_01_entity"
-			flags = { planet_aurora }
-			
-			init_effect = {
-				prevent_anomaly = yes
-			}
-			
-			init_effect = {
+			size = 0
+		
+			planet = {
+				name = "NAME_Aurora"
+				class = "pc_continental"
+				orbit_distance = 10
+				orbit_angle = -90
+				size = 16
+				starting_planet = yes
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+				entity = "continental_planet_01_entity"
+				flags = { planet_aurora }
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}
+				
+				init_effect = {
 
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_noxious_swamp"
-					set_deposit = d_engineering_deposit			
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_noxious_swamp"
-					set_deposit = d_society_deposit			
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_massive_glacier"
-					set_deposit = d_physics_deposit			
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_massive_glacier"
-					set_deposit = d_rich_energy_deposit				
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_dangerous_wildlife"
-					set_deposit = d_rich_farmland_deposit				
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_blocker = "tb_dangerous_wildlife"
-					set_deposit = d_rich_mineral_deposit			
-				}
-
-				random_tile = {
-					limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-					set_building = "building_capital_1"
-					set_deposit = d_energy_deposit				
-					random_neighboring_tile = {					
-					}
-					create_pop = {
-						species = last_created_country
-						ethos = last_created
-					}
-				}
-
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					set_deposit = d_rich_farmland_deposit
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_hydroponics_farm_1"
-					set_deposit = d_rich_farmland_deposit						
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					set_deposit = d_rich_energy_deposit
-
-					build_pop = {
-						name = buildable_robot_pop_1
-					}						
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_power_plant_1"
-					set_deposit = d_rich_energy_deposit
-
-					build_pop = {
-						name = buildable_robot_pop_1
-					}					
-				}
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					set_deposit = d_rich_mineral_deposit
-					
-					build_pop = {
-						name = buildable_robot_pop_1
-					}		
-				}	
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_mining_network_1"
-					set_deposit = d_rich_mineral_deposit
-					
-					build_pop = {
-						name = buildable_robot_pop_1
-					}		
-				}
-
-				random_tile = {
-					limit = { has_blocker = no has_building = no }
-					set_building = "building_basic_science_lab_1"
-					random_list = {
-						33 = { 
-							set_deposit = d_engineering_deposit										
-						}
-						33 = { 
-							set_deposit = d_society_deposit											
-						}
-						33 = { 
-							set_deposit = d_physics_deposit											
-						}					
-					}					
-				}
-				while = {
-					count = 8
 					random_tile = {
-						limit = {
-							has_building = yes
-							has_grown_pop = no
-							has_growing_pop = no
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_noxious_swamp"
+						set_deposit = d_engineering_deposit			
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_noxious_swamp"
+						set_deposit = d_society_deposit			
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_massive_glacier"
+						set_deposit = d_physics_deposit			
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_massive_glacier"
+						set_deposit = d_rich_energy_deposit				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_dangerous_wildlife"
+						set_deposit = d_rich_farmland_deposit				
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_blocker = "tb_dangerous_wildlife"
+						set_deposit = d_rich_mineral_deposit			
+					}
+
+					random_tile = {
+						limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+						set_building = "building_capital_1"
+						set_deposit = d_energy_deposit				
+						random_neighboring_tile = {					
 						}
 						create_pop = {
-							species = owner_main_species
+							species = last_created_country
+							ethos = last_created
 						}
 					}
-				}
-				last_created_country = {
-					capital_scope = { set_name = "Aurora" }
+
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_hydroponics_farm_1"
+						set_deposit = d_rich_farmland_deposit
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_hydroponics_farm_1"
+						set_deposit = d_rich_farmland_deposit						
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_power_plant_1"
+						set_deposit = d_rich_energy_deposit
+
+						build_pop = {
+							name = buildable_robot_pop_1
+						}						
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_power_plant_1"
+						set_deposit = d_rich_energy_deposit
+
+						build_pop = {
+							name = buildable_robot_pop_1
+						}					
+					}
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_mining_network_1"
+						set_deposit = d_rich_mineral_deposit
+						
+						build_pop = {
+							name = buildable_robot_pop_1
+						}		
+					}	
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_mining_network_1"
+						set_deposit = d_rich_mineral_deposit
+						
+						build_pop = {
+							name = buildable_robot_pop_1
+						}		
+					}
+
+					random_tile = {
+						limit = { has_blocker = no has_building = no }
+						set_building = "building_basic_science_lab_1"
+						random_list = {
+							33 = { 
+								set_deposit = d_engineering_deposit										
+							}
+							33 = { 
+								set_deposit = d_society_deposit											
+							}
+							33 = { 
+								set_deposit = d_physics_deposit											
+							}					
+						}					
+					}
+					while = {
+						count = 8
+						random_tile = {
+							limit = {
+								has_building = yes
+								has_grown_pop = no
+								has_growing_pop = no
+							}
+							create_pop = {
+								species = owner_main_species
+							}
+						}
+					}
+					last_created_country = {
+						capital_scope = { set_name = "Aurora" }
+					}
 				}
 			}
-			
+
 			planet = {
 				name = "NAME_Tithonus"
 				class = "pc_arid"
-				orbit_distance = 15
-				orbit_angle = 40
+				orbit_distance = 0
+				orbit_angle = 180
 				size = 13
 				has_ring = no
 				tile_blockers = none
@@ -2770,12 +2777,25 @@ eta_cassiopeiae_system_initializer = {
 		planet = {
 			name = "NAME_Olympus"
 			class = pc_gas_giant
-			orbit_distance = 30
+			orbit_distance = 40
 			orbit_angle = 5
 			size = 20
 			has_ring = yes
 			entity = "gas_giant_09_entity"
 			flags = { planet_olympus }
+
+			moon = {
+				name = "NAME_Horae"
+				class = pc_frozen
+				orbit_distance = 14
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				entity = "frozen_planet_04_entity"
+				tile_blockers = none
+				modifiers = none
+				flags = { planet_horae }
+			}
 		}
 	}
 	
@@ -2889,331 +2909,338 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				flags = { planet_eurus }
 			}		
 		}
-		
+
 		planet = {
-			name = "NAME_Aurora"
-			class = "pc_continental"
+			class = pc_asteroid
 			orbit_distance = 40
 			orbit_angle = 120
-			size = 16
-			starting_planet = yes
-			has_ring = no
-			tile_blockers = none
-			modifiers = none
-			entity = "continental_planet_01_entity"
-			flags = { planet_aurora }
-			
-			init_effect = {
-				prevent_anomaly = yes
-			}
+			size = 0
 		
-			init_effect = {
-				if = {
-					limit = { NOT = { any_country = { has_country_flag = human_2 } } }
-					random_list = {
-						# Colonized
-						90 = {
-							create_species = {
-								name = Human
-								plural = Humans
-								class = "HUM"
-								portrait = "human"
-								homeworld = THIS
-								traits = {
-									trait = "trait_adaptive"
-									trait = "trait_nomadic"	
-									trait = "trait_wasteful"
-								}
-							}
-							create_country = {
-								name = "NAME_Commonwealth_of_Aurora"
-								name_list = "HUMAN2"
+			planet = {
+				name = "NAME_Aurora"
+				class = "pc_continental"
+				orbit_distance = 10
+				orbit_angle = -90
+				size = 16
+				starting_planet = yes
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+				entity = "continental_planet_01_entity"
+				flags = { planet_aurora }
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}
 			
-								room = "personality_hegemonic_imperialists_room"
-
-								ship_prefix = "CAS"
-
-								authority = "auth_oligarchic"
-								civics = {
-									civic = civic_meritocracy
-									civic = civic_citizen_service
-								}							
-								government = gov_citizen_stratocracy
-								
-								species = last_created
-								ethos = {
-									ethic = "ethic_militarist"
-									ethic = "ethic_fanatic_materialist"			
-								}
-
-								flag = {
-									icon= {
-										category = "human"
-										file = "flag_human_4.dds"
-									}
-									background= {
-										category = "backgrounds"
-										file = "stripe.dds"
-									}
-									colors={
-										"red"
-										"black"
-										"null"
-										"null"
+				init_effect = {
+					if = {
+						limit = { NOT = { any_country = { has_country_flag = human_2 } } }
+						random_list = {
+							# Colonized
+							90 = {
+								create_species = {
+									name = Human
+									plural = Humans
+									class = "HUM"
+									portrait = "human"
+									homeworld = THIS
+									traits = {
+										trait = "trait_adaptive"
+										trait = "trait_nomadic"	
+										trait = "trait_wasteful"
 									}
 								}
-								type = default
-							}
-							last_created_country = {
-									set_graphical_culture = mammalian_01
-									set_country_flag = human_2
-									set_country_flag = human_2_starbase
-									save_global_event_target_as = CoE
-							}
-							create_colony = {
-								owner = last_created_country
-								species = last_created
-								ethos = {
-									ethic = "ethic_xenophobe"
-									ethic = "ethic_fanatic_militarist"			
-								}
-							}
-							every_tile = {
-								limit = {
-									has_blocker = yes
-								}
-								remove_blocker = yes
-							}
-							random_tile = {
-								limit = { has_building = "building_colony_shelter" }
-								remove_building = yes
-							}				
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_noxious_swamp"
-								set_deposit = d_engineering_deposit			
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_noxious_swamp"
-								set_deposit = d_society_deposit			
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_massive_glacier"
-								set_deposit = d_physics_deposit			
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_massive_glacier"
-								set_deposit = d_rich_energy_deposit				
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_dangerous_wildlife"
-								set_deposit = d_rich_farmland_deposit				
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_blocker = "tb_dangerous_wildlife"
-								set_deposit = d_rich_mineral_deposit			
-							}
-											
-							create_army = {
-								name = "1st Colonial Garrison"
-								owner = last_created
-								species = last_created
-								type = "defense_army"
-							}
-							create_army = {
-								name = "2nd Colonial Garrison"
-								owner = last_created
-								species = last_created
-								type = "defense_army"
-							}
-							create_army = {
-								name = "3rd Colonial Garrison"
-								owner = last_created
-								species = last_created
-								type = "defense_army"
-							}
-							create_army = {
-								name = "4th Colonial Garrison"
-								owner = last_created
-								species = last_created
-								type = "defense_army"
-							}
-							create_army = {
-								name = "5th Colonial Garrison"
-								owner = last_created
-								species = last_created
-								type = "defense_army"
-							}
+								create_country = {
+									name = "NAME_Commonwealth_of_Aurora"
+									name_list = "HUMAN2"
+				
+									room = "personality_hegemonic_imperialists_room"
 
-							system_star = {
+									ship_prefix = "CAS"
 
-								#science
-								create_fleet = {
-									effect = {
-										set_owner = last_created_country
+									authority = "auth_oligarchic"
+									civics = {
+										civic = civic_meritocracy
+										civic = civic_citizen_service
+									}							
+									government = gov_citizen_stratocracy
+									
+									species = last_created
+									ethos = {
+										ethic = "ethic_militarist"
+										ethic = "ethic_fanatic_materialist"			
+									}
 
-										create_ship = {
-											name = random
-											random_existing_design = science
+									flag = {
+										icon= {
+											category = "human"
+											file = "flag_human_4.dds"
 										}
-
-										set_fleet_stance = evasive
-										set_location = PREV
-
-										owner = {
-											create_leader = {
-												type = scientist
-												sub_type = survey
-												name = random
-												species = owner_main_species
-											}
+										background= {
+											category = "backgrounds"
+											file = "stripe.dds"
 										}
-										set_leader = last_created_leader
+										colors={
+											"red"
+											"black"
+											"null"
+											"null"
+										}
+									}
+									type = default
+								}
+								last_created_country = {
+										set_graphical_culture = mammalian_01
+										set_country_flag = human_2
+										set_country_flag = human_2_starbase
+										save_global_event_target_as = CoE
+								}
+								create_colony = {
+									owner = last_created_country
+									species = last_created
+									ethos = {
+										ethic = "ethic_xenophobe"
+										ethic = "ethic_fanatic_militarist"			
 									}
 								}
-
-								#constructor
-								create_fleet = {
-									effect = {
-										set_owner = last_created_country
-
-										create_ship = {
-											name = random
-											random_existing_design = constructor
-										}
-
-										set_fleet_stance = evasive
-										set_location = PREV
+								every_tile = {
+									limit = {
+										has_blocker = yes
 									}
+									remove_blocker = yes
+								}
+								random_tile = {
+									limit = { has_building = "building_colony_shelter" }
+									remove_building = yes
+								}				
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_noxious_swamp"
+									set_deposit = d_engineering_deposit			
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_noxious_swamp"
+									set_deposit = d_society_deposit			
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_massive_glacier"
+									set_deposit = d_physics_deposit			
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_massive_glacier"
+									set_deposit = d_rich_energy_deposit				
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_dangerous_wildlife"
+									set_deposit = d_rich_farmland_deposit				
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_blocker = "tb_dangerous_wildlife"
+									set_deposit = d_rich_mineral_deposit			
+								}
+												
+								create_army = {
+									name = "1st Colonial Garrison"
+									owner = last_created
+									species = last_created
+									type = "defense_army"
+								}
+								create_army = {
+									name = "2nd Colonial Garrison"
+									owner = last_created
+									species = last_created
+									type = "defense_army"
+								}
+								create_army = {
+									name = "3rd Colonial Garrison"
+									owner = last_created
+									species = last_created
+									type = "defense_army"
+								}
+								create_army = {
+									name = "4th Colonial Garrison"
+									owner = last_created
+									species = last_created
+									type = "defense_army"
+								}
+								create_army = {
+									name = "5th Colonial Garrison"
+									owner = last_created
+									species = last_created
+									type = "defense_army"
 								}
 
-								#military
-								create_fleet = {
-									set_take_point = yes
-									effect = {
-										set_owner = last_created_country
+								system_star = {
 
-										while = {
-											count = 3
+									#science
+									create_fleet = {
+										effect = {
+											set_owner = last_created_country
+
 											create_ship = {
 												name = random
-												random_existing_design = corvette
+												random_existing_design = science
 											}
+
+											set_fleet_stance = evasive
+											set_location = PREV
+
+											owner = {
+												create_leader = {
+													type = scientist
+													sub_type = survey
+													name = random
+													species = owner_main_species
+												}
+											}
+											set_leader = last_created_leader
 										}
+									}
 
-										set_location = PREV
+									#constructor
+									create_fleet = {
+										effect = {
+											set_owner = last_created_country
+
+											create_ship = {
+												name = random
+												random_existing_design = constructor
+											}
+
+											set_fleet_stance = evasive
+											set_location = PREV
+										}
+									}
+
+									#military
+									create_fleet = {
+										set_take_point = yes
+										effect = {
+											set_owner = last_created_country
+
+											while = {
+												count = 3
+												create_ship = {
+													name = random
+													random_existing_design = corvette
+												}
+											}
+
+											set_location = PREV
+										}
 									}
 								}
-							}
 
-							random_tile = {
-								limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
-								set_building = "building_capital_1"
-								set_deposit = d_energy_deposit				
-								random_neighboring_tile = {					
-								}
-								create_pop = {
-									species = last_created_country
-									ethos = last_created
-								}
-							}
-
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_hydroponics_farm_1"
-								set_deposit = d_rich_farmland_deposit
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_hydroponics_farm_1"
-								set_deposit = d_rich_farmland_deposit						
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_power_plant_1"
-								set_deposit = d_rich_energy_deposit
-
-								build_pop = {
-									name = buildable_robot_pop_1
-								}						
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_power_plant_1"
-								set_deposit = d_rich_energy_deposit
-
-								build_pop = {
-									name = buildable_robot_pop_1
-								}					
-							}
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_mining_network_1"
-								set_deposit = d_rich_mineral_deposit
-								
-								build_pop = {
-									name = buildable_robot_pop_1
-								}		
-							}	
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_mining_network_1"
-								set_deposit = d_rich_mineral_deposit
-								
-								build_pop = {
-									name = buildable_robot_pop_1
-								}		
-							}
-
-							random_tile = {
-								limit = { has_blocker = no has_building = no }
-								set_building = "building_basic_science_lab_1"
-								random_list = {
-									33 = { 
-										set_deposit = d_engineering_deposit										
-									}
-									33 = { 
-										set_deposit = d_society_deposit											
-									}
-									33 = { 
-										set_deposit = d_physics_deposit											
-									}					
-								}					
-							}
-							while = {
-								count = 8
 								random_tile = {
-									limit = {
-										has_building = yes
-										has_grown_pop = no
-										has_growing_pop = no
+									limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
+									set_building = "building_capital_1"
+									set_deposit = d_energy_deposit				
+									random_neighboring_tile = {					
 									}
 									create_pop = {
-										species = owner_main_species
+										species = last_created_country
+										ethos = last_created
 									}
 								}
+
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_hydroponics_farm_1"
+									set_deposit = d_rich_farmland_deposit
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_hydroponics_farm_1"
+									set_deposit = d_rich_farmland_deposit						
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_power_plant_1"
+									set_deposit = d_rich_energy_deposit
+
+									build_pop = {
+										name = buildable_robot_pop_1
+									}						
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_power_plant_1"
+									set_deposit = d_rich_energy_deposit
+
+									build_pop = {
+										name = buildable_robot_pop_1
+									}					
+								}
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_mining_network_1"
+									set_deposit = d_rich_mineral_deposit
+									
+									build_pop = {
+										name = buildable_robot_pop_1
+									}		
+								}	
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_mining_network_1"
+									set_deposit = d_rich_mineral_deposit
+									
+									build_pop = {
+										name = buildable_robot_pop_1
+									}		
+								}
+
+								random_tile = {
+									limit = { has_blocker = no has_building = no }
+									set_building = "building_basic_science_lab_1"
+									random_list = {
+										33 = { 
+											set_deposit = d_engineering_deposit										
+										}
+										33 = { 
+											set_deposit = d_society_deposit											
+										}
+										33 = { 
+											set_deposit = d_physics_deposit											
+										}					
+									}					
+								}
+								while = {
+									count = 8
+									random_tile = {
+										limit = {
+											has_building = yes
+											has_grown_pop = no
+											has_growing_pop = no
+										}
+										create_pop = {
+											species = owner_main_species
+										}
+									}
+								}
+								last_created_country = {
+									capital_scope = { set_name = "Aurora" }
+								}
 							}
-							last_created_country = {
-								capital_scope = { set_name = "Aurora" }
+							# Uncolonized
+							10 = {
 							}
-						}
-						# Uncolonized
-						10 = {
 						}
 					}
 				}
 			}
-			
+				
 			planet = {
 				name = "NAME_Tithonus"
 				class = "pc_arid"
-				orbit_distance = 15
-				orbit_angle = 40
+				orbit_distance = 0
+				orbit_angle = 180
 				size = 13
 				has_ring = no
 				tile_blockers = none
@@ -3328,12 +3355,25 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		planet = {
 			name = "NAME_Olympus"
 			class = pc_gas_giant
-			orbit_distance = 30
+			orbit_distance = 40
 			orbit_angle = 5
 			size = 20
 			has_ring = yes
 			entity = "gas_giant_09_entity"
 			flags = { planet_olympus }
+
+			moon = {
+				name = "NAME_Horae"
+				class = pc_frozen
+				orbit_distance = 14
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				entity = "frozen_planet_04_entity"
+				tile_blockers = none
+				modifiers = none
+				flags = { planet_horae }
+			}
 		}
 	}
 	
@@ -3421,25 +3461,32 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 				flags = { planet_eurus }
 			}		
 		}
-	
+
 		planet = {
-			class = "pc_continental"
+			class = pc_asteroid
 			orbit_distance = 40
 			orbit_angle = 120
-			size = 16
-			has_ring = no
-			tile_blockers = none
-			modifiers = none
-			entity = "continental_planet_01_entity"
-			
-			init_effect = {
-				prevent_anomaly = yes
+			size = 0
+	
+			planet = {
+				class = "pc_continental"
+				orbit_distance = 10
+				orbit_angle = -90
+				size = 16
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+				entity = "continental_planet_01_entity"
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}
 			}
-			
+				
 			planet = {
 				class = "pc_arid"
-				orbit_distance = 15
-				orbit_angle = 40
+				orbit_distance = 0
+				orbit_angle = 180
 				size = 13
 				has_ring = no
 				tile_blockers = none
@@ -3550,6 +3597,18 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 			has_ring = yes
 			entity = "gas_giant_09_entity"
 			flags = { planet_olympus }
+
+			moon = {
+				class = pc_frozen
+				orbit_distance = 14
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				entity = "frozen_planet_04_entity"
+				tile_blockers = none
+				modifiers = none
+				flags = { planet_horae }
+			}
 		}
 	}
 	

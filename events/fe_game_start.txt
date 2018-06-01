@@ -190,6 +190,17 @@ event = {
             }
             set_name = "Eta Cassiopeiae B II"
         }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    any_country = { NOT = { any_country = { has_country_flag = human_2 } } }
+                    has_planet_flag = planet_horae
+                }                
+            }
+            set_name = "Eta Cassiopeiae B IIb"
+        }
     }
 }
 
