@@ -660,7 +660,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	planet = {
 		name = "NAME_Saturn"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
@@ -668,11 +668,21 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "frozen_planet_09_entity"
+		}
+		
+		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
-			orbit_angle = 320
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
@@ -681,11 +691,30 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	planet = {
 		name = "NAME_Uranus"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			name = "NAME_Titania"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_01_entity"
+		}		
+		moon = {
+			name = "NAME_Oberon"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_02_entity"
+		}
 	}
 	
 	planet = {
@@ -1391,7 +1420,7 @@ space_age_sol_system_initializer = {
 	planet = {
 		name = "NAME_Saturn"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
@@ -1399,11 +1428,21 @@ space_age_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "frozen_planet_09_entity"
+		}
+		
+		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
-			orbit_angle = 320
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
@@ -1412,11 +1451,30 @@ space_age_sol_system_initializer = {
 	planet = {
 		name = "NAME_Uranus"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			name = "NAME_Titania"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_01_entity"
+		}		
+		moon = {
+			name = "NAME_Oberon"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_02_entity"
+		}
 	}
 	
 	planet = {
@@ -2086,11 +2144,10 @@ primitive_sol_system_initializer = {
 			entity = "moon_jup_callisto_entity"
 		}
 	}
-
 	
 	planet = {
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
@@ -2099,9 +2156,18 @@ primitive_sol_system_initializer = {
 		
 		moon = {
 			class = "pc_frozen"
-			size = 8
+			size = 6
 			orbit_distance = 12
-			orbit_angle = 320
+			orbit_angle = 66
+			has_ring = no
+			entity = "frozen_planet_09_entity"
+		}
+		
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
@@ -2109,16 +2175,33 @@ primitive_sol_system_initializer = {
 	
 	planet = {
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_01_entity"
+		}		
+		moon = {
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_02_entity"
+		}
 	}
 	
 	planet = {
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = -195
 		size = 20
 		has_ring = no
@@ -2368,7 +2451,7 @@ icarus_sol_system_initializer = {
 	planet = {
 		name = "NAME_Saturn"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 170
 		size = 30
 		has_ring = yes
@@ -2376,11 +2459,21 @@ icarus_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
+			name = "NAME_Enceladus"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "frozen_planet_09_entity"
+		}
+		
+		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
-			orbit_angle = 320
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
@@ -2389,11 +2482,30 @@ icarus_sol_system_initializer = {
 	planet = {
 		name = "NAME_Uranus"
 		class = "pc_gas_giant"
-		orbit_distance = 25
+		orbit_distance = 30
 		orbit_angle = 125
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			name = "NAME_Titania"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_01_entity"
+		}		
+		moon = {
+			name = "NAME_Oberon"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "cold_barren_planet_02_entity"
+		}
 	}
 	
 	planet = {
