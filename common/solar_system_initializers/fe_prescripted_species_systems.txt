@@ -2552,7 +2552,7 @@ icarus_sol_system_initializer = {
 ### Eta Cassiopeiae System
 eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
-	class = sc_binary_7
+	class = sc_binary_8
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
@@ -2937,7 +2937,7 @@ eta_cassiopeiae_system_initializer = {
 ### Eta Cassiopeiae System
 sol_with_eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
-	class = sc_binary_7
+	class = sc_binary_8
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
@@ -3508,7 +3508,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 ### Eta Cassiopeiae System
 uncolonized_eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
-	class = sc_binary_7
+	class = sc_binary_8
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
