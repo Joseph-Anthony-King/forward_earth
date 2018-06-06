@@ -240,5 +240,12 @@ event = {
         random_system = {
             spawn_system = { initializer = "deneb_system" }
         }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = aurora_barycenter              
+            }
+            set_name = ""
+        }
     }
 }

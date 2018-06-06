@@ -2627,6 +2627,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
+			flags = { aurora_barycenter }
 		
 			planet = {
 				name = "NAME_Aurora"
@@ -3027,6 +3028,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
+			flags = { aurora_barycenter }
 		
 			planet = {
 				name = "NAME_Aurora"
@@ -3579,6 +3581,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
+			flags = { aurora_barycenter }
 	
 			planet = {
 				class = "pc_continental"
