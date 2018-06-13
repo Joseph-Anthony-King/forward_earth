@@ -248,4 +248,18 @@ event = {
             set_name = ""
         }
     }
+
+    immediate = {
+
+        random_system = {
+            spawn_system = { initializer = "eridani_system" }
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = eridani_barycenter              
+            }
+            set_name = ""
+        }
+    }
 }

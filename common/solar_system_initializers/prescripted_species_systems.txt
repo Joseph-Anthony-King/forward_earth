@@ -543,6 +543,11 @@ sol_neighbor_t1 = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t2_second_colony"
 	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t3_second_colony"
+	}
 }
 
 # Sol Neighbor Tier 2
@@ -748,6 +753,201 @@ sol_neighbor_t2_second_colony = {
 			size = 10
 			orbit_distance = 15
 			orbit_angle = 70
+			has_ring = no
+		}
+	}
+}
+
+# Sol Neighbor Tier 2
+sol_neighbor_t3_second_colony = {
+	name = "40 Eridani"
+	class = sc_trinary_5
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	flags = { eridani_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "40 Eridani A"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_savannah"
+		orbit_distance = 35
+		orbit_angle = 200
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		entity = "savannah_planet_03_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_arctic"
+		orbit_distance = 25
+		orbit_angle = 30
+		size = 16
+		has_ring = no
+		entity = "arctic_planet_05_entity"
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 45
+		orbit_angle = 170
+		size = 40
+		has_ring = yes
+		
+		moon = {
+			class = "pc_toxic"
+			size = 16
+			orbit_distance = 25
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 5
+			orbit_angle = 130
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 80
+		orbit_angle = 200
+		size = 0
+		has_ring = no
+		flags = { eridani_barycenter }
+
+		planet = {
+			name = "40 Eridani B"
+			count = 1
+			class = pc_f_star
+			orbit_distance = 30
+			orbit_angle = 90
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "40 Eridani C"
+			count = 1
+			class = pc_m_star
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 15
 			has_ring = no
 		}
 	}
