@@ -803,7 +803,7 @@ sol_neighbor_t3_second_colony = {
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "savannah_planet_03_entity"
+		entity = "savannah_planet_01_entity"
 		
 		init_effect = {
 			prevent_anomaly = yes
