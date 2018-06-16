@@ -806,6 +806,10 @@ sol_neighbor_t3_second_colony = {
 		entity = "desert_planet_02_entity"
 		
 		init_effect = {
+			add_modifier = {
+				modifier = "high_gravity"
+				days = -1
+			}
 			prevent_anomaly = yes
 		}
 		
