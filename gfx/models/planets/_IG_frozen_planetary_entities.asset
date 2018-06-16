@@ -1,31 +1,34 @@
+###########################
+# New frozen planets
+###########################
+# frozen 04 to 30
+# Diffuse: 2k | Normal: 2k | Specular: 2k
+# Last version : .180609
+###########################
 # Frozen Planet 04
 entity = {
 	name = "frozen_planet_04_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_04_diffuse.dds"
-	texture_normal = "ig_frozen_04_normal.dds"
-	texture_specular = "ig_frozen_04_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_04_2k_diffuse.dds"
+		texture_normal = "ig_frozen_04_2k_normal.dds"
+		texture_specular = "ig_frozen_04_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_10_diffuse.dds"
-	texture_normal = "ig_clouds_medium_10_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_10_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_10_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_10_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_10_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -36,30 +39,26 @@ entity = {
 entity = {
 	name = "frozen_planet_05_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_05_diffuse.dds"
-	texture_normal = "ig_frozen_05_normal.dds"
-	texture_specular = "ig_frozen_05_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_05_2k_diffuse.dds"
+		texture_normal = "ig_frozen_05_2k_normal.dds"
+		texture_specular = "ig_frozen_05_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_09_diffuse.dds"
-	texture_normal = "ig_clouds_medium_09_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_09_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_09_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_09_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_09_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -70,30 +69,26 @@ entity = {
 entity = {
 	name = "frozen_planet_06_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_06_diffuse.dds"
-	texture_normal = "ig_frozen_06_normal.dds"
-	texture_specular = "ig_frozen_06_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_06_2k_diffuse.dds"
+		texture_normal = "ig_frozen_06_2k_normal.dds"
+		texture_specular = "ig_frozen_06_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_08_diffuse.dds"
-	texture_normal = "ig_clouds_medium_08_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_08_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_08_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_08_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_08_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -104,30 +99,26 @@ entity = {
 entity = {
 	name = "frozen_planet_07_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_07_diffuse.dds"
-	texture_normal = "ig_frozen_07_normal.dds"
-	texture_specular = "ig_frozen_07_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_07_2k_diffuse.dds"
+		texture_normal = "ig_frozen_07_2k_normal.dds"
+		texture_specular = "ig_frozen_07_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_07_diffuse.dds"
-	texture_normal = "ig_clouds_medium_07_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_07_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_07_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_medium_07_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_07_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -138,30 +129,26 @@ entity = {
 entity = {
 	name = "frozen_planet_08_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_08_diffuse.dds"
-	texture_normal = "ig_frozen_08_normal.dds"
-	texture_specular = "ig_frozen_08_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_08_2k_diffuse.dds"
+		texture_normal = "ig_frozen_08_2k_normal.dds"
+		texture_specular = "ig_frozen_08_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_diffuse.dds"
-	texture_normal = "ig_clouds_light_04_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -172,14 +159,12 @@ entity = {
 entity = {
 	name = "frozen_planet_09_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_09_diffuse.dds"
-	texture_normal = "ig_frozen_09_normal.dds"
-	texture_specular = "ig_frozen_09_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_09_2k_diffuse.dds"
+		texture_normal = "ig_frozen_09_2k_normal.dds"
+		texture_specular = "ig_frozen_09_2k_specular.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -190,30 +175,26 @@ entity = {
 entity = {
 	name = "frozen_planet_10_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_10_diffuse.dds"
-	texture_normal = "ig_frozen_10_normal.dds"
-	texture_specular = "ig_frozen_10_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_10_2k_diffuse.dds"
+		texture_normal = "ig_frozen_10_2k_normal.dds"
+		texture_specular = "ig_frozen_10_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_diffuse.dds"
-	texture_normal = "ig_clouds_light_05_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -224,14 +205,12 @@ entity = {
 entity = {
 	name = "frozen_planet_11_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_11_diffuse.dds"
-	texture_normal = "ig_frozen_11_normal.dds"
-	texture_specular = "ig_frozen_11_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_11_2k_diffuse.dds"
+		texture_normal = "ig_frozen_11_2k_normal.dds"
+		texture_specular = "ig_frozen_11_2k_specular.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -242,30 +221,26 @@ entity = {
 entity = {
 	name = "frozen_planet_12_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_12_diffuse.dds"
-	texture_normal = "ig_frozen_12_normal.dds"
-	texture_specular = "ig_frozen_12_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_12_2k_diffuse.dds"
+		texture_normal = "ig_frozen_12_2k_normal.dds"
+		texture_specular = "ig_frozen_12_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_diffuse.dds"
-	texture_normal = "ig_clouds_light_03_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_03_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -276,30 +251,26 @@ entity = {
 entity = {
 	name = "frozen_planet_13_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_13_diffuse.dds"
-	texture_normal = "ig_frozen_13_normal.dds"
-	texture_specular = "ig_frozen_13_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_13_2k_diffuse.dds"
+		texture_normal = "ig_frozen_13_2k_normal.dds"
+		texture_specular = "ig_frozen_13_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_diffuse.dds"
-	texture_normal = "ig_clouds_light_02_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_02_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -310,30 +281,26 @@ entity = {
 entity = {
 	name = "frozen_planet_14_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_14_diffuse.dds"
-	texture_normal = "ig_frozen_14_normal.dds"
-	texture_specular = "ig_frozen_14_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_14_2k_diffuse.dds"
+		texture_normal = "ig_frozen_14_2k_normal.dds"
+		texture_specular = "ig_frozen_14_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_diffuse.dds"
-	texture_normal = "ig_clouds_light_03_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_03_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -344,30 +311,26 @@ entity = {
 entity = {
 	name = "frozen_planet_15_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_15_diffuse.dds"
-	texture_normal = "ig_frozen_15_normal.dds"
-	texture_specular = "ig_frozen_15_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_15_2k_diffuse.dds"
+		texture_normal = "ig_frozen_15_2k_normal.dds"
+		texture_specular = "ig_frozen_15_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_diffuse.dds"
-	texture_normal = "ig_clouds_light_04_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -378,30 +341,26 @@ entity = {
 entity = {
 	name = "frozen_planet_16_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_16_diffuse.dds"
-	texture_normal = "ig_frozen_16_normal.dds"
-	texture_specular = "ig_frozen_16_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_16_2k_diffuse.dds"
+		texture_normal = "ig_frozen_16_2k_normal.dds"
+		texture_specular = "ig_frozen_16_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_diffuse.dds"
-	texture_normal = "ig_clouds_light_01_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -412,30 +371,26 @@ entity = {
 entity = {
 	name = "frozen_planet_17_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_17_diffuse.dds"
-	texture_normal = "ig_frozen_17_normal.dds"
-	texture_specular = "ig_frozen_17_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_17_2k_diffuse.dds"
+		texture_normal = "ig_frozen_17_2k_normal.dds"
+		texture_specular = "ig_frozen_17_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_diffuse.dds"
-	texture_normal = "ig_clouds_light_01_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -446,64 +401,42 @@ entity = {
 entity = {
 	name = "frozen_planet_18_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_18_diffuse.dds"
-	texture_normal = "ig_frozen_18_normal.dds"
-	texture_specular = "ig_frozen_18_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_18_2k_diffuse.dds"
+		texture_normal = "ig_frozen_18_2k_normal.dds"
+		texture_specular = "ig_frozen_18_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_diffuse.dds"
-	texture_normal = "ig_clouds_light_02_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_02_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
-# Frozen Planet 19
+# Frozen Planet 19, no clouds
 entity = {
 	name = "frozen_planet_19_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_19_diffuse.dds"
-	texture_normal = "ig_frozen_19_normal.dds"
-	texture_specular = "ig_frozen_19_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_19_2k_diffuse.dds"
+		texture_normal = "ig_frozen_19_2k_normal.dds"
+		texture_specular = "ig_frozen_19_2k_specular.dds"
 	}
-	
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_diffuse.dds"
-	texture_normal = "ig_clouds_light_03_normal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -514,30 +447,26 @@ entity = {
 entity = {
 	name = "frozen_planet_20_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_20_diffuse.dds"
-	texture_normal = "ig_frozen_20_normal.dds"
-	texture_specular = "ig_frozen_20_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_20_2k_diffuse.dds"
+		texture_normal = "ig_frozen_20_2k_normal.dds"
+		texture_specular = "ig_frozen_20_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_diffuse.dds"
-	texture_normal = "ig_clouds_light_04_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -548,98 +477,58 @@ entity = {
 entity = {
 	name = "frozen_planet_21_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_21_diffuse.dds"
-	texture_normal = "ig_frozen_21_normal.dds"
-	texture_specular = "ig_frozen_21_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_21_2k_diffuse.dds"
+		texture_normal = "ig_frozen_21_2k_normal.dds"
+		texture_specular = "ig_frozen_21_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_diffuse.dds"
-	texture_normal = "ig_clouds_light_05_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
-# Frozen Planet 22
+# Frozen Planet 22, no clouds
 entity = {
 	name = "frozen_planet_22_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_22_diffuse.dds"
-	texture_normal = "ig_frozen_22_normal.dds"
-	texture_specular = "ig_frozen_22_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_22_2k_diffuse.dds"
+		texture_normal = "ig_frozen_22_2k_normal.dds"
+		texture_specular = "ig_frozen_22_2k_specular.dds"
 	}
-
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_diffuse.dds"
-	texture_normal = "ig_clouds_light_05_normal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
-# Frozen Planet 23
+# Frozen Planet 23, no clouds
 entity = {
 	name = "frozen_planet_23_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_23_diffuse.dds"
-	texture_normal = "ig_frozen_23_normal.dds"
-	texture_specular = "ig_frozen_23_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_23_2k_diffuse.dds"
+		texture_normal = "ig_frozen_23_2k_normal.dds"
+		texture_specular = "ig_frozen_23_2k_specular.dds"
 	}
-
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_diffuse.dds"
-	texture_normal = "ig_clouds_light_04_normal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -650,64 +539,42 @@ entity = {
 entity = {
 	name = "frozen_planet_24_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_24_diffuse.dds"
-	texture_normal = "ig_frozen_24_normal.dds"
-	texture_specular = "ig_frozen_24_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_24_2k_diffuse.dds"
+		texture_normal = "ig_frozen_24_2k_normal.dds"
+		texture_specular = "ig_frozen_24_2k_specular.dds"
 	}
-
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_diffuse.dds"
-	texture_normal = "ig_clouds_light_01_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
 	}
 }
-# Frozen Planet 25
+# Frozen Planet 25, no clouds
 entity = {
 	name = "frozen_planet_25_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_25_diffuse.dds"
-	texture_normal = "ig_frozen_25_normal.dds"
-	texture_specular = "ig_frozen_25_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_25_2k_diffuse.dds"
+		texture_normal = "ig_frozen_25_2k_normal.dds"
+		texture_specular = "ig_frozen_25_2k_specular.dds"
 	}
-	
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_diffuse.dds"
-	texture_normal = "ig_clouds_light_01_normal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -718,30 +585,26 @@ entity = {
 entity = {
 	name = "frozen_planet_26_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_26_diffuse.dds"
-	texture_normal = "ig_frozen_26_normal.dds"
-	texture_specular = "ig_frozen_26_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_26_2k_diffuse.dds"
+		texture_normal = "ig_frozen_26_2k_normal.dds"
+		texture_specular = "ig_frozen_26_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_diffuse.dds"
-	texture_normal = "ig_clouds_light_02_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_02_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_02_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -752,30 +615,26 @@ entity = {
 entity = {
 	name = "frozen_planet_27_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_27_diffuse.dds"
-	texture_normal = "ig_frozen_27_normal.dds"
-	texture_specular = "ig_frozen_27_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_27_2k_diffuse.dds"
+		texture_normal = "ig_frozen_27_2k_normal.dds"
+		texture_specular = "ig_frozen_27_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_diffuse.dds"
-	texture_normal = "ig_clouds_light_03_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_03_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_03_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -786,30 +645,26 @@ entity = {
 entity = {
 	name = "frozen_planet_28_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_28_diffuse.dds"
-	texture_normal = "ig_frozen_28_normal.dds"
-	texture_specular = "ig_frozen_28_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_28_2k_diffuse.dds"
+		texture_normal = "ig_frozen_28_2k_normal.dds"
+		texture_specular = "ig_frozen_28_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_diffuse.dds"
-	texture_normal = "ig_clouds_light_04_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_04_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -820,30 +675,26 @@ entity = {
 entity = {
 	name = "frozen_planet_29_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_29_diffuse.dds"
-	texture_normal = "ig_frozen_29_normal.dds"
-	texture_specular = "ig_frozen_29_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_29_2k_diffuse.dds"
+		texture_normal = "ig_frozen_29_2k_normal.dds"
+		texture_specular = "ig_frozen_29_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_diffuse.dds"
-	texture_normal = "ig_clouds_light_05_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_05_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
@@ -854,30 +705,26 @@ entity = {
 entity = {
 	name = "frozen_planet_30_entity"
 	pdxmesh = "planet_clouded_mesh"
-	
 	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "ig_frozen_30_diffuse.dds"
-	texture_normal = "ig_frozen_30_normal.dds"
-	texture_specular = "ig_frozen_30_specular.dds"
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_frozen_30_2k_diffuse.dds"
+		texture_normal = "ig_frozen_30_2k_normal.dds"
+		texture_specular = "ig_frozen_30_2k_specular.dds"
 	}
-	
 	##cloud texture override
 	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_diffuse.dds"
-	texture_normal = "ig_clouds_light_01_normal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	##cloud shadow texture override
 	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "ig_clouds_light_01_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
 	}
-	
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }

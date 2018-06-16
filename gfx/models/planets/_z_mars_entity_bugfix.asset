@@ -1,0 +1,20 @@
+# Remove nasty poles
+# Mars Bugfix
+entity = {
+ 	name = "barren_planet_mars_entity"
+ 	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "barren_04_diffuse.dds"
+		texture_normal = "barren_04_normal.dds"
+		texture_specular = "barren_04_specular.dds"
+	}
+	
+	default_state = "idle"
+	playback_rate = -1.0 # Rotation is reversed
+ 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
