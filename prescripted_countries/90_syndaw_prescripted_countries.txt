@@ -186,7 +186,7 @@ icarus = {
 		"civic_machine_warbots"
 	}
 
-	flags = { icarus_faction custom_start_screen }
+	flags = { icarus_faction human_1 custom_start_screen }
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"

@@ -2785,7 +2785,20 @@ eta_cassiopeiae_system_initializer = {
 				
 				init_effect = {
 					prevent_anomaly = yes
-				}		
+				}
+				
+				init_effect = {
+
+					random_tile = {
+						set_deposit = d_vast_energy_deposit					
+					}
+					random_tile = {
+						set_deposit = d_immense_energy_deposit					
+					}	
+					random_tile = {
+						set_deposit = d_immense_energy_deposit					
+					}
+				}
 			}
 		}
 		
@@ -3363,7 +3376,20 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				
 				init_effect = {
 					prevent_anomaly = yes
-				}		
+				}
+				
+				init_effect = {
+
+					random_tile = {
+						set_deposit = d_vast_energy_deposit					
+					}
+					random_tile = {
+						set_deposit = d_immense_energy_deposit					
+					}	
+					random_tile = {
+						set_deposit = d_immense_energy_deposit					
+					}
+				}
 			}
 		}
 		
