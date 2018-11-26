@@ -237,6 +237,21 @@ entity = {
 	
 }
 
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_Battlecruiser_mid1_S2HB_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "medium_gun_01"	position = { -0.08  5.86  1.75 } 	rotation = {  0 0 0 }}
+	locator = { name = "small_gun_01"	position = {  4.92  3    -2.5 } 	rotation = {  0 0 0 }}
+	locator = { name = "small_gun_02"	position = { -5.08  3    -2.5 } 	rotation = {  0 0 0 }}
+	
+}
+
 ### MID 2 ###
 
 entity = {
@@ -281,6 +296,22 @@ entity = {
 	locator = { name = "small_gun_02"	position = { -5.08  3    -2.5 } 	rotation = {  0 0 0 }}
 	
 }
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_Battlecruiser_mid2_S2HB_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "medium_gun_01"	position = { -0.08  5.86  1.75 } 	rotation = {  0 0 0 }}
+	locator = { name = "small_gun_01"	position = {  4.92  3    -2.5 } 	rotation = {  0 0 0 }}
+	locator = { name = "small_gun_02"	position = { -5.08  3    -2.5 } 	rotation = {  0 0 0 }}
+	
+}
+
 ### STERN ###
 
 entity = {

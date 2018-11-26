@@ -162,6 +162,18 @@ entity = {
 	locator = { name = "small_gun_02"	position = {  2.72 	-1.48  	 	-15.44  } 	rotation = {  0 	0  		0  }}
 }
 
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_StrikeCruiser_bow_L1_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "large_gun_01"	position = {  0 	 3.15  		-15.44  } 	rotation = {  0 	0  		0  }}
+}
+
 # MID
 
 entity = {

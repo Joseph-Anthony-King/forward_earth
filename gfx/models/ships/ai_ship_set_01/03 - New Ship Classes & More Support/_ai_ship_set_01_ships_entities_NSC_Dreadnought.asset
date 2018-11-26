@@ -301,6 +301,20 @@ entity = {
 }
 
 entity = {
+	name = "ai_ship_set_01_Dreadnought_mid1_L2S4_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "large_gun_01"	position = {  27 0 		0 } 		rotation = {  0  0 0 }}
+	locator = { name = "large_gun_02"	position = {  20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_01"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_02"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_03"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+}
+
+entity = {
 	name = "ai_ship_set_01_Dreadnought_mid1_M4SHB_entity"
 	pdxmesh = "locator_mesh"
 	
@@ -310,6 +324,18 @@ entity = {
 	locator = { name = "medium_gun_02"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
 	locator = { name = "medium_gun_03"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
 	locator = { name = "medium_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+}
+
+entity = {
+	name = "ai_ship_set_01_Dreadnought_mid1_S4LHB_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "small_gun_01"	position = {  20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_02"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_03"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
 }
 
 ### MID 2 ###
@@ -351,6 +377,20 @@ entity = {
 }
 
 entity = {
+	name = "ai_ship_set_01_Dreadnought_mid2_L2S4_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "large_gun_01"	position = {  27 0 		0 } 		rotation = {  0  0 0 }}
+	locator = { name = "large_gun_02"	position = {  20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_01"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_02"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_03"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+}
+
+entity = {
 	name = "ai_ship_set_01_Dreadnought_mid2_M4SHB_entity"
 	pdxmesh = "locator_mesh"
 	
@@ -362,6 +402,30 @@ entity = {
 	locator = { name = "medium_gun_04"	position = { -16 -6.5  -5 } 		rotation = {  0  0 0 }}
 }
 
+entity = {
+	name = "ai_ship_set_01_Dreadnought_mid2_M4SHB_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "medium_gun_01"	position = {  20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "medium_gun_02"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "medium_gun_03"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "medium_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+}
+
+entity = {
+	name = "ai_ship_set_01_Dreadnought_mid2_S4LHB_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "small_gun_01"	position = {  20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_02"	position = { -20 12 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_03"	position = {   18 6.5  -5 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_04"	position = {  -18 6.5  -5 } 		rotation = {  0  0 0 }}
+}
+
 ### STERN ###
 
 entity = {
@@ -371,6 +435,17 @@ entity = {
 	###Locators for Weapons
 	
 	locator = { name = "large_gun_01"	position = { 0  -22 0 } 		rotation = {  0  0 0 }}
+}
+
+entity = {
+	name = "ai_ship_set_01_Dreadnought_stern_M1S2_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "medium_gun_01"				position = { -6  	-22 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_02"				position = {  6  	-22 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_03"				position = {  12 	-20 	0 } 		rotation = {  0  0 0 }}
 }
 
 entity = {
