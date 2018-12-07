@@ -1,5 +1,5 @@
 voor = {
-	name = "Voor Technocracy"
+	name = "Voor Foundation"
 	adjective = "PRESCRIPTED_adjective_voor"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes

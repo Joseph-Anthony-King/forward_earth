@@ -187,6 +187,66 @@ iferyx = {
 	}
 }
 
+# Glebsig Foundation
+glebsig = {
+	name = "glebsig"
+	adjective = "PRESCRIPTED_adjective_glebsig"
+	spawn_enabled = yes # yes / no / always
+	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
+	
+	ship_prefix = "PRESCRIPTED_ship_prefix_glebsig"
+	
+	species = {
+		class = "MOL"
+		portrait = "mol7"
+		name = "PRESCRIPTED_species_name_glebsig"
+		plural = "PRESCRIPTED_species_plural_glebsig"
+		adjective = "PRESCRIPTED_species_adjective_glebsig"
+		name_list = "MOL2"
+		trait = "trait_sedentary"
+		trait = "trait_enduring"
+		trait = "trait_conservational"
+		trait = "trait_resilient"
+	}
+	
+	room = "personality_migrating_flock_room"
+
+	authority = "auth_oligarchic"
+	civics = { "civic_exalted_priesthood" "civic_efficient_bureaucracy" }
+	government = "gov_holy_tribunal"
+	planet_name = "PRESCRIPTED_planet_name_glebsig"
+	planet_class ="pc_alpine"
+	system_name = "PRESCRIPTED_system_name_glebsig"
+	initializer = ""
+	graphical_culture = "molluscoid_01"
+	city_graphical_culture = "molluscoid_01"
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_6.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "diagonal.dds"
+		}
+		colors = {
+			"turquoise"
+			"dark_purple"
+			"null"
+			"null"
+		}
+	}
+	ruler = {
+		gender = male
+		name = "PRESCRIPTED_ruler_name_glebsig"
+		portrait = "mol7"
+		texture = 0
+		leader_class = ruler
+	}
+	ethic = "ethic_fanatic_xenophile"
+	ethic = "ethic_spiritualist"
+}
+
 # Chinorr
 chinorr = {
 	name = "chinorr"
@@ -318,7 +378,7 @@ jehetma = {
 scyldari = {
 	name = "scyldari"
 	adjective = "PRESCRIPTED_adjective_scyldari"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	species = {
 		class = "MAM"
@@ -328,7 +388,6 @@ scyldari = {
 		adjective = "PRESCRIPTED_species_adjective_scyldari"
 		name_list = "MAM1"
 		trait = "trait_charismatic"
-		trait = "trait_conservational"
 		trait = "trait_natural_sociologists"
 		trait = "trait_weak"
 	}
@@ -339,13 +398,13 @@ scyldari = {
 	planet_class = "pc_ocean"
 	system_name = "PRESCRIPTED_system_name_scyldari"
 	
-	room = "personality_federation_builders_room"
+	room = "personality_spiritual_seekers_room"
 	
 	authority = "auth_democratic"
 	civics = { "civic_environmentalist" "civic_free_haven" }
-	government = gov_moral_democracy
+	government = gov_theocratic_republic
 
-	ethic = "ethic_materialist"
+	ethic = "ethic_spiritualist"
 	ethic = "ethic_pacifist"
 	ethic = "ethic_xenophile"
 	
@@ -376,6 +435,7 @@ scyldari = {
 		texture = 3
 		#hair = 0
 		clothes = 3
+		leader_class = ruler
 	}
 }
 

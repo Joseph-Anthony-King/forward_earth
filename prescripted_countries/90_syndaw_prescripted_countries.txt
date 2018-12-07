@@ -91,9 +91,9 @@ custodianship = {
 		adjective = "PRESCRIPTED_species_adjective_custodianship"
 		name_list = "MACHINE3"
 		trait = "trait_machine_unit"
-		trait = "trait_robot_bulky"
 		trait = "trait_robot_emotion_emulators"
-		trait = "trait_robot_efficient_processors"
+		trait = "trait_robot_double_jointed"
+		trait = "trait_robot_high_maintenance"
 	}
 	secondary_species={
 		class = "HUM"
@@ -106,13 +106,12 @@ custodianship = {
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
 	}
+
+	flags = { human_1 }
 	
 	room = "machine_room"
 	
 	ethic = ethic_gestalt_consciousness
-
-	flags = { human_1 }
-
 	authority = "auth_machine_intelligence"
 	government = gov_machine_servitor
 	civics = { "civic_machine_servitor" "civic_machine_delegated_functions" }

@@ -10,6 +10,11 @@ sol_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 145
 	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 297
+	}
+
 	flags = { empire_home_system sol_system sol }
 	
 	usage = custom_empire
@@ -70,10 +75,6 @@ sol_system_initializer = {
 		
 		init_effect = {
 			prevent_anomaly = yes
-		}
-		
-		init_effect = {
-			generate_start_buildings_and_blockers = yes
 		}
 		
 		moon = {
@@ -291,6 +292,42 @@ sol_system_initializer = {
 			orbit_angle = 115
 			has_ring = no
 		}
+	}
+
+	planet = {
+		name = "NAME_134340_Pluto"
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_136472_Makemake"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_136108_Haumea"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_20000_Varuna"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
 	}
 	
 	neighbor_system = {

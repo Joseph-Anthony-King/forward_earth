@@ -22,7 +22,7 @@ event = {
 }
 
 event = {
-    id = fe.2
+	id = fe.2
     hide_window = yes
     is_triggered_only = yes
 
