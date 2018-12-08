@@ -54,7 +54,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus }
@@ -707,7 +707,7 @@ space_age_sol_system_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus }
@@ -1364,7 +1364,7 @@ primitive_sol_system_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus }
@@ -2367,10 +2367,6 @@ eta_cassiopeiae_system_initializer = {
 				init_effect = {
 					prevent_anomaly = yes
 				}
-
-				init_effect = {
-					generate_start_buildings_and_blockers = yes
-				}
 			}
 
 			planet = {
@@ -2766,13 +2762,13 @@ sol_with_eta_cassiopeiae_system_initializer = {
 								}
 												
 								create_army = {
-									name = "1st Colonial Garrison"
+									name = "1st Colonial Gendarmerie"
 									owner = last_created
 									species = last_created
 									type = "defense_army"
 								}
 								create_army = {
-									name = "2nd Colonial Garrison"
+									name = "2nd Colonial Gendarmerie"
 									owner = last_created
 									species = last_created
 									type = "defense_army"
