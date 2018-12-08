@@ -191,7 +191,7 @@ iferyx = {
 glebsig = {
 	name = "glebsig"
 	adjective = "PRESCRIPTED_adjective_glebsig"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = always # yes / no / always
 	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_glebsig"
@@ -378,7 +378,7 @@ jehetma = {
 scyldari = {
 	name = "scyldari"
 	adjective = "PRESCRIPTED_adjective_scyldari"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = always # yes / no / always
 	
 	species = {
 		class = "MAM"
@@ -508,7 +508,7 @@ blorg={
 	name = "blorg"
 	adjective = "PRESCRIPTED_adjective_blorg"
 	spawn_enabled = no # yes / no / always
-	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
+	spawn_as_fallen = no # overrides spawn_enabled for fallen empires
 	
 	ship_prefix="PRESCRIPTED_ship_prefix_blorg"
 	
