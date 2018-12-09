@@ -281,7 +281,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						}
 
 						create_country = {
-							name = random
+							name = "United Nations"
 							authority = random
 							day_zero_contact = no
 							civics = {
@@ -936,7 +936,7 @@ space_age_sol_system_initializer = {
 						}
 
 						create_country = {
-							name = random
+							name = "United Nations"
 							authority = random
 							day_zero_contact = no
 							civics = {
@@ -1405,7 +1405,7 @@ primitive_sol_system_initializer = {
 							}
 						}
 						create_country = {
-							name = random
+							name = "United Nations"
 							authority = random
 							day_zero_contact = no
 							civics = {
