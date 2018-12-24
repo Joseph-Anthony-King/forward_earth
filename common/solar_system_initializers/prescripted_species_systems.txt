@@ -522,6 +522,11 @@ sol_neighbor_t1_first_colony = {
 	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
+		initializer = "sol_neighbor_t3_second_colony"
+	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t4_second_colony"
 	}
 }
@@ -583,7 +588,7 @@ sol_neighbor_t1 = {
 	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "sol_neighbor_t3_second_colony"
+		initializer = "sol_neighbor_t5_second_colony"
 	}
 }
 
@@ -797,6 +802,373 @@ sol_neighbor_t2_second_colony = {
 
 # Sol Neighbor Tier 2
 sol_neighbor_t3_second_colony = {
+	name = "Tau Ceti"
+	class = sc_g
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 230
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 340
+	}
+	flags = { tau_ceti_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Tau Ceti"
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti I"
+		class = "pc_molten"
+		orbit_distance = 25
+		orbit_angle = 30
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti II"
+		class = "pc_molten"
+		orbit_distance = 10
+		orbit_angle = 40
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti III"
+		class = "pc_desert"
+		orbit_distance = 25
+		orbit_angle = 180
+		size = 20
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "high_gravity"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+	}
+
+	planet = {
+		name = "Tau Ceti IV"
+		class = pc_broken
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 22
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti V"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Tau Ceti Va"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Tau Ceti Vb"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Tau Ceti VI"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Tau Ceti VIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Tau Ceti VIb"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 92
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Tau Ceti VII"
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 25
+		
+		moon = {
+			name = "Tau Ceti VIIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 125
+			has_ring = no
+		}	
+	}
+
+	planet = {
+		name = "Tau Ceti VIII"
+		class = pc_barren_cold
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 23
+		
+		moon = {
+			name = "Tau Ceti VIIIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 125
+			has_ring = no
+		}	
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 40
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 92
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+# Sol Neighbor Tier 2
+sol_neighbor_t4_second_colony = {
 	name = "40 Eridani"
 	class = sc_trinary_5
 	asteroid_belt = {
@@ -1060,7 +1432,7 @@ sol_neighbor_t3 = {
 }
 
 # Sol Neighbor Tier 2 Second Colony
-sol_neighbor_t4_second_colony = {
+sol_neighbor_t5_second_colony = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
 

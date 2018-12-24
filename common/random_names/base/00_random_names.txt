@@ -4597,7 +4597,7 @@ star_names = {
 	"Tau Alpha"
 	"Tau Beta"
 	"Tau Centauri"
-	"Tau Ceti"
+	"Tau Cestus"
 	"Tau Chi"
 	"Tau Delta"
 	"Tau Epsilon"

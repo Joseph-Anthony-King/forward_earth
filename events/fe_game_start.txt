@@ -262,4 +262,18 @@ event = {
             set_name = ""
         }
     }
+
+    immediate = {
+
+        random_system = {
+            spawn_system = { initializer = "tau_ceti_system" }
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = tau_ceti_barycenter              
+            }
+            set_name = ""
+        }
+    }
 }
