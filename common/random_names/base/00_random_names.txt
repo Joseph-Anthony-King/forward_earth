@@ -1207,12 +1207,12 @@ star_names = {
 	Cuvacia
 	Cyban
 	Cybertron
-	Cygni
 	Cygnosus
 	Cynosura
 	Cyric
 	Cyrillia
 	Cytheria
+	Da
 	Daarasta
 	Daassatu
 	Dachat

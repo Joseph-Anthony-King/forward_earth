@@ -335,6 +335,10 @@ sol_system_initializer = {
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
+	}	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t1_third_colony"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
@@ -1880,6 +1884,104 @@ sol_neighbor_t4 = {
 				}		
 			}
 		}
+}
+
+sol_neighbor_t1_third_colony = {
+	name = "67 Cygni"
+	class = sc_binary_6
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Cygni A"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 21
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A I"
+		class = "pc_barren"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A II"
+		class = "pc_continental"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 13
+		has_ring = no
+    	entity = "continental_planet_04_entity"
+		
+		moon = {
+			name = "Cygni A IIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Cygni A III"
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "Cygni B"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 180
+		orbit_angle = 75
+		size = 18
+		has_ring = no
+	
+		planet = {
+			name = "Cygni B I"
+			class = "pc_molten"
+			orbit_distance = 20
+			orbit_angle = 180
+			size = 10
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B II"
+			class = "pc_arctic"
+			orbit_distance = 20
+			orbit_angle = 175
+			size = 12
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B III"
+			class = "pc_frozen"
+			orbit_distance = 20
+			orbit_angle = 15
+			size = 17
+			has_ring = no
+		}
+	}
 }
 
 ### Deneb System
