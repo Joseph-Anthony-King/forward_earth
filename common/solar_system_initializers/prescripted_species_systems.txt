@@ -860,13 +860,10 @@ sol_neighbor_t3_second_colony = {
 		orbit_angle = 180
 		size = 20
 		has_ring = no
+		entity = "desert_planet_01_entity"
 		
 		init_effect = {
-			add_modifier = {
-				modifier = "high_gravity"
-				days = -1
-			}
-			prevent_anomaly = yes
+			set_planet_flag = tau_ceti_system
 		}
 	}
 
@@ -877,16 +874,14 @@ sol_neighbor_t3_second_colony = {
 		orbit_angle = 60
 		size = 26
 		has_ring = no
+		entity = "ocean_planet_01_entity"
 		
 		init_effect = {
-			add_modifier = {
-				modifier = "high_gravity"
-				days = -1
-			}
-			prevent_anomaly = yes
+			set_planet_flag = tau_ceti_system
 		}
 		
 		init_effect = {
+
 			create_species = {
 				name = Prillrian
 				plural = Prillrians
@@ -940,7 +935,7 @@ sol_neighbor_t3_second_colony = {
 			set_owner = last_created_country		
 								
 			while = {
-				count = 2
+				count = 3
 				create_pop = {
 					species = last_created
 				}					
@@ -950,7 +945,7 @@ sol_neighbor_t3_second_colony = {
 			add_building = building_stone_palace			
 			
 			while = {
-				count = 1
+				count = 2
 				create_army = {
 					name = "NAME_Feudal_Levies"
 					owner = last_created
@@ -971,6 +966,11 @@ sol_neighbor_t3_second_colony = {
 			orbit_distance = 14
 			orbit_angle = 40
 			has_ring = no
+			entity = "continental_planet_03_entity"
+		
+			init_effect = {
+				set_planet_flag = tau_ceti_4_moon
+			}
 		}
 	}
 	
@@ -1311,6 +1311,14 @@ sol_neighbor_t4_second_colony = {
 		init_effect = {
 			add_modifier = {
 				modifier = "high_gravity"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "strong_magnetic_field"
 				days = -1
 			}
 			prevent_anomaly = yes

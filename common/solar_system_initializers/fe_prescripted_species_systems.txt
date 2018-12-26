@@ -2346,7 +2346,7 @@ eta_cassiopeiae_system_initializer = {
 				tile_blockers = none
 				modifiers = none
 				entity = "continental_planet_01_entity"
-				flags = { planet_aurora }
+				flags = { planet_aurora coa_home}
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -2362,7 +2362,8 @@ eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				tile_blockers = none
 				modifiers = none
-				flags = { planet_tithonus }
+				entity = "arid_planet_01_entity"
+				flags = { planet_tithonus coa_home }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -2622,7 +2623,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				tile_blockers = none
 				modifiers = none
 				entity = "continental_planet_01_entity"
-				flags = { planet_aurora }
+				flags = { planet_aurora coa_home }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -2840,7 +2841,8 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				tile_blockers = none
 				modifiers = none
-				flags = { planet_tithonus }
+				entity = "arid_planet_01_entity"
+				flags = { planet_tithonus coa_home }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -3073,6 +3075,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 				tile_blockers = none
 				modifiers = none
 				entity = "continental_planet_01_entity"
+				flags = { coa_home }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -3087,6 +3090,8 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				tile_blockers = none
 				modifiers = none
+				entity = "arid_planet_01_entity"
+				flags = { coa_home }
 				
 				init_effect = {
 					prevent_anomaly = yes

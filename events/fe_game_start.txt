@@ -277,3 +277,65 @@ event = {
         }
     }
 }
+
+event = {
+	id = fe.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        every_planet = {
+
+            limit = { has_planet_flag = tau_ceti_system }
+            add_modifier = {
+                modifier = high_gravity
+                days = -1
+            }
+            add_modifier = {
+                modifier = strong_magnetic_field
+                days = -1
+            }
+        }
+    }
+}
+
+event = {
+	id = fe.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        every_planet = {
+
+            limit = { has_planet_flag = tau_ceti_4_moon }
+            add_modifier = {
+                modifier = lush_planet
+                days = -1
+            }
+            add_modifier = {
+                modifier = strong_magnetic_field
+                days = -1
+            }
+        }
+    }
+}
+
+event = {
+	id = fe.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        every_planet = {
+
+            limit = { has_planet_flag = coa_home }
+            add_modifier = {
+                modifier = strong_magnetic_field
+                days = -1
+            }
+        }
+    }
+}
