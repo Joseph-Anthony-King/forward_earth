@@ -1710,6 +1710,13 @@ sol_neighbor_t4 = {
 		orbit_angle = 45
 		size = 22
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {
@@ -1857,9 +1864,9 @@ sol_neighbor_t4 = {
 			planet = {
 				name = "Epsilon Indi B"
 				class = "pc_t_star"
-				orbit_distance = 20
+				orbit_distance = 25
 				orbit_angle = -90
-				size = 16
+				size = 40
 				has_ring = no
 				tile_blockers = none
 				modifiers = none
@@ -1874,7 +1881,7 @@ sol_neighbor_t4 = {
 				class = "pc_t_star"
 				orbit_distance = 0
 				orbit_angle = 180
-				size = 13
+				size = 40
 				has_ring = no
 				tile_blockers = none
 				modifiers = none
