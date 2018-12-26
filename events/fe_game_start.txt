@@ -276,6 +276,20 @@ event = {
             set_name = ""
         }
     }
+
+    immediate = {
+
+        random_system = {
+            spawn_system = { initializer = "epsilon_indi_system" }
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = epsilon_indi_barycenter              
+            }
+            set_name = ""
+        }
+    }
 }
 
 event = {
@@ -314,24 +328,6 @@ event = {
                 modifier = lush_planet
                 days = -1
             }
-            add_modifier = {
-                modifier = strong_magnetic_field
-                days = -1
-            }
-        }
-    }
-}
-
-event = {
-	id = fe.9
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-
-        every_planet = {
-
-            limit = { has_planet_flag = coa_home }
             add_modifier = {
                 modifier = strong_magnetic_field
                 days = -1

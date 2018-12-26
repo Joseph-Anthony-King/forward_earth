@@ -1567,7 +1567,7 @@ star_names = {
 	"Epsilon Delta"
 	"Epsilon Eta"
 	"Epsilon Gamma"
-	"Epsilon Indi"
+	"Epsilon Icos"
 	"Epsilon Kappa"
 	"Epsilon Lambda"
 	"Epsilon Leonis"

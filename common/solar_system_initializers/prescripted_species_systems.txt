@@ -1259,6 +1259,11 @@ sol_neighbor_t3_second_colony = {
 		size = 5
 		has_ring = no
 	}
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "sol_neighbor_t4"
+	}
 }
 
 # Sol Neighbor Tier 2
@@ -1672,6 +1677,209 @@ sol_neighbor_t5_second_colony = {
 		size = 15
 		has_ring = no
 	}
+}
+
+# Sol Neighbor Tier 2
+sol_neighbor_t4 = {
+	name = "Epsilon Indi"
+	
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 160
+	}
+	flags = { epsilon_indi_system }
+	
+	planet = {
+		name = "Epsilon Indi A"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 22
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 22
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A II"
+		class = "pc_ocean"
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 26
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "high_gravity"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "strong_magnetic_field"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Epsilon Indi A IIa"
+			class = "pc_barren"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Epsilon Indi A IIb"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 6
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Epsilon Indi A III"
+		class = "pc_barren_cold"
+		orbit_distance = 40
+		orbit_angle = 190
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A IV"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 50
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A V"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 40
+		has_ring = yes
+
+		moon = {
+			name = "Epsilon Indi A Va"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 23
+			orbit_angle = 10
+			has_ring = no
+		}
+		moon = {
+			name = "Epsilon Indi A Vb"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 5
+			orbit_angle = 80
+			has_ring = no
+		}
+	}
+
+		planet = {
+			class = pc_asteroid
+			orbit_distance = 160
+			orbit_angle = 125
+			size = 0
+			flags = { epsilon_indi_barycenter }
+	
+			planet = {
+				name = "Epsilon Indi B"
+				class = "pc_t_star"
+				orbit_distance = 20
+				orbit_angle = -90
+				size = 16
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}
+			}
+				
+			planet = {
+				name = "Epsilon Indi C"
+				class = "pc_t_star"
+				orbit_distance = 0
+				orbit_angle = 180
+				size = 13
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}		
+			}
+		}
 }
 
 ### Deneb System
