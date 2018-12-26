@@ -3804,9 +3804,9 @@ star_names = {
 	Printure
 	Probus
 	Proctor
-	Procyon
 	Propoxur
 	Propus
+	Proxus
 	Prthivi
 	Psi
 	"Psi Alpha"
