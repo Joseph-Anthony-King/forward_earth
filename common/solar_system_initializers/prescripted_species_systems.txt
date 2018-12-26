@@ -894,9 +894,8 @@ sol_neighbor_t3_second_colony = {
 				portrait = "rep5"
 				homeworld = THIS
 				traits = {
-					trait = "trait_sedentary"
-					trait = "trait_enduring"	
-					trait = "trait_conservational"
+					trait = "trait_communal"
+					trait = "trait_strong"
 				}
 			}
 			create_country = {
