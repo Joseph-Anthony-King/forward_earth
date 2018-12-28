@@ -961,7 +961,7 @@ generate_start_pops = {
 	else_if = {
 		limit = { has_planet_flag = planet_aurora }
 		while = {
-			limit = { num_pops < 18 }
+			limit = { num_pops < 17 }
 			create_pop = {
 				species = owner_main_species
 				ethos = random
