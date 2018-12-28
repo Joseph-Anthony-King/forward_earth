@@ -902,7 +902,7 @@ special_init_03 = {
 						flag = {
 							icon = {
 								category = "human"
-								file = "flag_human_9.dds"
+								file = "flag_human_une.dds"
 							}
 							background= {
 								category = "backgrounds"
@@ -4274,7 +4274,7 @@ com_sol_system = {
 				flag = {
 					icon = {
 						category = "human"
-						file = "flag_human_9.dds"
+						file = "flag_human_une.dds"
 					}
 					background = {
 						category = "backgrounds"

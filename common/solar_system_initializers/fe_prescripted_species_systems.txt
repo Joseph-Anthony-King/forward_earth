@@ -122,7 +122,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							flag = {
 								icon = {
 									category = "human"
-									file = "flag_human_9.dds"
+									file = "flag_human_une.dds"
 								}
                                 background= {
                                     category = "backgrounds"
@@ -297,7 +297,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							flag = {
 								icon = {
 									category = "human"
-									file = "flag_human_9.dds"
+									file = "flag_human_une.dds"
 								}
                                 background= {
                                     category = "backgrounds"
@@ -772,7 +772,7 @@ space_age_sol_system_initializer = {
 							flag = {
 								icon = {
 									category = "human"
-									file = "flag_human_9.dds"
+									file = "flag_human_une.dds"
 								}
                                 background= {
                                     category = "backgrounds"
@@ -948,7 +948,7 @@ space_age_sol_system_initializer = {
 							flag = {
 								icon = {
 									category = "human"
-									file = "flag_human_9.dds"
+									file = "flag_human_une.dds"
 								}
                                 background= {
                                     category = "backgrounds"
@@ -1412,7 +1412,7 @@ primitive_sol_system_initializer = {
 							flag = {
 								icon = {
 									category = "human"
-									file = "flag_human_9.dds"
+									file = "flag_human_une.dds"
 								}
 								background= {
 									category = "backgrounds"
