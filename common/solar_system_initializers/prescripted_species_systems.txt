@@ -1480,7 +1480,7 @@ sol_neighbor_t4_second_colony = {
 # Sol Neighbor Tier 2
 sol_neighbor_t3 = {
 	name = "NAME_Procyon"
-	class = sc_binary_8
+	class = sc_binary_9
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 120
