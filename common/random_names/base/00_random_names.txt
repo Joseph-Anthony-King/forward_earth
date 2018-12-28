@@ -3538,7 +3538,6 @@ star_names = {
 	Ophang
 	Ophele
 	Ophiacus
-	Ophiuchi
 	Ophiumsug
 	Opios
 	Oplin
@@ -4052,6 +4051,7 @@ star_names = {
 	"Rho Nu"
 	"Rho Omega"
 	"Rho Omicron"
+	"Rho Ophiuchi"
 	"Rho Phi"
 	"Rho Pi"
 	"Rho Psi"

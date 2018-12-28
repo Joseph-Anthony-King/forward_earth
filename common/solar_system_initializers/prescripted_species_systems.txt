@@ -1991,6 +1991,201 @@ sol_neighbor_t1_third_colony = {
 	}
 }
 
+# Neighbor Tier 1 First Colony
+eta_cassiopeiae_neighbor_t1_first_colony = {	
+	name = "70 Ophiuchi"
+	class = sc_binary_7
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 340
+	}
+
+	planet = {
+		name = "Ophiuchi A"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 27
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Ophiuchi A I"
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 22
+		has_ring = no
+    	entity = "molten_planet_02_entity"
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
+		
+		moon = {
+			name = "Ophiuchi A Ia"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 60
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Ophiuchi A Ib"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 60
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi A II"
+		class = "pc_gaia"
+		orbit_distance = 30
+		orbit_angle = 100
+		size = 20
+		has_ring = yes
+    	entity = "gaia_planet_01_entity"
+		
+		moon = {
+			name = "Ophiuchi A IIa"
+			class = "pc_savannah"
+			size = 9
+			orbit_distance = 14
+			orbit_angle = 40
+			has_ring = no
+    		entity = "savannah_planet_01_entity"
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "low_gravity"
+					days = -1
+				}
+			}
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi A III"
+		class = "pc_barren"
+		orbit_distance = 45
+		orbit_angle = 15
+		size = 8
+		has_ring = no
+    	entity = "barren_planet_03_entity"
+	}
+
+	planet = {
+		name = "Ophiuchi B"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 110
+		orbit_angle = 335
+		size = 21
+		has_ring = no
+	
+		planet = {
+			name = "Ophiuchi B I"
+			class = "pc_barren"
+			orbit_distance = 30
+			orbit_angle = 175
+			size = 8
+			has_ring = no
+			entity = "barren_planet_04_entity"
+		}
+	
+		planet = {
+			name = "Ophiuchi B II"
+			class = "pc_continental"
+			orbit_distance = 25
+			orbit_angle = 10
+			size = 8
+			has_ring = no
+			entity = "continental_planet_02_entity"
+		
+			moon = {
+				name = "Ophiuchi B IIa"
+				class = "pc_barren"
+				size = 5
+				orbit_distance = 12
+				orbit_angle = 95
+				has_ring = no
+				entity = "barren_planet_01_entity"
+			}
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi AB"
+		class = "pc_gas_giant"
+		orbit_distance = 70
+		orbit_angle = 180
+		size = 20
+		has_ring = yes
+    	entity = "gas_giant_02_entity"
+		
+		moon = {
+			name = "Ophiuchi ABa"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = -5
+			has_ring = no
+			entity = "frozen_planet_02_entity"
+		}
+		
+		moon = {
+			name = "Ophiuchi ABb"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 10
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+		}
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 45
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
 ### Deneb System
 deneb_system = {
 	name = "NAME_Deneb"

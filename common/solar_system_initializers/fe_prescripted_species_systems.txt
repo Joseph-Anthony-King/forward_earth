@@ -2499,6 +2499,13 @@ eta_cassiopeiae_system_initializer = {
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
 			#want this?
 		}		
+		initializer = "eta_cassiopeiae_neighbor_t1_first_colony"
+	}	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
@@ -2979,6 +2986,13 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
 			#want this?
 		}		
+		initializer = "eta_cassiopeiae_neighbor_t1_first_colony"
+	}	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
@@ -3213,6 +3227,14 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 		}
 	}
 	
+	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "eta_cassiopeiae_neighbor_t1_first_colony"
+	}	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...

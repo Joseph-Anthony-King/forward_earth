@@ -312,6 +312,30 @@ event = {
             }
         }
     }
+
+	immediate = {
+
+        every_planet = {
+
+            limit = { has_planet_flag = planet_aurora }
+            add_modifier = {
+                modifier = strong_magnetic_field
+                days = -1
+            }
+        }
+    }
+
+	immediate = {
+
+        every_planet = {
+
+            limit = { has_planet_flag = planet_tithonus }
+            add_modifier = {
+                modifier = strong_magnetic_field
+                days = -1
+            }
+        }
+    }
 }
 
 event = {
