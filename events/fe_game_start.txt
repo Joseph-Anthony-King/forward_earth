@@ -255,6 +255,34 @@ event = {
             spawn_system = { initializer = "eridani_system" }
         }
 
+        random_system = {
+            spawn_system = { initializer = "polaris_initializer" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "betelgeuse_initializer" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "rigel_system" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "vega_system" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "antares_initializer" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "canopus_initializer" }
+        }
+
+        random_system = {
+            spawn_system = { initializer = "fomalhaut_initializer" }
+        }
+
         random_planet = {
             limit = {
                 has_planet_flag = eridani_barycenter              

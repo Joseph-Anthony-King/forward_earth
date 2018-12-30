@@ -1501,7 +1501,7 @@ special_init_03 = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "sol_neighbor_t3"
+		initializer = "procyon_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 50 max = 60 }
@@ -1759,7 +1759,7 @@ special_init_04 = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "sol_neighbor_t3"
+		initializer = "procyon_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 50 max = 60 }
@@ -4522,7 +4522,7 @@ com_sol_system = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "sol_neighbor_t3"
+		initializer = "procyon_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 50 max = 60 }
