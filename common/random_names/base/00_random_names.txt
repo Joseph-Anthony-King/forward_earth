@@ -343,46 +343,37 @@ star_names = {
 	Aada
 	Aargau
 	Abakan
-	Abasnahbar
+	Ab-almouya
+	Ab-al'nabai
 	Abbadon
-	"Abbor Alz"
-	Abd-almouya
-	Abd-al'nabai
-	Abdbiyshidsa
-	Abdirjaf
-	Abdnifa
-	Abdriy
-	Abdsamadji
-	Abdsisa
-	Abhabana
-	Ab-is
+	"Abbor Alaz"
 	Abkash
-	Ablaocsap
-	Ab-mid
 	Abraxus
-	"Absajha Min"
 	Abu
 	Abyad
 	Abyss
-	Abzahiha
 	Acamar
 	Acculum
 	Acelloria
+	Achernar
 	Acheron
 	Achilles
+	Achird
 	Ackmall
 	Ackolam
-	Acquacheta
+	Acrab
 	Acramalo
 	Acrux
+	Acubens
 	Adad
 	Adama
 	Adar
-	A-dat
 	Adaus
+	Adhafera
+	Adhara
 	Adhia
-	Adimzayd
-	Adramelech
+	Adhil
+	Adi-mizayd
 	Adranell
 	Adumar
 	Adumir
@@ -392,7 +383,6 @@ star_names = {
 	Aerdy
 	Aesir
 	A'fa
-	Agam'awi
 	Agena
 	Agni
 	Aha
@@ -405,55 +395,70 @@ star_names = {
 	Ahriman
 	Ahyrak
 	Ah'za
-	Aia'idna
 	Aidi
-	Aijath'na
-	Ai-wa
+	Ain
+	Ainalrami
 	Ajam
 	Ajandis
 	Ajax
 	Akita
 	Akula
-	Al Dhanab
-	Alabdsimaji
-	Aladiy
-	Alalkhaydia
+	"Al Dhanab"
+	Aladfar
 	Alastor
+	Albaldah
+	Albali
 	Albion
 	Albireo
+	Alchiba
 	Alcinous
+	Alcor
 	Alcyone
-	Aldeb
 	Aldebaran
 	Alder
 	Alderaan
-	Alderc
-	Aldicarb
-	Aldirbiy
+	Alderamin
+	Aldhanab
+	Aldhibah
 	Aldra
 	Aldrin
+	Aldulfin
 	Alenil
-	Alerrawia
 	Alexandria
 	Alexus
+	Alfirk
+	Algedi
 	Algenib
 	Algieba
 	Algol
+	Algorab
 	Algore
+	Alhena
 	Alifa
-	Alimatbakr
 	Alioth
 	Alitina
 	Aliyham
-	Aliyja-diabd
 	Alizarin
+	Aljanah
+	Alkaid
+	Alkalurops
+	Alkaphrah
+	Alkarab
+	Alkes
 	Allitur
 	Almaak
+	Almaaz
+	Almach
 	Alma'sa
 	Almaty
 	Alnaha
+	Alnair
+	Alnasl
 	Al'nazib
+	Alnilam
+	Alnitak
 	Alni-ya
+	Alniyat
 	Alora
 	Alpha
 	"Alpha Beta"
@@ -482,28 +487,41 @@ star_names = {
 	"Alpha Tau"
 	"Alpha Theta"
 	"Alpha Upsilon"
+	"Alpha Virginis"
 	"Alpha Xi"
 	"Alpha Zeta"
+	Alphard
+	Alphecca
 	Alpheratz
+	Alpherg
 	Alpherides
+	Alrakis
+	Alrescha
+	Alruba
+	Alsafi
 	Alsan
+	Alsciaukat
+	Alsephina
 	Alshain
+	Alshat
 	Altair
 	Altairinus
+	Altais
 	Altaris
+	Alterf
 	Altros
+	Aludra
+	"Alula Australis"
+	"Alula Borealis"
 	Alva
-	Alvyrra
+	Alya
+	Alzirr
 	Alzoc
 	Alzoll
 	A'maal
 	Ama-arhus
-	Amadbil
 	Amaldia
-	Amamhusrais
 	Amaranth
-	Amasagnul
-	Amastes
 	Amber
 	Ambisia
 	Ambor
@@ -511,7 +529,6 @@ star_names = {
 	Ambrosia
 	Amcor
 	Amgathorra
-	Amhushusoud
 	Amine
 	Amlitzer
 	Amon
@@ -531,6 +548,7 @@ star_names = {
 	Anataha
 	Anaxador
 	Anaxes
+	Ancha
 	Ancros
 	Andack
 	Anderson
@@ -539,6 +557,7 @@ star_names = {
 	Andoria
 	Andromeda
 	Anfalas
+	Angetenar
 	Angius
 	Angmar
 	Anhur
@@ -548,11 +567,12 @@ star_names = {
 	Anoat
 	Anput
 	Ansalon
+	Anser
 	Ansion
 	"Antak Rham"
 	Antar
 	Antares
-	Antariksa
+	Antarisa
 	Antiga
 	Antilla
 	Antos
@@ -565,35 +585,33 @@ star_names = {
 	Aphrodite
 	Apis
 	Apollo
-	Appon
+	Apon
 	Aqiassa
 	Aquarii
 	Aquilae
 	Ara
 	Arah
-	A'ramsimraj
 	Arayya
-	Arbatraeus
 	Arboria
-	Arcadafell
 	Arcadia
 	Arcadius
 	Archanis
 	Archer
 	Arcturus
 	Ardhanarishvara
-	Ar'Doqd
 	Ardoz
 	Ares
 	Argus
 	Ariege
 	Ariel
+	"Arkab Posterior"
+	"Arkab Prior"
 	Arkania
 	"Arkin Minor"
 	Ar'mid
 	Armstrong
 	Arnach
-	Arnoorriwa
+	Arneb
 	Arnor
 	Arrakis
 	Artemis
@@ -602,46 +620,48 @@ star_names = {
 	Arvani
 	Aryaman
 	Asa
-	Asafisul
-	Asaruludu
-	Asbi'hu
-	Asef'ta
-	Aser-si
+	Ascella
+	"Asellus Australis"
+	"Asellus Borealis"
 	Asgard
 	Ashen
 	Asherah
 	Ash-hoo
-	Ash'ilfihrli
 	Ashimax
+	Ashlesha
 	Ashnan
 	Ashur
 	Asi
 	Asimbu
 	Aslund
 	Asmodeus
+	Aspidiske
 	Asrobee
 	Assaniz
-	Asshai
+	As'shai
 	Astapor
 	Astaroth
 	Astarte
+	Asterope
 	Asya
 	Asyaliya
 	Asylum
-	A-'tazad
 	Aten
+	Athebyne
 	Athena
 	Athkatla
 	Athol
 	Athos
 	Athyr
 	Aticut
-	A-tiza
+	Atik
 	Atlabba
 	Atlantis
+	Atlas
 	Atmir
 	Ator
 	Atreides
+	Atria
 	Atroa
 	Atuf
 	Aurelian
@@ -654,42 +674,32 @@ star_names = {
 	Avernus
 	Avignon
 	Avim
+	Avior
 	Avitus
 	Avolantis
-	Avroistar
-	Awahhadim
-	Awayumah
 	Axanar
-	Ay'a
-	A'ya
 	Aya
-	Ayridfaf
-	Ayshahfiyya
-	Ayyappa
+	Ay'a
 	Azati
 	Azawakh
 	Azax
 	Azazel
 	Azbrian
-	Azeemmiph
 	Azeklob
+	Azelfafage
+	Azha
 	Azimua
 	Azma
+	Azmidi
 	Azolla
-	Azor'alq
 	Azrael
 	A'zurah
 	Ba-ab
 	Baalzebul
 	Baator
-	Bababmabi'im
 	Babel
 	Babi
-	Babshiruzul
-	Bachesa
 	Badrshamram
-	Badrzizliya
-	Bad-tibira
 	Badukan
 	Bafirtia
 	Baga
@@ -703,14 +713,12 @@ star_names = {
 	Bajiol
 	Bajor
 	Bakadinkram
-	Bakrhindkhay
 	Bakura
 	"Bal Durk"
 	Balal
 	Balarama
 	Balawar
 	Balder
-	"Baldur's Gate"
 	Balifiqza
 	Balili
 	Balmorra
@@ -720,8 +728,6 @@ star_names = {
 	Baltris
 	Balutyanir
 	Balyada
-	Bam'a-sa
-	Bamiala
 	Bamusu
 	Ba-na
 	Banagho
@@ -739,7 +745,7 @@ star_names = {
 	Barbas
 	Barbet
 	Bardegan
-	Bargmann
+	Bargman
 	Barik
 	Barrayar
 	Barsoom
@@ -749,15 +755,14 @@ star_names = {
 	Basalfu
 	Bashpat
 	Basilisk
-	Bas-raay
 	Bast
 	Basta'ki
 	Bastamore
 	Bastet
-	Bastinasir
 	Bastion
 	Batasveed
 	"Bateb Kaitos"
+	"Baten KaitosBeemim"
 	Ba'ti
 	Batraq
 	Bau
@@ -766,6 +771,157 @@ star_names = {
 	Bayajasal
 	Bazkarat
 	Bazzanac
+	"BD 104587"
+	"BD 105188"
+	"BD 105669"
+	"BD 105869"
+	"BD 117097"
+	"BD 122868"
+	"BD 126358"
+	"BD 144424"
+	"BD 149704"
+	"BD 161719"
+	"BD 165344"
+	"BD 166303"
+	"BD 174458"
+	"BD 197531"
+	"BD 198837"
+	"BD 205513"
+	"BD 214554"
+	"BD 215186"
+	"BD 224033"
+	"BD 249907"
+	"BD 259058"
+	"BD 259114"
+	"BD 269124"
+	"BD 275380"
+	"BD 277952"
+	"BD 288282"
+	"BD 298491"
+	"BD 299687"
+	"BD 304136"
+	"BD 307089"
+	"BD 310341"
+	"BD 324146"
+	"BD 324215"
+	"BD 327165"
+	"BD 329735"
+	"BD 337938"
+	"BD 338869"
+	"BD 354718"
+	"BD 355627"
+	"BD 356157"
+	"BD 359597"
+	"BD 366923"
+	"BD 370426"
+	"BD 382049"
+	"BD 385997"
+	"BD 389938"
+	"BD 393901"
+	"BD 399720"
+	"BD 402069"
+	"BD 405861"
+	"BD 409194"
+	"BD 410075"
+	"BD 414907"
+	"BD 415884"
+	"BD 416105"
+	"BD 422557"
+	"BD 434149"
+	"BD 444289"
+	"BD 453167"
+	"BD 454044"
+	"BD 462750"
+	"BD 464863"
+	"BD 465809"
+	"BD 468420"
+	"BD 471837"
+	"BD 476190"
+	"BD 487692"
+	"BD 493014"
+	"BD 494672"
+	"BD 506606"
+	"BD 506838"
+	"BD 507242"
+	"BD 508309"
+	"BD 511690"
+	"BD 512003"
+	"BD 513124"
+	"BD 523131"
+	"BD 525657"
+	"BD 534034"
+	"BD 534887"
+	"BD 538665"
+	"BD 540200"
+	"BD 553996"
+	"BD 555052"
+	"BD 570332"
+	"BD 570837"
+	"BD 580354"
+	"BD 585189"
+	"BD 585805"
+	"BD 589332"
+	"BD 590378"
+	"BD 594572"
+	"BD 604656"
+	"BD 606390"
+	"BD 608194"
+	"BD 612120"
+	"BD 617688"
+	"BD 621540"
+	"BD 623148"
+	"BD 623935"
+	"BD 627525"
+	"BD 634934"
+	"BD 646804"
+	"BD 649536"
+	"BD 649723"
+	"BD 651402"
+	"BD 666376"
+	"BD 669674"
+	"BD 677016"
+	"BD 686469"
+	"BD 688797"
+	"BD 690494"
+	"BD 696591"
+	"BD 698857"
+	"BD 700574"
+	"BD 706358"
+	"BD 709324"
+	"BD 710269"
+	"BD 710626"
+	"BD 710676"
+	"BD 718606"
+	"BD 733026"
+	"BD 756297"
+	"BD 757302"
+	"BD 764690"
+	"BD 765213"
+	"BD 771671"
+	"BD 773374"
+	"BD 774058"
+	"BD 775187"
+	"BD 777265"
+	"BD 781770"
+	"BD 790066"
+	"BD 816436"
+	"BD 819578"
+	"BD 821625"
+	"BD 822682"
+	"BD 824662"
+	"BD 830035"
+	"BD 835904"
+	"BD 840524"
+	"BD 848228"
+	"BD 848716"
+	"BD 851020"
+	"BD 856666"
+	"BD 865571"
+	"BD 868117"
+	"BD 870862"
+	"BD 880110"
+	"BD 888222"
+	"BD 890304"
 	Beaumonde
 	Becquerel
 	Becrux
@@ -830,24 +986,23 @@ star_names = {
 	"Beta Tau"
 	"Beta Theta"
 	"Beta Upsilon"
+	"Beta Virginis"
 	"Beta Xi"
 	"Beta Zeta"
 	Betazed
-	Betelgeuse
 	Bethselamin
 	Bevora
 	Beznar
 	Bhadrakali
 	Bhaga
 	Bhairava
+	Bharani
 	"Bhekar Ro"
 	Bhikshatana
 	Bhūmi
 	Bidtox
 	Bi-fa
-	Bi-firuz
-	Bi-firuzsem
-	Bifrons
+	Biham
 	Bihiram
 	Bihjall
 	Bijh
@@ -864,9 +1019,7 @@ star_names = {
 	"Bir Zun"
 	Birana
 	Birdu
-	Birkatimzul
 	Biryakha
-	Bi'saifmal
 	Bisanmi
 	Bissel
 	Bistramar
@@ -874,9 +1027,6 @@ star_names = {
 	Bivham
 	Biy'ah
 	Biybamir
-	Biyfagha
-	Biyfiqjaya
-	Biyna'sain
 	Boccob
 	Bogden
 	Boggor
@@ -901,14 +1051,12 @@ star_names = {
 	Borrbo
 	Borzoi
 	Botein
-	Bothawui
 	Botor
-	Bou-is
 	Bovatir
 	"Boz Pity"
-	Bpfassh
 	Braavos
 	Bracas
+	Brachium
 	Braddam
 	Brahma
 	Brakma
@@ -920,7 +1068,6 @@ star_names = {
 	Braxis
 	Bre'el
 	Breen
-	Bregglar
 	Breka
 	Brendor
 	Brentaal
@@ -929,11 +1076,8 @@ star_names = {
 	Brewer
 	Brewtine
 	Brier
-	Brigaffa
-	Brillisir
 	Bril'zayd
 	Brinda
-	Brindle
 	Bringloid
 	Briscoll
 	Britanion
@@ -941,14 +1085,12 @@ star_names = {
 	Brockan
 	Brodie
 	Brontes
-	Brontitall
 	Browder
 	Brustam
 	Bryant
 	Brynnis
 	Buddha
-	Bulabrail
-	Bullette
+	Bunda
 	Bune
 	Bunene
 	Burtios
@@ -957,7 +1099,6 @@ star_names = {
 	Byss
 	Bythia
 	Bytopia
-	Caamas
 	Cador
 	Caesar
 	Cait
@@ -972,7 +1113,7 @@ star_names = {
 	Calinor
 	Callinon
 	Calondia
-	Camglaria
+	Camas
 	Campor
 	Campos
 	Camthrin
@@ -992,6 +1133,7 @@ star_names = {
 	"Canis Nu"
 	"Canis Omega"
 	"Canis Omicron"
+	"Canis Orionis"
 	"Canis Phi"
 	"Canis Pi"
 	"Canis Psi"
@@ -1000,10 +1142,12 @@ star_names = {
 	"Canis Tau"
 	"Canis Theta"
 	"Canis Upsilon"
+	"Canis Virginis"
 	"Canis Zeta"
 	Cannon
 	Canopus
 	Capella
+	Caph
 	Capra
 	Caprica
 	Capro
@@ -1025,21 +1169,21 @@ star_names = {
 	Carthoris
 	Carus
 	Carver
-	Carynno
+	Caryno
 	Cascerius
 	Casia
-	Caspadene
 	Cassandra
 	Cassius
 	Castal
 	Castor
+	Castula
 	Catharsis
-	Cathrhennlin
-	"Cato Neimoidia"
 	Caulron
 	Cavzek
 	Cazzabius
+	Cebalrai
 	Celadon
+	Celaeno
 	Celene
 	Celestia
 	Cemesta
@@ -1052,6 +1196,7 @@ star_names = {
 	Ceres
 	Cerise
 	Cerulean
+	Cervantes
 	Cestus
 	Cetaganda
 	"Ceti Alpha"
@@ -1068,6 +1213,7 @@ star_names = {
 	"Ceti Nu"
 	"Ceti Omega"
 	"Ceti Omicron"
+	"Ceti Orionis"
 	"Ceti Phi"
 	"Ceti Pi"
 	"Ceti Psi"
@@ -1076,24 +1222,28 @@ star_names = {
 	"Ceti Tau"
 	"Ceti Theta"
 	"Ceti Upsilon"
+	"Ceti Virginis"
 	"Ceti Xi"
 	"Ceti Zeta"
 	Chaar
-	Chalesm
+	Chalawan
+	Chalesim
 	Challon
 	Chamm
 	Chamra
+	Chamri
+	Chamukuy
 	Chandi
 	Chandra
 	Chandrila
 	Chaos
 	Chapman
 	Char
+	Chara
 	Charlotte
 	Charros
 	Chasin
-	Chatiib
-	"Chau Sari"
+	Chatib
 	Chazwa
 	Chebychev
 	Cheleb
@@ -1102,6 +1252,7 @@ star_names = {
 	Chergamore
 	Cheron
 	Cherryh
+	Chertan
 	Chetrus
 	Cheynne
 	Chezti
@@ -1125,6 +1276,7 @@ star_names = {
 	"Chi Nu"
 	"Chi Omega"
 	"Chi Omicron"
+	"Chi Orionis"
 	"Chi Phi"
 	"Chi Pi"
 	"Chi Psi"
@@ -1133,16 +1285,16 @@ star_names = {
 	"Chi Tau"
 	"Chi Theta"
 	"Chi Upsilon"
+	"Chi Virginis"
 	"Chi Xi"
 	"Chi Zeta"
-	Chibblar
-	Chiiban
+	Chiban
 	Chimera
 	Chiminol
 	Chiron
 	Chisellion
-	Chmmri
 	Chohar
+	Chok'noor
 	Chox
 	Churassix
 	Chusuk
@@ -1152,25 +1304,22 @@ star_names = {
 	Cipux
 	Cirban
 	Cizar
-	Cknoor
 	Clair
 	Clak'dor
 	Clarion
 	Clarus
-	Clioggef
 	Cobra
 	Codria
 	Coggan
 	Collodor
 	Colomus
-	Colwort
-	Commenar
 	Comporellon
-	Con Viab
+	"Con Viab"
 	Condarra
 	Condular
 	Conthim
 	Coorq
+	Copernicus
 	"Cor Caroli"
 	"Cor Hydrae"
 	"Cor Leonis"
@@ -1180,8 +1329,8 @@ star_names = {
 	Cordip
 	Corellia
 	Coridan
-	Cormaggas
-	Cormaggion
+	Cormagas
+	Cormagion
 	Corneria
 	Corrin
 	Cortina
@@ -1200,10 +1349,12 @@ star_names = {
 	Crimdor
 	"Cron Drift"
 	Cruxwan
-	Csilla
+	C'silla
+	Cujam
 	Culdax
+	Cunbar
 	Curie
-	Cuunbar
+	Cursa
 	Cuvacia
 	Cyban
 	Cybertron
@@ -1214,14 +1365,12 @@ star_names = {
 	Cytheria
 	Da
 	Daarasta
-	Daassatu
+	Dabih
 	Dachat
 	Dachlyd
 	Dad-basma
 	Da'diya
 	Daern
-	Dafah'qir
-	Dafaqay
 	Dagan
 	Dagasa
 	Dagda
@@ -1234,16 +1383,12 @@ star_names = {
 	Dahrtag
 	Dakala
 	Daksa
-	Dakshinamurthy
 	Da'la
 	Dalba
-	Da-leh
 	Dalia
-	DalNalten
+	Dalim
 	Dalphene
 	Damad
-	Damar-kha
-	Damgalnuna
 	Dam'hamat
 	Damiun
 	Damogran
@@ -1266,21 +1411,19 @@ star_names = {
 	Dasavatara
 	Dasha'id
 	Dashalah
+	Dassatu
 	Dastamon
 	Dathaana
 	Dathomir
-	Datsudiaga
 	Daudbiyha
 	Daupherm
-	Davassa
+	Davasa
 	Davlos
 	Dawcan
 	Dawkins
 	Dawn
 	Dawson
 	Da'yaa
-	Dayarisaif
-	Da'zahmiamis
 	Dearum
 	Debbux
 	Decarabia
@@ -1310,6 +1453,7 @@ star_names = {
 	"Delta Nu"
 	"Delta Omega"
 	"Delta Omicron"
+	"Delta Orionis"
 	"Delta Phi"
 	"Delta Pi"
 	"Delta Psi"
@@ -1318,6 +1462,7 @@ star_names = {
 	"Delta Tau"
 	"Delta Theta"
 	"Delta Upsilon"
+	"Delta Virginis"
 	"Delta Xi"
 	"Delta Zeta"
 	Deltiri
@@ -1327,6 +1472,7 @@ star_names = {
 	Demophon
 	Denaba
 	Denbra
+	"Deneb Algedi"
 	Denebola
 	Deneva
 	Denevar
@@ -1342,12 +1488,9 @@ star_names = {
 	Derra
 	Der'rahsim
 	Der-sawa
-	Dersiraa
-	De'sibrak
+	Dersira
 	Despad
 	Dester
-	Deteci
-	Deteenal
 	Detheris
 	Devanus
 	Devaron
@@ -1358,49 +1501,34 @@ star_names = {
 	Devra
 	Dharini
 	Dhat
+	Dhogha
 	Dhruva
 	Dhumravarna
-	Diabd-almed
 	Diadem
 	Dialeifa
 	Diam
 	Diamal
 	Dibra
 	Didia'run
-	Dieldrin
 	Dieron
-	Digikiki
 	Dihaiyaham
-	Diistimmat
 	Dilkaga
-	Dilrafarsam
 	Dilthi
 	Dilworth
-	Dimaanan
+	Dimanan
 	Dimis
 	Dimm
 	Dinmu
 	Dinoseb
-	Dinsay-fa
 	Dinyazi
 	Diphda
 	Dirban
-	Dirimamid
 	Dirmius
-	Dirnahram'a
-	Dir'nimo
 	Diryashuma
-	Dirzarnimkha
-	Discida
-	Dishawerya
-	Distull
-	Dithaphoru
 	Ditla
 	Ditrim
 	Diub
-	Diywagalah
 	Dodonnam
-	Dojack
 	"Dol Amroth"
 	Domitian
 	Dongar
@@ -1413,7 +1541,6 @@ star_names = {
 	Doriath
 	Dorvan
 	Dorwinion
-	Dosmidnaw
 	Dossel
 	Dothon
 	Douthart
@@ -1425,10 +1552,8 @@ star_names = {
 	Dramia
 	Drasefta
 	Drathis
-	Drawmijj
 	Drayan
 	Draylon
-	Drearien
 	Dredd
 	Drema
 	Drendor
@@ -1444,19 +1569,11 @@ star_names = {
 	Drongar
 	Dropek
 	Druckenwell
-	Duagha
-	Duamil-dasi
+	Dschubba
 	Dubhe
 	Dudnalana
-	Duffy
 	Duhor
-	Dujpiboonpol
 	Dulaisu
-	Dul-bifi
-	Dulhijkhri
-	Dulisian
-	Dul'kiy
-	Dultauri
 	Dumuzi
 	Durabbius
 	Duracchus
@@ -1464,50 +1581,38 @@ star_names = {
 	Durbatur
 	Durenia
 	Durga
-	Durhimseinhaf
 	Durif
 	Durin
-	Durmeelmii
+	Durmeelmi
 	Duro
 	Durocher
 	Durth
 	Duryahmu
 	Duti
 	Duwix
-	Dwithim
-	Dwumgar
-	Dxun
-	Dyahabkat
-	Dyauddinsa
 	Dyaus
-	Dyawa'amda
+	D'yawa
 	Dyev
 	Dylar
 	Dyson
 	Dytallix
+	Dziban
 	Ea
 	Eadominar
 	Eadrax
 	Eagle
 	Eam
 	Eamus
-	Ebbanaur
-	Ebbarmacchus
 	Ecru
 	Ecynth
+	Edasich
 	Edellimar
 	Edemar
 	Eden
 	"Edor Vang"
-	Efoll
-	Egidi
-	Eglauflol
 	Eiol
 	Eissam
-	Eivrea
 	Ejok
-	Ejustaint
-	Ekadanta
 	Ekbir
 	Ekos
 	Ekron
@@ -1518,11 +1623,12 @@ star_names = {
 	Eldora
 	Electra
 	Eleusis
+	Elgafar
 	Elhonna
 	Elissa
+	Elkurud
 	Ellamir
 	Ellor
-	Elmuthalleth
 	Elnath
 	Eltanin
 	Eltheen
@@ -1533,18 +1639,16 @@ star_names = {
 	Embor
 	Emesh
 	Eminar
-	Emmanseth
 	Emoralis
-	"Empress Teta"
 	Enara
 	Enbilulu
 	Endari
-	Endirlang
 	Endoga
 	Endor
 	Endrin
 	Endursaga
 	Endymion
+	Enif
 	Enim
 	Enkef
 	Enki
@@ -1553,12 +1657,9 @@ star_names = {
 	Enmesarra
 	Ennan
 	Ennugi
-	Ennust
-	Enshag
 	Enten
 	Eos
 	Epsi
-	Epsilon
 	"Epsilon Alpha"
 	"Epsilon Beta"
 	"Epsilon Centauri"
@@ -1577,6 +1678,7 @@ star_names = {
 	"Epsilon Nu"
 	"Epsilon Omega"
 	"Epsilon Omicron"
+	"Epsilon Orionis"
 	"Epsilon Phi"
 	"Epsilon Pi"
 	"Epsilon Psi"
@@ -1586,9 +1688,11 @@ star_names = {
 	"Epsilon Tauri"
 	"Epsilon Theta"
 	"Epsilon Upsilon"
+	"Epsilon Virginis"
 	"Epsilon Xi"
 	"Epsilon Zeta"
 	Eptraban
+	Erai
 	Erasmadon
 	Erdosca
 	Eregion
@@ -1599,22 +1703,17 @@ star_names = {
 	Eriadu
 	Eridani
 	Eriga
+	Erikang
 	Erimadon
-	Ernyes
 	Eros
 	Eroticon
-	Erra
 	Errai
-	Errikang
 	Erythnul
 	Escant
 	Eskellion
-	Esperii
-	Esseles
-	Es'sirhi
+	Esperi
 	Esteraeus
 	Estrada
-	Esuyp
 	Eta
 	"Eta Alpha"
 	"Eta Beta"
@@ -1634,6 +1733,7 @@ star_names = {
 	"Eta Nu"
 	"Eta Omega"
 	"Eta Omicron"
+	"Eta Orionis"
 	"Eta Phi"
 	"Eta Pi"
 	"Eta Psi"
@@ -1642,6 +1742,7 @@ star_names = {
 	"Eta Tau"
 	"Eta Theta"
 	"Eta Upsilon"
+	"Eta Virginis]"
 	"Eta Xi"
 	"Eta Zeta"
 	Etamin
@@ -1650,31 +1751,23 @@ star_names = {
 	Ethion
 	Ethos
 	Eugenius
-	Eugizim
 	Eula
-	"Eurav Wass"
 	Europia
 	Evadne
-	Evaggimar
 	Evarym
 	Evedil
 	Evendim
 	Evenstar
 	Evexus
+	Exilon
 	Exodus
-	Exxilon
 	Eyrie
 	Ezak
-	Faabdyazhu
-	Fadlsad'muh
-	Fa'fifdi
-	Fafizmir
-	Faghihinejad
+	Fafnir
 	Fa-hai
-	Fahhayalah
+	Fahayalah
 	Fahikda
 	Fahleena
-	Fahrujabmee
 	Faimifa
 	Fai'soud
 	Falcon
@@ -1690,36 +1783,32 @@ star_names = {
 	Fa'na
 	Fanamar
 	Fandar
+	Fang
 	Fangcor
 	Fangnaur
 	Fa'niyib
 	Faqifa
-	Faqtrosaa
 	Farahula
-	Faraiszafa
 	Faramir
 	Faraway
 	Farius
 	Far-med
 	Farni
-	Farrfin
+	Farphin
 	Farulid
-	Fasa'dda
 	Fa'safa
 	Fasahja
 	Fashahwa
-	Fatbi'ma
 	Faw'alsa
-	Fawkhaybala
+	Fawaris
 	Fayariq
 	Fayasai
-	Faywahhama
-	Fazlnabfiqma
 	Fedalle
 	Fedeema
 	Feggor
 	Fejantris
 	Feldazir
+	Felis
 	Fellebia
 	Felucia
 	Femax
@@ -1736,39 +1825,23 @@ star_names = {
 	Ferragon
 	Fer-riq
 	Fevallion
-	Fharlanghn
-	"Fia Nita"
-	Fialaiti
 	Fi'am
-	Fidhilam
-	Fidsam-fizzasa
-	Fifmahfranfa
 	Figizar
-	Fihahay
-	Fihinyaja
+	Fihahaya
 	Fihir
-	Fihrrislihrek
-	Fijjon
+	Fijon
 	Fillamir
 	Filthor
 	Filtreus
 	Fi-nim
 	Fiorina
-	Fiqshamfif
-	"Fir Mathrioz"
 	Firam
-	Fir'hikgaz
-	Firin Malba
-	Firridhadur
 	Fival
 	Fivel
-	Fizriqsilmil
-	Fizzawadi
 	Flanux
 	Flargathon
 	Flax
 	Flaxia
-	Fleagund
 	Florin
 	Flotsam
 	Focolor
@@ -1784,32 +1857,28 @@ star_names = {
 	Forlindon
 	Formothion
 	Fornax
-	Forodwaith
 	Forster
 	Foth
 	Fowla
 	Frastra
-	Frazfraga
 	Frego
 	Frey
 	Freya
 	Frigg
 	Frodo
-	Frorealm
-	Frunalia
-	Fujeau
 	Fulaz
-	Fulbadan
-	Fulladamal
+	Fulu
+	Fumalsamakah
 	Furan
 	Furcas
 	Furland
 	Furlisia
+	Furud
 	Furya
-	Furyondy
-	Gaa'rid
+	Fuyue
 	Gabe
 	Gabriel
+	Gacrux
 	Gaga
 	Gagarin
 	Gaha'sha
@@ -1862,6 +1931,7 @@ star_names = {
 	"Gamma Nu"
 	"Gamma Omega"
 	"Gamma Omicron"
+	"Gamma Orionis"
 	"Gamma Phi"
 	"Gamma Pi"
 	"Gamma Psi"
@@ -1871,6 +1941,7 @@ star_names = {
 	"Gamma Theta"
 	"Gamma Trianguli"
 	"Gamma Upsilon"
+	"Gamma Virginis"
 	"Gamma Xi"
 	"Gamma Zeta"
 	Gamont
@@ -1884,9 +1955,7 @@ star_names = {
 	Ganga
 	Ganges
 	Ganshoren
-	Gansireed
-	Garakacka
-	Garget
+	Ga'rid
 	Garmin
 	Garner
 	Garth
@@ -1897,8 +1966,6 @@ star_names = {
 	Gateway
 	Gathol
 	Gathrica
-	Gatumdag
-	Gau-mayra
 	Gauss
 	Gauzor
 	Gavruxi
@@ -1910,7 +1977,6 @@ star_names = {
 	Gemaris
 	Gemma
 	Gemulon
-	Gengen-Wer
 	Geonosis
 	Gerenia
 	Gerica
@@ -1919,23 +1985,23 @@ star_names = {
 	Gerrard
 	Geshtai
 	Geshtinanna
-	Geshtu-E
 	Geta
 	Ghamisa
 	Ghas'ga
 	Ghasramti
 	Ghorman
 	Ghusasamda
+	Giausar
 	Gibil
-	Giblik-dur
-	Gidzerak
 	Giedi
+	Gienah
 	Giju
 	Gildor
 	Gilgamesh
 	Gilprim
 	Gimble
 	Ginam
+	Ginan
 	Ginaz
 	Gindix
 	Ginigan
@@ -1949,23 +2015,22 @@ star_names = {
 	Glithnos
 	Glorigoth
 	Glory
-	Glyderrum
+	Goeria
 	Goffia
 	Gol
 	Golandrinas
 	Golba
 	Golega
+	Gomeisa
 	Gonal
 	Gondolin
 	Gondor
-	Gooria
 	Gordaldo
 	Gorim
 	Gorthar
 	Gossok
 	Gothra
 	Gottara
-	Gounaropolous
 	Gozam
 	Gralik
 	Gramilia
@@ -1978,51 +2043,37 @@ star_names = {
 	Grokkan
 	Gromen
 	Grugmora
+	Grumium
 	Grumman
-	Grunthirst
+	Gudja
 	Gugalanna
 	Guhur
 	Gunara
+	Guniibuu
+	Gunlibuu
 	Guram
-	Guwartan
 	Gygax
-	Haasasam
-	Haatazlih
 	Habakr
 	Ha-bas
 	Haber
-	Habfatimla
-	Habraq
+	Habra
 	Hadad
 	Hadar
-	Haddnoc
 	Hades
-	Ha-dil
 	Hadir
 	Hadrian
-	Hadriccus
-	Ha-dulrim
-	Hadumudin
-	Haduphis
-	Ha'fafadl
-	Hafaiha
+	Hadricus
+	Haedus
 	Hafha
 	Ha'fider
-	Hafmadqarya
 	Hagal
 	Hagen
-	Hahaiseinwa
 	Hahanu
-	Ha-hat
 	Ha'i
 	Hai-ar
-	Haibeenli
-	Haiibshahy
 	Hailwa
 	Haisuna
-	Haithadulsai
 	Haiwa
-	Hajdarnahnaj
 	Hajmedra
 	Haj'ni
 	Hajurifra
@@ -2039,7 +2090,7 @@ star_names = {
 	Hammer
 	Hamud
 	Ha'muhbai
-	Hamunaa
+	Hamunsa
 	Hanaswas
 	Hanaya
 	Hani
@@ -2058,32 +2109,28 @@ star_names = {
 	Harga
 	Haribas
 	Harihara
-	Har-jabgha
 	Hark
 	Harlindon
 	Harpalos
 	Harper
 	Har'ti
-	Haruun Kal
+	"Harun Kal"
 	Harvest
-	Harwadamli
-	Haryahwafa
-	Haryunyaya
+	Hasasam
 	Ha'sim
 	Hasmilal
+	Hassaleh
 	Hastor
 	Hastromil
-	Hasuazaz
-	Hatardi'am
+	Hatazalih
 	Hatch
 	Hatcher
 	Hathor
 	Hatmah
+	Hatysa
 	Haven
-	Havenchiss
 	Haviland
 	Havoc
-	Havonchir
 	Hawanqa
 	Hawasha
 	Hawayalim
@@ -2093,15 +2140,163 @@ star_names = {
 	Hayalosya
 	Hayasum
 	Haydajabr
-	Haylnan
+	Haylinan
 	Hayrid
 	Hazra
+	"HD 100407"
+	"HD 109034"
+	"HD 109195"
+	"HD 110698"
+	"HD 110975"
+	"HD 113437"
+	"HD 118608"
+	"HD 123956"
+	"HD 133440"
+	"HD 134701"
+	"HD 144039"
+	"HD 152048"
+	"HD 165803"
+	"HD 181966"
+	"HD 187289"
+	"HD 201111"
+	"HD 205870"
+	"HD 207630"
+	"HD 214085"
+	"HD 221393"
+	"HD 228433"
+	"HD 233106"
+	"HD 233367"
+	"HD 238605"
+	"HD 242731"
+	"HD 243153"
+	"HD 247715"
+	"HD 248770"
+	"HD 249197"
+	"HD 258356"
+	"HD 266501"
+	"HD 268291"
+	"HD 271536"
+	"HD 277127"
+	"HD 277250"
+	"HD 283391"
+	"HD 287115"
+	"HD 288401"
+	"HD 290457"
+	"HD 290812"
+	"HD 293357"
+	"HD 298942"
+	"HD 303950"
+	"HD 313458"
+	"HD 329960"
+	"HD 331428"
+	"HD 339643"
+	"HD 342593"
+	"HD 348491"
+	"HD 349651"
+	"HD 349730"
+	"HD 353919"
+	"HD 360243"
+	"HD 367299"
+	"HD 371995"
+	"HD 372442"
+	"HD 375358"
+	"HD 375838"
+	"HD 379743"
+	"HD 387229"
+	"HD 388621"
+	"HD 389685"
+	"HD 396424"
+	"HD 399507"
+	"HD 401046"
+	"HD 405657"
+	"HD 409161"
+	"HD 409838"
+	"HD 420222"
+	"HD 437299"
+	"HD 439654"
+	"HD 449368"
+	"HD 451643"
+	"HD 452371"
+	"HD 452721"
+	"HD 452779"
+	"HD 453877"
+	"HD 455489"
+	"HD 464201"
+	"HD 465189"
+	"HD 466158"
+	"HD 466187"
+	"HD 467461"
+	"HD 470425"
+	"HD 473107"
+	"HD 478313"
+	"HD 478720"
+	"HD 487480"
+	"HD 488256"
+	"HD 499162"
+	"HD 500667"
+	"HD 509775"
+	"HD 514891"
+	"HD 517549"
+	"HD 526175"
+	"HD 543216"
+	"HD 549123"
+	"HD 558766"
+	"HD 561599"
+	"HD 568715"
+	"HD 569239"
+	"HD 572506"
+	"HD 576264"
+	"HD 582330"
+	"HD 583475"
+	"HD 584437"
+	"HD 595534"
+	"HD 607208"
+	"HD 612072"
+	"HD 614504"
+	"HD 615177"
+	"HD 616242"
+	"HD 616817"
+	"HD 621012"
+	"HD 623592"
+	"HD 627965"
+	"HD 655582"
+	"HD 660813"
+	"HD 661509"
+	"HD 672223"
+	"HD 676460"
+	"HD 676583"
+	"HD 681015"
+	"HD 684229"
+	"HD 693786"
+	"HD 696060"
+	"HD 697143"
+	"HD 729710"
+	"HD 738905"
+	"HD 744676"
+	"HD 748893"
+	"HD 764666"
+	"HD 766041"
+	"HD 770590"
+	"HD 775453"
+	"HD 776102"
+	"HD 784154"
+	"HD 788715"
+	"HD 811251"
+	"HD 815605"
+	"HD 824303"
+	"HD 830446"
+	"HD 835231"
+	"HD 855191"
+	"HD 863669"
+	"HD 879147"
+	"HD 882696"
+	"HD 889407"
+	"HD 891785"
+	"HD 895830"
 	He'a
 	Hecate
 	Hector
-	Heemmusmasham
 	Heflin
-	Hegir-Nuna
 	Heimdal
 	Heinlein
 	Heironeous
@@ -2111,10 +2306,10 @@ star_names = {
 	Hel
 	Helam
 	Helion
-	Helium
 	Helm
 	"Helm's Deep"
 	Helska
+	Helvetios
 	Hemel
 	Hemikek
 	Hemtares
@@ -2122,71 +2317,199 @@ star_names = {
 	Hendursaga
 	Hensedon
 	Hera
-	Heraamnabsay
 	Herbert
 	Hermes
-	Hesstamur
 	Hestia
 	Heva
 	Heward
 	Hextor
 	Heze
-	Hhabban
-	Hiamit
 	Hiann
-	Hiflheim
-	Higashik-Ata
 	Higma
-	Hijeroscant
-	Hijnasura
+	Hijinasura
 	Hijra
 	Hij'sil
 	Hiklam
-	Hi'lidshu
 	Hilnor
 	Himalaya
 	Himjad
 	Him'ju
 	Himpra
-	Hina'mehna
 	Hine
 	Hinra
-	Hirgabr
+	"HIP 100518"
+	"HIP 100687"
+	"HIP 104204"
+	"HIP 104824"
+	"HIP 104862"
+	"HIP 105511"
+	"HIP 122754"
+	"HIP 124952"
+	"HIP 126037"
+	"HIP 135816"
+	"HIP 139791"
+	"HIP 146879"
+	"HIP 159518"
+	"HIP 168450"
+	"HIP 176450"
+	"HIP 178619"
+	"HIP 187506"
+	"HIP 195357"
+	"HIP 198174"
+	"HIP 199561"
+	"HIP 204857"
+	"HIP 212131"
+	"HIP 214568"
+	"HIP 219065"
+	"HIP 219797"
+	"HIP 222193"
+	"HIP 226466"
+	"HIP 227854"
+	"HIP 233828"
+	"HIP 236809"
+	"HIP 238042"
+	"HIP 243478"
+	"HIP 247161"
+	"HIP 247704"
+	"HIP 257828"
+	"HIP 273170"
+	"HIP 281316"
+	"HIP 283627"
+	"HIP 283899"
+	"HIP 289534"
+	"HIP 292682"
+	"HIP 311655"
+	"HIP 320064"
+	"HIP 332120"
+	"HIP 347694"
+	"HIP 358158"
+	"HIP 360190"
+	"HIP 365671"
+	"HIP 366065"
+	"HIP 369506"
+	"HIP 369540"
+	"HIP 370534"
+	"HIP 383864"
+	"HIP 393288"
+	"HIP 394392"
+	"HIP 394468"
+	"HIP 398931"
+	"HIP 401633"
+	"HIP 413462"
+	"HIP 426258"
+	"HIP 441267"
+	"HIP 442805"
+	"HIP 444364"
+	"HIP 446030"
+	"HIP 448317"
+	"HIP 460110"
+	"HIP 461033"
+	"HIP 499465"
+	"HIP 501103"
+	"HIP 506349"
+	"HIP 506990"
+	"HIP 507895"
+	"HIP 519726"
+	"HIP 523858"
+	"HIP 523927"
+	"HIP 525103"
+	"HIP 530481"
+	"HIP 533705"
+	"HIP 533876"
+	"HIP 537271"
+	"HIP 545353"
+	"HIP 549558"
+	"HIP 553168"
+	"HIP 556495"
+	"HIP 576634"
+	"HIP 581471"
+	"HIP 587027"
+	"HIP 588354"
+	"HIP 588888"
+	"HIP 589981"
+	"HIP 590669"
+	"HIP 596181"
+	"HIP 596197"
+	"HIP 602156"
+	"HIP 609951"
+	"HIP 611876"
+	"HIP 613123"
+	"HIP 619932"
+	"HIP 621800"
+	"HIP 623341"
+	"HIP 627450"
+	"HIP 642129"
+	"HIP 649119"
+	"HIP 649515"
+	"HIP 657083"
+	"HIP 659922"
+	"HIP 663589"
+	"HIP 671388"
+	"HIP 688069"
+	"HIP 688310"
+	"HIP 688721"
+	"HIP 712926"
+	"HIP 715095"
+	"HIP 717874"
+	"HIP 719371"
+	"HIP 719467"
+	"HIP 721190"
+	"HIP 728135"
+	"HIP 731616"
+	"HIP 731674"
+	"HIP 732189"
+	"HIP 740016"
+	"HIP 748266"
+	"HIP 755300"
+	"HIP 757043"
+	"HIP 757336"
+	"HIP 761384"
+	"HIP 770610"
+	"HIP 784083"
+	"HIP 791932"
+	"HIP 795776"
+	"HIP 800010"
+	"HIP 804585"
+	"HIP 809350"
+	"HIP 817570"
+	"HIP 820752"
+	"HIP 823754"
+	"HIP 833784"
+	"HIP 839801"
+	"HIP 843829"
+	"HIP 844376"
+	"HIP 854683"
+	"HIP 855602"
+	"HIP 867431"
+	"HIP 870231"
+	"HIP 871930"
+	"HIP 875566"
+	"HIP 884450"
+	"HIP 891943"
+	"HIP 897830"
+	Hiragabri
 	Hir-hi
 	Hirim
-	Hir-lalsil
-	Hirnaderamu
 	Hirogen
-	Hirse-kha
-	Hisanatimaa
 	Hischmal
-	Hi'suyah
 	Hitaghama
 	Hithara
 	Hithram
 	Hitoria
-	Hittimar
 	Hixam
 	Hixar
 	Hixaros
 	Hizar
 	Hizzel
-	Hocry
-	Hodirhiba
-	Hodranus
-	Hoeddim
+	Hocryi
 	Hoek
 	Hoel
-	Hojjam
 	Hokaja
-	Holdebaana
+	Holdebana
 	Holden
-	Holi'a
 	Hollin
 	Holmes
-	Honnam Ter
-	Honoghr
-	Hooppler
+	Homam
 	Hope
 	Horschim
 	Horus
@@ -2195,33 +2518,58 @@ star_names = {
 	Hoth
 	Hotram
 	Hough
-	Housga-lah
 	Howoz
 	Hozint
-	Htrae
-	Huba-hi
 	Hubble
 	Hugin
-	Hulahmuhik
-	Humbarine
 	Hunter
 	Huntress
 	Huntur
 	Huph
 	Hurada
-	Hus-thiyta
-	Hyabb
+	Hyab
 	Hyadea
 	Hyadum
+	"Hydra Alpha"
+	"Hydra Beta"
+	"Hydra Centauri"
+	"Hydra Ceti"
+	"Hydra Chi"
+	"Hydra Delta"
+	"Hydra Epsilon"
+	"Hydra Eridani"
+	"Hydra Eta"
+	"Hydra Gamma"
+	"Hydra Iota"
+	"Hydra Kappa"
+	"Hydra Lambda"
+	"Hydra Ling"
+	"Hydra Major"
+	"Hydra Minor"
+	"Hydra Mu"
+	"Hydra Nu"
+	"Hydra Omega"
+	"Hydra Omicron"
+	"Hydra Orionis"
+	"Hydra Phi"
+	"Hydra Pi"
+	"Hydra Psi"
+	"Hydra Rho"
+	"Hydra Sigma"
+	"Hydra Tau"
+	"Hydra Theta"
+	"Hydra Upsilon"
+	"Hydra Virginis"
+	"Hydra Xi"
+	"Hydra Zeta"
 	Hydrobius
 	Hykkan
-	Hy-midya
 	Hyperboria
 	Hyperian
 	Hypori
 	Hyrma
 	Hysajha
-	Hyshma
+	Hyshima
 	Hysleria
 	Hythara
 	Ibacca
@@ -2236,49 +2584,38 @@ star_names = {
 	Icor
 	Icos
 	I'dania
-	Idhuardos
 	Idomor
 	Idran
 	Idross
 	Iego
 	Ieria
 	Ighabah
-	Ihhelaysif
-	Ijaagin
-	I'ja'ta
 	Ijax
 	Ikalian
-	Ikmeedmussa
+	Iklil
 	Ikrueb
-	Ilabrat
 	Ilbis
-	Il'biyma
 	Ilidaria
 	Illex
 	Illodia
 	Illyrica
-	Ilrifmeena
-	Ilriqli
 	Ilum
-	Imahbayus
-	Im'dar
+	Imai
 	Imladris
-	Imloth Melui
+	"Imloth Melui"
 	"Impal Tov"
 	Impan
 	Imperius
 	Imriz
-	Imulgaron
 	Imya-raha
 	Ina
-	Inadfarzayn
 	Inanna
 	I'nasha
 	Incabulus
 	Indross
-	Inegore
 	Inferna
 	Inmed
+	Intercrus
 	Intham
 	Inthor
 	Inysh
@@ -2306,6 +2643,7 @@ star_names = {
 	"Iota Nu"
 	"Iota Omega"
 	"Iota Omicron"
+	"Iota Orionis"
 	"Iota Phi"
 	"Iota Pi"
 	"Iota Psi"
@@ -2314,12 +2652,12 @@ star_names = {
 	"Iota Tau"
 	"Iota Theta"
 	"Iota Upsilon"
+	"Iota Virginis"
 	"Iota Xi"
 	"Iota Zeta"
 	Iotra
 	Iphigin
 	Ipos
-	Iproviuft
 	Ipyr
 	Iram
 	Ireland
@@ -2332,29 +2670,20 @@ star_names = {
 	Irith
 	Irkalla
 	Ironhold
-	Irriamun
 	Irthius
 	Iryid-sa
 	Isadin
 	Isal
-	Isayousfumi
-	Is'baslai
-	Isetine
 	Ishanna
 	Ishikawa
 	Ishnor
 	Ishtar
 	Ishtrum
 	Ishum
-	Ishvaln
-	I-sim
 	Isimud
-	Isinchell
 	Isis
 	Isius
 	Iskander
-	Isleelqil
-	Isli'shed
 	Isralt
 	Iss
 	Issal
@@ -2364,80 +2693,56 @@ star_names = {
 	Ithilien
 	Ithor
 	Itraben
-	Its
 	Iuz
 	Iversona
 	Iversonia
 	Ivey
 	Ix
 	Izar
-	Izderfi
-	Izish
-	Izta
-	Izval
-	Izzgib
-	Izzlussa
 	Jaa
+	Jabbah
 	Jabeth
-	Jabiim
+	Jabim
 	Jabor
 	Jade
 	"Jade Falcon"
 	Jagannath
 	"Jaglan Beta"
 	Jahar
-	Jahusbil
-	Jahydee
-	Ja-ilru
 	Jaipur
-	Jajathsiqir
 	Jaltham
-	Jandoon
+	Jandon
 	Janna
 	Japhon
 	Japris
 	Jarad
-	Jardlaphon
 	Jaro
 	Jaros
 	Jasalsada
 	Jasmak
-	Jason
 	Jasoom
 	Jataramus
-	Jathbinhi
 	Javin
 	Jaya
 	Jefion
 	Jenkata
 	Jennisek
-	Jeraddo
-	Jhapp
-	Jhurope
-	Jiangyin
-	Jib-bameed
+	Jerado
+	J'happ
 	Jida
 	Jih
 	Jijo
 	Jikimri
 	Jillis
-	Jimadyata
 	Jinkath
-	Jinnium
-	Jobox
-	Joinum
-	Jolderuun
+	Jishui
 	Jomark
 	Jompron
 	Jondus
-	Jophekka
-	"Jor Mon Dir"
 	Joralla
-	"Josq Fomat"
 	Jotenheim
 	Jotunheim
 	Jovian
-	J't'p'tan
 	Jubilar
 	Jubushu
 	Jughum
@@ -2451,7 +2756,6 @@ star_names = {
 	Jundius
 	Junkin
 	Jurnast
-	Juthtath
 	Juvex
 	Jyabahada
 	Ka
@@ -2459,9 +2763,9 @@ star_names = {
 	Kabatris
 	Kabta
 	Kaelon
+	Kaffaljidhma
 	Kafulah
 	Kahalajom
-	Kahifaina
 	Kailor
 	Kaitain
 	Kaka
@@ -2477,11 +2781,11 @@ star_names = {
 	Kalidasa
 	Kalki
 	Kaloolon
-	Kalstrand
 	Kamber
 	Kamino
 	Kanadrius
 	Kandauri
+	Kang
 	Kannam
 	Kaol
 	Kappa
@@ -2503,6 +2807,7 @@ star_names = {
 	"Kappa Nu"
 	"Kappa Omega"
 	"Kappa Omicron"
+	"Kappa Orionis"
 	"Kappa Phi"
 	"Kappa Pi"
 	"Kappa Psi"
@@ -2511,6 +2816,7 @@ star_names = {
 	"Kappa Tau"
 	"Kappa Theta"
 	"Kappa Upsilon"
+	"Kappa Virginis"
 	"Kappa Xi"
 	"Kappa Zeta"
 	Kara
@@ -2519,26 +2825,28 @@ star_names = {
 	Karemma
 	Karnak
 	Karos
+	Karotelos
 	Karsch
-	Kar-telos
 	Kartikeya
 	Karvoss
 	Kashin
 	Kashyapa
-	Kashyyyk
+	Kashyk
 	Kastaba
 	Kastor
 	Kataan
-	Katdelmed
 	Kauboros
 	Kauri
+	"Kaus Australis"
+	"Kaus Borealis"
+	"Kaus Media"
 	"Kavis Alpha"
 	Kaybin
+	Kazikark
 	Kazon
 	Kazoo
-	Kazzkark
 	Kebechet
-	Keemdatzalma
+	Keid
 	Kel
 	Kelemvor
 	Keloda
@@ -2559,10 +2867,11 @@ star_names = {
 	Kessel
 	Kessik
 	Khagaton
-	Khahyabd
+	Khahyab
 	Khali
 	Kham'aya
 	Khamb
+	Khambalia
 	Khanah
 	Khandoba
 	Kharai
@@ -2572,49 +2881,44 @@ star_names = {
 	Khay'fai
 	Khay'jarek
 	Khay'lah
-	Khaysaisaaliysa
 	Khepri
 	Khiram
 	Khitomer
-	Khnum
 	Khonsu
+	Khonum
 	Khor
 	Khosia
 	Ki
 	Kibbin
 	"Kidiet Olgo"
 	Kievi
-	Kiffex
+	Kifex
 	Kikiywa
 	Kildatha
 	Kildor
 	Kimhayu
 	Kimithar
-	Kimzulaklhamsoud
 	Kindar
 	Kingu
 	Kinnison
 	Kintan
 	Kinyen
-	Kiqahirsa
 	Kiram
 	Kirfer
 	Kirov
 	Kisamanka
-	Kisurmarsood
-	"Kitel Phard"
-	Kithrup
+	Kitalpha
 	Klaestron
 	"Klasse Ephemora"
 	Klatooine
 	Klavdia
-	Kleeft
 	Kleeslex
+	Kleft
 	Klendathu
 	Klo
 	Klueb
 	Kobaria
-	Kobherria
+	Kobheria
 	Kobol
 	Kochab
 	Kodracca
@@ -2627,14 +2931,14 @@ star_names = {
 	Kolhar
 	Komarr
 	Kongath
-	Kooriva
 	Korach
 	Kord
 	Kore
 	Korell
 	Korgas
 	Korhal
-	Kornaggi
+	Koriva
+	Kornagi
 	Kornephoros
 	Koronor
 	Korriban
@@ -2647,32 +2951,27 @@ star_names = {
 	Koter
 	Kouprey
 	Krakaum
-	Kramtros-ba
+	Kramtros
 	Krant
 	Krasner
 	Kraz
 	Kria
-	Krialiya
 	Krikkit
+	Kriliya
 	Krimu
 	Krios
 	Krisadnas
 	Kriston
 	Kriyas
-	Kriyjahshu
-	Kriy'nia
 	Kroll
 	Krondor
 	Kronos
 	Krypton
-	Kshahtrya
+	K'shahtrya
 	Ksora
 	Ktaria
 	Kuat
 	Kubaba
-	Kublifathi
-	Kubrikyai
-	Kubsha'fatja
 	Kuk
 	Kulla
 	Kullat
@@ -2681,6 +2980,7 @@ star_names = {
 	Kupe
 	Kurell
 	Kures
+	Kurhah
 	Kurili
 	Kurma
 	Kuroth
@@ -2688,12 +2988,13 @@ star_names = {
 	Kushmanda
 	Kuzom
 	"Kwan Ying"
-	Kwenn
-	Kwilas
+	K'wenn
+	K'wilas
 	Kylata
 	Kyuss
-	Kzin
-	Laabyebsa
+	K'zin
+	"La Superba"
+	La'abyebsa
 	La'ahla
 	La'bin
 	Labumar
@@ -2702,16 +3003,11 @@ star_names = {
 	Lacroix
 	Lactra
 	Ladiom
-	Laffite
-	Lagabi'zayd
+	Lafite
 	Lagrone
 	Lah'a
 	La-ha
 	Lahar
-	Laharralay
-	Lahjali
-	Lahla'zaa
-	Lahlibdarjad
 	Lahmu
 	Lahmusabli
 	Lah-sa
@@ -2719,11 +3015,11 @@ star_names = {
 	Lai'thalos
 	Lakshmana
 	Lakshmi
-	Lakshmi Narayan
+	"Lakshmi Narayan"
 	Lalande
 	Lal'lal
 	Lallikha
-	Lal-ramqar
+	Lal-ram
 	Lal-sa
 	Lalshamarlah
 	Lamadderleh
@@ -2747,6 +3043,7 @@ star_names = {
 	"Lambda Nu"
 	"Lambda Omega"
 	"Lambda Omicron"
+	"Lambda Orionis"
 	"Lambda Phi"
 	"Lambda Pi"
 	"Lambda Psi"
@@ -2755,6 +3052,7 @@ star_names = {
 	"Lambda Tau"
 	"Lambda Theta"
 	"Lambda Upsilon"
+	"Lambda Virginis"
 	"Lambda Xi"
 	"Lambda Zeta"
 	Lambodara
@@ -2776,7 +3074,7 @@ star_names = {
 	Lapolis
 	Lapra
 	Laramya
-	La-ranhaf
+	Larawag
 	Larbo
 	Lares
 	Largo
@@ -2791,51 +3089,46 @@ star_names = {
 	Laurentian
 	Lavascio
 	Lawam
-	Layaadsha
-	Layabdba
+	Layadsha
 	Lazon
 	Leda
 	Ledonia
-	Leemhifa
 	Leesak
 	Legara
-	Lehmsa
-	Leinazirunal
+	Lehmisa
 	Lendore
 	Leonidas
 	Leptophos
 	"Ler Zumon"
-	"Leria Kerlsil"
 	Lerman
 	Lernaeus
+	Lesath
 	Lessim
 	Lessiria
 	Leto
-	Lettow
 	Lianna
 	Liao
+	Libertas
+	Lich
 	Lid
 	Lidabiya
-	Lidi-izz
+	Lidiz
 	Ligon
+	Liharasha
 	Lijiz
 	Likfaijama
+	"Lilii Borea"
 	Lilith
 	Lilmammudra
 	"Lima Serra"
 	Limhirmud
 	Limidat
-	Li-misa
 	Lindon
 	Lingam
 	Lingodbhava
 	Linngol
-	Lino
-	Liqfarfabeen
-	Liqharasha
 	Liram
 	Lithone
-	Li'ziz
 	Loedorvi
 	Loggam
 	Loisar
@@ -2843,26 +3136,19 @@ star_names = {
 	Lolnar
 	Lolth
 	Lombidus
-	Loque'que
 	Lorien
 	Lorina
-	Lorrd
 	Lorta
-	Losdersefta
-	Losmotafa
 	Lothandra
 	Lothra
 	Loval
 	Luaklath
-	Lubrairuzyah
 	Lucre
-	Lugal-Irra
+	Lugal
 	Lugnar
 	Lujo
 	Lulal
 	Lumi
-	Luna'la
-	Lusimwidi
 	LV426
 	LV514
 	Lyctabon
@@ -2873,14 +3159,15 @@ star_names = {
 	Lythorius
 	Lytirin
 	Ma
+	Maa
 	Maa-dilhus
 	Maahes
 	Ma'ai
 	Maarek
+	Maasym
 	Ma'at
 	Mab-Bu
 	Macrinus
-	Mad
 	Madamedal
 	Ma'dat
 	Maddiyaja
@@ -2888,25 +3175,21 @@ star_names = {
 	Madena
 	Madilriaz
 	Madir
-	Madmaleidat
 	Mad-sin
 	Madyas-mas
 	Maestro
 	Ma'famya
-	Mafdet
 	Magellan
 	Maghama
 	Magica
 	Magramal
 	Magrathea
+	Mahasim
 	Mahi-haf
-	Mahimfiq
 	Mahjafajabr
 	Mahmus
 	Mahodara
-	Mahramaridha
 	Maia
-	Mail-zu
 	"Makem Ti"
 	Ma'la
 	Malachite
@@ -2931,16 +3214,15 @@ star_names = {
 	Mammon
 	Mamurqa
 	Man'a
-	Ma-na
 	Manaan
-	Manayd'a
+	Manayda
 	Mandalore
 	Mandanu
 	Mandar
 	Mandorla
 	Mandul
 	Mang
-	Manhayizzai
+	Manhayizhai
 	Manhiz
 	Mankhay
 	Man'lal
@@ -2952,13 +3234,11 @@ star_names = {
 	Manthall
 	Mantilles
 	Manungal
-	Manward
 	Manyanoor'ad
 	Man'zarmu
 	Manziad
-	Mar Sara
+	"Mar Sara"
 	Mara
-	Ma-ra
 	Mar-Adetta
 	Maragdis
 	Marajaretus
@@ -2970,25 +3250,26 @@ star_names = {
 	Mareenius
 	Mareid
 	Marfak
+	Marfik
 	Maridun
 	Marilac
-	Marilyn
 	Mariposa
 	Mar'ja
 	Markab
 	Markaz
+	Markeb
 	Markhor
 	Markus
-	Markuus
 	Marlonia
 	Marmouha
 	Marsack
 	Marsh
 	Marshall
+	Marsic
 	Martin
 	Martzia
 	Maryah-ya
-	Masa'izztal
+	Masa'iztal
 	Masal'der
 	Masayzaymat
 	Mashamedsay
@@ -2998,20 +3279,19 @@ star_names = {
 	Matal
 	Matalas
 	Matar
-	Matii'may
+	Mati'may
 	Matjar
 	Matsam
 	Matsonia
-	Matsya
+	Matsoya
 	Mauthula
 	Mavall
 	Mawan
 	Mawaran
 	"Maxia Zeta"
 	Maximoff
-	Mayaheine
 	Ma-yas
-	M'aya'ta
+	M'ayata
 	Mazar
 	Maztica
 	Mebsuta
@@ -3021,15 +3301,10 @@ star_names = {
 	Medamadin
 	Medgar
 	Medi'ya
-	Medmahirlah
 	Medraisha
-	Medryamfiqwanmar
 	Medsa-ham
-	Meedhikatabd
 	Meemee'mar
 	Meereen
-	Meerrajmeelsib
-	Metatron
 	Megraz
 	Megrez
 	Meh'a
@@ -3037,35 +3312,45 @@ star_names = {
 	Mehrnaz
 	Mehzikiy
 	Meic
+	Meissa
+	Mekbuda
 	Melanor
 	Meldrar
+	Meleph
 	Melona
 	Melpomenia
 	Melvaunt
 	Mendoc
 	Menhit
+	Menkalinan
 	Menkar
+	Menkent
+	Menkib
 	Menok
 	Menzoberranzan
 	Merak
 	Merakai
 	Mercaptan
+	Merga
 	Meriadoc
 	Mericor
 	Meridian
+	Meridiana
 	Merlin
+	Merope
 	Mesarthim
 	Mestros
+	Metatron
 	Metellos
 	Methomyl
 	Metnan
+	Miaplacidus
 	Micromius
 	Midgard
-	Midjibtahnaho
 	Midmaylay
 	Mif
 	Mifarfir
-	Mi-gaabd
+	Mi-gabad
 	Migor
 	Mihil
 	Mija-qa
@@ -3078,10 +3363,12 @@ star_names = {
 	Mili
 	Millistamu
 	Milradulya
-	Milsinmya
-	"Minas Tirith"
+	Milsinimya
+	Mimosa
 	Minbar
+	Minchir
 	Mindara
+	Minelauva
 	Minitu
 	Minkar
 	Minokh
@@ -3093,18 +3380,18 @@ star_names = {
 	Mira
 	Mirabar
 	Mirach
+	Miram
 	Miranda
 	Miratimha
-	Mirbansa'i
-	Mirce
+	Mirbansai
 	Mirex
+	Mirfak
 	Miroukhalu
-	Mirphak
-	Mirtrusyah'a
+	Mirzam
 	Misakali
-	Mis-dil
+	Misam
 	Mislen
-	Mis'yaabd
+	Mis'yabad
 	Mithar
 	Mithren
 	Mithrim
@@ -3113,7 +3400,7 @@ star_names = {
 	Mius
 	Miyah
 	Miyazmam
-	Mizuxe
+	Mizar
 	Mjolnir
 	M'kemas
 	Moab
@@ -3129,10 +3416,8 @@ star_names = {
 	Mondas
 	Monea
 	Monocrotophos
-	Mood-duli
 	Morath
 	Mordan
-	Mordenkainen
 	Mordor
 	Moregard
 	Moria
@@ -3141,12 +3426,12 @@ star_names = {
 	Mortha
 	Mos-bukha
 	Moskva
-	Mosmadaud
+	Mosmadad
 	Mos-shid
 	Mosthavon
+	Mothallah
 	Mothellum
-	Moudal-ha
-	Mouhus
+	Mothus
 	Moyles
 	Mu
 	"Mu Alpha"
@@ -3167,6 +3452,7 @@ star_names = {
 	"Mu Nu"
 	"Mu Omega"
 	"Mu Omicron"
+	"Mu Orionis"
 	"Mu Phi"
 	"Mu Pi"
 	"Mu Psi"
@@ -3175,25 +3461,18 @@ star_names = {
 	"Mu Tau"
 	"Mu Theta"
 	"Mu Upsilon"
+	"Mu Virginis"
 	"Mu Xi"
 	"Mu Zeta"
-	Mu'arimsai
 	Muati
-	Mubblar
-	Mudabdfara
-	Mudazaynilnas
-	Mufa'wah
-	Mufir-ja
-	Mu'gaw
-	Muh'firyas
+	Muhlar
 	Muhma
 	Muihamid
-	Mulhamdeyada
+	Muliphein
 	Mullin
 	Mulmaster
-	Mumji-zayn
-	Muneeswarar
 	Munin
+	Muphrid
 	Mura
 	Muratas
 	Muritan
@@ -3202,21 +3481,19 @@ star_names = {
 	Murust
 	Murzim
 	Muscida
-	Mushdamma
+	Mushudamma
+	Musica
 	Muspelheim
 	Mustafar
 	Mutara
 	Muthappan
 	Muudstram
 	Muunilinst
-	Muzaidlisay
-	Mygeeto
 	Myr
-	Myrkr
+	Myrkir
 	Myrmidon
 	Myrum
 	Na
-	Naakaza
 	Na'bir
 	Naboo
 	Nabsa
@@ -3225,34 +3502,29 @@ star_names = {
 	Nadarahsa
 	Naghas'ni
 	Na-hab
-	Nahhabo
+	Nahabo
 	Nahir
 	Nahiza
 	Nahmehtaha
 	Nahmi
+	Nahn
 	Nahnamubi
 	Nahraham
 	Nah'zayd
-	Naidlibrayus
-	Nailfanhytrus
-	Nailthumeel-im
-	Najadseshid
 	Najaga
-	Najmanowicz
-	Naj-sa
-	Na'kha'am
+	Najsa
+	Nakaza
 	Nakrifa
 	Naksatra
-	Nal Hutta
+	"Nal Hutta"
 	Nala
 	Nalanisa
 	Naled
-	Na-liy
-	Naliyaemu
+	Naliymu
 	Nama
 	Namana
+	Namardin
 	Namasmu
-	Namawagirma
 	Namdil
 	Nami'fi
 	Namishana
@@ -3262,11 +3534,11 @@ star_names = {
 	Namtar
 	Nanaya
 	Nanishammu
-	Nan-izzkriy
 	Nanman
 	Nanna
 	Nanshe
-	Napinne
+	Naos
+	Naphine
 	Naraj
 	Narasimha
 	Narayana
@@ -3275,21 +3547,16 @@ star_names = {
 	Narn
 	Na'sammah
 	Nasay
+	Nas-dasha
 	Nashira
 	Nashujuna
 	Nasiria
-	Nasitsesai
-	Naslosnaw
-	Nasnamuzadwa
-	Nasnedarti
+	Nasiysada
 	Nas'ra
 	Nassamamsi
-	Nass-dasha
 	Nas-yahhat
-	Nasziysada
 	Nataraja
 	Nausicaa
-	Nawmardin
 	Na'za
 	Nazfir
 	Nebulos
@@ -3306,8 +3573,9 @@ star_names = {
 	Nelvaan
 	Nemaka
 	Nembas
+	Nembus
 	Nemozi
-	Nephthys
+	Nephetyz
 	Nergal
 	Nerull
 	Nerva
@@ -3322,10 +3590,8 @@ star_names = {
 	Newton
 	Ne'ya
 	Ni
-	Nialamamee
 	Niamba
 	Nibhaz
-	Nibilahga
 	Niburon
 	Nicanda
 	Nicor
@@ -3335,23 +3601,17 @@ star_names = {
 	Nigiro
 	Nihal
 	Nijil
-	Nildil
+	Nildili
 	Nilfheim
 	Ni-mi
 	Nimolan
-	Nimusragmuh
-	Ninabalib
 	Ninazu
-	Nindub
 	Ningai
 	Ningal
 	Ningikuga
 	Ningirama
-	Ningishzida
-	Ninhursag
-	Nin-Ildu
-	Nin-imma
-	Ninkarnunna
+	Ningub
+	Ninkarnuna
 	Ninkasi
 	Ninkilim
 	Ninkurra
@@ -3362,23 +3622,17 @@ star_names = {
 	Ninshubur
 	Ninsun
 	Ninsutu
-	Nintinugga
 	Nintu
 	Nintulla
 	Ninurta
-	Niole Dra
 	Nirais
+	Nirajuan
 	Nirar
-	Nirauan
 	Nirdaha
 	Nirvana
 	Nishpan
 	Nithascal
 	Nivoch
-	Niwaman'met
-	Nixahel
-	Nizatorom
-	Nkllon
 	Noble
 	Nocobot
 	Nodox
@@ -3414,6 +3668,7 @@ star_names = {
 	"Nu Mus Da"
 	"Nu Omega"
 	"Nu Omicron"
+	"Nu Orionis"
 	"Nu Phi"
 	"Nu Pi"
 	"Nu Psi"
@@ -3422,17 +3677,20 @@ star_names = {
 	"Nu Tau"
 	"Nu Theta"
 	"Nu Upsilon"
+	"Nu Virginis"
 	"Nu Xi"
 	"Nu Zeta"
 	Nubia
 	NuDawn
-	Nugaan
+	Nu'gaan
 	Nugent
 	Numenor
 	Nunbarsegunu
+	Nunki
 	Nupran
 	Nuranka
 	Nurn
+	Nusakan
 	Nusaken
 	Nusku
 	Nut
@@ -3456,18 +3714,20 @@ star_names = {
 	Ockrom
 	Octavia
 	Odin
-	Odin Prime
+	"Odin Prime"
 	Odlamon
 	Odysseus
 	Ogat
+	Ogma
 	Ogura
+	Okab
 	Okapi
 	Okar
 	Okul
 	Olaria
 	Olbers
 	Oleald
-	Olidammara
+	Olidamara
 	Olimar
 	Olum
 	Olybrius
@@ -3493,6 +3753,7 @@ star_names = {
 	"Omega Mu"
 	"Omega Nu"
 	"Omega Omicron"
+	"Omega Orionis"
 	"Omega Phi"
 	"Omega Pi"
 	"Omega Psi"
@@ -3501,6 +3762,7 @@ star_names = {
 	"Omega Tau"
 	"Omega Theta"
 	"Omega Upsilon"
+	"Omega Virginis"
 	"Omega Xi"
 	"Omega Zeta"
 	Omicron
@@ -3522,6 +3784,7 @@ star_names = {
 	"Omicron Mu"
 	"Omicron Nu"
 	"Omicron Omega"
+	"Omicron Orionis"
 	"Omicron Phi"
 	"Omicron Pi"
 	"Omicron Psi"
@@ -3530,6 +3793,7 @@ star_names = {
 	"Omicron Tau"
 	"Omicron Theta"
 	"Omicron Upsilon"
+	"Omicron Virginis"
 	"Omicron Zeta"
 	Onab
 	Onderon
@@ -3538,7 +3802,7 @@ star_names = {
 	Ophang
 	Ophele
 	Ophiacus
-	Ophiumsug
+	Ophium
 	Opios
 	Oplin
 	Optera
@@ -3556,29 +3820,28 @@ star_names = {
 	Orim
 	Orion
 	"Orkam Fung"
-	Ormazd
 	Ornara
 	Orobas
 	Orthama
 	Osellus
-	O-seyiz
 	Oshamal
 	Oshimir
 	Osinar
 	Osiris
 	Osito
-	Oskaara
+	Oskara
 	Osmadin
 	Osmunis
 	Osprey
 	Ospur
 	Osseq
+	Osseyiz
 	Ossiriand
 	Osssork
 	Ossus
 	Ostravion
-	Othaana
-	Othaih
+	Othaha
+	Othana
 	Othi
 	Otho
 	Othriga
@@ -3591,13 +3854,12 @@ star_names = {
 	Oxor
 	Oza
 	Ozaggamum
-	Ozeopdis
-	Pabilsag
+	Ozeopedis
 	Pacifica
-	Padjitauron
 	Padmanabha
 	Padmavati
 	Paggol
+	Paikauhale
 	Pakhet
 	Paladin
 	Paladium
@@ -3614,11 +3876,10 @@ star_names = {
 	Pankor
 	Panthera
 	Pantolomin
-	Pap-nigin-gara
 	Papsukkal
 	Parada
 	Paradron
-	Paraggir
+	Paragir
 	Paraquat
 	Parashurama
 	Parathion
@@ -3637,15 +3898,16 @@ star_names = {
 	Pavagh
 	"Pax Atlar"
 	Paxan
+	Paxos
 	Pazuzu
+	Peacock
 	Peccary
 	Pegasus
 	Peith
 	Pelagon
 	Peleus
-	"Peliar Zel"
-	Pelloris
 	Pelor
+	Peloris
 	Pendragon
 	Penelope
 	Pennek
@@ -3658,9 +3920,9 @@ star_names = {
 	Pentos
 	Pequod
 	Peregrin
+	Perequim
 	Perikian
 	Pern
-	Perqim
 	Perrenland
 	Persephone
 	Perseus
@@ -3669,6 +3931,7 @@ star_names = {
 	Pesch
 	Peti
 	Petroni
+	Phact
 	Phaedrus
 	Phargis
 	Pharrim
@@ -3677,6 +3940,7 @@ star_names = {
 	Phecda
 	Phemmaix
 	Phenex
+	Pherkad
 	Phi
 	"Phi Alpha"
 	"Phi Beta"
@@ -3697,6 +3961,7 @@ star_names = {
 	"Phi Nu"
 	"Phi Omega"
 	"Phi Omicron"
+	"phi Orionis"
 	"Phi Pi"
 	"Phi Psi"
 	"Phi Rho"
@@ -3704,6 +3969,7 @@ star_names = {
 	"Phi Tau"
 	"Phi Theta"
 	"Phi Upsilon"
+	"Phi Virginis"
 	"Phi Zeta"
 	Phin
 	Phindar
@@ -3735,6 +4001,7 @@ star_names = {
 	"Pi Nu"
 	"Pi Omega"
 	"Pi Omicron"
+	"Pi Orionis"
 	"Pi Phi"
 	"Pi Psi"
 	"Pi Rho"
@@ -3742,9 +4009,10 @@ star_names = {
 	"Pi Tau"
 	"Pi Theta"
 	"Pi Upsilon"
+	"Pi Virginis"
 	"Pi Xi"
 	"Pi Zeta"
-	Piddahfir
+	Piautos
 	Piers
 	Pikas
 	Pike
@@ -3752,6 +4020,7 @@ star_names = {
 	Pine
 	Pinnacle
 	Pinra
+	Pipirima
 	Pippen
 	Piskus
 	Pithia
@@ -3767,17 +4036,18 @@ star_names = {
 	Ploo
 	Plov
 	Plygoria
-	Pobbma
 	Pocan
 	Poghril
 	Pokhara
 	Pol
 	Polaris
+	"Polaris Australis"
 	Poldeukes
 	Polgara
+	"Poliban Kir"
 	Poligar
+	Polis
 	"Polis Massa"
-	"Pollban Kir"
 	Pollux
 	Polymar
 	Pomarj
@@ -3785,9 +4055,11 @@ star_names = {
 	Porabim
 	Porakas
 	Poritrin
+	Porrima
 	Poseidon
 	Pothria
 	Powell
+	Praecipua
 	Praeshays
 	Praesitlyn
 	Praetoria
@@ -3795,18 +4067,19 @@ star_names = {
 	Praxillus
 	Praxis
 	Preenos
-	Preliumtarn
+	Prelium
 	Pretas
 	Pria
 	Priam
+	"Prima Hyadum"
 	Primus
 	Printure
 	Probus
 	Proctor
+	Prohibit
 	Propoxur
 	Propus
 	Proxus
-	Prthivi
 	Psi
 	"Psi Alpha"
 	"Psi Beta"
@@ -3827,6 +4100,7 @@ star_names = {
 	"Psi Nu"
 	"Psi Omega"
 	"Psi Omicron"
+	"Psi Orionis"
 	"Psi Phi"
 	"Psi Pi"
 	"Psi Rho"
@@ -3834,10 +4108,11 @@ star_names = {
 	"Psi Tau"
 	"Psi Theta"
 	"Psi Upsilon"
+	"Psi Virginis"
 	"Psi Xi"
 	"Psi Zeta"
-	Ptah
-	Ptarth
+	P'tah
+	P'tarth
 	Pulappli
 	Pulcharum
 	Pulcor
@@ -3852,25 +4127,22 @@ star_names = {
 	Pyriminil
 	Pytham
 	Pythro
-	Qa'aiga-lai
 	Qabji
-	Qad Vhi
+	"Qad Vhi"
 	Qafahir
 	Qahar
 	Qa-lah
 	Qalandar
-	Qalazaiziz
+	Qalaz
 	Qamm
-	Qardideinhi
 	Qarfakira
 	Qarth
 	Qasmathon
 	Qastan
 	Qayam
 	Qaysarariam
-	Qeb Daraan
+	"Qeb Daraan"
 	Qebui
-	Qeffoth
 	"Qel Droma"
 	Qetesh
 	Qiameth
@@ -3888,29 +4160,25 @@ star_names = {
 	Quannaga
 	Quarell
 	Quatrale
-	Qubhi-saa
+	Qubhi-sal
 	Quea
 	Quendor
 	Questal
 	Questor
-	Quglaod
+	Quglad
 	Quintessa
 	Quirinus
 	Qurus
 	Qvarne
 	Ra
-	Raakhriylim
-	Raayakha
 	Rabinoc
-	Rabrilkeemwa
 	Rachelis
 	Rack'ha
 	Raddawa
 	Raderzahser
+	Radet
 	Radha
-	Ra'd-simarack
 	Radstadt
-	Raet-Tawy
 	Rafidmanif
 	Ragoon
 	Ragrah
@@ -3918,7 +4186,7 @@ star_names = {
 	Rahalis
 	Rah'fa
 	Rah'fasa
-	Rahiveedgha
+	Rahivedigha
 	Rahiy
 	Rahmahmameh
 	Rahnas
@@ -3929,8 +4197,6 @@ star_names = {
 	Rajakha
 	Rajbil
 	Rajda
-	Rajfaizmismid
-	Rajshahfamoud
 	Rakal
 	Rakaron
 	Rakata
@@ -3939,63 +4205,57 @@ star_names = {
 	Ralah'yahsam
 	Ra-liham
 	Ralishaz
-	Ralltiir
 	Raltry
-	Ra-ma
+	Rama
 	Ramanuja
 	Ramatis
 	Ramfa'yasmar
-	Ramilsiffad
 	Ramman
 	Rammas
 	Ram'rekyu
 	Ra'muhli
-	Ramyafirru
+	Ramyafiru
+	Ran
 	Rana
 	Ranadi
 	Ra'nagoh
-	Ranail-ay
+	Ranail
 	Rancora
 	Ranction
 	Rand
 	Ranfais
 	Ranganatha
-	Ransimranfada
-	Rantemario
 	Rantor
 	Rao
 	Raphael
 	Raprix
 	Ra'ra
-	Rara'dbrilkub
-	Rariazti
 	Rariwa
 	Rary
 	"Ras Algethi"
 	Rasalas
+	Rasalgethi
 	Rasalhague
-	Rasasirazad
 	Raskamir
 	Rastaban
 	Ratalyamum
-	Rata'naa
+	Rata'nah
+	Ratatak
 	Ratel
 	Rathadore
 	Rathi
 	Rathra
 	Ratik
 	Rator
-	Rattatak
 	Rauxes
 	Ravananugraha
 	Rawga'far
+	Raxa
 	Raxum
-	Raxxa
+	Rayakha
 	Rayhadya
 	Rayima
 	Raykaramrah
-	Rayniadutal
-	Rayshutajgib
 	Ra'za
 	Raziel
 	Raznum
@@ -4006,7 +4266,7 @@ star_names = {
 	Recopia
 	Redamon
 	Reddor
-	Reedza-da
+	Redza-da
 	Reef'nia
 	Reef-taj
 	Regganus
@@ -4027,9 +4287,10 @@ star_names = {
 	Resaix
 	Reshell
 	Revak
+	Revati
 	Rhea
 	Rheims
-	Rhen Var
+	"Rhen Var"
 	Rhinnal
 	Rho
 	"Rho Alpha"
@@ -4052,6 +4313,7 @@ star_names = {
 	"Rho Omega"
 	"Rho Omicron"
 	"Rho Ophiuchi"
+	"Rho Orionis"
 	"Rho Phi"
 	"Rho Pi"
 	"Rho Psi"
@@ -4059,32 +4321,30 @@ star_names = {
 	"Rho Tau"
 	"Rho Theta"
 	"Rho Upsilon"
+	"Rho Virginis"
 	"Rho Xi"
 	"Rho Zeta"
-	Rhommamool
 	Rhudaur
 	Rhun
 	Rhymuss
 	Ri
 	Riadore
 	Riahqayman
-	Riahshiburid
 	Riak
 	Ria'met
 	Riaz'ri
-	Ribblor
 	Riccio
 	Ridathi
-	Riddigus
 	Ridha'metma
 	Ridhami
-	Ridilzasimdiy
+	Ridigus
 	Ridkeel
 	Ridsilisrah
-	Rigel
+	"Rigil Kentaurus"
 	Rihaa
-	Rijjin
-	Rikhadiasul
+	Rihblor
+	Rijin
+	Rikhadisul
 	Rimborth
 	Rimdur
 	Rimmock
@@ -4092,17 +4352,16 @@ star_names = {
 	Rimtas
 	Rimworld
 	Rinax
-	Rint Beekun
-	Rippigaur
+	"Rint Beekun"
 	Risashi
 	Riser
-	Risumedsem
+	Risumedem
 	Risyao'li
-	Riverrun
 	Rivendell
+	Riverrun
 	Rixim
 	Rixx
-	Riyseerna
+	Riysema
 	Roballius
 	Robilar
 	Roche
@@ -4118,16 +4377,15 @@ star_names = {
 	Romston
 	Romulus
 	Ronara
+	Roofala
 	Roolan
 	Roon
-	Rooqfala
 	Roscan
 	Roschon
 	Rossak
+	Rotanev
 	Rothyr
-	Roun-ra
 	Rounyas
-	Rounyasridhana
 	Rov
 	Rovannic
 	Rovgeddi
@@ -4135,14 +4393,16 @@ star_names = {
 	Ruan
 	Rubicon
 	Rubiz
+	Ruchbah
 	Rudra
 	Ruga
-	Ruhdat'wer
+	Ruhdat'war
 	Ruh'mo
 	Ruinam
 	Ruji
+	Rukbat
 	Rukmini
-	Rumallalra
+	Rumalhadra
 	Runa
 	Runara
 	Rundore
@@ -4151,73 +4411,75 @@ star_names = {
 	Rurius
 	Ruser
 	Russom
-	Ru-ta
+	Ruta
 	Ruthauri
 	Rutia
 	Ruul
 	Ruusan
-	Ruzmurmataj
-	Ruzshahrahuz
-	Rydonni Prime
-	Ryl Somot
+	"Rydonni Prime"
+	"Ryl Somot"
 	Ryloth
 	Rym
 	Sa
 	Saalaiha
 	Saba
+	Sabik
 	Sabra'wan
 	Sabtrok
-	Sacorria
+	Saclateni
+	Sacoria
 	Sada
+	Sadachbia
+	Sadalbari
+	Sa'dallah
+	Sadalmelik
+	Sadalsuud
 	Sadera
-	Sadiyaliaghayth
+	Sadir
 	Sadoc
 	Sadr
-	Sa'dyasallah
 	Saenz
 	Saets
-	Safa'zu
+	Safazu
 	Saffel
 	Sagafayl
-	Sahaylsanu
+	Sahayasanu
 	Sah'ba
-	Sahdiyanufaq
+	Sahdiyanu
 	Sahsawood
-	Sainleimir
 	Saiph
 	Sai-ud
-	Sajwamuhmad
+	Sajwamumad
 	Śakra
 	Sakura
-	Salabd
+	Salabad
 	Saldar
+	Saldeuces
 	Saldropis
 	Salerno
-	Saleucami
 	Salfafa
 	Sallax
 	Salluria
+	Salm
 	Salraya
 	Salsumi
 	"Salusa Secundus"
-	Salyuraa
+	Salyura
 	Sa'ma
 	Samanzul
 	Samaria
 	Samderaan
 	Samdin
-	Sa-meh
-	Sametdil
+	Sameh
 	Samiharza
-	Sammattair
 	Samms
+	Samni
 	Samnivik
 	Samsim
-	Samugamail
+	Samugamal
 	Sanafir
 	San-bo
 	Sanctimum
-	Sanctuary
 	Sandalphon
 	Sander
 	Sanfan
@@ -4225,16 +4487,165 @@ star_names = {
 	Sanna
 	Sanopel
 	Santanni
-	Santedaar
+	Santedar
 	Santo
 	Santraginus
+	"SAO 106711"
+	"SAO 107623"
+	"SAO 108340"
+	"SAO 117779"
+	"SAO 124001"
+	"SAO 128044"
+	"SAO 128271"
+	"SAO 131834"
+	"SAO 137845"
+	"SAO 143872"
+	"SAO 148425"
+	"SAO 150358"
+	"SAO 151790"
+	"SAO 155835"
+	"SAO 157618"
+	"SAO 158389"
+	"SAO 160853"
+	"SAO 163979"
+	"SAO 167575"
+	"SAO 174287"
+	"SAO 186143"
+	"SAO 187719"
+	"SAO 188861"
+	"SAO 216906"
+	"SAO 226057"
+	"SAO 230247"
+	"SAO 249682"
+	"SAO 252086"
+	"SAO 263768"
+	"SAO 276088"
+	"SAO 276301"
+	"SAO 276485"
+	"SAO 277848"
+	"SAO 285116"
+	"SAO 285949"
+	"SAO 296055"
+	"SAO 304530"
+	"SAO 306058"
+	"SAO 315046"
+	"SAO 324090"
+	"SAO 331135"
+	"SAO 331923"
+	"SAO 347138"
+	"SAO 354719"
+	"SAO 360005"
+	"SAO 362554"
+	"SAO 368326"
+	"SAO 381757"
+	"SAO 394664"
+	"SAO 398552"
+	"SAO 399815"
+	"SAO 409132"
+	"SAO 413333"
+	"SAO 417523"
+	"SAO 418087"
+	"SAO 426982"
+	"SAO 431191"
+	"SAO 443688"
+	"SAO 445924"
+	"SAO 446160"
+	"SAO 452389"
+	"SAO 452684"
+	"SAO 453783"
+	"SAO 469451"
+	"SAO 475392"
+	"SAO 478157"
+	"SAO 480953"
+	"SAO 484966"
+	"SAO 486221"
+	"SAO 490173"
+	"SAO 490295"
+	"SAO 515140"
+	"SAO 516251"
+	"SAO 518044"
+	"SAO 520145"
+	"SAO 520427"
+	"SAO 521947"
+	"SAO 522029"
+	"SAO 535004"
+	"SAO 535325"
+	"SAO 537484"
+	"SAO 543992"
+	"SAO 548685"
+	"SAO 564959"
+	"SAO 565964"
+	"SAO 567707"
+	"SAO 568095"
+	"SAO 585910"
+	"SAO 596036"
+	"SAO 599541"
+	"SAO 602805"
+	"SAO 610521"
+	"SAO 610862"
+	"SAO 612664"
+	"SAO 615953"
+	"SAO 629254"
+	"SAO 631617"
+	"SAO 645936"
+	"SAO 647984"
+	"SAO 650077"
+	"SAO 655805"
+	"SAO 665803"
+	"SAO 668481"
+	"SAO 671054"
+	"SAO 671337"
+	"SAO 676123"
+	"SAO 684313"
+	"SAO 686469"
+	"SAO 693217"
+	"SAO 697612"
+	"SAO 699517"
+	"SAO 703694"
+	"SAO 705342"
+	"SAO 706327"
+	"SAO 719587"
+	"SAO 727210"
+	"SAO 728863"
+	"SAO 731332"
+	"SAO 740581"
+	"SAO 747096"
+	"SAO 758360"
+	"SAO 759258"
+	"SAO 761312"
+	"SAO 762171"
+	"SAO 777351"
+	"SAO 782463"
+	"SAO 783522"
+	"SAO 784521"
+	"SAO 787162"
+	"SAO 788726"
+	"SAO 789726"
+	"SAO 820111"
+	"SAO 822339"
+	"SAO 829861"
+	"SAO 831302"
+	"SAO 833228"
+	"SAO 836037"
+	"SAO 841448"
+	"SAO 846080"
+	"SAO 846303"
+	"SAO 850238"
+	"SAO 850467"
+	"SAO 857729"
+	"SAO 865718"
+	"SAO 870027"
+	"SAO 870729"
+	"SAO 878071"
+	"SAO 878410"
+	"SAO 879069"
+	"SAO 899001"
 	Sapad
 	Saphiban
 	Sapir
 	Saqqis
 	Saquo-Pilia
 	Sarack
-	Sarafidlahrauf
 	Saraklis
 	Sa'ralia
 	Saramhizran
@@ -4244,6 +4655,7 @@ star_names = {
 	Saraswati
 	Sargas
 	Sari
+	Sarin
 	Sarpanit
 	Sarpeidon
 	Sarpeldon
@@ -4256,18 +4668,21 @@ star_names = {
 	Sati
 	Satori
 	Satrinias
-	Sa-tugib
+	Satugib
 	Satyabhama
 	Sa'ud
 	Sauria
 	Sauron
-	Savassic
-	Sayayahnaahar
+	Savasic
+	Sayahnahar
 	Sayshell
 	Sazaa
 	Sa'zih
 	Scarlet
+	Sceptrum
 	Schaber
+	Scheat
+	Schedar
 	Schinik
 	Scholl
 	Schultz
@@ -4277,21 +4692,20 @@ star_names = {
 	Scornubel
 	Scorom
 	Scotui
-	Scwa
 	Secarus
 	Secumber
+	"Secunda Hyadum"
 	Sedratis
 	Seerkeela
-	Seersaesli
+	Seersaeli
 	Sefalla
 	Sefha'baya
 	Sefray
-	Sefsamuszal
-	Sefsurakhriyi
+	Sefsazal
 	Segathia
-	Sehi'ham
-	Seindausrayriam
-	Sein-izz
+	Segin
+	Seginus
+	Sein
 	Seker
 	Sekhmet
 	Selay
@@ -4301,7 +4715,7 @@ star_names = {
 	Selket
 	Selkis
 	Selnoc
-	Sem'am'na
+	Sem'amna
 	Semele
 	Senna
 	Sentinel
@@ -4309,7 +4723,7 @@ star_names = {
 	Seradon
 	Seraph
 	Seraphim
-	Sergyar
+	Serghyar
 	Sernpidal
 	Serpess
 	Serra
@@ -4319,53 +4733,44 @@ star_names = {
 	Setlik
 	Seuden
 	Severus
-	Shadimrajda
-	Shadrajnanma
 	Shadzi
-	Shafidita
-	Shafiqyara
 	Shaha
 	Shahi
 	Shahiz
 	Shahwariq
 	Shakespeare
-	Shakharakha
 	Shakka
 	Shakuras
 	Shala
+	Sham
 	Shamash
 	Shamrahim
 	Shamsulji
 	Shamudrahi
-	Shamya-hid
 	Shanidar
 	Shantil
-	Shaplr
+	Shapilar
 	Shara
+	"Shara Itzu"
 	Sharaj
-	Sharajamaa
+	Sharajama
 	Shariat
-	Sharra Itu
-	Shasalkim'im
-	Shashadfa
+	Shasalkim
 	Shashamar
 	Shasir
 	Shataulfa
+	Shaula
 	Shawken
 	Shednihara
+	Sheliak
 	Sheol
+	Sheratan
 	"Shesha Naga"
-	Shewahafwa
-	Shiddiahafhai
-	Shiddi'kram
-	Shidhiqubtul
-	Shid-kana
-	Shina'a
+	Shina
 	Shinya
 	Shokodo
 	Shorax
 	Shu
-	Shuaradul
 	Shuckon
 	Shuderman
 	Shugar
@@ -4376,11 +4781,11 @@ star_names = {
 	Shul-utula
 	Shulxi
 	Shumogi
-	Shu-pa-e
+	Shu-pae
 	Shutami
 	Shutra
 	Siblia
-	Sibriqgara
+	Sibrigara
 	Siccon
 	Sidal
 	Sidor
@@ -4407,6 +4812,7 @@ star_names = {
 	"Sigma Nu"
 	"Sigma Omega"
 	"Sigma Omicron"
+	"Sigma Orionis"
 	"Sigma Phi"
 	"Sigma Pi"
 	"Sigma Psi"
@@ -4414,30 +4820,31 @@ star_names = {
 	"Sigma Tau"
 	"Sigma Theta"
 	"Sigma Upsilon"
+	"Sigma Virginis"
 	"Sigma Xi"
 	"Sigma Zeta"
 	Sikun
 	Silber
 	Sileth
-	Silnra
+	Silnira
 	Siluj
 	Silva
 	Silverymoon
 	Sima'gath
 	Simalilik
-	Simqatilhamna
-	Simtinasca
 	Sin
 	Sina
 	Sinafarrauf
-	Sinhai-rimru
+	Sinhai
 	Sinistra
-	Siplim
+	Siphlim
 	Sipples
 	Sirara
-	Sirim-ta
+	Sirimata
+	Sirius
 	"Sirius Tau"
-	Sirkeemhazi
+	Sirizdoth
+	Sirkemhazi
 	Sirsad
 	Sirsir
 	Sirtir
@@ -4452,6 +4859,7 @@ star_names = {
 	Skagarni
 	Skandia
 	Skaro
+	Skat
 	Skowbo
 	Slava
 	Sleipner
@@ -4463,6 +4871,7 @@ star_names = {
 	Sobek
 	Sobek-Re
 	Sobras
+	Socawa
 	Solace
 	Solais
 	Solaris
@@ -4471,8 +4880,8 @@ star_names = {
 	Soma
 	Somaskanda
 	Sopdu
-	Sorcimax
 	Sorrel
+	Sorrocimax
 	Sosta
 	Sotillion
 	Soval
@@ -4483,8 +4892,7 @@ star_names = {
 	"Sri Manjunatha"
 	"Sri Ramachandra"
 	Sridevi
-	Sriluur
-	Srizdaoth
+	Srilur
 	Srudma
 	Stakoron
 	Stameris
@@ -4502,41 +4910,44 @@ star_names = {
 	Stratal
 	Strife
 	Striterax
-	Strnad
 	Strom
+	Stronad
 	Stug
 	Sturil
 	Styx
+	Sualocin
 	Subi
+	Subra
 	Subterrel
 	Subtranius
 	Sufzanayafa
 	Suhail
 	Su'kha
 	Sukra
+	Sulafat
 	Sulbasasa
 	Sullust
-	Sulm
 	Sum
 	Sumugan
 	Sunspear
-	Su-ra
+	Sura
 	Surata
 	Surogou
 	Surya
 	Suth
 	Suulan
 	Suuth
-	Svivren
 	Swur
 	Sym
 	Synchrony
 	Synnax
+	Syrma
 	Syrul
 	Taanab
 	Taanafir
+	Tabit
 	Taboon
-	Ta-bri
+	Tabri
 	Tacitus
 	Tadasca
 	Tafifduha
@@ -4545,7 +4956,9 @@ star_names = {
 	Tagra
 	Tagus
 	Tahdilvid
-	Tahir-fa
+	Tahirfa
+	Taiyangshou
+	Taiyi
 	Takhalida
 	Takharam
 	Takhvan
@@ -4568,16 +4981,20 @@ star_names = {
 	Tana'din
 	Tanbasdiyth
 	Tanelorn
+	"Tania Australis"
+	"Tania Borealis"
 	Tanith
 	Tansy
 	Tapir
 	Ta-qir
-	Tar Valemm
+	"Tar Valemm"
 	Taralon
 	Taramba
 	Taramda
 	Tarandi
+	Tarazed
 	Tarella
+	Tarf
 	Targon
 	Taris
 	Tarkalia
@@ -4613,6 +5030,7 @@ star_names = {
 	"Tau Nu"
 	"Tau Omega"
 	"Tau Omicron"
+	"Tau Orionis"
 	"Tau Phi"
 	"Tau Pi"
 	"Tau Psi"
@@ -4621,6 +5039,7 @@ star_names = {
 	"Tau Theta"
 	"Tau Upsilon"
 	"Tau Verde"
+	"Tau Virginis"
 	"Tau Xi"
 	"Tau Zeta"
 	Taunrak
@@ -4638,6 +5057,8 @@ star_names = {
 	Teeha
 	Teersonia
 	Tefnut
+	Tegmine
+	Tejat
 	Telana
 	Telanor
 	Telchur
@@ -4676,6 +5097,7 @@ star_names = {
 	Tharooqab
 	Thebeon
 	Thebes
+	Theemin
 	Thegglan
 	Thelios
 	Thera
@@ -4701,6 +5123,7 @@ star_names = {
 	"Theta Nu"
 	"Theta Omega"
 	"Theta Omicron"
+	"Theta Orionis"
 	"Theta Phi"
 	"Theta Pi"
 	"Theta Psi"
@@ -4708,6 +5131,7 @@ star_names = {
 	"Theta Sigma"
 	"Theta Tau"
 	"Theta Upsilon"
+	"Theta Virginis"
 	"Theta Xi"
 	"Theta Zeta"
 	Thi
@@ -4722,11 +5146,10 @@ star_names = {
 	Thomork
 	Thorgeld
 	Thoth
-	Thrace
 	Thracia
 	Thracior
-	Thradd
-	Thralla
+	Thrad
+	Thralia
 	Thrish
 	Throthgard
 	Thuban
@@ -4738,8 +5161,11 @@ star_names = {
 	Thunderra
 	Thunt
 	Thyferra
+	Tiaki
 	Tiamat
+	Tianguan
 	Tianjin
+	Tianyi
 	Tiattums
 	Tibbacor
 	Tiberius
@@ -4749,14 +5175,11 @@ star_names = {
 	"Tien Kwan"
 	Tiffim
 	Tif'ha
-	Tifihrraja
-	Tifmandiy
+	Tifihiraja
 	Tigira
 	Tikonov
-	Tilaayder
 	Tilawadi
 	Timbol
-	Timedsamee
 	Tinab
 	Tinnel
 	Tiom
@@ -4764,16 +5187,17 @@ star_names = {
 	Tir
 	Tira
 	Tiralam
+	Tiramore
 	Tirgiss
 	Tirim
 	Tiriyok
 	Tirmana
 	Tirol
-	Tirramore
 	Tishpak
 	Tissilum
 	Titan
 	Titania
+	Titawin
 	Titus
 	Tiuz
 	Ti'ya
@@ -4782,13 +5206,15 @@ star_names = {
 	Tleilax
 	Togoria
 	Tokasha
-	Toledo
+	Toliman
 	Toluene
 	Tombstone
+	Tonatiuh
 	Toogit
 	Toonol
 	Toprawa
 	Tora
+	Torcular
 	Torell
 	Torga
 	Torkulon
@@ -4811,7 +5237,7 @@ star_names = {
 	Tranquil
 	Trantor
 	Trauth
-	Trax Ofko
+	"Trax Ofko"
 	Trellberg
 	Trellin
 	Trenor
@@ -4842,10 +5268,10 @@ star_names = {
 	Truskatia
 	Tuban
 	Tucker
-	Tulhamfaba
 	Tunobo
 	Tupile
 	Turbick
+	Tureis
 	Turim
 	Turing
 	Tutu
@@ -4862,7 +5288,7 @@ star_names = {
 	Tycho
 	Tychonis
 	Tydeus
-	Tyed Kant
+	"Tyed Kant"
 	Tygaria
 	Tykoski
 	Tyl
@@ -4875,15 +5301,15 @@ star_names = {
 	Tystra
 	Tython
 	Tythra
-	Ua-Ildak
+	Ua-lidak
 	Udaloy
-	Udhaabd-al
 	Ud-sima
 	Udune
 	Ufandi
 	Ufoa
 	Ugarasti
 	Ugret
+	Ukdah
 	Ukio
 	Ukoi
 	Ukur
@@ -4910,6 +5336,7 @@ star_names = {
 	Unnabin
 	Unukalhai
 	Unur
+	Unurgunite
 	Upano
 	Upmere
 	Upsilon
@@ -4932,6 +5359,7 @@ star_names = {
 	"Upsilon Nu"
 	"Upsilon Omega"
 	"Upsilon Omicron"
+	"Upsilon Orionis"
 	"Upsilon Phi"
 	"Upsilon Pi"
 	"Upsilon Psi"
@@ -4939,9 +5367,9 @@ star_names = {
 	"Upsilon Sigma"
 	"Upsilon Tau"
 	"Upsilon Theta"
+	"Upsilon Virginis"
 	"Upsilon Xi"
 	"Upsilon Zeta"
-	Uqallon
 	Urallion
 	"Uran Tokh"
 	Urchachka
@@ -4956,8 +5384,6 @@ star_names = {
 	"Ursa Minor"
 	Ursoria
 	Urushiol
-	Ushemalkaziz
-	Ushminaria
 	Ussaldon
 	Us'ta
 	Ustir
@@ -5004,8 +5430,8 @@ star_names = {
 	Vandor
 	Vanga
 	Vangras
+	Vaniko
 	Vanima
-	Vanniko
 	Varaha
 	Varahi
 	Varsire
@@ -5016,9 +5442,9 @@ star_names = {
 	Vaydra
 	Vayu
 	Vecna
-	Veed-fid
+	Veed
 	Veed'lu
-	Veerabhadra
+	Veerhadra
 	Vega
 	Vela
 	Veld
@@ -5037,8 +5463,9 @@ star_names = {
 	Ventrixia
 	Vepar
 	Verazina
-	Verbobonc
+	Verbobonic
 	Veridian
+	Veritate
 	Vermillion
 	Vervain
 	Vesepe
@@ -5114,9 +5541,9 @@ star_names = {
 	Wadjet
 	Wadj-wer
 	Wafadatta
-	Wagizilak
+	Wagilak
 	Waiphrid
-	Wajima'di
+	Wajima
 	Walleye
 	Walmoro
 	Waltom
@@ -5127,40 +5554,37 @@ star_names = {
 	Wan'hamir
 	"Wann Tsir"
 	Wanya
-	Warat'a
+	Wara'ta
 	Wardell
 	Warhoon
 	Warrifik
 	Wasat
 	Wasirimra
 	Wastri
-	Watadattha
-	Watalyahniaza
+	Watadatha
 	Watil
 	Watrusho
 	Wa'u
 	Waya'dia
 	Wayland
+	Wazin
 	Weber
 	"Wee Jas"
 	Weerden
 	Wegmore
-	Wehttan
+	Wehtan
 	Welarn
 	Wemoll
 	Wenta
 	Wer
-	Wer-husdur
 	Wermeed
 	Westerfeld
-	Wetchop
 	Wetij
 	Wexellia
 	Weylan
-	Whaskar
+	Wezen
 	Whelm
 	Wicklar
-	Widbarill
 	Widek
 	Widow
 	Wiedel
@@ -5174,13 +5598,11 @@ star_names = {
 	Winyor
 	Wir
 	"Wir Thosk"
-	Wisimwamah'ud
 	Wistral
 	Wistril
 	Withrilli
 	Withyr
 	Witris
-	Wlody
 	Wodan
 	Woden
 	Wodriax
@@ -5190,19 +5612,17 @@ star_names = {
 	Wooda
 	Wotan
 	Wraith
-	Wripho
-	Wroona
-	Wud'faba
-	Wudmuzaa
 	Wuhan
 	Wukkar
-	Wum Jiam
+	"Wum Jiam"
+	Wurren
 	Wyndigal
 	Wynth
 	Wysanti
 	Wyveral
 	"Xa Fel"
 	Xagobah
+	Xamidimura
 	"Xan Yae"
 	Xanadu
 	Xandebaan
@@ -5241,6 +5661,7 @@ star_names = {
 	"Xi Nu"
 	"Xi Omega"
 	"Xi Omicron"
+	"Xi Orionis"
 	"Xi Phi"
 	"Xi Pi"
 	"Xi Psi"
@@ -5249,6 +5670,7 @@ star_names = {
 	"Xi Tau"
 	"Xi Theta"
 	"Xi Upsilon"
+	"Xi Virginis"
 	"Xi Zeta"
 	Xigar
 	Ximpok
@@ -5256,7 +5678,8 @@ star_names = {
 	Xir
 	Xirak
 	Xolton
-	Xu Nur
+	"Xu Nur"
+	Xuange
 	Xud
 	Xudra
 	Xueggu
@@ -5266,35 +5689,25 @@ star_names = {
 	Xylia
 	Ya
 	Ya'ara
-	Ya-bagau
-	Yabaiveednamu
+	Yabagau
 	Yablari
 	Yadel
-	Ya-delfay
+	Yadelfay
 	Yadera
-	Yafaishidmadi
-	Ya-farfai
-	Yaga Minor
+	"Yaga Minor"
 	Yag'Dhul
-	Ya-ha
+	Yaha
 	Yah'fa
 	Yahfiq
 	Yahhafil
-	Yahsilhizay
-	Yahzizwoodwa
-	Ya'ilnuder
-	Ya'imil
 	Yai-yala
 	Yalalikray
 	Yalara
-	Yali'ya
+	Yaliya
 	Yalosia
 	Yama
 	Yamaa
-	Yamafizyah
-	Yamfranmidrim
-	Yamibudar
-	Yamither
+	Yamil
 	Yamma
 	Yanduz
 	Yangtze
@@ -5303,32 +5716,29 @@ star_names = {
 	Yarak
 	Yarambafa
 	Yarragana
-	Yasa'awood
-	Yasfafaw
+	Yasawood
 	Yasla
 	Yavin
 	Ya'wa
 	Yayakhay
 	Yazim
 	Yazyayara
-	Yboiveth
+	Yboveth
 	Ybuwyn
 	Ydria
 	Yeats
 	Yebliya
-	Ye'Cind
 	Yed
+	"Yed Posterior"
+	"Yed Prior"
 	Yeedixa
-	Yeelon
-	Yeinydd
 	"Yel Barrasta"
 	Yelika
+	Yelon
 	Yeltha
 	Yenlee
 	Yetoom
 	Yetoros
-	Yggdradill
-	Yggdrasil
 	Yildun
 	Yillion
 	Yima
@@ -5349,9 +5759,7 @@ star_names = {
 	Yomon
 	Yon
 	Yotla
-	Yous'sanfad
 	Yrgel
-	Yrogglia
 	Yssom
 	Yu'ful
 	Yuggoth
@@ -5364,19 +5772,17 @@ star_names = {
 	Yunak
 	Yunduk
 	Yunka
-	Yu-qat
+	Yuqat
 	Yurus
 	Yutani
-	Yuzaynafaysa
 	Yval
-	Zaameed-lya
-	Zaana-badr
+	Zaana
 	Zaarun
 	Zaasuhayyah
 	Zabeen
 	Zabunyai
 	Zadfihrti
-	Zadsan-rauf
+	Zadsan
 	Zaffa
 	Zafi-ri
 	Zagan
@@ -5384,27 +5790,23 @@ star_names = {
 	Zah'fiz
 	Zahya-dal
 	Zahzadlija
-	Zaid-mi
-	Zainyahrahdia
-	Zaizafaylled
+	Zaid
 	Zakara
-	Zakeemthiydi
 	Zakhatifka
 	Zalank
 	Zalimood
 	Zalkon
 	Zalr
 	Zaltec
-	Zambdari
+	Zambari
+	Zameed
 	Zamojin
 	Za'muhra
+	Zaniah
 	Zanovar
-	Zanzibar
-	Zaqaqilrif
 	Zaqar
 	Zar
 	Zara
-	Zarabdmishayha
 	Zarathrusta
 	Zariah
 	Zarim
@@ -5413,6 +5815,8 @@ star_names = {
 	Zatar
 	Zathmak
 	Zatros
+	Zaurak
+	Zavijava
 	Zayd'dadi
 	Zayn
 	Zaynahwayas
@@ -5453,29 +5857,32 @@ star_names = {
 	"Zeta Nu"
 	"Zeta Omega"
 	"Zeta Omicron"
+	"Zeta Orionis"
 	"Zeta Phi"
 	"Zeta Pi"
-	"Zeta Reticuli"
 	"Zeta Psi"
+	"Zeta Reticuli"
 	"Zeta Rho"
 	"Zeta Sigma"
 	"Zeta Tau"
 	"Zeta Theta"
 	"Zeta Upsilon"
+	"Zeta Virginis"
 	"Zeta Xi"
 	Zeus
-	Z'ha'dum
+	Z'hadum
+	Zhang
 	Zhir
 	Zhoblar
 	Zhufor
-	Ziaba-lub
-	Ziadqirnab
+	Ziaba
 	Ziala
 	Ziamon
+	Zibal
 	Zibalia
 	Zief
 	Zif
-	Zi-figul
+	Zifigul
 	Zihramasha
 	Zilchus
 	Zilpha
@@ -5500,15 +5907,15 @@ star_names = {
 	Zoldiore
 	Zorak
 	Zorf
+	Zosma
 	Zowod
 	Zric
-	Zufafifriam
+	Zuben
+	Zubeneschamali
 	Zukov
 	Zuldat
-	Zulei Cro
-	Zuljaynhidfa
-	Zulsaabda
-	Zunoorna
+	"Zulei Cro"
+	Zunorna
 	Zwole
 	Zygon
 	Zymatroxis
