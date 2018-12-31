@@ -338,10 +338,6 @@ sol_system_initializer = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "wolf_359_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
 		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
@@ -522,10 +518,13 @@ sol_neighbor_t1_first_colony = {
 	}
 
 	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
+	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t2"
-	}
-	
+	}	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		initializer = "tau_ceti_initalizer"

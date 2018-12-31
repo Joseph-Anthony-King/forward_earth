@@ -626,10 +626,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "wolf_359_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
 		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
@@ -1263,10 +1259,6 @@ space_age_sol_system_initializer = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "wolf_359_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
 		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
@@ -1819,10 +1811,6 @@ primitive_sol_system_initializer = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
-		initializer = "wolf_359_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
 		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
@@ -2166,10 +2154,6 @@ icarus_sol_system_initializer = {
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }	
-		initializer = "wolf_359_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
