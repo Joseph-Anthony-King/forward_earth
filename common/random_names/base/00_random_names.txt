@@ -1000,7 +1000,7 @@ star_names = {
 	Bharani
 	"Bhekar Ro"
 	Bhikshatana
-	Bhūmi
+	Bhumi
 	Bidtox
 	Bi-fa
 	Biham
@@ -1703,8 +1703,8 @@ star_names = {
 	Ereshkigal
 	Erestor
 	Eriadu
-	Eridani
 	Eriga
+	Erihu
 	Erikang
 	Erimadon
 	Eros
