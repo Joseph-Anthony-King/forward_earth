@@ -335,7 +335,11 @@ sol_system_initializer = {
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
-	}	
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "cygni_initializer"
@@ -526,11 +530,6 @@ sol_neighbor_t1_first_colony = {
 		distance = { min = 10 max = @distance }
 		initializer = "tau_ceti_initalizer"
 	}
-	
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "eridani_initializer"
-	}
 }
 
 # Sol Neighbor Tier 1
@@ -642,7 +641,7 @@ sol_neighbor_t2_second_colony = {
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "continental_planet_05_entity"
+		entity = "continental_planet_09_entity"
 		
 		init_effect = {
 			prevent_anomaly = yes

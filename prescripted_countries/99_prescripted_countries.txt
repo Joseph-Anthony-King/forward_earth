@@ -15,9 +15,9 @@ tzynn = {
 		name_list = "REP1"
 		trait = "trait_strong"
 		trait = "trait_resilient"
-		trait = "trait_talented"
 		trait = "trait_rapid_breeders"
-		trait = "trait_nonadaptive"
+		trait = "trait_decadent"
+		trait = "trait_quarrelsome"
 	}
 	
 	room = "personality_slaving_despots_room"
@@ -59,6 +59,7 @@ tzynn = {
 		portrait = "rep9"
 		texture = 1
 		clothes = 4
+		leader_class = ruler
 	}	
 }
 

@@ -118,6 +118,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
+							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -293,6 +294,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
+							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -331,30 +333,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 
 						create_primitive_blockers = yes
 
-						create_army = {
-							name = "US Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Chinese PLA"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Russian Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "EU Combined Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
 						create_fleet = {
 							name = "NAME_ISS_II"
 							effect = {
@@ -637,14 +615,22 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			}
 		}
 	}
-
+	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1_first_colony"
-	}	
+	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
@@ -768,6 +754,7 @@ space_age_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
+							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -944,6 +931,7 @@ space_age_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
+							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -975,30 +963,6 @@ space_age_sol_system_initializer = {
 
 						create_primitive_blockers = yes
 
-						create_army = {
-							name = "US Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Chinese PLA"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Russian Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "EU Combined Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
 						create_fleet = {
 							name = "NAME_ISS_II"
 							effect = {
@@ -1288,7 +1252,7 @@ space_age_sol_system_initializer = {
 			}
 		}
 	}
-	
+
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1_first_colony"
@@ -1296,6 +1260,14 @@ space_age_sol_system_initializer = {
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
@@ -1436,31 +1408,7 @@ primitive_sol_system_initializer = {
 						set_owner = last_created_country
 
 						create_primitive_blockers = yes
-						
-						create_army = {
-							name = "US Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Chinese PLA"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "Russian Armed Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "EU Combined Forces"
-							owner = last_created
-							species = last_created
-							type = "postatomic_army"
-						}
+
 						create_fleet = {
 							name = "NAME_ISS_II" 
 							effect = {
@@ -1556,38 +1504,7 @@ primitive_sol_system_initializer = {
 						add_building = building_primitive_power_plant
 						add_building = building_primitive_capital
 						add_building = building_urban_dwellings
-						
-						create_army = {
-							name = "NAME_German_Wehrmacht"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_US_Armed_Forces"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_British_Armed_Forces"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Imperial_Japanese_Forces"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -1899,6 +1816,14 @@ primitive_sol_system_initializer = {
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "cygni_initializer"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
@@ -2244,6 +2169,14 @@ icarus_sol_system_initializer = {
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
+		initializer = "wolf_359_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
+		initializer = "cygni_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
 		initializer = "procyon_initializer"
 	}
 	neighbor_system = {
@@ -2500,7 +2433,11 @@ eta_cassiopeiae_system_initializer = {
 			#want this?
 		}		
 		initializer = "ophiuchi_initializer"
-	}	
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "eridani_initializer"
+	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
@@ -2634,208 +2571,6 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				
 				init_effect = {
 					prevent_anomaly = yes
-				}
-			
-				init_effect = {
-					if = {
-						limit = { NOT = { any_country = { has_country_flag = human_2 } } }
-						random_list = {
-							# Colonized
-							90 = {
-								generate_empire_home_planet = yes
-								create_species = {
-									name = Human
-									plural = Humans
-									class = "HUM"
-									portrait = "human"
-									homeworld = THIS
-									traits = {
-										trait = "trait_adaptive"
-										trait = "trait_nomadic"	
-										trait = "trait_wasteful"
-									}
-								}
-								create_country = {
-									name = "NAME_Commonwealth_of_Aurora"
-									name_list = "HUMAN2"
-				
-									room = "personality_hegemonic_imperialists_room"
-
-									ship_prefix = "CAS"
-
-									authority = "auth_oligarchic"
-									civics = {
-										civic = civic_meritocracy
-										civic = civic_citizen_service
-									}							
-									government = gov_citizen_stratocracy
-									
-									species = last_created
-									ethos = {
-										ethic = "ethic_militarist"
-										ethic = "ethic_fanatic_materialist"			
-									}
-
-									flag = {
-										icon= {
-											category = "human"
-											file = "flag_human_4.dds"
-										}
-										background= {
-											category = "backgrounds"
-											file = "stripe.dds"
-										}
-										colors={
-											"red"
-											"black"
-											"null"
-											"null"
-										}
-									}
-									type = default
-								}
-								last_created_country = {
-										set_graphical_culture = mammalian_01
-										set_country_flag = human_2
-										set_country_flag = human_2_starbase
-										save_global_event_target_as = CoE
-								}
-
-								while = {
-									count = 17
-									create_pop = {
-										species = last_created
-									}
-								}
-								
-								create_species = {
-									name = "NAME_Robot"
-									plural = "NAME_Robots"
-									class = ROBOT
-									namelist = this
-									portrait = "default_robot"
-									traits = {
-										trait = "trait_mechanical"
-									}
-								}
-
-								while = {
-									count = 6
-									create_pop = {
-										species = last_created
-									}
-								}
-
-								set_owner = last_created_country
-								set_capital = yes
-								add_district = district_city
-								add_district = district_city
-								add_district = district_city
-								add_district = district_city
-								add_district = district_farming
-								add_district = district_farming
-								add_district = district_farming
-								add_district = district_mining
-								add_district = district_mining
-								add_district = district_generator
-								add_district = district_generator
-								add_building = building_capital
-								add_building = building_research_lab_1
-								add_building = building_foundry_1
-								add_building = building_factory_1
-
-								create_colony = {
-									owner = last_created_country
-									species = last_created
-									ethos = {
-										ethic = "ethic_xenophobe"
-										ethic = "ethic_fanatic_militarist"			
-									}
-								}
-												
-								create_army = {
-									name = "1st Colonial Gendarmerie"
-									owner = last_created
-									species = last_created
-									type = "defense_army"
-								}
-								create_army = {
-									name = "2nd Colonial Gendarmerie"
-									owner = last_created
-									species = last_created
-									type = "defense_army"
-								}
-
-								system_star = {
-
-									#science
-									create_fleet = {
-										effect = {
-											set_owner = last_created_country
-
-											create_ship = {
-												name = random
-												random_existing_design = science
-											}
-
-											set_fleet_stance = evasive
-											set_location = PREV
-
-											owner = {
-												create_leader = {
-													type = scientist
-													sub_type = survey
-													name = random
-													species = owner_main_species
-												}
-											}
-											set_leader = last_created_leader
-										}
-									}
-
-									#constructor
-									create_fleet = {
-										effect = {
-											set_owner = last_created_country
-
-											create_ship = {
-												name = random
-												random_existing_design = constructor
-											}
-
-											set_fleet_stance = evasive
-											set_location = PREV
-										}
-									}
-
-									#military
-									create_fleet = {
-										set_take_point = yes
-										effect = {
-											set_owner = last_created_country
-
-											while = {
-												count = 3
-												create_ship = {
-													name = random
-													random_existing_design = corvette
-												}
-											}
-
-											set_location = PREV
-										}
-									}
-								}
-								
-								last_created_country = {
-									capital_scope = { set_name = "Aurora" }
-								}
-							}
-							# Uncolonized
-							10 = {
-							}
-						}
-					}
 				}
 			}
 				
@@ -2987,7 +2722,11 @@ sol_with_eta_cassiopeiae_system_initializer = {
 			#want this?
 		}		
 		initializer = "ophiuchi_initializer"
-	}	
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "eridani_initializer"
+	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
@@ -3234,7 +2973,11 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 			#want this?
 		}		
 		initializer = "ophiuchi_initializer"
-	}	
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "eridani_initializer"
+	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
@@ -3747,6 +3490,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A I"
 		class = "pc_molten"
 		orbit_distance = 30
 		orbit_angle = 60
@@ -3755,32 +3499,18 @@ eridani_initializer = {
 	}
 	
 	planet = {
-		class = "pc_desert"
+		name = "Eridani A II"
+		class = "pc_continental"
 		orbit_distance = 35
 		orbit_angle = 200
 		size = 20
 		has_ring = no
 		tile_blockers = none
 		modifiers = none
-		entity = "desert_planet_02_entity"
-		
-		init_effect = {
-			add_modifier = {
-				modifier = "high_gravity"
-				days = -1
-			}
-			prevent_anomaly = yes
-		}
-		
-		init_effect = {
-			add_modifier = {
-				modifier = "strong_magnetic_field"
-				days = -1
-			}
-			prevent_anomaly = yes
-		}
+		flags = { epsilon_a_two }
 		
 		moon = {
+			name = "Eridani A IIa"
 			class = "pc_barren_cold"
 			size = 5
 			orbit_distance = 12
@@ -3790,6 +3520,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A III"
 		class = "pc_arctic"
 		orbit_distance = 25
 		orbit_angle = 30
@@ -3799,6 +3530,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A IV"
 		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = 15
@@ -3839,6 +3571,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A V"
 		class = "pc_gas_giant"
 		orbit_distance = 45
 		orbit_angle = 170
@@ -3846,6 +3579,7 @@ eridani_initializer = {
 		has_ring = yes
 		
 		moon = {
+			name = "Eridani A Va"
 			class = "pc_toxic"
 			size = 16
 			orbit_distance = 25
@@ -3855,6 +3589,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A VI"
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 200
@@ -3862,6 +3597,7 @@ eridani_initializer = {
 		has_ring = no
 		
 		moon = {
+			name = "Eridani A VIa"
 			class = "pc_barren_cold"
 			size = 10
 			orbit_distance = 15
@@ -3870,6 +3606,7 @@ eridani_initializer = {
 		}
 		
 		moon = {
+			name = "Eridani A VIb"
 			class = "pc_barren_cold"
 			size = 10
 			orbit_distance = 5
@@ -3879,6 +3616,7 @@ eridani_initializer = {
 	}
 	
 	planet = {
+		name = "Eridani A VII"
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 200
@@ -3886,6 +3624,7 @@ eridani_initializer = {
 		has_ring = no
 		
 		moon = {
+			name = "Eridani A VIIa"
 			class = "pc_frozen"
 			size = 10
 			orbit_distance = 15
@@ -4697,7 +4436,7 @@ betelgeuse_initializer = {
 		class = "pc_m_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 80
+		size = 100
 		has_ring = no
 	}
 	
@@ -4794,7 +4533,7 @@ rigel_initializer = {
 		class = "pc_a_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 60
+		size = 70
 		has_ring = no
 	
 		planet = {
@@ -5114,7 +4853,7 @@ canopus_initializer = {
 	planet = {
 		name = "Canopus II"
 		class = "pc_molten"
-		orbit_distance = 340
+		orbit_distance = 30
 		orbit_angle = 110
 		size = 18
 		has_ring = no
@@ -5146,14 +4885,41 @@ canopus_initializer = {
 	
 	planet = {
 		name = "Canopus III"
-		class = "pc_toxic"
-		orbit_distance = 30
+		class = "pc_desert"
+		orbit_distance = 60
 		orbit_angle = 120
-		size = 15
+		size = 18
 		has_ring = no
 		
 		moon = {
-			name = "Canopus IIIa"
+			name = "Canopus IVa"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 100
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Canopus IVb"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 10
+			orbit_angle = 170
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Canopus IV"
+		class = "pc_toxic"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+		
+		moon = {
+			name = "Canopus IVa"
 			class = "pc_barren"
 			size = 5
 			orbit_distance = 10
@@ -5163,7 +4929,7 @@ canopus_initializer = {
 	}
 	
 	planet = {
-		name = "Canopus IV"
+		name = "Canopus V"
 		class = "pc_frozen"
 		orbit_distance = 30
 		orbit_angle = 70
@@ -5193,7 +4959,7 @@ fomalhaut_initializer = {
 		class = "pc_a_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 60
+		size = 70
 		has_ring = no
 	}
 	
@@ -5307,6 +5073,38 @@ fomalhaut_initializer = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+wolf_359_initializer = {	
+	name = "Wolf 359"
+	class = sc_m
+
+	planet = {
+		name = "Wolf 359"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Wolf 359 I"
+		class = "pc_barren_cold"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 7
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Wolf 359 II"
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 170
 		size = 5
 		has_ring = no
 	}
