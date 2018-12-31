@@ -259,8 +259,8 @@ xt489 = {
 	system_name = "PRESCRIPTED_system_name_xt489"
 	initializer = ""
 
-	graphical_culture = "avian_01"
-	city_graphical_culture = "avian_01"
+	graphical_culture="ai_ship_set_01"
+	city_graphical_culture="ai_ship_set_01"
 
 	empire_flag={
 		icon={
