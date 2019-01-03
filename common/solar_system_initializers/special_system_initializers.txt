@@ -4524,13 +4524,6 @@ com_sol_system = {
 		distance = { min = 10 max = @distance }	
 		initializer = "procyon_initializer"
 	}
-	neighbor_system = {
-		distance = { min = 50 max = 60 }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "sol_with_eta_cassiopeiae_system_initializer"
-	}
 }
 
 # AI Revolt System

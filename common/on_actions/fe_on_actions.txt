@@ -2,19 +2,18 @@
 on_game_start = {
 	events = {
 		fe.1
+		fe.2
+		fe.3
 		fe.4
 		fe.5
+		fe.6
 		fe.7
 		fe.8
-		fe.9
-		fe.10
-		fe.11
-		fe.3
 	}
 }
 
 empire_init_add_technologies = {
 	events = {
-		fe.6
+		fe.9
 	}
 }

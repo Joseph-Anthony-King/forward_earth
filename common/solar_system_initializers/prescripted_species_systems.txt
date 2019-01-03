@@ -344,13 +344,6 @@ sol_system_initializer = {
 		distance = { min = 10 max = @distance }	
 		initializer = "procyon_initializer"
 	}
-	neighbor_system = {
-		distance = { min = 50 max = 60 }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "sol_with_eta_cassiopeiae_system_initializer"
-	}
 }
 
 # Neighbor Tier 1 First Colony
@@ -361,6 +354,8 @@ sol_neighbor_t1_first_colony = {
 		type = rocky_asteroid_belt
 		radius = 100
 	}
+
+	flags = { eta_cassiopeiae_system_target }	
 
 	init_effect = {
 		every_neighbor_system = {

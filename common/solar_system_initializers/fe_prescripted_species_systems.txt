@@ -2180,6 +2180,10 @@ eta_cassiopeiae_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 200
 	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	usage = custom_empire
 
 	init_effect = {
 		every_neighbor_system = {
@@ -2191,10 +2195,6 @@ eta_cassiopeiae_system_initializer = {
 		
 		generate_home_system_resources = yes
 	}
-	
-	flags = { empire_home_system eta_cassiopeiae_system }
-	
-	usage = custom_empire
 	
 	planet = {
 		name = "Eta Cassiopeiae A"
@@ -2416,17 +2416,6 @@ eta_cassiopeiae_system_initializer = {
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
 			#want this?
 		}		
-		initializer = "ophiuchi_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "eridani_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
@@ -2453,17 +2442,6 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 200
 	}
-
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		
-		generate_home_system_resources = yes
-	}
 	
 	flags = { empire_home_system eta_cassiopeiae_system }
 	
@@ -2479,10 +2457,6 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		
 		generate_home_system_resources = yes
 	}
-	
-	flags = { empire_home_system eta_cassiopeiae_system }
-	
-	usage = custom_empire
 	
 	planet = {
 		name = "Eta Cassiopeiae A"
@@ -2555,6 +2529,208 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				
 				init_effect = {
 					prevent_anomaly = yes
+				}
+
+				init_effect = {
+					if = {
+						limit = { NOT = { any_country = { has_country_flag = human_2 } } }
+
+						random_list = {
+							# Colonized
+							90 = {
+								generate_empire_home_planet = yes
+								random_country = {
+									limit = { has_country_flag = human_1 }
+									owner_species = { save_event_target_as = human_species }
+								}
+								create_country = {
+									name = "NAME_Commonwealth_of_Aurora"
+									name_list = "HUMAN2"
+				
+									room = "personality_hegemonic_imperialists_room"
+
+									ship_prefix = "CAS"
+
+									authority = "auth_oligarchic"
+									civics = {
+										civic = civic_meritocracy
+										civic = civic_citizen_service
+									}							
+									government = gov_citizen_stratocracy
+									
+									species = event_target:human_species
+									ethos = {
+										ethic = "ethic_militarist"
+										ethic = "ethic_fanatic_materialist"			
+									}
+
+									flag = {
+										icon= {
+											category = "human"
+											file = "flag_human_4.dds"
+										}
+										background= {
+											category = "backgrounds"
+											file = "stripe.dds"
+										}
+										colors={
+											"red"
+											"black"
+											"null"
+											"null"
+										}
+									}
+									type = default
+									flags = { human_2 }
+								}
+								last_created_country = {
+										set_graphical_culture = mammalian_01
+										set_country_flag = human_2
+										set_country_flag = human_2_starbase
+										save_global_event_target_as = CoE
+								}
+
+								while = {
+									count = 17
+									create_pop = {
+										species = event_target:human_species
+										ethos = {
+											ethic = random
+										}
+										last_created_pop = {
+											clear_ethos = yes
+										}
+									}
+								}
+								
+								create_species = {
+									name = "NAME_Robot"
+									plural = "NAME_Robots"
+									class = ROBOT
+									namelist = this
+									portrait = "default_robot"
+									traits = {
+										trait = "trait_mechanical"
+									}
+								}
+
+								while = {
+									count = 6
+									create_pop = {
+										species = last_created
+									}
+								}
+
+								set_owner = last_created_country
+								set_capital = yes
+								add_district = district_city
+								add_district = district_city
+								add_district = district_city
+								add_district = district_city
+								add_district = district_farming
+								add_district = district_farming
+								add_district = district_farming
+								add_district = district_mining
+								add_district = district_mining
+								add_district = district_generator
+								add_district = district_generator
+								add_building = building_capital
+								add_building = building_research_lab_1
+								add_building = building_foundry_1
+								add_building = building_factory_1
+
+								create_colony = {
+									owner = last_created_country
+									species = event_target:human_species
+									ethos = {
+										ethic = "ethic_xenophobe"
+										ethic = "ethic_fanatic_militarist"			
+									}
+								}
+												
+								create_army = {
+									name = "1st Colonial Gendarmerie"
+									owner = last_created
+									species = event_target:human_species
+									type = "defense_army"
+								}
+								create_army = {
+									name = "2nd Colonial Gendarmerie"
+									owner = last_created
+									species = event_target:human_species
+									type = "defense_army"
+								}
+
+								system_star = {
+
+									#science
+									create_fleet = {
+										effect = {
+											set_owner = last_created_country
+
+											create_ship = {
+												name = random
+												random_existing_design = science
+											}
+
+											set_fleet_stance = evasive
+											set_location = PREV
+
+											owner = {
+												create_leader = {
+													type = scientist
+													sub_type = survey
+													name = random
+													species = event_target:human_species
+												}
+											}
+											set_leader = last_created_leader
+										}
+									}
+
+									#constructor
+									create_fleet = {
+										effect = {
+											set_owner = last_created_country
+
+											create_ship = {
+												name = random
+												random_existing_design = constructor
+											}
+
+											set_fleet_stance = evasive
+											set_location = PREV
+										}
+									}
+
+									#military
+									create_fleet = {
+										set_take_point = yes
+										effect = {
+											set_owner = last_created_country
+
+											while = {
+												count = 3
+												create_ship = {
+													name = random
+													random_existing_design = corvette
+												}
+											}
+
+											set_location = PREV
+										}
+									}
+								}
+								
+								last_created_country = {
+									capital_scope = { set_name = "Aurora" }
+								}
+							}
+							# Uncolonized
+							10 = {
+							}
+						}
+					}
 				}
 			}
 				
@@ -2699,31 +2875,17 @@ sol_with_eta_cassiopeiae_system_initializer = {
 			}
 		}
 	}
-	
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "ophiuchi_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "eridani_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1_first_colony"
+
+	init_effect = {
+
+		if = {
+			has_country_flag = human_2_starbase
+			create_starbase = {
+				size = starbase_starport
+				module = shipyard
+				owner = last_created_country
+			}
+		}
 	}
 }
 
@@ -2948,33 +3110,6 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 				flags = { planet_horae }
 			}
 		}
-	}
-	
-	
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "ophiuchi_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		initializer = "eridani_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1_first_colony"
 	}
 }
 
@@ -3441,7 +3576,23 @@ tau_ceti_initalizer = {
 	
 	neighbor_system = {
 		distance = { min = 10 max = @distance }	
+		initializer = "ophiuchi_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }		
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "neighbor_t1_first_colony"
+	}	
+	neighbor_system = {
+		distance = { min = 10 max = @distance }	
 		initializer = "epsilon_indi_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 10 max = @distance }
+		initializer = "eridani_initializer"
 	}
 }
 
