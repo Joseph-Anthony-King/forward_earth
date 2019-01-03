@@ -2898,7 +2898,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 	init_effect = {
 
 		if = {
-			has_country_flag = human_2_starbase
+			limit = {  any_country = { has_country_flag = human_2_starbase } }
 			create_starbase = {
 				size = starbase_starport
 				module = shipyard
@@ -5282,7 +5282,7 @@ vy_canis_majoris_initializer = {
 	planet = {
 		name = "VY Canis Majoris I"
 		class = "pc_molten"
-		orbit_distance = 50
+		orbit_distance = 70
 		orbit_angle = 175
 		size = 8
 		has_ring = no
@@ -5312,7 +5312,7 @@ mu_cephei_initializer = {
 	class = sc_m_giant
 	asteroid_belt = {
 		type = rocky_asteroid_belt
-		radius = 100
+		radius = 120
 	}
 	
 	planet = {
