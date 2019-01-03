@@ -169,7 +169,11 @@ event = {
                 }                
             }
 
-            spawn_system = { initializer = "sol_with_eta_cassiopeiae_system_initializer" }
+            spawn_system = {
+                min_distance >= 10
+                max_distance <= 30
+                initializer = "sol_with_eta_cassiopeiae_system_initializer" 
+            }
         }
     }
 }

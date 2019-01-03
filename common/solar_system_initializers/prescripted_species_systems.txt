@@ -355,8 +355,6 @@ sol_neighbor_t1_first_colony = {
 		radius = 100
 	}
 
-	flags = { eta_cassiopeiae_system_target }	
-
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster

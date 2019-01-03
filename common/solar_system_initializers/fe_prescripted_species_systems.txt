@@ -3128,6 +3128,7 @@ tau_ceti_initalizer = {
 		type = icy_asteroid_belt
 		radius = 340
 	}
+	
 	flags = { tau_ceti_system }
 
 	init_effect = {
@@ -3603,7 +3604,8 @@ eridani_initializer = {
 		type = rocky_asteroid_belt
 		radius = 150
 	}
-	flags = { eridani_system }
+	
+	flags = { eridani_system eta_cassiopeiae_system_target }
 
 	init_effect = {
 		every_neighbor_system = {
