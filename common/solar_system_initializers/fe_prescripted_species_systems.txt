@@ -2584,14 +2584,20 @@ sol_with_eta_cassiopeiae_system_initializer = {
 									flags = { human_2 }
 								}
 								last_created_country = {
-										set_graphical_culture = mammalian_01
-										set_country_flag = human_2
-										set_country_flag = human_2_starbase
-										save_global_event_target_as = CoE
+									set_graphical_culture = mammalian_01
+									set_country_flag = human_2
+									set_country_flag = human_2_starbase
+									save_global_event_target_as = CoA
+									add_resource = { energy = 2000 }
+									add_resource = { minerals = 2000 }
+									add_resource = { food = 2000 }
+									add_resource = { consumer_goods = 2000 }
+									add_resource = { alloys = 1000 }
+									add_resource = { influence = 100 }
 								}
 
 								while = {
-									count = 17
+									count = 16
 									create_pop = {
 										species = event_target:human_species
 										ethos = {
@@ -2688,7 +2694,20 @@ sol_with_eta_cassiopeiae_system_initializer = {
 										}
 									}
 
-									#constructor
+									#constructors
+									create_fleet = {
+										effect = {
+											set_owner = last_created_country
+
+											create_ship = {
+												name = random
+												random_existing_design = constructor
+											}
+
+											set_fleet_stance = evasive
+											set_location = PREV
+										}
+									}
 									create_fleet = {
 										effect = {
 											set_owner = last_created_country
