@@ -5265,3 +5265,129 @@ wolf_359_initializer = {
 		has_ring = no
 	}
 }
+
+vy_canis_majoris_initializer = {
+	name = "VY Canis Majoris"
+	class = sc_m_giant
+	
+	planet = {
+		name = "VY Canis Majoris"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 110
+		has_ring = no
+	}
+	
+	planet = {
+		name = "VY Canis Majoris I"
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 175
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "VY Canis Majoris II"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "VY Canis Majoris III"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 90
+		size = 10
+		has_ring = no
+	}
+}
+
+mu_cephei_initializer = {
+	name = "Mu Cephei"
+	class = sc_m_giant
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+	
+	planet = {
+		name = "Mu Cephei"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 100
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Mu Cephei I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Mu Cephei II"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 70
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Mu Cephei III"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+}

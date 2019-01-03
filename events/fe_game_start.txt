@@ -319,6 +319,14 @@ event = {
         }
         
         random_system = {
+            spawn_system = { initializer = "vy_canis_majoris_initializer" }
+        }
+        
+        random_system = {
+            spawn_system = { initializer = "mu_cephei_initializer" }
+        }
+        
+        random_system = {
             spawn_system = { initializer = "tau_ceti_system" }
         }
         
