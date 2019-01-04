@@ -67,83 +67,70 @@ event = {
                 }                
             }
 
-            create_species = {
-                name = Human
-                plural = Humans
-                class = "HUM"
-                portrait = "human"
-                homeworld = THIS
-                traits = {
-                    trait = "trait_adaptive"
-                    trait = "trait_nomadic"
-                    trait = "trait_wasteful"
-                }
+            random_country = {
+                limit = { has_country_flag = human_1 }
+                owner_species = { save_event_target_as = human_species }
             }
 
             create_country = {
                 name = "NAME_League_of_Human_Colonies"
-                authority = auth_oligarchic
-                day_zero_contact = no
-                civics = {
-                    civic = civic_increasing_urbanization
-                    civic = civic_atmospheric_pollution
-                }
-                species = last_created
+				name_list = "HUMAN1"                
+                ship_prefix = "LHC"
+	
+                room = "personality_honorbound_warriors_room"
+                
+                authority = "auth_dictatorial"
+                government = gov_martial_dictatorship
+                graphical_culture="humanoid_01"
+                city_graphical_culture="mammalian_01"
+
+                species = event_target:human_species
                 ethos = {
                     ethic = "ethic_authoritarian"
                     ethic = "ethic_fanatic_militarist"
                 }
-
+                civics = {
+                    civic = civic_cutthroat_politics
+                    civic = civic_warrior_culture
+                }
                 flag = {
                     icon = {
-                        category = "spherical"
-                        file = "flag_spherical_5.dds"
+                        category="spherical"
+                        file="flag_spherical_8.dds"
                     }
-                    background= {
-                        category = "backgrounds"
-                        file = "vertical.dds"
+                    background = {
+                        category="backgrounds"
+                        file="vertical.dds"
                     }
-                    colors={
-                        "yellow"
+                    colors = {
                         "dark_green"
+                        "yellow"
                         "null"
                         "null"
                     }
                 }
-                type = primitive
+                type = default
+                flags = { human_3 }
             }
-
-            last_created_country = {
-                set_graphical_culture = industrial_01
-                set_country_flag = early_space_age
-                set_primitive_age = early_space_age
-            }
+            
             set_owner = last_created_country
 
             create_primitive_blockers = yes
 
-            create_fleet = {
-                name = "Gateway"
-                effect = {
-                    set_owner = last_created_country
-                    create_ship = {
-                        name = "Gateway"
-                        design = "NAME_Space_Station"
-                    }
-                    set_location = PREV
-                }
-            }
-
             while = {
                 count = 4
                 create_pop = {
-                    species = last_created
+                    species = event_target:human_species
                 }
             }
-            add_building = building_primitive_farm
-            add_building = building_primitive_mine
-            add_building = building_primitive_power_plant
-            add_building = building_primitive_capital
+
+            set_owner = last_created_country
+            set_capital = yes
+            add_district = district_farming
+            add_district = district_farming
+            add_district = district_mining
+            add_district = district_generator
+            add_building = building_capital
 
             last_created_country = {
                 capital_scope = { set_name = "Epsilon A II" }
