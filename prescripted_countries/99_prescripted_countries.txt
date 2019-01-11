@@ -38,7 +38,7 @@ tzynn = {
 	
 	empire_flag = {
 		icon= {
-			category = "pointy"
+			category = "domination"
 			file = "domination_4.dds"
 		}
 		background= {
