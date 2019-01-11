@@ -39,7 +39,7 @@ tzynn = {
 	empire_flag = {
 		icon= {
 			category = "pointy"
-			file = "flag_pointy_2.dds"
+			file = "domination_4.dds"
 		}
 		background= {
 			category = "backgrounds"
