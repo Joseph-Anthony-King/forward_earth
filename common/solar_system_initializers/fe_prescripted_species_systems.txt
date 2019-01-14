@@ -3878,14 +3878,14 @@ procyon_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 20
 		orbit_angle = 180
-		size = 30
+		size = 14
 		has_ring = no
 		
 		moon = {
 			name = "Procyon A IIIa"
 			class = "pc_barren_cold"
 			size = 1
-			orbit_distance = 12
+			orbit_distance = 8
 			orbit_angle = 40
 			has_ring = no
 		}
@@ -3894,7 +3894,7 @@ procyon_initializer = {
 			name = "Procyon A IIIb"
 			class = "pc_barren_cold"
 			size = 1
-			orbit_distance = 8
+			orbit_distance = 3
 			orbit_angle = 90
 			has_ring = no
 		}
@@ -3946,13 +3946,13 @@ procyon_initializer = {
 			class = pc_gas_giant
 			orbit_distance = 40
 			orbit_angle = 5
-			size = 20
+			size = 26
 			has_ring = no
 
 			moon = {
 				name = "Procyon B Ia"
 				class = pc_molten
-				orbit_distance = 14
+				orbit_distance = 16
 				orbit_angle = 340
 				size = 8
 				has_ring = no
