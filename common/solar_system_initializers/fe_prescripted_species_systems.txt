@@ -5391,3 +5391,231 @@ mu_cephei_initializer = {
 		has_ring = no
 	}
 }
+
+kobol_initializer = {	
+	name = "Kobol"
+	class = sc_trinary_1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 270
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 0
+		orbit_angle = 0
+		size = 0
+		has_ring = no
+		flags = { kobol_barycenter }
+	
+		planet = {
+			name = "Kobol A"
+			class = "pc_g_star"
+			orbit_distance = 40
+			orbit_angle = 60
+			size = 30
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Kobol B"
+			class = "pc_k_star"
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 25
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Kobol I"
+		class = "pc_molten"
+		orbit_distance = 80
+		orbit_angle = 60
+		size = 10
+		has_ring = no
+		entity = "molten_planet_04_entity"
+	}
+	
+	planet = {
+		name = "Kobol II"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 26
+		has_ring = no
+		entity = "gas_giant_03_entity"
+		
+		moon = {
+			name = "Kobol IIa"
+			class = "pc_arid"
+			size = 14
+			orbit_distance = 15
+			orbit_angle = 60
+			has_ring = no
+			entity = "arid_planet_01_entity"
+		}
+		moon = {
+			name = "Kobol IIb"
+			class = "pc_savannah"
+			size = 15
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "savannah_planet_04_entity"
+		}
+	}
+	
+	planet = {
+		name = "Kobol III"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 180
+		size = 26
+		has_ring = no
+		entity = "gas_giant_04_entity"
+		
+		moon = {
+			name = "Kobol IIIa"
+			class = "pc_ocean"
+			size = 15
+			orbit_distance = 20
+			orbit_angle = 90
+			has_ring = no
+			entity = "ocean_planet_01_entity"
+		}
+		moon = {
+			name = "Kobol IIIb"
+			class = "pc_continental"
+			size = 16
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "continental_planet_01_entity"
+		}
+	}
+	
+	planet = {
+		name = "Kobol IV"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 90
+		size = 24
+		has_ring = yes
+		entity = "gas_giant_06_entity"
+		
+		moon = {
+			name = "Kobol IVa"
+			class = "pc_alpine"
+			size = 14
+			orbit_distance = 20
+			orbit_angle = 120
+			has_ring = no
+			entity = "alpine_planet_03_entity"
+		}
+		moon = {
+			name = "Kobol IVb"
+			class = "pc_tundra"
+			size = 15
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "tundra_planet_04_entity"
+		}
+	}
+
+	planet = {
+		name = "KAB-100"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "KAB-200"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "KAB-300"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "KAB-400"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Kobol V"
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 280
+		size = 12
+		has_ring = yes
+		entity = "frozen_planet_02_entity"
+	}
+	
+	planet = {
+		name = "Kobol C"
+		class = "pc_m_star"
+		orbit_distance = 120
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+	
+		planet = {
+			name = "Kobol C I"
+			class = "pc_barren"
+			orbit_distance = 20
+			orbit_angle = 90
+			size = 8
+			has_ring = no
+			entity = "barren_planet_02_entity"
+		}
+	
+		planet = {
+			name = "Kobol C II"
+			class = "pc_desert"
+			orbit_distance = 15
+			orbit_angle = 2
+			size = 14
+			has_ring = no
+			entity = "desert_planet_02_entity"
+		}
+	
+		planet = {
+			name = "Kobol C III"
+			class = "pc_tropical"
+			orbit_distance = 15
+			orbit_angle = -4
+			size = 15
+			has_ring = no
+			entity = "tropical_planet_02_entity"
+		}
+	
+		planet = {
+			name = "Kobol C IV"
+			class = "pc_frozen"
+			orbit_distance = 20
+			orbit_angle = 4
+			size = 8
+			has_ring = no
+			entity = "frozen_planet_02_entity"
+		}
+	}
+}

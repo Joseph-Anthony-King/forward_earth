@@ -2919,9 +2919,9 @@ star_names = {
 	Klendathu
 	Klo
 	Klueb
+	Kluth
 	Kobaria
 	Kobheria
-	Kobol
 	Kochab
 	Kodracca
 	Kohl

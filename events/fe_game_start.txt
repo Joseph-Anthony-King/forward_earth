@@ -243,41 +243,6 @@ event = {
     immediate = {
 
         random_system = {
-            spawn_system = { initializer = "deneb_system" }
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = aurora_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = eridani_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = tau_ceti_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = epsilon_indi_barycenter              
-            }
-            set_name = ""
-        }
-    }
-
-    immediate = {
-
-        random_system = {
             spawn_system = { initializer = "polaris_initializer" }
         }
 
@@ -314,11 +279,57 @@ event = {
         }
         
         random_system = {
+            spawn_system = { initializer = "kobol_initializer" }
+        }
+        
+        random_system = {
             spawn_system = { initializer = "tau_ceti_system" }
         }
         
         random_system = {
             spawn_system = { initializer = "epsilon_indi_system" }
+        }
+    }
+
+    immediate = {
+
+        random_system = {
+            spawn_system = { initializer = "deneb_system" }
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = aurora_barycenter              
+            }
+            set_name = ""
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = eridani_barycenter              
+            }
+            set_name = ""
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = tau_ceti_barycenter              
+            }
+            set_name = ""
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = epsilon_indi_barycenter              
+            }
+            set_name = ""
+        }
+
+        random_planet = {
+            limit = {
+                has_planet_flag = kobol_barycenter              
+            }
+            set_name = ""
         }
     }
 }
