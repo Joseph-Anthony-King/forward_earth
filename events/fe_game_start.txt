@@ -133,7 +133,7 @@ event = {
             add_building = building_capital
 
             last_created_country = {
-                capital_scope = { set_name = "Epsilon A II" }
+                capital_scope = { set_name = "Eridani A II" }
             }
 		}
     }
