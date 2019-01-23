@@ -147,6 +147,8 @@ ixidar = {
 	adjective = "PRESCRIPTED_adjective_ixidar"
 	spawn_enabled = always # yes / no / always
 	
+	playable = has_utopia # scripted_triggers
+	
 	species = {
 		class = "ART"
 		portrait = "art12"
@@ -156,7 +158,6 @@ ixidar = {
 		name_list = "HIVE"
 		trait = "trait_hive_mind"
 		trait = "trait_rapid_breeders"
-		trait = "trait_quick_learners"
 		trait = "trait_strong"
 		trait = "trait_fleeting"
 	}
@@ -201,5 +202,6 @@ ixidar = {
 		texture = -1
 		clothes = 2
 		ruler_title = "PRESCRIPTED_ruler_title_ixidar"
+		leader_class = ruler
 	}
 }
