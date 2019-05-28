@@ -132,17 +132,6 @@ event = {
             add_district = district_generator
             add_building = building_capital
 
-            effect = {
-                add_resource = {
-                    minerals = 0
-                    energy = 0
-                    food = 0
-                    alloys = 0
-                    consumer_goods = 0
-                    influence = 0
-                }
-            }
-
             last_created_country = {
                 capital_scope = { set_name = "Eridani A II" }
             }
