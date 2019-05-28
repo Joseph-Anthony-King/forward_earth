@@ -519,3 +519,25 @@ event = {
         }
     }
 }
+
+### fe.9 - Set League of Human Colonies resources
+event = {
+	id = fe.9
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { any_country = { has_country_flag = human_3 }
+			effect = {
+				add_resource = {
+                    minerals = 0
+                    energy = 0
+                    food = 0
+                    alloys = 0
+                    consumer_goods = 0
+                    influence = 0
+				}
+            }
+		}
+	}
+}

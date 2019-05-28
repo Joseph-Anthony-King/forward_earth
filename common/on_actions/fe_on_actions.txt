@@ -9,6 +9,7 @@ on_game_start = {
 		fe.6
 		fe.7
 		fe.8
+		fe.9
 	}
 }
 
