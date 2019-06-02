@@ -1557,14 +1557,12 @@ primitive_sol_system_initializer = {
 						set_owner = last_created_country		
 											
 						while = {
-							count = 3
+							count = 1
 							create_pop = {
 								species = last_created
 							}					
 						}
-						add_building = building_primitive_dwellings
-						add_building = building_primitive_dwellings
-						add_building = building_stone_palace			
+						add_building = building_stone_palace
 						
 						while = {
 							count = 3

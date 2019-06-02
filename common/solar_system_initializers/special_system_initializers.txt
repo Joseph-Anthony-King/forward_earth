@@ -1259,20 +1259,16 @@ special_init_03 = {
 						}
 					}
 					while = {
-						count = 3
+						count = 2
 						create_army = {
 							name = "NAME_Feudal_Levies"
 							owner = last_created
 							species = last_created
 							type = "primitive_army"
 						}
-					}
-					random_tile = {
-						limit = { has_building = "building_colony_shelter" }
-						remove_building = yes
-					}					
+					}				
 					while = {
-						count = 3
+						count = 1
 						random_tile = {
 							limit = {
 								has_blocker = no
@@ -1284,18 +1280,7 @@ special_init_03 = {
 							}
 						}
 					}
-					while = {
-						count = 4
-						random_tile = {
-							limit = { 
-								has_blocker = no 
-								has_building = no 
-								has_grown_pop = yes
-							}
-							set_building = "building_primitive_farm"
-							set_deposit = d_farmland_deposit
-						}
-					}
+					add_building = building_stone_palace
 					last_created_country = {
 						capital_scope = { set_name = "NAME_Sol_III" }
 					}
