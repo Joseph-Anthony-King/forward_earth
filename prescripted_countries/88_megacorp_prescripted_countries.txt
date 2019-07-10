@@ -164,7 +164,8 @@ chinorr = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_chinorr"
 	
 	planet_name = "PRESCRIPTED_planet_name_chinorr"
-	planet_class = "pc_arid"
+	planet_class = "pc_tropical"
+	initializer = "chiconaph_system_initializer"
 	system_name = "PRESCRIPTED_system_name_chinorr"
 	
 	room = "personality_ruthless_capitalists_room"

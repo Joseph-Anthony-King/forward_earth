@@ -3117,6 +3117,217 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 	}
 }
 
+### Chiconaph System
+chiconaph_system_initializer = {
+	name = "PRESCRIPTED_system_name_chinorr"
+	class = sc_g
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	flags = { empire_home_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	
+	planet = {
+		name = "Chiconaph"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+
+		planet = {
+			name = "Ugginaph"
+			class = "pc_t_star"
+			orbit_distance = 30
+			orbit_angle = 120
+			size = 18
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Daggibah"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 22
+		has_ring = no
+
+		moon = {
+			name = "Oniphat"
+			class = "pc_molten"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 126
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_chinorr"
+		class = "pc_tropical"
+		orbit_distance = 50
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = yes
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_chicora }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Gabbog"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "Aniphobah"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 15
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Joklibo"
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 18
+		has_ring = no
+		
+		moon = {
+			name = "kilvo"
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Manibopho"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Vohlo"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Pahlbo"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Bavphi"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 195
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Polgo"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Ulho"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
 tau_ceti_initalizer = {
 	name = "Tau Ceti"
 	class = sc_g

@@ -231,6 +231,14 @@ event = {
                 days = -1
             }
         }
+
+        every_planet = {
+
+            limit = { has_planet_flag = planet_chicora }
+
+            change_pc = pc_arid
+            set_planet_entity = { entity = "arid_planet_03_entity" }
+        }
     }
 }
 
