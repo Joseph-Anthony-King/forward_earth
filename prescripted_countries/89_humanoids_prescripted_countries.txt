@@ -4,6 +4,8 @@ voor = {
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
 	
+	playable = has_humanoids # scripted_triggers
+	
 	ship_prefix = "PRESCRIPTED_ship_prefix_voor"
 	
 	species = {
@@ -14,6 +16,7 @@ voor = {
 		adjective = "PRESCRIPTED_species_adjective_voor"
 		name_list = "HUM2"
 		trait = "trait_quick_learners"
+		trait = "trait_talented"
 		trait = "trait_adaptive"
 		trait = "trait_repugnant"
 	}
@@ -26,6 +29,7 @@ voor = {
 	authority = "auth_dictatorial"
 	government = gov_technocratic_dictatorship
 	civics = { "civic_technocracy" "civic_environmentalist" }
+	origin = "origin_default"
 	
 	planet_name = PRESCRIPTED_planet_name_voor
 	planet_class = "pc_arctic"
@@ -60,5 +64,6 @@ voor = {
 		hair = 0
 		clothes = 3
 		ruler_title = "PRESCRIPTED_ruler_title_voor"
+		leader_class = ruler
 	}
 }

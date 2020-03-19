@@ -5,6 +5,8 @@ tebrid = {
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
 	
+	playable = has_synthethic_dawn # scripted_triggers
+	
 	ship_prefix = "PRESCRIPTED_ship_prefix_tebrid"
 	
 	species = {
@@ -28,7 +30,8 @@ tebrid = {
 		name_list = "MOL2"
 		trait="trait_cybernetic"
 		trait="trait_strong"
-		trait="trait_nomadic"
+		trait="trait_industrious"
+		trait="trait_slow_learners"
 	}
 	
 	room = "machine_room"
@@ -37,6 +40,7 @@ tebrid = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_assimilator
 	civics = { "civic_machine_assimilator" "civic_machine_predictive_analysis" }
+	origin = "origin_default"
 	
 	planet_name = "Tebri"
 	planet_class = "pc_ocean"
@@ -71,6 +75,7 @@ tebrid = {
 		hair = 0
 		clothes = 0
 		ruler_title = "PRESCRIPTED_ruler_title_tebrid"
+		leader_class = ruler
 	}
 }
 
@@ -80,6 +85,8 @@ custodianship = {
 	adjective = "PRESCRIPTED_adjective_custodianship"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
+	
+	playable = has_synthethic_dawn # scripted_triggers
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_custodianship"
 	
@@ -115,6 +122,7 @@ custodianship = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_servitor
 	civics = { "civic_machine_servitor" "civic_machine_delegated_functions" }
+	origin = "origin_default"
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -149,6 +157,7 @@ custodianship = {
 		hair = 0
 		clothes = 0
 		ruler_title = "PRESCRIPTED_ruler_title_custodianship"
+		leader_class = ruler
 	}
 }
 
@@ -158,6 +167,8 @@ icarus = {
 	adjective = "PRESCRIPTED_adjective_xt489"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
+	
+	playable = has_synthethic_dawn # scripted_triggers
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_xt489"
 	
@@ -184,6 +195,7 @@ icarus = {
 		"civic_machine_terminator"
 		"civic_machine_warbots"
 	}
+	origin = "origin_default"
 
 	flags = { icarus_faction human_1 custom_start_screen }
 	
@@ -219,6 +231,7 @@ icarus = {
 		texture=3
 		hair=0
 		clothes=0
+		leader_class = ruler
 	}
 }
 
@@ -253,6 +266,7 @@ xt489 = {
 	authority = "auth_machine_intelligence"
 	government = gov_machine_terminator
 	civics = { "civic_machine_terminator" "civic_machine_warbots" }
+	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_xt489"
 	planet_class = "pc_desert"

@@ -2,9 +2,10 @@
 maweer = {
 	name = "maweer"
 	ship_prefix = "PRESCRIPTED_ship_prefix_maweer"
-
 	spawn_enabled = always
 	ignore_portrait_duplication = yes
+	
+	playable = has_plantoids # scripted_triggers
 	
 	species={
 		class="PLANT"
@@ -17,7 +18,6 @@ maweer = {
 		trait="trait_enduring"
 		trait="trait_conservational"
 		trait="trait_slow_breeders"
-		trait="trait_sedentary"
 	}
 
 	room = "personality_xenophobic_isolationists_room"
@@ -29,6 +29,7 @@ maweer = {
 		"civic_agrarian_idyll"
 	}
 	government="gov_irenic_dictatorship"
+	origin = "origin_default"
 
 	adjective = "PRESCRIPTED_adjective_maweer"
 	planet_name = "PRESCRIPTED_planet_name_maweer"
@@ -63,5 +64,6 @@ maweer = {
 		hair = 0
 		clothes = 0
 		ruler_title = "PRESCRIPTED_ruler_title_maweer"
+		leader_class = ruler
 	}
 }

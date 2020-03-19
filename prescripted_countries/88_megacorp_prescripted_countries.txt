@@ -31,6 +31,7 @@ kilik = {
 	authority = "auth_democratic"
 	government = "gov_communal_parity"
 	civics = { "civic_shared_burden" "civic_functional_architecture" }
+	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_kilik"
 	planet_class = "pc_tropical"
@@ -102,6 +103,7 @@ orbis = {
 	authority = "auth_corporate"
 	government = "gov_megacorporation"
 	civics = { "civic_brand_loyalty" "civic_media_conglomerate" }
+	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_orbis"
 	planet_class = "pc_ocean"
@@ -173,6 +175,7 @@ chinorr = {
 	authority = "auth_corporate"
 	government = gov_megacorporation
 	civics = { "civic_private_prospectors" "civic_ruthless_competition" }
+	origin = "origin_default"
 
 	ethic = "ethic_militarist"
 	ethic = "ethic_fanatic_materialist"
@@ -240,6 +243,7 @@ hazbuzan = {
 	authority = "auth_corporate"
 	government = "gov_criminal_syndicate"
 	civics = { "civic_criminal_heritage" "civic_franchising" }
+	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_hazbuzan"
 	planet_class = "pc_savannah"
