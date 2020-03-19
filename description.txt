@@ -51,7 +51,6 @@ In order resolve any possible conflicts I have included the following mods, I wa
 AI Ship Set - Version 1.3 by Torbori
 System Border Scale by skud13
 Natural Spiral Galaxies by phidinh6
-Better Empire Names by Galle
 Real Sol Textures by Alex FRD
 Civilian Trade by kyojin
 Exoplanets by Gogabor
