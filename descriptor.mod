@@ -8,5 +8,5 @@ tags={
 name="Forward Earth"
 path="C:/Users/Joe/Documents/Paradox Interactive/Stellaris/mod/forward_earth"
 picture="cover-image.jpg"
-supported_version="2.5.*"
+supported_version="2.6.*"
 remote_file_id="1167114780"
