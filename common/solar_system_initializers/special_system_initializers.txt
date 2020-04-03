@@ -440,7 +440,7 @@ special_init_03 = {
 					add_building = building_stone_palace			
 					
 					while = {
-						count = 3
+						count = 2
 						create_army = {
 							name = "NAME_Feudal_Levies"
 							owner = last_created
