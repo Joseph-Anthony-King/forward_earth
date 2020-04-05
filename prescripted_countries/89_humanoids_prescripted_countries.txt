@@ -1,5 +1,5 @@
 voor = {
-	name = "Voor Foundation"
+	name = "VOOR"
 	adjective = "PRESCRIPTED_adjective_voor"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = yes
@@ -23,8 +23,8 @@ voor = {
 	
 	room = "personality_erudite_explorers_room"
 	
-	ethic = ethic_fanatic_authoritarian
-	ethic = ethic_materialist
+	ethic = ethic_authoritarian
+	ethic = ethic_fanatic_materialist
 	flags = { the_voor }
 	authority = "auth_dictatorial"
 	government = gov_technocratic_dictatorship

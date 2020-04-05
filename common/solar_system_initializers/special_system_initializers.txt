@@ -326,7 +326,7 @@ special_init_03 = {
 					create_primitive_blockers = yes
 	
 					while = {
-						count = 6
+						count = 9
 						create_pop = {
 							species = last_created
 						}					
