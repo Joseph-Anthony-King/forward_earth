@@ -79,8 +79,8 @@ event = {
 	
                 room = "personality_honorbound_warriors_room"
                 
-                authority = "auth_dictatorial"
-                government = gov_martial_dictatorship
+                authority = "auth_oligarchic"
+                government = gov_war_council
                 graphical_culture="humanoid_01"
                 city_graphical_culture="mammalian_01"
 
