@@ -105,7 +105,7 @@ humans2 = {
 	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "Eta Cassiopeiae"
 	
-	graphical_culture = "wsg_01"
+	graphical_culture = "wsg_03"
 	city_graphical_culture = "mammalian_01"
 	
 	empire_flag = {
