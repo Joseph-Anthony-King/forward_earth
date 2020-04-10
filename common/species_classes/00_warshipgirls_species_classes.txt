@@ -30,7 +30,7 @@
 			value = auth_shenhai
 		}
 	}
-	graphical_culture = wsg_03
+	graphical_culture = wsg_01
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
 	
