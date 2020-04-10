@@ -1,0 +1,15 @@
+﻿l_german:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Föderationsbauer (Statisches Blau)"
+css_fedbuild_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder."
+
+css_fedbuild_colours:0 "Föderationsbauer"
+css_fedbuild_colours_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder mit dynamischen Farben."

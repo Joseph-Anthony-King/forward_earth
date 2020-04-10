@@ -1,0 +1,219 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_01_starbase_mesh"
+		file = "gfx/models/ships/wsg/NSC/wsg_01/starbase/wsg_01_starbase.mesh"
+		scale = 1.0
+
+		animation = {
+			id = opening
+			type = wsg_01_starbase_opening_animation
+		}
+
+		meshsettings = {
+			name = "ExampleStationCrewSectionShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexCivilianCrewGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexCivilianCrewNormal.dds"
+			texture_specular = "SpaceStationComplexCivilianCrewGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ExampleStationCrewSection1Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexCivilianCrewGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexCivilianCrewNormal.dds"
+			texture_specular = "SpaceStationComplexCivilianCrewGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingCompleteShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarmlandMixedShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarmland4Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarmland3Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarmland2Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarmland1Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarm4Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarm3Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarm2Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionFarm1Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionEnvironmentalControlModuleShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionCoreProcessingModule_Shape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionBioDomeShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionAgricultureModuleShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingSupportShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingRotationModuleRingShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingRotationModuleHalfShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingRotationModuleShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingQuarterShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "ProductionHabitatRingHalfShape"
+			index = 0
+			texture_diffuse = "SpaceStationComplexProductionGreyAlbedo.dds"
+			texture_normal = "SpaceStationComplexProductionNormal.dds"
+			texture_specular = "SpaceStationComplexProductionGreyAlbedo_PSEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

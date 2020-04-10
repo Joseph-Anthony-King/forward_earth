@@ -1,0 +1,75 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_01_ds_staion_mesh"
+		file = "gfx/models/ships/wsg/wsg_01/definesive_station/wsg_01_ds_staion.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "locator2Shape"
+			index = 0
+			texture_diffuse = "ScifiOrbitalTorpedoMissileLauncherGreyAlbedo.dds"
+			texture_normal = "ScifiOrbitalTorpedoMissileLauncherNormal.dds"
+			texture_specular = "ScifiOrbitalTorpedoMissileLauncherGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface97Shape"
+			index = 0
+			texture_diffuse = "ScifiSpaceshipStandardWeaponsAlbedo.dds"
+			texture_normal = "ScifiSpaceshipStandardWeaponsNormal.dds"
+			texture_specular = "ScifiSpaceshipStandardWeaponsAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "wsg_02_ds_staion_mesh"
+		file = "gfx/models/ships/wsg/wsg_01/definesive_station/wsg_01_ds_staion.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "locator2Shape"
+			index = 0
+			texture_diffuse = "ScifiOrbitalTorpedoMissileLauncherBlueAlbedo.dds"
+			texture_normal = "ScifiOrbitalTorpedoMissileLauncherNormal.dds"
+			texture_specular = "ScifiOrbitalTorpedoMissileLauncherGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface97Shape"
+			index = 0
+			texture_diffuse = "ScifiSpaceshipStandardWeaponsAlbedo.dds"
+			texture_normal = "ScifiSpaceshipStandardWeaponsNormal.dds"
+			texture_specular = "ScifiSpaceshipStandardWeaponsAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "wsg_03_ds_staion_mesh"
+		file = "gfx/models/ships/wsg/wsg_01/definesive_station/wsg_01_ds_staion.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "locator2Shape"
+			index = 0
+			texture_diffuse = "ScifiOrbitalTorpedoMissileLauncherBlackAlbedo.dds"
+			texture_normal = "ScifiOrbitalTorpedoMissileLauncherNormal.dds"
+			texture_specular = "ScifiOrbitalTorpedoMissileLauncherGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface97Shape"
+			index = 0
+			texture_diffuse = "ScifiSpaceshipStandardWeaponsAlbedo.dds"
+			texture_normal = "ScifiSpaceshipStandardWeaponsNormal.dds"
+			texture_specular = "ScifiSpaceshipStandardWeaponsAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}
+
+

@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_titan_mesh"
+		file = "gfx/models/ships/wsg/empty_locator_mesh/wsg_titan.mesh"
+		scale = 1.0
+	}
+}

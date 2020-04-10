@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_03_science_ship_mesh"
+		file = "gfx/models/ships/wsg/wsg_03/science/wsg_03_science_ship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ScifiFighterSundownHullShape"
+			index = 0
+			texture_diffuse = "ScifiFighterSundownBlackAlbedo.dds"
+			texture_normal = "ScifiFighterSundownNormal.dds"
+			texture_specular = "ScifiFighterSundownBlueAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_02_colony_ship_mesh"
+		file = "gfx/models/ships/wsg/wsg_02/colony/wsg_02_colony_ship.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ScifiSuperFreighterStartraderCargoPodShape"
+			index = 0
+			texture_diffuse = "ScifiSuperFreighterStartraderBlue.dds"
+			texture_normal = "ScifiSuperFreighterStartraderNormal.dds"
+			texture_specular = "ScifiSuperFreighterStartraderSPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "medium_turrets_pd_mesh"
+		file = "gfx/models/ships/wsg/turrue/small/small_turrets.mesh"
+		scale = 2.0
+
+		meshsettings = {
+			name = "ScifiSpaceshipTurretMKIVBarrelStaticShape"
+			index = 0
+			texture_diffuse = "ScifiSpaceshipStandardWeaponsAlbedo.dds"
+			texture_normal = "ScifiSpaceshipStandardWeaponsNormal.dds"
+			texture_specular = "ScifiSpaceshipStandardWeaponsAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

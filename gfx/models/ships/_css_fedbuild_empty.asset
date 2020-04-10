@@ -1,0 +1,4 @@
+entity = {
+	name = "css_fedbuild_01_empty_entity"
+	pdxmesh = "css_fedbuild_01_empty_mesh"
+}

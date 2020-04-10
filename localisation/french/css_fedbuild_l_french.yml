@@ -1,0 +1,15 @@
+﻿l_french:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Constructeurs de Fédérations (Bleu Statique)"
+css_fedbuild_desc:1 "Jeu de construction du constructeur de la joue et du portier."
+
+css_fedbuild_colours:0 "Constructeurs de fédérations"
+css_fedbuild_colours_desc:1 "Navire de Cheek and Gatekeeper's Federation Builder avec des couleurs dynamiques."

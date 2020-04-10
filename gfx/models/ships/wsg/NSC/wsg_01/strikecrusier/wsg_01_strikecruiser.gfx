@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_01_strikecruiser_mesh"
+		file = "gfx/models/ships/wsg/NSC/wsg_01/strikecrusier/wsg_01_strikecruiser.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			name = "ScifiCruiserClaymoreHullShape"
+			index = 0
+			texture_diffuse = "ScifiCruiserClaymoreGreyAlbedo.dds"
+			texture_normal = "ScifiCruiserClaymoreNormal.dds"
+			texture_specular = "ScifiCruiserClaymoreGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

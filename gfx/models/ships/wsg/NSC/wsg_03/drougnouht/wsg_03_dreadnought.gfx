@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_03_dreadnought_mesh"
+		file = "gfx/models/ships/wsg/NSC/wsg_03/drougnouht/wsg_03_dreadnought.mesh"
+		scale = 0.7
+
+		meshsettings = {
+			name = "ScifiBattleshipExcaliburCapShape"
+			index = 0
+			texture_diffuse = "ScifiBattleshipExcaliburBlackAlbedo.dds"
+			texture_normal = "ScifiBattleshipExcaliburNormal.dds"
+			texture_specular = "ScifiBattleshipExcaliburBlackAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

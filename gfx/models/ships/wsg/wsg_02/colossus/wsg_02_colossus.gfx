@@ -1,0 +1,57 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_02_colossus_mesh"
+		file = "gfx/models/ships/wsg/wsg_02/colossus/wsg_02_colossus.mesh"
+		scale = 1.5
+
+		animation = { id = "idle"			type = "wsg_02_colossus_idle_animation" }
+		animation = { id = "open"			type = "wsg_02_colossus_open_animation" }
+		animation = { id = "opening"		type = "wsg_02_colossus_opening_animation" }
+		animation = { id = "clossing"		type = "wsg_02_colossus_clossing_animation" }
+
+		meshsettings = {
+			name = "polySurface271Shape"
+			index = 0
+			texture_diffuse = "ScifiDeepSpaceComRelayBlueAlbedo.dds"
+			texture_normal = "ScifiDeepSpaceComRelayNormal.dds"
+			texture_specular = "ScifiDeepSpaceComRelayGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface1Shape"
+			index = 0
+			texture_diffuse = "ScifiDeepSpaceComRelayBlueAlbedo.dds"
+			texture_normal = "ScifiDeepSpaceComRelayNormal.dds"
+			texture_specular = "ScifiDeepSpaceComRelayGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface203Shape"
+			index = 0
+			texture_diffuse = "ScifiDeepSpaceComRelayBlueAlbedo.dds"
+			texture_normal = "ScifiDeepSpaceComRelayNormal.dds"
+			texture_specular = "ScifiDeepSpaceComRelayGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface206Shape"
+			index = 0
+			texture_diffuse = "ScifiDeepSpaceComRelayBlueAlbedo.dds"
+			texture_normal = "ScifiDeepSpaceComRelayNormal.dds"
+			texture_specular = "ScifiDeepSpaceComRelayGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "polySurface137Shape"
+			index = 0
+			texture_diffuse = "ScifiDeepSpaceComRelayBlueAlbedo.dds"
+			texture_normal = "ScifiDeepSpaceComRelayNormal.dds"
+			texture_specular = "ScifiDeepSpaceComRelayGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_crusier_mesh"
+		file = "gfx/models/ships/wsg/empty_locator_mesh/wsg_crusier.mesh"
+		scale = 1.0
+	}
+}

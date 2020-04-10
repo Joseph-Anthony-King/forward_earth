@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_ecarrier_mesh"
+		file = "gfx/models/ships/wsg/empty_locator_mesh/wsg_carrier.mesh"
+		scale = 0.7
+	}
+}

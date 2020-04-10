@@ -1,0 +1,15 @@
+﻿l_russian:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Федерация Строителей (Статический синий)"
+css_fedbuild_desc:1 "Щит и привратный корабль Федерации строителей."
+
+css_fedbuild_colours:0 "Федерация Строителей"
+css_fedbuild_colours_desc:1 "Щит и набор Gatekeeper's Federation Builder с динамическими цветами."

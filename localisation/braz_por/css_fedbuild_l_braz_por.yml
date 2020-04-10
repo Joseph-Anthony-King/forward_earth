@@ -1,0 +1,15 @@
+﻿l_braz_por:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Construtores de Federação (Azul Estático)"
+css_fedbuild_desc:1 "Conjunto de navios do Construtor da Federação de Cheek e Gatekeeper."
+
+css_fedbuild_colours:0 "Construtores de Federação"
+css_fedbuild_colours_desc:1 "Conjunto de navios do Federation Builder de Cheek e Gatekeeper com cores dinâmicas."

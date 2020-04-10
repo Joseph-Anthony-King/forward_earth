@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_02_explorationship_mesh"
+		file = "gfx/models/ships/wsg/NSC/wsg_02/exploreship/wsg_02_explorationship.mesh"
+		scale = 1.5
+
+		meshsettings = {
+			name = "ScifiDestroyerAngelwingCapCompleteShape"
+			index = 0
+			texture_diffuse = "ScifiDestroyerAngelwingBlueAlbedo.dds"
+			texture_normal = "ScifiDestroyerAngelwingNormal.dds"
+			texture_specular = "ScifiDestroyerAngelwingGreyAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_01_fighter_mesh"
+		file = "gfx/models/ships/wsg/wsg_01_fighter.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "polySurface64Shape64"
+			index = 0
+			texture_diffuse = "wsg_01_fighter_diffuse.dds"
+			texture_normal = "mammalian_01_fighter_normal.dds"
+			texture_specular = "mammalian_01_fighter_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_01_jurggernart_section2_mesh"
+		file = "gfx/models/ships/wsg/wsg_01/juggernaut/wsg_01_jurggernart_section2.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "group6|pasted__group5|pasted__pasted__ScifiSpaceshipGunBattery5"
+			index = 0
+			texture_diffuse = "ScifiSpaceshipStandardWeaponsAlbedo1.dds"
+			texture_normal = "ScifiSpaceshipStandardWeaponsNormal.dds"
+			texture_specular = "ScifiSpaceshipStandardWeaponsAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

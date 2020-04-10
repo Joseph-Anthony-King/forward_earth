@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_02_destroyer_mesh"
+		file = "gfx/models/ships/wsg/wsg_02/destroyer/wsg_02_destroyer.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "ScifiFrigateSunfireHull1Shape"
+			index = 0
+			texture_diffuse = "ScifiFrigateSunfireBlueAlbedo.dds"
+			texture_normal = "ScifiFrigateSunfireNormal.dds"
+			texture_specular = "ScifiFrigateSunfireBlackAlbedo_SPEC.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

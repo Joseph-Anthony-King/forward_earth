@@ -1,0 +1,7 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wsg_corvvete_mesh"
+		file = "gfx/models/ships/wsg/empty_locator_mesh/wsg_corvvete.mesh"
+		scale = 1.4
+	}
+}

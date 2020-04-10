@@ -1,0 +1,15 @@
+﻿l_polish:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+css_fedbuild:0 "Konstruktorzy Federacji (Statyczny Niebieski)"
+css_fedbuild_desc:1 "Zestaw statku Konstruktora Federacji Policzków i Gatekeeperów."
+
+css_fedbuild_colours:0 "Konstruktorzy Federacji"
+css_fedbuild_colours_desc:1 "Zestaw dynamiczny kolorów dla budowniczego federacji policzków i strażników."
