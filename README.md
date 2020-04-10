@@ -24,66 +24,37 @@ If you play as a non-human civilization there is a possibility humans will spawn
 
 This mod also includes the star names included in my "This is Alpha Ceti V!" mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
 
-Acrux
-Agam'awi
-Ai-wa
-Ama-arhus
-An-ni
-Ash-hoo
-Athol
-Beech
-Bregglar
+Alkaid
+Athyr
+Baobab
 Ceti Alpha (of course)
-Delta Eridani
-Denon
-Fasa'dda
-Forster
-Gemaris
-Ginaz
-Hir-hi
-Hixar
-Iota Minor
-Joralla
-Kalahda
-Kar-telos
-Kinnison
-Leonidas
-Liram
-Maghama
-Minshara
-Mosmadaud
-Myr
-Nama
-Obrium
-Ogura
-Olum
-Pippen
-Pol
-Raltry
-Rayima
-Rint Beekun
-Ruusan
-Shina'a
-Telana
-Teluridian
-Thirimora
-Timbol
-Tymora
-Umbra
-Unith
-Wadj-wer
-Yavin
-Yildun
-Zeta Iota
+Dagda
+Dastamon
+Dressel
+Felis
+Fentrul
+HD 153095
+HIP 418058
+Hydra Centauri
+Hydra Iota
+Lambda Alpha
+Lambda Nu
+Matjar
+Monea
+Rayhadya
+Sanopel
+Stronad
+Theta Upsilon
 
 I've also created a new galaxy texture that creates a default barred spiral galaxy, even when playing in an elipitical galaxy, this more closely resembles the current measurements of the Milky Way.
 
 In order resolve any possible conflicts I have included the following mods, I want to give a shout out to all the work our modding community has done! The following mods were included:
 
 AI Ship Set - Version 1.3 by Torbori
+Federation Builders: Ships and Cities by Cheek
+United Fleet by 党和国家
 System Border Scale by skud13
 Natural Spiral Galaxies by phidinh6
-Better Empire Names by Galle
 Real Sol Textures by Alex FRD
 Civilian Trade by kyojin
 Exoplanets by Gogabor
