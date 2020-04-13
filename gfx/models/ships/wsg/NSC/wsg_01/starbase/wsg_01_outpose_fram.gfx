@@ -1,7 +1,0 @@
-objectTypes = {
-	pdxmesh = {
-		name = "wsg_01_outpose_fram_mesh"
-		file = "gfx/models/ships/wsg/NSC/wsg_01/starbase/wsg_01_outpose_fram.mesh"
-		scale = 1.0
-	}
-}

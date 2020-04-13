@@ -367,15 +367,6 @@ random_empire_binary_init_01 = {
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
 	}
-	
-	neighbor_system = {
-		distance = { min = 10 max = 50 }		
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = 50 }		
-		initializer = "neighbor_t1_first_colony"
-	}
 }
 random_empire_binary_init_02 = {
 
@@ -859,15 +850,6 @@ binary_random_empire_init_03 = {
 		orbit_distance = 20
 		class = random_non_colonizable
 		orbit_angle = { min = 90 max = 270 }
-	}
-	
-	neighbor_system = {
-		distance = { min = 10 max = @distance }		
-		initializer = "neighbor_t1"
-	}
-	neighbor_system = {
-		distance = { min = 10 max = @distance }		
-		initializer = "neighbor_t1_first_colony"
 	}
 }
 binary_close_pre_ftl_system_initializer = {

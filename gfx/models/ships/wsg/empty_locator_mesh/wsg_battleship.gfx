@@ -1,7 +1,0 @@
-objectTypes = {
-	pdxmesh = {
-		name = "wsg_battleship_mesh"
-		file = "gfx/models/ships/wsg/empty_locator_mesh/wsg_battleship.mesh"
-		scale = 1.3
-	}
-}

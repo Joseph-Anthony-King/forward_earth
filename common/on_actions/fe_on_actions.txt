@@ -4,7 +4,7 @@ on_game_start = {
 		fe.1
 		fe.2
 		fe.3
-		fe.4
+		#fe.4
 		fe.5
 		fe.6
 		fe.7

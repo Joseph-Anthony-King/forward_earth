@@ -1,9 +1,0 @@
-entity = {
-	name = "wsg_01_jurggernart_section1_entity"
-	pdxmesh = "wsg_01_jurggernart_section1_mesh"
-}
-
-entity = {
-	name = "wsg_01_jurggernart_section2_entity"
-	pdxmesh = "wsg_01_jurggernart_section2_mesh"
-}
