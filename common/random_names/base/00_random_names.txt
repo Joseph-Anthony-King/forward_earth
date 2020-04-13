@@ -3577,6 +3577,7 @@ star_names = {
 	Nembas
 	Nembus
 	Nemozi
+	Nepenthe
 	Nephetyz
 	Nergal
 	Nerull

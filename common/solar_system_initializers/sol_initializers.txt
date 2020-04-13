@@ -571,29 +571,62 @@ sol_neighbor_t1_no_guaranteed_colony = {
     		has_ring = no
     	}
 
-    	planet = {
-    		name = "Alpha Centauri B II"
-    		orbit_distance = 25
-    		orbit_angle = 120
-    		class = "pc_toxic"
-    		size = 16
-    		has_ring = no
-    		moon = {
-    			name = "Alpha Centauri B IIa"
-    			class = "pc_barren_cold"
-    			size = 1
-    			orbit_distance = 7
-    			has_ring = no
-    		}
+		random_list = {
 
-    		moon = {
-    			name = "Alpha Centauri B IIb"
-    			class = "pc_barren_cold"
-    			size = 2
-    			orbit_distance = 4
-    			has_ring = no
-    		}
-    	}
+			50 = {
+
+				planet = {
+					name = "Alpha Centauri B II"
+					orbit_distance = 25
+					orbit_angle = 120
+					class = "pc_continental"
+					size = 16
+					has_ring = no
+					entity = "continental_planet_01_entity"
+					moon = {
+						name = "Alpha Centauri B IIa"
+						class = "pc_barren_cold"
+						size = 1
+						orbit_distance = 7
+						has_ring = no
+					}
+
+					moon = {
+						name = "Alpha Centauri B IIb"
+						class = "pc_barren_cold"
+						size = 2
+						orbit_distance = 4
+						has_ring = no
+					}
+				}
+			}
+			50 = {
+
+				planet = {
+					name = "Alpha Centauri B II"
+					orbit_distance = 25
+					orbit_angle = 120
+					class = "pc_toxic"
+					size = 16
+					has_ring = no
+					moon = {
+						name = "Alpha Centauri B IIa"
+						class = "pc_barren_cold"
+						size = 1
+						orbit_distance = 7
+						has_ring = no
+					}
+
+					moon = {
+						name = "Alpha Centauri B IIb"
+						class = "pc_barren_cold"
+						size = 2
+						orbit_distance = 4
+						has_ring = no
+					}
+				}
+			}
+		}
 
       	planet = {
       		name = "ACB-100"
@@ -757,19 +790,24 @@ sol_neighbor_t1 = {
 		size = 16
 		has_ring = no
 	}
-	
+
 	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "sol_neighbor_t2_epsilon_eridani"
 	}
-	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies < 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony"
+	}
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "sol_neighbor_t2_sirius"
 	}
 }
 
-# Neighbor Tier 1 second colony
+# Sol Neighbor Tier 1 second colony
 sol_neighbor_t1_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
@@ -868,7 +906,7 @@ sol_neighbor_t1_second_colony = {
 	}
 }
 
-# Neighbor Tier 1 No Guaranteed Second Colony
+# Sol Neighbor Tier 1 No Guaranteed Second Colony
 sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
@@ -900,22 +938,49 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 10
 		has_ring = no
 	}
+
+	random_list = {
+
+		50 = {
 	
-	planet = {
-		name = "Cygni A II"
-		class = "pc_barren_cold"
-		orbit_distance = 15
-		orbit_angle = 90
-		size = 13
-		has_ring = no
-		
-		moon = {
-			name = "Cygni A IIa"
-			class = "pc_barren_cold"
-			size = 1
-			orbit_distance = 4
-			orbit_angle = 40
-			has_ring = no
+			planet = {
+				name = "Cygni A II"
+				class = "pc_continental"
+				orbit_distance = 15
+				orbit_angle = 90
+				size = 13
+				has_ring = no
+				entity = "continental_planet_04_entity"
+				
+				moon = {
+					name = "Cygni A IIa"
+					class = "pc_barren_cold"
+					size = 1
+					orbit_distance = 4
+					orbit_angle = 40
+					has_ring = no
+				}
+			}
+		}
+		50 = {
+	
+			planet = {
+				name = "Cygni A II"
+				class = "pc_barren_cold"
+				orbit_distance = 15
+				orbit_angle = 90
+				size = 13
+				has_ring = no
+				
+				moon = {
+					name = "Cygni A IIa"
+					class = "pc_barren_cold"
+					size = 1
+					orbit_distance = 4
+					orbit_angle = 40
+					has_ring = no
+				}
+			}
 		}
 	}
 	
@@ -966,78 +1031,148 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 	}
 }
 
-# Sol Neighbor Tier 2 No Guaranteed Colony
-sol_neighbor_t1_2_no_guaranteed_colony = {
-	name = "NAME_Sirius"
+# Sol Neighbor Tier 1
+sol_neighbor_t1_2 = {
+	name = "NAME_Procyon"
 	class = sc_binary_9
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
 
 	init_effect = {
-		every_neighbor_system = { set_star_flag = empire_cluster }
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
 	}
 
 	planet = {
-		name = "NAME_Sirius_A"
+		name = "NAME_Procyon_A"
 		count = 1
-		class = pc_a_star
-		orbit_distance = 30
+		class = pc_f_star
+		orbit_distance = 0
 		orbit_angle = 1
 		size = 35
 		has_ring = no
 	}
-
+	
 	planet = {
-		name = "NAME_Sirius_B"
-		count = 1
-		class = pc_f_star
-		orbit_distance = 0
-		orbit_angle = 120
-		size = 15
+		name = "Procyon A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 12
 		has_ring = no
 	}
 	
-	change_orbit = 45
-	
 	planet = {
-		count = 2
-		orbit_angle = { min = 90 max = 270 }
+		name = "Procyon A II"
+		class = "pc_molten"
 		orbit_distance = 20
+		orbit_angle = 60
+		size = 25
+		has_ring = yes
+		
+		moon = {
+			name = "Procyon A IIa"
+			class = "pc_broken"
+			size = 12
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+		}
 	}
 	
 	planet = {
-		count = 1
-		orbit_distance = 25
-		orbit_angle = { min = 90 max = 270 }
-		size = { min = 14 max = 24 }
+		name = "Procyon A III"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 14
+		has_ring = no
 		
-		change_orbit = @base_moon_distance
+		moon = {
+			name = "Procyon A IIIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 8
+			orbit_angle = 40
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Procyon A IIIb"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 3
+			orbit_angle = 90
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 35
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
 
-		moon = {
-			count = { min = 0 max = 1 }
-			class = random_non_colonizable
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
-		}
-	}
-	
 	planet = {
-		count = 2
-		orbit_angle = { min = 90 max = 270 }
-		orbit_distance = 20
-		
-		change_orbit = @base_moon_distance
-		
-		moon = {
-			count = { min = 0 max = 1 }
-			class = random_non_colonizable
-			orbit_angle = { min = 90 max = 270 }
-			orbit_distance = 5
+		name = "NAME_Procyon_B"
+		count = 1
+		class = pc_f_star
+		orbit_distance = 125
+		orbit_angle = 215
+		size = 20
+		has_ring = no
+
+		planet = {
+			name = "Procyon B I"
+			class = pc_gas_giant
+			orbit_distance = 40
+			orbit_angle = 5
+			size = 26
+			has_ring = no
+
+			moon = {
+				name = "Procyon B Ia"
+				class = pc_molten
+				orbit_distance = 16
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				tile_blockers = none
+				modifiers = none
+			}
 		}
-	}
-	
-	planet = {
-		count = { min = 0 max = 2 }
-		orbit_angle = { min = 90 max = 270 }
-		orbit_distance = 20
 	}
 }
 
