@@ -225,7 +225,6 @@ event = {
                         set_country_flag = human_2
                         save_global_event_target_as = CoA
                         create_starting_leaders = yes
-                        country_event = { id = game_start.9 }
                         country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
                     }
                     
@@ -280,6 +279,7 @@ event = {
                     add_building = building_factory_1
 
                     create_colony = {	
+                        name = "Aurora"
                         owner = event_target:npc_CoA
                         species = event_target:human_species	
                         ethos = {	
@@ -309,17 +309,75 @@ event = {
                             module = shipyard
                             building = crew_quarters
                             owner = event_target:npc_CoA
-                            effect = {
-                                set_starbase_module = {
-                                    slot = 1
-                                    module = trading_hub
-                                }
-                            }
                         }
                     }
 
                     last_created_country = {
                         set_graphical_culture = mammalian_01
+
+                        system_star = {
+
+                            #science
+                            create_fleet = {
+                                effect = {
+                                    set_owner = last_created_country
+
+                                    create_ship = {
+                                        name = random
+                                        random_existing_design = science
+                                        graphical_culture = "mammalian_01"
+                                    }
+
+                                    set_fleet_stance = evasive
+                                    set_location = PREV
+
+                                    owner = {
+                                        create_leader = {
+                                            type = scientist
+                                            sub_type = survey
+                                            name = random
+                                            species = owner_main_species
+                                        }
+                                    }
+                                    set_leader = last_created_leader
+                                }
+                            }
+
+                            #constructor
+                            create_fleet = {
+                                effect = {
+                                    set_owner = last_created_country
+
+                                    create_ship = {
+                                        name = random
+                                        random_existing_design = constructor
+                                        graphical_culture = "mammalian_01"
+                                    }
+
+                                    set_fleet_stance = evasive
+                                    set_location = PREV
+                                }
+                            }
+
+                            #military
+                            create_fleet = {
+                                set_take_point = yes
+                                effect = {
+                                    set_owner = last_created_country
+
+                                    while = {
+                                        count = 3
+                                        create_ship = {
+                                            name = random
+                                            random_existing_design = corvette
+                                            graphical_culture = "mammalian_01"
+                                        }
+                                    }
+
+                                    set_location = PREV
+                                }
+                            }
+                        }
                     }
                 }
                 10 = {}
@@ -724,6 +782,14 @@ event = {
         if = {            
             limit = { has_country_flag = human_2 }
             set_graphical_culture = mammalian_01
+        }
+
+        every_owned_starbase = {
+
+            if = {
+                limit = { set_global_flag = aurora_station }
+                set_graphical_culture = mammalian_01
+            }
         }
 
     }
