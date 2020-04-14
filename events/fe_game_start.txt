@@ -12,7 +12,7 @@ event = {
             limit = {
                 AND = {
                     any_country = { has_country_flag = icarus_faction }
-                    has_planet_flag = planet_earth
+                    has_planet_flag = icarus_faction
                 }                
             }
             change_pc = pc_nuked
@@ -59,10 +59,9 @@ event = {
 		random_planet = {
             limit = {
                 AND = {
-                    OR = {
-                        any_country = { has_country_flag = human_1 }
-                        any_country = { has_country_flag = human_2 }
-                    }
+                    not = { any_country = { has_country_flag = custondian_faction } }
+                    not = { any_country = { has_country_flag = icarus_faction } }
+                    any_country = { has_country_flag = human_1 }
                     has_planet_flag = epsilon_a_two
                 }                
             }
@@ -153,6 +152,8 @@ event = {
             limit = {
                 AND = {
                     not = { any_country = { has_country_flag = human_2 } }
+                    not = { any_country = { has_country_flag = custondian_faction } }
+                    not = { any_country = { has_country_flag = icarus_faction } }
                     any_country = { has_country_flag = human_1 }
                     has_planet_flag = coa_home
                 }                
@@ -221,7 +222,6 @@ event = {
                     }                        
 
                     event_target:npc_CoA = {
-                        capital_scope = { set_name = "Aurora" }	
                         set_country_flag = human_2
                         save_global_event_target_as = CoA
                         create_starting_leaders = yes
@@ -313,6 +313,7 @@ event = {
                     }
 
                     last_created_country = {
+                        capital_scope = { set_name = "Aurora" }
                         set_graphical_culture = mammalian_01
 
                         system_star = {

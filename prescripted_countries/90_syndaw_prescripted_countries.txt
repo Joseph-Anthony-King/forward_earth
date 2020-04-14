@@ -112,9 +112,10 @@ custodianship = {
 		trait = "trait_adaptive"
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
+		trait = "trait"
 	}
 
-	flags = { human_1 }
+	flags = { custondian_faction custom_start_screen }
 	
 	room = "machine_room"
 	
@@ -197,7 +198,7 @@ icarus = {
 	}
 	origin = "origin_default"
 
-	flags = { icarus_faction human_1 custom_start_screen }
+	flags = { icarus_faction custom_start_screen }
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
