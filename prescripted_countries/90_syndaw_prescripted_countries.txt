@@ -115,7 +115,7 @@ custodianship = {
 		trait = "trait"
 	}
 
-	flags = { custondian_faction custom_start_screen }
+	flags = { custodian_faction custom_start_screen }
 	
 	room = "machine_room"
 	
@@ -215,7 +215,7 @@ icarus = {
 		}
 		background = {
 			category = "backgrounds"
-			file = "vertical.dds"
+			file = "00_solid.dds"
 		}
 		colors = {
 			"dark_blue"
