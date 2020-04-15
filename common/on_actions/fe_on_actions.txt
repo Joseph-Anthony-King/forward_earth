@@ -10,18 +10,17 @@ on_game_start = {
 		fe.7
 		fe.8
 		fe.9
-		fe.10
 	}
 }
 
 empire_init_add_technologies = {
 	events = {
-		fe.11
+		fe.10
 	}
 }
 
 on_game_start_country = {
 	events = {
-		fe.12
+		fe.11
 	}
 }

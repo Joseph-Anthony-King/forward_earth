@@ -1,29 +1,8 @@
 namespace = fe
 
-### fe.1 - Set Earth to nuked for I.C.A.R.U.S.
+### fe.1 - Instantiate Earth if not done so yet
 event = {
 	id = fe.1
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-
-        random_planet = {
-            limit = {
-                AND = {
-                    any_country = { has_country_flag = icarus_faction }
-                    has_planet_flag = icarus_faction
-                }                
-            }
-            change_pc = pc_nuked
-            set_planet_entity = { entity = "nuked_planet_earth_entity" }
-        }
-    }
-}
-
-### fe.2 - Instantiate Earth if not done so yet
-event = {
-	id = fe.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -48,9 +27,9 @@ event = {
     }
 }
 
-### fe.3 - Instantiate League of Human Colonies
+### fe.2 - Instantiate League of Human Colonies
 event = {
-	id = fe.3
+	id = fe.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -140,9 +119,9 @@ event = {
     }
 }
 
-### fe.4 - Instantiate CoA if UNE exists
+### fe.3 - Instantiate CoA if UNE exists
 event = {
-	id = fe.4
+	id = fe.3
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -387,13 +366,49 @@ event = {
     }
 }
 
-### fe.5 - Instantiate League of Human Colonies
+### fe.4 - Instantiate League of Human Colonies and CoA for Earth AI factions
 event = {
-	id = fe.5
+	id = fe.4
 	hide_window = yes
 	is_triggered_only = yes
 
 	immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = icarus_faction }
+                    has_planet_flag = icarus_faction
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+
+        random_planet = {
+
+            limit = {
+
+                has_planet_flag = planet_earth
+            }
+
+            create_species = {
+                name = Human
+                plural = Humans
+                class = "HUM"
+                portrait = "human"
+                homeworld = THIS
+                traits = {
+                    trait = "trait_adaptive"
+                    trait = "trait_nomadic"
+                    trait = "trait_wasteful"
+                    trait = "trait_pc_continental_preference"
+                }
+                effect = {
+                    save_event_target_as = human_species
+                }
+            }
+        }
 		
 		random_planet = {
             limit = {
@@ -405,34 +420,6 @@ event = {
                     has_planet_flag = epsilon_a_two
                 }                
             }
-
-            random_planet = {
-
-                limit = {
-
-                    has_planet_flag = planet_earth
-                }
-				effect = {
-					save_event_target_as = planet_earth_target
-				}
-            }
-
-			create_species = {
-                name = Human
-                plural = Humans
-                class = "HUM"
-                portrait = "human"
-                homeworld = event_target:planet_earth_target
-                traits = {
-                    trait = "trait_adaptive"
-                    trait = "trait_nomadic"
-                    trait = "trait_wasteful"
-                    trait = "trait_pc_continental_preference"
-                }
-				effect = {
-					save_event_target_as = human_species
-				}
-			}
 
             create_country = {
                 name = "NAME_League_of_Human_Colonies"
@@ -500,16 +487,6 @@ event = {
                 set_graphical_culture = mammalian_01
             }
 		}
-    }
-}
-
-### fe.6 - Instantiate CoA if Earth AI Exists
-event = {
-	id = fe.6
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
 		
 		random_planet = {
             limit = {
@@ -535,34 +512,6 @@ event = {
                         }
                         change_pc = pc_continental
                         set_planet_entity = { entity = "continental_planet_01_entity" }
-                    }
-
-                    random_planet = {
-
-                        limit = {
-
-                            has_planet_flag = planet_earth
-                        }
-                        effect = {
-                            save_event_target_as = planet_earth_target
-                        }
-                    }
-
-                    create_species = {
-                        name = Human
-                        plural = Humans
-                        class = "HUM"
-                        portrait = "human"
-                        homeworld = event_target:planet_earth_target
-                        traits = {
-                            trait = "trait_adaptive"
-                            trait = "trait_nomadic"
-                            trait = "trait_wasteful"
-                            trait = "trait_pc_continental_preference"
-                        }
-                        effect = {
-                            save_event_target_as = human_species
-                        }
                     }
 
                     create_country = {
@@ -784,9 +733,19 @@ event = {
     }
 }
 
-### fe.7 - Set Human Space planet modifiers
+### fe.5 - Set Earth to nuked for I.C.A.R.U.S.
 event = {
-	id = fe.7
+	id = fe.5
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+    }
+}
+
+### fe.6 - Set Human Space planet modifiers
+event = {
+	id = fe.6
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -861,9 +820,9 @@ event = {
     }
 }
 
-### fe.8 - Set barycenters and notable stars
+### fe.7 - Set barycenters and notable stars
 event = {
-    id = fe.8
+    id = fe.7
     hide_window = yes
     is_triggered_only = yes
 
@@ -961,9 +920,9 @@ event = {
     }
 }
 
-### fe.9 - Revert Eta Cassiopeiae to default names if unpopulated
+### fe.8 - Revert Eta Cassiopeiae to default names if unpopulated
 event = {
-	id = fe.9
+	id = fe.8
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1125,9 +1084,9 @@ event = {
     }
 }
 
-### fe.10 - Set Earth to nuked if unpopulated and CoA instantiated
+### fe.9 - Set Earth to nuked if unpopulated and CoA instantiated
 event = {
-	id = fe.10
+	id = fe.9
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1147,9 +1106,9 @@ event = {
     }
 }
 
-### fe.11 - Set League of Human Colonies resources
+### fe.10 - Set League of Human Colonies resources
 event = {
-	id = fe.11
+	id = fe.10
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1169,9 +1128,9 @@ event = {
 	}
 }
 
-### fe.12 - Set CoA graphical culture
+### fe.11 - Set CoA graphical culture
 event = {
-	id = fe.12
+	id = fe.11
 	hide_window = yes
 	is_triggered_only = yes
 
