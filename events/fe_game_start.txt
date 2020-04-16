@@ -1433,7 +1433,14 @@ event = {
             limit = {
                 AND = {
                     any_country = { has_country_flag = human_2 }
-                    any_country = { NOT = { any_country = { has_country_flag = human_1 } } }
+                    any_country = { 
+                        NOT = {
+                            OR = {
+                                any_country = { has_country_flag = human_1 } 
+                                any_country = { has_country_flag = custodian_faction }
+                            }
+                        } 
+                    }
                     has_planet_flag = planet_earth
                 }                
             }
