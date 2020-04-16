@@ -29,7 +29,7 @@ humans1 = {
 
 	origin = "origin_default"
 
-	flags = { human_1 custom_start_screen }
+	flags = { human_1 custom_start_screen human_faction }
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"

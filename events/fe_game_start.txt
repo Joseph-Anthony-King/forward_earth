@@ -108,6 +108,7 @@ event = {
 
                         event_target:npc_LHC = {
                             set_country_flag = human_3
+                            set_country_flag = human_faction
                             save_global_event_target_as = LHC
                         }
                         
@@ -464,6 +465,7 @@ event = {
 
                         event_target:npc_LHC = {
                             set_country_flag = human_3
+                            set_country_flag = human_faction
                             save_global_event_target_as = LHC
                         }
                         
@@ -817,6 +819,7 @@ event = {
 
                         event_target:npc_LHC = {
                             set_country_flag = human_3
+                            set_country_flag = human_faction
                             save_global_event_target_as = LHC
                         }
                         

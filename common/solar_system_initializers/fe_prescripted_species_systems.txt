@@ -118,7 +118,7 @@ space_age_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
-							flags = { human_1 }
+							flags = { human_1 human_faction}
 
 							flag = {
 								icon = {
@@ -295,7 +295,7 @@ space_age_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
-							flags = { human_1 }
+							flags = { human_1 human_faction }
 
 							flag = {
 								icon = {
@@ -753,6 +753,7 @@ primitive_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"			
 							}
+							flags = { human_1 human_faction}
 							flag = {
 								icon = {
 									category = "human"
@@ -835,6 +836,7 @@ primitive_sol_system_initializer = {
 								ethic = "ethic_materialist"
 								ethic = "ethic_fanatic_militarist"
 							}
+							flags = { human_1 human_faction}
 							flag = {
 								icon = {
 									category = "human"
@@ -908,6 +910,7 @@ primitive_sol_system_initializer = {
 								ethic = "ethic_spiritualist"
 								ethic = "ethic_authoritarian"
 							}
+							flags = { human_1 human_faction}
 							flag = {
 								icon = {
 									category = "ornate"
