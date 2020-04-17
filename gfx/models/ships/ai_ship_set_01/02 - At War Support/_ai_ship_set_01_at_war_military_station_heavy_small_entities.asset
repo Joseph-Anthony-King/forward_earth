@@ -1,13 +1,13 @@
 entity = {
 	#General Information
-	name = "ai_ship_set_01_military_station_small_entity"
+	name = "ai_ship_set_01_eac_military_station_heavy_small_entity"
 	pdxmesh = "locator_mesh"
 	scale = 0.8
 	game_data = {
 		size = 22
 		emissive_recolor_crunch = 10.0
 	}
-
+	
 	#Locators for Sections
 	locator = {
 		name = "part1"

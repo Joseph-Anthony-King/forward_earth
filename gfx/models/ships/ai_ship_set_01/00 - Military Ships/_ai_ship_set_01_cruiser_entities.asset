@@ -11,7 +11,10 @@ entity = {
 	name = "ai_ship_set_01_cruiser_entity"
 	pdxmesh = "locator_mesh"
 	scale = 1.0
-	game_data = {size = 14 emissive_recolor_crunch = 10.0}
+	game_data = {
+		size = 20
+		emissive_recolor_crunch = 10.0
+	}
 	
 	###Locators for Sections
 	

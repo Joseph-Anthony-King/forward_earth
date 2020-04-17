@@ -1,5 +1,3 @@
-###position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
-
 #######################
 ### Orbital Habitat ###
 #######################
@@ -9,20 +7,75 @@ entity = {
 	###General Information
 	
 	name = "ai_ship_set_01_orbital_habitat_entity"
-	pdxmesh = "ai_01_core_mesh"
-	scale = 0.7
+	pdxmesh = "locator_mesh"
+	scale = 1.3
 	game_data = {
 		size = 18 
 		shader_type = ship 
 		emissive_recolor_crunch = 10.0
 	}
+		
+	###Locators for Extensions
+	
+	locator = { name = "extension_attachment_01"	position = {  0 0.25 0 } 	rotation = { 0  90 0 }}
+	locator = { name = "extension_attachment_02"	position = {  0 -0.25 0 } 	rotation = { 0 -90 0 }}
+	
+	attach = { extension_attachment_01		= "ai_ship_set_01_orbital_habitat_extension_02_entity" }
+	attach = { extension_attachment_02		= "ai_ship_set_01_orbital_habitat_extension_02_entity" }
+
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation_speed = 0
+		event = { time = 0 particle = "ai_ship_set_core_effect" keep_particle = yes trigger_once = yes }}
+	state = { name = "moving"	state_time = 5 animation_speed = 0
+		event = { time = 0 particle = "ai_ship_set_core_effect" keep_particle = yes trigger_once = yes }}
+	state = { name = "death" state_time = 5 looping = no 
+		event = { time = 4.9 particle = "medium_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}
+
+##################
+### Extensions ###
+##################
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_orbital_habitat_extension_02_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+	
+	###Locators for Extensions
+	
+	locator = { name = "extension_attachment_01"	position = {  0 0 0 } 	rotation = { 180 0  45 }}
+	locator = { name = "extension_attachment_02"	position = {  0 0 0 } 	rotation = { 180 0 -45 }}
+
+	
+	attach = { extension_attachment_01		= "ai_ship_set_01_orbital_habitat_buildingblock_entity" }
+	attach = { extension_attachment_02		= "ai_ship_set_01_orbital_habitat_buildingblock_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 animation_speed = 0}
+	state = { name = "death" state_time = 5 looping = no }
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_orbital_habitat_buildingblock_entity"
+	pdxmesh = "ai_01_station_small_mesh"
+	scale = 1
 	
 	###Animations
 	
 	default_state = "idle"
-	state = { name = "idle" state_time = 5 }
-	state = { name = "death" state_time = 5 looping = no
-		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+	state = { name = "idle" animation = "idle" animation_speed = 0}
+	state = { name = "death" animation = "death" looping = no}
 }
 
 #############################
@@ -34,6 +87,14 @@ entity = {
 	###General Information
 	
 	name = "ai_ship_set_01_orbital_habitat_construction_entity"
-	pdxmesh = "ai_01_core_mesh"
-	scale = 0.7
+	pdxmesh = "locator_mesh"
+	scale = 1.3
+		
+	###Locators for Extensions
+	
+	locator = { name = "extension_attachment_01"	position = {  0 0 0 } 	rotation = { 0  90 0 }}
+	locator = { name = "extension_attachment_02"	position = {  0 0 0 } 	rotation = { 0 -90 0 }}
+	
+	attach = { extension_attachment_01		= "ai_ship_set_01_orbital_habitat_extension_02_entity" }
+	attach = { extension_attachment_02		= "ai_ship_set_01_orbital_habitat_extension_02_entity" }
 }

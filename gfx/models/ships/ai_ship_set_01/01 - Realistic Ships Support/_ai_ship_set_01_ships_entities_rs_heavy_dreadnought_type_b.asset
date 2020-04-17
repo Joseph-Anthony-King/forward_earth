@@ -11,7 +11,7 @@ entity = {
 	name = "ai_ship_set_01_rs_heavy_dreadnought_type_b_entity"
 	pdxmesh = "locator_mesh"
 	scale = 0.63
-	game_data = {size = 26 emissive_recolor_crunch = 10.0}
+	game_data = {size = 35 emissive_recolor_crunch = 10.0}
 	
 	###Locators for Sections
 	
@@ -355,7 +355,7 @@ entity = {
 ### MID 2 ###
 
 entity = {
-	name = "ai_ship_set_01_rs_heavy_dreadnought_type_b_mid2_L3_entity"
+	name = "ai_ship_set_01_rs_heavy_dreadnought_type_b_mid2_L6_entity"
 	pdxmesh = "locator_mesh"
 	
 	###Locators for Weapons
@@ -371,7 +371,7 @@ entity = {
 ### STERN ###
 
 entity = {
-	name = "ai_ship_set_01_rs_heavy_dreadnought_type_b_stern_M2_entity"
+	name = "ai_ship_set_01_rs_heavy_dreadnought_type_b_stern_M4L2_entity"
 	pdxmesh = "locator_mesh"
 	
 	###Locators for Weapons

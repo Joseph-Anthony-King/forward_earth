@@ -36,7 +36,7 @@ particle={
 		velocity_yaw=0.000
 		velocity=0.000
 		life=0.300
-		emission=50.000
+		emission=15.000
 		size=10.000
 		rotation={ 0.000 180.000 }
 	}
@@ -116,7 +116,7 @@ particle={
 		velocity_yaw=0.000
 		velocity={ 30.000 1.000 }
 		life={ 1.000 0.020 }
-		emission=100.000
+		emission=10.000
 		size={ 12.000,shrink 0.050 }
 		rotation=0.000
 		rotation_speed={ 50.000 0.000 }
@@ -161,7 +161,7 @@ particle={
 		velocity_yaw={ 0.000 5.000 }
 		velocity=0.500
 		life=0.300
-		emission=40.000
+		emission=14.000
 		size=10.000,grow
 		rotation={ 0.000 180.000 }
 	}

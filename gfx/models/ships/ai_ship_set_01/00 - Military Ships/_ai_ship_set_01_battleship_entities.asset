@@ -10,8 +10,11 @@ entity = {
 	
 	name = "ai_ship_set_01_battleship_entity"
 	pdxmesh = "ai_01_warship_large_mesh"
-	scale = 1.1
-	game_data = {size = 18 emissive_recolor_crunch = 10.0}
+	scale = 1.0
+	game_data = {
+		size = 25
+		emissive_recolor_crunch = 10.0
+	}
 	
 	###Locators for Sections
 	

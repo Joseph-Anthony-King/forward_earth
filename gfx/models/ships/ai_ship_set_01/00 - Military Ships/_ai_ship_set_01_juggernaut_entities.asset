@@ -1,0 +1,399 @@
+###position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
+
+#############
+### Frame ###
+#############
+
+entity = {
+	#General Information
+	name = "ai_ship_set_01_juggernaut_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1.7
+	game_data = {
+		size = 70
+		emissive_recolor_crunch = 10.0
+	}
+	
+	#Locators for Sections
+	locator = {
+		name = "part1"
+		position = {0 0 0}
+	}
+	
+	#Locators for Extensions
+	#1(star shape)
+	locator = {
+		name = "extension_attachment_01"
+		position = { 0 0 0 } 
+		rotation = { 180 0  45 }
+	}
+	locator = {
+		name = "extension_attachment_02"
+		position = { 0 0 0 }
+		rotation = { 180 0 -45 }
+	}
+	locator = {
+		name = "extension_attachment_03"
+		position = { 0 0 0 } 
+		rotation = { 180 0  0 }
+	}
+	locator = {
+		name = "extension_attachment_04"	
+		position = { 0 0 0 } 	
+		rotation = { 180 0  90 }
+	}
+	#2(exhaust)
+	locator = { 
+		name = "extension_attachment_05"	
+		position = { 0 0 2 } 	
+		rotation = { 0 0  0 }
+	}
+	locator = { 
+		name = "extension_attachment_06"	
+		position = { 0 0 2 } 	
+		rotation = { 0 0  45 }
+	}
+	#(floating bits)
+	locator = {
+		name = "extension_attachment_07"	
+		position = {  18  8 0 } 	
+		rotation = { 0 0  22.5 }
+	}
+	locator = { 
+		name = "extension_attachment_08"	
+		position = {  18 -8 0 } 	
+		rotation = { 0 0 -22.5 }
+	}
+	locator = { 
+		name = "extension_attachment_09"	
+		position = { -18  8 0 } 	
+		rotation = { 0 0 -22.5 }
+	}
+	locator = { 
+		name = "extension_attachment_10"	
+		position = { -18 -8 0 } 	
+		rotation = { 0 0  22.5 }
+	}
+	
+	#Attachments
+	#1(star shape)
+	attach = { 
+		extension_attachment_01	= "ai_ship_set_01_juggernaut_extension_01_entity" 
+	}
+	attach = { 
+		extension_attachment_02	= "ai_ship_set_01_juggernaut_extension_01_entity" 
+	}
+	attach = { 
+		extension_attachment_03	= "ai_ship_set_01_juggernaut_extension_01_entity" 
+	}
+	attach = { 
+		extension_attachment_04	= "ai_ship_set_01_juggernaut_extension_01_entity" 
+	}
+	#2(exhaust)
+	attach = { 
+		extension_attachment_05	= "ai_ship_set_01_juggernaut_extension_02_entity"
+	}
+	attach = {
+		extension_attachment_06	= "ai_ship_set_01_juggernaut_extension_02_entity"
+	}
+	#(floating bits)
+	attach = {
+		extension_attachment_07	= "ai_ship_set_01_juggernaut_extension_03_entity"
+	}
+	attach = { 
+		extension_attachment_08	= "ai_ship_set_01_juggernaut_extension_03_entity"
+	}
+	attach = { 
+		extension_attachment_09	= "ai_ship_set_01_juggernaut_extension_03_entity"
+	}
+	attach = {
+		extension_attachment_10	= "ai_ship_set_01_juggernaut_extension_03_entity"
+	}
+	
+	#Animations
+	default_state = "idle"
+	state = {
+		name = "idle" 
+		state_time = 5 
+		animation_speed = 0
+	}
+	state = { 
+		name = "moving"	
+		state_time = 5 
+		animation_speed = 0
+	}
+	state = { 
+		name = "death" 
+		state_time = 3.5 
+		chance = 1 
+		looping = no	
+		event = { 
+			time = 0.0 
+			node = "root" 
+			particle = "ship_explosion_particle" 
+			sound = { soundeffect = ship_destroyed }
+		}
+		event = { 
+			time = 0.5 
+			node = "part1" 
+			particle = "ship_burn_particle" 
+		}
+		event = { 
+			time = 1.5 
+			node = "part1" 
+			particle = "ship_explosion_particle" 
+			sound = { soundeffect = ship_destroyed }
+		}
+		event = {
+			time = 3.3 
+			node = "part1" 
+			particle = "large_ship_explosion_particle" 
+			sound = { soundeffect = ship_destroyed }
+		}
+	}
+}
+
+##################
+### Extensions ###
+##################
+
+### 1 ###
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_juggernaut_extension_01_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+	
+	###Locators for Extensions
+	
+	locator = { name = "extension_attachment_01"	position = { 0 0 0 } 	rotation = { 0 0 0 }}
+	locator = { name = "extension_attachment_02"	position = { 0 0 0 } 	rotation = { 36 0 0 }}
+	
+	attach = { extension_attachment_01		= "ai_ship_set_01_juggernaut_extension_01_extension_entity" }
+	attach = { extension_attachment_02		= "ai_ship_set_01_juggernaut_extension_01_extension_entity" }
+	
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" animation_speed = 0}
+	state = { name = "moving" animation_speed = 0}
+	state = { name = "death" looping = no}
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_juggernaut_extension_01_extension_entity"
+	pdxmesh = "ai_01_station_small_mesh"
+	scale = 1
+	
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0}
+	state = { name = "moving" animation = "idle" animation_speed = 0}
+	state = { name = "death" animation = "death" looping = no}
+}
+
+### 2 ###
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_juggernaut_extension_02_entity"
+	pdxmesh = "ai_01_warship_large_mesh"
+	scale = 1
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_medium_01" particle = "ai_ship_set_large_mid_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "ai_ship_set_large_side_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "ai_ship_set_large_side_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "ai_ship_set_large_side_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05" particle = "ai_ship_set_large_side_exhaust_idle_particle" trigger_once = yes keep_particle = yes }}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_medium_01" particle = "ai_ship_set_large_mid_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "ai_ship_set_large_side_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "ai_ship_set_large_side_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "ai_ship_set_large_side_exhaust_moving_particle" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "engine_medium_05" particle = "ai_ship_set_large_side_exhaust_moving_particle" trigger_once = yes keep_particle = yes }}
+	state = { name = "death" state_time = 3.5 chance = 1 looping = no}
+}
+
+### 3 ###
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_juggernaut_extension_03_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+	
+	###Locators for Extensions
+	
+	locator = { name = "extension_attachment_01"	position = { 0 0 0 } 	rotation = { 0 0 0 }}
+	locator = { name = "extension_attachment_02"	position = { 0 0 0 } 	rotation = { 36 0 0 }}
+	
+	attach = { extension_attachment_01		= "ai_ship_set_01_juggernaut_extension_03_extension_entity" }
+	attach = { extension_attachment_02		= "ai_ship_set_01_juggernaut_extension_03_extension_entity" }
+	
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" animation_speed = 0
+		event = { time = 0 particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
+	state = { name = "moving" animation_speed = 0
+		event = { time = 0 particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
+	state = { name = "death" looping = no}
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_juggernaut_extension_03_extension_entity"
+	pdxmesh = "ai_01_station_small_mesh"
+	scale = 0.2
+	
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0}
+	state = { name = "moving" animation = "idle" animation_speed = 0}
+	state = { name = "death" animation = "death" looping = no}
+}
+
+################	
+### Sections ###
+################
+
+entity = {
+	name = "ai_ship_set_01_juggernaut_core_section_entity"
+	pdxmesh = "locator_mesh"
+	
+	#Locators for Weapons
+	locator = { 
+		name = "xl_gun_01"	
+		position = {  22 	 0   0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_gun_02"	
+		position = { -22 	 0   0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "gun_1"	
+		position = { -15  	 -15 	0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "gun_2"	
+		position = {  15  	 -15 	0 }	
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "gun_3"	
+		position = { -15 	 15 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "gun_4"	
+		position = {  15 	 15   0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "gun_5"	
+		position = { 0 	 0   -11 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = {
+		name = "strike_craft_locator_01"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "strike_craft_locator_02"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "strike_craft_locator_03"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "strike_craft_locator_04"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "strike_craft_locator_05"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+	locator = { 
+		name = "strike_craft_locator_06"	
+		position = {  0 	 0 		0 } 
+		rotation = {  0  0 0 }
+	}
+
+	#Locators for Animations
+	locator = {
+		name = "xl_windup_1"	
+		position = {  18  8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_2"	
+		position = {  18 -8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_3"	
+		position = { -18  8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_4"	
+		position = { -18 -8 0 } 	
+		rotation = { 0 0 0 }
+	}locator = {
+		name = "xl_windup_5"	
+		position = {  18  8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_6"	
+		position = {  18 -8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_7"	
+		position = { -18  8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_8"	
+		position = { -18 -8 0 } 	
+		rotation = { 0 0 0 }
+	}locator = {
+		name = "xl_windup_9"	
+		position = {  18  8 0 } 	
+		rotation = { 0 0 0 }
+	}
+	locator = { 
+		name = "xl_windup_10"	
+		position = {  18 -8 0 } 	
+		rotation = { 0 0 0 }
+	}
+}
+

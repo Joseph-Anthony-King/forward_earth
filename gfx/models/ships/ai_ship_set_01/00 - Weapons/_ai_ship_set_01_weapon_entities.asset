@@ -209,12 +209,41 @@ entity = {
 	locator = { name = loc6 position = { 0 0 -10 } }
 }
 
+###Large Laser
 entity = {
 	name = "ai_ship_set_01_large_laser_gun_entity"
 	pdxmesh = "locator_mesh"
 	
-	state = { name = "idle" }
-	state = { name = "attack" looping = no next_state = "idle" }
+	locator = {
+		name = "core_effect" 
+		position = {0 0 0}
+		rotation = {0 0 0}
+	}
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
+	state = {
+		name = "attack"
+		looping = no
+		next_state = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
 	scale = 1.0
 
 	locator = {
@@ -228,12 +257,41 @@ entity = {
 	locator = { name = loc6 position = { 0 0 -10 } }
 }
 
+###Medium Laser
 entity = {
 	name = "ai_ship_set_01_medium_laser_gun_entity"
 	pdxmesh = "locator_mesh"
 	
-	state = { name = "idle" }
-	state = { name = "attack" looping = no next_state = "idle" }
+	locator = {
+		name = "core_effect" 
+		position = {0 0 0}
+		rotation = {0 0 0}
+	}
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
+	state = {
+		name = "attack"
+		looping = no
+		next_state = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
 	scale = 1.0
 
 	locator = {
@@ -247,8 +305,50 @@ entity = {
 	locator = { name = loc6 position = { 0 0 -10 } }
 }
 
+###Small Laser
 entity = {
 	name = "ai_ship_set_01_small_laser_gun_entity"
+	#pdxmesh = "ai_01_station_large_mesh"
+	pdxmesh = "locator_mesh"
+	scale = 0.025
+	
+	locator = {
+		name = "turret_muzzle_01"
+	}	
+	locator = {
+		name = "core_effect" 
+		position = {0 0 0}
+		rotation = {0 0 0}
+	}
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		animation = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
+	state = {
+		name = "attack"
+		looping = no
+		next_state = "idle"
+		event = {
+			time = 0
+			node = "core_effect"
+			particle = "ai_ship_set_core_effect"
+			keep_particle = yes
+			trigger_once = yes
+		}
+	}
+}
+
+entity = {
+	name = "ai_ship_set_01_turret_xl_entity"
 	pdxmesh = "locator_mesh"
 	
 	state = { name = "idle" }

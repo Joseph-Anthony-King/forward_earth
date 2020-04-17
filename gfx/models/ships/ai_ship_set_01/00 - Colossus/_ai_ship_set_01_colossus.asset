@@ -9,7 +9,10 @@ entity = {
 	name = "ai_ship_set_01_colossus_entity"
 	pdxmesh = "avian_01_colossus_frame_mesh"
 	scale = 1.0
-	game_data = {size = 35 emissive_recolor_crunch = 10.0}
+	game_data = {
+		size = 70
+		emissive_recolor_crunch = 10.0
+	}
 	
 	###Locators
 	
@@ -61,38 +64,45 @@ entity = {
 		start_event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_idle" }}		
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Idle state when going from opened state to idle. 
 	state = { name = "idle" animation = "closing" looping = no next_state = "idle" 
 		chance = { if_current_state = { "idle" = 0 "moving" = 0 "death" = 0 "working" = 0 "working_looping" = 100 }}
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_closing" stop_on_state_change = yes }}
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Actual moving state if going from idle/moving.
 	state = { name = "moving" animation = "idle" looping = yes next_state = "moving"
 		chance = { if_current_state = { "idle" = 100 "moving" = 100 "death" = 0 "working" = 100 "working_looping" = 0 }}
 		event = { trigger_once = yes sound = { soundeffect = "moving_out_colossus" }}	
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Moving state if going from open/working, uses closing animation.
 	state = { name = "moving" animation = "closing" looping = no next_state = "moving"
 		chance = { if_current_state = { "idle" = 0 "moving" = 0 "death" = 0 "working" = 0 "working_looping" = 100 }}
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_closing" stop_on_state_change = yes }}	
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }	
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Opened state, going after "working".
 	state = { name = "working_looping" animation = "open" 
 		event = { time = 0	id = "beam_start" }
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }	
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Opening state, goes into "working_looping" state when done.
 	state = { name = "working" animation = "opening" looping = no next_state = "working_looping" 
 		event = { trigger_once = yes sound = { soundeffect = "mammalian_colossus_opening" stop_on_state_change = yes }}
 		event = { time = 1000 id = "beam_start" } 
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_electricity_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "custom_animation_01" particle = "ai_ship_set_colossus_core_effect" keep_particle = yes trigger_once = yes }}
+	
 	#Closed death state.
 	state = { name = "death" animation = "idle" looping = no
 		chance = { if_current_state = { "idle" = 100 "moving" = 100	"death" = 0	"working" = 0 "working_looping" = 0	}}}
+	
 	#Opened death state.
 	state = { name = "death" animation = "open" looping = no animation_blend_time = 2
 		chance = { if_current_state = { "idle" = 0 "moving" = 0 "death" = 0 "working" = 100 "working_looping" = 100 }}}	
@@ -141,8 +151,8 @@ entity = {
 	
 	locator = { name = "extension_10"	position = {  17.5 	 28		0 } 	rotation = {   180   0 		0 }}
 	locator = { name = "extension_11"	position = { -17.5 	 28 	0 } 	rotation = {   180   0 		0 }}
-	locator = { name = "extension_12"	position = {  33 	-6 		0 } 	rotation = {   180   0 		0 }}
-	locator = { name = "extension_13"	position = { -33 	-6 		0 } 	rotation = {   180 	 0 		0 }}
+	locator = { name = "extension_12"	position = {  33 	-11 	0 } 	rotation = {   180   0 		0 }}
+	locator = { name = "extension_13"	position = { -33 	-11 	0 } 	rotation = {   180 	 0 		0 }}
 	locator = { name = "extension_14"	position = {  0 	-35		0 } 	rotation = {   180 	 0 		0 }}
 	
 	attach = { extension_10		= "ai_ship_set_01_colossus_segment_entity" }
@@ -155,8 +165,8 @@ entity = {
 	
 	locator = { name = "A_1"	position = {  17.5 	 28		3 } 	rotation = {   180   0 		0 }}
 	locator = { name = "A_2"	position = { -17.5 	 28 	3 } 	rotation = {   180   0 		0 }}
-	locator = { name = "A_3"	position = {  33 	-6 		3 } 	rotation = {   180   0 		0 }}
-	locator = { name = "A_4"	position = { -33 	-6 		3 } 	rotation = {   180 	 0 		0 }}
+	locator = { name = "A_3"	position = {  33 	-11 	3 } 	rotation = {   180   0 		0 }}
+	locator = { name = "A_4"	position = { -33 	-11		3 } 	rotation = {   180 	 0 		0 }}
 	locator = { name = "A_5"	position = {  0 	-35		3 } 	rotation = {   180 	 0 		0 }}
 	
 	###Animations
@@ -168,12 +178,14 @@ entity = {
 		event = { time = 0 node = "A_3" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_4" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_5" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
+		
 	state = { name = "moving" state_time = 5 
 		event = { time = 0 node = "A_1" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_2" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_3" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_4" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "A_5" particle = "ai_ship_set_small_core_effect" keep_particle = yes trigger_once = yes }}
+		
 	state = { name = "death" state_time = 3.5 chance = 1 looping = no	
 		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed }}
 		event = { time = 0.5 node = "part1" particle = "ship_burn_particle" }

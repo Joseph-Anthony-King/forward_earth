@@ -157,6 +157,18 @@ entity = {
 
 	###General Information
 	
+	name = "ai_ship_set_01_rs_battlecruiser_bow_XL1_entity"
+	pdxmesh = "locator_mesh"
+	
+	###Locators for Weapons
+	
+	locator = { name = "xl_gun_01"	position = { -0.08 -0.14 -21.18 } 	rotation = {  0 0 0 }}
+}
+
+entity = {
+
+	###General Information
+	
 	name = "ai_ship_set_01_rs_battlecruiser_bow_L1_entity"
 	pdxmesh = "locator_mesh"
 	

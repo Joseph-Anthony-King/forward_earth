@@ -11,7 +11,10 @@ entity = {
 	name = "ai_ship_set_01_corvette_entity"
 	pdxmesh = "locator_mesh"
 	scale = 1
-	game_data = {size = 7 emissive_recolor_crunch = 10.0}
+	game_data = {
+		size = 12
+		emissive_recolor_crunch = 10.0
+	}
 	
 	###Locators for Extensions
 	
