@@ -729,357 +729,349 @@ event = {
 
 	immediate = {		
 
-            if = {
-                
-                random_country = {
-                    limit = {
-                        
-                        has_country_flag = icarus_faction
-                    }
-
-                    random_planet = {
-
-                        limit = {
-
-                            has_planet_flag = planet_earth
-                        }
-
-                        create_species = {
-                            name = Human
-                            plural = Humans
-                            class = "HUM"
-                            portrait = "human"
-                            traits = {
-                                trait = "trait_adaptive"
-                                trait = "trait_nomadic"
-                                trait = "trait_wasteful"
-                                trait = "trait_pc_continental_preference"
-                            }
-                            effect = {
-                                save_event_target_as = human_species
-                            }
-                        }
-                    }
-
-                    random_planet = {
-                        limit = {
-                            AND = {
-                                has_planet_flag = epsilon_a_two
-                            }                
-                        }
-
-                        create_country = {
-                            name = "NAME_League_of_Human_Colonies"
-                            name_list = HUMAN1              
-                            ship_prefix = "LHCS"
-                            
-                            authority = auth_oligarchic
-                            
-                            origin = "origin_lost_colony"
-
-                            species = event_target:human_species
-                            ethos = {
-                                ethic = ethic_authoritarian
-                                ethic = ethic_fanatic_militarist
-                            }
-                            civics = {
-                                civic = civic_cutthroat_politics
-                                civic = civic_warrior_culture
-                            }
-                            flag = {
-                                icon = {
-                                    category="spherical"
-                                    file="flag_spherical_8.dds"
-                                }
-                                background = {
-                                    category="backgrounds"
-                                    file="vertical.dds"
-                                }
-                                colors = {
-                                    "dark_green"
-                                    "yellow"
-                                    "null"
-                                    "null"
-                                }
-                            }
-                            type = default
-                                    
-                            effect = {
-                                save_global_event_target_as = npc_LHC
-                                add_resource = {
-                                    minerals = 0
-                                    energy = 0
-                                    food = 0
-                                    alloys = 0
-                                    consumer_goods = 0
-                                    influence = 0
-                                }
-                            }
-                        }
-
-                        event_target:npc_LHC = {
-                            set_country_flag = human_3
-                            set_country_flag = human_faction
-                            save_global_event_target_as = LHC
-                        }
-                        
-                        set_owner = event_target:npc_LHC
-
-                        create_primitive_blockers = yes
-
-                        while = {
-                            count = 4
-                            create_pop = {
-                                species = event_target:human_species
-                            }
-                        }
-
-                        set_owner = last_created_country
-                        set_capital = yes
-                        add_district = district_farming
-                        add_district = district_farming
-                        add_district = district_mining
-                        add_district = district_generator
-                        add_building = building_capital
-
-                        last_created_country = {
-                            capital_scope = { set_name = "Eridani A II" }
-                            set_graphical_culture = mammalian_01
-                        }
-                    }
+        if = {
+            
+            random_country = {
+                limit = {
                     
-                    random_planet = {
-                        limit = {
-                            AND = {
-                                not = { any_country = { has_country_flag = human_2 } }
-                                has_planet_flag = coa_home
-                            }                
+                    has_country_flag = icarus_faction
+                }
+
+                random_planet = {
+
+                    limit = {
+
+                        has_planet_flag = planet_earth
+                    }
+
+                    create_species = {
+                        name = Human
+                        plural = Humans
+                        class = "HUM"
+                        portrait = "human"
+                        traits = {
+                            trait = "trait_adaptive"
+                            trait = "trait_nomadic"
+                            trait = "trait_wasteful"
+                            trait = "trait_pc_continental_preference"
                         }
-
-                        random_list = {
-
-                            90 = {
-
-                                create_country = {
-                                    name = "NAME_Commonwealth_of_Aurora"
-                                    name_list = HUMAN2               
-                                    ship_prefix = "CAS"
-                                    
-                                    authority = auth_oligarchic
-                                    
-                                    origin = "origin_lost_colony"
-
-                                    species = event_target:human_species
-                                    ethos = {
-                                        ethic = ethic_militarist
-                                        ethic = ethic_fanatic_materialist
-                                    }
-                                    civics = {
-                                        civic = civic_meritocracy
-                                        civic = civic_citizen_service
-                                    }
-                                    flag = {
-                                        icon = {
-                                            category="human"
-                                            file="flag_human_4.dds"
-                                        }
-                                        background = {
-                                            category="backgrounds"
-                                            file="stripe.dds"
-                                        }
-                                        colors = {
-                                            "red"
-                                            "black"
-                                            "null"
-                                            "null"
-                                        }
-                                    }
-                                    type = default
-                                    
-                                    effect = {
-                                        save_global_event_target_as = npc_CoA
-                                        add_resource = {
-                                            minerals = 100
-                                            energy = 100
-                                            food = 0
-                                            alloys = 100
-                                            consumer_goods = 100
-                                            influence = 100
-                                        }
-                                    }
-                                }
-
-                                event_target:npc_CoA = {
-                                    set_country_flag = human_2
-                                    set_country_flag = human_faction
-                                    save_global_event_target_as = CoA
-                                    create_starting_leaders = yes
-                                    country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-                                }
-                                
-                                set_owner = event_target:npc_CoA
-
-                                create_primitive_blockers = yes
-
-                                while = {	
-                                    count = 16	
-                                    create_pop = {	
-                                        species = event_target:human_species	
-                                        ethos = {	
-                                            ethic = ethic_militarist
-                                        }	
-                                    }	
-                                }
-                                
-                                create_species = {	
-                                    name = "NAME_Robot"	
-                                    plural = "NAME_Robots"	
-                                    class = ROBOT	
-                                    namelist = MACHINE3	
-                                    portrait = "default_robot"	
-                                    traits = {	
-                                        trait = trait_mechanical
-                                    }	
-                                }	
-
-                                while = {	
-                                    count = 7	
-                                    create_pop = {	
-                                        species = last_created	
-                                    }	
-                                }                        
-
-                                set_owner = last_created_country	
-                                set_capital = yes	
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_farming	
-                                add_district = district_farming	
-                                add_district = district_farming	
-                                add_district = district_mining	
-                                add_district = district_mining	
-                                add_district = district_generator	
-                                add_district = district_generator	
-                                add_building = building_capital	
-                                add_building = building_research_lab_1	
-                                add_building = building_foundry_1	
-                                add_building = building_factory_1
-
-                                create_colony = {
-                                    owner = event_target:npc_CoA
-                                    species = event_target:human_species	
-                                    ethos = {	
-                                        ethic = ethic_xenophobe
-                                        ethic = ethic_fanatic_militarist			
-                                    }	
-                                }	
-
-                                create_army = {	
-                                    name = "1st Colonial Gendarmerie"	
-                                    owner = event_target:npc_CoA
-                                    species = event_target:human_species	
-                                    type = "defense_army"	
-                                }	
-                                create_army = {	
-                                    name = "2nd Colonial Gendarmerie"	
-                                    owner = event_target:npc_CoA
-                                    species = event_target:human_species	
-                                    type = "defense_army"	
-                                }
-
-                                solar_system = {
-
-                                    # starbase
-                                    create_starbase = {
-                                        size = starbase_starport
-                                        module = shipyard
-                                        building = crew_quarters
-                                        owner = event_target:npc_CoA
-                                    }
-                                }
-
-                                last_created_country = {
-                                    capital_scope = { set_name = "Aurora" }
-                                    set_graphical_culture = mammalian_01
-
-                                    system_star = {
-
-                                        #science
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = science
-                                                    graphical_culture = "mammalian_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-
-                                                owner = {
-                                                    create_leader = {
-                                                        sub_type = survey
-                                                        species = owner_main_species
-                                                    }
-                                                }
-                                                set_leader = last_created_leader
-                                            }
-                                        }
-
-                                        #constructor
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = constructor
-                                                    graphical_culture = "mammalian_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-                                            }
-                                        }
-
-                                        #military
-                                        create_fleet = {
-                                            set_take_point = yes
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                while = {
-                                                    count = 3
-                                                    create_ship = {
-                                                        name = random
-                                                        random_existing_design = corvette
-                                                        graphical_culture = "mammalian_01"
-                                                    }
-                                                }
-
-                                                set_location = PREV
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            10 = {}
+                        effect = {
+                            save_event_target_as = human_species
                         }
                     }
                 }
 
                 random_planet = {
+                    limit = {
+                        AND = {
+                            has_planet_flag = epsilon_a_two
+                        }                
+                    }
 
-                    limit = { has_planet_flag = planet_aurora }
+                    create_country = {
+                        name = "NAME_League_of_Human_Colonies"
+                        name_list = HUMAN1              
+                        ship_prefix = "LHCS"
+                        
+                        authority = auth_oligarchic
+                        
+                        origin = "origin_lost_colony"
 
-                    change_pc = pc_continental
-                    set_planet_entity = { entity = "continental_planet_01_entity" }
+                        species = event_target:human_species
+                        ethos = {
+                            ethic = ethic_authoritarian
+                            ethic = ethic_fanatic_militarist
+                        }
+                        civics = {
+                            civic = civic_cutthroat_politics
+                            civic = civic_warrior_culture
+                        }
+                        flag = {
+                            icon = {
+                                category="spherical"
+                                file="flag_spherical_8.dds"
+                            }
+                            background = {
+                                category="backgrounds"
+                                file="vertical.dds"
+                            }
+                            colors = {
+                                "dark_green"
+                                "yellow"
+                                "null"
+                                "null"
+                            }
+                        }
+                        type = default
+                                
+                        effect = {
+                            save_global_event_target_as = npc_LHC
+                            add_resource = {
+                                minerals = 0
+                                energy = 0
+                                food = 0
+                                alloys = 0
+                                consumer_goods = 0
+                                influence = 0
+                            }
+                        }
+                    }
+
+                    event_target:npc_LHC = {
+                        set_country_flag = human_3
+                        set_country_flag = human_faction
+                        save_global_event_target_as = LHC
+                    }
+                    
+                    set_owner = event_target:npc_LHC
+
+                    create_primitive_blockers = yes
+
+                    while = {
+                        count = 4
+                        create_pop = {
+                            species = event_target:human_species
+                        }
+                    }
+
+                    set_owner = last_created_country
+                    set_capital = yes
+                    add_district = district_farming
+                    add_district = district_farming
+                    add_district = district_mining
+                    add_district = district_generator
+                    add_building = building_capital
+
+                    last_created_country = {
+                        capital_scope = { set_name = "Eridani A II" }
+                        set_graphical_culture = mammalian_01
+                    }
+                }
+                
+                random_planet = {
+                    limit = {
+                        AND = {
+                            not = { any_country = { has_country_flag = human_2 } }
+                            has_planet_flag = coa_home
+                        }                
+                    }
+
+                    random_list = {
+
+                        90 = {
+
+                            create_country = {
+                                name = "NAME_Commonwealth_of_Aurora"
+                                name_list = HUMAN2               
+                                ship_prefix = "CAS"
+                                
+                                authority = auth_oligarchic
+                                
+                                origin = "origin_lost_colony"
+
+                                species = event_target:human_species
+                                ethos = {
+                                    ethic = ethic_militarist
+                                    ethic = ethic_fanatic_materialist
+                                }
+                                civics = {
+                                    civic = civic_meritocracy
+                                    civic = civic_citizen_service
+                                }
+                                flag = {
+                                    icon = {
+                                        category="human"
+                                        file="flag_human_4.dds"
+                                    }
+                                    background = {
+                                        category="backgrounds"
+                                        file="stripe.dds"
+                                    }
+                                    colors = {
+                                        "red"
+                                        "black"
+                                        "null"
+                                        "null"
+                                    }
+                                }
+                                type = default
+                                
+                                effect = {
+                                    save_global_event_target_as = npc_CoA
+                                    add_resource = {
+                                        minerals = 100
+                                        energy = 100
+                                        food = 0
+                                        alloys = 100
+                                        consumer_goods = 100
+                                        influence = 100
+                                    }
+                                }
+                            }
+
+                            event_target:npc_CoA = {
+                                set_country_flag = human_2
+                                set_country_flag = human_faction
+                                save_global_event_target_as = CoA
+                                create_starting_leaders = yes
+                                country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                            }
+                            
+                            set_owner = event_target:npc_CoA
+
+                            create_primitive_blockers = yes
+
+                            while = {	
+                                count = 16	
+                                create_pop = {	
+                                    species = event_target:human_species	
+                                    ethos = {	
+                                        ethic = ethic_militarist
+                                    }	
+                                }	
+                            }
+                            
+                            create_species = {	
+                                name = "NAME_Robot"	
+                                plural = "NAME_Robots"	
+                                class = ROBOT	
+                                namelist = MACHINE3	
+                                portrait = "default_robot"	
+                                traits = {	
+                                    trait = trait_mechanical
+                                }	
+                            }	
+
+                            while = {	
+                                count = 7	
+                                create_pop = {	
+                                    species = last_created	
+                                }	
+                            }                        
+
+                            set_owner = last_created_country	
+                            set_capital = yes	
+                            add_district = district_city	
+                            add_district = district_city	
+                            add_district = district_city	
+                            add_district = district_city	
+                            add_district = district_farming	
+                            add_district = district_farming	
+                            add_district = district_farming	
+                            add_district = district_mining	
+                            add_district = district_mining	
+                            add_district = district_generator	
+                            add_district = district_generator	
+                            add_building = building_capital	
+                            add_building = building_research_lab_1	
+                            add_building = building_foundry_1	
+                            add_building = building_factory_1
+
+                            create_colony = {
+                                owner = event_target:npc_CoA
+                                species = event_target:human_species	
+                                ethos = {	
+                                    ethic = ethic_xenophobe
+                                    ethic = ethic_fanatic_militarist			
+                                }	
+                            }	
+
+                            create_army = {	
+                                name = "1st Colonial Gendarmerie"	
+                                owner = event_target:npc_CoA
+                                species = event_target:human_species	
+                                type = "defense_army"	
+                            }	
+                            create_army = {	
+                                name = "2nd Colonial Gendarmerie"	
+                                owner = event_target:npc_CoA
+                                species = event_target:human_species	
+                                type = "defense_army"	
+                            }
+
+                            solar_system = {
+
+                                # starbase
+                                create_starbase = {
+                                    size = starbase_starport
+                                    module = shipyard
+                                    building = crew_quarters
+                                    owner = event_target:npc_CoA
+                                }
+                            }
+
+                            last_created_country = {
+                                capital_scope = { set_name = "Aurora" }
+                                set_graphical_culture = mammalian_01
+
+                                system_star = {
+
+                                    #science
+                                    create_fleet = {
+                                        effect = {
+                                            set_owner = last_created_country
+
+                                            create_ship = {
+                                                name = random
+                                                random_existing_design = science
+                                                graphical_culture = "mammalian_01"
+                                            }
+
+                                            set_fleet_stance = evasive
+                                            set_location = PREV
+
+                                            owner = {
+                                                create_leader = {
+                                                    sub_type = survey
+                                                    species = owner_main_species
+                                                }
+                                            }
+                                            set_leader = last_created_leader
+                                        }
+                                    }
+
+                                    #constructor
+                                    create_fleet = {
+                                        effect = {
+                                            set_owner = last_created_country
+
+                                            create_ship = {
+                                                name = random
+                                                random_existing_design = constructor
+                                                graphical_culture = "mammalian_01"
+                                            }
+
+                                            set_fleet_stance = evasive
+                                            set_location = PREV
+                                        }
+                                    }
+
+                                    #military
+                                    create_fleet = {
+                                        set_take_point = yes
+                                        effect = {
+                                            set_owner = last_created_country
+
+                                            while = {
+                                                count = 3
+                                                create_ship = {
+                                                    name = random
+                                                    random_existing_design = corvette
+                                                    graphical_culture = "mammalian_01"
+                                                }
+                                            }
+
+                                            set_location = PREV
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        10 = {}
+                    }
                 }
             }
+        }
     }
 }
 
@@ -1093,9 +1085,35 @@ event = {
 
         every_planet = {
 
-            limit = { has_planet_flag = tau_ceti_system }
+            limit = { has_planet_flag = planet_tau_ceti_3 }
             add_modifier = {
                 modifier = "high_gravity"
+                days = -1
+            }
+            add_modifier = {
+                modifier = "strong_magnetic_field"
+                days = -1
+            }
+        }
+
+        every_planet = {
+
+            limit = { has_planet_flag = planet_tau_ceti_4 }
+            add_modifier = {
+                modifier = "high_gravity"
+                days = -1
+            }
+            add_modifier = {
+                modifier = "strong_magnetic_field"
+                days = -1
+            }
+        }
+
+        every_planet = {
+
+            limit = { has_planet_flag = planet_tau_ceti_4_moon }
+            add_modifier = {
+                modifier = "lush_planet"
                 days = -1
             }
             add_modifier = {
@@ -1139,19 +1157,6 @@ event = {
 
         every_planet = {
 
-            limit = { has_planet_flag = tau_ceti_4_moon }
-            add_modifier = {
-                modifier = "lush_planet"
-                days = -1
-            }
-            add_modifier = {
-                modifier = "strong_magnetic_field"
-                days = -1
-            }
-        }
-
-        every_planet = {
-
             limit = { has_planet_flag = planet_chicora }
 
             change_pc = pc_arid
@@ -1160,62 +1165,11 @@ event = {
     }
 }
 
-### fe.6 - Set barycenters and notable stars
+### fe.6 - Set barycenters
 event = {
     id = fe.6
     hide_window = yes
     is_triggered_only = yes
-
-    immediate = {
-
-        random_system = {
-            spawn_system = { initializer = "polaris_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "betelgeuse_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "rigel_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "vega_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "antares_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "canopus_initializer" }
-        }
-
-        random_system = {
-            spawn_system = { initializer = "fomalhaut_initializer" }
-        }
-        
-        random_system = {
-            spawn_system = { initializer = "vy_canis_majoris_initializer" }
-        }
-        
-        random_system = {
-            spawn_system = { initializer = "mu_cephei_initializer" }
-        }
-        
-        random_system = {
-            spawn_system = { initializer = "kobol_initializer" }
-        }
-        
-        random_system = {
-            spawn_system = { initializer = "tau_ceti_system" }
-        }
-        
-        random_system = {
-            spawn_system = { initializer = "epsilon_indi_system" }
-        }
-    }
 
     immediate = {
 

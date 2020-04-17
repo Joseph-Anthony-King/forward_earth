@@ -112,7 +112,6 @@ lokken = {
 	planet_name=  "PRESCRIPTED_planet_name_lokken"
 	planet_class = "pc_arid"
 	system_name = "PRESCRIPTED_system_name_lokken"
-	initializer = "dal_lokkur_system_initializer"
 	graphical_culture = "reptilian_01"
 	city_graphical_culture = "reptilian_01"
 	room = "personality_erudite_explorers_room"

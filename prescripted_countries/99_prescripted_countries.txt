@@ -346,7 +346,6 @@ scyldari = {
 	planet_name = "PRESCRIPTED_planet_name_scyldari"
 	planet_class = "pc_ocean"
 	system_name = "PRESCRIPTED_system_name_scyldari"
-	initializer = "scyldari_system_initializer"
 	
 	room = "personality_spiritual_seekers_room"
 	
@@ -414,7 +413,6 @@ kel_azaan = {
 	planet_name = "PRESCRIPTED_planet_name_kel_azaan"
 	system_name = "PRESCRIPTED_system_name_kel_azaan"
 	planet_class = "pc_savannah"
-	initializer = "kel_azak_system"
 	
 	room = "personality_honorbound_warriors_room"
 	
