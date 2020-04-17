@@ -327,7 +327,7 @@ jehetma = {
 scyldari = {
 	name = "scyldari"
 	adjective = "PRESCRIPTED_adjective_scyldari"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = no # yes / no / always
 	
 	species = {
 		class = "MAM"
@@ -346,6 +346,7 @@ scyldari = {
 	planet_name = "PRESCRIPTED_planet_name_scyldari"
 	planet_class = "pc_ocean"
 	system_name = "PRESCRIPTED_system_name_scyldari"
+	initializer = "scyldari_system_initializer"
 	
 	room = "personality_spiritual_seekers_room"
 	
@@ -393,7 +394,7 @@ scyldari = {
 kel_azaan = {
 	name = "kel_azaan"
 	adjective = "PRESCRIPTED_adjective_kel_azaan"
-	spawn_enabled = always
+	spawn_enabled = no
 	
 	species = {
 		class = "ART"
@@ -413,6 +414,7 @@ kel_azaan = {
 	planet_name = "PRESCRIPTED_planet_name_kel_azaan"
 	system_name = "PRESCRIPTED_system_name_kel_azaan"
 	planet_class = "pc_savannah"
+	initializer = "kel_azak_system"
 	
 	room = "personality_honorbound_warriors_room"
 	

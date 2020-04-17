@@ -1,0 +1,899 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+@distantJumps = 6
+
+### Chiconaph System
+chiconaph_system_initializer = {
+	name = "PRESCRIPTED_system_name_chinorr"
+	class = sc_g
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	flags = { empire_home_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	
+	planet = {
+		name = "Chiconaph"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+
+		planet = {
+			name = "Ugginaph"
+			class = "pc_t_star"
+			orbit_distance = 30
+			orbit_angle = 120
+			size = 18
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Daggibah"
+		class = "pc_gas_giant"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 22
+		has_ring = no
+
+		moon = {
+			name = "Oniphat"
+			class = "pc_molten"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 126
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_chinorr"
+		class = "pc_tropical"
+		orbit_distance = 50
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = yes
+		tile_blockers = none
+		modifiers = none
+		flags = { planet_chicora }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Gabbog"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "Aniphobah"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 15
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Joklibo"
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 18
+		has_ring = no
+		
+		moon = {
+			name = "kilvo"
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Manibopho"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Vohlo"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Pahlbo"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Bavphi"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 195
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Polgo"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Ulho"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Scyldari System
+scyldari_system_initializer = {
+	name = "PRESCRIPTED_system_name_scyldari"
+	class = sc_binary_8
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	flags = { empire_home_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_scyldari"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+
+		planet = {
+			name = "Lavelkor"
+			class = "pc_m_star"
+			orbit_distance = 30
+			orbit_angle = 120
+			size = 16
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Balitana"
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Fortalia"
+		class = "pc_toxic"
+		orbit_distance = 10
+		orbit_angle = 120
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_scyldari"
+		class = "pc_ocean"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		tile_blockers = none
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+            generate_empire_home_planet = yes
+            create_species = {
+                name = "PRESCRIPTED_species_name_scyldari"
+                plural = "PRESCRIPTED_species_plural_scyldari"
+                class = "MAM"
+                portrait = "mam6"
+                homeworld = THIS
+                traits = {
+                    trait = "trait_charismatic"
+                    trait = "trait_natural_sociologists"
+                    trait = "trait_weak"
+                }
+            }
+
+            create_country = {
+                name = "NAME_United_Nations_of_Earth"
+                name_list = "MAM1"
+
+                room = "personality_spiritual_seekers_room"
+
+                ship_prefix = "PRESCRIPTED_ship_prefix_scyldari"
+
+                authority = "auth_democratic"
+
+                civics = {
+                    civic = civic_environmentalist
+                    civic = civic_free_haven
+                }
+                government = gov_theocratic_republic
+
+                species = last_created
+                ethos = {
+                    ethic = "ethic_spiritualist"
+                    ethic = "ethic_pacifist"
+                    ethic = "ethic_xenophile"
+                }
+
+                flag = {
+                    icon = {
+                        category = "spherical"
+                        file = "flag_spherical_15.dds"
+                    }
+                    background= {
+                        category = "backgrounds"
+                        file = "00_solid.dds"
+                    }
+                    colors={
+                        "burgundy"
+                        "orange"
+                        "null"
+                        "null"
+                    }
+                }
+                type = default
+                effect = {
+                    add_resource = {
+                        minerals = 200
+                        energy = 200
+                        food = 200
+                        alloys = 100
+                        consumer_goods = 100
+                        influence = 100
+                    }
+                }
+            }
+
+            while = {
+                count = 23
+                create_pop = {
+                    species = last_created
+                }
+            }
+            set_owner = last_created_country
+            set_capital = yes
+            add_district = district_city
+            add_district = district_city
+            add_district = district_city
+            add_district = district_city
+            add_district = district_farming
+            add_district = district_farming
+            add_district = district_farming
+            add_district = district_mining
+            add_district = district_mining
+            add_district = district_generator
+            add_district = district_generator
+            add_building = building_capital
+            add_building = building_research_lab_1
+            add_building = building_foundry_1
+            add_building = building_factory_1
+
+            last_created_country = {
+                set_graphical_culture = mammalian_01
+            }
+            create_colony = {
+                owner = last_created_country
+                species = last_created
+                ethos = {
+                    ethic = "ethic_xenophile"
+                    ethic = "ethic_fanatic_egalitarian"
+                }
+            }
+
+            create_army = {
+                name = "1st Planetary Guard"
+                owner = last_created
+                species = last_created
+                type = "defense_army"
+            }
+            create_army = {
+                name = "2nd Planetary Guard"
+                owner = last_created
+                species = last_created
+                type = "defense_army"
+            }
+
+            system_star = {
+
+                #science
+                create_fleet = {
+                    effect = {
+                        set_owner = last_created_country
+
+                        create_ship = {
+                            name = random
+                            random_existing_design = science
+                        }
+
+                        set_fleet_stance = evasive
+                        set_location = PREV
+
+                        owner = {
+                            create_leader = {
+                                type = scientist
+                                sub_type = survey
+                                name = random
+                                species = owner_main_species
+                            }
+                        }
+                        set_leader = last_created_leader
+                    }
+                }
+
+                #constructor
+                create_fleet = {
+                    effect = {
+                        set_owner = last_created_country
+
+                        create_ship = {
+                            name = random
+                            random_existing_design = constructor
+                        }
+
+                        set_fleet_stance = evasive
+                        set_location = PREV
+                    }
+                }
+
+                #military
+                create_fleet = {
+                    set_take_point = yes
+                    effect = {
+                        set_owner = last_created_country
+
+                        while = {
+                            count = 3
+                            create_ship = {
+                                name = random
+                                random_existing_design = corvette
+                            }
+                        }
+
+                        set_location = PREV
+                    }
+                }
+            }
+
+            last_created_country = {
+                capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
+            }
+		}
+		
+		moon = {
+			name = "Uthia"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Noilan"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 22
+		has_ring = no
+		
+		moon = {
+			name = "Yrdur"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Taminth"
+			class = "pc_barren"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Dissadia"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			name = "Carnaloa"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Kormli"
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 160
+		size = 16
+		has_ring = yes
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Dal Lokkur System
+dal_lokkur_system_initializer = {
+	name = "PRESCRIPTED_system_name_lokken"
+	
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 35
+	}
+	
+	flags = { empire_home_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_lokken"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = -45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Xansh"
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_lokken"
+		class = "pc_arid"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		starting_planet = yes
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Tishac"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Ficash"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 130
+		size = 13
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Choirtiz"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 26
+		has_ring = yes
+		
+		moon = {
+			name = "Taxaz"
+			class = "pc_toxic"
+			size = 9
+			orbit_distance = 18
+			orbit_angle = 80
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Scha"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 110
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Zinix"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			name = "Xortesh"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Kel-Azak System
+kel_azak_system = {
+	name = "PRESCRIPTED_system_name_kel_azaan"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 40
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system deneb_system }
+	
+	usage = custom_empire
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_kel_azaan"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Hajpoc Haxizabb"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		
+		moon = {
+            name = "Mox Tymcrix"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+            name = "PRESCRIPTED_planet_name_kel_azaan"
+			class = "pc_savannah"
+			orbit_distance = 5
+			orbit_angle = 170
+			size = 18
+			starting_planet = yes
+			has_ring = no
+			tile_blockers = none
+			modifiers = none
+		}		
+	}
+	
+	planet = {
+        name = "Allox Haxizabb"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 160
+		size = 35
+		has_ring = yes
+		
+		moon = {
+            name = "Mox Zajkax"
+			class = "pc_barren"
+			size = 7
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		
+		moon = {
+            name = "Mox Krac"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 100
+			has_ring = no
+		}		
+	}
+	
+	planet = {
+		name = "Hullpax Haxizabb"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 16
+		has_ring = yes
+		
+		moon = {
+			name = "Mox Haxizabb"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Qwilk Haxizabb"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 130
+		size = 8
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
