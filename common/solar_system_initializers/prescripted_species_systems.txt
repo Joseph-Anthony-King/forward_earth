@@ -91,7 +91,6 @@ deneb_system = {
 			starting_planet = yes
 			has_ring = no
 			entity = "continental_planet_01_entity"	
-			tile_blockers = none
 			modifiers = none
 		}		
 	}

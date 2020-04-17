@@ -1169,7 +1169,6 @@ sol_neighbor_t1_2 = {
 				orbit_angle = 340
 				size = 8
 				has_ring = no
-				tile_blockers = none
 				modifiers = none
 			}
 		}

@@ -1,6 +1,8 @@
 @distance = 50
 @base_moon_distance = 10
 @jumps = 3
+@minJumps = 5
+@maxJumps = 8
 
 ### Sol System
 eta_cassiopeiae_with_sol_system_initializer = {
@@ -70,7 +72,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		starting_planet = yes
 		has_ring = no
 		entity = "continental_planet_earth_entity"
-		tile_blockers = none
 		modifiers = none
 		flags = { planet_earth }
 		
@@ -102,8 +103,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							name = "NAME_United_Nations_of_Earth"
 							name_list = "HUMAN1"
 
-							room = "personality_federation_builders_room"
-
 							ship_prefix = "UNS"
 
 							authority = "auth_democratic"
@@ -112,14 +111,12 @@ eta_cassiopeiae_with_sol_system_initializer = {
 								civic = civic_beacon_of_liberty
 								civic = civic_idealistic_foundation
 							}
-							government = gov_representative_democracy
 
 							species = last_created
 							ethos = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
-							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -219,7 +216,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
-											type = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species
@@ -295,7 +291,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
-							flags = { human_1 }
 
 							flag = {
 								icon = {
@@ -860,60 +855,27 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
     		has_ring = no
     	}
 
-		random_list = {
-
-			50 = {
-
-				planet = {
-					name = "Alpha Centauri B II"
-					orbit_distance = 25
-					orbit_angle = 120
-					class = "pc_continental"
-					size = 16
-					has_ring = no
-					entity = "continental_planet_01_entity"
-					moon = {
-						name = "Alpha Centauri B IIa"
-						class = "pc_barren_cold"
-						size = 1
-						orbit_distance = 7
-						has_ring = no
-					}
-
-					moon = {
-						name = "Alpha Centauri B IIb"
-						class = "pc_barren_cold"
-						size = 2
-						orbit_distance = 4
-						has_ring = no
-					}
-				}
+		planet = {
+			name = "Alpha Centauri B II"
+			orbit_distance = 25
+			orbit_angle = 120
+			class = "pc_toxic"
+			size = 16
+			has_ring = no
+			moon = {
+				name = "Alpha Centauri B IIa"
+				class = "pc_barren_cold"
+				size = 1
+				orbit_distance = 7
+				has_ring = no
 			}
-			50 = {
 
-				planet = {
-					name = "Alpha Centauri B II"
-					orbit_distance = 25
-					orbit_angle = 120
-					class = "pc_toxic"
-					size = 16
-					has_ring = no
-					moon = {
-						name = "Alpha Centauri B IIa"
-						class = "pc_barren_cold"
-						size = 1
-						orbit_distance = 7
-						has_ring = no
-					}
-
-					moon = {
-						name = "Alpha Centauri B IIb"
-						class = "pc_barren_cold"
-						size = 2
-						orbit_distance = 4
-						has_ring = no
-					}
-				}
+			moon = {
+				name = "Alpha Centauri B IIb"
+				class = "pc_barren_cold"
+				size = 2
+				orbit_distance = 4
+				has_ring = no
 			}
 		}
 
@@ -1228,49 +1190,22 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 10
 		has_ring = no
 	}
-
-	random_list = {
-
-		50 = {
 	
-			planet = {
-				name = "Cygni A II"
-				class = "pc_continental"
-				orbit_distance = 15
-				orbit_angle = 90
-				size = 13
-				has_ring = no
-				entity = "continental_planet_04_entity"
-				
-				moon = {
-					name = "Cygni A IIa"
-					class = "pc_barren_cold"
-					size = 1
-					orbit_distance = 4
-					orbit_angle = 40
-					has_ring = no
-				}
-			}
-		}
-		50 = {
-	
-			planet = {
-				name = "Cygni A II"
-				class = "pc_barren_cold"
-				orbit_distance = 15
-				orbit_angle = 90
-				size = 13
-				has_ring = no
-				
-				moon = {
-					name = "Cygni A IIa"
-					class = "pc_barren_cold"
-					size = 1
-					orbit_distance = 4
-					orbit_angle = 40
-					has_ring = no
-				}
-			}
+	planet = {
+		name = "Cygni A II"
+		class = "pc_barren_cold"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 13
+		has_ring = no
+		
+		moon = {
+			name = "Cygni A IIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
 		}
 	}
 	
@@ -1459,7 +1394,6 @@ coa_sol_neighbor_t1_2 = {
 				orbit_angle = 340
 				size = 8
 				has_ring = no
-				tile_blockers = none
 				modifiers = none
 			}
 		}
@@ -1496,6 +1430,11 @@ coa_sol_neighbor_t2_wolf_359 = {
 		orbit_angle = 170
 		size = 5
 		has_ring = no
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "coa_neighbor_t3_trappist_1"
 	}
 }
 
@@ -1565,7 +1504,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		entity = "desert_planet_01_entity"
 		
 		init_effect = {
-			set_planet_flag = tau_ceti_system
+			set_planet_flag = planet_tau_ceti_3
 		}
 	}
 
@@ -1579,7 +1518,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		entity = "ocean_planet_01_entity"
 		
 		init_effect = {
-			set_planet_flag = tau_ceti_system
+			set_planet_flag = planet_tau_ceti_4
 		}
 		
 		init_effect = {
@@ -1671,7 +1610,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			entity = "continental_planet_03_entity"
 		
 			init_effect = {
-				set_planet_flag = tau_ceti_4_moon
+				set_planet_flag = planet_tau_ceti_4_moon
 			}
 		}
 	}
@@ -2017,7 +1956,6 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 120
 		size = 16
 		has_ring = no
-		tile_blockers = none
 		modifiers = none
 		entity = "continental_planet_09_entity"
 		
@@ -2223,36 +2161,13 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		size = 10
 		has_ring = no
 	}
-
-	random_list = {
-
-		50 = {
 	
-			planet = {
-				class = "pc_continental"
-				orbit_distance = 35
-				orbit_angle = 120
-				size = 16
-				has_ring = no
-				tile_blockers = none
-				modifiers = none
-				entity = "continental_planet_09_entity"
-				
-				init_effect = {
-					prevent_anomaly = yes
-				}
-			}
-		}
-		50 = {
-	
-			planet = {
-				class = "pc_barren"
-				orbit_distance = 35
-				orbit_angle = 120
-				size = 16
-				has_ring = no
-			}
-		}
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = 120
+		size = 16
+		has_ring = no
 	}
 	
 	planet = {
@@ -2474,6 +2389,85 @@ coa_sol_neighbor_t2_sirius = {
 	}
 }
 
+# CoA Neighbor Tier 3
+coa_neighbor_t3_trappist_1 = {
+	name = "Trappist-1"
+	class = sc_m
+
+	planet = {
+		name = "Trappist-1"
+		count = 1
+		class = pc_m_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 b"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 21
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 c"
+		class = "pc_toxic"
+		orbit_distance = 10
+		orbit_angle = 60
+		size = 22
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 e"
+		class = "pc_ocean"
+		orbit_distance = 10
+		orbit_angle = 100
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 f"
+		class = "pc_toxic"
+		orbit_distance = 10
+		orbit_angle = 130
+		size = 11
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 g"
+		class = "pc_barren"
+		orbit_distance = 10
+		orbit_angle = 90
+		size = 11
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 d"
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 130
+		size = 11
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Trappist-1 h"
+		class = "pc_barren_cold"
+		orbit_distance = 10
+		orbit_angle = 110
+		size = 6
+		has_ring = no
+	}
+}
+
 # CoA Sol Neighbor Tier 3
 coa_sol_neighbor_t3_ophiuchi = {	
 	name = "Ophiuchi"
@@ -2667,6 +2661,11 @@ coa_sol_neighbor_t3_ophiuchi = {
 		size = 5
 		has_ring = no
 	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = @minJumps max = @maxJumps }
+		initializer = "scyldari_system_initializer"
+	}
 }
 
 # CoA Sol Neighbor Tier 3
@@ -2715,7 +2714,6 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 200
 		size = 20
 		has_ring = no
-		tile_blockers = none
 		modifiers = none
 		flags = { epsilon_a_two }
 		
@@ -2870,6 +2868,11 @@ coa_sol_neighbor_t3_eridani = {
 			size = 15
 			has_ring = no
 		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = @minJumps max = @maxJumps }
+		initializer = "dal_lokkur_system_initializer"
 	}
 }
 
@@ -3044,41 +3047,44 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		}
 	}
 
+	planet = {
+		class = pc_asteroid
+		orbit_distance = 160
+		orbit_angle = 125
+		size = 0
+		flags = { epsilon_indi_barycenter }
+
 		planet = {
-			class = pc_asteroid
-			orbit_distance = 160
-			orbit_angle = 125
-			size = 0
-			flags = { epsilon_indi_barycenter }
-	
-			planet = {
-				name = "Epsilon Indi B"
-				class = "pc_t_star"
-				orbit_distance = 25
-				orbit_angle = -90
-				size = 40
-				has_ring = no
-				tile_blockers = none
-				modifiers = none
-				
-				init_effect = {
-					prevent_anomaly = yes
-				}
-			}
-				
-			planet = {
-				name = "Epsilon Indi C"
-				class = "pc_t_star"
-				orbit_distance = 0
-				orbit_angle = 180
-				size = 40
-				has_ring = no
-				tile_blockers = none
-				modifiers = none
-				
-				init_effect = {
-					prevent_anomaly = yes
-				}		
+			name = "Epsilon Indi B"
+			class = "pc_t_star"
+			orbit_distance = 25
+			orbit_angle = -90
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
 			}
 		}
+			
+		planet = {
+			name = "Epsilon Indi C"
+			class = "pc_t_star"
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = @minJumps max = @maxJumps }
+		initializer = "kel_azak_system"
+	}
 }

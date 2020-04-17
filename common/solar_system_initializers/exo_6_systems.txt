@@ -63,7 +63,6 @@ Gliese_581_system_initializer = {
         has_ring = no
         class = "pc_gas_giant"
     }
-	asteroids_distance = 150
 }
 
 HD_219134_system_initializer = {
@@ -209,6 +208,10 @@ Kepler-11_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
     planet = {
         name = "Kepler-11"
         class = "pc_g_star"
@@ -265,7 +268,7 @@ Kepler-11_system_initializer = {
         has_ring = no
         class = "pc_barren"
     }
-	change_orbit = 100
+	change_orbit = 85
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -273,5 +276,4 @@ Kepler-11_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 220
 }

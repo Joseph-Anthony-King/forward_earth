@@ -103,7 +103,10 @@ mu_Arae_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
-    asteroids_distance = 150
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
 
     planet = {
         name = "mu Arae"
@@ -183,6 +186,10 @@ lich_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
 
     planet = {
         name = "Lich"
@@ -228,7 +235,6 @@ lich_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 215
 }
 
 Wolf_1061_system_initializer = {

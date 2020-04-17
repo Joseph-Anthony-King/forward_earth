@@ -102,7 +102,6 @@ HD_10180_system_initializer = {
 	usage = misc_system_init
 	usage_odds = 100
 	max_instances = 1
-	asteroids_distance = 140
 
 	planet = {
 		name = "HD 10180"
@@ -194,97 +193,6 @@ HD_10180_system_initializer = {
 		has_ring = yes
 		class = "pc_gas_giant"
 	}
-}
-
-Kepler_90_system_initializer = {
-    name = "Kepler-90"
-    class = "sc_g"
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-
-    planet = {
-        name = "Kepler-90"
-        class = star
-        size = 31
-        orbit_distance = 0
-        orbit_angle = 290
-        has_ring = no
-    }
-
-    planet = {
-        name = "Kepler-90 b"
-        size = 20
-        orbit_distance = 20
-        orbit_angle = 34
-        has_ring = no
-        class = "pc_molten"
-    }
-
-    planet = {
-        name = "Kepler-90 c"
-        size = 18
-        orbit_distance = 15
-        orbit_angle = 33
-        has_ring = no
-        class = "pc_molten"
-    }
-
-    planet = {
-        name = "Kepler-90 d"
-        size = 25
-        orbit_distance = 30
-        orbit_angle = 121
-        has_ring = no
-        class = "pc_toxic"
-    }
-
-    planet = {
-        name = "Kepler-90 e"
-        size = 25
-        orbit_distance = 25
-        orbit_angle = 344
-        has_ring = no
-        class = "pc_toxic"
-    }
-
-    planet = {
-        name = "Kepler-90 f"
-        size = 27
-        orbit_distance = 25
-        orbit_angle = 55
-        has_ring = no
-        class = "pc_gas_giant"
-    }
-
-    planet = {
-        name = "Kepler-90 g"
-        size = 30
-        orbit_distance = 30
-        orbit_angle = 122
-        has_ring = no
-        class = "pc_gas_giant"
-    }
-
-    planet = {
-        name = "Kepler-90 h"
-        size = 33
-        orbit_distance = 30
-        orbit_angle = 251
-        has_ring = no
-        class = "pc_gas_giant"
-	change_orbit = 15
-    }
-
-	change_orbit = 125
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
-	asteroids_distance = 300
 }
 
 Kepler_296_system_initializer = {
@@ -615,6 +523,10 @@ HIP_41378_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
 
     planet = {
         name = "HIP 41378"
@@ -665,7 +577,7 @@ HIP_41378_system_initializer = {
         class = "pc_barren"
     }
 
-	change_orbit = 220
+	change_orbit = 60
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -673,7 +585,6 @@ HIP_41378_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 360
 }
 
 Kepler_102_system_initializer = {
@@ -682,6 +593,10 @@ Kepler_102_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
     planet = {
         name = "Kepler-102"
         class = star
@@ -733,7 +648,7 @@ Kepler_102_system_initializer = {
         has_ring = no
         class = "pc_barren"
     }
-	change_orbit = 240
+	change_orbit = 100
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -741,7 +656,6 @@ Kepler_102_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 360
 }
 
 Kepler_122_system_initializer = {
@@ -750,6 +664,10 @@ Kepler_122_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
     planet = {
         name = "Kepler-122"
         class = star
@@ -798,7 +716,7 @@ Kepler_122_system_initializer = {
         has_ring = no
         class = "pc_toxic"
     }
-	change_orbit = 330
+	change_orbit = 108
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -806,7 +724,6 @@ Kepler_122_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 440
 }
 
 Kepler_154_system_initializer = {
@@ -815,6 +732,10 @@ Kepler_154_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 222
+	}
     planet = {
         name = "Kepler-154"
         class = star
@@ -862,7 +783,7 @@ Kepler_154_system_initializer = {
         has_ring = no
         class = "pc_gas_giant"
     }
-	change_orbit = 100
+	change_orbit = 117
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -870,7 +791,6 @@ Kepler_154_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 205
 }
 
 Kepler_169_system_initializer = {
@@ -931,15 +851,6 @@ Kepler_169_system_initializer = {
         has_ring = no
         class = "pc_toxic"
     }
-	change_orbit = 150
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
-	asteroids_distance = 290
 }
 
 Kepler_20_system_initializer = {
@@ -948,6 +859,10 @@ Kepler_20_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
 
     planet = {
         name = "Kepler-20"
@@ -997,7 +912,7 @@ Kepler_20_system_initializer = {
         has_ring = no
         class = "pc_toxic"
     }
-	change_orbit = 280
+	change_orbit = 80
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -1005,7 +920,6 @@ Kepler_20_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 420
 }
 
 Kepler_238_system_initializer = {
@@ -1062,15 +976,6 @@ Kepler_238_system_initializer = {
         has_ring = no
         class = "pc_toxic"
     }
-	change_orbit = 290
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
-	asteroids_distance = 400
 }
 
 Kepler_292_system_initializer = {
@@ -1079,6 +984,10 @@ Kepler_292_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
     planet = {
         name = "Kepler-292"
         class = "pc_g_star"
@@ -1128,7 +1037,7 @@ Kepler_292_system_initializer = {
         has_ring = no
         class = "pc_toxic"
     }
-	change_orbit = 300
+	change_orbit = 110
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -1136,7 +1045,6 @@ Kepler_292_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 410
 }
 
 Kepler_32_system_initializer = {
@@ -1193,15 +1101,6 @@ Kepler_32_system_initializer = {
         orbit_angle = 339
         class = "pc_gas_giant"
     }
-	change_orbit = 200
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
-	asteroids_distance = 330
 }
 
 Kepler_33_system_initializer = {
@@ -1258,15 +1157,6 @@ Kepler_33_system_initializer = {
         has_ring = no
         class = "pc_gas_giant"
     }
-	change_orbit = 300
-	planet = {
-		count = { min = 1 max = 3}
-		size = { min = 1 max = 5 }
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = random
-	}
-	asteroids_distance = 405
 }
 
 Kepler_444_system_initializer = {
@@ -1330,14 +1220,14 @@ Kepler_444_system_initializer = {
 	size = 10
 	has_ring = no
 	
-	moon = {
-	        name = "Kepler-444 C"
-	        class = "pc_m_star"
-	        size = 10
-	        orbit_distance = 10
-	        orbit_angle = 180
-	        has_ring = no
-	}
+        moon = {
+                name = "Kepler-444 C"
+                class = "pc_m_star"
+                size = 10
+                orbit_distance = 10
+                orbit_angle = 180
+                has_ring = no
+        }
     }
 }
 
@@ -1347,6 +1237,10 @@ Kepler_55_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 195
+	}
     planet = {
         name = "Kepler-55"
         class = "pc_k_star"
@@ -1404,7 +1298,6 @@ Kepler_55_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 195
 }
 
 Kepler_80_system_initializer = {
@@ -1413,6 +1306,10 @@ Kepler_80_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
     planet = {
         name = "Kepler-80"
         class = "pc_k_star"
@@ -1461,7 +1358,7 @@ Kepler_80_system_initializer = {
         has_ring = no
         class = "pc_gas_giant"
     }
-	change_orbit = 300
+	change_orbit = 120
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -1469,7 +1366,6 @@ Kepler_80_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 400
 }
 
 Kepler-84_system_initializer = {
@@ -1478,7 +1374,10 @@ Kepler-84_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
-    asteroids_distance = 305
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
     planet = {
         name = "Kepler-84"
         class = "pc_g_star"
@@ -1528,7 +1427,7 @@ Kepler-84_system_initializer = {
         class = random
     }
 
-	change_orbit = 300
+	change_orbit = 115
 	planet = {
 		count = { min = 1 max = 3}
 		size = { min = 1 max = 5 }
@@ -1536,6 +1435,4 @@ Kepler-84_system_initializer = {
 		orbit_distance = 0
 		orbit_angle = random
 	}
-	asteroids_distance = 405
 }
-
