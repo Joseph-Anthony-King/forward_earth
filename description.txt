@@ -48,9 +48,8 @@ I've also created a new galaxy texture that creates a default barred spiral gala
 
 In order resolve any possible conflicts I have included the following mods, I want to give a shout out to all the work our modding community has done! The following mods were included:
 
-AI Ship Set - Updated by Grumpy  Gremlin
+AI Ship Set - Updated by Grumpy Gremlin
 Federation Builders: Ships and Cities by Cheek
-System Border Scale by skud13
 Natural Spiral Galaxies by phidinh6
 Real Sol Textures by Alex FRD
 Civilian Trade by kyojin
