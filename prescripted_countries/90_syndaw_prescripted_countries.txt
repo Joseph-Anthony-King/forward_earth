@@ -165,13 +165,13 @@ custodianship = {
 # Determined Exterminator - I.C.A.R.U.S.
 icarus = {
 	name = "I.C.A.R.U.S."
-	adjective = "PRESCRIPTED_adjective_xt489"
+	adjective = "Autodrone"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 	
 	playable = has_synthethic_dawn # scripted_triggers
 	
-	ship_prefix = "PRESCRIPTED_ship_prefix_xt489"
+	ship_prefix = "ICARUS"
 	
 	species = {
 		class = "MACHINE"

@@ -1302,12 +1302,12 @@ com_sol_system = {
 				effect = {
 					save_event_target_as = npc_UNoE
 					add_resource = {
-						minerals = 2400
-						energy = 2400
-						food = 2400
-						alloys = 800
-						consumer_goods = 1200
-						influence = 600
+						minerals = 200
+						energy = 200
+						food = 200
+						alloys = 100
+						consumer_goods = 100
+						influence = 100
 					}
 				}
 			}
@@ -1958,12 +1958,12 @@ lost_colony_sol_system = {
 						effect = {
 							save_event_target_as = lost_colony_parent
 							add_resource = {
-								minerals = 2400
-								energy = 2400
-								food = 2400
-								alloys = 800
-								consumer_goods = 1200
-								influence = 600
+								minerals = 200
+								energy = 200
+								food = 200
+								alloys = 100
+								consumer_goods = 100
+								influence = 100
 							}
 						}
 					}
@@ -1977,12 +1977,12 @@ lost_colony_sol_system = {
 						effect = {
 							save_event_target_as = lost_colony_parent
 							add_resource = {
-								minerals = 2400
-								energy = 2400
-								food = 2400
-								alloys = 800
-								consumer_goods = 1200
-								influence = 600
+								minerals = 200
+								energy = 200
+								food = 200
+								alloys = 100
+								consumer_goods = 100
+								influence = 100
 							}
 						}
 					}
