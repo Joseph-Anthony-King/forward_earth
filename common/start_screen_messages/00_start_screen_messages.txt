@@ -897,7 +897,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_UNE"
-	
+
 	trigger = {
 		has_country_flag = human_1
 	}
@@ -907,7 +907,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_CM"
-	
+
 	trigger = {
 		has_country_flag = human_2
 	}
@@ -920,5 +920,15 @@ part = {
 	
 	trigger = {
 		has_country_flag = icarus_faction
+	}
+}
+
+# I.C.A.R.U.S.
+part = {
+	location = 0
+	localization = "START_SCREEN_CUSTODIANSHIP"
+	
+	trigger = {
+		has_country_flag = custodian_faction
 	}
 }
