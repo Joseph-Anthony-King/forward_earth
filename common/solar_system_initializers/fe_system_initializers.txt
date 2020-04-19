@@ -1355,11 +1355,12 @@ icarus_sol_system_initializer = {
 	}
 	
 	planet = {
-		name = "Ceres"
-		class = "pc_asteroid"
+		name = "NAME_1_Ceres"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
