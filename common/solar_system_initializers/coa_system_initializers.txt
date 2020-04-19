@@ -388,6 +388,8 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
 		}
 		
 		moon = {
@@ -397,15 +399,18 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
 		}
 	}
 	
 	planet = {
 		name = "NAME_1_Ceres"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -495,13 +500,13 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
-			name = "NAME_Enceladus"
+			name = "Rhea"
 			class = "pc_frozen"
-			size = 6
+			size = 2
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "frozen_planet_09_entity"
+			entity = "rhea_entity"
 		}
 		
 		moon = {
@@ -531,7 +536,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_01_entity"
+			entity = "titania_entity"
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -540,7 +545,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_02_entity"
+			entity = "oberon_entity"
 		}
 	}
 	
@@ -560,17 +565,19 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
 		name = "NAME_134340_Pluto"
-		class = "pc_ice_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 
 	planet = {

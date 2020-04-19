@@ -487,6 +487,8 @@ special_init_03 = {
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
 		}
 		
 		moon = {
@@ -495,14 +497,17 @@ special_init_03 = {
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
 		}
 	}
 	
 	planet = {
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -584,11 +589,11 @@ special_init_03 = {
 		
 		moon = {
 			class = "pc_frozen"
-			size = 6
+			size = 2
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "frozen_planet_09_entity"
+			entity = "rhea_entity"
 		}
 		
 		moon = {
@@ -615,7 +620,7 @@ special_init_03 = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_01_entity"
+			entity = "titania_entity"
 		}		
 		moon = {
 			class = "pc_barren_cold"
@@ -623,7 +628,7 @@ special_init_03 = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_02_entity"
+			entity = "oberon_entity"
 		}
 	}
 	
@@ -641,16 +646,18 @@ special_init_03 = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 	
 	planet = {
@@ -760,6 +767,8 @@ special_init_04 = {
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
 		}
 		
 		moon = {
@@ -768,14 +777,17 @@ special_init_04 = {
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
 		}
 	}
 	
 	planet = {
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -857,11 +869,11 @@ special_init_04 = {
 		
 		moon = {
 			class = "pc_frozen"
-			size = 6
+			size = 2
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "frozen_planet_09_entity"
+			entity = "rhea_entity"
 		}
 		
 		moon = {
@@ -888,7 +900,7 @@ special_init_04 = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_01_entity"
+			entity = "titania_entity"
 		}		
 		moon = {
 			class = "pc_barren_cold"
@@ -896,7 +908,7 @@ special_init_04 = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_02_entity"
+			entity = "oberon_entity"
 		}
 	}
 	
@@ -914,16 +926,18 @@ special_init_04 = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 	
 	planet = {

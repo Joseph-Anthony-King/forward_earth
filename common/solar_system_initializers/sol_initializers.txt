@@ -1317,14 +1317,37 @@ com_sol_system = {
 				days = -1
 			}
 		}
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
+		}
 	}
 	
 	planet = {
 		name = "NAME_1_Ceres"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -1410,12 +1433,23 @@ com_sol_system = {
 		change_orbit = 7
 		
 		moon = {
+			name = "Rhea"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "rhea_entity"
+		}
+		
+		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
-			orbit_angle = 320
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
+			entity = "moon_sat_titan_entity"
 		}
 	}
 	
@@ -1445,17 +1479,19 @@ com_sol_system = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
 		name = "NAME_134340_Pluto"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 	
 	planet = {
@@ -1995,14 +2031,37 @@ lost_colony_sol_system = {
 				days = -1
 			}
 		}
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
+		}
 	}
 	
 	planet = {
 		name = "NAME_1_Ceres"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -2088,12 +2147,23 @@ lost_colony_sol_system = {
 		change_orbit = 7
 		
 		moon = {
+			name = "Rhea"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "rhea_entity"
+		}
+		
+		moon = {
 			name = "NAME_Titan"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 12
-			orbit_angle = 320
+			orbit_distance = 10
+			orbit_angle = 180
 			has_ring = no
+			entity = "moon_sat_titan_entity"
 		}
 	}
 	
@@ -2123,17 +2193,19 @@ lost_colony_sol_system = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
 		name = "NAME_134340_Pluto"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 	
 	planet = {
