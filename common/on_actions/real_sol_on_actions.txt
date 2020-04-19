@@ -1,34 +1,110 @@
-# Anual planet class check for Mercury
-on_yearly_pulse = {
+# Class check for Mercury
+on_terraforming_complete = {
 	events = {
 		real_sol.1
 	}
 }
 
-# Anual planet class check for Venus
 on_yearly_pulse = {
+	events = {
+		real_sol.11
+	}
+}
+
+# Class check for Venus
+on_terraforming_complete = {
 	events = {
 		real_sol.2
 	}
 }
 
-# Anual planet class check for Earth
 on_yearly_pulse = {
+	events = {
+		real_sol.22
+	}
+}
+
+on_megastructure_upgraded = {
+	events = {
+		real_sol.222
+	}
+}
+
+# Class check for Earth
+on_terraforming_complete = {
 	events = {
 		real_sol.3
 	}
 }
 
-# Anual planet class check for Moon
 on_yearly_pulse = {
+	events = {
+		real_sol.33
+	}
+}
+
+on_press_begin = {
+	events = {
+		real_sol.333
+	}
+}
+
+# Class check for Moon
+on_terraforming_complete = {
 	events = {
 		real_sol.4
 	}
 }
 
-# Anual planet class check for Mars
 on_yearly_pulse = {
 	events = {
+		real_sol.44
+	}
+}
+
+on_megastructure_upgraded = {
+	events = {
+		real_sol.444
+	}
+}
+
+# Class check for Mars
+on_terraforming_complete = {
+	events = {
 		real_sol.5
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		real_sol.55
+	}
+}
+
+# Class check for Jupiter
+on_megastructure_upgraded = {
+	events = {
+		real_sol.6
+	}
+}
+
+# Class check for Saturn
+on_megastructure_upgraded = {
+	events = {
+		real_sol.7
+	}
+}
+
+# Class check for Uranus
+on_megastructure_upgraded = {
+	events = {
+		real_sol.8
+	}
+}
+
+# Class check for Neptune
+on_megastructure_upgraded = {
+	events = {
+		real_sol.9
 	}
 }

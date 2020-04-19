@@ -114,6 +114,7 @@ sol_system_initializer = {
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
+			entity = "phobos_entity"
 			flags = { planet_earth_moon }
 		}
 		
@@ -124,16 +125,18 @@ sol_system_initializer = {
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
+			entity = "deimos_entity"
 			flags = { planet_earth_moon }
 		}
 	}
 	
 	planet = {
 		name = "NAME_1_Ceres"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
+		entity = "ceres_entity"
 		has_ring = no
 	}
 	
@@ -223,13 +226,13 @@ sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
-			name = "NAME_Enceladus"
+			name = "Rhea"
 			class = "pc_frozen"
-			size = 6
+			size = 2
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "frozen_planet_09_entity"
+			entity = "rhea_entity"
 		}
 		
 		moon = {
@@ -259,7 +262,7 @@ sol_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_01_entity"
+			entity = "titania_entity"
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -268,7 +271,7 @@ sol_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
-			entity = "cold_barren_planet_02_entity"
+			entity = "oberon_entity"
 		}
 	}
 	
@@ -288,17 +291,19 @@ sol_system_initializer = {
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
+			entity = "triton_entity"
 			has_ring = no
 		}
 	}
 
 	planet = {
 		name = "NAME_134340_Pluto"
-		class = "pc_asteroid"
+		class = "pc_barren_cold"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
+		entity = "realsol_pluto_entity"
 	}
 	
 	planet = {
@@ -571,60 +576,35 @@ sol_neighbor_t1_no_guaranteed_colony = {
     		has_ring = no
     	}
 
-		random_list = {
-
-			50 = {
-
-				planet = {
-					name = "Alpha Centauri B II"
-					orbit_distance = 25
-					orbit_angle = 120
-					class = "pc_continental"
-					size = 16
-					has_ring = no
-					entity = "continental_planet_01_entity"
-					moon = {
-						name = "Alpha Centauri B IIa"
-						class = "pc_barren_cold"
-						size = 1
-						orbit_distance = 7
-						has_ring = no
-					}
-
-					moon = {
-						name = "Alpha Centauri B IIb"
-						class = "pc_barren_cold"
-						size = 2
-						orbit_distance = 4
-						has_ring = no
-					}
+		planet = {
+			name = "Alpha Centauri B II"
+			orbit_distance = 25
+			orbit_angle = 120
+			class = "pc_barren"
+			size = 16
+			has_ring = no
+			entity = "barren_planet_01_entity"
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = -1
 				}
 			}
-			50 = {
+			moon = {
+				name = "Alpha Centauri B IIa"
+				class = "pc_barren_cold"
+				size = 1
+				orbit_distance = 7
+				has_ring = no
+			}
 
-				planet = {
-					name = "Alpha Centauri B II"
-					orbit_distance = 25
-					orbit_angle = 120
-					class = "pc_toxic"
-					size = 16
-					has_ring = no
-					moon = {
-						name = "Alpha Centauri B IIa"
-						class = "pc_barren_cold"
-						size = 1
-						orbit_distance = 7
-						has_ring = no
-					}
-
-					moon = {
-						name = "Alpha Centauri B IIb"
-						class = "pc_barren_cold"
-						size = 2
-						orbit_distance = 4
-						has_ring = no
-					}
-				}
+			moon = {
+				name = "Alpha Centauri B IIb"
+				class = "pc_barren_cold"
+				size = 2
+				orbit_distance = 4
+				has_ring = no
 			}
 		}
 
@@ -938,49 +918,29 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 10
 		has_ring = no
 	}
-
-	random_list = {
-
-		50 = {
 	
-			planet = {
-				name = "Cygni A II"
-				class = "pc_continental"
-				orbit_distance = 15
-				orbit_angle = 90
-				size = 13
-				has_ring = no
-				entity = "continental_planet_04_entity"
-				
-				moon = {
-					name = "Cygni A IIa"
-					class = "pc_barren_cold"
-					size = 1
-					orbit_distance = 4
-					orbit_angle = 40
-					has_ring = no
-				}
+	planet = {
+		name = "Cygni A II"
+		class = "pc_barren"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 13
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
 			}
 		}
-		50 = {
-	
-			planet = {
-				name = "Cygni A II"
-				class = "pc_barren_cold"
-				orbit_distance = 15
-				orbit_angle = 90
-				size = 13
-				has_ring = no
-				
-				moon = {
-					name = "Cygni A IIa"
-					class = "pc_barren_cold"
-					size = 1
-					orbit_distance = 4
-					orbit_angle = 40
-					has_ring = no
-				}
-			}
+		
+		moon = {
+			name = "Cygni A IIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
 		}
 	}
 	

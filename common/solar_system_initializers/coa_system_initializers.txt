@@ -859,9 +859,17 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			name = "Alpha Centauri B II"
 			orbit_distance = 25
 			orbit_angle = 120
-			class = "pc_toxic"
+			class = "pc_barren"
 			size = 16
 			has_ring = no
+			entity = "barren_planet_01_entity"
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = -1
+				}
+			}
 			moon = {
 				name = "Alpha Centauri B IIa"
 				class = "pc_barren_cold"
@@ -1193,11 +1201,18 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 	planet = {
 		name = "Cygni A II"
-		class = "pc_barren_cold"
+		class = "pc_barren"
 		orbit_distance = 15
 		orbit_angle = 90
 		size = 13
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 		
 		moon = {
 			name = "Cygni A IIa"
