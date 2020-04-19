@@ -2190,6 +2190,14 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 120
 		size = 16
 		has_ring = no
+		entity = "barren_planet_01_entity"
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {

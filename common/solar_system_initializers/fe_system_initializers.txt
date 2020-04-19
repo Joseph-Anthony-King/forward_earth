@@ -2830,33 +2830,19 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		size = 10
 		has_ring = no
 	}
-
-	random_list = {
-
-		50 = {
 	
-			planet = {
-				class = "pc_continental"
-				orbit_distance = 35
-				orbit_angle = 120
-				size = 16
-				has_ring = no
-				modifiers = none
-				entity = "continental_planet_09_entity"
-				
-				init_effect = {
-					prevent_anomaly = yes
-				}
-			}
-		}
-		50 = {
-	
-			planet = {
-				class = "pc_barren"
-				orbit_distance = 35
-				orbit_angle = 120
-				size = 16
-				has_ring = no
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		entity = "barren_planet_01_entity"
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
 			}
 		}
 	}
