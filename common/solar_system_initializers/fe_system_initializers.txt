@@ -1,8 +1,8 @@
 @distance = 50
 @base_moon_distance = 10
 @jumps = 3
-@minJumps = 5
-@maxJumps = 8
+@minJumps = 8
+@maxJumps = 10
 
 ### Sol System
 space_age_sol_system_initializer = {
@@ -3055,6 +3055,59 @@ sol_neighbor_t2_sirius = {
 		size = 15
 		has_ring = no
 	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t3_Luytens_star"
+	}
+}
+
+# Sol Neighbor Tier 2
+sol_neighbor_t3_Luytens_star = {	
+	name = "Luyten's Star"
+	class = sc_m
+
+	planet = {
+		name = "Luyten's Star"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Luyten's Star II"
+		class = "pc_molten"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 7
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Luyten's Star II"
+		class = "pc_toxic"
+		orbit_distance = 30
+		orbit_angle = 170
+		size = 19
+		has_ring = yes
+			
+		moon = {
+			name = "Luyten's Star II A"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 16
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_notus }
+		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = @minJumps max = @maxJumps }
+		initializer = "dal_lokkur_system_initializer"
+	}
 }
 
 # Sol Neighbor Tier 3
@@ -3133,6 +3186,11 @@ sol_neighbor_t3_trappist_1 = {
 		orbit_angle = 110
 		size = 6
 		has_ring = no
+	}
+			
+	neighbor_system = {
+		hyperlane_jumps = { min = @minJumps max = @maxJumps }
+		initializer = "kel_azak_system_initializer"
 	}
 }
 
@@ -3537,11 +3595,6 @@ sol_neighbor_t3_eridani = {
 			has_ring = no
 		}
 	}
-
-	neighbor_system = {
-		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "dal_lokkur_system_initializer"
-	}
 }
 
 # Sol Neighbor Tier 3
@@ -3749,11 +3802,6 @@ sol_neighbor_t3_epsilon_indi = {
 				prevent_anomaly = yes
 			}		
 		}
-	}
-			
-	neighbor_system = {
-		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "kel_azak_system"
 	}
 }
 

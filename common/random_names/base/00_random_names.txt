@@ -1321,6 +1321,7 @@ star_names = {
 	Conthim
 	Coorq
 	Copernicus
+	Coppelius
 	"Cor Caroli"
 	"Cor Hydrae"
 	"Cor Leonis"
@@ -1510,6 +1511,7 @@ star_names = {
 	Dialeifa
 	Diam
 	Diamal
+	Diamanta
 	Dibra
 	Didia'run
 	Dieron
@@ -1812,6 +1814,7 @@ star_names = {
 	Fejantris
 	Feldazir
 	Felis
+	Felix
 	Fellebia
 	Felucia
 	Femax
@@ -1993,6 +1996,7 @@ star_names = {
 	Ghasramti
 	Ghorman
 	Ghusasamda
+	Ghulion
 	Giausar
 	Gibil
 	Giedi
@@ -5440,6 +5444,7 @@ star_names = {
 	Varsire
 	Varsis
 	Varuna
+	Vashti
 	Vathris
 	Vatun
 	Vaydra

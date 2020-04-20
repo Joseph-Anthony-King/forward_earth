@@ -1213,7 +1213,7 @@ dal_lokkur_system_initializer = {
 }
 
 ### Kel-Azak System
-kel_azak_system = {
+kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
 	asteroid_belt = {
@@ -1239,7 +1239,7 @@ kel_azak_system = {
 		class = "pc_a_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 40
+		size = 30
 		has_ring = no
 	}
 	
