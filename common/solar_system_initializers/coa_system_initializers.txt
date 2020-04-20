@@ -2,7 +2,7 @@
 @base_moon_distance = 10
 @jumps = 3
 @minJumps = 8
-@maxJumps = 10
+@maxJumps = 9
 
 ### Sol System
 eta_cassiopeiae_with_sol_system_initializer = {
