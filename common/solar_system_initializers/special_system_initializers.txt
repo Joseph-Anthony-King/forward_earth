@@ -138,7 +138,7 @@ special_init_03 = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 	}
@@ -722,7 +722,7 @@ special_init_04 = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 	}

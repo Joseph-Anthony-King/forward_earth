@@ -161,6 +161,9 @@ space_age_sol_system_initializer = {
 							count = 23
 							create_pop = {
 								species = event_target:human_species
+                                ethos = {	
+                                    ethic = ethic_egalitarian
+                                }
 							}
 						}
 						set_owner = last_created_country

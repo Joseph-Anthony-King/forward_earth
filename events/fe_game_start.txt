@@ -120,6 +120,9 @@ event = {
                             count = 4
                             create_pop = {
                                 species = event_target:human_species
+                                ethos = {	
+                                    ethic = ethic_militarist
+                                }
                             }
                         }
 
@@ -477,6 +480,9 @@ event = {
                             count = 4
                             create_pop = {
                                 species = event_target:human_species
+                                ethos = {	
+                                    ethic = ethic_militarist
+                                }
                             }
                         }
 
@@ -831,6 +837,9 @@ event = {
                         count = 4
                         create_pop = {
                             species = event_target:human_species
+                            ethos = {	
+                                ethic = ethic_militarist
+                            }
                         }
                     }
 
@@ -947,7 +956,7 @@ event = {
                                 create_pop = {	
                                     species = last_created	
                                 }	
-                            }                        
+                            } 
 
                             set_owner = last_created_country	
                             set_capital = yes	

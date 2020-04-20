@@ -608,6 +608,9 @@ scyldari_system_initializer = {
                 count = 23
                 create_pop = {
                     species = last_created
+					ethos = {	
+						ethic = ethic_spiritualist
+					}
                 }
             }
             set_owner = last_created_country
@@ -923,8 +926,9 @@ dal_lokkur_system_initializer = {
 		}
 		
 		init_effect = {
-			prevent_anomaly = yes
+
             generate_empire_home_planet = yes
+
             create_species = {
                 name = "PRESCRIPTED_species_name_lokken"
                 plural = "PRESCRIPTED_species_plural_lokken"
@@ -991,11 +995,33 @@ dal_lokkur_system_initializer = {
             }
 
             while = {
-                count = 23
+                count = 20
                 create_pop = {
                     species = last_created
+					ethos = {	
+						ethic = ethic_materialist
+					}
                 }
             }
+                            
+			create_species = {	
+				name = "NAME_Robot"	
+				plural = "NAME_Robots"	
+				class = ROBOT	
+				namelist = MACHINE3	
+				portrait = "default_robot"	
+				traits = {	
+					trait = trait_mechanical
+				}	
+			}	
+
+			while = {	
+				count = 3
+				create_pop = {	
+					species = last_created	
+				}	
+			}
+
             set_owner = last_created_country
             set_capital = yes
             add_district = district_city
@@ -1352,6 +1378,9 @@ kel_azak_system = {
 					count = 23
 					create_pop = {
 						species = last_created
+						ethos = {	
+							ethic = ethic_egalitarian
+						}
 					}
 				}
 				set_owner = last_created_country
