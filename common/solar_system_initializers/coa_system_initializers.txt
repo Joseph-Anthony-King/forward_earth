@@ -151,9 +151,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							count = 23
 							create_pop = {
 								species = last_created
-								ethos = {	
-									ethic = ethic_egalitarian
-								}
 							}
 						}
 						set_owner = last_created_country

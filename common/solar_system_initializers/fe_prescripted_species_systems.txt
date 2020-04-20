@@ -608,9 +608,6 @@ scyldari_system_initializer = {
                 count = 23
                 create_pop = {
                     species = last_created
-					ethos = {	
-						ethic = ethic_spiritualist
-					}
                 }
             }
             set_owner = last_created_country
@@ -998,9 +995,6 @@ dal_lokkur_system_initializer = {
                 count = 20
                 create_pop = {
                     species = last_created
-					ethos = {	
-						ethic = ethic_materialist
-					}
                 }
             }
                             
@@ -1378,9 +1372,6 @@ kel_azak_system = {
 					count = 23
 					create_pop = {
 						species = last_created
-						ethos = {	
-							ethic = ethic_egalitarian
-						}
 					}
 				}
 				set_owner = last_created_country

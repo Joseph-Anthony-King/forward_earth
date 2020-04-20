@@ -120,9 +120,6 @@ event = {
                             count = 4
                             create_pop = {
                                 species = event_target:human_species
-                                ethos = {	
-                                    ethic = ethic_militarist
-                                }
                             }
                         }
 
@@ -219,10 +216,7 @@ event = {
                                 while = {	
                                     count = 16	
                                     create_pop = {	
-                                        species = event_target:human_species	
-                                        ethos = {	
-                                            ethic = ethic_militarist
-                                        }	
+                                        species = event_target:human_species
                                     }	
                                 }
                                 
@@ -480,9 +474,6 @@ event = {
                             count = 4
                             create_pop = {
                                 species = event_target:human_species
-                                ethos = {	
-                                    ethic = ethic_militarist
-                                }
                             }
                         }
 
@@ -576,10 +567,7 @@ event = {
                                 while = {	
                                     count = 16	
                                     create_pop = {	
-                                        species = event_target:human_species	
-                                        ethos = {	
-                                            ethic = ethic_militarist
-                                        }	
+                                        species = event_target:human_species
                                     }	
                                 }
                                 
