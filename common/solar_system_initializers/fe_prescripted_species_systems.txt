@@ -90,6 +90,7 @@ eta_cassiopeiae_system_initializer = {
 				size = 16
 				has_ring = no
 				modifiers = none
+				starting_planet = yes
 				entity = "continental_planet_01_entity"
 				flags = { planet_aurora coa_home }
 				
