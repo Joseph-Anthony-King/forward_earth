@@ -641,6 +641,7 @@ scyldari_system_initializer = {
                 set_graphical_culture = mammalian_01
                 capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
 				set_country_flag = scyldari_starbase
+				create_starting_leaders = yes
             }
 
             create_army = {
@@ -1047,6 +1048,7 @@ dal_lokkur_system_initializer = {
                 capital_scope = { set_name = "PRESCRIPTED_planet_name_lokken" }
                 set_graphical_culture = reptilian_01
 				set_country_flag = lokken_starbase
+				create_starting_leaders = yes
             }
 
             create_army = {
@@ -1405,6 +1407,7 @@ kel_azak_system = {
 					set_graphical_culture = arthropoid_01
 					capital_scope = { set_name = "PRESCRIPTED_planet_name_kel_azaan" }
 					set_country_flag = kel_azaan_starbase
+					create_starting_leaders = yes
 				}
 
 				create_army = {
