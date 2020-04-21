@@ -80,7 +80,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
-			flags = { aurora_barycenter }
+			flags = { planetary_barrycenter }
 		
 			planet = {
 				name = "NAME_Aurora"

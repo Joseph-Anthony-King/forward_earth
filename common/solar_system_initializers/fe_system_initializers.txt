@@ -506,7 +506,7 @@ space_age_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Rhea"
+			name = "NAME_Rhea"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
@@ -1450,7 +1450,7 @@ icarus_sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Rhea"
+			name = "NAME_Rhea"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
@@ -1665,7 +1665,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
-			flags = { aurora_barycenter }
+			flags = { planetary_barrycenter }
 		
 			planet = {
 				name = "NAME_Aurora"
@@ -1908,7 +1908,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
-			flags = { aurora_barycenter }
+			flags = { planetary_barrycenter }
 	
 			planet = {
 				class = "pc_continental"
@@ -2173,104 +2173,112 @@ sol_neighbor_t2_tau_ceti = {
 		}
 	}
 
-	planet = {
-		name = "Tau Ceti IV"
-		class = pc_ocean
+    planet = {
+        class = pc_barren
 		orbit_distance = 40
 		orbit_angle = 60
-		size = 26
-		has_ring = no
-		entity = "ocean_planet_01_entity"
-		
-		init_effect = {
-			set_planet_flag = planet_tau_ceti_4
-		}
-		
-		init_effect = {
+		size = 0
+        flags = { planetary_barrycenter }
 
-			create_species = {
-				name = Prillrian
-				plural = Prillrians
-				class = "REP"
-				portrait = "rep5"
-				homeworld = THIS
-				traits = {
-					trait = "trait_communal"
-					trait = "trait_strong"
-				}
-			}
-			create_country = {
-				name = "Prillrian Realms"
-				authority = auth_imperial
-				civics = {
-					civic = civic_landed_nobility
-					civic = civic_flat_world_theory
-				}
-				species = last_created
-				ethos = { 
-					ethic = "ethic_xenophobe"
-					ethic = "ethic_spiritualist"
-					ethic = "ethic_authoritarian"
-				}
-				flag = {
-					icon = {
-						category = "ornate"
-						file = "flag_ornate_15.dds"
-					}
-					background = {
-						category = "backgrounds"
-						file = "diagonal.dds"
-					}
-					colors = {
-						"purple"
-						"dark_teal"
-						"null"
-						"null"
-					}
-				}
-				day_zero_contact = no
-				type = primitive
-			}
-			last_created_country = {
-				set_graphical_culture = preindustrial_01
-				set_country_flag = late_medieval_age
-				set_country_flag = humans_late_medieval_age
-				set_primitive_age = late_medieval_age
+		planet = {
+			name = "Tau Ceti IV"
+			class = pc_ocean
+			orbit_distance = 10
+			orbit_angle = 60
+			size = 26
+			has_ring = no
+			entity = "ocean_planet_01_entity"
+			
+			init_effect = {
+				set_planet_flag = planet_tau_ceti_4
 			}
 			
-			set_owner = last_created_country		
-								
-			while = {
-				count = 3
-				create_pop = {
+			init_effect = {
+
+				create_species = {
+					name = Prillrian
+					plural = Prillrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
+				create_country = {
+					name = "Prillrian Realms"
+					authority = auth_imperial
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
 					species = last_created
-				}					
-			}
-			add_building = building_primitive_dwellings
-			add_building = building_primitive_dwellings
-			add_building = building_stone_palace			
-			
-			while = {
-				count = 2
-				create_army = {
-					name = "NAME_Feudal_Levies"
-					owner = last_created
-					species = last_created
-					type = "primitive_army"
+					ethos = { 
+						ethic = "ethic_xenophobe"
+						ethic = "ethic_spiritualist"
+						ethic = "ethic_authoritarian"
+					}
+					flag = {
+						icon = {
+							category = "ornate"
+							file = "flag_ornate_15.dds"
+						}
+						background = {
+							category = "backgrounds"
+							file = "diagonal.dds"
+						}
+						colors = {
+							"purple"
+							"dark_teal"
+							"null"
+							"null"
+						}
+					}
+					day_zero_contact = no
+					type = primitive
 				}
-			}
-			
-			last_created_country = {
-				capital_scope = { set_name = "Prill" }
+				last_created_country = {
+					set_graphical_culture = preindustrial_01
+					set_country_flag = late_medieval_age
+					set_country_flag = humans_late_medieval_age
+					set_primitive_age = late_medieval_age
+				}
+				
+				set_owner = last_created_country		
+									
+				while = {
+					count = 3
+					create_pop = {
+						species = last_created
+					}					
+				}
+				add_building = building_primitive_dwellings
+				add_building = building_primitive_dwellings
+				add_building = building_stone_palace			
+				
+				while = {
+					count = 2
+					create_army = {
+						name = "NAME_Feudal_Levies"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				
+				last_created_country = {
+					capital_scope = { set_name = "Prill" }
+				}
 			}
 		}
-		
-		moon = {
+
+        planet = {
 			name = "Tau Ceti IVa"
 			class = "pc_continental"
 			size = 16
-			orbit_distance = 14
-			orbit_angle = 40
+			orbit_distance = 0
+			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_03_entity"
 		
@@ -2278,7 +2286,7 @@ sol_neighbor_t2_tau_ceti = {
 				set_planet_flag = planet_tau_ceti_4_moon
 			}
 		}
-	}
+    }
 	
 	planet = {
 		class = "pc_asteroid"
@@ -3125,66 +3133,73 @@ sol_neighbor_t3_trappist_1 = {
 		has_ring = no
 	}
 	
+	# Trappist-1b
 	planet = {
 		name = "Trappist-1 b"
-		class = "pc_toxic"
+		class = "pc_molten"
 		orbit_distance = 20
-		orbit_angle = 60
-		size = 21
+		orbit_angle = 15
+		size = 16
 		has_ring = no
 	}
 	
+	# Trappist-1c
 	planet = {
 		name = "Trappist-1 c"
-		class = "pc_toxic"
-		orbit_distance = 10
-		orbit_angle = 60
-		size = 22
+		class = "pc_barren"
+		orbit_distance = 16
+		orbit_angle = 85
+		size = 16
 		has_ring = no
 	}
-	
+
+	# Trappist-1d
 	planet = {
-		name = "Trappist-1 e"
-		class = "pc_ocean"
-		orbit_distance = 10
-		orbit_angle = 100
+		name = "Trappist-1 d"
+		class = "pc_toxic"
+		orbit_distance = 16
+		orbit_angle = 110
 		size = 12
 		has_ring = no
 	}
-	
+
+	# Trappist-1e
+	planet = {
+		name = "Trappist-1 e"
+		class = "pc_ocean"
+		orbit_distance = 16
+		orbit_angle = 125
+		size = 14
+		has_ring = no
+	}
+
+	# Trappist-1f
 	planet = {
 		name = "Trappist-1 f"
 		class = "pc_toxic"
-		orbit_distance = 10
-		orbit_angle = 130
-		size = 11
+		orbit_distance = 16
+		orbit_angle = 65
+		size = 16
 		has_ring = no
 	}
-	
+
+	# Trappist-1g
 	planet = {
 		name = "Trappist-1 g"
-		class = "pc_barren"
-		orbit_distance = 10
-		orbit_angle = 90
-		size = 11
+		class = "pc_arctic"
+		orbit_distance = 16
+		orbit_angle = -130
+		size = 18
 		has_ring = no
 	}
-	
-	planet = {
-		name = "Trappist-1 d"
-		class = "pc_frozen"
-		orbit_distance = 10
-		orbit_angle = 130
-		size = 11
-		has_ring = no
-	}
-	
+
+	# Trappist-1h
 	planet = {
 		name = "Trappist-1 h"
-		class = "pc_barren_cold"
-		orbit_distance = 10
-		orbit_angle = 110
-		size = 6
+		class = "pc_frozen"
+		orbit_distance = 16
+		orbit_angle = 245
+		size = 12
 		has_ring = no
 	}
 			
@@ -3573,7 +3588,7 @@ sol_neighbor_t3_eridani = {
 		orbit_angle = 200
 		size = 0
 		has_ring = no
-		flags = { eridani_barycenter }
+		flags = { planetary_barrycenter }
 
 		planet = {
 			name = "Eridani B"
@@ -3773,7 +3788,7 @@ sol_neighbor_t3_epsilon_indi = {
 		orbit_distance = 160
 		orbit_angle = 125
 		size = 0
-		flags = { epsilon_indi_barycenter }
+		flags = { planetary_barrycenter }
 
 		planet = {
 			name = "Epsilon Indi B"
@@ -4691,7 +4706,7 @@ kobol_initializer = {
 		orbit_angle = 0
 		size = 0
 		has_ring = no
-		flags = { kobol_barycenter }
+		flags = { planetary_barrycenter }
 	
 		planet = {
 			name = "Kobol A"

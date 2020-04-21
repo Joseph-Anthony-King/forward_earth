@@ -226,7 +226,7 @@ sol_system_initializer = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Rhea"
+			name = "NAME_Rhea"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
@@ -1433,7 +1433,7 @@ com_sol_system = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Rhea"
+			name = "NAME_Rhea"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
@@ -2147,7 +2147,7 @@ lost_colony_sol_system = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Rhea"
+			name = "NAME_Rhea"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12

@@ -1162,7 +1162,7 @@ event = {
     }
 }
 
-### fe.6 - Set barycenters
+### fe.6 - Set barycenters and spawn deneb system
 event = {
     id = fe.6
     hide_window = yes
@@ -1174,37 +1174,9 @@ event = {
             spawn_system = { initializer = "deneb_system" }
         }
 
-        random_planet = {
+        every_planet = {
             limit = {
-                has_planet_flag = aurora_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = eridani_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = tau_ceti_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = epsilon_indi_barycenter              
-            }
-            set_name = ""
-        }
-
-        random_planet = {
-            limit = {
-                has_planet_flag = kobol_barycenter              
+                has_planet_flag = planetary_barrycenter              
             }
             set_name = ""
         }

@@ -2130,9 +2130,8 @@ trappist_initializer = {
 	name = "NAME_Trappist"
 	class = "sc_m"
 	usage = misc_system_init
-	usage_odds = 2000000
-	max_instances = 1
-	scaled_spawn_chance = 10
+	usage_odds = 0
+	max_instances = 0
 	
 	planet = {
 		class = "pc_m_star"
