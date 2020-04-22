@@ -38,7 +38,7 @@ Sanopel
 Stronad
 Theta Upsilon
 
-I've also created a new galaxy texture that creates a default barred spiral galaxy, even when playing in an elipitical galaxy, this more closely resembles the current measurements of the Milky Way.
+I've also created a new Milky Way galaxy texture that creates a default barred spiral galaxy, even when playing in an elipitical galaxy, this more closely resembles our Milky Way.
 
 In order resolve any possible conflicts I have included the following mods, I want to give a shout out to all the work our modding community has done! The following mods were included:
 
