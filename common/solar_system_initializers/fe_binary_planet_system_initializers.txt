@@ -879,6 +879,103 @@ fe_ten_binary_planet_system_initializer = {
 	}
 }
 
+### type eight binary planet system
+fe_eleven_binary_planet_system_initializer = {
+    
+	class = "rl_starting_stars"
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeEight
+	
+	planet = {
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 30
+		class = random
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = 30
+		class = random_colonizable
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+        count = { min = 0 max = 2 }
+        class = pc_gas_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = no
+
+		moon = {
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 10 max = 20 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+    
+        planet = {
+            class = pc_toxic
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_barren
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 14 }
+            has_ring = no
+            modifiers = none
+		
+            init_effect = {
+                add_modifier = {
+                    modifier = "terraforming_candidate"
+                    days = -1
+                }
+            }
+        }
+    }
+
+    planet = {
+        count = { min = 1 max = 3 }
+        class = pc_gas_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+}
+
 ### random empire one binary planet system
 fe_random_empire_one_binary_planet_system_initializer = {
     
