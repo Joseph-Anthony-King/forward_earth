@@ -1269,6 +1269,27 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
             size = { min = 12 max = 16 }
             has_ring = no
             modifiers = none
+		
+            init_effect = {
+				prevent_anomaly = yes
+                random_list = {
+                    # Early Space Age
+                    20 = {
+                        generate_late_primitives_on_planet = yes		
+                    }
+                    # Industrial Age
+                    15 = {
+                        generate_early_primitives_on_planet = yes
+                    }
+                    # Medieval
+                    15 = {
+                        generate_primitives_on_planet = yes
+                    }
+                    50 = {
+
+                    }
+                }
+            }
         }
     }
 
@@ -1377,6 +1398,27 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
             size = { min = 12 max = 16 }
             has_ring = no
             modifiers = none
+		
+            init_effect = {
+				prevent_anomaly = yes
+                random_list = {
+                    # Early Space Age
+                    20 = {
+                        generate_late_primitives_on_planet = yes		
+                    }
+                    # Industrial Age
+                    15 = {
+                        generate_early_primitives_on_planet = yes
+                    }
+                    # Medieval
+                    15 = {
+                        generate_primitives_on_planet = yes
+                    }
+                    50 = {
+
+                    }
+                }
+            }
         }
     }
 
