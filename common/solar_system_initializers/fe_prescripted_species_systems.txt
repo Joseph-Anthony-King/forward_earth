@@ -76,12 +76,16 @@ eta_cassiopeiae_system_initializer = {
 		}
 
 		planet = {
-			class = pc_asteroid
+			class = pc_barren
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
 			flags = { planetary_barrycenter }
 		
+			init_effect = {
+				prevent_anomaly = yes
+			}
+			
 			planet = {
 				name = "NAME_Aurora"
 				class = "pc_continental"

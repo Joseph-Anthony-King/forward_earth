@@ -1661,11 +1661,15 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		}
 
 		planet = {
-			class = pc_asteroid
+			class = pc_barren
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
 			flags = { planetary_barrycenter }
+		
+			init_effect = {
+				prevent_anomaly = yes
+			}
 		
 			planet = {
 				name = "NAME_Aurora"
@@ -1904,11 +1908,15 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 		}
 
 		planet = {
-			class = pc_asteroid
+			class = pc_barren
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
 			flags = { planetary_barrycenter }
+		
+			init_effect = {
+				prevent_anomaly = yes
+			}
 	
 			planet = {
 				class = "pc_continental"
@@ -2179,6 +2187,10 @@ sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 60
 		size = 0
         flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Tau Ceti IV"
@@ -3583,12 +3595,16 @@ sol_neighbor_t3_eridani = {
 	}
 	
 	planet = {
-		class = "pc_asteroid"
+		class = pc_barren
 		orbit_distance = 80
 		orbit_angle = 200
 		size = 0
 		has_ring = no
 		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Eridani B"
@@ -3784,11 +3800,15 @@ sol_neighbor_t3_epsilon_indi = {
 	}
 
 	planet = {
-		class = pc_asteroid
+		class = pc_barren
 		orbit_distance = 160
 		orbit_angle = 125
 		size = 0
 		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Epsilon Indi B"
@@ -4701,12 +4721,16 @@ kobol_initializer = {
 	}
 	
 	planet = {
-		class = "pc_barren"
+		class = pc_barren
 		orbit_distance = 0
 		orbit_angle = 0
 		size = 0
 		has_ring = no
 		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 	
 		planet = {
 			name = "Kobol A"

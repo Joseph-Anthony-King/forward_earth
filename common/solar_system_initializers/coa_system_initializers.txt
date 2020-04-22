@@ -1536,6 +1536,10 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 60
 		size = 0
         flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Tau Ceti IV"
@@ -2945,12 +2949,16 @@ coa_sol_neighbor_t3_eridani = {
 	}
 	
 	planet = {
-		class = "pc_asteroid"
+		class = pc_barren
 		orbit_distance = 80
 		orbit_angle = 200
 		size = 0
 		has_ring = no
 		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Eridani B"
@@ -3146,11 +3154,15 @@ coa_sol_neighbor_t3_epsilon_indi = {
 	}
 
 	planet = {
-		class = pc_asteroid
+		class = pc_barren
 		orbit_distance = 160
 		orbit_angle = 125
 		size = 0
 		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
 
 		planet = {
 			name = "Epsilon Indi B"
