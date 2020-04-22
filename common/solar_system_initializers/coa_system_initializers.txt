@@ -1546,7 +1546,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			class = pc_ocean
 			orbit_distance = 10
 			orbit_angle = 60
-			size = 26
+			size = 25
 			has_ring = no
 			entity = "ocean_planet_01_entity"
 			
@@ -3023,7 +3023,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 90
-		size = 26
+		size = 25
 		has_ring = no
 		
 		init_effect = {
