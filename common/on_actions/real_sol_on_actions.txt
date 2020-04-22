@@ -43,12 +43,6 @@ on_yearly_pulse = {
 	}
 }
 
-#on_press_begin = {
-#	events = {
-#		real_sol.333
-#	}
-#}
-
 # Class check for Moon
 on_terraforming_complete = {
 	events = {
