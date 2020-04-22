@@ -465,7 +465,10 @@ tau_Ceti_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
-	asteroids_distance = 120
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
 
     planet = {
         name = "HD 10700"
@@ -799,7 +802,10 @@ Kepler_169_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
-	asteroids_distance = 120
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
 
     planet = {
         name = "Kepler-169"

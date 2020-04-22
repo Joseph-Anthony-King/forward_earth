@@ -162,7 +162,6 @@ deneb_system = {
 vultaumar_system = {
 	name = "NAME_Vultaumar"
 	class = "sc_b"
-	asteroids_distance = 0
 	flags = { vultaumar }
 	
 	planet = {
@@ -270,7 +269,10 @@ vultaumar_system = {
 yuhtaan_system = {
 	name = "NAME_Yuhtaan"
 	class = "sc_m"
-	asteroids_distance = 125
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
 	flags = { yuhtaan }
 	
 	planet = {
@@ -421,7 +423,10 @@ yuhtaan_system = {
 fen_habbanis_system = {
 	name = "NAME_Fen_Habbanis"
 	class = "sc_g"
-	asteroids_distance = 85
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 85
+	}
 	flags = { fen_habbanis }
 	
 	planet = {
@@ -518,7 +523,10 @@ fen_habbanis_system = {
 irass_system = {
 	name = "NAME_Irass"
 	class = "sc_f"
-	asteroids_distance = 125
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
 	flags = { irass }
 	
 	planet = {
