@@ -105,13 +105,13 @@ eta_cassiopeiae_system_initializer = {
 
 			planet = {
 				name = "NAME_Tithonus"
-				class = "pc_arid"
+				class = "pc_savannah"
 				orbit_distance = 0
 				orbit_angle = 180
 				size = 13
 				has_ring = no
 				modifiers = none
-				entity = "arid_planet_01_entity"
+				entity = "savannah_planet_03_entity"
 				flags = { planet_tithonus }
 				
 				init_effect = {

@@ -6,7 +6,13 @@
 @typeSix = 10
 @typeSeven = 20
 @typeEight = 18
-@typeNine = 3
+@typeNine = 18
+@typeTen = 2
+@typeEleven = 2
+@typeTwelve = 2
+@typeThirteen = 2
+@typeFourteen = 6
+@typeFifteen = 3
 
 ### type one binary planet system
 fe_type_one_binary_planet_system_initializer = {
@@ -87,11 +93,28 @@ fe_type_one_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type two binary planet system
@@ -173,11 +196,28 @@ fe_type_two_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type three binary planet system
@@ -259,11 +299,28 @@ fe_type_three_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type four binary planet system
@@ -345,11 +402,28 @@ fe_type_four_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type five binary planet system
@@ -370,6 +444,14 @@ fe_type_five_binary_planet_system_initializer = {
 	}
 
     planet = {
+		orbit_distance = 25
+		class = pc_molten
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+        count = { min = 0 max = 1 }
 		orbit_distance = 25
 		class = pc_molten
         size = { min = 5 max = 20 }
@@ -407,6 +489,7 @@ fe_type_five_binary_planet_system_initializer = {
     }
 
     planet = {
+        class = random
 		count = { min = 0 max = 1 }
 		orbit_distance = 20
 		orbit_angle = { min = 90 max = 270 }
@@ -426,6 +509,22 @@ fe_type_five_binary_planet_system_initializer = {
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type six binary planet system
@@ -460,9 +559,10 @@ fe_six_binary_planet_system_initializer = {
         size = { min = 21 max = 26 }
 
 		moon = {
+            class = random
 			count = { min = 0 max = 1 }
 			orbit_distance = { min = 12 max = 18 }
-			size = { min = 1 max = 16 }
+			size = { min = 5 max = 16 }
 		}
     }
 
@@ -505,6 +605,7 @@ fe_six_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
@@ -520,9 +621,10 @@ fe_six_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = pc_frozen
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
-			size = { min = 1 max = 8 }
+			size = { min = 1 max = 7 }
 		}
 	}
 }
@@ -569,9 +671,10 @@ fe_seven_binary_planet_system_initializer = {
         has_ring = no
 
 		moon = {
+            class = random
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
-			size = { min = 1 max = 16 }
+			size = { min = 5 max = 16 }
 		}
     }
 
@@ -614,11 +717,28 @@ fe_seven_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### type eight binary planet system
@@ -663,9 +783,10 @@ fe_eight_binary_planet_system_initializer = {
         has_ring = no
 
 		moon = {
+            class = random
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
-			size = { min = 1 max = 16 }
+			size = { min = 5 max = 16 }
 		}
     }
 
@@ -722,6 +843,7 @@ fe_eight_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
@@ -729,198 +851,8 @@ fe_eight_binary_planet_system_initializer = {
     }
 }
 
-### type nine binary planet system
-fe_nine_binary_planet_system_initializer = {
-    
-	class = sc_binary_8
-
-	usage = misc_system_init
-	usage_odds = 100
-	max_instances = @typeNine
-	
-	planet = {
-		class = pc_g_star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 27 max = 32 }
-		has_ring = no
-        satellite_naming_policy = upper_case_roman_numerals
-		
-		planet = {
-			class = "pc_gas_giant"
-			orbit_distance = 40
-			orbit_angle = 200
-			size = 30
-			has_ring = no
-            satellite_naming_policy = lower_case_latin_letters
-
-            moon = {
-                count = { min = 0 max = 1 }
-                orbit_distance = { min = 12 max = 15 }
-                size = { min = 1 max = 16 }
-            }	
-		}
-
-        planet = {
-            class = pc_barren
-            orbit_distance = { min = 30 max = 40 }
-            orbit_angle = { min = 90 max = 270 }
-            size = 0
-            flags = { planetary_barrycenter }
-            satellite_naming_policy = lower_case_latin_letters
-		
-            init_effect = {
-                prevent_anomaly = yes
-            }
-        
-            planet = {
-                class = pc_continental
-                orbit_distance = 10
-                orbit_angle = -90
-                size = { min = 17 max = 20 }
-                has_ring = no
-                modifiers = none
-            }
-
-            planet = {
-                class = pc_savannah
-                orbit_distance = 0
-                orbit_angle = 180
-                size = { min = 12 max = 16 }
-                has_ring = no
-                modifiers = none
-            }
-        }
-		
-		planet = {
-			class = "pc_gas_giant"
-			orbit_distance = { min = 30 max = 40 }
-			orbit_angle = 200
-			size = 30
-			has_ring = no
-            satellite_naming_policy = lower_case_latin_letters
-
-            moon = {
-                count = { min = 0 max = 1 }
-                orbit_distance = { min = 12 max = 15 }
-                size = { min = 1 max = 16 }
-            }	
-		}
-
-        planet = {
-            count = { min = 0 max = 3 }
-            orbit_distance = 30
-            class = random
-            size = { min = 5 max = 20 }
-            orbit_angle = { min = 90 max = 270 }
-        }
-	}
-
-    planet = {
-		class = pc_m_star
-		orbit_distance = 160
-		orbit_angle = { min = 90 max = 270 }
-        size = { min = 18 max = 20 }
-	}
-}
-
-### type ten binary planet system
-fe_ten_binary_planet_system_initializer = {
-    
-	class = sc_binary_9
-
-	usage = misc_system_init
-	usage_odds = 100
-	max_instances = @typeNine
-	
-	planet = {
-		class = pc_a_star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = { min = 27 max = 32 }
-		has_ring = no
-        satellite_naming_policy = upper_case_roman_numerals
-		
-		planet = {
-			class = "pc_gas_giant"
-			orbit_distance = 40
-			orbit_angle = 200
-			size = 30
-			has_ring = no
-            satellite_naming_policy = lower_case_latin_letters
-
-            moon = {
-                count = { min = 0 max = 1 }
-                orbit_distance = { min = 12 max = 15 }
-                size = { min = 1 max = 16 }
-            }	
-		}
-
-        planet = {
-            class = pc_barren
-            orbit_distance = { min = 30 max = 40 }
-            orbit_angle = { min = 90 max = 270 }
-            size = 0
-            flags = { planetary_barrycenter }
-            satellite_naming_policy = lower_case_latin_letters
-		
-            init_effect = {
-                prevent_anomaly = yes
-            }
-        
-            planet = {
-                class = pc_savannah
-                orbit_distance = 10
-                orbit_angle = -90
-                size = { min = 17 max = 20 }
-                has_ring = no
-                modifiers = none
-            }
-
-            planet = {
-                class = pc_arid
-                orbit_distance = 0
-                orbit_angle = 180
-                size = { min = 12 max = 16 }
-                has_ring = no
-                modifiers = none
-            }
-        }
-		
-		planet = {
-			class = "pc_gas_giant"
-			orbit_distance = { min = 30 max = 40 }
-			orbit_angle = 200
-			size = 30
-			has_ring = no
-            satellite_naming_policy = lower_case_latin_letters
-
-            moon = {
-                count = { min = 0 max = 1 }
-                orbit_distance = { min = 12 max = 15 }
-                size = { min = 1 max = 16 }
-            }	
-		}
-
-        planet = {
-            count = { min = 0 max = 3 }
-            orbit_distance = 30
-            class = random
-            size = { min = 5 max = 20 }
-            orbit_angle = { min = 90 max = 270 }
-        }
-	}
-
-    planet = {
-		class = pc_a_star
-		orbit_distance = 150
-		orbit_angle = { min = 90 max = 270 }
-        size = { min = 18 max = 22 }
-	}
-}
-
 ### type eight binary planet system
-fe_eleven_binary_planet_system_initializer = {
+fe_nine_binary_planet_system_initializer = {
     
 	class = "rl_starting_stars"
 
@@ -961,9 +893,10 @@ fe_eleven_binary_planet_system_initializer = {
         has_ring = no
 
 		moon = {
+            class = random
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
-			size = { min = 1 max = 16 }
+			size = { min = 5 max = 16 }
 		}
     }
 
@@ -1013,11 +946,622 @@ fe_eleven_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+}
+
+### type nine binary planet system
+fe_ten_binary_planet_system_initializer = {
+    
+	class = sc_binary_6
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeTen
+	
+	planet = {
+        count = 1
+		class = pc_g_star
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+		class = pc_m_star
+		orbit_distance = 0
+		orbit_angle = 100
+        size = { min = 18 max = 20 }
+		has_ring = no
+	}
+		
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = 40
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+        satellite_naming_policy = lower_case_latin_letters
+    
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    
+        planet = {
+            class = pc_continental
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_savannah
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 16 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+    
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        count = { min = 0 max = 3 }
+        orbit_distance = 30
+        class = random_non_colonizable
+        size = { min = 10 max = 20 }
+        orbit_angle = { min = 90 max = 270 }
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 5 max = 8 }
+        }
+    }
+}
+
+### type ten binary planet system
+fe_eleven_binary_planet_system_initializer = {
+    
+	class = sc_binary_5
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeEleven
+	
+	planet = {
+        count = 1
+		class = pc_a_star
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+        class = pc_a_star
+        orbit_distance = 0
+        orbit_angle = 100
+        size = { min = 18 max = 22 }
+		has_ring = no
+    }
+    
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = 40
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = pc_molten
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+        satellite_naming_policy = lower_case_latin_letters
+    
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    
+        planet = {
+            class = pc_arid
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_desert
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 16 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+    
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        count = { min = 0 max = 3 }
+        orbit_distance = 30
+        class = random_non_colonizable
+        size = { min = 10 max = 20 }
+        orbit_angle = { min = 90 max = 270 }
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 5 max = 8 }
+        }
+    }
+}
+
+### type eleven binary planet system
+fe_twelve_binary_planet_system_initializer = {
+    
+	class = sc_binary_7
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeTwelve
+	
+	planet = {
+        count = 1
+		class = pc_k_star
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+		class = pc_f_star
+		orbit_distance = 0
+		orbit_angle = 100
+        size = { min = 18 max = 20 }
+		has_ring = no
+	}
+		
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = 40
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+        satellite_naming_policy = lower_case_latin_letters
+    
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    
+        planet = {
+            class = pc_continental
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_continental
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 16 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+    
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        count = { min = 0 max = 3 }
+        orbit_distance = 30
+        class = random_non_colonizable
+        size = { min = 10 max = 20 }
+        orbit_angle = { min = 90 max = 270 }
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 5 max = 8 }
+        }
+    }
+}
+
+### type twelve binary planet system
+fe_thirteen_planet_system_initializer = {
+    
+	class = sc_binary_8
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeThirteen
+	
+	planet = {
+        count = 1
+		class = pc_g_star
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+		class = pc_f_star
+		orbit_distance = 0
+		orbit_angle = 100
+        size = { min = 18 max = 20 }
+		has_ring = no
+	}
+		
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = 40
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = pc_molten
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+        satellite_naming_policy = lower_case_latin_letters
+    
+        init_effect = {
+            prevent_anomaly = yes
+        }
+    
+        planet = {
+            class = pc_tropical
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_tropical
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 16 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+    
+    planet = {
+        class = "pc_gas_giant"
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = 200
+        size = 30
+        has_ring = no
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 1 max = 16 }
+        }	
+    }
+
+    planet = {
+        count = { min = 0 max = 3 }
+        orbit_distance = 30
+        class = random_non_colonizable
+        size = { min = 10 max = 20 }
+        orbit_angle = { min = 90 max = 270 }
+
+        moon = {
+            class = random_non_colonizable
+            count = { min = 0 max = 1 }
+            orbit_distance = { min = 12 max = 15 }
+            size = { min = 5 max = 8 }
+        }
+    }
+}
+
+### type six binary planet system
+fe_fourteen_binary_planet_system_initializer = {
+    
+	class = sc_binary_10
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeFourteen
+	
+	planet = {
+        count = 1
+		class = pc_a_star
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 27 max = 32 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+		class = pc_t_star
+		orbit_distance = 0
+		orbit_angle = 100
+        size = { min = 18 max = 20 }
+		has_ring = no
+	}
+
+    planet = {
+		orbit_distance = 25
+		class = pc_molten
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+		count = { min = 0 max = 1 }
+		orbit_distance = { min = 10 max = 20 }
+		class = pc_toxic
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+        count = { min = 1 max = 2 }
+        class = pc_gas_giant
+        orbit_distance = { min = 30 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 1 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+        class = pc_barren
+        orbit_distance = { min = 20 max = 40 }
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+    
+        planet = {
+            class = pc_arctic
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 17 max = 20 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_tundra
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 12 max = 16 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+
+    planet = {
+        count = { min = 1 max = 3 }
+        class = pc_gas_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 8 }
+		}
+	}
+}
+
+### type fifteen binary planet system
+fe_fifteen_binary_planet_system_initializer = {
+    
+	class = sc_pulsar
+
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = @typeFifteen
+	
+	planet = {
+        count = 1
+		class = pc_black_hole
+		orbit_distance = 35
+		orbit_angle = 1
+		size = { min = 10 max = 15 }
+		has_ring = no
+	}
+
+    planet = {
+        count = 1
+		class = pc_pulsar
+		orbit_distance = 0
+		orbit_angle = 100
+        size = { min = 15 max = 20 }
+		has_ring = no
+	}
+
+    planet = {
+        class = pc_barren
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = 0
+        flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+    
+        planet = {
+            class = pc_molten
+            orbit_distance = 10
+            orbit_angle = -90
+            size = { min = 12 max = 15 }
+            has_ring = no
+            modifiers = none
+        }
+
+        planet = {
+            class = pc_molten
+            orbit_distance = 0
+            orbit_angle = 180
+            size = { min = 10 max = 12 }
+            has_ring = no
+            modifiers = none
+        }
+    }
+
+    planet = {
+        count = { min = 0 max = 1 }
+		orbit_distance = 25
+		class = pc_molten
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+    planet = {
+        count = { min = 0 max = 2 }
+		orbit_distance = 25
+		class = pc_barren
+        size = { min = 5 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+	}
 }
 
 ### random empire one binary planet system
@@ -1093,11 +1637,28 @@ fe_random_empire_one_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### random empire two binary planet system
@@ -1181,11 +1742,28 @@ fe_random_empire_two_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### random pre ftl one binary planet system
@@ -1274,11 +1852,11 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
 				prevent_anomaly = yes
                 random_list = {
                     # Early Space Age
-                    20 = {
+                    15 = {
                         generate_late_primitives_on_planet = yes		
                     }
                     # Industrial Age
-                    15 = {
+                    20 = {
                         generate_early_primitives_on_planet = yes
                     }
                     # Medieval
@@ -1302,11 +1880,28 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
 
 ### random pre ftl two binary planet system
@@ -1403,11 +1998,11 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
 				prevent_anomaly = yes
                 random_list = {
                     # Early Space Age
-                    20 = {
+                    15 = {
                         generate_late_primitives_on_planet = yes		
                     }
                     # Industrial Age
-                    15 = {
+                    20 = {
                         generate_early_primitives_on_planet = yes
                     }
                     # Medieval
@@ -1431,9 +2026,26 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
 		}
     }
+
+    planet = {
+		count = { min = 0 max = 1 }
+        class = pc_frozen
+		orbit_distance = { min = 10 max = 20 }
+		orbit_angle = { min = 90 max = 270 }
+        size = { min = 8 max = 20 }
+        has_ring = yes
+
+		moon = {
+            class = pc_frozen
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 10 max = 12 }
+			size = { min = 1 max = 7 }
+		}
+	}
 }
