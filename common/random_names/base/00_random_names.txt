@@ -6004,6 +6004,7 @@ nebula_names = {
 	"Tarantula Nebula"
 	"Trifid Nebula"
 	"Witch Head Nebula"
+	"Mutara Nebula"
 	"Messier 43"
 	"Messier 78"
 	"NGC 248"
