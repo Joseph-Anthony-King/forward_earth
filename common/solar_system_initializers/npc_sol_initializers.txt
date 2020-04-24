@@ -1887,7 +1887,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				modifiers = none
 				entity = "continental_planet_01_entity"
-				flags = { coa_home }
+				flags = { coa_home planet_aurora }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -1903,6 +1903,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				modifiers = none
 				entity = "savannah_planet_11_entity"
+				flags = { planet_tithonus }
 				
 				init_effect = {
 					prevent_anomaly = yes
