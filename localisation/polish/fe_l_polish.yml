@@ -24,4 +24,4 @@
  dal_lokkur_system_initializer_NAME:0 "System Dal-Lokkur"
  dal_lokkur_system_initializer_DESC:0 "System początkowy dla Dyrekcji Lokken.\n\n$system_initializer_DESC$"
  kel_azak_system_initializer_NAME:0 "System Kel-Azak"
- kel_azak_system_initializer_DESC:0 "System startowy dla Republiki Kel-Azann.\n\n$system_initializer_DESC$"
+ kel_azak_system_initializer_DESC:0 "System startowy dla Republiki Kel-Azaan.\n\n$system_initializer_DESC$"

@@ -24,4 +24,4 @@
  dal_lokkur_system_initializer_NAME:0 "Sistema Dal-Lokkur"
  dal_lokkur_system_initializer_DESC:0 "Sistema de partida para a Direção Lokken.\n\n$system_initializer_DESC$"
  kel_azak_system_initializer_NAME:0 "Sistema Kel-Azak"
- kel_azak_system_initializer_DESC:0 "Sistema de partida para a República Kel-Azann.\n\n$system_initializer_DESC$"
+ kel_azak_system_initializer_DESC:0 "Sistema de partida para a República Kel-Azaan.\n\n$system_initializer_DESC$"
