@@ -712,7 +712,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "realsol_new_moon_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_luna }
 		}
 	}
 	

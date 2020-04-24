@@ -1170,7 +1170,7 @@ event = {
     }
 }
 
-### fe.6 - Set barycenters and spawn deneb system
+### fe.6 - Set barycenters
 event = {
     id = fe.6
     hide_window = yes
@@ -1187,9 +1187,59 @@ event = {
     }
 }
 
-### fe.7 - Revert Eta Cassiopeiae to default names if unpopulated
+### fe.7 - Set Earth to nuked if unpopulated and CoA instantiated
 event = {
 	id = fe.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_2 }
+                    any_country = { 
+                        NOT = {
+                            OR = {
+                                any_country = { has_country_flag = human_1 } 
+                                any_country = { has_country_flag = custodian_faction }
+                            }
+                        } 
+                    }
+                    has_planet_flag = planet_earth
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+    }
+}
+
+### fe.8 - Nuke Earth for ICARUS faction
+event = {
+    id = fe.8
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = icarus_faction }
+                    has_planet_flag = planet_earth
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+    }
+}
+
+### fe.9 - Revert Eta Cassiopeiae to default names if unpopulated
+event = {
+	id = fe.9
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1351,9 +1401,9 @@ event = {
     }
 }
 
-### fe.8 - Set Earth to nuked if unpopulated and CoA instantiated
+### fe.10 - Revert Sol to default names if humans are below space age
 event = {
-	id = fe.8
+	id = fe.10
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1362,79 +1412,281 @@ event = {
         random_planet = {
             limit = {
                 AND = {
-                    any_country = { has_country_flag = human_2 }
-                    any_country = { 
-                        NOT = {
-                            OR = {
-                                any_country = { has_country_flag = human_1 } 
-                                any_country = { has_country_flag = custodian_faction }
-                            }
-                        } 
-                    }
-                    has_planet_flag = planet_earth
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_mercury
                 }                
             }
-            change_pc = pc_nuked
-            set_planet_entity = { entity = "nuked_planet_earth_entity" }
-        }
-    }
-}
-
-event = {
-    id = fe.9
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-
-        random_system = {
-            limit = {
-                AND = {
-                    has_star_flag = une_npc
-                    any_country = { has_country_flag = human_1 }
-                }
-            }
-
-            create_starbase = {
-                size = starbase_starport
-                module = shipyard
-                owner = UNoE_1
-            }
-        }
-    }
-}
-
-event = {
-    id = fe.10
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-
-        random_system = {
-            limit = {
-                AND = {
-                    has_star_flag = une_npc
-                    any_country = { has_country_flag = icarus_faction }
-                }
-            }
-
-            create_starbase = {
-                size = starbase_starport
-                module = shipyard
-                owner = icarus_npc
-            }
+            set_name = "Sol I"
         }
 
         random_planet = {
             limit = {
                 AND = {
-                    any_country = { has_country_flag = icarus_faction }
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_venus
+                }                
+            }
+            set_name = "Sol II"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
                     has_planet_flag = planet_earth
                 }                
             }
-            change_pc = pc_nuked
-            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+            set_name = "Sol III"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_luna
+                }                
+            }
+            set_name = "Sol IIIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_mars
+                }                
+            }
+            set_name = "Sol IV"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_phobos
+                }                
+            }
+            set_name = "Sol IVa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_deimos
+                }                
+            }
+            set_name = "Sol IVb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_ceres
+                }                
+            }
+            set_name = "TXC-6735"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_pallas
+                }                
+            }
+            set_name = "RTD-4377"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_juno
+                }                
+            }
+            set_name = "YKQ-9137"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_vesta
+                }                
+            }
+            set_name = "PLM-4371"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_jupiter
+                }                
+            }
+            set_name = "Sol V"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_io
+                }                
+            }
+            set_name = "Sol Va"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_europa
+                }                
+            }
+            set_name = "Sol Vb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_ganymede
+                }                
+            }
+            set_name = "Sol Vc"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_callisto
+                }                
+            }
+            set_name = "Sol Vd"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_saturn
+                }                
+            }
+            set_name = "Sol VI"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_rhea
+                }                
+            }
+            set_name = "Sol VIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_titan
+                }                
+            }
+            set_name = "Sol VIb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_uranus
+                }                
+            }
+            set_name = "Sol VII"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_titania
+                }                
+            }
+            set_name = "Sol VIIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_oberon
+                }                
+            }
+            set_name = "Sol VIIb"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_neptune
+                }                
+            }
+            set_name = "Sol VIII"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_triton
+                }                
+            }
+            set_name = "Sol VIIIa"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_pluto
+                }                
+            }
+            set_name = "DIS-7865"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_makemake
+                }                
+            }
+            set_name = "PUR-1436"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = planet_haumea
+                }                
+            }
+            set_name = "LHR-0978"
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = human_1 }
+                    has_planet_flag = NAME_20000_Varuna
+                }                
+            }
+            set_name = "WXY-7825"
         }
     }
 }
