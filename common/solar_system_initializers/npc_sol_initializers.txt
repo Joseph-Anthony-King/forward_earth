@@ -677,7 +677,7 @@ npc_sol_system_initializer = {
 						set_owner = last_created_country		
 											
 						while = {
-							count = 1
+							count = 9
 							create_pop = {
 								species = last_created
 							}					
