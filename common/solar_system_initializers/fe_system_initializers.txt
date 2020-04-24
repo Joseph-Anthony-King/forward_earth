@@ -18,7 +18,7 @@ space_age_sol_system_initializer = {
 		radius = 297
 	}
 
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol une_npc }
 	
 	usage = custom_empire
 
@@ -160,7 +160,7 @@ space_age_sol_system_initializer = {
 						while = {
 							count = 23
 							create_pop = {
-								species = event_target:human_species
+								species = last_created
 							}
 						}
 						set_owner = last_created_country
@@ -611,22 +611,6 @@ space_age_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
-	}
-
-	init_effect = {
-
-		if = {
-			random_country = {
-				limit = {
-					has_country_flag = human_starbase
-				}
-				create_starbase = {
-					size = starbase_starport
-					module = shipyard
-					owner = last_created_country
-				}
-			}
-		}
 	}
 	
 	neighbor_system = {
@@ -1695,7 +1679,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				size = 13
 				has_ring = no
 				modifiers = none
-				entity = "savannah_planet_03_entity"
+				entity = "savannah_planet_11_entity"
 				flags = { planet_tithonus }
 				
 				init_effect = {
@@ -2852,19 +2836,11 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	}
 	
 	planet = {
-		class = "pc_barren"
+		class = "pc_savannah"
 		orbit_distance = 35
 		orbit_angle = 120
 		size = 16
 		has_ring = no
-		entity = "barren_planet_01_entity"
-		
-		init_effect = {
-			add_modifier = {
-				modifier = "terraforming_candidate"
-				days = -1
-			}
-		}
 	}
 	
 	planet = {

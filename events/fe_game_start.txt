@@ -1375,3 +1375,27 @@ event = {
         }
     }
 }
+
+event = {
+    id = fe.9
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+
+        random_system = {
+            limit = {
+                AND = {
+                    has_star_flag = une_npc
+                    any_country = { has_country_flag = human_1 }
+                }
+            }
+
+            create_starbase = {
+                size = starbase_starport
+                module = shipyard
+                owner = UNoE_1
+            }
+        }
+    }
+}

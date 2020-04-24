@@ -926,6 +926,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 90
 		size = 13
 		has_ring = no
+		entity = "barren_planet_01_entity"
 		
 		init_effect = {
 			add_modifier = {

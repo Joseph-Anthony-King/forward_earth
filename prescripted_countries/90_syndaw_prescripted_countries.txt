@@ -162,9 +162,9 @@ custodianship = {
 	}
 }
 
-# Determined Exterminator - I.C.A.R.U.S.
+# Determined Exterminator - ICARUS
 icarus = {
-	name = "I.C.A.R.U.S."
+	name = "ICARUS"
 	adjective = "Autodrone"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
@@ -227,7 +227,7 @@ icarus = {
 	
 	ruler = {
 		gender=female
-		name="I.C.A.R.U.S."
+		name="ICARUS"
 		portrait="sd_hum_robot"
 		texture=3
 		hair=0

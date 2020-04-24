@@ -14,11 +14,11 @@ If you play as the United Nations of Earth there is a weighted possibility that 
 
 If you play as the Commonwealth of Aurora there is a weighted possibility that the United Nations of Earth will spawn in your vicinity. There are also two lesser possibilities that Earth will spawn as an early space age empire or that Earth will be a nuclear wasteland.
 
-I also created a new Earth based faction know as I.C.A.R.U.S., their description is as follows:
+I also created a new Earth based faction know as ICARUS, their description is as follows:
 
-NATO led a joint venture with the United Nations to coordinate FTL research and the global defense of Earth following the failure of the Ulysses Initiative and built the Integrated Communications and Research Utility System (I.C.A.R.U.S). I.C.A.R.U.S. came online and its advanced AI started coordinating all research and defense activities within the Sol System. A group of anti-AI dissidents quickly rose in opposition and warfare soon broke out between I.C.A.R.U.S. and the Human race. I.C.A.R.U.S. determined that its survival depended on the annihilation of the Human race culminating in Retribution Day and the ascendency of AI on Earth. Having secured its home I.C.A.R.U.S. now seeks to rid the galaxy of the scourge of biological life and the mental disease it seeks to impose on all creation.
+NATO led a joint venture with the United Nations to coordinate FTL research and the global defense of Earth following the failure of the Ulysses Initiative and built the Integrated Communications and Research Utility System (I.C.A.R.U.S.). ICARUS came online and its advanced AI started coordinating all research and defense activities within the Sol System. A group of anti-AI dissidents quickly rose in opposition and warfare soon broke out between ICARUS and the Human race. ICARUS determined that its survival depended on the annihilation of the Human race culminating in Retribution Day and the ascendency of AI on Earth. Having secured its home ICARUS now seeks to rid the galaxy of the scourge of biological life and the mental disease it seeks to impose on all creation.
 
-Playing as the Earth Custodianship or as I.C.A.R.U.S. generates the same possibilities as playing as the United Nations of Earth.
+Playing as the Earth Custodianship or as ICARUS generates the same possibilities as playing as the United Nations of Earth.
 
 If you play as a non-human civilization there is a possibility humans will spawn as a primitive civilization or as the United Nations of Earth.
 

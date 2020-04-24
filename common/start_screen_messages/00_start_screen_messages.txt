@@ -913,7 +913,7 @@ part = {
 	}
 }
 
-# I.C.A.R.U.S.
+# ICARUS
 part = {
 	location = 0
 	localization = "START_SCREEN_ICARUS"
@@ -923,7 +923,7 @@ part = {
 	}
 }
 
-# I.C.A.R.U.S.
+# Earth Custondianship
 part = {
 	location = 0
 	localization = "START_SCREEN_CUSTODIANSHIP"

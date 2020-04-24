@@ -9,11 +9,12 @@ on_game_start = {
 		fe.6
 		fe.7
 		fe.8
+		fe.9
 	}
 }
 
 empire_init_add_technologies = {
 	events = {
-		fe.9
+		fe.10
 	}
 }

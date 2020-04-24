@@ -111,7 +111,7 @@ eta_cassiopeiae_system_initializer = {
 				size = 13
 				has_ring = no
 				modifiers = none
-				entity = "savannah_planet_03_entity"
+				entity = "savannah_planet_11_entity"
 				flags = { planet_tithonus }
 				
 				init_effect = {
