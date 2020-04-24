@@ -9,7 +9,7 @@
  sol_with_eta_cassiopeiae_system_initializer_DESC:0 "Le système solaire de départ du Communauté d'Aurora sans système solaire.\n\n$system_initializer_DESC$"
  uncolonized_eta_cassiopeiae_system_initializer_NAME:0 "Non colonisé Eta Cassiopeiae System"
  uncolonized_eta_cassiopeiae_system_initializer_DESC:0 "Un système Eta Cassiopeiae non coloré sans système Sol.\n\n$system_initializer_DESC$"
- eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae"
+ eta_cassiopeiae_system_initializer_NAME:0 "Système Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "Le système solaire de départ du Communauté d'Aurora.\n\n$system_initializer_DESC$"
  icarus_sol_system_initializer_NAME:0 "ICARUS Sol Système"
  icarus_sol_system_initializer_DESC:0 "Système basé sur le système solaire de la Terre pour le ICARUS faction.\n\n$system_initializer_DESC$"

@@ -20,7 +20,7 @@ icarus_sol_system_initializer = {
 
 	flags = { empire_home_system sol_system sol }
 	
-	usage = custom_empire
+	#usage = custom_empire
 
 	init_effect = {
 		every_neighbor_system = {
@@ -374,7 +374,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 	
 	flags = { empire_home_system eta_cassiopeiae_system }
 	
-	usage = custom_empire
+	#usage = custom_empire
 
 	init_effect = {
 		every_neighbor_system = {
@@ -636,7 +636,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 	
 	flags = { empire_home_system eta_cassiopeiae_system }
 	
-	usage = custom_empire
+	#usage = custom_empire
 	
 	planet = {
 		name = "Eta Cassiopeiae A"

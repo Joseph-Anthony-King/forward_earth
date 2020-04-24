@@ -9,7 +9,7 @@
  sol_with_eta_cassiopeiae_system_initializer_DESC:0 "Da Comunidade de Aurora sistema solar inicial sem o sistema Sol.\n\n$system_initializer_DESC$"
  uncolonized_eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae não colonizado"
  uncolonized_eta_cassiopeiae_system_initializer_DESC:0 "Um sistema Eta Cassiopeiae não colonizado sem o sistema Sol.\n\n$system_initializer_DESC$"
- eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae"
+ eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "O sistema solar inicial de Comunidade de Aurora.\n\n$system_initializer_DESC$"
  icarus_sol_system_initializer_NAME:0 "ICARUS Sistema Sol"
  icarus_sol_system_initializer_DESC:0 "Sistema modelado segundo o sistema solar da Terra para o ICARUS facção.\n\n$system_initializer_DESC$"

@@ -9,7 +9,7 @@
  sol_with_eta_cassiopeiae_system_initializer_DESC:0 "Das Solarsystem des Staatenbund der Menschen ohne das Sol-System.\n\n$system_initializer_DESC$"
  uncolonized_eta_cassiopeiae_system_initializer_NAME:0 "Nicht kolonisiert Eta Cassiopeiae-System"
  uncolonized_eta_cassiopeiae_system_initializer_DESC:0 "Ein unkolonisiertes Eta Cassiopeiae-System ohne das Sol-System.\n\n$system_initializer_DESC$"
- eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae"
+ eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae System"
  eta_cassiopeiae_system_initializer_DESC:0 "Die Staatenbund der Aurora's solaranlage starten.\n\n$system_initializer_DESC$"
  icarus_sol_system_initializer_NAME:0 "ICARUS Sol-System"
  icarus_sol_system_initializer_DESC:0 "System modelliert nach dem Sonnensystem der Erde für die ICARUS fraktion.\n\n$system_initializer_DESC$"
