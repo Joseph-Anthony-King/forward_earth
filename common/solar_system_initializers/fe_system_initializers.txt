@@ -2608,7 +2608,7 @@ sol_neighbor_t3_epsilon_indi = {
 }
 
 # Deneb System
-deneb_system = {
+npc_deneb_system = {
 	name = "NAME_Deneb"
 	class = "sc_a"
 	asteroid_belt = {

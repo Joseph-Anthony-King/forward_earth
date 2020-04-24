@@ -514,6 +514,7 @@ npc_sol_system_initializer = {
 							set_graphical_culture = industrial_01
 							set_country_flag = early_space_age
 							set_country_flag = humans_early_space_age
+							set_country_flag = human_1
 							set_primitive_age = early_space_age
 						}
 						set_owner = last_created_country
@@ -598,6 +599,7 @@ npc_sol_system_initializer = {
 							set_graphical_culture = industrial_01
 							set_country_flag = machine_age
 							set_country_flag = humans_machine_age
+							set_country_flag = primitive_humans
 							set_primitive_age = machine_age
 						}
 						set_owner = last_created_country
@@ -671,6 +673,7 @@ npc_sol_system_initializer = {
 							set_graphical_culture = preindustrial_01
 							set_country_flag = late_medieval_age
 							set_country_flag = humans_late_medieval_age
+							set_country_flag = primitive_humans
 							set_primitive_age = late_medieval_age
 						}
 						
@@ -1015,10 +1018,6 @@ npc_sol_system_initializer = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "npc_sol_neighbor_t1_2"
-	}
-	neighbor_system = {
-		distance = { min = 50 max = 60 }	
-		initializer = "npc_sol_with_deneb_system_initializer"
 	}
 }
 

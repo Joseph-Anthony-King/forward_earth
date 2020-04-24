@@ -1204,6 +1204,7 @@ event = {
                             OR = {
                                 any_country = { has_country_flag = human_1 } 
                                 any_country = { has_country_flag = custodian_faction }
+                                any_country = { has_country_flag = primitive_humans }
                             }
                         } 
                     }

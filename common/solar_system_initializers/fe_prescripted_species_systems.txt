@@ -851,7 +851,7 @@ kel_azak_system_initializer = {
 		}
 	}
 	
-	flags = { empire_home_system deneb_system }
+	flags = { empire_home_system }
 	
 	usage = custom_empire
 	
@@ -1767,7 +1767,7 @@ npc_kel_azak_system_initializer = {
 		}
 	}
 	
-	flags = { empire_home_system deneb_system }
+	flags = { empire_home_system }
 	
 	planet = {
 		name = "PRESCRIPTED_system_name_kel_azaan"
