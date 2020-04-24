@@ -1,0 +1,3752 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+@minJumps = 8
+@maxJumps = 9
+
+### Sol System
+npc_sol_system_initializer = {
+	name = "NAME_Sol"
+	
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 297
+	}
+
+	usage = misc_system_init
+
+	usage_odds = {
+		base = 0
+		modifier = {
+			NOT = { any_system = { has_star_flag = sol } }
+			add = 99999
+		}
+	}
+
+	max_instances = 1
+
+	flags = { sol_system sol }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	planet = {
+		name = "NAME_Sol"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Mercury"
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+		entity = "barren_planet_mercury_entity"
+	}
+	
+	planet = {
+		name = "NAME_Venus"
+		class = "pc_toxic"
+		orbit_distance = 25
+		orbit_angle = 125
+		size = 16
+		has_ring = no
+		entity = "toxic_planet_venus_entity"
+		flags = { realsol_venus }
+	}
+	
+	planet = {
+		name = "NAME_Earth"
+		class = "pc_continental"
+		orbit_distance = 25
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		entity = "continental_planet_earth_entity"
+		modifiers = none
+		flags = { planet_earth }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			if = {
+				random_list = {
+					# ICARUS
+					10 = {
+						generate_empire_home_planet = yes
+
+						create_species = {
+							name = "Autodrone"
+							plural = "Autodrones"
+							class = "MACHINE"
+							portrait = "sd_hum_robot"
+							homeworld = THIS
+							traits = {
+								trait = "trait_machine_unit"
+								trait="trait_machine_unit"
+								trait="trait_robot_logic_engines"
+								trait="trait_robot_mass_produced"
+								trait="trait_robot_luxurious"
+							}
+						}
+
+						create_country = {
+							name = "ICARUS"
+							name_list = "MACHINE4"
+
+							room = "machine_room"
+
+							ship_prefix = "ICARUS"
+
+							authority = "auth_machine_intelligence"
+
+							civics = {
+								civic = civic_machine_terminator
+								civic = civic_machine_warbots
+							}
+							government = gov_machine_terminator
+
+							species = last_created
+							ethos = {
+								ethic = "ethic_gestalt_consciousness"
+							}
+
+							flag = {
+								icon={
+									category = "human"
+									file = "flag_human_nato.dds"
+								}
+								background = {
+									category = "backgrounds"
+									file = "00_solid.dds"
+								}
+								colors = {
+									"dark_blue"
+									"black"
+									"null"
+									"null"
+								}
+							}
+							type = default
+							effect = {
+								add_resource = {
+									minerals = 200
+									energy = 200
+									food = 200
+									alloys = 100
+									consumer_goods = 100
+									influence = 100
+								}
+							}
+						}
+
+						last_created_country = {
+							set_graphical_culture = ai_ship_set_01
+							set_country_flag = icarus_faction
+							set_country_flag = human_1
+							save_global_event_target_as = icarus_npc
+						}
+
+						while = {
+							count = 23
+							create_pop = {
+								species = last_created
+								ethic = "ethic_gestalt_consciousness"
+							}
+						}
+						set_owner = last_created_country
+						set_capital = yes
+						add_district = district_nexus
+						add_district = district_nexus
+						add_district = district_nexus
+						add_district = district_mining
+						add_district = district_mining
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_building = building_machine_capital
+						add_building = building_maintenance_depot
+						add_building = building_research_lab_1
+						add_building = building_foundry_1
+						add_building = building_machine_assembly_plant
+
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_gestalt_consciousness"
+							}
+						}
+
+						create_army = {
+							name = "1st Fortification Assignment"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Fortification Assignment"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						system_star = {
+
+							#science
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = science
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+
+									owner = {
+										create_leader = {
+											type = scientist
+											sub_type = survey
+											name = random
+											species = owner_main_species
+										}
+									}
+									set_leader = last_created_leader
+								}
+							}
+
+							#constructor
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = constructor
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+								}
+							}
+
+							#military
+							create_fleet = {
+								set_take_point = yes
+								effect = {
+									set_owner = last_created_country
+
+									while = {
+										count = 3
+										create_ship = {
+											name = random
+											random_existing_design = corvette
+										}
+									}
+
+									set_location = PREV
+								}
+							}
+						}
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Space Age
+					40 = {
+						generate_empire_home_planet = yes
+
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"
+								trait = "trait_wasteful"
+							}
+						}
+
+						create_country = {
+							name = "United Nations of Earth"
+							name_list = "HUMAN1"
+
+							room = "personality_federation_builders_room"
+
+							ship_prefix = "UNS"
+
+							authority = "auth_democratic"
+
+							civics = {
+								civic = civic_beacon_of_liberty
+								civic = civic_idealistic_foundation
+							}
+							government = gov_representative_democracy
+
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = default
+							effect = {
+								add_resource = {
+									minerals = 200
+									energy = 200
+									food = 200
+									alloys = 100
+									consumer_goods = 100
+									influence = 100
+								}
+							}
+						}
+
+						last_created_country = {
+							set_graphical_culture = css_fedbuild_02
+							set_country_flag = human_1
+							save_global_event_target_as = UNoE_1
+						}
+
+						while = {
+							count = 23
+							create_pop = {
+								species = last_created
+							}
+						}
+						set_owner = last_created_country
+						set_capital = yes
+						add_district = district_city
+						add_district = district_city
+						add_district = district_city
+						add_district = district_city
+						add_district = district_farming
+						add_district = district_farming
+						add_district = district_farming
+						add_district = district_mining
+						add_district = district_mining
+						add_district = district_generator
+						add_district = district_generator
+						add_building = building_capital
+						add_building = building_research_lab_1
+						add_building = building_foundry_1
+						add_building = building_factory_1
+
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+						}
+
+						create_army = {
+							name = "1st Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Planetary Guard"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						system_star = {
+
+							#science
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = science
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+
+									owner = {
+										create_leader = {
+											type = scientist
+											sub_type = survey
+											name = random
+											species = owner_main_species
+										}
+									}
+									set_leader = last_created_leader
+								}
+							}
+
+							#constructor
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = constructor
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+								}
+							}
+
+							#military
+							create_fleet = {
+								set_take_point = yes
+								effect = {
+									set_owner = last_created_country
+
+									while = {
+										count = 3
+										create_ship = {
+											name = random
+											random_existing_design = corvette
+										}
+									}
+
+									set_location = PREV
+								}
+							}
+						}
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Early Space Age
+					25 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"
+								trait = "trait_wasteful"
+							}
+						}
+
+						create_country = {
+							name = "United Nations"
+							authority = random
+							day_zero_contact = no
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_une.dds"
+								}
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+							}
+							type = primitive
+						}
+
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = early_space_age
+							set_country_flag = humans_early_space_age
+							set_primitive_age = early_space_age
+						}
+						set_owner = last_created_country
+
+						create_primitive_blockers = yes
+
+						create_fleet = {
+							name = "NAME_ISS_II"
+							effect = {
+								set_owner = last_created_country
+								create_ship = {
+									name = "NAME_ISS_II"
+									design = "NAME_Space_Station"
+								}
+								set_location = PREV
+							}
+						}
+
+						while = {
+							count = 15
+							create_pop = {
+								species = last_created
+							}
+						}
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
+					}
+					# Industrial Age
+					10 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+							homeworld = this
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_materialist"
+								ethic = "ethic_fanatic_militarist"
+							}
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_7.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "circle.dds"
+								}
+								colors={
+									"dark_blue"
+									"red"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = machine_age
+							set_country_flag = humans_machine_age
+							set_primitive_age = machine_age
+						}
+						set_owner = last_created_country
+						
+						create_primitive_blockers = yes
+		
+						while = {
+							count = 10
+							create_pop = {
+								species = last_created
+							}					
+						}
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Medieval
+					10 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_landed_nobility
+								civic = civic_flat_world_theory
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon = {
+									category = "ornate"
+									file = "flag_ornate_11.dds"
+								}
+								background = {
+									category = "backgrounds"
+									file = "00_solid.dds"
+								}
+								colors = {
+									"dark_blue"
+									"dark_blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = late_medieval_age
+							set_country_flag = humans_late_medieval_age
+							set_primitive_age = late_medieval_age
+						}
+						
+						set_owner = last_created_country		
+											
+						while = {
+							count = 1
+							create_pop = {
+								species = last_created
+							}					
+						}
+						add_building = building_stone_palace
+						
+						while = {
+							count = 3
+							create_army = {
+								name = "NAME_Feudal_Levies"
+								owner = last_created
+								species = last_created
+								type = "primitive_army"
+							}
+						}
+						
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# No Humans
+					5 = {}
+				}
+			}
+		}
+		
+		moon = {
+			name = "NAME_Luna"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+			entity = "realsol_new_moon_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_Mars"
+		class = "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 13
+		has_ring = no
+		entity = "barren_planet_new_mars_entity"
+		anomaly = "terraforming_candidate_category"
+		flags = { planet_mars }
+		
+		moon = {
+			name = "NAME_Phobos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 6
+			orbit_angle = 40
+			has_ring = no
+			entity = "phobos_entity"
+			flags = { planet_earth_moon }
+		}
+		
+		moon = {
+			name = "NAME_Deimos"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 2
+			orbit_angle = 40
+			has_ring = no
+			entity = "deimos_entity"
+			flags = { planet_earth_moon }
+		}
+	}
+	
+	planet = {
+		name = "NAME_1_Ceres"
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		entity = "ceres_entity"
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_2_Pallas"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_3_Juno"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_4_Vesta"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_Jupiter"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = -160
+		size = 35
+		has_ring = no
+		entity = "gas_giant_jupiter_entity"
+		change_orbit = 6
+		
+		moon = {
+			name = "NAME_Io"
+			class = "pc_molten"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 110
+			has_ring = no
+			entity = "moon_jup_io_entity"
+		}
+		moon = {
+			name = "NAME_Europa"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 2.5
+			orbit_angle = 10
+			has_ring = no
+			entity = "moon_jup_europa_entity"
+		}
+		moon = {
+			name = "NAME_Ganymede"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 2.5
+			orbit_angle = 80
+			has_ring = no
+			entity = "moon_jup_ganymede_entity"
+		}
+		moon = {
+			name = "NAME_Callisto"
+			class = "pc_frozen"
+			size = 7
+			orbit_distance = 2.5
+			orbit_angle = -155
+			has_ring = no
+			entity = "moon_jup_callisto_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Saturn"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		entity = "gas_giant_saturn_entity"
+		change_orbit = 7
+		
+		moon = {
+			name = "NAME_Rhea"
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "rhea_entity"
+		}
+		
+		moon = {
+			name = "NAME_Titan"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 10
+			orbit_angle = 180
+			has_ring = no
+			entity = "moon_sat_titan_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Uranus"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 20
+		has_ring = no
+		entity = "gas_giant_uranus_entity"
+		
+		moon = {
+			name = "NAME_Titania"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+			entity = "titania_entity"
+		}		
+		moon = {
+			name = "NAME_Oberon"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+			entity = "oberon_entity"
+		}
+	}
+	
+	planet = {
+		name = "NAME_Neptune"
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = -195
+		size = 20
+		has_ring = no
+		entity = "gas_giant_neptune_entity"
+		change_orbit = 4
+		
+		moon = {
+			name = "NAME_Triton"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 7
+			orbit_angle = 115
+			entity = "triton_entity"
+			has_ring = no
+		}
+	}
+
+	planet = {
+		name = "NAME_134340_Pluto"
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+		entity = "realsol_pluto_entity"
+	}
+
+	planet = {
+		name = "NAME_136472_Makemake"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_136108_Haumea"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_20000_Varuna"
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies = 0 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t1_no_guaranteed_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t1_second_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies < 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t1_no_guaranteed_second_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }	
+		initializer = "npc_sol_with_deneb_system_initializer"
+	}
+}
+
+# Neighbor Tier 1 First Colony
+npc_sol_neighbor_t1_first_colony = {	
+	name = "NAME_Alpha_Centauri"
+	class = sc_trinary_1
+	flags = { neighbor_t1_first_colony }
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Alpha Centauri B"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+
+    	planet = {
+    		name = "Alpha Centauri B I"
+    		class = "pc_molten"
+    		orbit_distance = 25
+    		orbit_angle = 125
+    		size = 16
+    		has_ring = no
+    	}
+
+    	planet = {
+    		name = "Alpha Centauri B II"
+    		orbit_distance = 25
+    		orbit_angle = 120
+    		class = "pc_continental"
+    		size = 16
+    		has_ring = no
+    		entity = "continental_planet_01_entity"
+    		moon = {
+    			name = "Alpha Centauri B IIa"
+    			class = "pc_barren_cold"
+    			size = 1
+    			orbit_distance = 7
+    			has_ring = no
+    		}
+
+    		moon = {
+    			name = "Alpha Centauri B IIb"
+    			class = "pc_barren_cold"
+    			size = 2
+    			orbit_distance = 4
+    			has_ring = no
+    		}
+    	}
+
+      	planet = {
+      		name = "ACB-100"
+      		class = "pc_asteroid"
+      		orbit_distance = 50
+      		orbit_angle = -210
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-200"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = -95
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-300"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = 285
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-400"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = -80
+      		size = 5
+      		has_ring = no
+      	}
+	}
+
+	planet = {
+		name = "Alpha Centauri A"
+		class = "pc_g_star"
+		orbit_distance = 275
+		orbit_angle = 0
+		size = 35
+		has_ring = no
+
+		planet = {
+			name = "Alpha Centauri A I"
+			class = "pc_molten"
+			orbit_distance = 40
+			orbit_angle = 90
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Alpha Centauri A II"
+			class = "pc_toxic"
+			orbit_distance = 20
+			orbit_angle = 270
+			size = 15
+			has_ring = yes
+			entity = "toxic_planet_15_entity"
+		}
+
+	}
+
+	planet = {
+		name = "Proxima Centauri"
+		class = "pc_m_star"
+		orbit_distance = 75
+		orbit_angle = 270
+		size = 15
+		has_ring = no
+		change_orbit = 4
+
+		planet = {
+			name = "Proxima Centauri I"
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = 268
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Proxima Centauri II"
+			class = "pc_tundra"
+			orbit_distance = 12
+			orbit_angle = 4
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Proxima Centauri III"
+			class = "pc_frozen"
+			orbit_distance = 12
+			orbit_angle = -6
+			size = 8
+			has_ring = no
+		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t2_wolf_359"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t2_tau_ceti"
+	}
+}
+
+# Neighbor Tier 1 No Guaranteed Colony
+npc_sol_neighbor_t1_no_guaranteed_colony = {
+	name = "NAME_Alpha_Centauri"
+	class = sc_trinary_1
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Alpha Centauri B"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+
+    	planet = {
+    		name = "Alpha Centauri B I"
+    		class = "pc_molten"
+    		orbit_distance = 25
+    		orbit_angle = 125
+    		size = 16
+    		has_ring = no
+    	}
+
+		planet = {
+			name = "Alpha Centauri B II"
+			orbit_distance = 25
+			orbit_angle = 120
+			class = "pc_barren"
+			size = 16
+			has_ring = no
+			entity = "barren_planet_01_entity"
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = -1
+				}
+			}
+			moon = {
+				name = "Alpha Centauri B IIa"
+				class = "pc_barren_cold"
+				size = 1
+				orbit_distance = 7
+				has_ring = no
+			}
+
+			moon = {
+				name = "Alpha Centauri B IIb"
+				class = "pc_barren_cold"
+				size = 2
+				orbit_distance = 4
+				has_ring = no
+			}
+		}
+
+      	planet = {
+      		name = "ACB-100"
+      		class = "pc_asteroid"
+      		orbit_distance = 50
+      		orbit_angle = -210
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-200"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = -95
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-300"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = 285
+      		size = 5
+      		has_ring = no
+      	}
+
+      	planet = {
+      		name = "ACB-400"
+      		class = "pc_asteroid"
+      		orbit_distance = 0
+      		orbit_angle = -80
+      		size = 5
+      		has_ring = no
+      	}
+	}
+
+	planet = {
+		name = "Alpha Centauri A"
+		class = "pc_g_star"
+		orbit_distance = 275
+		orbit_angle = 0
+		size = 35
+		has_ring = no
+
+		planet = {
+			name = "Alpha Centauri A I"
+			class = "pc_molten"
+			orbit_distance = 40
+			orbit_angle = 90
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Alpha Centauri A II"
+			class = "pc_toxic"
+			orbit_distance = 20
+			orbit_angle = 270
+			size = 15
+			has_ring = yes
+			entity = "toxic_planet_15_entity"
+		}
+
+	}
+
+	planet = {
+		name = "Proxima Centauri"
+		class = "pc_m_star"
+		orbit_distance = 75
+		orbit_angle = 270
+		size = 15
+		has_ring = no
+		change_orbit = 4
+
+		planet = {
+			name = "Proxima Centauri I"
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = 268
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Proxima Centauri II"
+			class = "pc_tundra"
+			orbit_distance = 12
+			orbit_angle = 4
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Proxima Centauri III"
+			class = "pc_frozen"
+			orbit_distance = 12
+			orbit_angle = -6
+			size = 8
+			has_ring = no
+		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t2_wolf_359"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t2_tau_ceti"
+	}
+}
+
+# Sol Neighbor Tier 1
+npc_sol_neighbor_t1 = {
+	name = "NAME_Barnard's_Star"
+	class = sc_m
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Barnard's_Star"
+		class = star
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 20
+		has_ring = no
+		change_orbit = 4
+		change_orbit = @base_moon_distance
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 125
+		size = 16
+		has_ring = no
+	}
+
+	planet = {
+		class= "pc_barren"
+		orbit_distance = 25
+		orbit_angle = 40
+		size = 16
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 95
+		size = 16
+		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t2_epsilon_eridani"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies < 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t2_sirius"
+	}
+}
+
+# Sol Neighbor Tier 1 second colony
+npc_sol_neighbor_t1_second_colony = {
+	name = "Cygni"
+	class = sc_binary_6
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Cygni A"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 21
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A I"
+		class = "pc_barren"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A II"
+		class = "pc_continental"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 13
+		has_ring = no
+    	entity = "continental_planet_04_entity"
+		
+		moon = {
+			name = "Cygni A IIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Cygni A III"
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "Cygni B"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 180
+		orbit_angle = 75
+		size = 18
+		has_ring = no
+	
+		planet = {
+			name = "Cygni B I"
+			class = "pc_molten"
+			orbit_distance = 20
+			orbit_angle = 180
+			size = 10
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B II"
+			class = "pc_arctic"
+			orbit_distance = 20
+			orbit_angle = 175
+			size = 12
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B III"
+			class = "pc_frozen"
+			orbit_distance = 20
+			orbit_angle = 15
+			size = 17
+			has_ring = no
+		}
+	}
+}
+
+# Sol Neighbor Tier 1 No Guaranteed Second Colony
+npc_sol_neighbor_t1_no_guaranteed_second_colony = {
+	name = "Cygni"
+	class = sc_binary_6
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Cygni A"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 21
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A I"
+		class = "pc_barren"
+		orbit_distance = 40
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Cygni A II"
+		class = "pc_barren"
+		orbit_distance = 15
+		orbit_angle = 90
+		size = 13
+		has_ring = no
+		entity = "barren_planet_01_entity"
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
+		
+		moon = {
+			name = "Cygni A IIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 4
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Cygni A III"
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "Cygni B"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 180
+		orbit_angle = 75
+		size = 18
+		has_ring = no
+	
+		planet = {
+			name = "Cygni B I"
+			class = "pc_molten"
+			orbit_distance = 20
+			orbit_angle = 180
+			size = 10
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B II"
+			class = "pc_barren_cold"
+			orbit_distance = 20
+			orbit_angle = 175
+			size = 12
+			has_ring = no
+		}
+	
+		planet = {
+			name = "Cygni B III"
+			class = "pc_frozen"
+			orbit_distance = 20
+			orbit_angle = 15
+			size = 17
+			has_ring = no
+		}
+	}
+}
+
+# Sol Neighbor Tier 1
+npc_sol_neighbor_t1_2 = {
+	name = "NAME_Procyon"
+	class = sc_binary_9
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Procyon_A"
+		count = 1
+		class = pc_f_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Procyon A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Procyon A II"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 25
+		has_ring = yes
+		
+		moon = {
+			name = "Procyon A IIa"
+			class = "pc_broken"
+			size = 12
+			orbit_distance = 10
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Procyon A III"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 14
+		has_ring = no
+		
+		moon = {
+			name = "Procyon A IIIa"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 8
+			orbit_angle = 40
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Procyon A IIIb"
+			class = "pc_barren_cold"
+			size = 1
+			orbit_distance = 3
+			orbit_angle = 90
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 35
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_Procyon_B"
+		count = 1
+		class = pc_f_star
+		orbit_distance = 125
+		orbit_angle = 215
+		size = 20
+		has_ring = no
+
+		planet = {
+			name = "Procyon B I"
+			class = pc_gas_giant
+			orbit_distance = 40
+			orbit_angle = 5
+			size = 26
+			has_ring = no
+
+			moon = {
+				name = "Procyon B Ia"
+				class = pc_molten
+				orbit_distance = 16
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				modifiers = none
+			}
+		}
+	}
+}
+
+### Eta Cassiopeiae System
+npc_eta_cassiopeiae_system_initializer = {
+	name = "Eta Cassiopeiae"
+	class = sc_binary_8
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	flags = { empire_home_system eta_cassiopeiae_system }
+	
+	planet = {
+		name = "Eta Cassiopeiae A"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	
+		planet = {
+			name = "NAME_Inferno"
+			class = "pc_molten"
+			orbit_distance = 30
+			orbit_angle = 45
+			size = 10
+			has_ring = no
+			entity = "molten_planet_06_entity"
+			flags = { planet_inferno }
+		}
+		
+		planet = {
+			name = "NAME_Astraeus"
+			class = "pc_gas_giant"
+			orbit_distance = 40
+			orbit_angle = 200
+			size = 30
+			has_ring = no
+			entity = "gas_giant_05_entity"
+			flags = { planet_astraeus }
+			
+			moon = {
+				name = "NAME_Notus"
+				class = "pc_barren"
+				size = 5
+				orbit_distance = 18
+				orbit_angle = 100
+				has_ring = no
+				flags = { planet_notus }
+			}
+			moon = {
+				name = "NAME_Eurus"
+				class = pc_toxic
+				orbit_distance = 5
+				orbit_angle = 340
+				size = 12
+				has_ring = no
+				flags = { planet_eurus }
+			}		
+		}
+
+		planet = {
+            name = ""
+			class = pc_barren
+			orbit_distance = 40
+			orbit_angle = 120
+			size = 0
+			flags = { planetary_barrycenter }
+		
+			init_effect = {
+				prevent_anomaly = yes
+			}
+	
+			planet = {
+				name = "NAME_Aurora"
+				class = "pc_continental"
+				orbit_distance = 10
+				orbit_angle = -90
+				size = 16
+				has_ring = no
+				modifiers = none
+				entity = "continental_planet_01_entity"
+				flags = { coa_home }
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}
+			}
+				
+			planet = {
+				name = "NAME_Tithonus"
+				class = "pc_arid"
+				orbit_distance = 0
+				orbit_angle = 180
+				size = 13
+				has_ring = no
+				modifiers = none
+				entity = "savannah_planet_11_entity"
+				
+				init_effect = {
+					prevent_anomaly = yes
+				}		
+			}
+		}
+		
+		planet = {
+			name = "NAME_Anemoi"
+			class = "pc_gas_giant"
+			orbit_distance = 40
+			orbit_angle = 125
+			size = 35
+			has_ring = yes
+			entity = "gas_giant_11_entity"
+			flags = { planet_anemoi }
+			
+			moon = {
+				name = "NAME_Boreas"
+				class = "pc_barren_cold"
+				size = 5
+				orbit_distance = 25
+				orbit_angle = 100
+				has_ring = no
+				flags = { planet_boreas }
+			}
+			moon = {
+				name = "NAME_Zephyrus"
+				class = pc_frozen
+				orbit_distance = 5
+				orbit_angle = 340
+				size = 12
+				has_ring = no
+				modifiers = none
+				flags = { planet_zephyrus }
+			}		
+		}
+		
+		planet = {
+			name = "NAME_DT4-298"
+			class = "pc_asteroid"
+			orbit_distance = 50
+			orbit_angle = 340
+			size = 5
+			has_ring = no
+		}
+		
+		planet = {
+			name = "NAME_LR-2129"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = 160
+			size = 5
+			has_ring = no
+		}
+		
+		planet = {
+			name = "NAME_GR-345"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = 270
+			size = 5
+			has_ring = no
+		}
+		
+		planet = {
+			name = "NAME_Hyperion"
+			class = "pc_gas_giant"
+			orbit_distance = 40
+			orbit_angle = 0
+			size = 25
+			has_ring = yes
+			entity = "gas_giant_07_entity"
+			flags = { planet_hyperion }
+			
+			moon = {
+				name = "NAME_Selene"
+				class = "pc_frozen"
+				size = 8
+				orbit_distance = 18
+				orbit_angle = 14
+				has_ring = no
+				flags = { planet_selene }
+			}
+		}
+	}
+	
+	planet = {
+		name = "Eta Cassiopeiae B"
+		class = pc_k_star
+		orbit_distance = 400
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+		
+		planet = {
+			name = "NAME_Jackson's_Planet"
+			class = "pc_tundra"
+			orbit_distance = 30
+			orbit_angle = 180
+			size = 8
+			has_ring = no
+			flags = { planet_jackson_s_planet }
+		}
+		planet = {
+			name = "NAME_Olympus"
+			class = pc_gas_giant
+			orbit_distance = 40
+			orbit_angle = 5
+			size = 20
+			has_ring = yes
+			entity = "gas_giant_09_entity"
+			flags = { planet_olympus }
+
+			moon = {
+				name = "NAME_Horae"
+				class = pc_frozen
+				orbit_distance = 14
+				orbit_angle = 340
+				size = 8
+				has_ring = no
+				entity = "frozen_planet_04_entity"
+				modifiers = none
+				flags = { planet_horae }
+			}
+		}
+    }
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+# Sol Neighbor Tier 2
+npc_sol_neighbor_t2_wolf_359 = {	
+	name = "Wolf 359"
+	class = sc_m
+
+	planet = {
+		name = "Wolf 359"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Wolf 359 I"
+		class = "pc_barren_cold"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 7
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Wolf 359 II"
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 170
+		size = 5
+		has_ring = no
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t3_trappist_1"
+	}
+}
+
+# Sol Neighbor Tier 2
+npc_sol_neighbor_t2_tau_ceti = {
+	name = "Tau Ceti"
+	class = sc_g
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 130
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 230
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 340
+	}
+	
+	flags = { tau_ceti_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Tau Ceti"
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti I"
+		class = "pc_molten"
+		orbit_distance = 25
+		orbit_angle = 30
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti II"
+		class = "pc_molten"
+		orbit_distance = 10
+		orbit_angle = 40
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti III"
+		class = "pc_desert"
+		orbit_distance = 25
+		orbit_angle = 180
+		size = 20
+		has_ring = no
+		entity = "desert_planet_01_entity"
+		
+		init_effect = {
+			set_planet_flag = planet_tau_ceti_3
+		}
+	}
+
+    planet = {
+        class = pc_barren
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 0
+        flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		planet = {
+			name = "Tau Ceti IV"
+			class = pc_ocean
+			orbit_distance = 10
+			orbit_angle = 60
+			size = 25
+			has_ring = no
+			entity = "ocean_planet_01_entity"
+			
+			init_effect = {
+				set_planet_flag = planet_tau_ceti_4
+			}
+			
+			init_effect = {
+
+				create_species = {
+					name = Prillrian
+					plural = Prillrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
+				create_country = {
+					name = "Prillrian Realms"
+					authority = auth_imperial
+					civics = {
+						civic = civic_landed_nobility
+						civic = civic_flat_world_theory
+					}
+					species = last_created
+					ethos = { 
+						ethic = "ethic_xenophobe"
+						ethic = "ethic_spiritualist"
+						ethic = "ethic_authoritarian"
+					}
+					flag = {
+						icon = {
+							category = "ornate"
+							file = "flag_ornate_15.dds"
+						}
+						background = {
+							category = "backgrounds"
+							file = "diagonal.dds"
+						}
+						colors = {
+							"purple"
+							"dark_teal"
+							"null"
+							"null"
+						}
+					}
+					day_zero_contact = no
+					type = primitive
+				}
+				last_created_country = {
+					set_graphical_culture = preindustrial_01
+					set_country_flag = late_medieval_age
+					set_country_flag = humans_late_medieval_age
+					set_primitive_age = late_medieval_age
+				}
+				
+				set_owner = last_created_country		
+									
+				while = {
+					count = 3
+					create_pop = {
+						species = last_created
+					}					
+				}
+				add_building = building_primitive_dwellings
+				add_building = building_primitive_dwellings
+				add_building = building_stone_palace			
+				
+				while = {
+					count = 2
+					create_army = {
+						name = "NAME_Feudal_Levies"
+						owner = last_created
+						species = last_created
+						type = "primitive_army"
+					}
+				}
+				
+				last_created_country = {
+					capital_scope = { set_name = "Prill" }
+				}
+			}
+		}
+
+        planet = {
+			name = "Tau Ceti IVa"
+			class = "pc_continental"
+			size = 16
+			orbit_distance = 0
+			orbit_angle = 180
+			has_ring = no
+			entity = "continental_planet_03_entity"
+		
+			init_effect = {
+				set_planet_flag = planet_tau_ceti_4_moon
+			}
+		}
+    }
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Tau Ceti V"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Tau Ceti Va"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Tau Ceti Vb"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Tau Ceti VI"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 20
+		has_ring = yes
+		
+		moon = {
+			name = "Tau Ceti VIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Tau Ceti VIb"
+			class = "pc_barren_cold"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 92
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "Tau Ceti VII"
+		class = pc_barren_cold
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 25
+		
+		moon = {
+			name = "Tau Ceti VIIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 125
+			has_ring = no
+		}	
+	}
+
+	planet = {
+		name = "Tau Ceti VIII"
+		class = pc_barren_cold
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 23
+		
+		moon = {
+			name = "Tau Ceti VIIIa"
+			class = "pc_barren_cold"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 125
+			has_ring = no
+		}	
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 40
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 70
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 92
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t3_eridani"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t3_epsilon_indi"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_eta_cassiopeiae_system_initializer"
+	}
+}
+
+# Sol Neighbor Tier 2 Guaranteed Second Colony
+npc_sol_neighbor_t2_epsilon_eridani = {
+	name = "NAME_Epsilon_Eridani"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 260
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Epsilon_Eridani"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_continental"
+		orbit_distance = 35
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		modifiers = none
+		entity = "continental_planet_09_entity"
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	
+	planet = {
+		class = "pc_tundra"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 45
+		orbit_angle = 200
+		size = 40
+		has_ring = yes
+		
+		moon = {
+			class = "pc_toxic"
+			size = 16
+			orbit_distance = 25
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 5
+			orbit_angle = 130
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t3_ophiuchi"
+	}
+}
+
+# Sol Neighbor Tier 2 No Guaranteed Second Colony
+npc_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
+	name = "NAME_Epsilon_Eridani"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 125
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 260
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Epsilon_Eridani"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_savannah"
+		orbit_distance = 35
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_tundra"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 45
+		orbit_angle = 200
+		size = 40
+		has_ring = yes
+		
+		moon = {
+			class = "pc_toxic"
+			size = 16
+			orbit_distance = 25
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 5
+			orbit_angle = 130
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 25
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+		
+		moon = {
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_sol_neighbor_t3_ophiuchi"
+	}
+}
+
+# Sol Neighbor Tier 2
+npc_sol_neighbor_t2_sirius = {
+	name = "NAME_Sirius"
+	class = sc_binary_9
+
+	planet = {
+		name = "NAME_Sirius_A"
+		count = 1
+		class = pc_a_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A II"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 170
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Sirius A III"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_Sirius_B"
+		class = pc_f_star
+		orbit_distance = 60
+		orbit_angle = 120
+		size = 15
+		has_ring = no
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t3_Luytens_star"
+	}
+}
+
+# Sol Neighbor Tier 2
+npc_sol_neighbor_t3_Luytens_star = {	
+	name = "Luyten's Star"
+	class = sc_m
+
+	planet = {
+		name = "Luyten's Star"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Luyten's Star II"
+		class = "pc_molten"
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 7
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Luyten's Star II"
+		class = "pc_toxic"
+		orbit_distance = 30
+		orbit_angle = 170
+		size = 19
+		has_ring = yes
+			
+		moon = {
+			name = "Luyten's Star II A"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 16
+			orbit_angle = 100
+			has_ring = no
+			flags = { planet_notus }
+		}
+	}
+}
+
+# Sol Neighbor Tier 3
+npc_sol_neighbor_t3_trappist_1 = {
+	name = "Trappist-1"
+	class = sc_m
+
+	planet = {
+		name = "Trappist-1"
+		count = 1
+		class = pc_m_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+	
+	# Trappist-1b
+	planet = {
+		name = "Trappist-1 b"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+	}
+	
+	# Trappist-1c
+	planet = {
+		name = "Trappist-1 c"
+		class = "pc_barren"
+		orbit_distance = 16
+		orbit_angle = 85
+		size = 16
+		has_ring = no
+	}
+
+	# Trappist-1d
+	planet = {
+		name = "Trappist-1 d"
+		class = "pc_toxic"
+		orbit_distance = 16
+		orbit_angle = 110
+		size = 12
+		has_ring = no
+	}
+
+	# Trappist-1e
+	planet = {
+		name = "Trappist-1 e"
+		class = "pc_ocean"
+		orbit_distance = 16
+		orbit_angle = 125
+		size = 14
+		has_ring = no
+	}
+
+	# Trappist-1f
+	planet = {
+		name = "Trappist-1 f"
+		class = "pc_toxic"
+		orbit_distance = 16
+		orbit_angle = 65
+		size = 16
+		has_ring = no
+	}
+
+	# Trappist-1g
+	planet = {
+		name = "Trappist-1 g"
+		class = "pc_arctic"
+		orbit_distance = 16
+		orbit_angle = -130
+		size = 18
+		has_ring = no
+	}
+
+	# Trappist-1h
+	planet = {
+		name = "Trappist-1 h"
+		class = "pc_frozen"
+		orbit_distance = 16
+		orbit_angle = 245
+		size = 12
+		has_ring = no
+	}
+}
+
+# Sol Neighbor Tier 1
+npc_sol_neighbor_t3_ophiuchi = {	
+	name = "Ophiuchi"
+	class = sc_binary_7
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 340
+	}
+
+	planet = {
+		name = "Ophiuchi A"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 27
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Ophiuchi A I"
+		class = "pc_molten"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 22
+		has_ring = no
+    	entity = "molten_planet_02_entity"
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
+		
+		moon = {
+			name = "Ophiuchi A Ia"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 60
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Ophiuchi A Ib"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 60
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi A II"
+		class = "pc_gaia"
+		orbit_distance = 30
+		orbit_angle = 100
+		size = 20
+		has_ring = yes
+    	entity = "gaia_planet_01_entity"
+		
+		moon = {
+			name = "Ophiuchi A IIa"
+			class = "pc_savannah"
+			size = 9
+			orbit_distance = 14
+			orbit_angle = 40
+			has_ring = no
+    		entity = "savannah_planet_01_entity"
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "low_gravity"
+					days = -1
+				}
+			}
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi A III"
+		class = "pc_barren"
+		orbit_distance = 45
+		orbit_angle = 15
+		size = 8
+		has_ring = no
+    	entity = "barren_planet_03_entity"
+	}
+
+	planet = {
+		name = "Ophiuchi B"
+		count = 1
+		class = "pc_k_star"
+		orbit_distance = 110
+		orbit_angle = 335
+		size = 21
+		has_ring = no
+	
+		planet = {
+			name = "Ophiuchi B I"
+			class = "pc_barren"
+			orbit_distance = 30
+			orbit_angle = 175
+			size = 8
+			has_ring = no
+			entity = "barren_planet_04_entity"
+		}
+	
+		planet = {
+			name = "Ophiuchi B II"
+			class = "pc_continental"
+			orbit_distance = 25
+			orbit_angle = 10
+			size = 8
+			has_ring = no
+			entity = "continental_planet_02_entity"
+		
+			moon = {
+				name = "Ophiuchi B IIa"
+				class = "pc_barren"
+				size = 5
+				orbit_distance = 12
+				orbit_angle = 95
+				has_ring = no
+				entity = "barren_planet_01_entity"
+			}
+		}
+	}
+	
+	planet = {
+		name = "Ophiuchi AB"
+		class = "pc_gas_giant"
+		orbit_distance = 70
+		orbit_angle = 180
+		size = 20
+		has_ring = yes
+    	entity = "gas_giant_02_entity"
+		
+		moon = {
+			name = "Ophiuchi ABa"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = -5
+			has_ring = no
+			entity = "frozen_planet_02_entity"
+		}
+		
+		moon = {
+			name = "Ophiuchi ABb"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 10
+			has_ring = no
+			entity = "frozen_planet_04_entity"
+		}
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 45
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+# Sol Neighbor Tier 3
+npc_sol_neighbor_t3_eridani = {
+	name = "Eridani"
+	class = sc_trinary_5
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	
+	flags = { eridani_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Eridani A"
+		count = 1
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Eridani A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Eridani A II"
+		class = "pc_continental"
+		orbit_distance = 35
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		modifiers = none
+		flags = { epsilon_a_two }
+		
+		moon = {
+			name = "Eridani A IIa"
+			class = "pc_barren_cold"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Eridani A III"
+		class = "pc_arctic"
+		orbit_distance = 25
+		orbit_angle = 30
+		size = 16
+		has_ring = no
+		entity = "arctic_planet_05_entity"
+	}
+	
+	planet = {
+		name = "Eridani A IV"
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 15
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 120
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Eridani A V"
+		class = "pc_gas_giant"
+		orbit_distance = 45
+		orbit_angle = 170
+		size = 40
+		has_ring = yes
+		
+		moon = {
+			name = "Eridani A Va"
+			class = "pc_toxic"
+			size = 16
+			orbit_distance = 25
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Eridani A VI"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			name = "Eridani A VIa"
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Eridani A VIb"
+			class = "pc_barren_cold"
+			size = 10
+			orbit_distance = 5
+			orbit_angle = 130
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Eridani A VII"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 20
+		has_ring = no
+		
+		moon = {
+			name = "Eridani A VIIa"
+			class = "pc_frozen"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = pc_barren
+		orbit_distance = 80
+		orbit_angle = 200
+		size = 0
+		has_ring = no
+		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		planet = {
+			name = "Eridani B"
+			count = 1
+			class = pc_f_star
+			orbit_distance = 30
+			orbit_angle = 90
+			size = 15
+			has_ring = no
+		}
+
+		planet = {
+			name = "Eridani C"
+			count = 1
+			class = pc_m_star
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 15
+			has_ring = no
+		}
+	}
+}
+
+# Sol Neighbor Tier 3
+npc_sol_neighbor_t3_epsilon_indi = {
+	name = "Epsilon Indi"
+	
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 160
+	}
+	flags = { epsilon_indi_system }
+	
+	planet = {
+		name = "Epsilon Indi A"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 22
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A I"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 45
+		size = 22
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
+	}
+	
+	planet = {
+		name = "Epsilon Indi A II"
+		class = "pc_ocean"
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 25
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "high_gravity"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "strong_magnetic_field"
+				days = -1
+			}
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Epsilon Indi A IIa"
+			class = "pc_barren"
+			size = 8
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Epsilon Indi A IIb"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 6
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Epsilon Indi A III"
+		class = "pc_barren_cold"
+		orbit_distance = 40
+		orbit_angle = 190
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A IV"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 50
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 30
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Epsilon Indi A V"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 40
+		has_ring = yes
+
+		moon = {
+			name = "Epsilon Indi A Va"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 23
+			orbit_angle = 10
+			has_ring = no
+		}
+		moon = {
+			name = "Epsilon Indi A Vb"
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 5
+			orbit_angle = 80
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = pc_barren
+		orbit_distance = 160
+		orbit_angle = 125
+		size = 0
+		flags = { planetary_barrycenter }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+
+		planet = {
+			name = "Epsilon Indi B"
+			class = "pc_t_star"
+			orbit_distance = 25
+			orbit_angle = -90
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+			
+		planet = {
+			name = "Epsilon Indi C"
+			class = "pc_t_star"
+			orbit_distance = 0
+			orbit_angle = 180
+			size = 40
+			has_ring = no
+			modifiers = none
+			
+			init_effect = {
+				prevent_anomaly = yes
+			}		
+		}
+	}
+}

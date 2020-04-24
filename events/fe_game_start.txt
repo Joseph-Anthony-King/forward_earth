@@ -8,22 +8,30 @@ event = {
 
 	immediate = {
 
-        random_country = {
-            limit = {
-                NOT = { any_system = { has_star_flag = sol } }
-			}
-			random_system = {
-				limit = {
-					has_owner = no
+		if = {
+			# If there are no Sols
+			limit = {
+				NOT = {
+					any_system = {
+						has_star_flag = sol
+					}
 				}
-                random_list = {
-                    # Space age humans
-                    50 = { spawn_system = { initializer = "space_age_sol_system_initializer" } }
-                    # Primitive humans
-                    50 = { spawn_system = { initializer = "primitive_sol_system_initializer" } }
-                }
 			}
-        }
+			random_list = {
+				90 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "special_init_03" }
+					}
+				}
+				10 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "special_init_04" }
+					}
+				}
+			}
+		}
     }
 }
 

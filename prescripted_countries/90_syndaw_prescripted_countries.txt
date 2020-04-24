@@ -115,7 +115,7 @@ custodianship = {
 		trait = "trait"
 	}
 
-	flags = { custodian_faction custom_start_screen }
+	flags = { custodian_faction custom_start_screen human_player }
 	
 	room = "machine_room"
 	
@@ -198,7 +198,7 @@ icarus = {
 	}
 	origin = "origin_default"
 
-	flags = { icarus_faction custom_start_screen }
+	flags = { icarus_faction custom_start_screen human_player }
 	
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
