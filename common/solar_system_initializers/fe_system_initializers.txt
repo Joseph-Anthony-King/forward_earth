@@ -18,9 +18,7 @@ space_age_sol_system_initializer = {
 		radius = 297
 	}
 
-	flags = { empire_home_system sol_system sol une_npc }
-	
-	usage = custom_empire
+	flags = { sol_system sol une_npc }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -67,7 +65,6 @@ space_age_sol_system_initializer = {
 		orbit_distance = 25
 		orbit_angle = 120
 		size = 16
-		starting_planet = yes
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none
@@ -99,7 +96,7 @@ space_age_sol_system_initializer = {
 						}
 
 						create_country = {
-							name = "NAME_United_Nations_of_Earth"
+							name = "United Nations of Earth"
 							name_list = "HUMAN1"
 
 							room = "personality_federation_builders_room"
@@ -357,8 +354,191 @@ space_age_sol_system_initializer = {
 							capital_scope = { set_name = "NAME_Earth" }
 						}
 					}
-					# Earth no civilization
+					# ICARUS
 					10 = {
+						generate_empire_home_planet = yes
+
+						create_species = {
+							name = "Autodrone"
+							plural = "Autodrones"
+							class = "MACHINE"
+							portrait = "sd_hum_robot"
+							homeworld = THIS
+							traits = {
+								trait = "trait_machine_unit"
+								trait="trait_machine_unit"
+								trait="trait_robot_logic_engines"
+								trait="trait_robot_mass_produced"
+								trait="trait_robot_luxurious"
+							}
+						}
+
+						create_country = {
+							name = "ICARUS"
+							name_list = "MACHINE4"
+
+							room = "machine_room"
+
+							ship_prefix = "ICARUS"
+
+							authority = "auth_machine_intelligence"
+
+							civics = {
+								civic = civic_machine_terminator
+								civic = civic_machine_warbots
+							}
+							government = gov_machine_terminator
+
+							species = last_created
+							ethos = {
+								ethic = "ethic_gestalt_consciousness"
+							}
+
+							flag = {
+								icon={
+									category = "human"
+									file = "flag_human_nato.dds"
+								}
+								background = {
+									category = "backgrounds"
+									file = "00_solid.dds"
+								}
+								colors = {
+									"dark_blue"
+									"black"
+									"null"
+									"null"
+								}
+							}
+							type = default
+							effect = {
+								add_resource = {
+									minerals = 200
+									energy = 200
+									food = 200
+									alloys = 100
+									consumer_goods = 100
+									influence = 100
+								}
+							}
+						}
+
+						last_created_country = {
+							set_graphical_culture = ai_ship_set_01
+							set_country_flag = icarus_faction
+							save_global_event_target_as = icarus_npc
+						}
+
+						while = {
+							count = 23
+							create_pop = {
+								species = last_created
+								ethic = "ethic_gestalt_consciousness"
+							}
+						}
+						set_owner = last_created_country
+						set_capital = yes
+						add_district = district_nexus
+						add_district = district_nexus
+						add_district = district_nexus
+						add_district = district_mining
+						add_district = district_mining
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_district = district_generator
+						add_building = building_machine_capital
+						add_building = building_maintenance_depot
+						add_building = building_research_lab_1
+						add_building = building_foundry_1
+						add_building = building_machine_assembly_plant
+
+						create_colony = {
+							owner = last_created_country
+							species = last_created
+							ethos = {
+								ethic = "ethic_gestalt_consciousness"
+							}
+						}
+
+						create_army = {
+							name = "1st Fortification Assignment"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+						create_army = {
+							name = "2nd Fortification Assignment"
+							owner = last_created
+							species = last_created
+							type = "defense_army"
+						}
+
+						system_star = {
+
+							#science
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = science
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+
+									owner = {
+										create_leader = {
+											type = scientist
+											sub_type = survey
+											name = random
+											species = owner_main_species
+										}
+									}
+									set_leader = last_created_leader
+								}
+							}
+
+							#constructor
+							create_fleet = {
+								effect = {
+									set_owner = last_created_country
+
+									create_ship = {
+										name = random
+										random_existing_design = constructor
+									}
+
+									set_fleet_stance = evasive
+									set_location = PREV
+								}
+							}
+
+							#military
+							create_fleet = {
+								set_take_point = yes
+								effect = {
+									set_owner = last_created_country
+
+									while = {
+										count = 3
+										create_ship = {
+											name = random
+											random_existing_design = corvette
+										}
+									}
+
+									set_location = PREV
+								}
+							}
+						}
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Earth" }
+						}
 					}
 				}
 			}
@@ -662,8 +842,6 @@ primitive_sol_system_initializer = {
 	}
 
 	flags = { sol_system sol }
-	
-	usage = custom_empire
 
 	init_effect = {
 		every_neighbor_system = {
@@ -707,7 +885,6 @@ primitive_sol_system_initializer = {
 		orbit_distance = 25
 		orbit_angle = 120
 		size = 16
-		starting_planet = yes
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none

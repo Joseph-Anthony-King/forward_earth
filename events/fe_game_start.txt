@@ -1399,3 +1399,38 @@ event = {
         }
     }
 }
+
+event = {
+    id = fe.10
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+
+        random_system = {
+            limit = {
+                AND = {
+                    has_star_flag = une_npc
+                    any_country = { has_country_flag = icarus_faction }
+                }
+            }
+
+            create_starbase = {
+                size = starbase_starport
+                module = shipyard
+                owner = icarus_npc
+            }
+        }
+
+        random_planet = {
+            limit = {
+                AND = {
+                    any_country = { has_country_flag = icarus_faction }
+                    has_planet_flag = planet_earth
+                }                
+            }
+            change_pc = pc_nuked
+            set_planet_entity = { entity = "nuked_planet_earth_entity" }
+        }
+    }
+}
