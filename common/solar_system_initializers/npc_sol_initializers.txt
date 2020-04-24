@@ -167,7 +167,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 23
+							count = 24
 							create_pop = {
 								species = last_created
 								ethic = "ethic_gestalt_consciousness"
@@ -352,7 +352,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 23
+							count = 24
 							create_pop = {
 								species = last_created
 							}
@@ -534,7 +534,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 15
+							count = 20
 							create_pop = {
 								species = last_created
 							}
@@ -607,7 +607,7 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes
 		
 						while = {
-							count = 10
+							count = 15
 							create_pop = {
 								species = last_created
 							}					
@@ -680,7 +680,7 @@ npc_sol_system_initializer = {
 						set_owner = last_created_country		
 											
 						while = {
-							count = 9
+							count = 10
 							create_pop = {
 								species = last_created
 							}					

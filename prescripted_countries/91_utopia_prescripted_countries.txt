@@ -112,6 +112,7 @@ lokken = {
 	government = "gov_rational_consensus"
 	planet_name=  "PRESCRIPTED_planet_name_lokken"
 	planet_class = "pc_arid"
+	initializer = "dal_lokkur_system_initializer"
 	system_name = "PRESCRIPTED_system_name_lokken"
 	graphical_culture = "reptilian_01"
 	city_graphical_culture = "reptilian_01"
