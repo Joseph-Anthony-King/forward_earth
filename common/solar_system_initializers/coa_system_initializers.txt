@@ -2473,7 +2473,7 @@ coa_neighbor_t3_Luytens_star = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "dal_lokkur_system_initializer"
+		initializer = "npc_dal_lokkur_system_initializer"
 	}
 }
 
@@ -2564,7 +2564,7 @@ coa_neighbor_t3_trappist_1 = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "kel_azak_system_initializer"
+		initializer = "npc_kel_azak_system_initializer"
 	}
 }
 
@@ -2764,7 +2764,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "scyldari_system_initializer"
+		initializer = "npc_scyldari_system_initializer"
 	}
 }
 

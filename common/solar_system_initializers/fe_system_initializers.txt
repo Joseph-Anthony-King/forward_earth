@@ -1893,7 +1893,7 @@ sol_neighbor_t3_Luytens_star = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "dal_lokkur_system_initializer"
+		initializer = "npc_dal_lokkur_system_initializer"
 	}
 }
 
@@ -1984,7 +1984,7 @@ sol_neighbor_t3_trappist_1 = {
 			
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "kel_azak_system_initializer"
+		initializer = "npc_kel_azak_system_initializer"
 	}
 }
 
@@ -2184,7 +2184,7 @@ sol_neighbor_t3_ophiuchi = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
-		initializer = "scyldari_system_initializer"
+		initializer = "npc_scyldari_system_initializer"
 	}
 }
 
@@ -2603,6 +2603,169 @@ sol_neighbor_t3_epsilon_indi = {
 			init_effect = {
 				prevent_anomaly = yes
 			}		
+		}
+	}
+}
+
+# Deneb System
+deneb_system = {
+	name = "NAME_Deneb"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	usage = misc_system_init
+
+	usage_odds = {
+		base = 0
+		modifier = {
+			NOT = { any_system = { has_star_flag = deneb_system } }
+			add = 99999
+		}
+	}
+
+	max_instances = 1
+	
+	planet = {
+		name = "NAME_Deneb"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 60
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		entity = "gas_giant_02_entity"
+		
+		moon = {
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = "pc_continental"
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 18
+			has_ring = no
+			entity = "continental_planet_01_entity"	
+			modifiers = none
+		}		
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 325
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = 110
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 14
+			orbit_angle = 14
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 35
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 150
+		size = 20
+		has_ring = no
+	}
+	
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
+		}		
+		initializer = "neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 60 }
+		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
+			#want this?
 		}
 	}
 }

@@ -1178,10 +1178,6 @@ event = {
 
     immediate = {
 
-        random_system = {
-            spawn_system = { initializer = "deneb_system" }
-        }
-
         every_planet = {
             limit = {
                 has_planet_flag = planetary_barrycenter              

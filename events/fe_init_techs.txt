@@ -1,8 +1,8 @@
 namespace = fe
 
-### fe.11 - Set CoA robotics technologies
+### fe.100 - Set CoA robotics technologies
 country_event = {
-	id = fe.11
+	id = fe.100
 	hide_window = yes
 	is_triggered_only = yes
 

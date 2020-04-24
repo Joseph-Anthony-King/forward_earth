@@ -536,6 +536,540 @@ scyldari_system_initializer = {
 		orbit_angle = 120
 		size = 16
 		modifiers = none
+		starting_planet = yes
+		has_ring = yes
+		flags = { planet_scyldari }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Emmrie's Emerald"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Carimal"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 22
+		has_ring = no
+		
+		moon = {
+			name = "Pollimin"
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			name = "Kormli"
+			class = "pc_barren"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Biroi"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			name = "Noilan"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Ultan"
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 160
+		size = 16
+		has_ring = yes
+	}
+
+	init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			module = shipyard
+			owner = last_created_country
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_scyldari_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_scyldari_first_colony"
+	}
+}
+
+### Dal Lokkur System
+dal_lokkur_system_initializer = {
+	name = "PRESCRIPTED_system_name_lokken"
+	
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 35
+	}
+	
+	flags = { empire_home_system }
+	
+	usage = custom_empire
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_lokken"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = -45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Xansh"
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_lokken"
+		class = "pc_arid"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		starting_planet = yes
+		flags = { planet_lokken }
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			name = "Tishac"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Ficash"
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 130
+		size = 13
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Choirtiz"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 26
+		has_ring = yes
+		
+		moon = {
+			name = "Taxaz"
+			class = "pc_toxic"
+			size = 9
+			orbit_distance = 18
+			orbit_angle = 80
+			has_ring = no
+		}
+		
+		moon = {
+			name = "Scha"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 110
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Zinix"
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			name = "Xortesh"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+
+	init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			module = shipyard
+			owner = last_created_country
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_dal_lokkur_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_dal_lokkur_first_colony"
+	}
+}
+
+### Kel-Azak System
+kel_azak_system_initializer = {
+	name = "PRESCRIPTED_system_name_kel_azaan"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 40
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system deneb_system }
+	
+	usage = custom_empire
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_kel_azaan"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Hajpoc Haxizabb"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		
+		moon = {
+            name = "Mox Tymcrix"
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+            name = "PRESCRIPTED_planet_name_kel_azaan"
+			class = "pc_savannah"
+			orbit_distance = 5
+			orbit_angle = 170
+			size = 18
+			has_ring = no
+			modifiers = none
+			starting_planet = yes
+			flags = { planet_kel_azaan }
+		
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}		
+	}
+	
+	planet = {
+        name = "Allox Haxizabb"
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 160
+		size = 35
+		has_ring = yes
+		
+		moon = {
+            name = "Mox Zajkax"
+			class = "pc_barren"
+			size = 7
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		
+		moon = {
+            name = "Mox Krac"
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 100
+			has_ring = no
+		}		
+	}
+	
+	planet = {
+		name = "Hullpax Haxizabb"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 16
+		has_ring = yes
+		
+		moon = {
+			name = "Mox Haxizabb"
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Qwilk Haxizabb"
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 130
+		size = 8
+	}
+
+	init_effect = {
+		create_starbase = {
+			size = starbase_starport
+			module = shipyard
+			owner = last_created_country
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_kel_azak_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_kel_azak_first_colony"
+	}
+}
+
+### NPC Scyldari System
+npc_scyldari_system_initializer = {
+	name = "PRESCRIPTED_system_name_scyldari"
+	class = sc_binary_8
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	flags = { empire_home_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_scyldari"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+
+		planet = {
+			name = "Lavelkor"
+			class = "pc_m_star"
+			orbit_distance = 30
+			orbit_angle = 120
+			size = 16
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Firren"
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Gildern's Garnet"
+		class = "pc_toxic"
+		orbit_distance = 10
+		orbit_angle = 120
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_planet_name_scyldari"
+		class = "pc_ocean"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		modifiers = none
+		has_ring = yes
 		flags = { planet_scyldari }
 		
 		init_effect = {
@@ -840,8 +1374,8 @@ scyldari_system_initializer = {
 	}
 }
 
-### Dal Lokkur System
-dal_lokkur_system_initializer = {
+### NPC Dal Lokkur System
+npc_dal_lokkur_system_initializer = {
 	name = "PRESCRIPTED_system_name_lokken"
 	
 	class = "sc_g"
@@ -851,8 +1385,6 @@ dal_lokkur_system_initializer = {
 	}
 	
 	flags = { empire_home_system }
-	
-	usage = custom_empire
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1217,8 +1749,8 @@ dal_lokkur_system_initializer = {
 	}
 }
 
-### Kel-Azak System
-kel_azak_system_initializer = {
+### NPC Kel-Azak System
+npc_kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
 	asteroid_belt = {
@@ -1236,8 +1768,6 @@ kel_azak_system_initializer = {
 	}
 	
 	flags = { empire_home_system deneb_system }
-	
-	usage = custom_empire
 	
 	planet = {
 		name = "PRESCRIPTED_system_name_kel_azaan"

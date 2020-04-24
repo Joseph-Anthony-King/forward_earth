@@ -58,6 +58,7 @@ npc_sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { planet_mercury }
 	}
 	
 	planet = {
@@ -68,7 +69,7 @@ npc_sol_system_initializer = {
 		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { realsol_venus }
+		flags = { planet_venus }
 	}
 	
 	planet = {
@@ -734,7 +735,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_phobos }
 		}
 		
 		moon = {
@@ -745,7 +746,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_deimos }
 		}
 	}
 	
@@ -757,6 +758,7 @@ npc_sol_system_initializer = {
 		size = 5
 		entity = "ceres_entity"
 		has_ring = no
+		flags = { planet_ceres }
 	}
 	
 	planet = {
@@ -766,6 +768,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_pallas }
 	}
 	
 	planet = {
@@ -775,6 +778,7 @@ npc_sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_juno }
 	}
 	
 	planet = {
@@ -784,6 +788,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_vesta }
 	}
 	
 	planet = {
@@ -795,6 +800,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { planet_jupiter }
 		
 		moon = {
 			name = "NAME_Io"
@@ -804,6 +810,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { planet_io }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -813,6 +820,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { planet_europa }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -822,6 +830,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { planet_ganymede }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -831,6 +840,7 @@ npc_sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { planet_callisto }
 		}
 	}
 	
@@ -843,6 +853,7 @@ npc_sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { planet_saturn }
 		
 		moon = {
 			name = "NAME_Rhea"
@@ -852,6 +863,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
+			flags = { planet_rhea }
 		}
 		
 		moon = {
@@ -862,6 +874,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 	
@@ -873,6 +886,7 @@ npc_sol_system_initializer = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { planet_uranus }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -882,6 +896,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { planet_titania }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -891,6 +906,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { planet_oberon }
 		}
 	}
 	
@@ -903,6 +919,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { planet_neptune }
 		
 		moon = {
 			name = "NAME_Triton"
@@ -912,6 +929,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 115
 			entity = "triton_entity"
 			has_ring = no
+			flags = { planet_triton }
 		}
 	}
 
@@ -923,6 +941,7 @@ npc_sol_system_initializer = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
+		flags = { planet_pluto }
 	}
 
 	planet = {
@@ -932,6 +951,7 @@ npc_sol_system_initializer = {
 		orbit_angle = -95
 		size = 5
 		has_ring = no
+		flags = { planet_makemake }
 	}
 
 	planet = {
@@ -941,6 +961,7 @@ npc_sol_system_initializer = {
 		orbit_angle = 285
 		size = 5
 		has_ring = no
+		flags = { planet_haumea }
 	}
 
 	planet = {
@@ -950,6 +971,21 @@ npc_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+		flags = { planet_varuna }
+	}
+
+	init_effect = {
+		if = {
+			limit = {
+				any_country = { has_country_flag = human_1 }
+			}
+
+			create_starbase = {
+				size = starbase_starport
+				module = shipyard
+				owner = last_created_country
+			}
+		}
 	}
 	
 	neighbor_system = {
