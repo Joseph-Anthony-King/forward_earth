@@ -107,7 +107,6 @@ lokken = {
 	ethic = "ethic_fanatic_materialist"
 	civics = { "civic_technocracy" "civic_meritocracy" }
 	origin = "origin_mechanists"
-	flags = { human_player }
 	authority = "auth_democratic"
 	government = "gov_rational_consensus"
 	planet_name=  "PRESCRIPTED_planet_name_lokken"

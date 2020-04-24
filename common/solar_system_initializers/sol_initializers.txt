@@ -534,8 +534,14 @@ sol_neighbor_t1_first_colony = {
 		initializer = "sol_neighbor_t2_wolf_359"
 	}
 	neighbor_system = {
+		trigger = { num_ai_empires_setting > 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t2_tau_ceti"
+	}
+	neighbor_system = {
+		trigger = { num_ai_empires_setting = 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "virgin_sol_neighbor_t2_tau_ceti"
 	}
 }
 
@@ -716,8 +722,14 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		initializer = "sol_neighbor_t2_wolf_359"
 	}
 	neighbor_system = {
+		trigger = { num_ai_empires_setting > 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t2_tau_ceti"
+	}
+	neighbor_system = {
+		trigger = { num_ai_empires_setting = 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "virgin_sol_neighbor_t2_tau_ceti"
 	}
 }
 

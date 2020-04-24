@@ -1,9 +1,6 @@
 version="2.0"
 tags={
 	"Galaxy Generation"
-	"Graphics"
-	"Species"
-	"Spaceships"
 }
 name="Forward Earth"
 picture="cover-image.jpg"

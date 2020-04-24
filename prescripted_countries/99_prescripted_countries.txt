@@ -355,8 +355,6 @@ scyldari = {
 	government = gov_theocratic_republic
 	origin = "origin_default"
 
-	flags = { human_player }
-
 	ethic = "ethic_spiritualist"
 	ethic = "ethic_pacifist"
 	ethic = "ethic_xenophile"
@@ -424,8 +422,6 @@ kel_azaan = {
 	civics = { "civic_warrior_culture" "civic_citizen_service" }
 	government = gov_citizen_stratocracy
 	origin = "origin_default"
-	
-	flags = { human_player }
 
 	ethic = "ethic_egalitarian"
 	ethic = "ethic_fanatic_militarist"

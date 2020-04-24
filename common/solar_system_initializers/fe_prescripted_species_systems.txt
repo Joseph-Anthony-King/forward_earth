@@ -1077,186 +1077,187 @@ npc_scyldari_system_initializer = {
 		}
 		
 		init_effect = {
-            generate_empire_home_planet = yes
-            create_species = {
-                name = "PRESCRIPTED_species_name_scyldari"
-                plural = "PRESCRIPTED_species_plural_scyldari"
-                class = "MAM"
-                portrait = "mam6"
-                homeworld = THIS
-                traits = {
-                    trait = "trait_charismatic"
-                    trait = "trait_natural_sociologists"
-                    trait = "trait_weak"
-                }
-            }
 
-            create_country = {
-                name = "Scyldari Confederacy"
-                name_list = "MAM1"
+			generate_empire_home_planet = yes
+			create_species = {
+				name = "PRESCRIPTED_species_name_scyldari"
+				plural = "PRESCRIPTED_species_plural_scyldari"
+				class = "MAM"
+				portrait = "mam6"
+				homeworld = THIS
+				traits = {
+					trait = "trait_charismatic"
+					trait = "trait_natural_sociologists"
+					trait = "trait_weak"
+				}
+			}
 
-                room = "personality_spiritual_seekers_room"
+			create_country = {
+				name = "Scyldari Confederacy"
+				name_list = "MAM1"
 
-                ship_prefix = "SCS"
+				room = "personality_spiritual_seekers_room"
 
-                authority = "auth_democratic"
+				ship_prefix = "SCS"
 
-                civics = {
-                    civic = civic_environmentalist
-                    civic = civic_free_haven
-                }
-                government = gov_theocratic_republic
+				authority = "auth_democratic"
 
-                species = last_created
-                ethos = {
-                    ethic = "ethic_spiritualist"
-                    ethic = "ethic_pacifist"
-                    ethic = "ethic_xenophile"
-                }
+				civics = {
+					civic = civic_environmentalist
+					civic = civic_free_haven
+				}
+				government = gov_theocratic_republic
 
-                flag = {
-                    icon = {
-                        category = "spherical"
-                        file = "flag_spherical_15.dds"
-                    }
-                    background= {
-                        category = "backgrounds"
-                        file = "00_solid.dds"
-                    }
-                    colors={
-                        "burgundy"
-                        "orange"
-                        "null"
-                        "null"
-                    }
-                }
-                type = default
-                effect = {
-                    add_resource = {
-                        minerals = 200
-                        energy = 200
-                        food = 200
-                        alloys = 100
-                        consumer_goods = 100
-                        influence = 100
-                    }
-                }
-            }
+				species = last_created
+				ethos = {
+					ethic = "ethic_spiritualist"
+					ethic = "ethic_pacifist"
+					ethic = "ethic_xenophile"
+				}
 
-            while = {
-                count = 23
-                create_pop = {
-                    species = last_created
-                }
-            }
-            set_owner = last_created_country
-            set_capital = yes
-            add_district = district_city
-            add_district = district_city
-            add_district = district_city
-            add_district = district_city
-            add_district = district_farming
-            add_district = district_farming
-            add_district = district_farming
-            add_district = district_mining
-            add_district = district_mining
-            add_district = district_generator
-            add_district = district_generator
-            add_building = building_capital
-            add_building = building_research_lab_1
-            add_building = building_foundry_1
-            add_building = building_factory_1
+				flag = {
+					icon = {
+						category = "spherical"
+						file = "flag_spherical_15.dds"
+					}
+					background= {
+						category = "backgrounds"
+						file = "00_solid.dds"
+					}
+					colors={
+						"burgundy"
+						"orange"
+						"null"
+						"null"
+					}
+				}
+				type = default
+				effect = {
+					add_resource = {
+						minerals = 200
+						energy = 200
+						food = 200
+						alloys = 100
+						consumer_goods = 100
+						influence = 100
+					}
+				}
+			}
 
-            create_colony = {
-                owner = last_created_country
-                species = last_created
-                ethos = {
-                    ethic = "ethic_xenophile"
-                    ethic = "ethic_fanatic_egalitarian"
-                }
-            }
+			while = {
+				count = 23
+				create_pop = {
+					species = last_created
+				}
+			}
+			set_owner = last_created_country
+			set_capital = yes
+			add_district = district_city
+			add_district = district_city
+			add_district = district_city
+			add_district = district_city
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_generator
+			add_district = district_generator
+			add_building = building_capital
+			add_building = building_research_lab_1
+			add_building = building_foundry_1
+			add_building = building_factory_1
 
-            last_created_country = {
-                set_graphical_culture = mammalian_01
-                capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
+			create_colony = {
+				owner = last_created_country
+				species = last_created
+				ethos = {
+					ethic = "ethic_xenophile"
+					ethic = "ethic_fanatic_egalitarian"
+				}
+			}
+
+			last_created_country = {
+				set_graphical_culture = mammalian_01
+				capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
 				set_country_flag = scyldari_starbase
 				create_starting_leaders = yes
 				country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-            }
+			}
 
-            create_army = {
-                name = "1st Defensive Column"
-                owner = last_created
-                species = last_created
-                type = "defense_army"
-            }
-            create_army = {
-                name = "2nd Defensive Column"
-                owner = last_created
-                species = last_created
-                type = "defense_army"
-            }
+			create_army = {
+				name = "1st Defensive Column"
+				owner = last_created
+				species = last_created
+				type = "defense_army"
+			}
+			create_army = {
+				name = "2nd Defensive Column"
+				owner = last_created
+				species = last_created
+				type = "defense_army"
+			}
 
-            system_star = {
+			system_star = {
 
-                #science
-                create_fleet = {
-                    effect = {
-                        set_owner = last_created_country
+				#science
+				create_fleet = {
+					effect = {
+						set_owner = last_created_country
 
-                        create_ship = {
-                            name = random
-                            random_existing_design = science
-                        }
+						create_ship = {
+							name = random
+							random_existing_design = science
+						}
 
-                        set_fleet_stance = evasive
-                        set_location = PREV
+						set_fleet_stance = evasive
+						set_location = PREV
 
-                        owner = {
-                            create_leader = {
-                                type = scientist
-                                sub_type = survey
-                                name = random
-                                species = owner_main_species
-                            }
-                        }
-                        set_leader = last_created_leader
-                    }
-                }
+						owner = {
+							create_leader = {
+								type = scientist
+								sub_type = survey
+								name = random
+								species = owner_main_species
+							}
+						}
+						set_leader = last_created_leader
+					}
+				}
 
-                #constructor
-                create_fleet = {
-                    effect = {
-                        set_owner = last_created_country
+				#constructor
+				create_fleet = {
+					effect = {
+						set_owner = last_created_country
 
-                        create_ship = {
-                            name = random
-                            random_existing_design = constructor
-                        }
+						create_ship = {
+							name = random
+							random_existing_design = constructor
+						}
 
-                        set_fleet_stance = evasive
-                        set_location = PREV
-                    }
-                }
+						set_fleet_stance = evasive
+						set_location = PREV
+					}
+				}
 
-                #military
-                create_fleet = {
-                    set_take_point = yes
-                    effect = {
-                        set_owner = last_created_country
+				#military
+				create_fleet = {
+					set_take_point = yes
+					effect = {
+						set_owner = last_created_country
 
-                        while = {
-                            count = 3
-                            create_ship = {
-                                name = random
-                                random_existing_design = corvette
-                            }
-                        }
+						while = {
+							count = 3
+							create_ship = {
+								name = random
+								random_existing_design = corvette
+							}
+						}
 
-                        set_location = PREV
-                    }
-                }
-            }
+						set_location = PREV
+					}
+				}
+			}
 		}
 		
 		moon = {
@@ -1463,45 +1464,45 @@ npc_dal_lokkur_system_initializer = {
 		
 		init_effect = {
 
-            generate_empire_home_planet = yes
+			generate_empire_home_planet = yes
 
-            create_species = {
-                name = "PRESCRIPTED_species_name_lokken"
-                plural = "PRESCRIPTED_species_plural_lokken"
-                class = "REP"
-                portrait = "rep4"
-                homeworld = THIS
-                traits = {
+			create_species = {
+				name = "PRESCRIPTED_species_name_lokken"
+				plural = "PRESCRIPTED_species_plural_lokken"
+				class = "REP"
+				portrait = "rep4"
+				homeworld = THIS
+				traits = {
 					trait = "trait_natural_engineers"
 					trait = "trait_talented"
 					trait = "trait_quick_learners"
 					trait = "trait_sedentary"
-                }
-            }
+				}
+			}
 
-            create_country = {
-                name = "Lokken Directorate"
-                name_list = "REP2"
+			create_country = {
+				name = "Lokken Directorate"
+				name_list = "REP2"
 
-                room = "personality_erudite_explorers_room"
+				room = "personality_erudite_explorers_room"
 
-                ship_prefix = "LOK"
+				ship_prefix = "LOK"
 
-                authority = "auth_democratic"
+				authority = "auth_democratic"
 
-                civics = {
-                    civic = civic_technocracy
-                    civic = civic_meritocracy
-                }
-                government = gov_rational_consensus
+				civics = {
+					civic = civic_technocracy
+					civic = civic_meritocracy
+				}
+				government = gov_rational_consensus
 
-                species = last_created
-                ethos = {
-                    ethic = "ethic_egalitarian"
-                    ethic = "ethic_fanatic_materialist"
-                }
+				species = last_created
+				ethos = {
+					ethic = "ethic_egalitarian"
+					ethic = "ethic_fanatic_materialist"
+				}
 
-                flag = {
+				flag = {
 					icon = {
 						category = "pointy"
 						file = "flag_pointy_2.dds"
@@ -1516,27 +1517,27 @@ npc_dal_lokkur_system_initializer = {
 						"null"
 						"null"
 					}
-                }
-                type = default
-                effect = {
-                    add_resource = {
-                        minerals = 200
-                        energy = 200
-                        food = 200
-                        alloys = 100
-                        consumer_goods = 100
-                        influence = 100
-                    }
-                }
-            }
+				}
+				type = default
+				effect = {
+					add_resource = {
+						minerals = 200
+						energy = 200
+						food = 200
+						alloys = 100
+						consumer_goods = 100
+						influence = 100
+					}
+				}
+			}
 
-            while = {
-                count = 20
-                create_pop = {
-                    species = last_created
-                }
-            }
-                            
+			while = {
+				count = 20
+				create_pop = {
+					species = last_created
+				}
+			}
+							
 			create_species = {	
 				name = "NAME_Robot"	
 				plural = "NAME_Robots"	
@@ -1555,114 +1556,114 @@ npc_dal_lokkur_system_initializer = {
 				}	
 			}
 
-            set_owner = last_created_country
-            set_capital = yes
-            add_district = district_city
-            add_district = district_city
-            add_district = district_city
-            add_district = district_city
-            add_district = district_farming
-            add_district = district_farming
-            add_district = district_farming
-            add_district = district_mining
-            add_district = district_mining
-            add_district = district_generator
-            add_district = district_generator
-            add_building = building_capital
-            add_building = building_research_lab_1
-            add_building = building_foundry_1
-            add_building = building_factory_1
+			set_owner = last_created_country
+			set_capital = yes
+			add_district = district_city
+			add_district = district_city
+			add_district = district_city
+			add_district = district_city
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_farming
+			add_district = district_mining
+			add_district = district_mining
+			add_district = district_generator
+			add_district = district_generator
+			add_building = building_capital
+			add_building = building_research_lab_1
+			add_building = building_foundry_1
+			add_building = building_factory_1
 
-            create_colony = {
-                owner = last_created_country
-                species = last_created
-                ethos = {
-                    ethic = "ethic_egalitarian"
-                    ethic = "ethic_fanatic_materialist"
-                }
-            }
+			create_colony = {
+				owner = last_created_country
+				species = last_created
+				ethos = {
+					ethic = "ethic_egalitarian"
+					ethic = "ethic_fanatic_materialist"
+				}
+			}
 
-            last_created_country = {
-                capital_scope = { set_name = "PRESCRIPTED_planet_name_lokken" }
-                set_graphical_culture = reptilian_01
+			last_created_country = {
+				capital_scope = { set_name = "PRESCRIPTED_planet_name_lokken" }
+				set_graphical_culture = reptilian_01
 				set_country_flag = lokken_starbase
 				create_starting_leaders = yes
 				country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-            }
+			}
 
-            create_army = {
-                name = "1st Planetary Patrol"
-                owner = last_created
-                species = last_created
-                type = "defense_army"
-            }
-            create_army = {
-                name = "2nd Planetary Patrol"
-                owner = last_created
-                species = last_created
-                type = "defense_army"
-            }
+			create_army = {
+				name = "1st Planetary Patrol"
+				owner = last_created
+				species = last_created
+				type = "defense_army"
+			}
+			create_army = {
+				name = "2nd Planetary Patrol"
+				owner = last_created
+				species = last_created
+				type = "defense_army"
+			}
 
-            system_star = {
+			system_star = {
 
-                #science
-                create_fleet = {
-                    effect = {
-                        set_owner = last_created_country
+				#science
+				create_fleet = {
+					effect = {
+						set_owner = last_created_country
 
-                        create_ship = {
-                            name = random
-                            random_existing_design = science
-                        }
+						create_ship = {
+							name = random
+							random_existing_design = science
+						}
 
-                        set_fleet_stance = evasive
-                        set_location = PREV
+						set_fleet_stance = evasive
+						set_location = PREV
 
-                        owner = {
-                            create_leader = {
-                                type = scientist
-                                sub_type = survey
-                                name = random
-                                species = owner_main_species
-                            }
-                        }
-                        set_leader = last_created_leader
-                    }
-                }
+						owner = {
+							create_leader = {
+								type = scientist
+								sub_type = survey
+								name = random
+								species = owner_main_species
+							}
+						}
+						set_leader = last_created_leader
+					}
+				}
 
-                #constructor
-                create_fleet = {
-                    effect = {
-                        set_owner = last_created_country
+				#constructor
+				create_fleet = {
+					effect = {
+						set_owner = last_created_country
 
-                        create_ship = {
-                            name = random
-                            random_existing_design = constructor
-                        }
+						create_ship = {
+							name = random
+							random_existing_design = constructor
+						}
 
-                        set_fleet_stance = evasive
-                        set_location = PREV
-                    }
-                }
+						set_fleet_stance = evasive
+						set_location = PREV
+					}
+				}
 
-                #military
-                create_fleet = {
-                    set_take_point = yes
-                    effect = {
-                        set_owner = last_created_country
+				#military
+				create_fleet = {
+					set_take_point = yes
+					effect = {
+						set_owner = last_created_country
 
-                        while = {
-                            count = 3
-                            create_ship = {
-                                name = random
-                                random_existing_design = corvette
-                            }
-                        }
+						while = {
+							count = 3
+							create_ship = {
+								name = random
+								random_existing_design = corvette
+							}
+						}
 
-                        set_location = PREV
-                    }
-                }
-            }
+						set_location = PREV
+					}
+				}
+			}
 		}
 		
 		moon = {
@@ -1839,8 +1840,9 @@ npc_kel_azak_system_initializer = {
 			init_effect = {
 				prevent_anomaly = yes
 			}
-		
+	
 			init_effect = {
+
 				generate_empire_home_planet = yes
 				create_species = {
 					name = "PRESCRIPTED_species_name_kel_azaan"
@@ -2084,6 +2086,469 @@ npc_kel_azak_system_initializer = {
 			module = shipyard
 			owner = last_created_country
 		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_kel_azak_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_kel_azak_first_colony"
+	}
+}
+
+### NPC Scyldari System
+virgin_scyldari_system_initializer = {
+	name = "PRESCRIPTED_system_name_scyldari"
+	class = sc_binary_8
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+	flags = { empire_home_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		
+		generate_home_system_resources = yes
+	}
+	
+	
+	planet = {
+		name = "Scyldon A"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+
+		planet = {
+			name = "Scyldon B"
+			class = "pc_m_star"
+			orbit_distance = 30
+			orbit_angle = 120
+			size = 16
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 10
+		orbit_angle = 120
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ocean"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		modifiers = none
+		has_ring = yes
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 125
+		size = 22
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}		
+		moon = {
+			class = "pc_barren"
+			size = 4
+			orbit_distance = 4
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		orbit_distance = 30
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 160
+		size = 16
+		has_ring = yes
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_scyldari_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_scyldari_first_colony"
+	}
+}
+
+### NPC Dal Lokkur System
+virgin_dal_lokkur_system_initializer = {
+	name = "PRESCRIPTED_system_name_lokken"
+	
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 35
+	}
+	
+	flags = { empire_home_system }
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_lokken"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = -45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_arid"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 16
+		has_ring = no
+		deposit_blockers = none
+		modifiers = none
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 12
+			orbit_angle = 40
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 20
+		orbit_angle = 130
+		size = 13
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 26
+		has_ring = yes
+		
+		moon = {
+			class = "pc_toxic"
+			size = 9
+			orbit_distance = 18
+			orbit_angle = 80
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 110
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 125
+		size = 24
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_dal_lokkur_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_dal_lokkur_first_colony"
+	}
+}
+
+### NPC Kel-Azak System
+virgin_kel_azak_system_initializer = {
+	name = "PRESCRIPTED_system_name_kel_azaan"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 40
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+	
+	flags = { empire_home_system }
+	
+	planet = {
+		name = "PRESCRIPTED_system_name_kel_azaan"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		
+		moon = {
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = "pc_savannah"
+			orbit_distance = 5
+			orbit_angle = 170
+			size = 18
+			has_ring = no
+			modifiers = none
+		}		
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 160
+		size = 35
+		has_ring = yes
+		
+		moon = {
+			class = "pc_barren"
+			size = 7
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 8
+			orbit_angle = 100
+			has_ring = no
+		}		
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 16
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 18
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 130
+		size = 8
 	}
 	
 	neighbor_system = {
