@@ -265,6 +265,18 @@ eta_cassiopeiae_with_sol_system_initializer = {
 					}
 					# Earth no civilization
 					10 = {
+						create_species = {
+							name = Human
+							plural = Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"
+								trait = "trait_wasteful"
+							}
+						}
 					}
 				}
 			}
