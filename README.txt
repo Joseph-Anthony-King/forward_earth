@@ -1,4 +1,4 @@
-﻿[h3]Please note this is an update of a prior mod I had uploaded to steam.  That mod is no longer available for new subscriptions though it has been updated to Stellaris version 2.6.*.  This prior mod will not receive future updates and if you wish to get the latest updates you will need to subscribe this this mod.[/h3]
+﻿[h3]Please note this is an update of a prior mod I had uploaded to steam.  That mod is no longer available for new subscriptions though it has been updated to Stellaris version 2.6.*.  This prior mod will not receive future updates and if you wish to get the latest updates you will need to subscribe to this mod.[/h3]
 
 [h1]FORWARD EARTH[/h1]
 
@@ -45,14 +45,15 @@ This mod took quite a bit of time and I used my programming skills to script a l
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [b]Grumpy Gremlin[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [b]Cheek[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [b]phidinh6[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/b] by [url]Alex FRD[/b]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/url] by [b]Alex FRD[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410]Real Sol Textures Expansion[/url] by [b]Leaf[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428]Immersive Galaxy - Nightfall[/url] by [b]Dwaine[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety, LITE[/url] by [b]Dwaine[/b][/list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety, LITE[/url] by [b]Dwaine[/b]
+[/list]
 
 Dwaine's Immersive Galaxy mod adds a nice touch, but this mod also requires the following:
 
-[b]Immersive Galaxy - Planet Variety, Clouds[/b] by [b]Dwaine[/b]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388]Immersive Galaxy - Planet Variety, Clouds[/url] by [b]Dwaine[/b]
 
 This mod supports Portuguese, French, German, Polish, Russian and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 
