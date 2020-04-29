@@ -84,7 +84,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 				limit = { NOT = { any_country = { has_country_flag = human_1 } } }
 				random_list = {
 					# Space Age
-					85 = {
+					90 = {
 						generate_empire_home_planet = yes
 						create_species = {
 							name = Human
@@ -263,96 +263,8 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							capital_scope = { set_name = "NAME_Earth" }
 						}
 					}
-					# Early Space Age
-					10 = {
-						create_species = {
-							name = Human
-							plural = Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"
-								trait = "trait_wasteful"
-							}
-						}
-
-						create_country = {
-							name = "United Nations"
-							authority = random
-							day_zero_contact = no
-							civics = {
-								civic = civic_increasing_urbanization
-								civic = civic_atmospheric_pollution
-							}
-							species = last_created
-							ethos = {
-								ethic = "ethic_xenophile"
-								ethic = "ethic_fanatic_egalitarian"
-							}
-
-							flag = {
-								icon = {
-									category = "human"
-									file = "flag_human_une.dds"
-								}
-                                background= {
-                                    category = "backgrounds"
-                                    file = "00_solid.dds"
-                                }
-                                colors={
-                                    "blue"
-                                    "black"
-                                    "null"
-                                    "null"
-                                }
-							}
-							type = primitive
-						}
-
-						last_created_country = {
-							set_graphical_culture = industrial_01
-							set_country_flag = early_space_age
-							set_country_flag = humans_early_space_age
-							set_country_flag = human_1
-							set_primitive_age = early_space_age
-						}
-
-						while = {
-							count = 15
-							create_pop = {
-								species = last_created
-							}
-						}
-						set_owner = last_created_country
-
-						create_primitive_blockers = yes
-
-						create_fleet = {
-							name = "NAME_ISS_II"
-							effect = {
-								set_owner = last_created_country
-								create_ship = {
-									name = "NAME_ISS_II"
-									design = "NAME_Space_Station"
-								}
-								set_location = PREV
-							}
-						}
-						add_building = building_primitive_farm
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_capital
-						add_building = building_urban_dwellings
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Earth" }
-						}
-					}
 					# Earth no civilization
-					5 = {
+					10 = {
 					}
 				}
 			}
