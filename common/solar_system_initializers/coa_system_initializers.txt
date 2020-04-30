@@ -84,7 +84,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 				limit = { NOT = { any_country = { has_country_flag = human_1 } } }
 				random_list = {
 					# Space Age
-					90 = {
+					95 = {
 						generate_empire_home_planet = yes
 						create_species = {
 							name = Human
@@ -264,7 +264,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						}
 					}
 					# Earth no civilization
-					10 = {
+					5 = {
 						create_species = {
 							name = Human
 							plural = Humans
