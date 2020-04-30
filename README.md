@@ -14,7 +14,7 @@ Even though this is an human centric mod the scripts have been adjusted to be re
 
 *…but wait!  There’s more!*  The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 
-This mod also includes the star names included in my **This is Alpha Ceti V!** mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
+This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
 
 - Alkaid
 - Athyr
