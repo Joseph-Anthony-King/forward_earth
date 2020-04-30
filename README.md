@@ -46,9 +46,9 @@ This mod took quite a bit of time and I used my programming skills to script a l
 - [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by **Alex FRD**
 - [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by **Leaf**
 - [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by **Dwaine**
-- [Immersive Galaxy - Planet Variety, LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by **Dwaine**
+- [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by **Dwaine**
 
-This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety, Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388) but since that mod is not always updated timely I've created a wrapper for the mod available at:
+This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
 [Forward Earth - BASE](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914) 
 
