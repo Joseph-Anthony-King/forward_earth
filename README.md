@@ -16,7 +16,7 @@ Even though this is an human centric mod the scripts have been adjusted to be re
 
 *…but wait!  There’s more!*  The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 
-This mod also includes the star names included in my **This is Alpha Ceti V!** mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
+This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
 
 - Alkaid
 - Athyr
@@ -48,9 +48,9 @@ This mod took quite a bit of time and I used my programming skills to script a l
 - [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by **Alex FRD**
 - [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by **Leaf**
 - [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by **Dwaine**
-- [Immersive Galaxy - Planet Variety, LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by **Dwaine**
+- [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by **Dwaine**
 
-This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety, Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388) but since that mod is not always updated timely I've created a wrapper for the mod available at:
+This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
 [Forward Earth - BASE](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914) 
 
