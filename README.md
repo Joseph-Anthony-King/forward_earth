@@ -1,3 +1,5 @@
+![alt text](https://i.imgur.com/p7Fv1Z6.gif "Don't forget to like and favorite!")
+
 ### Please note this is an update of a prior mod I had uploaded to steam.  That mod is no longer available for new subscriptions though it has been updated to Stellaris version 2.6.*.  This prior mod will not receive future updates and if you wish to get the latest updates you will need to subscribe to this mod.
 
 # FORWARD EARTH
