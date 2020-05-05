@@ -1501,8 +1501,8 @@ fe_fourteen_binary_planet_system_initializer = {
 	}
 
     planet = {
-		count = { min = 0 max = 1 }
-		orbit_distance = { min = 10 max = 20 }
+		count = { min = 1 max = 2 }
+		orbit_distance = { min = 20 max = 30 }
 		class = pc_toxic
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
