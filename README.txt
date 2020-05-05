@@ -44,6 +44,7 @@ This mod also includes the star names included in my [url=https://steamcommunity
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
 [list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [b]AryxErin[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [b]Grumpy Gremlin[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [b]Cheek[/b]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [b]phidinh6[/b]

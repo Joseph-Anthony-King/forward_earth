@@ -1,1 +1,0 @@
-	NDefines.NGameplay.BORDER_BASE_RADIUS				= 5

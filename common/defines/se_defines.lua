@@ -1,3 +1,0 @@
-
-NDefines.NGameplay.PLANET_ORBIT_DISTANCE = 4.0
-NDefines.NGameplay.PLANET_STATION_ORBIT_DISTANCE = 1.0

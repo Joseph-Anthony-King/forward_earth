@@ -37,7 +37,7 @@ humans1 = {
 	system_name = "NAME_Sol"
 	
 	graphical_culture = "css_fedbuild_02"
-	city_graphical_culture = "mammalian_01"
+	city_graphical_culture = "machine_01"
 	
 	empire_flag = {
 		icon= {
@@ -106,8 +106,8 @@ humans2 = {
 	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "Eta Cassiopeiae"
 	
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
+	graphical_culture = "machine_01"
+	city_graphical_culture = "machine_01"
 	
 	empire_flag = {
 		icon= {

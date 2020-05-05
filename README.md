@@ -40,6 +40,7 @@ This mod also includes the star names included in my [This is Alpha Ceti V!](htt
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
 
+- [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by **AryxErin**
 - [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by **Grumpy Gremlin**
 - [Federation Builders: Ships and Cities](https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923) by **Cheek**
 - [Natural Spiral Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=866156261) by **phidinh6**
