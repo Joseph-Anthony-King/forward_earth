@@ -182,8 +182,8 @@ ixidar = {
 	civics = { "civic_hive_natural_neural_network" "civic_hive_pooled_knowledge" }
 	origin = origin_default
 	
-	graphical_culture = "arthropoid_01"
-	city_graphical_culture = "arthropoid_01"
+	graphical_culture = "lithoid_01"
+	city_graphical_culture = "lithoid_01"
 	
 	empire_flag = {
 		icon= {
