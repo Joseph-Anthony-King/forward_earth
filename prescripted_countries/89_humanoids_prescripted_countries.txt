@@ -36,7 +36,7 @@ voor = {
 	system_name = PRESCRIPTED_system_name_voor
 	initializer = ""
 
-	graphical_culture = "humanoid_01"
+	graphical_culture = "mammalian_01"
 	city_graphical_culture = "humanoid_01"
 
 	empire_flag = {
