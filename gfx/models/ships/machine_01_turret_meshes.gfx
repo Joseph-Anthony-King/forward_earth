@@ -78,7 +78,32 @@ ObjectTypes = {
 			shader = "PdxMeshShip"
 		}
 	}
+
+	pdxmesh = {
+		name = "machine_01_turret_projectile_torp_mesh"
+		file = "gfx/models/ships/Weapons_Assets/Turrets/machine_01_turret_quad.mesh"
+		scale = 1.0
+
+	}
 	
+	pdxmesh = {
+		name = "machine_01_turret_laser_large_mesh"
+		file = "gfx/models/ships/Weapons_Assets/Turrets/machine_01_laser_l.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "machine_01_turret_laser_medium_mesh"
+		file = "gfx/models/ships/Weapons_Assets/Turrets/machine_01_laser_m.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "machine_01_turret_laser_small_mesh"
+		file = "gfx/models/ships/Weapons_Assets/Turrets/machine_01_laser_s.mesh"
+		scale = 1.0
+	}
+
+
+
 	pdxmesh = {
 		name = "machine_01_turret_xl_mesh"
 		file = "gfx/models/ships/Weapons_Assets/machine_01_turret_xl.mesh"		

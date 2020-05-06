@@ -68,7 +68,7 @@ entity = {
 		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_m" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 
 
 		#ion_cannon_core_effect
@@ -98,7 +98,7 @@ entity = {
 		#event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		#event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		#event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		#event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_m" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 
 		
 
@@ -125,7 +125,7 @@ entity = {
 		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_m" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 		
 
 	}
@@ -152,7 +152,7 @@ entity = {
 		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_m" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 
 	}
 	# Opened state, going after "opening" which is labeled "working".
@@ -169,14 +169,52 @@ entity = {
 		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_starbase_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "planet_killer_gun_01" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }	
 		event = { time = 0 node = "planet_killer_gun_01" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 15 }
 		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 5}	
 		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 10}			
+		event = { time = 0 node = "windup_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "windup_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "windup_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }		
+	
 		
+		event = { time = 0 node = "planet_killer_gun_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		
+	
+		############### WINDUP LIGHT LOCATORS
+
+		event = { time = 0 node = "01_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+		event = { time = 0 node = "02_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+		event = { time = 0 node = "03_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+
+		event = { time = 0.15 node = "01_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.15 node = "02_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.15 node = "03_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		event = { time = 0.3 node = "01_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.3 node = "02_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.3 node = "03_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		event = { time = 0.45 node = "01_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.45 node = "02_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.45 node = "03_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		event = { time = 0.6 node = "01_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+		event = { time = 0.6 node = "02_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+		event = { time = 0.6 node = "03_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+
+		event = { time = 0.75 node = "01_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.75 node = "02_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.75 node = "03_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		event = { time = 0.9 node = "01_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.9 node = "02_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		event = { time = 0.9 node = "03_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+	
 	
 	
 	#"lithoid_01_collosus_core"
@@ -198,12 +236,13 @@ entity = {
 		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
-		event = { time = 0 node = "core" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0 node = "planet_killer_gun_01" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
 
+		event = { time = 0 node = "planet_killer_gun_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 
 
-
+		#reptilian_01_colossus_inner_core_effect
 		#planet_killer_gun_01
 	}
 	# Closed death state.
@@ -246,7 +285,7 @@ entity = {
 		event = { time = 8.0 node = "core" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
 	}
 
-	#locator = { name = "planet_killer_gun_01" position = { 0 0 0 } } # Actual locator in mesh.
+	#locator = { name = "planet_killer_gun_01" position = { 0 0 0 } } # Actual locator is in mesh.
 }
 
 animation = {
