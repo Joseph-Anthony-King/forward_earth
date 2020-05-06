@@ -1178,7 +1178,7 @@ npc_scyldari_system_initializer = {
 			}
 
 			last_created_country = {
-				set_graphical_culture = mammalian_01
+				set_graphical_culture = humanoid_01
 				capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
 				set_country_flag = scyldari_starbase
 				create_starting_leaders = yes
@@ -2100,7 +2100,7 @@ npc_kel_azak_system_initializer = {
 	}
 }
 
-### NPC Scyldari System
+### Virgin Scyldari System
 virgin_scyldari_system_initializer = {
 	name = "PRESCRIPTED_system_name_scyldari"
 	class = sc_binary_8
@@ -2266,7 +2266,7 @@ virgin_scyldari_system_initializer = {
 	}
 }
 
-### NPC Dal Lokkur System
+### Virgin Dal Lokkur System
 virgin_dal_lokkur_system_initializer = {
 	name = "PRESCRIPTED_system_name_lokken"
 	
@@ -2419,7 +2419,7 @@ virgin_dal_lokkur_system_initializer = {
 	}
 }
 
-### NPC Kel-Azak System
+### Virgin Kel-Azak System
 virgin_kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
