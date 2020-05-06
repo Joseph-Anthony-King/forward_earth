@@ -302,7 +302,7 @@ event = {
 
                                 last_created_country = {
                                     capital_scope = { set_name = "Aurora" }
-                                    set_graphical_culture = mammalian_01
+                                    set_graphical_culture = machine_01
 
                                     system_star = {
 
@@ -314,7 +314,7 @@ event = {
                                                 create_ship = {
                                                     name = random
                                                     random_existing_design = science
-                                                    graphical_culture = "mammalian_01"
+                                                    graphical_culture = "machine_01"
                                                 }
 
                                                 set_fleet_stance = evasive
@@ -338,7 +338,7 @@ event = {
                                                 create_ship = {
                                                     name = random
                                                     random_existing_design = constructor
-                                                    graphical_culture = "mammalian_01"
+                                                    graphical_culture = "machine_01"
                                                 }
 
                                                 set_fleet_stance = evasive
@@ -357,7 +357,7 @@ event = {
                                                     create_ship = {
                                                         name = random
                                                         random_existing_design = corvette
-                                                        graphical_culture = "mammalian_01"
+                                                        graphical_culture = "machine_01"
                                                     }
                                                 }
 
@@ -655,7 +655,7 @@ event = {
 
                                 last_created_country = {
                                     capital_scope = { set_name = "Aurora" }
-                                    set_graphical_culture = mammalian_01
+                                    set_graphical_culture = machine_01
 
                                     system_star = {
 
@@ -667,7 +667,7 @@ event = {
                                                 create_ship = {
                                                     name = random
                                                     random_existing_design = science
-                                                    graphical_culture = "mammalian_01"
+                                                    graphical_culture = "machine_01"
                                                 }
 
                                                 set_fleet_stance = evasive
@@ -691,7 +691,7 @@ event = {
                                                 create_ship = {
                                                     name = random
                                                     random_existing_design = constructor
-                                                    graphical_culture = "mammalian_01"
+                                                    graphical_culture = "machine_01"
                                                 }
 
                                                 set_fleet_stance = evasive
@@ -710,7 +710,7 @@ event = {
                                                     create_ship = {
                                                         name = random
                                                         random_existing_design = corvette
-                                                        graphical_culture = "mammalian_01"
+                                                        graphical_culture = "machine_01"
                                                     }
                                                 }
 
@@ -1014,7 +1014,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = mammalian_01
+                                set_graphical_culture = machine_01
 
                                 system_star = {
 
@@ -1026,7 +1026,7 @@ event = {
                                             create_ship = {
                                                 name = random
                                                 random_existing_design = science
-                                                graphical_culture = "mammalian_01"
+                                                graphical_culture = "machine_01"
                                             }
 
                                             set_fleet_stance = evasive
@@ -1050,7 +1050,7 @@ event = {
                                             create_ship = {
                                                 name = random
                                                 random_existing_design = constructor
-                                                graphical_culture = "mammalian_01"
+                                                graphical_culture = "machine_01"
                                             }
 
                                             set_fleet_stance = evasive
@@ -1069,7 +1069,7 @@ event = {
                                                 create_ship = {
                                                     name = random
                                                     random_existing_design = corvette
-                                                    graphical_culture = "mammalian_01"
+                                                    graphical_culture = "machine_01"
                                                 }
                                             }
 
