@@ -1149,7 +1149,7 @@ npc_scyldari_system_initializer = {
 			}
 
 			clear_blockers = yes
-			create_primitive_blockers = yes
+			generate_start_deposits_and_blockers = yes
 
 			set_owner = last_created_country
 			set_capital = yes
@@ -1497,7 +1497,7 @@ npc_dal_lokkur_system_initializer = {
 			}
 
 			clear_blockers = yes
-			create_primitive_blockers = yes
+			generate_start_deposits_and_blockers = yes
 
 			set_owner = last_created_country
 			set_capital = yes
@@ -1799,7 +1799,7 @@ npc_kel_azak_system_initializer = {
 				}
 
 				clear_blockers = yes
-				create_primitive_blockers = yes
+				generate_start_deposits_and_blockers = yes
 
 				set_owner = last_created_country
 				set_capital = yes
