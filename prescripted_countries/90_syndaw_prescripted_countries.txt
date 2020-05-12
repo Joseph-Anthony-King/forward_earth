@@ -164,7 +164,7 @@ custodianship = {
 
 # Determined Exterminator - ICARUS
 icarus = {
-	name = "ICARUS"
+	name = "icarus"
 	adjective = "Autodrone"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
