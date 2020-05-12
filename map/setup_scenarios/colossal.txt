@@ -1,13 +1,13 @@
 setup_scenario = {
 	name = "Colossal"
-	priority = 7					#priority decides in which order the scenarios are listed
-	num_stars = 4000
-	radius = 500					#should be less than 500, preferably less than ~460
-	num_empires = { min = 1 max = 50 }	#limits player customization
-	num_empire_default = 40
+	priority = 7
+	num_stars = 2000
+	radius = 500	#should be less than 500, preferably less than ~460
+	num_empires = { min = 0 max = 50 }
+	num_empire_default = 20
 	fallen_empire_default = 6
 	fallen_empire_max = 6
-	advanced_empire_default = 8
+	advanced_empire_default = 10
 	colonizable_planet_odds = 1.0
 	
 	cluster_count = {

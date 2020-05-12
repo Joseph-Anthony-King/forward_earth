@@ -1,4 +1,6 @@
 ﻿l_russian:
+ immense:0 "необъятный"
+ colossal:0 "колоссальный"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Солнечн система нет Эта Кассиопея"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "Система смоделированная после солнечной системы Земли без системы Денеба.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Солнечн система ранняя космическая эра"

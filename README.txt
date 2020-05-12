@@ -44,14 +44,14 @@ This mod also includes the star names included in my [url=https://steamcommunity
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
 [list]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [b]AryxErin[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [b]Grumpy Gremlin[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [b]Cheek[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [b]phidinh6[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/url] by [b]Alex FRD[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410]Real Sol Textures Expansion[/url] by [b]Leaf[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428]Immersive Galaxy - Nightfall[/url] by [b]Dwaine[/b]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety - LITE[/url] by [b]Dwaine[/b]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [url=https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990]Grumpy Gremlin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [url=https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990]Cheek[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [url=https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990]phidinh6[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/url] by [url=https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990]Alex FRD[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410]Real Sol Textures Expansion[/url] by [url=https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990]Leaf[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428]Immersive Galaxy - Nightfall[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety - LITE[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
 [/list]
 
 This mod also has a dependenacy on [b]Dwaine's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357]Immersive Galaxy - Planet Variety - Clouds[/url] but since that mod is not always updated timely I've created a wrapper for the mod available at:

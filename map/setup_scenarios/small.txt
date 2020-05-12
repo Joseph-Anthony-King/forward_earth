@@ -1,14 +1,13 @@
 setup_scenario = {
-	default = yes
-	name = "Huge"
-	priority = 2					#priority decides in which order the scenarios are listed
-	num_stars = 1000
-	radius = 450					#should be less than 500, preferably less than ~460
-	num_empires = { min = 1 max = 39 }	#limits player customization
-	num_empire_default = 29
-	fallen_empire_default = 4
-	fallen_empire_max = 4
-	advanced_empire_default = 8
+	name = "Small"
+	priority = 2
+	num_stars = 400
+	radius = 450	#should be less than 500, preferably less than ~460
+	num_empires = { min = 0 max = 12 }
+	num_empire_default = 6
+	fallen_empire_default = 0
+	fallen_empire_max = 2
+	advanced_empire_default = 3
 	colonizable_planet_odds = 1.0
 	
 	cluster_count = {

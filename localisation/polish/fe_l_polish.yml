@@ -1,4 +1,6 @@
 ﻿l_polish:
+ immense:0 "Ogromny"
+ colossal:0 "Kolosalny"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Sol nie Eta Cassiopeiae"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "System modelowany po systemie słonecznym Ziemi bez systemu Eta Cassiopeiae.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Wczesna epoka kosmiczna Sol"

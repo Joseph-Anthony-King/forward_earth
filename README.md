@@ -40,14 +40,14 @@ This mod also includes the star names included in my [This is Alpha Ceti V!](htt
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
 
-- [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by **AryxErin**
-- [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by **Grumpy Gremlin**
-- [Federation Builders: Ships and Cities](https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923) by **Cheek**
-- [Natural Spiral Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=866156261) by **phidinh6**
-- [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by **Alex FRD**
-- [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by **Leaf**
-- [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by **Dwaine**
-- [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by **Dwaine**
+- [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by [AryxErin](https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990)
+- [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by [Grumpy Gremlin](https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990)
+- [Federation Builders: Ships and Cities](https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923) by [Cheek](https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990)
+- [Natural Spiral Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=866156261) by [phidinh6](https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990)
+- [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by [Alex FRD](https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990)
+- [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by [Leaf](https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990)
+- [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by  [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
+- [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 
 This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
