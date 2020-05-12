@@ -114,8 +114,6 @@ npc_sol_system_initializer = {
 							name = "ICARUS"
 							name_list = "MACHINE4"
 
-							room = "machine_room"
-
 							ship_prefix = "ICARUS"
 
 							authority = "auth_machine_intelligence"
@@ -124,7 +122,6 @@ npc_sol_system_initializer = {
 								civic = civic_machine_terminator
 								civic = civic_machine_warbots
 							}
-							government = gov_machine_terminator
 
 							species = last_created
 							ethos = {
@@ -230,7 +227,6 @@ npc_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
-											type = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species
@@ -299,8 +295,6 @@ npc_sol_system_initializer = {
 							name = "United Nations of Earth"
 							name_list = "HUMAN1"
 
-							room = "personality_federation_builders_room"
-
 							ship_prefix = "UNS"
 
 							authority = "auth_democratic"
@@ -309,7 +303,6 @@ npc_sol_system_initializer = {
 								civic = civic_beacon_of_liberty
 								civic = civic_idealistic_foundation
 							}
-							government = gov_representative_democracy
 
 							species = last_created
 							ethos = {
@@ -415,7 +408,6 @@ npc_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
-											type = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species

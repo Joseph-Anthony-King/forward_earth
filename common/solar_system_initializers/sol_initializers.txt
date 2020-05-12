@@ -1754,10 +1754,6 @@ com_sol_neighbor_t1 = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "com_sol_neighbor_t1_2_second_colony_epsilon"
 	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_2_no_guaranteed_colony"
-	}
 }
 
 # Commonwealth Sol Neighbor Tier 2 Second Colony
@@ -2467,10 +2463,6 @@ lost_colony_sol_neighbor_t1 = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "lost_colony_sol_neighbor_t1_2_second_colony_epsilon"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_2_no_guaranteed_colony"
 	}
 }
 

@@ -19,32 +19,32 @@
 
  TOPBAR_OWNED_SYSTEMS:0 "Reichssysteme"
  TOPBAR_OWNED_SYSTEMS_DESC:0 "Wir besitzen §Y$NUM_SYSTEMS$§! £system£ $SYSTEM_SYSTEMS$\nWir besitzen §Y$NUM_COLONIZED_SYSTEMS$§! £planet£ kolonisierte $COLONIZED_SYSTEM_SYSTEMS$"
- 
+
  RESOURCE_AI_VALUE:0 "KI-WERT: $VALUE$"
- 
+
  PLAYER_EMPIRE_MP:0 "§Y$NAME$ (Spieler-Reich)§!"
  PLAYER_EMPIRE_SP:0 "§YSpieler-Reich§!"
- 
+
  SHIP_SIZE_LIMIT_REACHED:0 "£trigger_no£ Unser Reich kann nur $NUM|Y$ Schiff(e) der Größe $SIZE$ unterstützen."
  FED_SHIP_SIZE_LIMIT_REACHED:0 "£trigger_no£ Unsere Föderation kann nur $NUM|Y$ Schiff(e) der Größe $SIZE$ unterstützen."
-  
+
  SHIPS_NUM:0 "§H$NUM$ x $CLASS$§!"
  SHIPS_WANTED:0 " §R($NUM$ benötigt)§!"
-  
+
  SHIP_DESIGN_NAME_RANDOMIZE_TOOLTIP:0 "Zufälliger Name"
- 
+
  CANNOT_RELEASE_CULTURE_SHOCK:0 "Es ist nicht möglich einen Planeten abzutreten, der momentan einen stellaren Kulturschock erleidet."
 
  SYSTEM_RESTRICTED:1 "Eingeschränktes System"
  SYSTEM_IS_RESTRICTED:0 "§REingeschränktes System§!\nUnsere Flotten werden vermeiden, durch $SYSTEM|Y$ zu reisen."
  SYSTEM_NOT_RESTRICTED:0 "§GUneingeschränktes System§!\nUnsere Flotten können frei durch $SYSTEM|Y$ reisen."
  SYSTEM_RESTRICTION_TOOLTIP:0 "§EKlicken, um den Einschränkungsstatus von $SYSTEM|Y$ zu ändern. Systeme, die als eingeschränkt gelten, werden von unseren Flotten immer gemieden.§!"
-  
+
  fleet_force_disparity_effect:0 "Force Disparity"
- 
+
  feature_war_doctrines:0 "War Doctrines"
  feature_war_doctrines_desc:0 "Allows us to choose a §HWar Doctrine§! from the §HPolicies§! tab."
- 
+
  piracy_risk:0 "Piratenrisiko"
  PIRACY_LABEL:0 "$piracy_risk$:"
 
@@ -54,10 +54,10 @@
  ICON_COLOR_VALUE:0 "£$ICON$£ $VALUE|0$"
  ICON_VALUE_POSITIVE:0 "£$ICON$£ $VALUE|0+=$"
  ICON_VALUE_NEGATIVE:0 "£$ICON$£ $VALUE|0-$"
- 
+
  land_appropriation:0 "Land beschlagnahmt"
  land_appropriation_desc:0 "Von der einheimischen Bevölkerung des Planeten wurde Land beschlagnahmt, um Platz für siedelnde Staatsbürger zu schaffen.\n\n§YWährend dieser Modifikator aktiv ist, ist es nicht-Staatsbürgern nicht erlaubt, sich auf diesem Planeten zu vermehren.§!"
- 
+
  TRAIT_SYNCRETIC_PROLES_EFFECT:0 "$MOD_POP_HAPPINESS$: §G+10%§!\n$mod_planet_jobs_produces_mult$: §G+10%§!\nKann keine §YAnführer§! generieren\nKann nicht in den Arbeitsplätzen von §Y$pop_cat_ruler$§! oder §Y$pop_cat_specialist$§! eingesetzt werden"
  TRAIT_NERVE_STAPLED_EFFECT:2 "$mod_planet_jobs_produces_mult$: §G+5%§!\nKann keine §YAnführer§! generieren\nKann nicht in den Arbeitsplätzen von §Y$pop_cat_ruler$§! oder §Y$pop_cat_specialist$§! eingesetzt werden"
  TRAIT_CHARISMATIC_EFFECT:4 "£amenities£ Dienstleistungen von £job£ Arbeit: §G+20%§!"
@@ -71,9 +71,9 @@
  NO_SPECIES_CAN_INHABIT:0 "§REs gibt keine Spezies in unserem Reich, die diese Art von Planet bewohnen kann§!"
  POP_HABITABILITY_TOO_LOW:0 "§RPlanetenbewohnbarkeit ist unter §R20%§!.§!"
  POP_MAY_NOT_LIVE_ON_PLANET:0 "§RSpeziesrechte für Bewohner erlauben keinen Aufenthalt auf diesem Planeten.§!"
- 
+
  CANNOT_ENLIGHTEN_FANATIC_XENOPHOBE:0 "Wenn Primitive die Gesinnung §H$ethic_fanatic_xenophobe$§! haben, können sie nicht technologisch erleuchtet werden."
- 
+
  FOOD_NO_NEED:0 "§YWir besitzen keine Bewohner, die Nahrung zum Überleben benötigen.§!"
  FOOD_NO_PLANETS:0 "§YWir haben keine Planeten, auf denen Nahrung angebaut werden muss.§!"
  FOOD_SURPLUS_STARVATION:0 "§RIn unserem Reich herrscht der Hunger, das gesamte §YBewohnerwachstum§! ist ausgesetzt.§!"
@@ -82,9 +82,9 @@
  FROM_FOOD_SURPLUS:1 "Von Nahrungsüberschuss: $VALUE|Y=2$"
 
  SPECIES_LACKS_OPTION:0 "§RDas ausgewählte Erscheinungsbild Ihrer Spezies bietet in dieser Kategorie keine sekundären Optionen an.§!"
- 
+
  POP_LOWERING_STABILITY:0 "Dieser Bewohner ist unzufrieden und verringert die §H$PLANET_STABILITY_TITLE$§!"
- 
+
  STRATEGY_DATA:0 "Strategiedaten"
  AI_STRATEGY_ENTRY:0 "$NAME|Y$ ($VALUE$)"
 
@@ -150,9 +150,12 @@
  empire_is_authoritarian:0 "$TRIGGER_FAIL$Unser Reich fördert das Ideal §Y$ethic_authoritarian$§!."
 
  lonely_hive_mind_pops_kill_themselves_purge_type:0 "$TRIGGER_FAIL$Von ihrem kollektiven Bewusstsein getrennt, werden Bewohner dieser Spezies bald ihr Ende finden."
+ NON_MACHINE_SPECIES_NEED_PREREQ_TECH:0 "$TRIGGER_FAIL$Uns fehlt die nötige Technologie, um §YRoboter§! als Soldaten einzusetzen."
  HIVE_MIND_MAIN_SPECIES_ALWAYS_CITIZEN:1 "$TRIGGER_FAIL$§RWir sind eins. Wir werden immer§! §Yvolle Staatsbürgerschaft§! haben."
  HIVE_MIND_SPECIES_CITIZENS_ONLY:1 "$TRIGGER_FAIL$§RWir können keine unabhängigen Agenten unterstützen.§!"
  FANATIC_PURIFIERS_MUST_PURIFY:0 "$TRIGGER_FAIL$§YFanatische Säuberer§! können die Existenz von Xenos nicht tolerieren."
+ CANNOT_DISPLACE_NON_SENTIENT_ROBOTS:0 "$TRIGGER_FAIL$Kann nicht-fühlende Roboter nicht umsiedeln."
+ CANNOT_NEUTER_NON_SENTIENT_ROBOTS:0 "$TRIGGER_FAIL$Kann nicht-fühlende Roboter nicht umsiedeln."
  HIVE_MIND_PURGE_ALWAYS_PROCESSING:0 "$TRIGGER_FAIL$Lecker!"
  MACHINE_ROBOTS_ONLY:0 "$TRIGGER_FAIL$Eine §Y$auth_machine_intelligence$§! kann nur §Y$trait_mechanical$§!-Spezies integrieren."
  MACHINE_ASSIMILATOR_CYBORGS_ONLY:0 "$TRIGGER_FAIL$Eine §Y$civic_machine_assimilator$§! kann nur §Y$trait_cybernetic$§!-Spezies §Y$citizenship_limited$§! oder §Y$citizenship_caste_system_limited$§! gewähren."
@@ -265,7 +268,7 @@
 
  ROOM_BACKGROUND:0 "Raum"
 
- #MAP_MODE_TOOLTIP variables: "FROM" source country, "TARGET" tooltiped country, "MAP_MODE_NAME" name of current map mode, "MAP_MODE_TIP" tip generated from map mode
+ #MAP_MODE_TOOLTIP variables: "FROM" source country, "TARGET" tooltipped country, "MAP_MODE_NAME" name of current map mode, "MAP_MODE_TIP" tip generated from map mode
  MAP_MODE_TOOLTIP:0 "$TARGET|H$\n$MAP_MODE_TIP$"
  MAP_MODE_BUTTON_TOOLTIP:1 "$MAP_MODE|H$\n$DESC$\n§GZum Auswählen dieses Kartenmodus klicken§!"
  MAP_MODE_CLICK_TOOLTIP:0 "§GZur Anzeige des Kartenmodus aus dem Blickwinkel Ihres Reichs klicken.§!"
@@ -336,7 +339,7 @@
  EMERGENCY_FTL_DAYS_LEFT:0 "§R$DAYS|Y$ Tage bis Not-ÜL bereit ist.§!"
  COMPONENT_AURA_TOOLTIP:0 "$AURA_NAME|Y$\n$APPLY_ON$\n$MODIFIER$"
  COMPONENT_AURA_WITHOUT_MOD_TOOLTIP:0 "$AURA_NAME|Y$\n$APPLY_ON$"
- COMPONENT_AURA_DAMAGE_TOOLTIP:0 "Schiffe innerhalb des Feldes erleiden mit einer Wahrscheinlichkeit von $ACCURACY|Y%0$ täglich §Y$MIN_DAMAGE|0$ - $MAX_DAMAGE|0$§! Schaden, wobei $ARMOR_PENETRATION|Y%0$ Panzerung ignoriert werden. Diesen Schäden kann ausgewichen werden. #ACCURACY, MIN_DAMAGE, MAX_DAMAGE, AVG_DAMAGE, HULL_DAMAGE, SHIELD_DAMAGE, ARMOR_DAMAGE, SHIELD_PENETRATION, ARMOR_PENETRATION"
+ COMPONENT_AURA_DAMAGE_TOOLTIP:0 "Schiffe innerhalb des Feldes erleiden mit einer Wahrscheinlichkeit von $ACCURACY|Y%0$ täglich §Y$MIN_DAMAGE|0$ - $MAX_DAMAGE|0$§! Schaden, wobei $ARMOR_PENETRATION|Y%0$ Panzerung ignoriert werden. Diesen Schäden kann ausgewichen werden. #ACCURACY, MIN_DAMAGE, MAX_DAMAGE, AVG_DAMAGE, HULL_DAMAGE, SHIELD_DAMAGE, ARMOR_DAMAGE, SHIELD_PENETRATION, ARMOR_PENETRATION" #ACCURACY, MIN_DAMAGE, MAX_DAMAGE, AVG_DAMAGE, HULL_DAMAGE, SHIELD_DAMAGE, ARMOR_DAMAGE, SHIELD_PENETRATION, ARMOR_PENETRATION
  AURA_APPLY_ON_FRIENDLY:0 "Effekt auf verbündete Schiffe:"
  AURA_APPLY_ON_FLEET:0 "Effekt auf eigene Flotte:"
  AURA_APPLY_ON_HOSTILE:0 "Effekt auf feindliche Schiffe:"
@@ -364,7 +367,7 @@
  EVENT_OPTION_TRIGGER_ICON_TIP:0 "$TRIGGER|T$"
  SHIP_STAT_CONTRIBUTION_ADDATIVE:1 "$NAME$: $VALUE|Y0$"
  SHIP_STAT_CONTRIBUTION_MULTIPLICATIVE:1 "$NAME$: $VALUE|+=0%$"
- #SHIP_STAT_CONTRIBUTION_ADDATIVE_hitpoints: ""
+ #SHIP_STAT_CONTRIBUTION_ADDATIVE_hitpoints: "this is an example showing that you can override how certain stats are shown :)"
  SHIP_STAT_CONTRIBUTION_ADDATIVE_maintenance:1 "$NAME$: $VALUE|2Y$"
  SHIP_STAT_CONTRIBUTION_MULTIPLICATIVE_maintenance:1 "$NAME$: $VALUE|-=0%$"
  SHIP_STAT_CONTRIBUTION_ADDATIVE_power:1 "$NAME$: $VALUE|+=0$"
@@ -443,7 +446,7 @@
  buildable_robot_pop_2_awoken_desc:0 "Eine lange vergessene Spezies technologisch fortschrittlicher Pilze, die wieder zum Leben erweckt wurden, als ihre Neuralscans in Roboterhüllen geladen wurden."
  buildable_robot_pop_3_awoken:0 "$ROBOT_POP_SPECIES_1_AWOKEN$"
  buildable_robot_pop_3_awoken_desc:0 "$buildable_robot_pop_2_awoken_desc$"
- 
+
  COUNT_POP_TOOLTIP:0 "$COUNT|Y$ Bewohner auf $PLANET|Y$"
  COUNT_POP_TOOLTIP_CUTOFF:0 "... und $POPS|Y$ weitere(r) Bewohner auf $PLANETS|Y$ Planet(en)."
 
@@ -589,6 +592,7 @@
  INTEL_LEVEL_NOT_TRIGGER:0 "Informationsstufe ist NOT$OPERATOR$$LEVEL|Y$"
  INTEL_LEVEL_TRIGGER:0 "Informationsstufe ist $OPERATOR$$LEVEL|Y$"
  MISSING_WORMHOLE_STATION:0 "Außerhalb unserer Reichweite! Wir benötigen eine Wurmlochstation, die näher an diesem System ist."
+ FLEET_JUGGERNAUT_REPAIR:0 "§RJuggernaut kann nicht zur Reparatur geschickt werden.§!"
  FLEET_NO_PATH:0 "Es gibt keine Route, auf der die ausgewählte Flotte dieses System erreichen könnte."
  FLEET_NO_PATH_RESTRICTED:0 "System wurde auf "beschränkt" gesetzt, daher betreten unsere Flotten dieses nicht."
  FLEET_NO_PATH_PASSIVE_STANCE:0 "Meidet Feinde aufgrund von ausweichender Haltung"
@@ -785,7 +789,7 @@
  COUNTRY_MODIFIER:0 "Reichsmodifikator"
  COUNTRY_MODIFIERS:0 "Reichsmodifikatoren"
  ARMY_MODIFIER:0 "Armee-Modifikator"
- POP_MODIFIER:0 "Bewohnermodifikator"
+ POP_MODIFIER:0 "Bewohnermodifikator" #£pop_modifier  §PPop Modifier§!
  OWNER_COUNTRY:0 "§TIm Besitz von $COUNTRY|Y$.§!"
  CONTROLLER_COUNTRY:0 "§TKontrolliert von $COUNTRY|Y$.§!"
  PL_INFO:0 "£pop£ $POPS|H$    £def£ $DEF|H$"
@@ -819,6 +823,7 @@
  NO_FACTIONS_LABEL:0 "Keine Fraktionen"
  fa_colonized_planet:0 "Planet kolonisiert"
  fa_built_mining_station:0 "Bergbaustation gebaut"
+ NAME_VALUE_FORMAT:0 "$NAME$: $VALUE$"
  FACTION_APPROVAL_MODIFIER:0 "$NAME$: $VALUE$"
  FACTION_APPROVAL_EFFECTS:0 "§HAuswirkungen auf Fraktionsbewohner:§!"
  FACTION_APPROVAL_TIME_REMAINING:0 "(§Y$MONTHS$ $MONTH_LABEL$ übrig§!)"
@@ -836,7 +841,7 @@
  SAVE_GAME_DIALOG_MAX_NUM_ERROR_TITLE:0 "Zu viele gespeicherte Spiele"
  SAVE_GAME_DIALOG_MAX_NUM_ERROR_DESC:0 "In dieser Session haben Sie zu oft gespeichert. Bitte löschen Sie einige dieser Spielstände."
  LOAD_GAME_SYNC_FILES:0 "Speicherstand wird synchronisiert"
- SAVE_INCOMPATIBLE_OLDER:1 "§RInkompatibler Spielstand§!\nDieser Spielstand von Version $SAVE_VERSION|H$ passt nicht zur aktuellen Spielversion $GAME_VERSION|H$, was beim Spielen zu unerwartetem Spielverhalten führen wird.\n\nDieses Problem können Sie auch §Hnicht§! dadurch beheben, dass Sie aus diesem Spielstand einen neuen Spielstand erstellen."
+ SAVE_INCOMPATIBLE_OLDER:1 "§RInkompatibler Spielstand§!\nDieser Spielstand von Version $SAVE_VERSION|H$ passt nicht zur aktuellen Spielversion $GAME_VERSION|H$, was beim Spielen zu unerwartetem Spielverhalten führen wird.\n\nDieses Problem lässt sich auch §Hnicht§! dadurch beheben, dass man aus diesem Spielstand heraus einen neuen Spielstand erstellt."
  SAVE_INCOMPATIBLE_NEWER:1 "§Möglicherweise inkompatibler Spielstand§!\nDieser Spielstand von Version $SAVE_VERSION|H$ ist neuer als die aktuelle Spielversion $GAME_VERSION|H$, was beim Spielen zu unerwartetem Spielverhalten führen wird.\n\nDieses Problem können Sie auch §Hvermutlich nicht§! dadurch beheben, dass Sie aus diesem Spielstand einen neuen Spielstand erstellen."
  SAVE_NEW_ENTRY:0 "Neuer Eintrag"
  AFFECTS_FACTION_APPROVAL:0 "§YBeeinflusst Fraktionszustimmung mit§! $VALUE$"
@@ -874,7 +879,7 @@
  TWITTER:0 "§HTwitter§! \nFolgen Sie StellarisGame auf Twitter"
  CLOSE_TITLE:0 "§HSchließen§!"
  BACK_TITLE:0 "§H$BACK$§!"
- NO_MP_POPS:1 "§RZur Teilnahme am Multiplayer-Modus müssen Sie sich in Ihrem Paradox-Konto anmelden.§!"
+ NO_MP_POPS:1 "§RZur Teilnahme am Mehrspieler-Modus müssen Sie sich in Ihrem Paradox-Konto anmelden.§!"
  sponsored_colonizer:0 "Privates Kolonieschiff"
  sponsored_colonizer_plural:0 "Private Kolonieschiffe"
  sponsored_colonizer_desc:0 "Private Kolonieschiffe werden von unbekannten Akteuren des privaten Sektors finanziert. Aus diesem Grund können die Kolonisten andere Ethiken als die Mehrheit haben."
@@ -939,7 +944,7 @@
  ARMY_RETREAT_IN:0 "Kann sich in $DAYS|H$ Tagen zurückziehen"
  SAVE_GAME_DISABLED_IRONMAN:0 "§RDie Speicheroption ist im Ironman-Modus deaktiviert!§!"
  LOAD_GAME_DISABLED_IRONMAN:0 "§RDas Laden im Spiel ist im Ironman-Modus deaktiviert!§!"
- LOAD_GAME_DISABLED_MP:0 "§RDas Laden im Spiel ist im Multiplayer-Modus deaktiviert!§!"
+ LOAD_GAME_DISABLED_MP:0 "§RDas Laden im Spiel ist im Mehrspieler-Modus deaktiviert!§!"
  START_SCREEN_BEGIN:0 "BEGINNEN!"
  MODIFIERS_LABEL:0 "Modifikatoren:"
  MODIFIERS:0 "Modifikatoren"
@@ -991,7 +996,7 @@
  REPAIR_BUILDING:0 "Gebäude reparieren"
  REPAIR_BUILDING_DESC:1 "Wir können das Gebäude reparieren und es für einen Teil der Baukosten und Bauzeit zu seiner ursprünglichen Funktionalität zurückbringen."
  CANNOT_SPAWN_ARMY_INVALID_POP:0 "§REs ist nicht möglich hier Armeen auszuheben, da es nicht von einem Bewohner besetzt ist.§!"
- CANNOT_SPAWN_ARMY_NON_SOLDIER_POP:0 "§REs ist nicht möglich hier Armeen auszuheben, da der Bewohner keinen Militärdienst leisten kann.§!"
+ CANNOT_SPAWN_ARMY_NON_SOLDIER_POP:0 "§REs ist nicht möglich, hier Armeen auszuheben, da der Bewohner keinen Militärdienst leisten kann.§!"
  SPAWNS_DEFENSE_ARMIES:0 "Stellt $NUM|Y$ Verteidigungsarmeen zur Verfügung"
  SPAWNS_DEFENSE_ARMY:0 "Stellt $NUM|Y$ Verteidigungsarmee zur Verfügung"
  BUILDING_PROTECTS_FROM_BOMBARDMENT:0 "Schützt Armeen vor Orbitalbombardierung"
@@ -1090,6 +1095,8 @@
  awakened_fallen_empire:0 "$COUNTRY_AWAKENED_FALLEN_EMPIRE$"
  INDEPENDENT:0 "Unabhängig"
  INDEPENDENT_DESC:0 "Eine unabhängige Sternennation, die in der Galaxie ihre eigenen Interessen verfolgt."
+ ALLIANCE_LEADER:0 "Anführer von: $ALLIANCE$"
+ ALLIANCE_LEADER_DESC:0 "Diese Sternennation ist Anführer eines größeren interstellaren Bündnisses."
  ALLIANCE_MEMBER:0 "Mitglied des Bündnisses $ALLIANCE$"
  ALLIANCE_MEMBER_DESC:0 "Diese Sternennation ist Mitglied eines größeren interstellaren Bündnisses."
  REBELS_UNDER:0 "Rebellen von $COUNTRY$"
@@ -1169,7 +1176,7 @@
  BUILD_MINING_STATION_ORDER_MULT:0 "Bauen Sie $NUM$ Bergbaustationen"
  BUILD_MINING_STATION_ORDER_DESC:2 "§YBergbaustationen§! werden dafür benutzt, Mineralien, Energie-Credits und strategische Ressourcen von unbewohnten Planeten, Sternen und Asteroiden zu sammeln. Bergbaustationen, die Energie sammeln, kosten keinen Unterhalt."
  BUILD_TERRAFORMING_STATION_ORDER:0 "Terraformingstation bauen"
- BUILD_TERRAFORMING_STATION_ORDER_DESC:1 "§YTerraformingstationen§! ermöglichen es Ihnen, die Klasse eines Planeten zu verändern."
+ BUILD_TERRAFORMING_STATION_ORDER_DESC:1 "§YTerraformingstationen§! ermöglichen es Euch, die Klasse eines Planeten zu verändern."
  BUILD_OBSERVATION_STATION_ORDER:0 "Beobachtungsposten bauen"
  BUILD_OBSERVATION_STATION_ORDER_DESC:1 "§YBeobachtungsposten§! können im Orbit von Planeten gebaut werden, auf denen primitive Zivilisationen leben, um deren Gesellschaft zu studieren."
  BUILD_STARBASE_STATION_ORDER:0 "Sternenbasis bauen"
@@ -1203,7 +1210,7 @@
  CANT_REMOVE_LEADER_COOL_DOWN:0 "§RKann§! £time£$DAYS|Y$ §Rlang nicht entfernt werden§!"
  SHIP_OWNED_BY_SECTOR:0 "Gehört dem $SECTOR|Y$-Sektor"
  CANT_BUILD_OTHER_BORDERS:0 "System liegt nicht innerhalb unserer Grenzen."
- CANT_BUILD_SOMEONE_ELSES_BORDERS:0 "System liegt innerhalb fremder Grenzen!"
+ CANT_BUILD_SOMEONE_ELSES_BORDERS:0 "System liegt innerhalb der Grenzen eines anderen Reiches!"
  CAN_SURVEY_ALREADY_SURVEYED:0 "Bereits erkundet!"
  COLLECTED_BY_POP:0 "$VAL|2Y$£$KEY$£ von Bewohner gesammelt"
  COLLECTED_BY_MINING_STATION:0 "$VAL|2$£$KEY$£ von Bergbaustation gesammelt"
@@ -1312,7 +1319,7 @@
  INITIAL_MODULE:0 "Startmodul"
  PLANET_MODIFIER:0 "Planetenmodifikator"
  STATION_MODIFIER:0 "Stationsmodifikator"
- SHIP_MODIFIER:0 "Schiffsmodifikator"
+ SHIP_MODIFIER:0 "Schiffsmodifikator" #£ship_modifier  §PShip Modifier§!
  BUILD_SPACEPORT_WITH_INITIAL_MODULE:0 "Weltraumhafen mit Startmodul bauen"
  ORBITAL_STATION_NOT_SUPPORTED_BY_PLANET:0 "§RDieser Planet kann keine Orbitalstation unterstützen.§!"
  ORBITAL_STATION_ALREADY_EXISTS:0 "§RIm Orbit dieses Planeten befindet sich bereits eine Orbitalstation.§!"
@@ -1381,14 +1388,14 @@
  AGGRESSIVENESS_HIGH:0 "Hoch"
  AGGRESSIVENESS_LOW:0 "Niedrig"
  FE_AGGRESSIVENESS:0 "KI-Aggressivität"
- FE_AGGRESSIVENESS_TOOLTIP:0 "§HKI-Aggressivität§!\nDies legt fest, wie wahrscheinlich KI-Reiche ihren Feinden den Krieg erklären. Dementsprechend wird dadurch bestimmt, wie viele Kriege sich insgesamt im Verlauf eines Feldzugs ereignen. Ungeachtet der Aggressivitätseinstellung erklärt die KI nur dann den Krieg, wenn dies durch ihre Haltung dem Ziel gegenüber gestattet wird."
+ FE_AGGRESSIVENESS_TOOLTIP:0 "§HKI-Aggressivität§!\nDies legt fest, wie wahrscheinlich KI-Reiche ihren Feinden den Krieg erklären. Dementsprechend wird dadurch auch bestimmt, wie viele Kriege sich insgesamt im Verlauf eines Feldzugs ereignen. Ungeachtet der Aggressivitätseinstellung erklärt die KI nur dann den Krieg, wenn dies durch ihre Haltung dem Ziel gegenüber gestattet wird."
  FE_DIFFICULTY:1 "Schwierigkeit"
  FE_DIFFICULTY_TOOLTIP:5 "§HSchwierigkeit§!\nDies beeinflusst die Schwierigkeit des Spiels.\n§Y$DIFFICULTY_CADET$§!: Der Spieler erhält einen wirtschaftlichen, technologischen und militärischen Vorteil\n§Y$DIFFICULTY_ENSIGN$§!: Die KI hat keine wirtschaftlichen, technologischen oder militärischen Vorteile gegenüber dem Spieler\n§Y$DIFFICULTY_CAPTAIN$§!: Die KI erhält leichte Boni für Wissenschaft, Forschung und Flottenlimit\n§Y$DIFFICULTY_COMMODORE$§!: Die KI erhält moderate Boni für Wissenschaft, Forschung und Flottenlimit\n§Y$DIFFICULTY_ADMIRAL$§!: Die KI erhält starke Boni für Wissenschaft, Forschung und Flottenlimit\n§Y$DIFFICULTY_GRAND_ADMIRAL$§!: Die KI erhält massive Boni für Wissenschaft, Forschung und Flottenlimit"
  FE_IRONMAN:0 "Ironman-Modus"
  FE_IRONMAN_TOOLTIP:0 "§HIronman-Modus§!\nIm Ironman-Modus sind Console-Cheats deaktiviert und das Spiel wird automatisch in einer einzelnen Datei gespeichert. In Spielen, die mit dieser Einstellung gespielt werden, gibt es kein Zurück."
  FE_EMPIRES_TOOLTIP:0 "§HKI-Reiche§!\nDies legt fest, wie viele KI-Reiche die Galaxie bevölkern."
  FE_ADVANCED_EMPIRES_TOOLTIP:1 "§HKIs mit Startvorteilen§!\nDies legt fest, wie viele reguläre KI-Reiche das Spiel mit einem Anfangsvorteil bei Ressourcen, Technologie und Bevölkerung beginnen. Außer einer stärkeren Startposition erhalten sie keine weiteren Boni. Diese Einstellung hat keinen Einfluss auf gefallene Reiche."
- FE_IRONMAN_MULTIPLAYER:0 "§RDer Ironman-Modus steht im Multiplayer-Modus nicht zur Verfügung.§!"
+ FE_IRONMAN_MULTIPLAYER:0 "§RDer Ironman-Modus steht im Mehrspieler-Modus nicht zur Verfügung.§!"
  FE_IRONMAN_NOCLOUD:0 "§RZum Spielen im Ironman-Modus muss der Spieler die Steam Cloud aktiviert und sich bei Steam eingeloggt haben.§!"
  FE_IRONMAN_AUTOSAVE:0 "§RIm Ironman-Modus können Sie die Autosave-Frequenz nicht verändern.§!"
  ACHIEVEMENT_TOOLTIP_YES:0 "§GIn dieser Sitzung können Errungenschaften erhalten werden.§!"
@@ -1505,7 +1512,7 @@
  WILL_MAKE_YOU_LEAVE_CURRENT_ALLIANCE:0 "Durch die Annahme dieses Angebots verlasset Ihr das Bündnis $ALLIANCE|Y$"
  JOINING_WILL_MAKE_YOU_LEAVE_CURRENT_ALLIANCE:0 "Euer Beitritt zum Bündnis $TARGET|Y$ bewirkt, dass Ihr das Bündnis $ALLIANCE|Y$ verlasst."
  NOT_AFFECTED_HAPPINESS:0 "Dieser Bewohner wird nicht von §YZufriedenheit§! beeinflusst."
- 
+
  CAN_CREATE_ORBITAL_STATION_ALREADY_EXISTS_MINING:0 "Im Orbit dieses Himmelskörpers der Klasse $CLASS$ gibt es bereits eine Bergbaustation."
  CAN_CREATE_ORBITAL_STATION_ALREADY_EXISTS_RESEARCH:0 "Im Orbit dieses Himmelskörpers der Klasse $CLASS$ gibt es bereits eine Forschungsstation."
  CAN_CREATE_ORBITAL_STATION_ALREADY_EXISTS_TERRAFORM:0 "Im Orbit dieses Himmelskörpers der Klasse $CLASS$ gibt es bereits eine Terraformingstation."
@@ -1530,7 +1537,7 @@
  player_locations_clustered_desc:0 "Verteilt Spieler gleichmäßig unter den Clustern."
  player_locations_close:0 "Gruppierte Spieler"
  player_locations_close_desc:1 "Platziert Spieler so nah wie möglich zusammen innerhalb eines Cluster."
- 
+
  CAN_BUILD_STATION_UNDER_COLONIZATION:0 "Dieser Planet wird immer noch kolonisiert."
  CAN_BUILD_STATION_NOT_SURVEYED:1 "Dieser Himmelskörper der Klasse $CLASS$ ist noch nicht erkundet worden."
  CAN_BUILD_STATION_NOT_SURVEYED_SYSTEM:0 "Das System $SYSTEM$ ist nicht vollständig erkundet."
@@ -1555,6 +1562,7 @@
  CAN_BUILD_MEGASTRUCTURE_NONE_AVAILABLE:0 "Keine Megastrukturen zum Bau verfügbar."
 
  EFFECTS:1 "§E$EFFECTS_CLEAN$§!"
+ EFFECTS_CLEAN:0 "Effekte:"
  REQUIREMENTS:0 "§EAnforderungen:§!"
 
  RELATIVE_POWER:0 "Relative Militärstärke"
@@ -1589,7 +1597,7 @@
  atomic_age_desc:0 "Diese Zivilisation hat sich zu einer Art Atomzeitalter weiterentwickelt. Sie haben sich die Atomkraft nutzbar gemacht, es aber noch nicht in den Weltraum geschafft. Es könnte zahlreiche Atomwaffen geben, was zu einem plötzlichen Aussterbeereignis führen könnte."
  early_space_age:0 "Frühes Raumfahrtzeitalter"
  early_space_age_desc:0 "Diese Zivilisation hat ein frühes Raumfahrtzeitalter erreicht. Im Orbit ihrer Heimatwelt befinden sich primitive Satelliten, und sie haben im niedrigen Orbit erste bemannte Weltraummissionen durchgeführt. Sie werden schon bald in der Lage sein, ihre Welt zu verlassen."
- 
+
  SYSTEM_OCCUPIED:1 "System wurde vollständig von $COUNTRY|Y$ besetzt"
  SYSTEM_PARTLY_OCCUPIED:0 "System wurde teilweise von $COUNTRY|Y$ besetzt"
 
@@ -1666,7 +1674,6 @@
  TRADE_TRANSFER_SYSTEM:0 "Systeme transferieren"
  TRADE_OFFER_RESOURCES:0 "Ressourcen: $RESOURCES$."
  TRADE_NO_OTHER_PROPOSALS:0 "£trigger_no£ $RECEPIENT|H$ zieht derzeit eine andere Handelsaktion von uns in Betracht."
- TRADE_TOO_MANY_FAVORS:0 "Ein Reich can nicht mehr Gefallen kaufen als es besitzen kann"
  CANCEL_TRADE_DEAL_TITLE:0 "Handelsabkommen kündigen"
  CANCEL_TRADE_DEAL_DESC:0 "Möchten Sie das Handelsabkommen wirklich kündigen?"
  STRATEGIC_RESOURCES:0 "§EStrategische Ressource§!"
@@ -1777,11 +1784,13 @@
 
  TRADE_OFFER_QUANTITY:0 "Quantität"
 
+ TRADE_TOO_MANY_FAVORS:0 "Ein Reich kann nicht mehr Gefallen kaufen, als es halten kann."
+
  ###################################
  # Outliner
  ####################################
- OUTLINER:0 "Outliner"
- OBSERVER_OUTLINER:0 "Beobachter-Outliner"
+ OUTLINER:0 "Schnellauswahl"
+ OBSERVER_OUTLINER:0 "Beobachter-Schnellauswahl"
  OUTLINER_PLANETS:0 "Planeten"
  OUTLINER_SPECIAL_PLANETS:1 "Zweigstellen"
  OUTLINER_SPACEPORT_CONSTRUCTION:0 "Raumhafen-Konstruktionen"
@@ -1803,8 +1812,8 @@
  OUTLINER_MEMBER_SELECT_DESC_GAMEPAD:0 "\n§G£gamepad_a£ zum Auswählen £gamepad_rs£ zum Zentrieren§!"
  OUTLINER_MEMBER_SELECT_DESC_GAMEPAD_MULTI:0 "\n§G£gamepad_a£ zum Auswählen £gamepad_rs£ zum Zentrieren\n£gamepad_lt£ für Mehrfachauswahl gedrückt halten§!"
  OUTLINER_FLEET_STATUS:0 "Status"
- OUTLINER_OPTIONS:0 "Outliner-Optionen"
- OUTLINER_OPTIONS_TOOLTIP:0 "§HOutliner-Optionen§!\n§GZur Optionskonfiguration klicken§!"
+ OUTLINER_OPTIONS:0 "Schnellauswahl-Optionen"
+ OUTLINER_OPTIONS_TOOLTIP:0 "§HSchnellauswahl-Optionen§!\n§GZur Optionskonfiguration klicken§!"
  OUTLINER_UNOBSERVE_TOOLTIP:0 "§HBeobachtung beenden§!\n§GKlicken, um die Beobachtung dieses Reiches zu beenden§!"
  OUTLINER_DISABLED_ALERTS:0 "Deaktivierte Warnmeldungen"
  OUTLINER_DISABLED_ALERT_DESC:0 "§GZum Aktivieren der Warnmeldungen rechtsklicken§!"
@@ -1827,7 +1836,7 @@
  OUTLINER_SHIPYARDS:0 "Schiffswerften"
  OUTLINER_STARBASE_SHIPYARD_CONSTRUCTION:0 "Schiffswerft-Konstruktionen"
  OUTLINER_STARBASE_MAIN_CONSTRUCTION:0 "Haupt-Konstruktionen"
- 
+
  OUTLINER_PLAYER_COUNTRIES:0 "Spieler-Nationen"
  OUTLINER_AI_COUNTRIES:0 "KI-Nationen"
  OUTLINER_FALLEN_EMPIRES:0 "Gefallene Reiche"
@@ -2009,6 +2018,7 @@
  titanic_assault_army_desc:0 "Dieses titanische Biest ist ein überaus mächtiger Kämpfer."
  titanic_guardian_army:0 "Titanischer Wächter"
  titanic_guardian_army_desc:0 "Das titanische Biest ist zwar weniger aggressiv als der titanische Wächter, aber trotzdem noch ein mächtiger Defensivkämpfer."
+ NAME_Rampaging_Forest:0 "Herumwütender Wald"
  tree_army:0 "$NAME_Rampaging_Forest$"
  tree_army_desc:0 "Rachsüchtige wandernde Wälder, die rudimentäre Intelligenz besitzen."
 
@@ -2079,7 +2089,7 @@
  TOPBAR_HELP:0 "§HHilfe§!"
  TOPBAR_HELP_DESC:0 "§ERuft eine Datenbank auf, über die Sie Informationen über alle Spielkonzepte finden.§!"
  TOPBAR_MENU:0 "§HHauptmenü§!\n§GKlicken Sie, um das Hauptmenü aufzurufen. Dort finden Sie die Spieleinstellungen und Optionen zum Speichern, Laden oder Beenden des Spiels.§!"
- TOPBAR_CHAT:0 "§HMultiplayer-Chat§!"
+ TOPBAR_CHAT:0 "§HMehrspieler-Chat§!"
  TOPBAR_CHAT_NO_MP:0 "§RDer Chat steht im Einzelspielermodus nicht zur Verfügung!§!"
  EXPAND_BUTTON:0 "§HMehr§!\n§GKlicken, um zusätzliche Schaltflächen anzuzeigen§!"
  MONEY_IRO:0 "§HEnergie-Credits§!"
@@ -2236,7 +2246,7 @@
  FROM_SECTORS:0 "Von Sektoren: $VALUE|+=$"
  FROM_TRADE_INCOME:0 "$budget_group_trade_income$: $VALUE|+=$"
  FROM_TRADE_EXPENSE:0 "$budget_group_trade_expense$: $VALUE|+=$"
- #FROM_INFLUENCE_MECHANICS:0 "Von: $VALUE|+=$"
+ #FROM_INFLUENCE_MECHANICS:0 "From: $VALUE|+=$"
  MINERAL_SHIP_MAINTENANCE:0 "Schiffsunterhalt: $GAIN|+=$"
  MINERAL_POP_MAINTENANCE:0 "Konsumgüter (§Y$AMT|1$ Einheiten§!): $GAIN|+=$"
  MINERAL_STATION_MAINTENANCE:0 "Stationsunterhalt: $GAIN|+=$"
@@ -2853,7 +2863,7 @@
  d_tomb_world_wasteland:0 "£blocker£ Verstrahlte Zone"
  d_tomb_world_wasteland_desc:0 "Eine Region, die Ziel zahlreicher atomarer Sprengungen war. Obwohl die Strahlung in diesem Gebiet seit dem Einschlag zurückgegangen ist, ist sie weithin nicht bewohnbar."
  d_machine_empire_ruins:0 "£blocker£ Lange verlassene Stadt"
- d_machine_empire_ruins_desc:0 "Die bröckelnden Überreste von dem, was einst ein wichtiges Bevölkerungszentrum auf dem Planeten gewesen sein muss. Es gibt keine Spuren der damaligen Bevölkerung."
+ d_machine_empire_ruins_desc:0 "Die zerfallenden Überreste von dem, was einst ein wichtiges Bevölkerungszentrum auf dem Planeten gewesen sein muss. Es gibt keine Spuren der damaligen Bewohner."
  d_exterminators_ruins:0 "£blocker£ Ehemalige organische Stadt"
  d_exterminators_ruins_desc:0 "Die verbrannten und verstrahlten Ruinen von dem, was einst ein wichtiges Bevölkerungszentrum für organische Wesen war. jene Gebäude, die noch stehen, enthalten nichts als Asche."
  d_assimilators_ruins:0 "£blocker£ Stille Ruinen"
@@ -2863,7 +2873,7 @@
  d_strip_mine:0 "£blocker£ Verlassener Tagebau"
  d_strip_mine_desc:0 "In diese Region wurde in der Vergangenheit stark gefördert. Leider von älteren und primitiveren Maschinenmodellen, die nicht dazu programmiert wurden, die zukünftige Entwicklung der Region zu berücksichtigen."
  d_unsupervised_settlement:0 "£blocker£ Unbewachte Siedlung"
- d_unsupervised_settlement_desc:0 "Ein Gebiet der organischen Gesellschaft dieser Welt, die noch außerhalb der Maschinenüberwachung existiert. Gewalt, Krankheit und Hunger wüten innerhalb der Mauern der Siedlung, deren Bewohner sich seit Jahrhunderten technologisch zurückentwickelt haben."
+ d_unsupervised_settlement_desc:0 "Eine von der organischen Gesellschaft dieser Welt bewohnte Region, die noch außerhalb der Maschinenüberwachung existiert. Gewalt, Krankheit und Hunger wüten innerhalb der Mauern der Siedlung, deren Bewohner sich seit Jahrhunderten technologisch zurückentwickelt haben."
  d_collapsed_burrows:0 "£blocker£ Eingestürzte Höhlen"
  d_collapsed_burrows_desc:0 "Dieser Standort beherbergte einmal umfangreiche unterirdische Tunnelsysteme, die vom Schwarm bevölkert wurden. Sie wurden aber wegen Raubbau der lokalen Ressourcen und Wildtiere aufgegeben."
  d_ruined_building_blocker:0 "Ruinen"
@@ -2939,6 +2949,8 @@
  starbase_swarm_plural:0 "Sternenschwärme"
  starbase_ai:0 "Kontingenzkern"
  starbase_ai_plural:0 "Kontingenzkerne"
+ starbase_exd_0:0 "Leerenversteck"
+ starbase_exd_0_plural:0 "Leerenverstecke"
  starbase_exd:0 "Dimensionsanker"
  starbase_exd_plural:0 "Dimensionsanker"
  starbase_marauder:0 "Bastion"
@@ -3377,6 +3389,8 @@
 
  trait_rapid_breeders:0 "Schnelle Fortpflanzung"
  trait_rapid_breeders_desc:0 "§LDiese Spezies vermehrt sich äußerst schnell, was das Bevölkerungswachstum erhöht.§!\n"
+ trait_rapid_breeders_lithoid:0 "$trait_rapid_breeders$"
+ trait_rapid_breeders_lithoid_desc:0 "$trait_rapid_breeders_desc$"
  trait_slow_breeders:0 "Geringe Fortpflanzung"
  trait_slow_breeders_desc:0 "§LDiese Spezies vermehrt sich langsam, was das Bevölkerungswachstum senkt.§!\n"
  trait_delicious:0 "Köstlich"
@@ -3417,6 +3431,8 @@
  trait_solitary_desc:0 "§LMitglieder dieser Spezies tendieren dazu, einzelgängerisch und territorial zu sein - und sich unter vielen Individuen schnell aufzuregen.§!\n"
  trait_adaptive:0 "Anpassungsfähig"
  trait_adaptive_desc:1 "§LDiese Spezies ist höchst anpassungsfähig, wenn es um fremde Umgebungen geht.§!\n"
+ trait_adaptive_lithoid:0 "$trait_adaptive$"
+ trait_adaptive_lithoid_desc:0 "$trait_adaptive_desc$"
  trait_extremely_adaptive:0 "Sehr anpassungsfähig"
  trait_extremely_adaptive_desc:0 "§LDiese Spezies ist bezüglich aller fremden Umgebungen bemerkenswert anpassungsfähig.§!\n"
  trait_nonadaptive:0 "Nicht anpassungsfähig"
@@ -3854,13 +3870,13 @@
  POP_ATTRACTION_DESC:0 "§EEin Bewohner kann nach dem Zufallsprinzip auf eine Gesinnung wechseln, die für ihn attraktiv ist.§!"
  POP_ATTRACTION_ENTRY:0 "$ETHIC$: §Y$VAL$%§!"
  POP_ATTRACTION_NONE:0 "§YKeine aktuellen Faktoren§!"
- POP_ATTRACTION_FACTION_POS:0 "§G+ Aktive politische Fraktion§!"
- POP_ATTRACTION_FANATIC_PURIFIERS_POS:0 "§G+ Fanatische Säuberer-Staatselement§!"
- POP_ATTRACTION_FANATIC_PURIFIERS_NEG:0 "§R- Fanatische Säuberer-Staatselement§!"
- POP_ATTRACTION_INWARDS_PERFECTION_POS:0 "§G+ Innere Perfektion-Staatselement§!"
- POP_ATTRACTION_INWARDS_PERFECTION_NEG:0 "§R- Innere Perfektion-Staatselement§!"
- POP_ATTRACTION_MECHANIST_POS:0 "§G+ Mechaniker-Staatselement§!"
- POP_ATTRACTION_RULER_FACTION_POS:0 "§G+ Politische Fraktion des Herrschers§!"
+ POP_ATTRACTION_FACTION_POS:1 "§G+ £empire£Reich hat eine aktive Fraktion, die nicht regiert§!"
+ POP_ATTRACTION_FANATIC_PURIFIERS_POS:1 "§G+ £empire£Reich hat das Staatselement Fanatische Säuberer§!"
+ POP_ATTRACTION_FANATIC_PURIFIERS_NEG:1 "§R- £empire£Reich hat das Staatselement Fanatische Säuberer§!"
+ POP_ATTRACTION_INWARDS_PERFECTION_POS:1 "§G+ £empire£Reich hat das Staatselement Innere Perfektion§!"
+ POP_ATTRACTION_INWARDS_PERFECTION_NEG:1 "§R- £empire£Reich hat das Staatselement Innere Perfektion§!"
+ POP_ATTRACTION_MECHANIST_POS:1 "§G+ £empire£Reich hat den Ursprung Mechaniker§!"
+ POP_ATTRACTION_RULER_FACTION_POS:1 "§G+ £empire£Reichsanführer ist Fraktionsführer§!"
  POP_ATTRACTION_DOMINATION_TRADITION_POS:0 "§G+ Dominierungstraditionen§!"
  POP_ATTRACTION_DOMINATION_TRADITION_NEG:0 "§R- Dominierungstraditionen§!"
  POP_ATTRACTION_EXPLORATION_TRADITION_POS:0 "§G+ Erkundungstraditionen§!"
@@ -3875,92 +3891,96 @@
  POP_ATTRACTION_SUPREMACY_TRADITION_NEG:0 "§R- Vorherrschaftstraditionen§!"
  POP_ATTRACTION_PURITY_TRADITION_POS:0 "§G+ Reinheitstraditionen§!"
  POP_ATTRACTION_PURITY_TRADITION_NEG:0 "§R- Reinheitstraditionen§!"
- POP_ATTRACTION_AUTHORITARIAN_POS:0 "§G+ Autoritäre Regierungsgesinnungen§!"
- POP_ATTRACTION_AUTHORITARIAN_NEG:0 "§R- Autoritäre Regierungsgesinnungen§!"
- POP_ATTRACTION_EGALITARIAN_POS:0 "§G+ Egalitäre Regierungsgesinnungen§!"
- POP_ATTRACTION_EGALITARIAN_NEG:0 "§R- Egalitäre Regierungsgesinnungen§!"
- POP_ATTRACTION_XENOPHOBE_POS:0 "§G+ Xenophobe Regierungsgesinnungen§!"
- POP_ATTRACTION_XENOPHOBE_NEG:0 "§R- Xenophobe Regierungsgesinnungen§!"
- POP_ATTRACTION_XENOPHILE_POS:0 "§G+ Xenophile Regierungsgesinnungen§!"
- POP_ATTRACTION_XENOPHILE_NEG:0 "§R- Xenophile Regierungsgesinnungen§!"
- POP_ATTRACTION_SPIRITUALIST_POS:0 "§G+ Spiritualistische Regierungsgesinnungen§!"
- POP_ATTRACTION_SPIRITUALIST_NEG:0 "§R- Spiritualistische Regierungsgesinnungen§!"
- POP_ATTRACTION_MATERIALIST_POS:0 "§G+ Materialistische Regierungsgesinnungen§!"
- POP_ATTRACTION_MATERIALIST_NEG:0 "§R- Materialistische Regierungsgesinnungen§!"
- POP_ATTRACTION_PACIFIST_POS:0 "§G+ Pazifistische Regierungsgesinnungen§!"
- POP_ATTRACTION_PACIFIST_NEG:0 "§R- Pazifistische Regierungsgesinnungen§!"
- POP_ATTRACTION_MILITARIST_POS:0 "§G+ Militaristische Regierungsgesinnungen§!"
- POP_ATTRACTION_MILITARIST_NEG:0 "§R- Militaristische Regierungsgesinnungen§!"
- POP_ATTRACTION_SLAVERY_POS:0 "§G+ Versklavte Bewohner§!"
- POP_ATTRACTION_SLAVERY_NEG:0 "§R- Versklavte Bewohner§!"
- POP_ATTRACTION_ROBOTS_POS:0 "§G+ Roboter-Bewohner§!"
- POP_ATTRACTION_ROBOTS_NEG:0 "§R- Roboter-Bewohner§!"
- POP_ATTRACTION_CYBORGS_POS:0 "§G+ Cyborg-Bewohner§!"
- POP_ATTRACTION_CYBORGS_NEG:0 "§R- Cyborg-Bewohner§!"
- POP_ATTRACTION_ENSLAVED_POS:0 "§G+ Versklavung§!"
- POP_ATTRACTION_ENSLAVED_NEG:0 "§R- Versklavung§!"
- POP_ATTRACTION_IS_ROBOT_POS:0 "§G+ Ist Roboter§!"
- POP_ATTRACTION_IS_ROBOT_NEG:0 "§R- Ist Roboter§!"
- POP_ATTRACTION_CONSUMER_GOODS_POS:0 "§G+ Hohe Lebensstandards§!"
- POP_ATTRACTION_CONSUMER_GOODS_NEG:0 "§R- Hohe Lebensstandards§!"
- POP_ATTRACTION_NATURAL_SCIENTISTS_POS:0 "§G+ Naturwissenschaftler-Bewohner im Reich§!"
- POP_ATTRACTION_NATURAL_SCIENTISTS_NEG:0 "§R- Naturwissenschaftler-Bewohner im Reich§!"
- POP_ATTRACTION_AUTOCRATIC_GOV_POS:0 "§G+ Autokratische Regierung§!"
- POP_ATTRACTION_AUTOCRATIC_GOV_NEG:0 "§R- Autokratische Regierung§!"
- POP_ATTRACTION_DEMOCRATIC_GOV_POS:0 "§G+ Demokratische Regierung§!"
- POP_ATTRACTION_DEMOCRATIC_GOV_NEG:0 "§R- Demokratische Regierung§!"
- POP_ATTRACTION_MATERIALIST_RESEARCH_POS:0 "§G+ Forschungsabkommen mit materialistischen Reichen§!"
- POP_ATTRACTION_MATERIALIST_RESEARCH_NEG:0 "§R- Forschungsabkommen mit materialistischen Reichen§!"
- POP_ATTRACTION_EGALITARIAN_DIPLOMACY_POS:0 "§G+ Diplomatie mit egalitären Reichen§!"
- POP_ATTRACTION_EGALITARIAN_DIPLOMACY_NEG:0 "§R- Diplomatie mit egalitären Reichen§!"
- POP_ATTRACTION_SPIRITUALIST_DIPLOMACY_POS:0 "§G+ Diplomatie mit spiritualistischen Reichen§!"
- POP_ATTRACTION_SPIRITUALIST_DIPLOMACY_NEG:0 "§R- Diplomatie mit spiritualistischen Reichen§!"
+ POP_ATTRACTION_AUTHORITARIAN_POS:1 "§G+ £empire£Reich hat autoritäre Regierungsethiken§!"
+ POP_ATTRACTION_AUTHORITARIAN_NEG:1 "§R- £empire£Reich hat autoritäre Regierungsethiken§!"
+ POP_ATTRACTION_EGALITARIAN_POS:1 "§G+ £empire£Reich hat egalitäre Regierungsethiken§!"
+ POP_ATTRACTION_EGALITARIAN_NEG:1 "§R- £empire£Reich hat egalitäre Regierungsethiken§!"
+ POP_ATTRACTION_XENOPHOBE_POS:1 "§G+ £empire£Reich hat xenophobe Regierungsethiken§!"
+ POP_ATTRACTION_XENOPHOBE_NEG:1 "§R- £empire£Reich hat xenophobe Regierungsethiken§!"
+ POP_ATTRACTION_XENOPHILE_POS:1 "§G+ £empire£Reich hat xenophile Regierungsethiken§!"
+ POP_ATTRACTION_XENOPHILE_NEG:1 "§R- £empire£Reich hat xenophile Regierungsethiken§!"
+ POP_ATTRACTION_SPIRITUALIST_POS:1 "§G+ £empire£Reich hat spiritualistische Regierungsethiken§!"
+ POP_ATTRACTION_SPIRITUALIST_NEG:1 "§R- £empire£Reich hat spiritualistische Regierungsethiken§!"
+ POP_ATTRACTION_MATERIALIST_POS:1 "§G+ £empire£Reich hat materialistische Regierungsethiken§!"
+ POP_ATTRACTION_MATERIALIST_NEG:1 "§R- £empire£Reich hat materialistische Regierungsethiken§!"
+ POP_ATTRACTION_PACIFIST_POS:1 "§G+ £empire£ Reich hat pazifistische Regierungsethiken§!"
+ POP_ATTRACTION_PACIFIST_NEG:1 "§R- £empire£ Reich hat pazifistische Regierungsethiken§!"
+ POP_ATTRACTION_MILITARIST_POS:1 "§G+ £empire£ Reich hat militaristische Regierungsethiken§!"
+ POP_ATTRACTION_MILITARIST_NEG:1 "§R- £empire£ Reich hat militaristische Regierungsethiken§!"
+ POP_ATTRACTION_SLAVERY_POS:1 "§G+ £pop£ Bewohner sind frei und der Planet hat Sklaven mit derselben Spezies§!"
+ POP_ATTRACTION_SLAVERY_NEG:1 "§R- £pop£ Bewohner sind frei und der Planet hat Sklaven mit derselben Spezies§!"
+ POP_ATTRACTION_ROBOTS_POS:1 "§G+ £pop£ Bewohner lebt auf einem Planeten mit Roboter-Bewohnern§!"
+ POP_ATTRACTION_ROBOTS_NEG:1 "§R- £pop£ Bewohner lebt auf einem Planeten mit Roboter-Bewohnern§!"
+ POP_ATTRACTION_CYBORGS_POS:1 "§G+ £pop£ Bewohner hat die Eigenschaft $trait_cybernetic$§!"
+ POP_ATTRACTION_CYBORGS_NEG:1 "§R- £pop£ Bewohner hat die Eigenschaft $trait_cybernetic$§!"
+ POP_ATTRACTION_ENSLAVED_POS:1 "§G+ £pop£ Bewohner sind versklavt§!"
+ POP_ATTRACTION_ENSLAVED_NEG:1 "§R- £pop£ Bewohner sind versklavt§!"
+ POP_ATTRACTION_IS_ROBOT_POS:1 "§G+ £pop£ Bewohner ist ein Roboter§!"
+ POP_ATTRACTION_IS_ROBOT_NEG:1 "§R- £pop£ Bewohner ist ein Roboter§!"
+ POP_ATTRACTION_CONSUMER_GOODS_POS:1 "§G+ £pop£ Bewohner haben hohe Lebensstandards§!"
+ POP_ATTRACTION_CONSUMER_GOODS_NEG:1 "§R- £pop£ Bewohner haben hohe Lebensstandards§!"
+ POP_ATTRACTION_CITIZENSHIP_POS:0 "§G+ £pop£ Bewohner haben nicht die volle Staatsbürgerschaft§!"
+ POP_ATTRACTION_CITIZENSHIP_NEG:0 "§R- £pop£ Bewohner haben nicht die volle Staatsbürgerschaft§!"
+ POP_ATTRACTION_NATURAL_SCIENTISTS_POS:1 "§G+ £pop£ Bewohner hat eine beliebige naturwissenschaftliche Eigenschaft§!"
+ POP_ATTRACTION_NATURAL_SCIENTISTS_NEG:1 "§R- £pop£ Bewohner hat eine beliebige naturwissenschaftliche Eigenschaft§!"
+ POP_ATTRACTION_AUTOCRATIC_GOV_POS:1 "§G+ £empire£Reich hat eine autokratische Autorität§!"
+ POP_ATTRACTION_AUTOCRATIC_GOV_NEG:1 "§R- £empire£Reich hat eine autokratische Autorität§!"
+ POP_ATTRACTION_DEMOCRATIC_GOV_POS:1 "§G+ £empire£Reich hat eine demokratische Autorität§!"
+ POP_ATTRACTION_DEMOCRATIC_GOV_NEG:1 "§R- £empire£Reich hat eine demokratische Autorität§!"
+ POP_ATTRACTION_MATERIALIST_RESEARCH_POS:1 "§G+ £empire£Reich hat Forschungsabkommen mit materialistischen Reichen§!"
+ POP_ATTRACTION_MATERIALIST_RESEARCH_NEG:1 "§R- £empire£Reich hat Forschungsabkommen mit materialistischen Reichen§!"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_POS:1 "§G+ £empire£Reich hat diplomatische Abkommen mit anderen egalitären Reichen§!"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_NEG:1 "§R- £empire£Reich hat diplomatische Abkommen mit anderen egalitären Reichen§!"
+ POP_ATTRACTION_SPIRITUALIST_DIPLOMACY_POS:1 "§G+ £empire£Reich steht in diplomatischen Verhandlungen mit spiritualistischen Reichen§!"
+ POP_ATTRACTION_SPIRITUALIST_DIPLOMACY_NEG:1 "§R- £empire£Reich steht in diplomatischen Verhandlungen mit spiritualistischen Reichen§!"
  POP_ATTRACTION_SPIRITUALIST_OVERLORD_POS:0 "§G+ Spiritualistischer Lehnsherr§!"
  POP_ATTRACTION_SPIRITUALIST_OVERLORD_NEG:0 "§R- Spiritualistischer Lehnsherr§!"
  POP_ATTRACTION_UNEMPLOYMENT_POS:0 "§G+ Arbeitslosigkeit§!"
  POP_ATTRACTION_UNEMPLOYMENT_NEG:0 "§R- Arbeitslosigkeit§!"
- POP_ATTRACTION_XENO_SLAVES_POS:0 "§G+ Xeno-Sklaven§!"
- POP_ATTRACTION_XENO_SLAVES_NEG:0 "§R- Xeno-Sklaven§!"
- POP_ATTRACTION_PSIONICS_POS:0 "§G+ Psionische Technologien§!"
- POP_ATTRACTION_PSIONICS_NEG:0 "§R- Psionische Technologien§!"
- POP_ATTRACTION_DEFENSIVE_XENO_WAR_POS:0 "§G+ Verteidigungskrieg gegen Xenos§!"
- POP_ATTRACTION_DEFENSIVE_XENO_WAR_NEG:0 "§R- Verteidigungskrieg gegen Xenos§!"
- POP_ATTRACTION_ENSLAVEMENT_OF_SPECIES_POS:0 "§G+ Fremde Versklavung von Spezies§!"
- POP_ATTRACTION_ENSLAVEMENT_OF_SPECIES_NEG:0 "§R- Fremde Versklavung von Spezies§!"
- POP_ATTRACTION_PURGING_OF_SPECIES_POS:0 "§G+ Fremde Säuberung von Spezies§!"
- POP_ATTRACTION_PURGING_OF_SPECIES_NEG:0 "§R- Fremde Säuberung von Spezies§!"
- POP_ATTRACTION_FREE_XENOS_POS:0 "§G+ Freie Xenos im Reich§!"
- POP_ATTRACTION_FREE_XENOS_NEG:0 "§R- Freie Xenos im Reich§!"
- POP_ATTRACTION_XENO_DIPLOMACY_POS:0 "§G+ Diplomatie mit Xenos§!"
- POP_ATTRACTION_XENO_DIPLOMACY_NEG:0 "§R- Diplomatie mit Xenos§!"
- POP_ATTRACTION_XENO_LEADERS_POS:0 "§G+ Xeno-Führungsrichtlinie§!"
- POP_ATTRACTION_XENO_LEADERS_NEG:0 "§R- Xeno-Führungsrichtlinie§!"
- POP_ATTRACTION_ROBOT_RIGHTS_POS:0 "§G+ Volle Rechte für KI§!"
- POP_ATTRACTION_ROBOT_RIGHTS_NEG:0 "§R- Volle Rechte für KI§!"
- POP_ATTRACTION_MIGRATION_TREATIES_POS:0 "§G+ Migrationsabkommen§!"
- POP_ATTRACTION_MIGRATION_TREATIES_NEG:0 "§R- Migrationsabkommen§!"
- POP_ATTRACTION_REPUGNANT_POS:1 "§G+ Abstoßende Bewohner im Reich§!"
- POP_ATTRACTION_REPUGNANT_NEG:1 "§R- Abstoßende Bewohner im Reich§!"
- POP_ATTRACTION_CHARISMATIC_POS:1 "§G+ Charismatische Bewohner im Reich§!"
- POP_ATTRACTION_CHARISMATIC_NEG:1 "§R- Charismatische Bewohner im Reich§!"
- POP_ATTRACTION_AT_WAR_POS:0 "§G+ Im Krieg§!"
- POP_ATTRACTION_AT_WAR_NEG:0 "§R- Im Krieg§!"
- POP_ATTRACTION_LOST_WAR_POS:0 "§G+ Hat kürzlich Krieg verloren§!"
- POP_ATTRACTION_LOST_WAR_NEG:0 "§R- Hat kürzlich Krieg verloren!§!"
- POP_ATTRACTION_LOST_PLANETS_POS:0 "§G+ Hat Territorium verloren§!"
- POP_ATTRACTION_LOST_PLANETS_NEG:0 "§R- Hat Territorium verloren§!"
- POP_ATTRACTION_OCCUPIED_PLANET_POS:0 "§G+ Hat Planeten besetzt§!"
- POP_ATTRACTION_OCCUPIED_PLANET_NEG:0 "§R- Hat Planeten besetzt§!"
- POP_ATTRACTION_NEIGHBOR_RIVALS_POS:0 "§G+ Grenzt an Feinde§!"
- POP_ATTRACTION_NEIGHBOR_RIVALS_NEG:0 "§R- Grenzt an Feinde§!"
- POP_ATTRACTION_STRONG_POS:0 "§G+ Starke/Sehr starke Bewohner im Reich§!"
- POP_ATTRACTION_STRONG_NEG:0 "§R- Starke/Sehr starke Bewohner im Reich§!"
- POP_ATTRACTION_WEAK_POS:0 "§G+ Schwache Bewohner im Reich§!"
- POP_ATTRACTION_WEAK_NEG:0 "§R- Schwache Bewohner im Reich§!"
- POP_ATTRACTION_DECADENT_POS:0 "§G+ Dekadente Bewohner im Reich§!"
- POP_ATTRACTION_DECADENT_NEG:0 "§R- Dekadente Bewohner im Reich§!"
- POP_ATTRACTION_EMPIRE_PEACEFUL_POS:0 "§G+ Lange Friedenszeit§!"
- POP_ATTRACTION_EMPIRE_PEACEFUL_NEG:0 "§R- Lange Friedenszeit§!"
+ POP_ATTRACTION_XENO_SLAVES_POS:1 "§G+ £pop£ Bewohner leben auf einem Planeten mit Xeno-Sklaven§!"
+ POP_ATTRACTION_XENO_SLAVES_NEG:1 "§R- £pop£ Bewohner leben auf einem Planeten mit Xeno-Sklaven§!"
+ POP_ATTRACTION_PSIONICS_POS:1 "§G+ £empire£ Reich hat psionische Fähigkeiten§!"
+ POP_ATTRACTION_PSIONICS_NEG:1 "§R- £empire£ Reich hat psionische Fähigkeiten§!"
+ POP_ATTRACTION_DEFENSIVE_XENO_WAR_POS:1 "§G+ £empire£Reich verteidigt sich gegen Xenos§!"
+ POP_ATTRACTION_DEFENSIVE_XENO_WAR_NEG:1 "§R- £empire£Reich verteidigt sich gegen Xenos§!"
+ POP_ATTRACTION_ENSLAVEMENT_OF_SPECIES_POS:1 "§G+ £empire£Ein fremdes Reich hat Bewohner unserer Spezies versklavt§!"
+ POP_ATTRACTION_ENSLAVEMENT_OF_SPECIES_NEG:1 "§G- £empire£Ein fremdes Reich hat Bewohner unserer Spezies versklavt§!"
+ POP_ATTRACTION_PURGING_OF_SPECIES_POS:1 "§G+ £empire£Ein fremdes Reich hat Bewohner unserer Spezies gesäubert§!"
+ POP_ATTRACTION_PURGING_OF_SPECIES_NEG:1 "§R- £empire£Ein fremdes Reich hat Bewohner unserer Spezies gesäubert§!"
+ POP_ATTRACTION_FREE_XENOS_POS:1 "§G+ £pop£ Bewohner leben auf einem Planeten mit freien Xenos§!"
+ POP_ATTRACTION_FREE_XENOS_NEG:1 "§R- £pop£ Bewohner leben auf einem Planeten mit freien Xenos§!"
+ POP_ATTRACTION_XENO_DIPLOMACY_POS:1 "§G+ £empire£Reich steht in diplomatischen Verhandlungen mit Xenos§!"
+ POP_ATTRACTION_XENO_DIPLOMACY_NEG:1 "§R- £empire£Reich steht in diplomatischen Verhandlungen mit Xenos§!"
+ POP_ATTRACTION_XENO_LEADERS_POS:1 "§G+ £empire£Reich hat die Speziesrechte Xeno-Anführer§!"
+ POP_ATTRACTION_XENO_LEADERS_NEG:1 "§R- £empire£Reich hat die Speziesrechte Xeno-Anführer§!"
+ POP_ATTRACTION_ROBOT_RIGHTS_POS:1 "§G+ £empire£ Reich hat volle Rechte für KI§!"
+ POP_ATTRACTION_ROBOT_RIGHTS_NEG:1 "§R- £empire£ Reich hat volle Rechte für KI§!"
+ POP_ATTRACTION_MIGRATION_TREATIES_POS:1 "§G+ £empire£Reich hat Migrationsabkommen mit Xenos§!"
+ POP_ATTRACTION_MIGRATION_TREATIES_NEG:1 "§R- £empire£Reich hat Migrationsabkommen mit Xenos§!"
+ POP_ATTRACTION_REPUGNANT_POS:2 "§G+ £pop£ Bewohner leben auf einem Planeten mit abstoßenden Xenos§!"
+ POP_ATTRACTION_REPUGNANT_NEG:2 "§R- £pop£ Bewohner leben auf einem Planeten mit abstoßenden Xenos§!"
+ POP_ATTRACTION_CHARISMATIC_POS:2 "§G+ £pop£ Bewohner leben auf einem Planeten mit charismatischen Xenos§!"
+ POP_ATTRACTION_CHARISMATIC_NEG:2 "§R- £pop£ Bewohner leben auf einem Planeten mit charismatischen Xenos§!"
+ POP_ATTRACTION_AT_WAR_POS:1 "§G+ £pop£ Bewohner haben die Staatsbürgerschaft und das Reich befindet sich im Krieg§!"
+ POP_ATTRACTION_AT_WAR_NEG:1 "§R- £pop£ Bewohner haben die Staatsbürgerschaft und das Reich befindet sich im Krieg§!"
+ POP_ATTRACTION_LOST_WAR_POS:1 "§G+ £pop£ Bewohner haben die Staatsbürgerschaft und das Reich hat kürzlich einen Krieg verloren§!"
+ POP_ATTRACTION_LOST_WAR_NEG:1 "§R- £pop£ Bewohner haben die Staatsbürgerschaft und das Reich hat kürzlich einen Krieg verloren§!"
+ POP_ATTRACTION_LOST_PLANETS_POS:1 "§G+ £empire£ Ein fremdes Reich hat einen unserer Planeten erobert§!"
+ POP_ATTRACTION_LOST_PLANETS_NEG:1 "§R- £empire£ Ein fremdes Reich hat einen unserer Planeten erobert§!"
+ POP_ATTRACTION_OCCUPIED_PLANET_POS:1 "§G+ £empire£ Ein fremdes Reich hat einen unserer Planeten besetzt§!"
+ POP_ATTRACTION_OCCUPIED_PLANET_NEG:1 "§R- £empire£ Ein fremdes Reich hat einen unserer Planeten besetzt§!"
+ POP_ATTRACTION_NEIGHBOR_RIVALS_POS:1 "§G+ £pop£ Bewohner hat die Staatsbürgerschaft und das Reich grenzt an ein feindliches Reich an§!"
+ POP_ATTRACTION_NEIGHBOR_RIVALS_NEG:1 "§R- £pop£ Bewohner hat die Staatsbürgerschaft und das Reich grenzt an ein feindliches Reich an§!"
+ POP_ATTRACTION_STRONG_POS:1 "§G+ £pop£ Bewohner hat die Eigenschaft Stark oder Sehr stark§!"
+ POP_ATTRACTION_STRONG_NEG:1 "§R- £pop£ Bewohner hat die Eigenschaft Stark oder Sehr stark§!"
+ POP_ATTRACTION_WEAK_POS:1 "§G+ £pop£ Bewohner hat die Eigenschaft Schwach§!"
+ POP_ATTRACTION_WEAK_NEG:1 "§R- £pop£ Bewohner hat die Eigenschaft Schwach§!"
+ POP_ATTRACTION_DECADENT_POS:1 "§G+ £pop£ Bewohner haben die Eigenschaft dekadent§!"
+ POP_ATTRACTION_DECADENT_NEG:1 "§R- £pop£ Bewohner haben die Eigenschaft dekadent§!"
+ POP_ATTRACTION_EMPIRE_PEACEFUL_POS:1 "§G+ £empire£ Reich hatte eine lange Zeit des Friedens§!"
+ POP_ATTRACTION_EMPIRE_PEACEFUL_NEG:1 "§R- £empire£ Reich hatte eine lange Zeit des Friedens§!"
+ POP_ATTRACTION_COMMUNITY_RESOLUTIONS_POS:0 "§G+ Beschlüsse der Galaktischen Gemeinschaft§!"
+ POP_ATTRACTION_COMMUNITY_RESOLUTIONS_NEG:0 "§R- Beschlüsse der Galaktischen Gemeinschaft§!"
 
  ethic_authoritarian:1 "Autoritär"
  ethic_authoritarian_desc:1 "§LEine starke führende Hand ist für den Erfolg einer Zivilisation unentbehrlich - die Alternativen wären Anarchie und Chaos. Es ist die Pflicht des Staates, seine Bürger in Richtung der produktivsten Wege zu lenken.§!\n"
@@ -4276,7 +4296,7 @@
  CONSTRUCTION_UNAVAILABLE_OCCUPIED:0 "Dieser Planet ist besetzt, Bauvorhaben sind deshalb unmöglich."
  CONSTRUCTION_UNAVAILABLE_COLONIZATION:0 "Dieser Planet wird kolonisiert Bauvorhaben sind nicht möglich."
  CONSTRUCTION_UNAVAILABLE_NOT_IN_STARBASE:0 "Kann nicht in einer Sternenbasis gebaut werden."
- CONSTRUCTION_UNAVAILABLE_NOT_IN_SPACEPORT:0 "Kann nicht in einem Raumhafen gebaut werden."
+ CONSTRUCTION_UNAVAILABLE_NOT_IN_SPACEPORT:0 "Kann nicht in einem Weltraumhafen gebaut werden."
  MISSING_SPACESTATION:0 "Diesem Planeten fehlt ein Raumhafen, orbitale Bauvorhaben sind deshalb unmöglich."
  YEAR:0 "Jahr"
  MONTH:0 "Monat"
@@ -4680,7 +4700,7 @@
  ####################################
  # War Goals View
  ####################################
- 
+
  WAR_GOAL:0 "Kriegsziel"
  WAR_GOALS_VIEW_TITLE:0 "Kriegsziele"
  WAR_GOALS_VIEW_AVAILABLE:0 "$WAR_GOAL$"
@@ -4696,8 +4716,8 @@
  WAR_GOALS_VIEW_MANAGE_CLAIMS_DESC:0 "Verwaltet unsere Ansprüche auf den Feind."
  WAR_GOALS_VIEW_CLICK_SET_WAR_GOAL:0 "Klicken, um gegen unseren Feind ein Kriegsziel zu setzen"
  WAR_GOALS_VIEW_CLICK_DECLARE_WAR:0 "Klicken, um dem Gegner den Krieg zu erklären"
- OUR_CLAIMS_ON_ENEMY:0 "Wir haben $COUNT|H$ Ansprüche, die wir versuchen vom Gegner zu erobern."
- ALLY_CLAIMS_ON_ENEMY:0 "Unsere Verbündeten haben $COUNT|H$ Ansprüche, die wir versuchen vom Gegner zu erobern."
+ OUR_CLAIMS_ON_ENEMY:1 "Wir haben $COUNT|H$ Ansprüche, die wir vom Gegner und dessen Verbündeten zu erobern versuchen."
+ ALLY_CLAIMS_ON_ENEMY:1 "Unsere Verbündeten haben $COUNT|H$ Ansprüche, die wir vom Gegner und dessen Verbündeten zu erobern versuchen."
 
  ####################################
  # War Overview
@@ -5019,13 +5039,13 @@
  IS_MIA:0 "§EIst im Kampf vermisst§!"
 
  NAVY_SIZE_DESC:3 "§EDas Überschreiten der §H$NAVY_SIZE_TITLE$§! wirkt sich durch erhöhten Unterhaltskosten für Schiffe aus. Die §H$NAVY_SIZE_TITLE$§! erhöht sich über die Anzahl der §HBewohner§! und §HAnkerplätze in Sternenbasen§! sowie bestimmte §HTechnologien§! und §HTraditionen§!.§!"
- 
+
  over_starbase_capacity:0 "Überschrittene Sternenbasis-Kapazität"
- 
+
  STARBASE_CAPACITY_TITLE:0 "Sternenbasenkapazität"
  STARBASE_CAPACITY_TOOLTIP:0 "Wir können maximal $MAX|0Y$ aufgewertete Sternenbasen unterhalten. Außenposten zählen nicht zu diesem Limit hinzu."
  STARBASE_CAPACITY_DESC:2 "§EDie Überschreitung der §H$STARBASE_CAPACITY_TITLE$§! führt dazu, dass Eure Sternenbasen erhöhte Unterhaltskosten haben. Die §H$STARBASE_CAPACITY_TITLE$§! wird durch die Anzahl Eurer §HBewohner§! und §Hbesessenen Systeme§!, sowie bestimmter §HTechnologien§! und §HTraditionen§! erhöht.§!"
- 
+
  POOR_MAINTENANCE_DESC:1 "Erhält täglich einen Abzug in Höhe von §R-$PENALTY$§! Trefferpunkten, da das Reich einen negativen Energiewert hat."
  WILL_BEGIN_STATION_SELFREPAIR:0 "Station beginnt in $DAYS|Y$ Tagen mit Selbstreparatur."
  SHIP_REPAIR_DESC:2 "§EBeschädigte Schiffe werden im Orbit eines verbündeten Sterns mit einer verbesserten §HSternenbasis§! repariert.§!"
@@ -5043,6 +5063,7 @@
  NO_UPGRADE_AVAILABLE:0 "§RKeine Verbesserung verfügbar.§!"
  NO_UPGRADE_REACHABLE:0 "§RKann keine Sternenbasis erreichen§!"
  NO_REPAIR_NEEDED:1 "§RFlotte hat maximale Gesundheit und Panzerung.§!"
+ UPGRADE_NOT_OWNER:1 "§RBesitzt die Flotte nicht§!"
  REPAIR_NO_PLANET:0 "§RErfordert eine Kolonie§!"
  FLEET_VIEW_REPAIR:0 "Flotte reparieren"
  FLEET_VIEW_REPAIR_DESC:1 "§GKlicken, um die Flotte für Reparaturen zur nächsten Sternenbasis zu beordern§!"
@@ -5101,7 +5122,7 @@
  NAVY_SIZE_TOOLTIP:2 "Wir können effizient eine Anzahl an Schiffen unterstützen, die $MAX|0Y$ Einheiten §Y$FLEET_SIZE_TITLE$§! entspricht."
  NAVY_SIZE_MAX:1 "§RMax: $VALUE|0$§!"
  NAVY_SIZE_MAX_REACHED:1 "§RMax. Flottenkapazität erreicht.§!"
- 
+
  STARBASE_CAPACITY_BASE:0 "Basis: $VALUE$"
  STARBASE_CAPACITY_POPS_VALUE:0 "Von Bewohnern: $VALUE$"
  STARBASE_CAPACITY_SYSTEMS_VALUE:0 "Von besessenen Systemen: $VALUE$"
@@ -5342,10 +5363,10 @@
  NO_SECTION:0 "Keine Sektion!"
  POPUP_DELETE_DESIGN_TITLE:0 "Vorlage löschen?"
  POPUP_DELETE_DESIGNS_TITLE:0 "Vorlagen löschen?"
- #TOOLTIP_META_ICON_GLOBAL: ""
- #TOOLTIP_META_ICON_GLOBAL_DESC: ""
- #TOOLTIP_META_ICON_GLOBAL_USED: ""
- #TOOLTIP_META_ICON_GLOBAL_USED_DESC: ""
+ #TOOLTIP_META_ICON_GLOBAL: "§HGlobal Design§!"
+ #TOOLTIP_META_ICON_GLOBAL_DESC: "Global Designs are always available in the Ship Designer. To"
+ #TOOLTIP_META_ICON_GLOBAL_USED: "§HGlobal Design§!"
+ #TOOLTIP_META_ICON_GLOBAL_USED_DESC: "This Design has been enabled for this Game and can be built at our Spaceports"
  TOOLTIP_META_ICON_FEDERATION:0 "§HFöderationsdesign§!"
  TOOLTIP_META_ICON_FEDERATION_DESC:0 "Dieses Design wird mit unserer Föderation geteilt.\nFöderationsdesigns können auf Technologien aller Föderationsmitglieder zurückgreifen."
  FEDERATION_DESIGN:0 "Föderationsdesign"
@@ -5506,7 +5527,7 @@
  TOTAL_INCOME_DESC:1 "§HMonatliche Einnahmen§!\nGesamteinkommen im letzten Monat."
  TOTAL_EXPENSES_DESC:1 "§HMonatliche Ausgaben§!\nGesamtausgaben des letzten Monats"
  SHIP_MAINT_OVER_CAP_DESC:0 "Weil die $NAVY_SIZE_TITLE$ überschritten ist, erhöhen sich die Unterhaltskosten für Militärschiffe um §R+$VALUE|0-%$§!."
- 
+
  STARBASE_OVER_CAP_DESC:0 "Wir sind momentan über unserer $STARBASE_CAPACITY_TITLE$. Dies hat folgende Auswirkung:\n$EFFECTS$"
 
  ####################################
@@ -5617,7 +5638,7 @@
  POLICY:0 "Richtlinie"
  POLICY_DESC:0 "\n§ERichtlinien sind Effekte, die für unser Reich entweder aktiviert oder deaktiviert werden können.§!"
  EDICT:0 "Erlass"
- EDICT_DESC:5 "\n§E§HReichserlasse§! sind temporäre Reichsmodifikatoren, die durch das Ausgeben von Ressourcen wie §H$INFLUENCE$§! (£influence£ ) und §H$energy$§! (£energy£ ) aktiviert werden können.§!"
+ EDICT_DESC:7 "\n§E§HReichserlasse§! sind Reichsmodifikatoren, die durch das Ausgeben von Ressourcen wie §H$INFLUENCE$§! (£influence£) aktiviert werden können.§!"
  PLANETARY_EDICT_DESC:1 "\n§E§HPlaneten-Erlasse§! sind temporäre Planetenmodifikatoren, die durch das Ausgeben von Ressourcen wie §H$INFLUENCE$§! (£influence£ ) aktiviert werden können.§!"
  EDICT_LASTS:0 "Dauert $VALUE$"
  EDICT_UPKEEP:0 "Monatliche Kosten: $VALUE|Y$ £influence£!"
@@ -5653,7 +5674,7 @@
  TECH_INCOME:0 "$INCOME|Y1$/Tag"
  TECH_STORED:0 "$STORED|Y0$ auf Vorrat"
  TECH_RISK_DESC:0 "§RWARNUNG§! Diese Technologie ist grundsätzlich gefährlich und es gibt eine §H$RISK$%§!-ige Chance, dass während ihrer Erforschung etwas Schlimmes passiert."
- TIMEOUT:0 "Timeout: $DAYS|H$ Tage übrig"
+ TIMEOUT:1 "Timeout: £time£$DAYS|H$"
  TIMED_PROJECT_TIMEOUT:0 "$NAME$ ($DAYS|H$ Tage übrig)"
  STORAGE_FULL:0 "£$KEY$£ $NAME|Y$ ($AMT|Y$/$MAX|Y$)"
  RESEARCH_COST:0 "Forschungskosten:"
@@ -5737,7 +5758,7 @@
  TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_TITLE:0 "§HNeue Komponente:§! Präkognitives Interface"
  TECH_UNLOCK_COMBAT_COMPUTER_PRECOG_DESC:0 "§HPräkognitives Interface§!\n"
  TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_TITLE:0 "§HNeue Mechanik:§! Atmosphärenmanipulaton"
- TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_DESC:1 "§HAtmosphärenmanipulaton§!\nErmöglicht uns, beim Terraforming auch die Temperaturen von Planeten zu verändern."
+ TECH_UNLOCK_TERRAFORMING_TEMP_CHANGE_DESC:1 "§HAtmosphärenmanipulation§!\nErmöglicht es uns, beim Terraforming auch die Temperatur von Planeten zu verändern."
  TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_TITLE:0 "§HFreischaltung des Features:§! Gaia-Terraforming"
  TECH_UNLOCK_TERRAFORMING_GAIA_CHANGE_DESC:0 "§HAtmosphärenmanipulation§!\nErmöglicht es uns, Welten per Terraforming in Gaia-Planeten zu verwandeln."
  TECH_UNLOCK_TERRAFORMING_NUKED_CHANGE_TITLE:2 "§HNeue Mechanik:§! Klimawiederherstellung"
@@ -5761,7 +5782,7 @@
  TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE:0 "§HNeuer Schiffstyp:§! Titan"
  TECH_UNLOCK_TITAN_CONSTRUCTION_DESC:0 "§HTitanen§!\nDiese massiven Kriegsschiffe sind der Stolz der Flotte. Sie sind voller Waffen und dienen in der Regel als Flagschiffe"
  TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_TITLE:0 "§HNeuer Schiffstyp:§! Juggernaut"
- TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_DESC:0 "§HJuggernaut§!\nDiese kolossalen Gebilde sind viel mehr Raumstationen als Schiffe. Der Juggernaut ist eine riesige mobile Raumstation, die Schiffe reparieren und bauen kann, was bedeutet, dass er in der Offensive als Basis verwendet werden kann."
+ TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_DESC:0 "§HJuggernaut§!\nDiese kolossalen Gebilde sind eher Raumstationen als Schiffe. Der Juggernaut ist eine riesige mobile Raumstation, die Schiffe reparieren und bauen kann, was bedeutet, dass er in der Offensive als Basis verwendbar ist."
  TECH_UNLOCK_DEFENSE_PLATFORM_TITLE:0 "§HNeue Station:§! Verteidigungsplattform"
  TECH_UNLOCK_DEFENSE_PLATFORM_DESC:0 "§HVerteidigungsplattform§!\n$tech_space_defense_station_1_desc$"
  TECH_UNLOCK_DEFENSE_STATION_TITLE:0 "§HNeue Station:§! Verteidigungsstation"
@@ -5826,7 +5847,7 @@
  RESEARCH_EFFICIENCY_DESC:0 "Die Forschungsgeschwindigkeit steht dafür, wie effizient die Forschungsleistung des Reichs umgesetzt wird. Das wirkt sich beschleunigend oder verlangsamend auf die Technologie-Freischaltungsrate aus. Dieser Wert wird zwar hauptsächlich über die Kompetenz des zugeteilten Wissenschaftlers ermittelt, andere Faktoren kommen aber auch zum Tragen."
  REASEARCH_SCIENTIST_EFFICIENCY:0 "Wissenschaftler $LEADER$: $VALUE$"
  TECH_UNLOCK_OUTPOST_CONSTRUCTION_TITLE:0 "§HNeue Sternenbasis:§! Außenposten"
- TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC:1 "§HAußenposten§!\nAls unterste Art der Sternenbasis sind Außenposten leicht bewaffnete Stationen, die im Sternenorbit erbaut werden können, um die nationalen Grenzen zu erweitern. Außenposten können keine Gebäude oder Module unterstützen und sind nicht im Outliner aufgeführt."
+ TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC:1 "§HAußenposten§!\nAls unterste Art der Sternenbasis sind Außenposten leicht bewaffnete Stationen, die im Sternenorbit erbaut werden können, um die nationalen Grenzen zu erweitern. Außenposten können keine Gebäude oder Module unterstützen und sind nicht in der Schnellauswahl aufgeführt."
  TECH_UNLOCK_STARPORT_CONSTRUCTION_TITLE:0 "§HNeue Sternenbasis:§! Sternenhafen"
  TECH_UNLOCK_STARPORT_CONSTRUCTION_DESC:0 "§HSternenhafen§!\nDurch das Aufwerten des Außenpostens können Sternenhäfen ein Gebäude und zwei Module beherbergen."
  TECH_UNLOCK_STARHOLD_CONSTRUCTION_TITLE:0 "§HNeue Sternenbasis:§! Sternenfeste"
@@ -5982,11 +6003,11 @@
  tab_species_rights_button:0 "Spezies-Rechte"
  SET_SPECIES_RIGHT_TITLE:0 "Spezies-Rechte festlegen"
  SET_SPECIES_RIGHT_DESC:0 "Möchten Sie Ihre Spezies-Rechte wirklich ändern?"
- 
+
  UNEMPLOYED_PRODUCE_UNITY_RESEARCH:0 "§YArbeitslose Bewohner§! haben normale £happiness£ §YZufriedenheit§! und produzieren £unity£ §YEinigkeit§! und £physics£ £society£ £engineering£ §YForschungspunkte§!."
  UNEMPLOYED_PRODUCE_UNITY:1 "§YArbeitslose Bewohner§! haben normale £happiness£ §YZufriedenheit§! und produzieren £unity£ §YEinigkeit§!."
  UNEMPLOYED_REDUCED_HAPPINESS:0 "§YArbeitslose bewohner§! haben reduzierte £happiness£ §RZufriedenheit§!."
- 
+
  20_HAPPINESS:0 "§G+20%§! £happiness£ "
  15_HAPPINESS:0 "§G+15%§! £happiness£ "
  10_HAPPINESS:0 "§G+10%§! £happiness£ "
@@ -5995,7 +6016,7 @@
  NEG_10_HAPPINESS:0 "§R-10%§! £happiness£ "
  NEG_15_HAPPINESS:0 "§R-15%§! £happiness£ "
  NEG_20_HAPPINESS:0 "§R-20%§! £happiness£ "
-  
+
  VERY_HIGH_LUXURIES:0 "§Y1.0x§!£consumer_goods£ Unterhalt"
  HIGH_LUXURIES:0 "§Y0.5x§!£consumer_goods£ Unterhalt"
  SHARED_BURDEN_LUXURIES:0 "§Y0.4x§!£consumer_goods£ Unterhalt"
@@ -6003,12 +6024,12 @@
  LOW_LUXURIES:0 "§Y0.1x§!£consumer_goods£ Unterhalt"
  VERY_LOW_LUXURIES:0 "§Y0.05x§!£consumer_goods£ Unterhalt"
  NO_LUXURIES:0 "§Y0x§!£consumer_goods£ Unterhalt"
- 
+
  RULERS:0 "£pop_cat_ruler£ $pop_cat_ruler_plural$"
  SPECIALISTS:0 "£pop_cat_specialist£ $pop_cat_specialist_plural$"
  WORKERS:0 "£pop_cat_worker£ $pop_cat_worker_plural$"
  SLAVES:0 "£pop_cat_slave£ $pop_cat_slave_plural$"
- 
+
  SHARED_BURDEN_POP_EFFECTS:0 "$RULERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$SPECIALISTS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$WORKERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$"
  UTOPIAN_ABUNDANCE_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$\n$SPECIALISTS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$\n$WORKERS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$"
  ACADEMIC_PRIVILEGE_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $15_HAPPINESS$\n$SPECIALISTS$: $VERY_HIGH_LUXURIES$, $15_HAPPINESS$\n$WORKERS$: $AVERAGE_LUXURIES$\n$SLAVES$: $VERY_LOW_LUXURIES$"
@@ -6070,6 +6091,9 @@
  slavery_livestock:0 "Viehbestand"
  slavery_livestock_tooltip:1 "Als §HViehbestand§! klassifizierte Bewohner können nicht zur Ressourcenproduktion herangezogen werden. Sie werden stattdessen regelmäßig zur Erhöhung des Nachschubs an £food£ §HNahrung§! erlegt.\n\nLithoiden-Viehbestand produziert stattdessen £minerals£ §HMineralien§!."
  slavery_livestock_tooltip_delayed:0 "§LBewohner sind Viehbestand!§!"
+ slavery_indentured:0 "Vertragliche Sklaverei"
+ slavery_indentured_tooltip:0 "§HVertragliche Sklaven§! können in den Jobs £pop_cat_worker£ §Y$pop_cat_worker$§! oder £pop_cat_specialist£ §Y$pop_cat_specialist$§! eingesetzt werden, haben aber mehr politische Macht als andere Sklaven."
+ slavery_indentured_tooltip_delayed:0 "§LSie können theoretisch ihre Schulden abbezahlen und sich ihre Freiheit erkaufen, doch ihre Verträge sind absichtlich so gestaltet, dass dies vorkommt.§!"
  living_standard_utopian:1 "Utopischer Überfluss"
  living_standard_utopian_tooltip:1 "$living_standard_utopian$ stellt sicher, dass jedes Mitglied dieser Spezies Zugang zu fast allen erdenklichen Arten von Luxus hat.\n\n$UTOPIAN_ABUNDANCE_POP_EFFECTS$\n\n$UNEMPLOYED_PRODUCE_UNITY_RESEARCH$"
  living_standard_utopian_tooltip_delayed:0 "§LRealistisch gesehen können wir nicht alle Wünsche eliminieren, indem wir jeden Bedarf decken. Aber versuchen können wir es!§!"
@@ -6227,6 +6251,7 @@
  ALLIANCE_AND_FEDERATION_VIEW_ECONOMY_POWER:0 "Wirtschaft"
  ALLIANCE_AND_FEDERATION_VIEW_FLEET_POWER:0 "Flotte"
  ALLIANCE_AND_FEDERATION_VIEW_TECHNOLOGY_POWER:0 "Technologie"
+ ALLIANCE_AND_FEDERATION_VIEW_DIPLOMACY_POWER:0 "Diplomatische Bedeutung"
  ALLIANCE_AND_FEDERATION_VIEW_SORT_NAME:0 "§HNach Name sortieren§!"
  ALLIANCE_AND_FEDERATION_VIEW_SORT_OPINION:0 "§HNach Meinung sortieren§!"
  ALLIANCE_AND_FEDERATION_VIEW_SORT_SUPPORT:0 "§HNach Unterstützung sortieren§!"
@@ -6411,7 +6436,7 @@
  IS_RIVAL:0 "Ist $RIVAL$"
  IS_ALLY:1 "Sie sind unsere Verbündeten."
  HAS_NAP:0 "Wir haben ein Nichtangriffsversprechen."
- HAS_GUARANTEE:0 "Wir geben ihnen eine Garantie."
+ HAS_GUARANTEE:0 "Wir garantieren ihnen die Unabhängigkeit."
  HAS_DEFENSIVE_PACT:0 "Wir haben ein Defensivabkommen."
  ALREADY_RIVAL:0 "Sie sind bereits unser $RIVAL$."
  NO_RIVALRY:0 "Sie sind nicht unser $RIVAL$."
@@ -6454,7 +6479,7 @@
  DIPLOMACY_GUARANTEED_BY:1 "§TUnabhängigkeit wird garantiert von: $EMPIRES|H$§!"
  DIPLOMACY_SUPPORTED_INDEPENDECE_BY:0 "§TUnabhängigkeit unterstützt von: $EMPIRES|H$§!."
  DIPLOMACY_SUPPORT_INDEPENDENCE:1 "§TUnterstützt die Unabhängigkeit von: $EMPIRES|H$§!."
- DIPLOMACY_FEDERATION:4 "$FEDERATION|1H$\nFöderation\n\nTyp: §Y$TYPE$§!\nStufe: §Y$LEVEL$§!\n\n§EMitglieder§!:\n$MEMBERS$"
+ DIPLOMACY_FEDERATION:5 "$FEDERATION|1H$\nFöderation\n\nTyp: §Y$TYPE$§!\nStufe: §Y$LEVEL$§!\n\n§EMitglieder§!:\n$MEMBERS$"
  DIPLOMACY_IS_OVERLORD:1 "§TLehnsherr von $EMPIRE|H$§!"
  DIPLOMACY_IS_SUBJECT:1 "§T$TYPE$ unter $EMPIRE|H$§!"
  DIPLOMACY_AT_WAR:1 "§TIm Krieg mit $EMPIRES|H$§!."
@@ -6471,7 +6496,7 @@
  DIPLOMACY_OVERLORD_DESC:0 "§THat Vasallen§!"
  DIPLOMACY_IS_VASSAL_DESC:1 "§TIst ein Vasall§!"
  DIPLOMACY_AT_WAR_DESC:0 "§TIm Krieg§!"
- 
+
  DIPLOMACY_IN_ALLIANCE_WITH:1 "Wir befinden uns in einer Föderation mit ihnen."
  DIPLOMACY_THEY_ARE_SUBJECT:0 "Sie sind unser Untertan."
  DIPLOMACY_WE_ARE_SUBJECT:0 "Wir sind ihr Untertan."
@@ -6516,7 +6541,7 @@
  # Election View
  ####################################
  ELECTION_VIEW_TITLE:0 "Herrscherwahl"
- ELECTION_VIEW_DESCRIPTION:0 "Die Wahl läuft! Wähle einen zu unterstützenden Kandidaten, oder geben Einfluss dafür aus, unseren jetzigen Herrscher für eine weitere Amtszeit zu behalten. Wenn wir nichts tun, wird ein zufälliger Kandidat gewählt."
+ ELECTION_VIEW_DESCRIPTION:0 "Die Wahl läuft! Wählt einen zu unterstützenden Kandidaten oder gebt Einfluss dafür aus, unseren jetzigen Herrscher für eine weitere Amtszeit zu behalten. Wenn wir nichts tun, wird ein zufälliger Kandidat gewählt."
  ELECTION_SELECTED_WINNER:0 "Wir haben §H$SELECTED_WINNER$§! als nächsten Herrscher gewählt."
  ELECTION_SELECTED_WINNER_PRE_RULER_LOCATION:1 "Wir haben §H$SELECTED_WINNER$§!, den vorherigen $PRE_RULER_TITLE$ von §H$PRE_RULER_LOCATION$§!, zu unserem nächsten Herrscher gewählt."
  ELECTION_RE_ELECTED:0 "Wir haben unseren aktuellen Herrscher, §H$SELECTED_WINNER$§!, wiedergewählt."
@@ -6650,7 +6675,7 @@
  BLOOM_QUALITY_HIGH:0 "$GFX_QUALITY_HIGH$"
  SETTINGS_USE_RICH_PRESENCE_LABEL:0 "Aktivität in Steam anzeigen"
 
- 
+
  ####################################
  # Claims View
  ####################################
@@ -6690,7 +6715,7 @@
  CLAIM_SYSTEM_WAR_ATTACKER_COST:0 "Angriffskrieg: $VALUE|%R0$"
  CANNOT_REMOVE_CLAIMS_TOO_MANY:0 "Wir können nicht mehr Ansprüche entfernen, als wir haben"
  CANNOT_REMOVE_CLAIMS_AT_WAR:0 "Wir können Ansprüche während eines Krieges nicht entfernen"
- 
+
  CANNOT_ADD_CLAIM_POLICY:1 "§RUnsere §YKriegsphilosophie§! erlaubt einen Anspruch auf dieses System nicht, außer in einem Defensivkrieg§!"
  CANNOT_ADD_CLAIM_DEVOURING_SWARM:0 "§RWir müssen die Systeme von Beute nicht beanspruchen§!"
  CANNOT_ADD_CLAIM_DEVOURING_SWARM_LITHOID:0 "§RWir müssen Systeme nicht beanspruchen, die wir als Nahrung verwenden§!"
@@ -6843,7 +6868,7 @@
 
  RESETTLEMENT_RUIN_BUILDING_TITLE:0 "Dies wird einen Gebäudeplatz deaktivieren."
  RESETTLEMENT_RUIN_BUILDING_DESC:0 "Dies zerstört alle vorhandenen Gebäude in diesem Platz oder beendet die Konstruktion eines Gebäudes."
- 
+
  ####################################
  # Goto box
  ####################################
@@ -6878,30 +6903,41 @@
  ACTION_DEMAND_PROTECTORATE_TYPE_DESC:0 "Wir können einem anderen Reich im Austausch für nominelle Unterwürfigkeit Schutz anbieten."
  ACTION_DEMAND_THRALL_TYPE:0 "Knechtschaft verlangen"
  ACTION_DEMAND_THRALL_TYPE_DESC:0 "Wir können verlangen, dass sie unser Knecht werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, aber sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen sie nicht kolonisieren."
+ ACTION_DEMAND_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Knecht werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen wir nicht kolonisieren."
  ACTION_DEMAND_DOMINION_TYPE:0 "Herrschaftsgebietsstatus anbieten"
  ACTION_DEMAND_DOMINION_TYPE_DESC:0 "Wir können ihnen anbieten, unser Herrschaftsgebiet zu werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, aber sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen sie auch ihre vorherrschende Gesinnung ändern."
+ ACTION_DEMAND_DOMINION_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Herrschaftsgebiet werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen wir auch unsere vorherrschende Gesinnung ändern."
  ACTION_DEMAND_SATELLITE_TYPE:0 "Satellitenstatus anbieten"
  ACTION_DEMAND_SATELLITE_TYPE_DESC:2 "Wir können ihnen anbieten, unser Satellitenstaat zu werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, aber sie müssen unsere Forschung mit §Y33%§! ihrer monatlichen Forschungsbemühungen unterstützen."
+ ACTION_DEMAND_SATELLITE_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Satellitenstaat werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihre Forschung mit §Y33%§! unserer monatlichen Forschungsbemühungen unterstützen."
  ACTION_DEMAND_SIGNATORY_TYPE:0 "Vertragsstatus anbieten"
  ACTION_DEMAND_SIGNATORY_TYPE_DESC:0 "Wir können verlangen, dass sie unseren galaktischen Friedensvertrag unterzeichnen. Wenn sie akzeptieren, werden wir sie beschützen, aber sie können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Sie müssen außerdem Sklaverei und Säuberungen verbieten."
+ ACTION_DEMAND_SIGNATORY_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihren vorgeschlagenen galaktischen Friedensvertrag unterschreiben. Wenn wir akzeptieren, werden sie uns beschützen, doch wir können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Wir müssen außerdem Sklaverei und Säuberungen verbieten."
  ACTION_DEMAND_TRIBUTARY_TYPE:0 "Tribut verlangen"
  ACTION_DEMAND_TRIBUTARY_TYPE_DESC:0 "Wir können verlangen, dass sie unser Tributpflichtiger werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, aber sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen."
  ACTION_DEMAND_SUBSIDIARY_TYPE:0 "Unternehmensübernahme fordern"
  ACTION_DEMAND_SUBSIDIARY_TYPE_DESC:0 "Wir können verlangen, dass sie unsere Tochtergesellschaft werden. Wenn sie akzeptieren, können wir sie nicht angreifen, aber sie geben uns §Y50%§! von ihrem Handelswert, wenn sie an unser Handelsnetz angeschlossen sind."
+ ACTION_DEMAND_SUBSIDIARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihre Tochtergesellschaft werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y50%§! unseres Handelswertes übertragen, wenn wir mit ihrem Handelsnetzwerk verbunden sind."
  ACTION_ASK_TO_BECOME_VASSALIZED_TYPE:0 "Vasallisierung erbitten"
  ACTION_ASK_TO_BECOME_VASSALIZED_TYPE_DESC:0 "Wir können ein anderes Reich bitten, uns zu unserem Schutz zu ihren Vasallen zu machen."
+ ACTION_ASK_TO_BECOME_VASSALIZED_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Vasall zu werden."
  ACTION_ASK_TO_BECOME_PROTECTORATE_TYPE:0 "Protektoratsstatus erbitten"
  ACTION_ASK_TO_BECOME_PROTECTORATE_TYPE_DESC:0 "Wir können ein anderes Reich um Schutz bitten, büßen dadurch aber einen Teil unserer Unabhängigkeit ein."
+ ACTION_ASK_TO_BECOME_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§! hat unser Reich um Schutz gebeten und gibt im Gegenzug einen Teil der eigenen Unabhängigkeit auf."
  ACTION_ASK_TO_BECOME_TRIBUTARY_TYPE:0 "Tribut anbieten"
  ACTION_ASK_TO_BECOME_TRIBUTARY_TYPE_DESC:0 "Wir können anbieten, ihnen Tribut zu zahlen. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen."
+ ACTION_ASK_TO_BECOME_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns angeboten, Tribut zu zahlen. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen."
  ACTION_ASK_TO_BECOME_THRALL_TYPE:0 "Um Knechtschaft bitten"
  ACTION_ASK_TO_BECOME_THRALL_TYPE_DESC:0 "Wir können darum bitten, ihr Knecht zu werden. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen wir nicht kolonisieren."
  ACTION_ASK_TO_BECOME_DOMINION_TYPE:0 "Um Herrschaftsgebietsstatus bitten"
  ACTION_ASK_TO_BECOME_DOMINION_TYPE_DESC:0 "Wir können darum bitten, ihr Herrschaftsgebiet zu werden. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen wir auch unsere vorherrschende Gesinnung ändern."
+ ACTION_ASK_TO_BECOME_DOMINION_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, unser Herrschaftsgebiet zu werden. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen sie auch ihre vorherrschende Gesinnung ändern."
  ACTION_ASK_TO_BECOME_SATELLITE_TYPE:0 "Um Satellitenstaat-Status bitten"
  ACTION_ASK_TO_BECOME_SATELLITE_TYPE_DESC:1 "Wir können darum bitten, ihr Satellitenstaat zu werden. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihre Forschung mit §Y50%§! unserer monatlichen Forschungsbemühungen unterstützen."
+ ACTION_ASK_TO_BECOME_SATELLITE_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Satellitenstaat zu werden. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen unsere Forschung mit §Y50%§! ihrer monatlichen Forschungsbemühungen unterstützen."
  ACTION_ASK_TO_BECOME_SIGNATORY_TYPE:0 "Um Vertragsstaat-Status bitten"
  ACTION_ASK_TO_BECOME_SIGNATORY_TYPE_DESC:0 "Wir können anbieten, ihren vorgeschlagenen galaktischen Friedensvertrag zu unterschreiben. Wenn sie akzeptieren, werden sie uns beschützen, aber wir können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Wir müssen außerdem Sklaverei und Säuberungen verbieten."
+ ACTION_ASK_TO_BECOME_SIGNATORY_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unseren galaktischen Friedensvertrag zu unterzeichnen. Wenn wir akzeptieren, werden wir sie beschützen, doch sie können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Sie müssen außerdem Sklaverei und Säuberungen verbieten."
  ACTION_FORM_FEDERATION_TYPE:0 "Föderation gründen"
  ACTION_FORM_FEDERATION_TYPE_DESC:0 "Wir können aus einem bestehenden Bündnis eine Föderation gründen."
  ACTION_ASK_TO_JOIN_FEDERATION_TYPE:0 "Beitritt zu Föderation erbitten"
@@ -6912,6 +6948,8 @@
  WAR_GOAL_OPINION_DIFF:0 "Dies wird ihre Meinung über Euch um $OPINION|Y$ ändern."
  ACTION_INVITE_TO_FEDERATION_TYPE:0 "In Föderation einladen"
  ACTION_INVITE_TO_FEDERATION_TYPE_DESC:0 "Wir können andere in unsere Föderation einladen."
+ ACTION_INVITE_TO_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns eingeladen, ihrer Föderation beizutreten."
+ ACTION_FORM_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! gründet eine Föderation mit uns."
 
  ####################################
  # Diplomatic Actions
@@ -6919,18 +6957,21 @@
 
  ACTION_DECLARE_WAR_TITLE:0 "Krieg erklären"
  ACTION_DECLARE_WAR_DESC:0 "§H[Recipient.GetName]§! den Krieg erklären."
- ACTION_DECLARE_WAR_LONG_DESC:0 "[Actor.GetName] möchte [Recipient.GetName] den Krieg erklären!"
+ ACTION_DECLARE_WAR_LONG_DESC:0 "§H[Actor.GetName]§! wünscht §H[Recipient.GetName]§! den Krieg zu erklären!"
  WILL_VOTE_YES_WAR_GOAL_HUMAN:0 "Dieses Reich wird von einem Spieler kontrolliert, der sich in beide Richtungen entscheiden kann."
  WILL_VOTE_YES:0 "Wird mit Ja stimmen."
  WILL_VOTE_NO:0 "Wird mit Nein stimmen."
  ACTION_OFFER_PEACE_TITLE:0 "Frieden anbieten"
  ACTION_OFFER_PEACE_DESC:1 "Zur Beendigung des Kriegs können wir kapitulieren, ihre Kapitulation fordern oder vorschlagen, dass verlorene und eroberte System an den derzeitigen Bessatzer fallen."
+ ACTION_OFFER_PEACE_OFFER_DESC:0 "§H[Actor.GetName]§! ist mit einem Friedensangebot an uns herangetreten. Dies könnte den anhaltenden Krieg beenden."
  ACTION_OFFER_PEACE_INFLUENCE_COST:0 "Jedes Mitglied der siegreichen Seite zahlt $INFLUENCE|0Y$ Einfluss."
  ACTION_OFFER_PEACE_NOT_AT_WAR:0 "Wir befinden uns nicht im Krieg."
  ACTION_OFFER_PEACE_DIPLOMACY_VIEW_TITLE:0 "Um Frieden bitten"
  ACTION_OFFER_PEACE_DIPLOMACY_VIEW_DESC:0 "$ACTION_OFFER_PEACE_DESC$"
+ ACTION_OFFER_PEACE_DIPLOMACY_VIEW_OFFER_DESC:0 "$ACTION_OFFER_PEACE_OFFER_DESC$"
  ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_TITLE:0 "$MAKE_CLAIMS$"
  ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_DESC:0 "Fingiert Ansprüche auf §H[Recipient.GetName]§!."
+ ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_OFFER_DESC:0 "$[Actor.GetName]$ hat Ansprüche auf unser Territorium erhoben."
  PICK_A_PEACE_OPTION:0 "Wir müssen ein Friedensangebot auswählen!"
  DEMAND_THEIR_SURRENDER:0 "Fordert ihre Kapitulation."
  ACCEPT_SURRENDER:0 "Kapitulieren"
@@ -6964,6 +7005,7 @@
  ACTION_CANCEL_SUBJECT_INTEGRATION_DESC:0 "Die Integration dieses Untertanen abbrechen. Ausgegebene Ressourcen werden nicht zurückerstattet."
  ACTION_CLOSE_BORDERS_TITLE:0 "Grenzen schließen"
  ACTION_CLOSE_BORDERS_DESC:0 "Schließt die Grenzen für diese Nation, was ihre Flotten daran hindert, in unser Territorium einzufliegen."
+ ACTION_CLOSE_BORDERS_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Grenzen geschlossen und hindert unsere Flotten so daran, in ihr Territorium einzufliegen."
  ACTION_CLOSE_BORDERS_NOT_POSSIBLE:0 "Es ist nicht möglich die Grenzen für $COUNTRY|Y$ zu schließen."
  ACTION_CLOSE_BORDERS_VASSAL:0 "Für Vasallen unverfügbar"
  ACTION_CLOSE_BORDERS_SUBJECT_TYPE:0 "Untertanen dieses Typs können ihren Zugang nicht kontrollieren"
@@ -6974,6 +7016,7 @@
  ACTION_CLOSE_BORDERS_FORCED:0 "Besteht für jemanden erzwungene Grenzöffnung, können die Grenzen nicht geschlossen werden."
  ACTION_OPEN_BORDERS_TITLE:0 "Grenzen öffnen"
  ACTION_OPEN_BORDERS_DESC:0 "Öffnet dieser Nation die Grenzen, worauf ihre Flotten in unser System einfliegen können."
+ ACTION_OPEN_BORDERS_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Grenzen für uns geöffnet."
  ACTION_OPEN_BORDERS_FORCED:0 "Besteht für jemanden erzwungene Grenzschließung, können die Grenzen nicht geöffnet werden."
  FORCED_OPEN_BORDERS:0 "Erzwungene Grenzöffnung"
  FORCED_CLOSED_BORDERS:0 "Erzwungene Grenzschließung"
@@ -6991,8 +7034,10 @@
  ACTION_RECIPIENT_ALREADY_ASSOCIATE:0 "§RSie sind bereits mit einer anderen Föderation assoziiert.§!"
  ACTION_DEMAND_VASSALIZATION_TITLE:0 "Vasallisierung verlangen"
  ACTION_DEMAND_VASSALIZATION_DESC:0 "Wir können verlangen, dass sie sich uns permanent als Vasallen unterwerfen."
+ ACTION_DEMAND_VASSALIZATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat verlangt, dass wir ihr Vasall werden."
  ACTION_DEMAND_PROTECTORATE_TITLE:0 "Protektoratsstatus anbieten"
  ACTION_DEMAND_PROTECTORATE_DESC:1 "Wir können einem anderen Reich Schutz anbieten und dafür einigen Einfluss über ihre innenpolitischen Angelegenheiten erhalten. $SUBJECT_DESC_protectorate$"
+ ACTION_DEMAND_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns Schutz angeboten und dafür einigen Einfluss über unsere innenpolitischen Angelegenheiten erhalten. $SUBJECT_DESC_protectorate$"
  ACTION_DEMAND_THRALL_TITLE:0 "Knechtschaft verlangen"
  ACTION_DEMAND_THRALL_DESC:0 "Wir können verlangen, dass sie unser Knecht werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, aber sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen sie nicht kolonisieren."
  ACTION_DEMAND_DOMINION_TITLE:0 "Herrschaftsgebietsstatus anbieten"
@@ -7003,6 +7048,7 @@
  ACTION_DEMAND_SIGNATORY_DESC:0 "Wir können verlangen, dass sie unseren galaktischen Friedensvertrag unterzeichnen. Wenn sie akzeptieren, werden wir sie beschützen, aber sie können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Sie müssen außerdem Sklaverei und Säuberungen verbieten."
  ACTION_DEMAND_TRIBUTARY_TITLE:0 "Tribut verlangen"
  ACTION_DEMAND_TRIBUTARY_DESC:1 "Wir können verlangen, dass sie unser Tributpflichtiger werden. Wenn sie akzeptieren, müssen wir sie beschützen, aber sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen."
+ ACTION_DEMAND_TRIBUTARY_OFFER_DESC:1 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Tributstaat werden. Wenn wir akzeptieren, werden sie uns schützen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen."
  ACTION_DEMAND_SUBSIDIARY_TITLE:0 "Tochtergesellschaftsstatus anbieten"
  ACTION_DEMAND_SUBSIDIARY_DESC:1 "Wir können ihnen anbieten unsere Tochtergesellschaft zu werden. Wenn sie akzeptieren, müssen wir sie beschützen, aber sie geben uns §Y25%§! ihrer Energie-Einnahmen zahlen und uns in Kriegen beitreten."
  ACTION_ASK_TO_BECOME_VASSALIZED_TITLE:1 "Vasallenstatus erbitten"
@@ -7013,6 +7059,7 @@
  ACTION_ASK_TO_BECOME_TRIBUTARY_DESC:1 "Wir können anbieten, ihnen Tribut zu zahlen. Wenn sie akzeptieren, werden sie uns schützen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen."
  ACTION_ASK_TO_BECOME_THRALL_TITLE:0 "Um Knechtschaft bitten"
  ACTION_ASK_TO_BECOME_THRALL_DESC:1 "Wir können darum bitten, ihr Knecht zu werden. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Knechte dürfen wir uns nicht in neue Systeme ausbreiten."
+ ACTION_ASK_TO_BECOME_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Knecht zu werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen sie keine weiteren Systeme kolonisieren."
  ACTION_ASK_TO_BECOME_DOMINION_TITLE:0 "Um Herrschaftsgebietsstatus erbitten"
  ACTION_ASK_TO_BECOME_DOMINION_DESC:0 "Wir können darum bitten, ihr Herrschaftsgebiet zu werden. Wenn sie akzeptieren, können sie uns nicht mehr angreifen, aber wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen wir auch unsere vorherrschende Gesinnung ändern."
  ACTION_ASK_TO_BECOME_SATELLITE_TITLE:0 "Um Satellitenstaat-Status bitten"
@@ -7021,7 +7068,7 @@
  ACTION_ASK_TO_BECOME_SIGNATORY_DESC:0 "Wir können anbieten, ihren vorgeschlagenen galaktischen Friedensvertrag zu unterschreiben. Wenn sie akzeptieren, werden sie uns beschützen, aber wir können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Wir müssen außerdem Sklaverei und Säuberungen verbieten."
  ACTION_ASK_TO_BECOME_SUBSIDIARY_TITLE:0 "Tochtergesellschaft werden"
  ACTION_ASK_TO_BECOME_SUBSIDIARY_DESC:1 "Wir können darum bitten ihre Tochtergesellschaft zu werden. Wenn sie akzeptieren, müssen sie uns beschützen, aber wir zahlen ihnen dafür §Y25%§! unserer Energie-Einnahmen und treten ihnen in allen Kriegen bei."
- 
+ ACTION_ASK_TO_BECOME_SUBSIDIARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unsere Tochtergesellschaft zu werden. Wenn wir akzeptieren, müssen wir sie beschützen, doch sie zahlen uns §Y25%§! ihrer Energie-Einnahmen und treten all unseren Kriegen bei."
  ACTION_SUBJECT_OVERLORD_IS_SUBJECT:0 "§R $OVERLORD$ ist ein Untertan§!"
  ACTION_FORM_FEDERATION_TITLE:0 "Föderation gründen"
  ACTION_FORM_FEDERATION_DESC:1 "Gründet mit diesem Reich eine Föderation. Sobald diese gegründet ist, können wir versuchen, andere Imperien einzuladen, sich ihr anzuschließen"
@@ -7032,12 +7079,13 @@
  ACTION_INVITE_TO_FEDERATION_LONG_DESC:0 "[Actor.GetName] möchte [Recipient.GetName] in die Föderation einladen."
  ACTION_ASK_TO_JOIN_FEDERATION_TITLE:0 "Um Beitritt zu Föderation bitten"
  ACTION_ASK_TO_JOIN_FEDERATION_DESC:0 "Wir können darum bitten, ihrer Föderation beizutreten."
+ ACTION_ASK_TO_JOIN_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, unserer Föderation beitreten zu dürfen."
  ACTION_ASK_TO_JOIN_FEDERATION_ALREADY_IN_FEDERATION:0 "§RWir gehören dieser Föderation bereits an.§!"
  ACTION_LEAVE_FEDERATION_TITLE:0 "Föderation verlassen"
  ACTION_LEAVE_FEDERATION_DESC:0 "Wir können der Föderation §H[Actor.GetAllianceName]§! den Rücken kehren und unserer eigenen Wege gehen. Das wird den anderen Mitgliedern nicht sonderlich gut gefallen ..."
  ACTION_REQ_WAR_LEADER:0 "Unser Reich ist der Kriegsführer."
  ACTION_REQ_AT_PEACE:0 "Wir befinden uns im Frieden."
- ACTION_REQ_ACTOR_FED_LEADER:1 "Ihr solltet der aktuelle Föderationspräsident sein."
+ ACTION_REQ_ACTOR_FED_LEADER:2 "Ihr müsst Föderationspräsident sein."
  ACTION_REQ_RECIPIENT_FED_LEADER:1 "Die andere Partei ist der Föderationspräsident."
  ACTION_DECLARE_WAR_HAS_TRUCE:0 "\n§R$TRUCE|H$ bis $DATE|H$. Wir können vor Ablauf des Waffenstillstands keine Kriegserklärung abgeben.§!"
  ACTION_CLOSE_BORDERS_HAS_TRUCE:0 "\n§R$TRUCE|H$ bis $DATE|H$. Wir können unsere Grenzen vor Ablauf des Waffenstillstands nicht schließen.§!"
@@ -7059,6 +7107,7 @@
  ACTION_RELEASE_SUBJECT_DESC:0 "§H[Recipient.GetName]§! als unseren Untertan entlassen!"
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_TITLE:0 "Entlassung als Vasall erbitten"
  ACTION_ASK_TO_BE_RELEASED_SUBJECT_DESC:0 "Darum bitten, aus der Unterwerfung von §H[Recipient.GetName]§! entlassen zu werden!"
+ ACTION_ASK_TO_BE_RELEASED_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, aus unserer Unterwerfung entlassen zu werden."
  WARNING_NOT_ACTIVE_IN_WAR_TITLE:0 "Warnung! Nicht aktiv im Krieg."
  ACTION_NOT_ACTIVE_IN_WAR_TITLE:0 "Inaktiv im Krieg."
  ACTION_REQUEST_WAR_TITLE:0 "Krieg vorschlagen"
@@ -7067,6 +7116,7 @@
  ACTION_PROPOSE_INVITE_DESC:0 "Diese Einladung dem Präsidenten vorschlagen"
  ACTION_OFFER_TRADE_DEAL_TITLE:0 "Handelsabkommen anbieten"
  ACTION_OFFER_TRADE_DEAL_DESC:0 "§H[Recipient.GetName]§! Handelsabkommen anbieten."
+ ACTION_OFFER_TRADE_DEAL_OFFER_DESC:0 "§H[Actor.GetName]§! bietet uns ein Handelsabkommen an."
  ACTION_OFFER_TRADE_DEAL_EMPTY:0 "£trigger_no£ Angebot kann nicht leer sein!"
  ACTION_OFFER_TRADE_DEAL_SAME_AS_REPLACE:0 "£trigger_no£ Das neue Angebot kann nicht identisch mit dem ersetzten sein!"
  ACTION_REQ_PEACE_WITH:0 "£trigger_no£ Wir müssen uns mit §H$RECIPIENT$§!! im Frieden befinden!"
@@ -7080,6 +7130,7 @@
  ACTION_RECALL_EMBASSY_COST:1 "$ACTION_RECALL_EMBASSY_DESC$"
  ACTION_MAKE_RIVAL_TITLE:0 "$RIVALRY$ erklären"
  ACTION_MAKE_RIVAL_DESC:0 "Erklärt §H[Recipient.GetName]§! zu unserem $RIVAL$n."
+ ACTION_MAKE_RIVAL_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns zu ihrem $RIVAL$n erklärt."
  grants_subjugation_cb:0 "Bei Ablehnung erhaltet Ihr für §Y$cb_subjugation_length_default$§! den §HKriegsgrund§! §Y$casus_belli_cb_subjugation$§! auf §H[From.GetName]§!."
  cb_subjugation_length_default:0 "1 Jahr"
  grants_humiliation_cb_originator:0 "Gibt den §HKriegsgrund§! §Y$casus_belli_cb_humiliation$§! auf §H[From.GetName]§!."
@@ -7092,19 +7143,22 @@
  ACTION_END_RIVALRY_COST:0 "Wir erlangen zwar keinen monatlichen Einfluss mehr, dafür aber werden sich die Beziehungen wieder verbessern."
  ACTION_INSULT_TITLE:0 "Beleidigen"
  ACTION_INSULT_DESC:0 "Ihnen eine Beleidigung zu schicken, wird ihre Meinung über uns verschlechtern."
-
+ ACTION_INSULT_OFFER_DESC:0 "Schamlose Beleidigungen wie diese können nicht übersehen werden. Unsere Beziehung zu §H[Actor.GetName]§! hat sich verschlechtert."
  ACTION_OFFER_FEDERATION_ASSOCIATION_TITLE:0 "Assoziationsstatus anbieten"
  ACTION_OFFER_FEDERATION_ASSOCIATION_DESC:0 "Wir können Ihnen Assoziationsstatus in unserer Föderation anbieten."
  ACTION_OFFER_FEDERATION_ASSOCIATION_LONG_DESC:0 "[Actor.GetName] möchte [Recipient.GetName] Assoziationsstatus in der Föderation geben."
+ ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns Assoziationsstatus in ihrer Föderation angeboten. "
  ACTION_OFFER_FEDERATION_ASSOCIATION_TYPE:0 "Assoziationsstatus anbieten"
  ACTION_OFFER_FEDERATION_ASSOCIATION_TYPE_DESC:0 "Wir können Ihnen Assoziationsstatus in unserer Föderation anbieten."
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_TITLE:0 "Um Assoziationsstatus bitten"
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_DESC:0 "Wir können sie um Assoziationsstatus in ihrer Föderation bitten."
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_TYPE:0 "Um Assoziationsstatus bitten"
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_TYPE_DESC:0 "Wir können sie um Assoziationsstatus in ihrer Föderation bitten."
+ ACTION_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns gebeten, ihnen den Assoziationsstatus in unserer Föderation zu gewähren."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_TITLE:0 "Assoziationsstatus widerrufen"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_DESC:0 "Wir können ihnen Assoziationsstatus in unserer Föderation widerrufen."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_LONG_DESC:0 "[Actor.GetName] möchte den Assoziationsstatus von [Recipient.GetName] in der Föderation widerrufen."
+ ACTION_OFFER_PEACE_LONG_DESC:0 "[Actor.GetName] wünscht Frieden mit [Recipient.GetName] zu schließen."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_TYPE:0 "Assoziationsstatus widerrufen"
  ACTION_REVOKE_FEDERATION_ASSOCIATION_TYPE_DESC:0 "Wir können ihnen Assoziationsstatus in unserer Föderation widerrufen."
  ACTION_END_FEDERATION_ASSOCIATION_TITLE:0 "Assoziationsstatus beenden"
@@ -7128,14 +7182,19 @@
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "Das Votum über die Einladung von §H[Actor.GetName]§! in die Föderation §H[Recipient.GetAllianceName]§! ist gescheitert."
  ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "Das Votum über die Einladung von §H[Recipient.GetName]§! in die Föderation §H[Actor.GetAllianceName]§! ist gescheitert."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_VOTE_FAILED:0 "Die Föderation §H[Actor.GetAllianceName]§! stimmte dafür, den Assoziationsstatus von §H[Recipient.GetName]§! zu widerrufen."
- ACTION_VOTE_FOR_FEDERATION_LAW_VOTE_PASSED:0 "Das Votum zur Änderungen eines Gesetzes in der Föderation §H[Actor.GetAllianceName]§! war erfolgreich."
- ACTION_VOTE_FOR_FEDERATION_LAW_VOTE_FAILED:0 "Das Votum zur Änderung eines Gesetzes in der Föderation §H[Actor.GetAllianceName]§! ist fehlgeschlagen.\n\nDies hat sich §Rnegativ§! auf die Föderationskohäsion ausgewirkt."
+ ACTION_VOTE_FOR_FEDERATION_LAW_VOTE_PASSED:1 "Das Votum zur Änderung der Föderation §H[Actor.GetAllianceName]§! zu §H[GetLawName] [GetLawCategory]§! war erfolgreich."
+ ACTION_VOTE_FOR_FEDERATION_LAW_VOTE_FAILED:1 "Das Votum zur Änderung der Föderation §H[Actor.GetAllianceName]§! zu §H[GetLawName] [GetLawCategory]§! ist fehlgeschlagen.\n\nDies hat sich §Rnegativ§! auf die Föderationskohäsion ausgewirkt."
+ ACTION_VOTE_FOR_FEDERATION_TYPE_VOTE_PASSED:0 "Das Votum zur Änderung des Föderationstyps der Föderation §H[Actor.GetAllianceName]§! war erfolgreich."
+ ACTION_VOTE_FOR_FEDERATION_TYPE_VOTE_FAILED:0 "Das Votum zur Änderung des Föderationstyps der Föderation §H[Actor.GetAllianceName]§! ist fehlgeschlagen.\n\nDies hat sich §Rnegativ§! auf die Föderationskohäsion ausgewirkt."
  ACTION_OFFER_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "Die §H[Actor.GetAllianceName]§! stimmte dafür, §H[Recipient.GetName]§! Assoziationsstatus bei der Föderation anzubieten."
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "Die Föderation §H[Recipient.GetAllianceName]§! stimmte dafür, §H[Actor.GetName]§! Assoziationsstatus anzubieten."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_VOTE_PASSED:0 "Die Föderation §H[Actor.GetAllianceName]§! stimmte dafür, den Assoziationsstatus von §H[Recipient.GetName]§! zu widerrufen."
  ACTION_ASK_FOR_FEDERATION_ASSOCIATION_VOTE_FAILED:0 "Das Votum über die Einladung von §H[Actor.GetName]§! in die Föderation §H[Recipient.GetAllianceName]§! ist gescheitert."
  ACTION_OFFER_FEDERATION_ASSOCIATION_VOTE_FAILED:0 "Das Votum über die Einladung von §H[Recipient.GetName]§! in die Föderation §H[Actor.GetAllianceName]§! ist gescheitert."
  ACTION_REVOKE_FEDERATION_ASSOCIATION_VOTE_FAILED:1 "Die Föderation §H[Actor.GetAllianceName]§! stimmte dafür, den Assoziationsstatus von §H[Recipient.GetName]§! zu widerrufen."
+ ACTION_ASK_FOR_FEDERATION_ASSOCIATION_OFFER_DESC:0 "§H[Actor.GetName]§! bittet um Assoziationsstatus in der Föderation §H[Recipient.GetAllianceName]§!."
+ ACTION_BREAK_RESEARCH_AGREEMENT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Forschungsabkommen mit §H[Recipient.GetName]§! gebrochen."
+ ACTION_BREAK_GUARANTEE_OFFER_DESC:0 "§H[Actor.GetName]§! garantiert nicht länger die Unabhängigkeit von §H[Recipient.GetName]§!."
 
  DIPLO_ACTION_ADD_TRUST:0 "Dies erhöht ihr Vertrauen in uns monatlich um $TRUST$, bis zu einem Maximum von $MAX_TRUST|0G$."
  DIPLO_ACTION_INFLUENCE_COST:0 "Es kostet uns monatlich $INF|R$ Einfluss."
@@ -7145,6 +7204,7 @@
 
  ACTION_FORM_DEFENSIVE_PACT_TYPE:0 "Defensivabkommen schließen"
  ACTION_FORM_DEFENSIVE_PACT_TYPE_DESC:0 "Schließt ein Defensivabkommen mit diesem Reich ab. Wird eines der beiden Reiche angegriffen, kommt ihm das andere automatisch zur Hilfe."
+ ACTION_FORM_DEFENSIVE_PACT_OFFER_DESC:0 "Schließt ein Defensivabkommen mit §H[Actor.GetName]§!. Wird eines der beiden Reiche angegriffen, kommt ihm das andere automatisch zur Hilfe."
  ACTION_BREAK_DEFENSIVE_PACT_TYPE:0 "Defensivabkommen brechen"
  ACTION_BREAK_DEFENSIVE_PACT_TYPE_DESC:0 "Bruch unseres Defensivabkommens mit diesem Reich."
  ACTION_FORM_DEFENSIVE_PACT_TITLE:0 "Defensivabkommen schließen"
@@ -7157,10 +7217,12 @@
  ACTION_BREAK_COMMERCIAL_PACT_TYPE_DESC:0 "Löst unseren Wirtschaftspakt mit diesem Reich auf."
  ACTION_FORM_RESEARCH_AGREEMENT_TYPE:0 "Forschungsabkommen schließen"
  ACTION_FORM_RESEARCH_AGREEMENT_TYPE_DESC:0 "Schließt ein Forschungsabkommen mit diesem Reich. Dies gibt beiden Reichen einen Bonus für die Forschungsgeschwindigkeit aller entdeckten Technologien des anderen."
+ ACTION_FORM_RESEARCH_AGREEMENT_OFFER_DESC:0 "$ACTION_FORM_RESEARCH_AGREEMENT_TYPE_DESC$"
  ACTION_BREAK_RESEARCH_AGREEMENT_TYPE:0 "Forschungsabkommen brechen"
  ACTION_BREAK_RESEARCH_AGREEMENT_TYPE_DESC:0 "Löst unser Forschungsabkommen mit diesem Reich auf."
  ACTION_FORM_NON_AGGRESSION_PACT_TYPE:0 "Nichtangriffsversprechen schließen"
  ACTION_FORM_NON_AGGRESSION_PACT_TYPE_DESC:0 "Schließt ein Nichtangriffsversprechen mit diesem Reich. Während dieses Abkommen in Kraft ist, können wir einander nicht angreifen."
+ ACTION_FORM_NON_AGGRESSION_PACT_OFFER_DESC:0 "Schließt ein Nichtangriffsversprechen mit §H[Actor.GetName]§!. Während dieses Abkommen in Kraft ist, können wir einander nicht angreifen."
  ACTION_BREAK_NON_AGGRESSION_PACT_TYPE:0 "Nichtangriffsversprechen brechen"
  ACTION_BREAK_NON_AGGRESSION_PACT_TYPE_DESC:0 "Bruch unseres Nichtangriffsversprechens mit diesem Reich."
  ACTION_FORM_NON_AGGRESSION_PACT_TITLE:0 "Nichtangriffsversprechen schließen"
@@ -7169,6 +7231,7 @@
  ACTION_BREAK_NON_AGGRESSION_PACT_DESC:0 "Bruch unseres Nichtangriffsversprechens mit diesem Reich."
  ACTION_FORM_COMMERCIAL_PACT_TITLE:0 "Wirtschaftspakt schließen"
  ACTION_FORM_COMMERCIAL_PACT_DESC:0 "Schließt einen Wirtschaftspakt mit diesem Reich. Dies wird den Wert der Handelsnetzwerke beider Imperien erhöhen."
+ ACTION_FORM_COMMERCIAL_PACT_OFFER_DESC:0 "Schließt einen Wirtschaftspakt mit §H[Actor.GetName]§!. Dies wird den Wert der Handelsnetzwerke beider Imperien erhöhen."
  ACTION_BREAK_COMMERCIAL_PACT_TITLE:0 "Wirtschaftspakt brechen"
  ACTION_BREAK_COMMERCIAL_PACT_DESC:1 "Löst unseren Wirtschaftspakt mit diesem Reich auf. Wenn wir §Y$BRANCH_OFFICES$§! auf ihren Planeten haben, können sie den §HKriegsgrund§! §Y$casus_belli_cb_expel_corp$§! gegen uns nutzen."
  ACTION_FORM_RESEARCH_AGREEMENT_TITLE:0 "$ACTION_FORM_RESEARCH_AGREEMENT_TYPE$"
@@ -7177,6 +7240,7 @@
  ACTION_BREAK_RESEARCH_AGREEMENT_DESC:0 "$ACTION_BREAK_RESEARCH_AGREEMENT_TYPE_DESC$"
  ACTION_GUARANTEE_INDEPENDENCE_TYPE:0 "Unabhängigkeit garantieren"
  ACTION_GUARANTEE_INDEPENDENCE_TYPE_DESC:0 "Garantiert die Unabhängigkeit dieses Reiches. Werden sie angegriffen, eilen wir ihnen automatisch zu Hilfe."
+ ACTION_GUARANTEE_INDEPENDENCE_OFFER_DESC:0 "§H[Actor.GetName]§! garantiert unserem Reich die Unabhängigkeit. Werden wir angegriffen, eilen sie uns automatisch zu Hilfe."
  ACTION_BREAK_GUARANTEE_TYPE:0 "Garantie widerrufen"
  ACTION_BREAK_GUARANTEE_TYPE_DESC:0 "Unabhängigkeitsgarantie für dieses Reich einstellen."
  ACTION_GUARANTEE_INDEPENDENCE_TITLE:0 "Unabhängigkeit garantieren"
@@ -7193,12 +7257,33 @@
  ACTION_BREAK_SUPPORT_DESC:0 "Unabhängigkeitsunterstützung für dieses Reich einstellen."
  ACTION_FORM_MIGRATION_PACT_TYPE:0 "Migrationsabkommen anbieten"
  ACTION_FORM_MIGRATION_PACT_TYPE_DESC:0 "Schließt ein Migrationsabkommens mit diesem Reich. Unsere Bevölkerungen werden sich frei in beiden Reichen bewegen können."
+ ACTION_FORM_MIGRATION_PACT_OFFER_DESC:0 "Schließt ein Migrationsabkommen mit §H[Actor.GetName]§!. Unsere Bevölkerungen werden sich frei in beiden Reichen bewegen können."
  ACTION_BREAK_MIGRATION_PACT_TYPE:0 "Migrationsabkommen brechen"
  ACTION_BREAK_MIGRATION_PACT_TYPE_DESC:0 "Bruch unseres Migrationsabkommens mit diesem Reich."
  ACTION_FORM_MIGRATION_PACT_TITLE:0 "Migrationsabkommen anbieten"
  ACTION_FORM_MIGRATION_PACT_DESC:0 "Abschluss eines Migrationsabkommens mit diesem Reich. Unsere Bevölkerungen werden sich frei in beiden Reichen bewegen können."
  ACTION_BREAK_MIGRATION_PACT_TITLE:0 "Migrationsabkommen brechen"
  ACTION_BREAK_MIGRATION_PACT_DESC:0 "Bruch unseres Migrationsabkommens mit diesem Reich."
+
+ ACTION_IMPROVE_RELATION_OFFER_DESC:0 ""
+ ACTION_HARM_RELATION_OFFER_DESC:0 ""
+ ACTION_DECLARE_WAR_OFFER_DESC:0 "§H[Actor.GetName]§! hat §H[Recipient.GetName]§! den Krieg erklärt."
+ ACTION_CANCEL_TRADE_DEAL_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Handelsabkommen mit §H[Recipient.GetName]§! aufgekündigt."
+ ACTION_END_RIVALRY_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Rivalität mit §H[Recipient.GetName]§! beendet."
+ ACTION_BREAK_DEFENSIVE_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Defensivabkommen mit §H[Recipient.GetName]§! gebrochen."
+ ACTION_BREAK_NON_AGGRESSION_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Nichtangriffsversprechen mit §H[Recipient.GetName]§! aufgekündigt."
+ ACTION_BREAK_COMMERCIAL_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat den Wirtschaftspakt mit §H[Recipient.GetName]§! aufgekündigt."
+ ACTION_SUPPORT_INDEPENDENCE_OFFER_DESC:0 "§H[Actor.GetName]§! hat sich dafür entschlossen, unsere Unabhängigkeit gegen unsere Unterdrücker zu unterstützen."
+ ACTION_BREAK_SUPPORT_OFFER_DESC:0 "§H[Actor.GetName]§! hat damit aufgehört, unsere Unabhängigkeit gegen unsere Unterdrücker zu unterstützen."
+ ACTION_BREAK_MIGRATION_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Migrationsabkommen mit §H[Recipient.GetName]§! gebrochen."
+ ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat unseren Assoziationsstatus in der Föderation §H[Actor.GetAllianceName]§! aufgekündigt."
+ ACTION_END_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat sich dafür entschlossen, den Assoziationsstatus in der Föderation §H[Recipient.GetAllianceName]§! zu beenden."
+ ACTION_VOTE_FOR_FEDERATION_LAW_OFFER_DESC:0 "§H[Actor.GetName]§! hat eine Abstimmung über ein Föderationsgesetz gefordert."
+ ACTION_KICK_FROM_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns aus der Föderation §H[Actor.GetAllianceName]§! hinausgeworfen."
+ ACTION_LEAVE_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat unsere Föderation verlassen."
+ ACTION_RELEASE_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat §H[Recipient.GetName]§! als unabhängige Nation entlassen."
+ ACTION_INTEGRATE_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat damit begonnen, §H[Recipient.GetName]§! in seine Nation zu integrieren."
+ ACTION_CANCEL_SUBJECT_INTEGRATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Integration von §H[Recipient.GetName]§! abgebrochen."
 
  ALLIANCE_NAME_01:0 "Bündnis"
  ALLIANCE_NAME_02:0 "Achse"
@@ -7250,7 +7335,7 @@
  requires_recipient_not_barbaric_despoilers:1 "$TRIGGER_FAIL$§RSie sind §Y$civic_barbaric_despoilers$§!. Sie beschäftigen sich nicht mit dieser Art der Diplomatie.§!"
  requires_actor_not_criminal_heritage:0 "$TRIGGER_FAIL$§RWir haben eine §Y$civic_criminal_heritage$§!. Wir führen unsere Geschäfte nicht in der Öffentlichkeit.§!"
  requires_recipient_not_criminal_heritage:0 "$TRIGGER_FAIL$§RSie haben eine §Y$civic_criminal_heritage$§!. Sie führen ihre Geschäfte nicht in der Öffentlichkeit.§!"
- 
+
  ####################################
  # Basic Resources
  ####################################
@@ -7277,7 +7362,7 @@
  consumer_goods_desc:1 "§E§H$consumer_goods$§! (£consumer_goods£) sind eine fortschrittliche Ressource, die die verschiedenen Gadgets, Luxusgüter und Güter darstellen, die notwendig sind, um Euren £pop£ §HBewohnern§! ein gutes Leben zu bescheren und intellektuelle £job£ §HArbeiten§! wie £job_researcher£ §HWissenschaftler§! auszuführen. Ihr könnt mehr erhalten durch\n§Y1.§! Bau von £building£ §HZivilindustrie§!-Gebäuden auf der Oberfläche kolonisierter Planeten.\n§Y2.§! Kauf auf dem §HMarkt§!.§!"
 
  ENERGY_DEFICIT_DESC:1 "§RUnser Reich ist von $DEFICIT|E$ betroffen, da wir mehr §HEnergie-Credits§! ausgeben, als wir produzieren - und unsere Reserven haben sich erschöpft.§!"
- 
+
  ETHIC_ALLOWS_SLAVERY:0 "§EKann Aliens §Hversklaven§!§!"
  ETHIC_ALLOWS_CASTE_SYSTEM:1 "§EErlaubt §HKastensystem§!-Staatsbürgerschaft§!"
  ETHIC_ALLOWS_PURGE:1 "§EKann Aliens §Hsäubern§!§!"
@@ -7350,7 +7435,7 @@
  sr_dark_matter_desc:1 "Diese exotische Substanz hat viele Eigenschaften, die sich scheinbar mehreren Naturgesetzen widersetzen. Förderbare Konzentrationen können nur in der Nähe von schwarzen Löchern oder in bestimmten Nebeln gefunden werden."
  nanites:0 "Naniten"
  nanites_desc:0 "Einfache, aber leistungsstarke Nanoaktuatoren, die komplexe Manipulationen und Experimente mit mesoskopischen Skalen ermöglichen."
- 
+
  ####################################
  # Local Resources
  ####################################
@@ -7386,26 +7471,26 @@
  #sr_lythuric_desc:3 "Small concentrations of this gas mixed with fuel have been shown to significantly increase thrust."
  #sr_alien_test_subjects: "Alien Test Subjects"
  #sr_alien_test_subjects_desc: "The genetic makeup of these non-sapient alien creatures make them particularly useful as test subjects in experiments involving a variety of domestic products and medicines."
- #sr_pitharan:0 "Pitharanischer Staub"
- #sr_pitharan_desc:2 "Dieser feine Staub ist ein natürlich vorkommendes Stimulanzmittel. Auf die meisten Wesen hat es eine beruhigende Wirkung und kann deshalb als gewaltlose Methode zur Beruhigung feindseliger Individuen eingesetzt werden."
- #sr_engos:0 "Engos-Dampf"
- #sr_engos_desc:3 "Ein natürlich vorkommendes Stimulanzmittel, dass allen Lebensformen dabei hilft, auf maximaler Kapazität zu funktionieren."
+ #sr_pitharan:0 "Pitharan Dust"
+ #sr_pitharan_desc:2 "This fine, energy-dense dust serves as an excellent fertilizer."
+ #sr_engos:0 "Engos Vapor"
+ #sr_engos_desc:3 "A naturally occurring stimulant that helps all forms of life perform at maximum capacity."
  #sr_xaldor: "Xaldor Gemstones"
  #sr_xaldor_desc: "These rare gems emit an ethereal glow that changes color depending on the mood of whoever is holding them. The glow becomes especially intense in the vicinity of psionically-gifted individuals."
- #sr_orillium:0 "Orillium-Erz"
- #sr_orillium_desc:2 "Orillium ist ein äußerst instabiles Element, das benutzt werden kann, um hochfrequente Schildmodulatoren effizient durch Zufall zu verändern, was mögliche defensive Fähigkeiten verbessert."
+ #sr_orillium:0 "Orillium Ore"
+ #sr_orillium_desc:2 "Orillium is a very unstable element that can be used to efficiently randomize high-frequency shield modulations, improving potential defensive capabilities."
  #sr_sactajenian: "Sactajenian Spice"
  #sr_sactajenian_desc: "A psychoactive compound that imbues users with a limited psionic connection to one another. This effect somewhat diminishes free will and individual mental capacity, but the new 'group mind' can perform tasks as a single organism for a limited time."
  #sr_zarbadoccan: "Zarbadoccan Mold"
  #sr_zarbadoccan_desc: "A powerful stimulant that temporarily gifts most users with a sense of increased creativity or introspective emotional awareness. This kind of 'soul-searching' is frowned upon by some cultures as being counter-productive."
- #sr_riggan:0 "Riggan-Gewürz"
- #sr_riggan_desc:0 "Die geheimen Methoden zur Extrahierung und Mischung dieses Gewürzes sind außerhalb von $leviathans.103.name$ unbekannt. Das Gewürz hat einen einzigartigen Geschmack und ist eine beliebte Speisezutat."
+ #sr_riggan:0 "Riggan Spice"
+ #sr_riggan_desc:0 "The secret methods of extracting and mixing this spice is something that is not known outside the $leviathans.103.name$. The spice has a unique flavor and is a popular food ingredient."
  #sr_carnian: "Carnian Pearls"
  #sr_carnian_desc: "These pearls are often used in jewelry and their brilliant white metallic luster is quite eye-catching, which may explain why they are so popular among avian species."
- #sr_muutagan:0 "Muutagan-Kristalle"
- #sr_muutagan_desc:0 "Die $leviathans.104.name$ sind die einzige Gruppe, die über das Wissen zur Herstellung dieser Kristalle verfügen. Wenn man gegen diese "singenden" Kristalle schlägt, beginnen sie zu vibrieren und stoßen dabei ein einzigartiges, summendes Geräusch aus. Aus diesem Grund werden sie oft als Musikinstrumente eingesetzt und haben auf die meisten Wesen beruhigende Wirkung."
+ #sr_muutagan:0 "Muutagan Crystals"
+ #sr_muutagan_desc:0 "The $leviathans.104.name$ are the only group that possess the knowledge of crafting these crystals. If struck, these "singing" crystals start to vibrate while emitting a unique humming sound. They are often used as musical instruments, and have a calming effect on most beings."
  #sr_xuran:0 "XuraGel"
- #sr_xuran_desc:0 "Dieses Gel wird von $leviathans.100.name$ hergestellt. Es soll verschiedene positive medizinische Effekte auf Kreaturen haben, die in unwirtlichen Umgebungen leben."
+ #sr_xuran_desc:0 "Produced by $leviathans.100.name$, this gel claims various positive medicinal effects for creatures living in inhospitable environments."
  #sr_kobor: "Kobor Wood"
  #sr_kobor_desc: "Kobor trees can be found on many different worlds, and their seeds were likely spread deliberately by someone long ago. The wood from these trees is light, extremely durable and easy to work with. Arthropods in particular favor it as a building material."
 
@@ -7597,7 +7682,7 @@
  building_urban_dwellings:0 "Stadtwohnungen"
  building_urban_dwellings_desc:0 "Ein enger und oft verschmutzter Dschungel aus Beton."
 
- 
+
  ####################################
  # Wonders
  ####################################
@@ -7754,7 +7839,7 @@
  ####################################
  # Government Authorities
  ####################################
- 
+
  auth_democratic:0 "Demokratisch"
  auth_democratic_desc:0 "Demokratische Regierungen halten regelmäßig Wahlen ab, bei denen alle Bürger ihre zukünftigen Repräsentanten wählen können."
  auth_oligarchic:0 "Oligarchisch"
@@ -7851,7 +7936,7 @@
  stagnated_ascendancy:0 "Stagnierende Herrschaft"
  stagnated_ascendancy_desc:0 "§LEine stagnierende Regierungsform, die auf alten Traditionen und längst vergessenen Prinzipien beruht.§!"
  awakened_ascendancy:0 "Vormachtstellung der Erweckten"
- awakened_ascendancy_desc:0 "§LEin ehemals stagnierendes Reich ist aus seinem Schlaf erwacht und macht sich nun auf, sein verlorenes Erbe zurückzuholen.§!"
+ awakened_ascendancy_desc:0 "§LEin ehemals stagnierendes Reich, das aus seinem Schlaf erwacht ist und sich nun aufmacht, sein verlorenes Erbe zurückzuholen.§!"
  machine_intelligence:0 "Maschinenintelligenz"
  machine_intelligence_desc:0 "§LEin völlig fremdes und bizarres Regierungssystem, das von einer Maschinenzivilisation ausgeübt wird.§!"
  ancient_machine_intelligence:0 "Uralte Maschinenintelligenz"
@@ -7989,7 +8074,7 @@
  gov_bandit_kingdom_desc:0 "Diese Regierung ist wie ein massives Verbrechersyndikat organisiert, wo die Starken sich die Schwachen als Beute suchen und jeder Nachbarstaat nur als Angriffsziel gesehen wird."
  gov_bandit_commune:0 "Banditenkommune"
  gov_bandit_commune_desc:0 "$gov_bandit_kingdom_desc$"
- 
+
  gov_fallback:0 "Allgemeines Reich"
  gov_fallback_desc:0 "Sicherungssystem! Nicht gucken!"
 
@@ -8117,7 +8202,7 @@
  ####################################
  # Civics
  ####################################
- 
+
  civic_feudal_realm:0 "Feudalgesellschaft"
  civic_feudal_realm_desc:0 "Diese Gesellschaft ist feudal organisiert. Sie hat einen Monarchen, dessen Herrschaft auf mächtigen Vasallen beruht, die ihre Territorien mit beträchtlicher Autonomie regieren."
  civic_imperial_cult:0 "Imperialer Kult"
@@ -8217,10 +8302,12 @@
  civic_hive_subspace_ephapse_desc:0 "Die kognitiven Abläufe des Schwarmbewusstseins spielen sich teilweise im Subraum ab, was den Einfluss von Zeit und Raum auf die Betätigung ihrer Drohnen verringert."
  civic_hive_natural_neural_network:0 "Natürliches Neuralnetzwerk"
  civic_hive_natural_neural_network_desc:0 "Die graue Materie von Drohnengruppen bietet eine einzigartige Parallelität und beschleunigt die wissenschaftlichen Bemühungen des Schwarmbewusstseins."
+ civic_tooltip_natural_neural_network_effects:0 "Arbeitslose Drohnen produzieren auch £physics£ £society£ £engineering£ §YForschungspunkte§!"
  civic_hive_ascetic:0 "Asketisch"
  civic_hive_ascetic_desc:0 "Materieller Wohlstand hat für das Schwarmbewusstsein kaum Bedeutung."
  civic_hive_one_mind:0 "Ein Verstand"
  civic_hive_one_mind_desc:0 "Das Schwarmbewusstsein kümmert sich darum, dass seine Drohnen nicht abweichen."
+ civic_hive_one_mind_effects:0 "Alle Eure §YAnführer§! haben eine geringere Wahrscheinlichkeit, negative Eigenschaften zu erlangen."
  civic_hive_divided_attention:0 "Geteilte Aufmerksamkeit"
  civic_hive_divided_attention_desc:0 "Das Schwarmbewusstsein kann seine Aufmerksamkeit für maximale Effizienz aufteilen, ohne das große Ganze aus den Augen zu verlieren."
  civic_hive_strength_of_legions:0 "Die Stärke von Legionen"
@@ -8244,7 +8331,7 @@
  civic_machine_builder:0 "Konstruktionsbot"
  civic_machine_builder_desc:0 "Verantwortlich für die Organisation der planetaren Konstruktion seit Beginn, führt die Maschinenintelligenz effizient alle Arten von Fabrikkonstruktionen durch."
  civic_machine_unitary_cohesion:0 "Einheitlich Geschlossen"
- civic_machine_unitary_cohesion_desc:0 "Außergewöhnlich kohäsive Ingenieursstandards erlauben es unterschiedlich spezialisierten Maschinenintelligenz-Einheiten auf einer höheren Effizienz zu arbeiten."
+ civic_machine_unitary_cohesion_desc:0 "Außergewöhnlich kohäsive Ingenieursstandards erlauben es unterschiedlich spezialisierten Maschinenintelligenz-Einheiten auf einer höheren Effizienz zu arbeiten." #NOT LIKE THIS
  civic_machine_factory_overclock:0 "Fabrikübertaktung"
  civic_machine_factory_overclock_desc:0 "Die Maschinenintelligenz kümmert sich darum, ihre Produktionsanlagen zu warten, regelmäßig vorhandene Vorlagen zu aktualisieren und einzelne Einheiten auf dem Fließband zu verbessern."
  civic_machine_rockbreakers:0 "Felsbrecher"
@@ -8305,7 +8392,7 @@
  civic_diplomatic_corps_desc:0 "Diese Gesellschaft hat eine lange Tradition von Rhetorik und Debatten und feiert diejenigen, die sich mit Worten alleine durchsetzen können."
  civic_public_relations_specialists:0 "Spezialisten für Öffentlichkeitsarbeit"
  civic_public_relations_specialists_desc:0 "Wenn du kontrollieren kannst, was jemand denkt, dann kannst du auch sein Verhalten kontrollieren. Diese Megakorporation verfügt über eine virtuelle Armee von Spezialisten, die bereit sind, in die Schlacht zu ziehen."
- 
+
  civic_tooltip_gospel_of_the_masses_effects:1 "£pop£ §YSpiritualistische Bewohner§! geben zusätzlich £trade_value£ §Y$TRADE_VALUE$§! auf allen Planeten und Zweigstellen\nKann £building£ §Y$building_temple_of_prosperity$§! $BRANCH_OFFICE_BUILDING$ bauen\n"
  civic_tooltip_criminal_heritage_effects:3 "Kann keine §HWirtschaftspakte§! schließen\nKann §HZweigstellen§! auf Planeten beliebiger normaler Reiche gründen, solange kein aktiver Krieg oder Waffenstillstand herrscht\nKriminalität auf Planeten mit §HZweigstellen§! erhöhen dessen Wert\nKann spezielle £building£ §H$BRANCH_OFFICE_BUILDINGS$§! bauen, die die Kriminalität erhöhen"
  civic_tooltip_functional_architecture_effects:0 ""
@@ -8314,7 +8401,7 @@
  civic_tooltip_franchising_effects:2 ""
  civic_tooltip_agrarian_idyll_effects:5 "§YGenerator-§!, §YBergbau§! und §YAgrardistrikte§! geben §G1§! £housing£ §YWohnplatz§! mehr\n§YStadtdistrikte§! geben §R1§! £housing£ §YWohnplatz§! weniger\n£job_farmer£ §Y$job_farmer_plural$§! produzieren zusätzlich §G2§! £amenities£ §YDienstleistungen§!"
  civic_tooltip_mechanists_effects:9 "Beginnt das Spiel mit §Y8§! £pop£ Roboterbewohnern und der Technologie und Infrastruktur, um weitere zu bauen\n$mod_planet_pops_robotics_upkeep_mult$: §G-5%§!\n"
- civic_tooltip_shared_burden_effects:2 "Erlaubt den Lebensstandard §Y$living_standard_shared_burden$§!, bei dem alle £pop£ Bewohner einen moderaten Unterhalt an £consumer_goods£ §Y$consumer_goods$§! haben, unabhängig von ihrer §YSchicht§!\nDeaktiviert fast alle anderen §YLebensstandards§!\n"
+ civic_tooltip_shared_burden_effects:3 "Erlaubt den Lebensstandard §Y$living_standard_shared_burden$§!, bei dem alle £pop£ Bewohner einen moderaten Unterhalt an £consumer_goods£ §Y$consumer_goods$§! haben, unabhängig von ihrer §YSchicht§!\nDeaktiviert fast alle anderen §YLebensstandards§!\n"
  civic_tooltip_syncretic_evolution_effects:4 "Beginnt das Spiel mit §Y12§! £pop£ Bewohnern, die einer anderen, unterwürfigen Spezies angehören"
  civic_tooltip_fanatic_purifiers_effects:14 "Kann mit anderen Spezies keine §YDiplomatie§! betreiben!\nKann nicht auf den §YGalaktischen Markt§! zugreifen\nHat den Kriegsgrund §YSäuberung§! gegen andere Spezies\n§YXeno-Bewohner§! werden immer gesäubert\nErhält £unity£ §YEinigkeit§! durch das Säubern von Xeno- £pop£ Bewohnern\nKann die Bombardierungshaltung §Y$bombardment_armageddon$§! nutzen\n"
  civic_tooltip_devouring_swarm_effects:11 "Kann mit anderen Reichen keine §YDiplomatie§! betreiben!\nKann nicht auf den §YGalaktischen Markt§! zugreifen\nHat den Kriegsgrund §YHunger§! gegen alle anderen Reiche\n§YXeno-Bewohner§! werden immer gegessen\nErhält £society£ §Y$society_research$§! durch das Essen von Xeno- £pop£ Bewohnern\n"
@@ -8328,13 +8415,14 @@
  civic_tooltip_barbaric_despoilers_effects:7 "Kann keine §YMigrationsabkommen§! eingehen\nKann keine §YFöderationen§! gründen (aber ihnen beitreten), außer §YKriegsallianzen§! oder §YHegemonien§!\nHat den Kriegsgrund §Y$casus_belli_cb_despoliation$§! gegen alle anderen Reiche\n$allow_raiding$\nDie meisten anderen Reiche haben eine verringerte §YMeinung§!"
  civic_tooltip_citizen_service_effects:4 "£job_soldier£ §Y$job_soldier_plural$§! produzieren zusätzlich §Y2§! £unity£ Einigkeit\n"
  civic_tooltip_exalted_priesthood_effects:1 "£building£ §YHauptstadtgebäude§! ersetzen einige £job_administrator£ §Y$job_administrator$§! mit £job_high_priest §Y$job_high_priest_plural$§!\n£job_priest£ §Y$job_priest_plural$§! produzieren zusätzlich §Y1§! £unity£ Einigkeit"
- civic_tooltip_aristocratic_elite_effects:2 "\n£building£ §YHauptstadtgebäude§! ersetzen einige £job_administrator£ §Y$job_administrator$§! mit £job_noble£ §Y$job_noble_plural$§!\nKann £building£ §Y$building_noble_estates$§! bauen, die zusätzliche £job_noble£ §Y$job_noble$§! hinzufügen"
+ civic_tooltip_aristocratic_elite_effects:3 "\n£building£ §YHauptstadtgebäude§! ersetzen einige £job_administrator£ §Y$job_administrator$§! mit £job_noble£ §Y$job_noble_plural$§!\nKann £building£ §Y$building_noble_estates$§! bauen, die zusätzliche £job_noble£ §Y$job_noble$§! hinzufügen"
  civic_tooltip_police_state_effects:1 "£job_enforcer §Y$job_enforcer_plural$§! produzieren außerdem §Y1§! £unity£ Einigkeit"
  civic_tooltip_technocracy_effects:2 "£building£ §YHauptstadtgebäude§! ersetzen einige £job_administrator£ §Y$job_administrator$§! mit £job_head_researcher£ §Y$job_head_researcher_plural$§!\n§Y$job_researcher_plural$§! produzieren außerdem §Y1§! £unity£ Einigkeit"
  civic_tooltip_merchant_guilds_effects:1 "§YHauptstadtgebäude§! stellen Arbeitsplätze für £job_merchant£ §Y$job_merchant$§! zur Verfügung\n£job_merchant£ §Y$job_merchant_plural$§! produzieren außerdem §Y2§! £unity£ Einigkeit"
- civic_tooltip_byzantine_bureaucracy_effects:1 "£job_bureaucrat£§Y$job_bureaucrat_plural$§! produzieren außerdem §Y1§! £unity£ Einigkeit und §Y1§!£stability£$PLANET_STABILITY_TITLE$"
+ civic_tooltip_byzantine_bureaucracy_effects:2 "£job_bureaucrat£§Y$job_bureaucrat_plural$§! produzieren außerdem §Y1§! £unity£ Einigkeit und §Y1§!£stability£$PLANET_STABILITY_TITLE$"
  civic_tooltip_machine_maintenance_protocols_effects:0 "£job_maintenance_drone£ §Y$job_maintenance_drone_plural$§! produzieren zusätzlich §Y1§! £unity£ Einigkeit"
- 
+ civic_tooltip_philosopher_king_effects:0 "Eure §YAnführer§! und §YGouverneure§! haben eine geringere Wahrscheinlichkeit, negative Eigenschaften zu erlangen."
+
  requires_xeno_species:0 "$TRIGGER_FAIL$Muss mindestens §Y1§! Xeno- £pop£ Bewohner auf dem Planeten haben."
  allow_crossbreeding:0 "Erlaubt Kreuzungen zwischen verschiedenen Spezies, die auf demselben Planeten leben und gibt einen Bonus von §G20%§! auf das §Y$MOD_POP_GROWTH_SPEED$§! auf jeden im Besitz befindlichen Planeten mit mindestens §Y2§! unterschiedlichen Spezies. Kreuzungen führen außerdem zur Bildung von §YHalb-Spezies§!, die ihr Porträt von einer der Elternspezies erhalten, aber eine Mischung von Eigenschaften haben und zusätzlich §Y+1 maximale Eigenschaftspunkte§! und §Y+1 maximale Eigenschaften§! haben"
  species_crossbreeding:0 "Spezies-Kreuzung"
@@ -8448,7 +8536,7 @@
 
  PSIONIC_BLAST_1:0 "Psionische Druckwelle"
  PSIONIC_BLAST_1_DESC:0 ""
- 
+
  EXTRADIMENSIONAL_1:0 "Materie-Desintegrator"
  EXTRADIMENSIONAL_1_DESC:1 "Die Kerntechnologien des Materie-Desintegrators stammen aus einer anderen Dimension und verbiegen mehrere physische Kräfte mit zerstörerischer Wirkung."
 
@@ -8558,7 +8646,7 @@
  WORMHOLE_DRIVE_DESC:0 "Mit Wurmlochmodulatoren ausgerüstete Schiffe stimmen die von Wurmlochgeneratoren erzeugten Portale so ab, dass sie von System zu System fliegen können."
  EMPTY_FTL_INHIBITOR:0 "Keine ÜL-Inhibitoren"
  EMPTY_FTL_INHIBITOR_DESC:0 "Sternenbasen ohne ÜL-Inhibitor können feindliche Schiffe nicht aufhalten."
- 
+
  ftl_components:0 "ÜL-Komponenten"
  ftl_components_DESC:0 "Jedes Schiff, dass zu einem anderen System fliegen möchte, benötigt eine Art von ÜL-Antrieb."
 
@@ -8570,7 +8658,7 @@
  sensor_components:0 "Sensoren"
  sensor_components_desc:0 "$ship_sensor_components_DESC$"
 
- 
+
  thruster_components:0 "Triebwerke"
  thruster_components_DESC:0 "Triebwerke werden zum Unterlichtantrieb benutzt und sind für alle Schiffe eine überlebenswichtige Komponente."
 
@@ -8585,7 +8673,7 @@
 
  power_core:0 "Energiekern"
  power_core_DESC:0 "Nur wenige Dinge funktionieren ohne Energie. Der Energiekern ist ein notwendiger Bestandteil jeder Maschine."
- 
+
  station_power_core:0 "$power_core$"
  station_power_core_desc:0 "$power_core_desc$"
 
@@ -8604,7 +8692,7 @@
  TECH_UNLOCK_DARK_MATTER_PROPULSION_TITLE:0 "§HNeue Komponente:§! $SHIP_THRUSTER_5$"
  TECH_UNLOCK_DARK_MATTER_PROPULSION_DESC:0 "§H$SHIP_THRUSTER_5$§!\n$SHIP_THRUSTER_5_DESC$"
 
- 
+
  FISSION_REACTOR:0 "Kernspaltungsreaktor"
  FISSION_REACTOR_DESC:1 "Diese Energiequelle erzeugt Energie für Schiffe durch Kernspaltung, produziert aber auch schädlichen Atommüll."
  FUSION_REACTOR:0 "Fusionsreaktor"
@@ -8644,14 +8732,14 @@
  SHIELD_5_DESC:0 "Diese verstärkten und gehärteten Energieschilde sind unfassbar leistungsstark. Sie bieten unübertroffenen Schutz."
  SHIELD_BOOSTER:0 "Schildkondensator"
  SHIELD_BOOSTER_DESC:1 "$tech_shield_rechargers_1_desc$"
- 
+
  REACTOR_BOOSTER_1:0 "Reaktor-Verstärker"
  REACTOR_BOOSTER_1_DESC:0 "Zusätzliche Stromerzeugungssysteme erhöhen die Reaktorleistung des Schiffs."
  REACTOR_BOOSTER_2:0 "Verbesserter Reaktor-Verstärker"
  REACTOR_BOOSTER_2_DESC:0 "Die Entdeckung der Fusionskraft ermöglicht es, bessere Reaktor-Verstärker auf unsere Schiffe zu bauen."
  REACTOR_BOOSTER_3:0 "Fortschrittlicher Reaktor-Verstärker"
  REACTOR_BOOSTER_3_DESC:0 "Die Entdeckung der Antimaterieenergie erlaubt hochentwickelte Reaktor-Verstärker, die die Schiffsreaktoren erheblich verbessern."
- 
+
  tech_reactor_booster_1:0 "Reaktor-Verstärker"
  tech_reactor_booster_1_desc:0 "$REACTOR_BOOSTER_1_DESC$"
  tech_reactor_booster_2:0 "Verbesserter Reaktor-Verstärker"
@@ -8661,17 +8749,17 @@
 
  FIRE_CONTROL_1:0 "Hilfs-Feuerkontrolle"
  FIRE_CONTROL_1_DESC:0 "Durch die Installation eines zusätzlichen Feuerkontrollsystems können unsere Schiffe erweiterte Berechnungen durchführen und so die Genauigkeit erhöhen."
- 
+
  AUTO_REPAIR:0 "Regeneratives Rumpfgewebe"
  AUTO_REPAIR_DESC:0 "Diese Bakterien werden auf den Schiffsrumpf gedruckt und versuchen bei Beschädigungen, die Rumpfintegrität wiederherzustellen."
  PSI_SHIELD:0 "Psionische Schilde"
  PSI_SHIELD_DESC:0 "$tech_psionic_shield_desc$"
  PSI_BARRIER:0 "Psionische Barriere"
  PSI_BARRIER_DESC:0 "$tech_psionic_barrier_desc$"
- 
+
  NULL_VOID:0 "Null-Leere-Strahl"
  NULL_VOID_DESC:0 "$null_void_beam_desc$"
- 
+
  ARMOR_BEING_REDUCED:0 "Reduktion (Panzerung):"
  SHIELD_BEING_REDUCED:0 "Reduktion (Schilde):"
 
@@ -8689,7 +8777,7 @@
  CRYSTAL_ARMOR_1_DESC:1 "Eine Legierung von Elementen, die aus den ultra-harten Kristallwesen gewonnen wurden, fasst die inneren Schichten dieser Platten ein und verbessert so die Rumpfintegrität."
  CRYSTAL_ARMOR_2:0 "Geschmiedete Kristallplatten"
  CRYSTAL_ARMOR_2_DESC:1 "Durch Modifikationen des Schmiedevorgangs der kristallinen Legierung kann ihre Widerstandsfähigkeit weiter erhöht werden."
- 
+
  SMALL_CRYSTAL_ARMOR_1:0 "Kleine $CRYSTAL_ARMOR_1$"
  MEDIUM_CRYSTAL_ARMOR_1:0 "Mittlere $CRYSTAL_ARMOR_1$"
  LARGE_CRYSTAL_ARMOR_1:0 "Große $CRYSTAL_ARMOR_1$"
@@ -8757,7 +8845,7 @@
  TITAN_SHIP_THRUSTER_5_DESC:0 "$SHIP_THRUSTER_5_DESC$"
  COLOSSUS_SHIP_THRUSTER_5:0 "$SHIP_THRUSTER_5$"
  COLOSSUS_SHIP_THRUSTER_5_DESC:0 "$SHIP_THRUSTER_5_DESC$"
- 
+
  AURA_EMPTY:0 "Leerer Slot"
  AURA_NANOBOT_CLOUD:0 "Nanobot-Wolke"
  AURA_SHIELD_BOOSTER:0 "Kondensatorfelder"
@@ -8806,7 +8894,7 @@
  STATION_LARGE_AURA_MINEFIELD_1:1 "$AURA_MINEFIELD_1$ - $military_station_large$"
 
  SCOUT_HANGAR_1:0 "Aufklärergeschwader"
- SCOUT_HANGAR_1_DESC:1 "Eine Kleinstaffel von Aufklärungsschiffen bietet einfache Kampfschifffähigkeiten und kann feindliche Bomber und Kampfschiffe in der Nähe des Mutterschiffs bedrängen."
+ SCOUT_HANGAR_1_DESC:1 "Eine Staffel von Aufklärungsschiffen bietet einfache Trägergeschwader-Fähigkeiten und kann feindliche Bomber und Trägergeschwader in der Nähe des Mutterschiffs bedrängen."
  FIGHTERS_HANGAR_1:0 "Einf. Jägergeschwader"
  FIGHTERS_HANGAR_1_DESC:1 "Einfache Jäger kommen gegen Feinde in der Nahumgebung zum Einsatz, wenn das Mutterschiff ins Gefecht eingreift."
  FIGHTERS_HANGAR_2:0 "Verb. Jägergeschwader"
@@ -8826,7 +8914,7 @@
  STRIKE_CRAFT_HANGAR_2_DESC:0 "$tech_strike_craft_2_desc$"
  STRIKE_CRAFT_HANGAR_3:0 "Fort. Trägergeschwader"
  STRIKE_CRAFT_HANGAR_3_DESC:0 "$tech_strike_craft_3_desc$"
- 
+
  SPACE_WHALE_WEAPON_1:0 "Energiesauger"
  SPACE_WHALE_WEAPON_1_DESC:2 "Der Energiesauger wurde einem merkwürdigen biologischen Vorgang in den Tiyanki nachempfunden und saugt die Energie anvisierter Feindschiffe ab."
 
@@ -8927,7 +9015,7 @@
  LARGE_SPACE_BOMB_LAUNCHER:0 "Weltraumbombenwerfer - Schwere Bomben"
  MEDIUM_SUPERHEAVY_SPACE_BOMB_LAUNCHER:0 "Mittlerer Weltraumbombenwerfer - Überschwere Bomben"
  LARGE_SUPERHEAVY_SPACE_BOMB_LAUNCHER:0 "Großer Weltraumbombenwerfer - Überschwere Bomben"
- # CORVETE
+ # CORVETTE
  CORVETTE_FISSION_REACTOR:1 "$FISSION_REACTOR$"
  CORVETTE_FUSION_REACTOR:1 "$FUSION_REACTOR$"
  CORVETTE_COLD_FUSION_REACTOR:1 "$COLD_FUSION_REACTOR$"
@@ -8972,7 +9060,7 @@
  PLATFORM_ANTIMATTER_REACTOR:1 "$ANTIMATTER_REACTOR$"
  PLATFORM_ZERO_POINT_REACTOR:1 "$ZERO_POINT_REACTOR$"
  PLATFORM_DARK_MATTER_REACTOR:1 "$DARK_MATTER_REACTOR$"
- # ION CANNON 
+ # ION CANNON
  ION_CANNON_ZERO_POINT_REACTOR:1 "$ZERO_POINT_REACTOR$"
  ION_CANNON_DARK_MATTER_REACTOR:1 "$DARK_MATTER_REACTOR$"
  # STARBASE
@@ -8982,7 +9070,7 @@
  STARBASE_ANTIMATTER_REACTOR:1 "$ANTIMATTER_REACTOR$"
  STARBASE_ZERO_POINT_REACTOR:1 "$ZERO_POINT_REACTOR$"
  STARBASE_DARK_MATTER_REACTOR:1 "$DARK_MATTER_REACTOR$"
- 
+
  MEDIUM_SCIENCE_LAB_1:0 "Forschungslabor"
  AI_SCIENCE_LAB:0 "KI-Forschungslabor"
  WORMHOLE_DRIVE:1 "Wurmlochantrieb"
@@ -9050,38 +9138,44 @@
  COMBAT_COMPUTER_PICKET_DEFAULT:0 "$COMBAT_COMPUTER_DEFAULT$"
  COMBAT_COMPUTER_LINE_DEFAULT:0 "$COMBAT_COMPUTER_DEFAULT$"
  COMBAT_COMPUTER_ARTILLERY_DEFAULT:0 "$COMBAT_COMPUTER_DEFAULT$"
+ COMBAT_COMPUTER_CARRIER_DEFAULT:0 "$COMBAT_COMPUTER_DEFAULT$"
  COMBAT_COMPUTER_PLATFORM_DEFAULT:0 "Einfacher Gefechtscomputer"
- 
+
  COMBAT_COMPUTER_SWARM_BASIC:0 "Gefechtscomputer (Schwarm)"
  COMBAT_COMPUTER_PICKET_BASIC:0 "Gefechtscomputer (Vorposten)"
  COMBAT_COMPUTER_LINE_BASIC:0 "Gefechtscomputer (Linie)"
  COMBAT_COMPUTER_ARTILLERY_BASIC:0 "Gefechtscomputer (Artillerie)"
+ COMBAT_COMPUTER_CARRIER_BASIC:0 "Gefechtscomputer (Träger)"
  COMBAT_COMPUTER_PLATFORM_BASIC:0 "Gefechtscomputer (Plattform)"
- 
+
  COMBAT_COMPUTER_SWARM_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Schwarm)"
  COMBAT_COMPUTER_PICKET_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Vorposten)"
  COMBAT_COMPUTER_LINE_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Linie)"
  COMBAT_COMPUTER_ARTILLERY_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Artillerie)"
+ COMBAT_COMPUTER_CARRIER_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Träger)"
  COMBAT_COMPUTER_PLATFORM_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Plattform)"
- 
+
  COMBAT_COMPUTER_SWARM_SAPIENT:0 "Fühlender Gefechtscomputer (Schwarm)"
  COMBAT_COMPUTER_PICKET_SAPIENT:0 "Fühlender Gefechtscomputer (Vorposten)"
  COMBAT_COMPUTER_LINE_SAPIENT:0 "Fühlender Gefechtscomputer (Linie)"
  COMBAT_COMPUTER_ARTILLERY_SAPIENT:0 "Fühlender Gefechtscomputer (Artillerie)"
+ COMBAT_COMPUTER_CARRIER_SAPIENT:0 "Fühlender Gefechtscomputer (Träger)"
  COMBAT_COMPUTER_PLATFORM_SAPIENT:0 "Fühlender Gefechtscomputer (Plattform)"
- 
+
  COMBAT_COMPUTER_SWARM_AUTONOMOUS:0 "Autonomer Schiffsverstand (Schwarm)"
  COMBAT_COMPUTER_PICKET_AUTONOMOUS:0 "Autonomer Schiffsverstand (Vorposten)"
  COMBAT_COMPUTER_LINE_AUTONOMOUS:0 "Autonomer Schiffsverstand (Linie)"
  COMBAT_COMPUTER_ARTILLERY_AUTONOMOUS:0 "Autonomer Schiffsverstand (Artillerie)"
+ COMBAT_COMPUTER_CARRIER_AUTONOMOUS:0 "Autonomer Schiffsverstand (Träger)"
  COMBAT_COMPUTER_PLATFORM_AUTONOMOUS:0 "Autonomer Schiffsverstand (Plattform)"
- 
+
  COMBAT_COMPUTER_SWARM_PRECOG:0 "Präkognitives Interface (Schwarm)"
  COMBAT_COMPUTER_PICKET_PRECOG:0 "Präkognitives Interface (Vorposten)"
  COMBAT_COMPUTER_LINE_PRECOG:0 "Präkognitives Interface (Linie)"
  COMBAT_COMPUTER_ARTILLERY_PRECOG:0 "Präkognitives Interface (Artillerie)"
+ COMBAT_COMPUTER_CARRIER_PRECOG:0 "Präkognitives Interface (Träger)"
  COMBAT_COMPUTER_PLATFORM_PRECOG:0 "Präkognitives Interface (Plattform)"
- 
+
  STARBASE_COMBAT_COMPUTER_1:0 "Feuerkontrolle (Sternenbasis)"
  STARBASE_COMBAT_COMPUTER_2:0 "$STARBASE_COMBAT_COMPUTER_1$"
  STARBASE_COMBAT_COMPUTER_3:0 "$STARBASE_COMBAT_COMPUTER_1$"
@@ -9091,17 +9185,19 @@
  POINT_DEFENCE_1:0 "Wächter-Punktverteidigung"
  POINT_DEFENCE_1_DESC:1 "Rumpfmontierte Gegenmaßnahmen gegen Raketen und Kampfschiffe sind für größere und langsamere Militärschiffe oft unerlässlich."
  POINT_DEFENCE_2:0 "Barriere-Punktverteidigung"
- POINT_DEFENCE_2_DESC:1 "Verbesserte Prognose-Algorithmen verbessern die Zielverfolgung und die Punktverteidigung."
+ POINT_DEFENCE_2_DESC:1 "Verbesserte Prognose-Algorithmen steigern die Zielverfolgung und die Punktverteidigung."
  POINT_DEFENCE_3:0 "Garde-Punktverteidigung"
  POINT_DEFENCE_3_DESC:1 "Eine größere Auswahl an Munitionstypen verbessert die Abfangrate herannahender Bedrohungen."
 
  DEFAULT_BEHAVIOR_DESC:1 "§HGemischte Taktik:§! Das Schiff wählt ein ausgeglichenes Verhältnis zwischen Angriff und Verteidigung."
  SWARM_BEHAVIOR_DESC:1 "§HSchwarm-Taktik:§! Das Schiff wird direkt auf den Gegner zufliegen und versuchen so viel Schaden wie möglich auf kurzer Distanz zu verursachen."
  ARTILLERY_BEHAVIOR_DESC:1 "§HArtillerie-Taktik:§! Das Schiff bleibt auf langer Distanz (§Y80§!) und feuert seine Langstrecken-Waffen auf das Ziel ab."
+ CARRIER_BEHAVIOR_DESC:0 "§HTräger-Taktik:§! Das Schiff bleibt auf extremer Distanz (§Y150§!) und feuert seine Langstrecken-Waffen auf das Ziel ab."
  LINE_BEHAVIOR_DESC:1 "§HLinien-Taktik:§! Das Schiff bleibt auf mittlerer Distanz (§Y50§!) und hält die Formation."
  PICKET_BEHAVIOR_DESC:1 "§HVorposten-Taktik:§! Das Schiff fliegt auf kurze Distanz (§Y30§!), um feindliche Schiffe abzufangen."
  PLATFORM_BEHAVIOR_DESC:2 "§HPlattform-Taktik:§! Die Verteidigungsplattformen bleiben stationär und feuert auf Feinde in Reichweite."
  COLOSSUS_BEHAVIOR_DESC:0 "§HIgnoranz-Taktik:§! Das Schiff wird alle Angreifer ignorieren und mit seiner aktuellen Aufgabe fortfahren."
+
 
  PLANET_KILLER_CRACKER:0 "Weltenbrecher"
  PLANET_KILLER_CRACKER_ACTION:0 "Aufbrechen"
@@ -9285,6 +9381,8 @@
  sc_m_desc:1 "$pc_m_star_desc$"
  sc_m_giant:0 "$pc_m_giant_star$"
  sc_m_giant_desc:0 "$pc_m_giant_star_desc$"
+ sc_t:0 "$pc_t_star$"
+ sc_t_desc:0 "$pc_t_star_desc$"
  sc_black_hole:1 "$pc_black_hole$"
  sc_black_hole_desc:1 "$pc_black_hole_desc$"
  sc_neutron_star:1 "$pc_neutron_star$"
@@ -9394,7 +9492,7 @@
  alert_building_instant:0 "Mindestens einem unserer planetaren Gebäude fehlt etwas, das es zu seinem Betrieb benötigt."
  alert_above_system_cap_title:0 "Zu viele Koloniesysteme"
  alert_above_system_cap_instant:0 "Wir haben mehr Koloniesysteme unter unserer direkten Kontrolle, als wir effizient verwalten können."
- alert_above_system_cap_delayed:0 "Vielleicht sollten Sie einige kolonisierte Systeme Sektoren zuteilen, um einen Abzug auf den Einfluss und die Generierung von Energie-Credits zu vermeiden."
+ alert_above_system_cap_delayed:0 "Zieht in Erwägung, einige kolonisierte Systeme Sektoren zuzuteilen, um Abzüge auf die Produktion von Einfluss und die Generierung von Energie-Credits zu vermeiden."
  alert_above_system_cap_instruction:0 "§GZum Verwalten von Sektoren klicken§!"
  alert_above_system_cap_penalty:0 "\n$MODIFIER$"
  alert_above_sector_cap_title:0 "Zu viele Sektoren"
@@ -9535,8 +9633,8 @@
  INFLUENCE_TOOLTIP:3 "Einflusskosten: £influence£ $VALUE|Y$"
  INFLUENCE_MAINTENANCE_TOOLTIP:1 "Monatliche Einflusskosten: "
  EDICTS_LABEL:0 "Hier können Sie Ihre Reichs- und Planeten-Erlasse verwalten."
- CLICK_TO_ADD_EDICT:0 "§GZum Hinzufügen eines Erlasses klicken§!"
- CLICK_TO_REMOVE_EDICT:0 "§GZum Entfernen eines Erlasses klicken§!"
+ CLICK_TO_ADD_EDICT:1 "§GKlicken, um diesen Erlass zu aktivieren§!"
+ CLICK_TO_REMOVE_EDICT:1 "§GKlicken, um diesen Erlass zu deaktivieren§!"
  EMPIRE_EDICT_TOOLTIP:0 "§GKlicken, um alle verfügbaren Erlasse anzuzeigen:§! §HReich§! §GErlasse§!"
  ACTIVE_EDICT:0 "§GDieser Erlass ist bereits aktiv§!"
  A_PLANET:0 "ein Planet"
@@ -9564,18 +9662,18 @@
  edict_research_focus_machine:0 "Leitet Verarbeitungsleistung auf theoretische Modelle um und Stuft die Priorität anderer Forschungsrichtungen herunter."
  edict_social_welfare_programs:0 "Öffentliche Wohlfahrtsprogramme"
  edict_social_welfare_programs_desc:0 "Dieser Erlass etabliert eine große Anzahl an verschiedenen Sozialprogrammen, um das Leben der Bevölkerung zu erleichtern. Ist mit erheblichen Kosten verbunden."
- #edict_the_grand_fleet:0 "Galaktische Armada"
- #edict_the_grand_fleet_desc:0 "Dieser Erlass setzt den Stolz und Ruhm der Armada des Reichs an erste Stelle. Außerdem verfügt er, dass ihr fortwährendes Wohlergehen ein wichtiger politischer Schwerpunkt wird."
+ #edict_the_grand_fleet:0 "The Grand Fleet"
+ #edict_the_grand_fleet_desc:0 "This Edict puts the pride and glory of the Empire's Grand Fleet above all else, and that considerable political focus should be spent ensuring its continued prosperity."
  edict_share_the_burden:0 "Geteiltes Leid"
  edict_share_the_burden_desc:1 "Dieser Erlass setzt für Leibeigene rotierende Tätigkeiten und Arbeitspläne durch, da die Produktivität durch vielfältige Schufterei leicht gesteigert werden kann."
- # edict_share_the_burden_desc: 
+ # edict_share_the_burden_desc: "This Edict dictates that the various burdens of society should be given to those best suited to handle them. Manual labour is best left to those used to such tasks..."
  edict_peace_festivals:0 "Friedensfeste"
  edict_peace_festivals_desc:1 "Dieser pazifistische Erlass fördert den Geist der Einheit und der guten Stimmung durch spezielle Events und Feste in allen Jahreszeiten."
  edict_land_of_opportunity:0 "Land der Möglichkeiten"
  edict_land_of_opportunity_desc:2 "Dieser Erlass schafft zielgerichtete PR-Kampagnen, die unser Reich als eines auf dem neusten Stand und sozialen Gesellschaft hervorhebt. Als einen Ort, an dem jeder Erfolg haben kann oder einen Neubeginn."
  edict_diplomatic_grants:0 "Diplomatische Zugeständnisse"
  edict_diplomatic_grants_desc:1 "Dieser Erlass startet eine diplomatische Offensive als konzentrierte Aktion, um das Image unseres Reiches in den Augen anderer zu verbessern."
- 
+
  edict_engineering_research_focus_hive:0 "Konzentriert unsere Denkerdrohnen auf neue Ingenieurskonzepte auf Kosten allem anderen wissenschaftlichen Disziplinen."
  edict_engineering_research_focus_machine:0 "Lagert Rechenleistung auf theoretische Ingenieursmodelle um und setzt die von anderen Zweigen der Forschung herunter."
  edict_physics_research_focus_hive:0 "Konzentriert unsere Denkerdrohnen auf neue Physikkonzepte auf Kosten allem anderen wissenschaftlichen Disziplinen."
@@ -9604,24 +9702,24 @@
  edict_war_drone_campaign_desc:0 "Indem wir unseren Kriegsdrohnen zusätzliche Näherstoffe zuweisen, können wir ihre Stärke und Kampfbereitschaft steigern."
 
  # Planet Edicts
- #edict_reeducation_campaign:0 "Umerziehungskampagne"
- #edict_reeducation_campaign_desc:1 "Dieser Erlass führt zu lokalen Umerziehungskampagnen, die der Bevölkerung versichern, dass Dissens nicht mehr als das Produkt von Ignoranz und dem Scheitern der Vernunft ist."
- #edict_infrastructure_projects:0 "Infrastrukturprojekte"
- #edict_infrastructure_projects_desc:1 "Dieser Erlass versieht neue Bauinitiativen mit beträchtlichem politischem Gewicht."
- #edict_social_engineering:0 "Sozialtechniken"
- #edict_social_engineering_desc:2 "Dieser fanatisch-kollektivistische Erlass verfügt die Benutzung subtiler sozialer Instrumente, um unsere Regierungsgesinnungen auf dem Planeten zu stärken."
- #edict_privatization_campaign:1 "Bodenständige Verwaltung"
- #edict_privatization_campaign_desc:2 "Dieser fanatisch-individualistische Erlass ermutigt die Individuen, die dem Produktionsaufwand am nächsten stehen, mehr Verantwortung zu übernehmen."
- #edict_arms_race:0 "Wettrüsten"
- #edict_arms_race_desc:0 "Dieser fanatisch-militaristische Erlass konzentriert alle administrativen und gesellschaftlichen Bemühungen auf die effiziente Produktion von Militärausrüstungen."
- #edict_religious_unity:1 "Spirituelle Einheit"
- #edict_religious_unity_desc:1 "Dieser fanatisch-spiritualistische Erlass vereint die Bevölkerung in quasi-religiösem Eifer, wobei man sich besonders auf die Ernte- und Fruchtbarkeitsrituale konzentriert."
- #edict_spirit_of_science:0 "Geist der Wissenschaft"
- #edict_spirit_of_science_desc:0 "Dieser fanatisch-materialistische Erlass konzentriert alle administrativen und gesellschaftlichen Bemühungen auf effiziente Forschung und das Zelebrieren der Vernunft."
- #edict_legal_aliens:0 "Legale Aliens"
- #edict_legal_aliens_desc:0 "Dieser fanatisch-xenophile Erlass startet eine gewaltige PR-Kampagne, mit der Aliens auf den Planeten eingeladen werden, um dort in einem glorreichen multikulturellen Paradies zu leben."
- #edict_purity_laws:0 "Reinheitsgesetze"
- #edict_purity_laws_desc:0 "Dieser fanatisch-xenophobe Erlass sichert durch den Vollzug strenger Spezies-Trennungsgesetze die Reinheit unserer Spezies und die Einigkeit unseres Reichs."
+ #edict_reeducation_campaign:0 "Reeducation Campaigns"
+ #edict_reeducation_campaign_desc:1 "This Edict creates local reeducation campaigns, affirming that dissent is naught but the product of ignorance and a failure of reason."
+ #edict_infrastructure_projects:0 "Infrastructure Projects"
+ #edict_infrastructure_projects_desc:1 "This Edict puts considerable political weight behind new construction initiatives."
+ #edict_social_engineering:0 "Social Engineering"
+ #edict_social_engineering_desc:2 "This Fanatic Authoritarian Edict mandates the use of subtle social instruments to reinforce our governing Ethics on the planet."
+ #edict_privatization_campaign:1 "Grassroots Administration"
+ #edict_privatization_campaign_desc:2 "This Fanatic Egalitarian Edict encourages the individuals closest to the production effort to take increased responsibility."
+ #edict_arms_race:0 "Arms Race"
+ #edict_arms_race_desc:0 "This Fanatic Militarist Edict focuses all administrative and societal efforts on efficient production of military equipment."
+ #edict_religious_unity:1 "Spiritual Unity"
+ #edict_religious_unity_desc:1 "This Fanatic Spiritualist Edict unites the populace in quasi-religious fervor, with a particular emphasis on harvest and fertility rituals."
+ #edict_spirit_of_science:0 "Spirit of Science"
+ #edict_spirit_of_science_desc:0 "This Fanatic Materialist Edict focuses all administrative and societal efforts on efficient research and the celebration of Reason."
+ #edict_legal_aliens:0 "Legal Aliens"
+ #edict_legal_aliens_desc:0 "This Fanatic Xenophile Edict launches a massive PR campaign inviting aliens to come live on the planet in a glorious multicultural paradise."
+ #edict_purity_laws:0 "Purity Laws"
+ #edict_purity_laws_desc:0 "This Fanatic Xenophobe Edict ensures the purity of our species and unity of our empire through the enforcement of rigid separation laws."
  edict_crystal_sonar:0 "Kristallsonar"
  edict_crystal_sonar_desc:0 "Ermöglicht unseren Flotten bei Aufeinandertreffen mit Kristallwesen den Einsatz einer Spezialtechnik, welche augenblicklich die Systeme erkundet, in denen sie leben.\nEnergie-Kosten: §R30§!"
  edict_droning_optimizations:0 "Dronenoptimierung"
@@ -9634,7 +9732,7 @@
  edict_drone_bounty_desc:1 "§LBefiehlt unseren Flotten, die Energiezellen besiegter uralter Bergbaudrohnen zu bergen.§!\nEnergie-Credits pro besiegter Flotte: §G500§!"
  edict_declare_saint:0 "Heiligsprechung"
  edict_declare_saint_desc:0 "Dieser Erlass verleiht einem verstorbenen Menschen, der ein besonders frommes Leben geführt hat die Heiligkeit und schafft damit ein neues Symbol der Einigkeit."
- 
+
  # Ambitions
  unity_ambition:0 "Ambition:"
  edict_scientific_revolution:0 "$unity_ambition$ Wissenschaftliche Revolution"
@@ -9651,7 +9749,7 @@
  edict_omnifarious_acquisition_desc:0 "Alles was erübrigt werden kann, wird recycelt und genutzt. Unsere Ambitionen erfordern alle Ressourcen, die wir finden können."
  edict_grand_fleet:0 "$unity_ambition$ Große Flotte"
  edict_grand_fleet_desc:0 "Unsere galaktischen Ambitionen erfordern, dass der Bau einer großen Flotte unser Hauptziel sein muss."
- 
+
  ####################################
  # Policies
  ####################################
@@ -9768,15 +9866,15 @@
  orbital_bombardment_selective:0 "Selektiv"
  orbital_bombardment_selective_name:0 "Selektive Orbitalbombardierung"
  orbital_bombardment_selective_desc:0 "Erlaub nur den Beschuss identifizierter militärischer Ziele und hält Zivilopfer auf einem Minimum.\n\n§EKann nur die Bombardierungshaltung "Selektiv" benutzen.§!"
- 
+
  orbital_bombardment_indiscriminate:0 "Willkürlich"
  orbital_bombardment_indiscriminate_name:0 "Willkürliche Orbitalbombardierung"
  orbital_bombardment_indiscriminate_desc:0 "Ermöglicht den vollen Einsatz aller Orbitalwaffen, ohne Rücksicht auf das Leben auf der Oberfläche zu nehmen.\n\n§EErmöglicht die Bombardierungshaltung "Willkürlich".§!"
- 
+
  orbital_bombardment_armageddon:0 "Armageddon"
  orbital_bombardment_armageddon_name:0 "Armageddon-Orbitalbombardierung"
  orbital_bombardment_armageddon_desc:1 "Ermöglicht die volle Nutzung aller Orbitalwaffen, ohne Rücksicht auf das Leben auf der Oberfläche oder den Planeten selbst zu nehmen. Das Ziel ist die völlige Vernichtung.\n\n§EErlaubt die Bombardierungshaltung "Willkürlich" und "Armageddon".§!"
- 
+
  orbital_bombardment_abduction:0 "Entführung"
  orbital_bombardment_abduction_name:0 "Entführung-Orbitalbombardierung"
  orbital_bombardment_abduction_desc:0 ""
@@ -9791,7 +9889,7 @@
  interference_active_desc:1 "Zum Entschlüsseln der Geheimnisse des Universums müssen sämtliche Themen, besonders die interessanten, uneingeschränkt erforscht werden können.\n\n§EBeobachtungsstationen können die meisten Forschungstypen durchführen.\nEinmischung in einheimische Kulturen ist nicht möglich.§!"
  interference_full:0 "Unbegrenzt"
  interference_full_name:0 "Unbeschränktes Einheimischenstudium"
- interference_full_desc:0 "Selbst die primitivste Lebensform ist nicht mehr als ein weiterer Schauspieler auf der großen Bühne des galaktischen Konflikts. Wenn ihnen die Stärke zum Widerstand fehlt, welches Recht haben sie dann, Bestimmer ihres eigenen Schicksals zu sein?\n\n§EBeobachtungsstationen können alle Forschungstypen durchführen.\nEinmischung in einheimische Kulturen ist möglich.§!"
+ interference_full_desc:0 "Selbst die primitivste Lebensform ist nicht mehr als ein weiterer Akteur auf der großen Bühne des galaktischen Konflikts. Wenn ihnen die Stärke zum Widerstand fehlt, welches Recht haben sie dann, über ihr eigenes Schicksal zu bestimmen?\n\n§EBeobachtungsstationen können alle Forschungstypen durchführen.\nEinmischung in einheimische Kulturen ist möglich.§!"
 
  policy_enlightenment:0 "Xeno-Erleuchtung"
  policy_enlightenment_desc:0 "Potenziell können wir unsere technologischen Fortschritte mit primitiveren Gesellschaften teilen und ihnen völlig neue Horizonte eröffnen.\n"
@@ -9903,37 +10001,37 @@
  food_policy_rationing:0 "Strenge Rationierung"
  food_policy_rationing_name:0 "$food_policy_rationing$"
  food_policy_rationing_desc:0 "In Zeiten der Not müssen wir uns alle für das größere Wohl opfern. Was ist schon ein kleiner Hunger, wenn uns eine glorreiche Zukunft erwartet?\n\n"
- 
+
  food_policy_generous:0 "Nahrungsüberschuss"
  food_policy_generous_name:0 "$food_policy_generous$"
- food_policy_generous_desc:0 "Es ist das Grundrecht eines jeden unserer Bürger mit einem vollen Verdauungsorgan in den Winterschlaf zu gehen. Ein einfach Zugang zu reichlich ernährungsphysiologischer Kost wird der Treibstoff sein, der unser Wachstum unter den Sternen antreibt.\n\n"
- 
+ food_policy_generous_desc:1 "Es ist das Grundrecht eines jeden unserer Bürger mit einem vollen Verdauungsorgan in den Winterschlaf zu gehen. Ein einfach Zugang zu reichlich ernährungsphysiologischer Kost wird der Treibstoff sein, der unser Wachstum unter den Sternen antreibt."
+
  policy_food_policy_gestalt:0 "$policy_food_policy$"
  policy_food_policy_gestalt_desc:0 "$policy_food_policy_desc$"
 
  food_policy_gestalt_normal:0 "$food_policy_normal$"
  food_policy_gestalt_normal_name:0 "$food_policy_normal$"
- food_policy_gestalt_normal_desc:0 "Alle Drohnen erhalten ihre notwendige Biomasse-Aufnahme durch den Verstand.\n\n§EDrohnen haben einen normalen Nahrungskonsum und eine normale Wachstumsgeschwindigkeit.§!"
+ food_policy_gestalt_normal_desc:0 "Alle Drohnen erhalten ihre notwendige Biomasse-Aufnahme durch das Bewusstsein.\n\n§EDrohnen haben einen normalen Nahrungskonsum und eine normale Wachstumsgeschwindigkeit.§!"
 
  food_policy_gestalt_rationing:0 "$food_policy_rationing$"
  food_policy_gestalt_rationing_name:0 "$food_policy_rationing$"
  food_policy_gestalt_rationing_desc:0 "Nichts verschwenden, nichts wollen.\n\n"
- 
+
  food_policy_gestalt_generous:0 "$food_policy_generous$"
  food_policy_gestalt_generous_name:0 "$food_policy_generous$"
  food_policy_gestalt_generous_desc:0 "Eine gute genährte Drohne ist eine produktive Drohne.\n\n"
- 
+
  policy_trade_policy:0 "Handelspolitik"
  policy_trade_policy_desc:0 "Der Handel ist eine wichtige Quelle des Wohlstands und bringt unserem Reich viele Ressourcen. Wir müssen entscheiden, wohin diese Ressourcen am besten geleitet werden."
-  
+
  trade_policy_default:0 "Wohlstandsschaffung"
  trade_policy_default_name:0 "$trade_policy_default$"
  trade_policy_default_desc:0 "Der Zweck des Handels besteht darin, Gewinne für den Einzelnen und Einnahmen für den Staat zu erwirtschaften. Wir sollten unsere Handelsbemühungen vollständig auf die Schaffung von Wohlstand konzentrieren.\n\n§EJeder gesammelte £trade_value£ §YHandelswert§! generiert uns £energy£ §Y1§!§!"
-  
+
  trade_policy_consumer_goods:0 "Verbraucherorientiert"
  trade_conversion_consumer_goods_name:0 "$trade_policy_consumer_goods$"
  trade_policy_consumer_goods_desc:0 "Gewinne und Steuern müssen an zweiter Stelle stehen, um das Leben unserer Bürger zu verbessern. Wir sollten unsere Handelsanstrengungen auf die Herstellung und den Vertrieb des täglichen Bedarfs ausrichten.\n\n§EJeder gesammelte £trade_value£ §YHandelswert§! generiert uns £energy£ §Y0.5§! und £consumer_goods£ §Y0.25§!§!"
- 
+
  trade_policy_unity:0 "Ideenmarktplatz"
  trade_conversion_unity_name:0 "$trade_policy_unity$"
  trade_policy_unity_desc:1 "Der Handel kann nicht nur dazu genutzt werden, um Waren zu bewegen, sondern auch um die Verbreitung von Ideen zu erleichtern. Wir sollten unsere Handelsbemühungen darauf konzentrieren, dass wir auf allen Planeten gehört werden, auf denen wir Geschäfte machen.\n\n§EJeder gesammelte £trade_value£ §YHandelswert§! gibt uns £energy£ §Y0.5§! und £unity£ §Y0.25§!§!"
@@ -9941,7 +10039,7 @@
  trade_policy_trade_league:0 "Handelsliga"
  trade_conversion_trade_league_name:0 "$trade_policy_trade_league$"
  trade_policy_trade_league_desc:1 "Indem wir uns in einer Handelsliga zusammenschließen, können wir Gewinne auf einem ganz neuen Niveau erzielen und sichern.\n\n§EJeder gesammelte £trade_value£ §YHandelswert§! bringt uns £energy£ §Y0,5§!, £unity£ §Y0,25§! und £consumer_goods£ §Y0,25§! ein§!"
- 
+
  policy_economic_policy:0 "Wirtschaftspolitik"
  policy_economic_policy_desc:0 "Wohlstand oder Sicherheit? Bildung oder Verteidigung? Waffen oder Butter? Dies sind die Fragen, die sich jede Regierung mit begrenzten Ressourcen im Laufe der Geschichte gestellt hat und unsere ist nicht anders."
 
@@ -9952,14 +10050,14 @@
  economic_policy_civilian:0 "Zivile Wirtschaft"
  economic_policy_civilian_name:0 "$economic_policy_civilian$"
  economic_policy_civilian_desc:0 "Die Bedürfnisse der Bevölkerung müssen vor der Kriegswirtschaft stehen. Wirtschaftliche Macht, nicht militärische Stärke, ist die Grundlage unseres Reiches.\n\n"
- 
+
  economic_policy_military:0 "Militarisierte Wirtschaft"
  economic_policy_military_name:0 "$economic_policy_military$"
  economic_policy_military_desc:0 "Indem wir unsere Verteidigung vernachlässigen, vernachlässigen wir auch unser Überleben. Schmuckstücke und Spielwaren sind kaum Komfort, wenn der Feind die Tore niederreißt.\n\n"
 
  policy_drone_policy:0 "Produktionspolitik"
  policy_drone_policy_desc:0 "Die synaptischen Fähigkeiten unseres weiten verstanden ist immens, aber nicht grenzenlos. Wir müssen entscheiden, wo wir diese zerebralen Ressourcen am besten einsetzen können."
- 
+
  drone_policy_balanced:0 "Ausgewogene Produktion"
  drone_policy_balanced_name:0 "$drone_policy_balanced$"
  drone_policy_balanced_desc:0 "Der Verstand widmet sich gleichermaßen der Produktion von Rohstoffen und Fertigerzeugnissen.\n\n§EKeine Boni oder Strafen auf die Ressourcenproduktion.§!"
@@ -9967,20 +10065,20 @@
  drone_policy_worker:0 "Extraktionsfokus"
  drone_policy_worker_name:0 "$drone_policy_worker$"
  drone_policy_worker_desc:0 "Die $pop_cat_simple_drone_plural$, die Rostoffe extrahiert, wird vom Verstand bevorzugt und ist produktiver. Leider auf Kosten der $pop_cat_complex_drone_plural$.\n\n"
- 
+
  drone_policy_thinker:0 "Fertigungsfokus"
  drone_policy_thinker_name:0 "$drone_policy_thinker$"
  drone_policy_thinker_desc:0 "Die $pop_cat_complex_drone_plural$, die fertige Produkte produziert, wird vom Verstand bevorzugt und ist produktiver. Leider auf Kosten der $pop_cat_simple_drone_plural$.\n\n"
- 
+
  policy_robot_pop_policy:0 "Roboterarbeiter"
  policy_robot_pop_policy_desc:0 "Die Erfindung autonomer Roboter könnte die Arbeitern unserer Spezies verdrängen und mit der Zeit auch übertreffen. Wir müssen unsere Haltung bei einer solchen großflächigen Automatisierung entscheiden.\n"
- 
+
  robot_pops_outlawed:0 "Geächtet"
  robots_outlawed_name:0 "Roboterarbeiter geächtet"
  robot_pops_outlawed_desc:1 "Roboterautomaten sind eine Bedrohung nicht nur für den Lebensunterhalt unseres Volkes, sondern auch für das Konstrukt der Gesellschaft selbst. Wir dürfen nicht zulassen, dass wir überflüssig werden.\n\n§ERobotische Bewohner und Armeen werden automatisch demontiert.§!"
  robot_pops_allowed:0 "Erlaubt"
  robots_allowed_name:0 "Roboterarbeiter erlaubt"
- robot_pops_allowed_desc:0 "Der Nutzen der Automatisierung ist offensichtlich und immens. Für die Zukunft unseres Volkes können wir es uns nicht leisten, die von der Technologie präsentierte Chance zu ignorieren."
+ robot_pops_allowed_desc:0 "Der Nutzen der Automatisierung ist offensichtlich und immens. Für die Zukunft unseres Volkes können wir es uns nicht leisten, die Möglichkeiten zu ignorieren, die die Technologie uns bietet."
 
  policy_artificial_intelligence_policy:0 "Künstliche Intelligenz"
  policy_artificial_intelligence_policy_desc:0 "Die Aussichten auf eine selbstbewusste künstliche Intelligenz werfen viele philosophische und ethische Fragen auf. Wir müssen festlegen, welche Haltung wir bezüglich dieser Thematik vertreten.\n"
@@ -9990,7 +10088,7 @@
  ai_outlawed_name:0 "KI geächtet"
  ai_outlawed_short_desc:0 "Diesen synthetischen Wesen wurde ihr Fühlen durch ihre organischen Meister genommen, was sie zu unterwürfigen Maschinen macht."
  ai_outlawed_desc:8 "Intelligente, selbstbewusste Maschinen sind eine unberechenbare Bedrohung für alle Lebewesen. Die Schaffung einer wahren künstlichen Intelligenz ist ein durch den Tod bestrafter Tatbestand.\n\n§ESyntheten haben keinen freien Willen und sind nicht in der Lage Arbeitsplätze von £pop_cat_ruler£ §Y$pop_cat_ruler$§! und komplexere £pop_cat_specialist£ §Y$pop_cat_specialist$§! auszuüben.\n\nFühlende KI-Assistenten werden automatisch demontiert.\nFühlende Gefechtscomputer können nicht erforscht werden.§!"
- #  "oder in unseren Vorlagen verwendet werden."
+ #  "or utilized in our ship designs."
 
  living_standard_servitude:1 "$ai_servitude$"
  living_standard_servitude_tooltip:1 "$ai_servitude_short_desc$"
@@ -10057,7 +10155,7 @@
  food_stockpiling_3_desc:0 "Wir wissen nie, wann sich wieder eine Katastrophe oder eine Hungersnot ereignen wird. Mit einem großen Nahrungsvorrat können wir schlechte Bedingungen überstehen, ohne dass unsere Bevölkerung darunter leidet.\n\n"
  ONLY_SERVITORS_STOCKPILE_FOOD:0 "$TRIGGER_FAIL$Nur §H$civic_machine_servitor$§! können £food£ §H$food$§! lagern."
 
- 
+
  policy_war_economy:0 "Kriegswirtschaft"
  policy_war_economy_desc:0 "Wir können unserer Industrie und Wirtschaft ermöglichen, in Zeiten verzweifelter Verteidigungskriege zivile Besitztümer zu beschlagnahmen. Der Nachteil bei diesen Richtlinien ist, dass wir bei positivem Verlauf von Angriffskriegen entsprechende Abzüge erleiden ...\n"
  static_we:0 "Statisch"
@@ -10159,7 +10257,7 @@
  feature_tech_automated_exploration_desc:0 "$AUTO_EXPLORE_ORDER_DESC$"
  feature_bliss_standard:0 "Chemowonne"
  feature_bliss_standard_desc:0 "Ermöglicht uns die Einführung des §YChemowonne§!- Lebensstandards."
-  
+
  feature_robots:0 "Roboter-Arbeiter"
  feature_robots_desc:0 "Roboter sind relativ einfache Maschinen, die in der Lage sind verbale Befehle zu akzeptieren. Sie besitzen aber keine eigene Intelligenz.\n\n§EMit der Technologie §Y$tech_robotic_workers$§! sind Roboter nun in der Lage einfache £pop_cat_worker£ §Y$pop_cat_worker$§! Arbeiten auszuführen, wie £job_miner£ §YBergbau§! und £job_farmer£ §YFarmer§!§!"
  feature_droids:0 "Droiden-Arbeiter"
@@ -10345,7 +10443,7 @@
  name_list_REP3:0 "Reptil 3"
  name_list_REP3_desc:0 "§YAnführer:§! Faragulek, Koxurem\n§YSchiffe:§! Lorod-Kalen, Lorod-Nadlig\n§YFlotten:§! 1. Weltraumschleicher, 2. Weltraumschleicher\n§YKolonien:§! Galan, Kregux"
  name_list_REP4:0 "Reptil 4"
- #name_list_REP5:0 "Reptil 5"
+ #name_list_REP5:0 "Reptilian 5"
  name_list_Prethoryn:0 "Prethoryn"
  name_list_Extradimensional:0 "Extradimensional"
  name_list_MOL3:0 "Molluskoid 3"
@@ -10356,7 +10454,7 @@
  name_list_ART3:0 "Insektoid 3"
  name_list_ART3_desc:0 "§YAnführer:§! Xybber, Ibbac\n§YSchiffe:§! Hulkrab Muxi, Knak Betklox\n§YFlotte:§! 1. Hülsengeschwader, 2. Hülsengeschwader\n§YKolonien:§! Pulklac Ovoc, Spectocax Laxtric"
  name_list_ART4:0 "Insektoid 4"
- name_list_HIVE:0 "Schwarmbewusstsein"
+ name_list_HIVE:1 "Schwarmbewusstsein 1"
  name_list_MACHINE1:0 "Maschine 1"
  name_list_MACHINE1_desc:0 "§YAnführer:§! Exekutierer, 01\n§YSchiffe:§! Befriedungsvernichter\n§YFlotten:§! Galvanisierte Legion, Voltaik Legion\n§YKolonien:§! Verbrannter Nexus, Frostfreie Verbindung"
  name_list_MACHINE2:0 "Maschine 2"
@@ -10517,7 +10615,7 @@
  CHAT_USERDISCONNECTED:0 "Verbindung von $NAME$ wurde getrennt"
  CHAT_USERWASBANNED:0 "$NAME$ wurde von $OP$ ausgeschlossen"
  CHAT_YOUWEREBANNED:0 "Sie wurden von $OP$ aus $CHANNEL$ ausgeschlossen"
- MULTIPLAYER_LOBBY:0 "Multiplayer-Lobby"
+ MULTIPLAYER_LOBBY:0 "Mehrspieler-Lobby"
  GAME_SETTINGS:0 "Spieleinstellungen"
  PLAYERS:0 "Spieler"
 
@@ -10583,7 +10681,7 @@
  START_SCREEN_PART_TWO_BANDIT_KINGDOM:0 "Es ist das uralte Recht des Starken, die Schwachen zu beherrschen und unsere Gesellschaft wurde unter dieser Voraussetzung aufgebaut. Wenn man nicht schützen kann, was einem selbst gehört, dann gehört es denen, die es nehmen können. Auf diese Weise kamen die stärksten und klügsten von uns an die Macht, während der Rest in Reih und Glied gezwungen wurde."
  START_SCREEN_PART_TWO_PURIFIER:0 "Einst gab es andere [GetAdj]e Kulturen, die die Reinheit unserer Gesellschaft mit ihren Schwächen verwässerten. Diese Abtrünnigen wurden nacheinander ausgerottet, bis unsere Welt schließlich völlig von ihrem Makel gereinigt war. Heute gibt es nur noch die Reinen."
  START_SCREEN_PART_TWO_HIVE_MIND:0 "Und so erwachten wir beim Anbeginn der Zeit. Das Bewusstsein studierte unsere Umwelt auf [GetHomeWorldName] mit einer Vielzahl von Augen. Wir agierten wie ein einzelnes Wesen, bauten Unterkünfte für die Drohnen, entwickelten unsere Industrie, erforschten neue Technologien und machten uns die Ressourcen des Bodens nutzbar.\n\nSchon bald umfassten wir die gesamte Welt. Man schuf eine kleine Zahl autonomer Drohnen, die als unabhängige Agenten dienen sollten. Diese besseren Drohnen hatten die eingeschränkte Fähigkeit, frei zu denken, waren aber dem Willen des Bewusstseins ebenso unweigerlich unterworfen wie all seine anderen Instrumente.\n\nAls wir die komplette Herrschaft über [GetHomeWorldName] erlangten, wurde sich das Bewusstsein anderer Welten gewahr, die im Orbit anderer Sonnen kreisten. Die intelligentesten unserer autonomen Drohnen entwickelten neue Fortbewegungsmethoden, die es uns ermöglichten, die großen Strecken zwischen den Sternen zurückzulegen. Das [GetName] wird schon bald wachsen."
- START_SCREEN_PART_TWO_DEVOURING_SWARM:0 "Der große Hunger führte und vorwärts, noch bevor der Geist fähig war, komplexe Gedanken zu verarbeiten. Wir jagten, wir fraßen und wir wuchsen. Als die Beute begann, knapp zu werden, zwang uns die unstillbare Sehnsucht nach Fleisch, uns anzupassen.\n\nWir nutzen Werkzeuge und entwickelten neue Strategien. Als wir ein Gelage hielten, war die Oberfläche von [GetHomeWorldName] fast gänzlich von Biomasse gesäubert und das Bewusstsein kam schließlich zu einem entsetzlichen Schluss. [GetHomeWorldName] war endlich. Als wir alles auf dieser Welt verbraucht hatten, gab es nichts mehr, was uns erhalten hätte.\n\nGezwungen, uns noch einmal anzupassen, pflegte das Bewusstsein die verbliebene Biomasse sorgsam, während neue Werkzeuge erfunden wurden. Das Atom wurde schließlich gespalten und wir entwickelten die Raumfahrt. Mit der Entdeckung von ÜL-Motoren, stoß das Bewusstsein einen triumphalen Schrei aus. Andere Planeten und ihre Biomasse waren nun endlich in Reichweite.\n\nDie Jagd ging weiter."
+ START_SCREEN_PART_TWO_DEVOURING_SWARM:0 "Der große Hunger trieb uns an, noch ehe das Bewusstsein fähig war, komplexe Gedanken zu verarbeiten. Wir jagten, wir fraßen und wir wuchsen. Als die Beute knapp zu werden begann, zwang uns die unstillbare Sehnsucht nach Fleisch, uns anzupassen.\n\nWir nutzten Werkzeuge und entwickelten neue Strategien. Als wir ein Gelage hielten, wurde die Oberfläche von [GetHomeWorldName] fast gänzlich von Biomasse gesäubert und das Bewusstsein kam letztlich zu einem entsetzlichen Schluss: [GetHomeWorldName] war endlich. Sobald wir alles auf dieser Welt verbraucht hatten, würde es nichts mehr geben, was uns noch am Leben erhalten konnte.\n\nGezwungen, uns noch einmal anzupassen, pflegte das Bewusstsein die verbliebene Biomasse sorgsam, während neue Werkzeuge erfunden wurden. Das Atom wurde schließlich gespalten und wir entwickelten die Raumfahrt. Angesichts der Entdeckung von ÜL-Antrieben stieß das Bewusstsein einen triumphalen Schrei aus. Andere Planeten und ihre Biomasse waren nun endlich in Reichweite.\n\nDie Jagd ging weiter."
  START_SCREEN_PART_TWO_DEVOURING_SWARM_LITHOID:0 "Der große Hunger trieb uns voran, noch bevor das Bewusstsein in der Lage war, komplexe Gedanken zu verarbeiten. Wir haben gejagt, wir haben uns genährt und wir sind gewachsen. Als die Beute immer knapper wurde, zwang uns der Hunger dazu, uns anzupassen.\n\nWir haben damit begonnen, Werkzeuge zu verwenden und neue Strategien zu entwickelt. Als wir uns an der Oberfläche von [GetHomeWorldName] nährten, verursachten wir fast unsere eigene Zerstörung, aber das Bewusstsein kam schließlich zu einer schrecklichen Schlussfolgerung: [GetHomeWorldName] war endlich. Wenn wir diese Welt konsumiert hätten, gäbe es nichts mehr, was uns am Leben halten könnte.\n\nDas Bewusstsein war gezwungen, sich erneut anzupassen und hat die vorhanden Mineralien sorgfältig rationiert, während neue Werkzeuge erfunden wurden. Das Atom wurde schließlich gespalten und wir entwickelten die Raumfahrt. Mit der Entdeckung von ÜL-Antrieben hatte das Bewusstsein den Ausweg gefunden und schrie vor Triumph. Andere Planeten und deren Beute waren jetzt endlich in Reichweite.\n\nWir werden sie alle fressen!"
  START_SCREEN_POST_APOCALYPTIC:0 "Die [GetAdj]e Gesellschaft war aber nicht immer auf ein gemeinsames Ziel ausgerichtet. In den vergangenen Jahrhunderten gerieten die Spannungen zwischen rivalisierenden Nationen zu einem apokalyptischen Höhepunkt, der durch einen thermonuklearen Krieg, der das Leben von Milliarden forderte und die Oberfläche von [GetHomeWorldName] für immer zerstörte, zum Ende kam.\n\nIn den folgenden Jahrzehnten beeinflussten radioaktive Kontamination, Mutationen, Hungersnot und Gewalt die Überlebenden [GetSpeciesNamePlural]. Es ist diesem erbarmungslosen Schmelztiegel zu verdanken, dass [GetName] seine wahre Bestimmung gefunden hat und damit zu einer neuen Weltordnung aufruft."
  START_SCREEN_POST_LIFE_SEEDED:0 "Die weite Welt, die wir Zuhause nennen, war für unsere Art schon immer ein Paradies. Mit dem Voranschreiten der Wissenschaft jedoch begannen wir Muster in der Biosphäre zu sehen, die nicht natürlich sein konnten.\n\nHaben unbekannte Wesen diese Welt speziell für uns erschaffen? Spielen wir eine Rolle bei etwas Größerem? Ungeachtet ihrer Herkunft konnte unser Volk dennoch in einem angenehmen Klima und einer sanften Umgebung gedeihen."
@@ -10721,10 +10819,10 @@
  personality_awakened_fallen_empire_xenophobe:0 "Chauvinistische Zurückforderer"
  personality_awakened_fallen_empire_xenophile:0 "Wohlwollende Interventionisten"
 
- personality_fallen_empire_machine_desc:0 "Dieses Gefallene Reich ist eine alte künstliche Intelligenz, die nach einer Art Aufseherprotokoll arbeitet. Sie verhält sich unregelmäßig, scheint aber keine direkte Bedrohung für uns zu sein."
+ personality_fallen_empire_machine_desc:0 "Dieses Gefallene Reich ist eine alte künstliche Intelligenz, die nach einer Art Aufseherprotokoll arbeitet. Sie verhält sich unvorhersehbar, scheint aber keine direkte Bedrohung für uns zu sein."
  personality_awakened_fallen_empire_machine_desc:0 "Dieses erwachte Gefallene Reich ist eine alte künstliche Intelligenz, die als galaktischer Wächter fungiert. Sie wird alle Bemühungen auf die Verteidigung von fühlendem Leben, gegen anhaltende Krisen, legen."
  personality_berserk_fallen_empire_machine_desc:0 "Dieses erwachte Gefallene Reich ist eine alte künstliche Intelligenz, die durchgedreht ist und alles und jeden um sich herum angreift."
- 
+
  personality_fallen_empire_spiritualist_desc:0 "Dieses gefallene Reich widmet sich der Bewahrung und Verteidigung seiner heiligen Stätten. Die Kolonisierung von Systemen, die ihnen heilig sind, wird sie wahrscheinlich verärgern."
  personality_fallen_empire_materialist_desc:3 "Dieses gefallene Reich widmet sich dem Horten von Technologien, die seiner Meinung nach nicht in die Hände junger und verantwortungsloser Rassen fallen sollten. Die Erforschung gefährlicher Technologien könnte sie verärgern."
  personality_fallen_empire_xenophobe_desc:0 "Dieses gefallene Reich widmet sich der Verteidigung seiner Grenzen gegen alle Eindringlinge. Die Kolonisierung von Systemen, die an sie angrenzen, wird sie wahrscheinlich verärgern."
@@ -10845,7 +10943,7 @@
  VICTORY_COUNTRY_NAME:0 "$RANK$. $NAME$"
  VICTORY_RANK:0 "Rang: $RANK|Y$"
  VICTORY_SCORE:0 "Wertung: $VALUE|0Y$"
- 
+
  SCORE_BREAKDOWN:0 "- Wertungszusammensetzung - "
  SCORE_FROM_ECON_POWER:0 "Wirtschaftliche Macht: $VALUE$"
  SCORE_FROM_TECH_POWER:0 "Technologische Stufe: $VALUE$"
@@ -10978,14 +11076,14 @@
  war_goal_wg_colossus:0 "Totaler Krieg"
  war_goal_wg_colossus_desc:2 "Ungeheuer mächtige Waffen erlauben es uns unseren Feinden unseren Willen aufzuzwingen."
  war_goal_wg_end_threat_colossus:0 "$war_goal_wg_end_threat$"
- war_goal_wg_end_threat_colossus_desc:0 "Führt Krieg, um die Bedrohung des Kolosses unserer Feinde zu beenden."
+ war_goal_wg_end_threat_colossus_desc:0 "Führt Krieg, um die Bedrohung durch die Kolosse unserer Feinde zu beenden."
  war_goal_wg_counterattack:0 "Gegenangriff"
  war_goal_wg_counterattack_desc:0 "Führt Krieg, um ein Reich für den Angriff auf ein Mitglied der galaktischen Gemeinschaft zu bestrafen. Die Verwendung dieses Kriegsziels zur Forderung von Ansprüchen generiert §Y33%§! weniger §YBedrohung§! für jedes eroberte System."
  war_goal_wg_renegade_containment:0 "Präventivkrieg"
  war_goal_wg_renegade_containment_desc:0 "Führt Krieg, um eine Bedrohung der galaktischen Gemeinschaft präventiv zu beenden."
  war_goal_wg_end_threat_renegade_containment:0 "$war_goal_wg_end_threat$"
  war_goal_wg_end_threat_renegade_containment_desc:0 "Führt Krieg, um uns gegen ungerechtfertigte Präventivkriege zu verteidigen."
- 
+
  wg_independence_accept:1 "§Y[Root.GetName]§! wird unabhängig von §Y[From.GetName]§!\n§Y[From.GetName]§! widerruft alle Ansprüche auf §Y[Root.GetAdj]e§! Systeme."
  wg_independence_status_quo:1 "§Y[Root.GetName]§! wird unabhängig von §Y[From.GetName]§!"
  wg_assert_overlordship_accept:1 "§Y[From.GetName]§! bleibt Untertan von §Y[Root.GetName]§!"
@@ -11016,7 +11114,7 @@
  wg_plunder_accept_us_18:0 "§Y[Root.GetName]§! erhält §G+9000§! £energy£ £minerals£"
  wg_plunder_accept_us_19:0 "§Y[Root.GetName]§! erhält §G+9500§! £energy£ £minerals£"
  wg_plunder_accept_us_20:0 "§Y[Root.GetName]§! erhält §G+10000§! £energy£ £minerals£"
- 
+
  #scaled mtth
  scaled_mtth_calc_planet_pop_count:0 "Bewohner auf Planet"
  scaled_mtth_calc_country_pop_count:0 "Bewohner in Reich"
@@ -11079,12 +11177,12 @@
 
  BECOME_FEDERATION_LEADER_TITLE:0 "Änderung der Föderationsführerschaft"
  BECOME_FEDERATION_LEADER_DESC:0 "$LEADER|Y$ ist jetzt der Anführer der Föderation."
- 
+
 # Subjects
  SUBJECT_vassal:0 "Vasall"
  SUBJECT_DESC_vassal:0 "Vasallen dienen ihrem Lehnsherren. Sie haben eingeschränkte diplomatische Optionen und kämpfen an der Seite ihres Lehnsherren."
  SUBJECT_protectorate:0 "Protektorat"
- SUBJECT_DESC_protectorate:4 "Protektorate haben von ihrem Lehnsherren eine Unabhängigkeitsgarantie, §Y80%§! reduzierte Technologiekosten für jede Technologie, die ihr Lehnsherr kennt und werden zu Vasallen, sobald sie §Y50%§! der Technologien ihres Lehnsherrn erforscht haben."
+ SUBJECT_DESC_protectorate:5 "Protektorate haben von ihrem Lehnsherrn eine Unabhängigkeitsgarantie, §Y80%§! reduzierte Technologiekosten für jede Technologie, die ihr Lehnsherr kennt, und werden zu Vasallen, sobald sie §Y50%§! der Technologien ihres Lehnsherrn erforscht haben."
  SUBJECT_DESC_tributary:0 "Tributnationen sind eine Art von Untertan. Sie sind zwar größtenteils unabhängig, zahlen ihren Oberherrn aber einen monatlichen Tribut von §Y25%§! ihrer Energie-Credits und Mineralien"
  OPEN_COMBAT_STATS:0 "§GZum Aufrufen der Kampfstatistik klicken§!"
  SUBJECT_tributary:0 "Tributnation"
@@ -11167,10 +11265,10 @@
  empire_flag_editor:0 "Flagge"
  EMPIRE_FLAG:0 "Flagge"
  empire_name_list_editor:0 "Namenslisten"
- #NAME_LIST_DESC:0 "Namenslisten"
+ #NAME_LIST_DESC:0 "Name lists"
  SYSTEM_NAME:0 "System-Name"
  SELECT_SYSTEM_INITIALIZER_LABEL:0 "Start-Sternensystem"
- #RANDOM_SYSTEM_INITIALIZER_TIP: ""
+ #RANDOM_SYSTEM_INITIALIZER_TIP: "§HRandom§!\n§LStart the game with a Randomized Solar System. Everything except the names of your Homeworld and the System's Star will be randomized."
  RANDOM_SYSTEM_INITIALIZER_TIP:0 "$random_system_initializer_DESC$"
  CUSTOM_SYSTEM_INITIALIZER_TIP:0 "$NAME|H$\n$DESC|L$"
  random_system_initializer_DESC:0 "Zufälliges Sonnensystem-Layout.\n\n$system_initializer_DESC$"
@@ -11279,7 +11377,7 @@
 
  SHIPS_NOT_UPGRADABLE:0 "§REreignis-Schiffe sind nicht verbesserbar§!"
  CHEAT_OPEN_DIPLO:0 "Cheatet"
- 
+
  BUILD_MEGASTRUCTURE_SPACE_TARGET_NEEDED:0 "Diese Megastruktur kann nicht im Weltall gebaut werden"
  BUILD_MEGASTRUCTURE_PLANET_TARGET_NEEDED:0 "Diese Megastruktur kann nicht um einen Himmelskörper herum gebaut werden"
  CLICK_TO_EDIT:0 "§GZum Editieren klicken.§!"
@@ -11287,7 +11385,7 @@
  NO_IDEAL_PLANET_CLASS:0 "Keine"
  INACTIVE_BUILDING:0 "§R$BUILDING$ ist inaktiv§!"
  EXTENDED_INACTIVE_BUILDING:0 "§R$BUILDING$ ist inaktiv:§!\n$TRIGGER$"
- 
+
  BYPASS_WORMHOLE:0 "$NATURAL_WORMHOLE_GALACTIC$"
  BYPASS_GATEWAY:0 "$GATEWAY_GALACTIC$"
 
@@ -11320,7 +11418,7 @@
  FLEETORDER_USE_BYPASS_DESC:0 "Reist durch das $BYPASS_TYPE|Y$ in $SYSTEM$"
  EXPLORE_BYPASS_NOT_NEEDED:0 "$BYPASS_TYPE|Y$ muss nicht erkundet werden"
  EXPLORE_BYPASS_ALREADY_EXPLORED:0 "$BYPASS|Y$ wurde bereits erkundet"
- 
+
  OUTLINER_PLANET_CONSTRUCTION_AVAILABLE:0 "Verfügbare Gebäudeplätze"
  OUTLINER_PLANET_CONSTRUCTION_AVAILABLE_DESC:0 "Dieser Planet unterstützt den Bau zusätzlicher £building£ §YGebäude§!"
  OUTLINER_PLANET_UPGRADE_AVAILABLE:0 "Aufwertung der Hauptstadt verfügbar"
@@ -11349,9 +11447,9 @@
  BYPASS_DESC_CLICK_TO_FOCUS:0 "Klicken, um die Ansicht auf die andere Seite zu zentrieren."
  EXPLORE_BYPASS_INACTIVE:0 "$BYPASS$ wurde nicht aktiviert."
  TRIGGER_TEST:0 "$CONDITION$ $TEXT$"
- 
- PATCHNOTES:2 "§HKlicken§!, um zum Stellaris Forum von Paradox zu gelangen und die vollständigen Patchnotes zu 2.2 anzusehen"
- 
+
+ PATCHNOTES:3 "§HKlicken§!, um zum Stellaris-Forum von Paradox zu gelangen und die vollständigen Patchnotes zu 2.6 zu lesen"
+
  sys_unsurveyed:0 "Unerforschtes System"
  sys_unclaimed:0 "Unbeanspruchtes System"
  sys_unknown:0 "Unbekanntes System"
@@ -11367,7 +11465,7 @@
  sys_anchorage:1 "Flottenbasis"
  sys_trading_hub:2 "Handelsknoten"
  sys_marauder:0 "Marodeur-System"
- 
+
  sfortress:1 "Bastion"
  sshipyard:0 "Schiffswerft"
  sanchorage:0 "Ankerplatz"
@@ -11382,7 +11480,7 @@
  vo_the_diplomat:0 "Der Diplomat"
  vo_the_soldier:0 "Der Soldat"
  vo_the_technocrat:0 "Der Technokrat"
- 
+
  sys_trading_hub_gestalt:1 "Ressourcenaufbereiter"
  strading_hub_gestalt:1 "Ressourcenaufbereiter"
  sm_trading_hub_gestalt:1 "Ressourcenaufbereiter"
@@ -11391,7 +11489,7 @@
  sm_offworld_trading_company_gestalt:1 "Externe Beschaffungszone"
  sm_offworld_trading_company_gestalt_desc:1 "Eine Zone für die Verbindung mit dem Universum, außerhalb unseres Bewusstseins, zum Zweck des materiellen Gewinns.\n"
  sm_offworld_trading_company_gestalt_desc_modifier:1 "Ressourcenaufbereiter: §G+2§! £energy£\n\n"
- 
+
  sm_trading_hub_hive_mind:0 "$sm_trading_hub_gestalt$"
  sm_trading_hub_desc_hive_mind:0 "$sm_trading_hub_gestalt_desc$"
  sm_trading_hub_machine_intelligence:0 "$sm_trading_hub_gestalt$"
@@ -11401,7 +11499,7 @@
  sm_offworld_trading_company_desc_hive_mind:0 "$sm_offworld_trading_company_gestalt_desc$"
  sm_offworld_trading_company_machine_intelligence:0 "$sm_offworld_trading_company_gestalt$"
  sm_offworld_trading_company_desc_machine_intelligence:0 "$sm_offworld_trading_company_gestalt_desc$"
- 
+
  TRACK_1:0 "Projekte autom. verfolgen"
  TRACK_1_UNTRACK:0 "Klicken, um die automatische Verfolgung von gültigen neuen §Y$TAB_PROJECTS$§! zu beenden"
  TRACK_1_TRACK:0 "Klicken, um die automatische Verfolgung von gültigen neuen §Y$TAB_PROJECTS$§! zu beginnen"
@@ -11434,7 +11532,7 @@
  BUYING:0 "kauft"
  TIMED_TRAIT_TOOLTIP:0 "$TRAIT$ [$DATE$]"
  EXPIRATION_TOOLTIP:0 "Läuft ab in $DATE|Y$"
- 
+
  DESIGNATIONS_TITLE:0 "Koloniebestimmung"
  COLONY_DESIGNATION_MANUALLY_PICKED:0 "Koloniebestimmung wird §Ymanuell§! ausgewählt"
  COLONY_DESIGNATION_AUTOMATICALLY_PICKED:0 "Koloniebestimmung wird §Yautomatisch§! ausgewählt"
@@ -11481,94 +11579,7 @@
  MATCHMAKING_SEARCH_CROSSPLAY_TOOLTIP:0 "Sucht plattformübergreifend nach Sitzungen"
  MATCHMAKING_HOST_CROSSPLAY_TOOLTIP:0 "Spiele können plattformübergreifend gefunden werden"
  FE_IRONMAN_NO_POPS:0 "§RFür den Ironman-Modus muss der Benutzer mit einem Paradox-Konto angemeldet sein.§!"
- NON_MACHINE_SPECIES_NEED_PREREQ_TECH:0 "$TRIGGER_FAIL$Uns fehlt die nötige Technologie, um §YRoboter§! als Soldaten einzusetzen."
- NAME_VALUE_FORMAT:0 "$NAME$: $VALUE$"
- ALLIANCE_LEADER:0 "Anführer von: $ALLIANCE$"
- ALLIANCE_LEADER_DESC:0 "Diese Sternennation ist Anführer eines größeren interstellaren Bündnisses."
- EFFECTS_CLEAN:0 "Effects:"
- NAME_Rampaging_Forest:0 "Herumwütender Wald"
- starbase_exd_0:0 "Leerenversteck"
- starbase_exd_0_plural:0 "Leerenverstecke"
- trait_rapid_breeders_lithoid:0 "$trait_rapid_breeders$"
- trait_rapid_breeders_lithoid_desc:0 "$trait_rapid_breeders_desc$"
- trait_adaptive_lithoid:0 "$trait_adaptive$"
- trait_adaptive_lithoid_desc:0 "$trait_adaptive_desc$"
- POP_ATTRACTION_COMMUNITY_RESOLUTIONS_POS:0 "§G+ Beschlüsse der Galaktischen Gemeinschaft§!"
- POP_ATTRACTION_COMMUNITY_RESOLUTIONS_NEG:0 "§R- Beschlüsse der Galaktischen Gemeinschaft§!"
- slavery_indentured:0 "Vertragliche Sklaverei"
- slavery_indentured_tooltip:0 "§HVertragliche Sklaven§! können in den Jobs £pop_cat_worker£ §Y$pop_cat_worker$§! oder £pop_cat_specialist£ §Y$pop_cat_specialist$§! eingesetzt werden, haben aber mehr politische Macht als andere Sklaven."
- slavery_indentured_tooltip_delayed:0 "§LSie können theoretisch ihre Schulden abbezahlen und sich ihre Freiheit erkaufen, doch ihre Verträge sind absichtlich so gestaltet, dass dies vorkommt.§!"
- ALLIANCE_AND_FEDERATION_VIEW_DIPLOMACY_POWER:0 "Diplomatische Bedeutung"
- ACTION_DEMAND_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Knecht werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen wir nicht kolonisieren."
- ACTION_DEMAND_DOMINION_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Herrschaftsgebiet werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen wir auch unsere vorherrschende Gesinnung ändern."
- ACTION_DEMAND_SATELLITE_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihr Satellitenstaat werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihre Forschung mit §Y33%§! unserer monatlichen Forschungsbemühungen unterstützen."
- ACTION_DEMAND_SIGNATORY_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihren vorgeschlagenen galaktischen Friedensvertrag unterschreiben. Wenn wir akzeptieren, werden sie uns beschützen, doch wir können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Wir müssen außerdem Sklaverei und Säuberungen verbieten."
- ACTION_DEMAND_SUBSIDIARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, dass wir ihre Tochtergesellschaft werden. Wenn wir akzeptieren, können sie uns nicht mehr angreifen, doch wir müssen ihnen §Y50%§! unseres Handelswertes übertragen, wenn wir mit ihrem Handelsnetzwerk verbunden sind."
- ACTION_ASK_TO_BECOME_VASSALIZED_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Vasall zu werden."
- ACTION_ASK_TO_BECOME_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§! hat unser Reich um Schutz gebeten, zum Preis von etwas Unabhängigkeit."
- ACTION_ASK_TO_BECOME_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns angeboten, Tribut zu zahlen. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen."
- ACTION_ASK_TO_BECOME_DOMINION_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, unser Herrschaftsgebiet zu werden. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Herrschaftsgebiet müssen sie auch ihre vorherrschende Gesinnung ändern."
- ACTION_ASK_TO_BECOME_SATELLITE_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Satellitenstaat zu werden. Wenn wir akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen unsere Forschung mit §Y50%§! ihrer monatlichen Forschungsbemühungen unterstützen."
- ACTION_ASK_TO_BECOME_SIGNATORY_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unseren galaktischen Friedensvertrag zu unterzeichnen. Wenn wir akzeptieren, werden wir sie beschützen, doch sie können nicht mehr unabhängig diplomatisch agieren und Kriege führen. Sie müssen außerdem Sklaverei und Säuberungen verbieten."
- ACTION_INVITE_TO_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns eingeladen, ihrer Föderation beizutreten."
- ACTION_OFFER_PEACE_OFFER_DESC:0 "§H[Actor.GetName]§! ist mit einem Friedensangebot an uns herangetreten. Dies könnte den anhaltenden Krieg beenden."
- ACTION_OFFER_PEACE_DIPLOMACY_VIEW_OFFER_DESC:0 "$ACTION_OFFER_PEACE_OFFER_DESC$"
- ACTION_MAKE_CLAIMS_DIPLOMACY_VIEW_OFFER_DESC:0 "$[Actor.GetName]$ hat Ansprüche auf unser Territorium erhoben."
- ACTION_CLOSE_BORDERS_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Grenzen geschlossen und hindert unsere Flotten so daran, in ihr Territorium einzufliegen."
- ACTION_OPEN_BORDERS_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Grenzen für uns geöffnet."
- ACTION_DEMAND_VASSALIZATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat verlangt, dass wir ihr Vasall werden."
- ACTION_DEMAND_PROTECTORATE_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns Schutz angeboten und dafür einigen Einfluss über unsere innenpolitischen Angelegenheiten erhalten. $SUBJECT_DESC_protectorate$"
- ACTION_DEMAND_TRIBUTARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat gefordert, unser Tributnehmer zu werden. Wenn wir akzeptieren, werden sie uns schützen, doch wir müssen ihnen §Y25%§! unserer Mineralien- und Energie-Einnahmen zahlen."
- ACTION_ASK_TO_BECOME_THRALL_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unser Knecht zu werden. Wenn sie akzeptieren, können wir sie nicht mehr angreifen, doch sie müssen uns §Y25%§! ihrer Mineralien- und Energie-Einnahmen zahlen. Als Knecht dürfen sie keine weiteren Systeme kolonisieren."
- ACTION_ASK_TO_BECOME_SUBSIDIARY_OFFER_DESC:0 "§H[Actor.GetName]§! hat angeboten, unsere Tochtergesellschaft zu werden. Wenn wir akzeptieren, müssen wir sie beschützen, doch sie zahlen uns §Y25%§! ihrer Energie-Einnahmen und treten all unseren Kriegen bei."
- ACTION_ASK_TO_JOIN_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, unserer Föderation beitreten zu dürfen."
- ACTION_ASK_TO_BE_RELEASED_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat darum gebeten, aus unserer Unterwerfung entlassen zu werden."
- ACTION_OFFER_TRADE_DEAL_OFFER_DESC:0 "§H[Actor.GetName]§! bietet uns ein Handelsabkommen an."
- ACTION_MAKE_RIVAL_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns zu ihrem $RIVAL$n erklärt."
- ACTION_INSULT_OFFER_DESC:0 "Schamlose Beleidigungen wie diese können nicht übersehen werden. Unsere Beziehung zu §H[Actor.GetName]§! hat sich verschlechtert."
- ACTION_OFFER_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns Assoziationsstatus in ihrer Föderation angeboten. "
- ACTION_ASK_FOR_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns gebeten, ihnen den Assoziationsstatus in unserer Föderation zu gewähren."
- ACTION_OFFER_PEACE_LONG_DESC:0 "[Actor.GetName] wünscht Frieden mit [Recipient.GetName] zu schließen."
- ACTION_VOTE_FOR_FEDERATION_TYPE_VOTE_PASSED:0 "Das Votum zur Änderung des Föderationstyps der Föderation §H[Actor.GetAllianceName]§! war erfolgreich."
- ACTION_VOTE_FOR_FEDERATION_TYPE_VOTE_FAILED:0 "Das Votum zur Änderung des Föderationstyps der Föderation §H[Actor.GetAllianceName]§! ist fehlgeschlagen.\n\nDies hat sich §Rnegativ§! auf die Föderationskohäsion ausgewirkt."
- ACTION_ASK_FOR_FEDERATION_ASSOCIATION_OFFER_DESC:0 "§H[Actor.GetName]§! bittet um Assoziationsstatus in der Föderation §H[Recipient.GetAllianceName]§!."
- ACTION_BREAK_RESEARCH_AGREEMENT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Forschungsabkommen mit §H[Recipient.GetName]§! gebrochen."
- ACTION_BREAK_GUARANTEE_OFFER_DESC:0 "§H[Actor.GetName]§! garantiert nicht länger die Unabhängigkeit von §H[Recipient.GetName]§!."
- ACTION_FORM_DEFENSIVE_PACT_OFFER_DESC:0 "Schließt ein Defensivabkommen mit §H[Actor.GetName]§!. Wird eines der beiden Reiche angegriffen, kommt ihm das andere automatisch zur Hilfe."
- ACTION_FORM_RESEARCH_AGREEMENT_OFFER_DESC:0 "$ACTION_FORM_RESEARCH_AGREEMENT_TYPE_DESC$"
- ACTION_FORM_NON_AGGRESSION_PACT_OFFER_DESC:0 "Schließt ein Nichtangriffsversprechen mit §H[Actor.GetName]§!. Während dieses Abkommen in Kraft ist, können wir einander nicht angreifen."
- ACTION_FORM_COMMERCIAL_PACT_OFFER_DESC:0 "Schließt einen Wirtschaftspakt mit §H[Actor.GetName]§!. Dies wird den Wert der Handelsnetzwerke beider Imperien erhöhen."
- ACTION_GUARANTEE_INDEPENDENCE_OFFER_DESC:0 "§H[Actor.GetName]§! garantiert unserem Reich die Unabhängigkeit. Werden wir angegriffen, eilen sie uns automatisch zu Hilfe."
- ACTION_FORM_MIGRATION_PACT_OFFER_DESC:0 "Schließt ein Migrationsabkommen mit §H[Actor.GetName]§!. Unsere Bevölkerungen werden sich frei in beiden Reichen bewegen können."
- ACTION_IMPROVE_RELATION_OFFER_DESC:0 ""
- ACTION_HARM_RELATION_OFFER_DESC:0 ""
- ACTION_DECLARE_WAR_OFFER_DESC:0 "§H[Actor.GetName]§! hat §H[Recipient.GetName]§! den Krieg erklärt."
- ACTION_CANCEL_TRADE_DEAL_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Handelsabkommen mit §H[Recipient.GetName]§! aufgekündigt."
- ACTION_END_RIVALRY_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Rivalität mit §H[Recipient.GetName]§! beendet."
- ACTION_BREAK_DEFENSIVE_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Defensivabkommen mit §H[Recipient.GetName]§! gebrochen."
- ACTION_BREAK_NON_AGGRESSION_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Nichtangriffsversprechen mit §H[Recipient.GetName]§! aufgekündigt."
- ACTION_BREAK_COMMERCIAL_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat den Wirtschaftspakt mit §H[Recipient.GetName]§! aufgekündigt."
- ACTION_SUPPORT_INDEPENDENCE_OFFER_DESC:0 "§H[Actor.GetName]§! hat sich dafür entschlossen, unsere Unabhängigkeit gegen unsere Unterdrücker zu unterstützen."
- ACTION_BREAK_SUPPORT_OFFER_DESC:0 "§H[Actor.GetName]§! hat damit aufgehört, unsere Unabhängigkeit gegen unsere Unterdrücker zu unterstützen."
- ACTION_BREAK_MIGRATION_PACT_OFFER_DESC:0 "§H[Actor.GetName]§! hat das Migrationsabkommen mit §H[Recipient.GetName]§! gebrochen."
- ACTION_REVOKE_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat unseren Assoziationsstatus in der Föderation §H[Actor.GetAllianceName]§! aufgekündigt."
- ACTION_END_FEDERATION_ASSOCIATION_STATUS_OFFER_DESC:0 "§H[Actor.GetName]§! hat sich dafür entschlossen, den Assoziationsstatus in der Föderation §H[Recipient.GetAllianceName]§! zu beenden."
- ACTION_VOTE_FOR_FEDERATION_LAW_OFFER_DESC:0 "§H[Actor.GetName]§! hat eine Abstimmung über ein Föderationsgesetz gefordert."
- ACTION_KICK_FROM_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat uns aus der Föderation §H[Actor.GetAllianceName]§! hinausgeworfen."
- ACTION_LEAVE_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat unsere Föderation verlassen."
- ACTION_RELEASE_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat §H[Recipient.GetName]§! als unabhängige Nation entlassen."
- ACTION_INTEGRATE_SUBJECT_OFFER_DESC:0 "§H[Actor.GetName]§! hat damit begonnen, §H[Recipient.GetName]§! in seine Nation zu integrieren."
- ACTION_CANCEL_SUBJECT_INTEGRATION_OFFER_DESC:0 "§H[Actor.GetName]§! hat die Integration von §H[Recipient.GetName]§! abgebrochen."
- civic_tooltip_natural_neural_network_effects:0 "Arbeitslose Drohnen produzieren auch £physics£ £society£ £engineering£ §YForschungspunkte§!"
- civic_hive_one_mind_effects:0 "Alle Eure §YAnführer§! haben eine geringere Wahrscheinlichkeit, negative Eigenschaften zu erlangen."
- civic_tooltip_philosopher_king_effects:0 "Eure §YAnführer§! und §YGouverneure§! haben eine geringere Wahrscheinlichkeit, negative Eigenschaften zu erlangen."
- COMBAT_COMPUTER_CARRIER_DEFAULT:0 "$COMBAT_COMPUTER_DEFAULT$"
- COMBAT_COMPUTER_CARRIER_BASIC:0 "Gefechtscomputer (Träger)"
- COMBAT_COMPUTER_CARRIER_ADVANCED:0 "Fortschrittlicher Gefechtscomputer (Träger)"
- COMBAT_COMPUTER_CARRIER_SAPIENT:0 "Fühlender Gefechtscomputer (Träger)"
- COMBAT_COMPUTER_CARRIER_AUTONOMOUS:0 "Autonomer Schiffsverstand (Träger)"
- COMBAT_COMPUTER_CARRIER_PRECOG:0 "Präkognitives Interface (Träger)"
- CARRIER_BEHAVIOR_DESC:0 "§HTräger-Taktik:§! Das Schiff bleibt auf extremer Distanz (§Y150§!) und feuert seine Langstrecken-Waffen auf das Ziel ab."
+
  REINFORCEMENT_NAVAL_CAPACITY:0 "Flottengröße: $NAVY_SIZE$\nFlottengröße nach Verstärkung: $REINFORCED_NAVY_SIZE$\nFlottenkapazität: $CAPACITY|Y$"
  DEBUG_AI_STRATEGY_SYSTEM_ASSIGNED_INSTANT:0 "Der KI-Militärminister hat Ziele im $SYSTEM|Y$-System bei den folgenden Flotten als Priorität eingestuft\n\n"
  DEBUG_AI_STRATEGY_SYSTEM_UNASSIGNED_INSTANT:0 "Der KI-Militärminister hat Ziele im $SYSTEM|Y$-System, aber ihnen derzeit keine Flotten zugewiesen.\n"
@@ -11580,8 +11591,10 @@
  AI_FLEET_MISSION_UNKNOWN:0 "Unbekannt"
  AI_FLEET_STATUS_BUILDING:0 "Gebäude"
  AI_FLEET_STATUS_IDLE:0 "Untätig"
+ AI_FLEET_STATUS_MERGING:0 "Zusammenlegung"
  AI_FLEET_STATUS_ON_MISSION:0 "Im Einsatz"
  AI_FLEET_STATUS_OPPORTUNIST:0 "Opportunist"
+ AI_FLEET_STATUS_PEACETIME:1 "Friedenszeit"
  AI_FLEET_STATUS_REGROUPING:0 "Neu gruppieren"
  AI_FLEET_STATUS_RETREATING:0 "Zurückziehen"
  AI_FLEET_STATUS_WAITING:0 "Warten"
@@ -11594,7 +11607,27 @@
  DEBUG_AI_FLEET_STATUS:0 "Status: $STATUS|Y$"
  DEBUG_AI_FLEET_MISSION:0 "Mission: $MISSION$"
  DEBUG_AI_FLEET_UNASSIGNED:0 "$FLEET|Y$ ist KEINER KI-Flottengruppe zugeordnet"
- UPGRADE_NOT_OWNER:1 "§RBesitzt die Flotte nicht§!"
- AI_FLEET_STATUS_PEACETIME:1 "Friedenszeit"
- ACTION_FORM_FEDERATION_OFFER_DESC:0 "§H[Actor.GetName]§! gründet eine Föderation mit uns."
- AI_FLEET_STATUS_MERGING:0 "Zusammenlegung"
+ name_list_HIVE2:0 "Schwarmbewusstsein 2"
+ SETTINGS_ACCESSIBILITY:0 "Zugänglichkeit: Chat"
+ SETTINGS_ACCESSIBILITY_TTS:0 "Mehrspieler-Chat - TTS"
+ SETTINGS_ACCESSIBILITY_TTS_INFO:0 "Aktiviert, dass geschriebene Texte im Mehrspieler-Chat zu Sprache umgewandelt werden."
+ SETTINGS_ACCESSIBILITY_STT:0 "Mehrspieler-Chat - STT"
+ SETTINGS_ACCESSIBILITY_STT_INFO:0 "Aktiviert, dass Sprache zu geschriebenem Text im Mehrspieler-Chat umgewandelt wird."
+ SETTINGS_ACCESSIBILITY_VISUAL_ALERTS:0 "Mehrspieler-Chat - Visuelle Benachrichtigung"
+ SETTINGS_ACCESSIBILITY_CHAT_VISUAL_ALERTS_INFO:0 "Aktiviert visuelle Benachrichtigungen für Nachrichten im Mehrspieler-Chat."
+ SETTINGS_ACCESSIBILITY_USE_STT_SHORTCUT:0 "Tastenkürzel - Spracheingabe"
+ SETTINGS_ACCESSIBILITY_USE_STT_SHORTCUT_INFO:0 "Drückt diese Taste, um die Umwandlung von Sprache zu Text zu aktivieren/deaktivieren."
+ SETTINGS_ACCESSIBILITY_TTS_VALUE_INFO:0 "§HTTS§! an oder aus"
+ SETTINGS_ACCESSIBILITY_STT_VALUE_INFO:0 "§HSTT§! an oder aus"
+ SETTINGS_ACCESSIBILITY_VISUAL_ALERTS_VALUE_INFO:0 "§HVisuelle Benachrichtigungen§! an oder aus"
+ SETTINGS_ACCESSIBILITY_USE_STT_SHORTCUT_VALUE_INFO:0 "Tastenkürzel für §HSTT§! an oder aus"
+ SETTINGS_ACCESSIBILITY_CHAT_LARGE_FONTS:0 "Mehrspieler-Chat - Große Schriftart"
+ SETTINGS_ACCESSIBILITY_CHAT_LARGE_FONTS_INFO:0 "Benutzt eine große Schriftart für Nachrichten im Mehrspieler-Chat."
+ SETTINGS_ACCESSIBILITY_CHAT_LARGE_FONTS_VALUE_INFO:0 "Schaltet die Benutzung einer großen Schriftart für Nachrichten im Mehrspieler-Chat um."
+ SETTINGS_ACCESSIBILITY_STT_SHORTCUT_INPUT:0 "Mehrspieler-Chat - Tastenkürzel für STT"
+ SETTINGS_ACCESSIBILITY_STT_SHORTCUT_INPUT_INFO:0 "Lässt Euch das Tastenkürzel zum Umschalten der §HSTT§!-Funktion bestimmen."
+ CHAT_CVAA_MESSAGE:0 "$NAME$ sagt $MESSAGE$"
+ CHAT_CVAA_MIC_NAME:0 "Mikro"
+ CHAT_CVAA_SYSTEM_NAME:0 "System"
+ 
+ PEACE_OFFER_UNAVAILABLE:0 "§RUnser Kriegsziel erlaubt es uns nicht, dies zu tun.§!"

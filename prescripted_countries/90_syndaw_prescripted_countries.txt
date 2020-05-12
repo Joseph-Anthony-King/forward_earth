@@ -112,7 +112,6 @@ custodianship = {
 		trait = "trait_adaptive"
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
-		trait = "trait"
 	}
 
 	flags = { custodian_faction custom_start_screen human_1 }

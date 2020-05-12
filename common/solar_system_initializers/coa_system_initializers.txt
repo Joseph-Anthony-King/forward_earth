@@ -534,7 +534,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	init_effect = {
 
 		if = {
-			has_country_flag = human_starbase
+			any_country = { has_country_flag = human_starbase }
 			create_starbase = {
 				size = starbase_starport
 				module = shipyard

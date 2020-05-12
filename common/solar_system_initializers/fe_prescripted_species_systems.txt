@@ -1096,8 +1096,6 @@ npc_scyldari_system_initializer = {
 				name = "Scyldari Confederacy"
 				name_list = "MAM1"
 
-				room = "personality_spiritual_seekers_room"
-
 				ship_prefix = "SCS"
 
 				authority = "auth_democratic"
@@ -1106,7 +1104,6 @@ npc_scyldari_system_initializer = {
 					civic = civic_environmentalist
 					civic = civic_free_haven
 				}
-				government = gov_theocratic_republic
 
 				species = last_created
 				ethos = {
@@ -1215,7 +1212,6 @@ npc_scyldari_system_initializer = {
 
 						owner = {
 							create_leader = {
-								type = scientist
 								sub_type = survey
 								name = random
 								species = owner_main_species
@@ -1484,8 +1480,6 @@ npc_dal_lokkur_system_initializer = {
 				name = "Lokken Directorate"
 				name_list = "REP2"
 
-				room = "personality_erudite_explorers_room"
-
 				ship_prefix = "LOK"
 
 				authority = "auth_democratic"
@@ -1494,7 +1488,6 @@ npc_dal_lokkur_system_initializer = {
 					civic = civic_technocracy
 					civic = civic_meritocracy
 				}
-				government = gov_rational_consensus
 
 				species = last_created
 				ethos = {
@@ -1621,7 +1614,6 @@ npc_dal_lokkur_system_initializer = {
 
 						owner = {
 							create_leader = {
-								type = scientist
 								sub_type = survey
 								name = random
 								species = owner_main_species
@@ -1862,8 +1854,6 @@ npc_kel_azak_system_initializer = {
 					name = "Kel-Azaan Republic"
 					name_list = "ART3"
 
-					room = "personality_honorbound_warriors_room"
-
 					ship_prefix = "KAS"
 
 					authority = "auth_oligarchic"
@@ -1872,7 +1862,6 @@ npc_kel_azak_system_initializer = {
 						civic = civic_warrior_culture
 						civic = civic_citizen_service
 					}
-					government = gov_citizen_stratocracy
 
 					species = last_created
 					ethos = {
@@ -1980,7 +1969,6 @@ npc_kel_azak_system_initializer = {
 
 							owner = {
 								create_leader = {
-									type = scientist
 									sub_type = survey
 									name = random
 									species = owner_main_species
