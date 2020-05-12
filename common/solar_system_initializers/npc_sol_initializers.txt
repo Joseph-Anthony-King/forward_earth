@@ -25,7 +25,7 @@ npc_sol_system_initializer = {
 		modifier = {
 			NOT = { any_system = { has_star_flag = sol } }
 			add = 99999
-			num_ai_empires_setting  > 1
+			num_ai_empires_setting  >= 1
 		}
 	}
 
@@ -171,6 +171,10 @@ npc_sol_system_initializer = {
 								ethic = "ethic_gestalt_consciousness"
 							}
 						}
+
+						clear_blockers = yes
+						create_primitive_blockers = yes
+
 						set_owner = last_created_country
 						set_capital = yes
 						add_district = district_nexus
@@ -227,6 +231,7 @@ npc_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
+											class = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species
@@ -351,6 +356,10 @@ npc_sol_system_initializer = {
 								species = last_created
 							}
 						}
+
+						clear_blockers = yes
+						create_primitive_blockers = yes
+
 						set_owner = last_created_country
 						set_capital = yes
 						add_district = district_city
@@ -408,6 +417,7 @@ npc_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
+											class = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species
@@ -512,6 +522,7 @@ npc_sol_system_initializer = {
 						}
 						set_owner = last_created_country
 
+						clear_blockers = yes
 						create_primitive_blockers = yes
 
 						create_fleet = {
@@ -596,7 +607,8 @@ npc_sol_system_initializer = {
 							set_primitive_age = machine_age
 						}
 						set_owner = last_created_country
-						
+
+						clear_blockers = yes
 						create_primitive_blockers = yes
 		
 						while = {
@@ -670,7 +682,10 @@ npc_sol_system_initializer = {
 							set_primitive_age = late_medieval_age
 						}
 						
-						set_owner = last_created_country		
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						create_primitive_blockers = yes		
 											
 						while = {
 							count = 9

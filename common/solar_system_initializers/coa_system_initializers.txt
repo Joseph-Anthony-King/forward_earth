@@ -216,6 +216,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 
 									owner = {
 										create_leader = {
+											class = scientist
 											sub_type = survey
 											name = random
 											species = owner_main_species

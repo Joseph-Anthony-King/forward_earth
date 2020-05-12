@@ -125,8 +125,6 @@ event = {
                         
                         set_owner = event_target:npc_LHC
 
-                        create_primitive_blockers = yes
-
                         while = {
                             count = 4
                             create_pop = {
@@ -212,17 +210,42 @@ event = {
                                     }
                                 }
 
+                                create_colony = {
+                                    owner = event_target:npc_CoA
+                                    species = event_target:human_species	
+                                    ethos = {	
+                                        ethic = ethic_xenophobe
+                                        ethic = ethic_fanatic_militarist			
+                                    }	
+                                }
+
+                                last_created_country = {
+                                    capital_scope = { set_name = "Aurora" }
+                                    set_graphical_culture = machine_01
+                                }
+
+                                solar_system = {
+
+                                    # starbase
+                                    create_starbase = {
+                                        size = starbase_starport
+                                        module = shipyard
+						                module = trading_hub
+                                        building = crew_quarters
+                                        owner = event_target:npc_CoA
+                                    }
+                                }
+
                                 event_target:npc_CoA = {
                                     set_country_flag = human_2
                                     set_country_flag = human_faction
                                     save_global_event_target_as = CoA
                                     create_starting_leaders = yes
+					                country_event = { id = game_start.9 }
                                     country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
                                 }
                                 
                                 set_owner = event_target:npc_CoA
-
-                                create_primitive_blockers = yes
 
                                 while = {	
                                     count = 16	
@@ -267,15 +290,6 @@ event = {
                                 add_building = building_foundry_1	
                                 add_building = building_factory_1
 
-                                create_colony = {
-                                    owner = event_target:npc_CoA
-                                    species = event_target:human_species	
-                                    ethos = {	
-                                        ethic = ethic_xenophobe
-                                        ethic = ethic_fanatic_militarist			
-                                    }	
-                                }	
-
                                 create_army = {	
                                     name = "1st Colonial Gendarmerie"	
                                     owner = event_target:npc_CoA
@@ -287,84 +301,6 @@ event = {
                                     owner = event_target:npc_CoA
                                     species = event_target:human_species	
                                     type = "defense_army"	
-                                }
-
-                                solar_system = {
-
-                                    # starbase
-                                    create_starbase = {
-                                        size = starbase_starport
-                                        module = shipyard
-                                        building = crew_quarters
-                                        owner = event_target:npc_CoA
-                                    }
-                                }
-
-                                last_created_country = {
-                                    capital_scope = { set_name = "Aurora" }
-                                    set_graphical_culture = machine_01
-
-                                    system_star = {
-
-                                        #science
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = science
-                                                    graphical_culture = "machine_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-
-                                                owner = {
-                                                    create_leader = {
-                                                        sub_type = survey
-                                                        species = owner_main_species
-                                                    }
-                                                }
-                                                set_leader = last_created_leader
-                                            }
-                                        }
-
-                                        #constructor
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = constructor
-                                                    graphical_culture = "machine_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-                                            }
-                                        }
-
-                                        #military
-                                        create_fleet = {
-                                            set_take_point = yes
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                while = {
-                                                    count = 3
-                                                    create_ship = {
-                                                        name = random
-                                                        random_existing_design = corvette
-                                                        graphical_culture = "machine_01"
-                                                    }
-                                                }
-
-                                                set_location = PREV
-                                            }
-                                        }
-                                    }
                                 }
                             }
                             10 = {}
@@ -481,8 +417,6 @@ event = {
                         
                         set_owner = event_target:npc_LHC
 
-                        create_primitive_blockers = yes
-
                         while = {
                             count = 4
                             create_pop = {
@@ -565,17 +499,42 @@ event = {
                                     }
                                 }
 
+                                create_colony = {
+                                    owner = event_target:npc_CoA
+                                    species = event_target:human_species	
+                                    ethos = {	
+                                        ethic = ethic_xenophobe
+                                        ethic = ethic_fanatic_militarist			
+                                    }	
+                                }
+
+                                last_created_country = {
+                                    capital_scope = { set_name = "Aurora" }
+                                    set_graphical_culture = machine_01
+                                }
+
+                                solar_system = {
+
+                                    # starbase
+                                    create_starbase = {
+                                        size = starbase_starport
+                                        module = shipyard
+						                module = trading_hub
+                                        building = crew_quarters
+                                        owner = event_target:npc_CoA
+                                    }
+                                }
+
                                 event_target:npc_CoA = {
                                     set_country_flag = human_2
                                     set_country_flag = human_faction
                                     save_global_event_target_as = CoA
                                     create_starting_leaders = yes
+					                country_event = { id = game_start.9 }
                                     country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
                                 }
                                 
                                 set_owner = event_target:npc_CoA
-
-                                create_primitive_blockers = yes
 
                                 while = {	
                                     count = 16	
@@ -618,16 +577,7 @@ event = {
                                 add_building = building_capital	
                                 add_building = building_research_lab_1	
                                 add_building = building_foundry_1	
-                                add_building = building_factory_1
-
-                                create_colony = {
-                                    owner = event_target:npc_CoA
-                                    species = event_target:human_species	
-                                    ethos = {	
-                                        ethic = ethic_xenophobe
-                                        ethic = ethic_fanatic_militarist			
-                                    }	
-                                }	
+                                add_building = building_factory_1	
 
                                 create_army = {	
                                     name = "1st Colonial Gendarmerie"	
@@ -640,84 +590,6 @@ event = {
                                     owner = event_target:npc_CoA
                                     species = event_target:human_species	
                                     type = "defense_army"	
-                                }
-
-                                solar_system = {
-
-                                    # starbase
-                                    create_starbase = {
-                                        size = starbase_starport
-                                        module = shipyard
-                                        building = crew_quarters
-                                        owner = event_target:npc_CoA
-                                    }
-                                }
-
-                                last_created_country = {
-                                    capital_scope = { set_name = "Aurora" }
-                                    set_graphical_culture = machine_01
-
-                                    system_star = {
-
-                                        #science
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = science
-                                                    graphical_culture = "machine_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-
-                                                owner = {
-                                                    create_leader = {
-                                                        sub_type = survey
-                                                        species = owner_main_species
-                                                    }
-                                                }
-                                                set_leader = last_created_leader
-                                            }
-                                        }
-
-                                        #constructor
-                                        create_fleet = {
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = constructor
-                                                    graphical_culture = "machine_01"
-                                                }
-
-                                                set_fleet_stance = evasive
-                                                set_location = PREV
-                                            }
-                                        }
-
-                                        #military
-                                        create_fleet = {
-                                            set_take_point = yes
-                                            effect = {
-                                                set_owner = last_created_country
-
-                                                while = {
-                                                    count = 3
-                                                    create_ship = {
-                                                        name = random
-                                                        random_existing_design = corvette
-                                                        graphical_culture = "machine_01"
-                                                    }
-                                                }
-
-                                                set_location = PREV
-                                            }
-                                        }
-                                    }
                                 }
                             }
                             10 = {}
@@ -834,8 +706,6 @@ event = {
                     
                     set_owner = event_target:npc_LHC
 
-                    create_primitive_blockers = yes
-
                     while = {
                         count = 4
                         create_pop = {
@@ -921,17 +791,42 @@ event = {
                                 }
                             }
 
+                            create_colony = {
+                                owner = event_target:npc_CoA
+                                species = event_target:human_species	
+                                ethos = {	
+                                    ethic = ethic_xenophobe
+                                    ethic = ethic_fanatic_militarist			
+                                }	
+                            }
+
+                            last_created_country = {
+                                capital_scope = { set_name = "Aurora" }
+                                set_graphical_culture = machine_01
+                            }
+
+                            solar_system = {
+
+                                # starbase
+                                create_starbase = {
+                                    size = starbase_starport
+                                    module = shipyard
+						            module = trading_hub
+                                    building = crew_quarters
+                                    owner = event_target:npc_CoA
+                                }
+                            }
+
                             event_target:npc_CoA = {
                                 set_country_flag = human_2
                                 set_country_flag = human_faction
                                 save_global_event_target_as = CoA
                                 create_starting_leaders = yes
+                                country_event = { id = game_start.9 }
                                 country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
                             }
                             
                             set_owner = event_target:npc_CoA
-
-                            create_primitive_blockers = yes
 
                             while = {	
                                 count = 16	
@@ -977,16 +872,7 @@ event = {
                             add_building = building_capital	
                             add_building = building_research_lab_1	
                             add_building = building_foundry_1	
-                            add_building = building_factory_1
-
-                            create_colony = {
-                                owner = event_target:npc_CoA
-                                species = event_target:human_species	
-                                ethos = {	
-                                    ethic = ethic_xenophobe
-                                    ethic = ethic_fanatic_militarist			
-                                }	
-                            }	
+                            add_building = building_factory_1	
 
                             create_army = {	
                                 name = "1st Colonial Gendarmerie"	
@@ -999,84 +885,6 @@ event = {
                                 owner = event_target:npc_CoA
                                 species = event_target:human_species	
                                 type = "defense_army"	
-                            }
-
-                            solar_system = {
-
-                                # starbase
-                                create_starbase = {
-                                    size = starbase_starport
-                                    module = shipyard
-                                    building = crew_quarters
-                                    owner = event_target:npc_CoA
-                                }
-                            }
-
-                            last_created_country = {
-                                capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
-
-                                system_star = {
-
-                                    #science
-                                    create_fleet = {
-                                        effect = {
-                                            set_owner = last_created_country
-
-                                            create_ship = {
-                                                name = random
-                                                random_existing_design = science
-                                                graphical_culture = "machine_01"
-                                            }
-
-                                            set_fleet_stance = evasive
-                                            set_location = PREV
-
-                                            owner = {
-                                                create_leader = {
-                                                    sub_type = survey
-                                                    species = owner_main_species
-                                                }
-                                            }
-                                            set_leader = last_created_leader
-                                        }
-                                    }
-
-                                    #constructor
-                                    create_fleet = {
-                                        effect = {
-                                            set_owner = last_created_country
-
-                                            create_ship = {
-                                                name = random
-                                                random_existing_design = constructor
-                                                graphical_culture = "machine_01"
-                                            }
-
-                                            set_fleet_stance = evasive
-                                            set_location = PREV
-                                        }
-                                    }
-
-                                    #military
-                                    create_fleet = {
-                                        set_take_point = yes
-                                        effect = {
-                                            set_owner = last_created_country
-
-                                            while = {
-                                                count = 3
-                                                create_ship = {
-                                                    name = random
-                                                    random_existing_design = corvette
-                                                    graphical_culture = "machine_01"
-                                                }
-                                            }
-
-                                            set_location = PREV
-                                        }
-                                    }
-                                }
                             }
                         }
                         10 = {}

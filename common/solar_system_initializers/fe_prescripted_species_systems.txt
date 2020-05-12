@@ -1147,6 +1147,10 @@ npc_scyldari_system_initializer = {
 					species = last_created
 				}
 			}
+
+			clear_blockers = yes
+			create_primitive_blockers = yes
+
 			set_owner = last_created_country
 			set_capital = yes
 			add_district = district_city
@@ -1179,6 +1183,7 @@ npc_scyldari_system_initializer = {
 				capital_scope = { set_name = "PRESCRIPTED_planet_name_scyldari" }
 				set_country_flag = scyldari_starbase
 				create_starting_leaders = yes
+				country_event = { id = game_start.9 }
 				country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 			}
 
@@ -1193,66 +1198,6 @@ npc_scyldari_system_initializer = {
 				owner = last_created
 				species = last_created
 				type = "defense_army"
-			}
-
-			system_star = {
-
-				#science
-				create_fleet = {
-					effect = {
-						set_owner = last_created_country
-
-						create_ship = {
-							name = random
-							random_existing_design = science
-						}
-
-						set_fleet_stance = evasive
-						set_location = PREV
-
-						owner = {
-							create_leader = {
-								sub_type = survey
-								name = random
-								species = owner_main_species
-							}
-						}
-						set_leader = last_created_leader
-					}
-				}
-
-				#constructor
-				create_fleet = {
-					effect = {
-						set_owner = last_created_country
-
-						create_ship = {
-							name = random
-							random_existing_design = constructor
-						}
-
-						set_fleet_stance = evasive
-						set_location = PREV
-					}
-				}
-
-				#military
-				create_fleet = {
-					set_take_point = yes
-					effect = {
-						set_owner = last_created_country
-
-						while = {
-							count = 3
-							create_ship = {
-								name = random
-								random_existing_design = corvette
-							}
-						}
-
-						set_location = PREV
-					}
-				}
 			}
 		}
 		
@@ -1355,6 +1300,8 @@ npc_scyldari_system_initializer = {
 		create_starbase = {
 			size = starbase_starport
 			module = shipyard
+			module = trading_hub
+			building = crew_quarters
 			owner = last_created_country
 		}
 	}
@@ -1549,6 +1496,9 @@ npc_dal_lokkur_system_initializer = {
 				}	
 			}
 
+			clear_blockers = yes
+			create_primitive_blockers = yes
+
 			set_owner = last_created_country
 			set_capital = yes
 			add_district = district_city
@@ -1581,6 +1531,7 @@ npc_dal_lokkur_system_initializer = {
 				set_graphical_culture = reptilian_01
 				set_country_flag = lokken_starbase
 				create_starting_leaders = yes
+				country_event = { id = game_start.9 }
 				country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 			}
 
@@ -1595,66 +1546,6 @@ npc_dal_lokkur_system_initializer = {
 				owner = last_created
 				species = last_created
 				type = "defense_army"
-			}
-
-			system_star = {
-
-				#science
-				create_fleet = {
-					effect = {
-						set_owner = last_created_country
-
-						create_ship = {
-							name = random
-							random_existing_design = science
-						}
-
-						set_fleet_stance = evasive
-						set_location = PREV
-
-						owner = {
-							create_leader = {
-								sub_type = survey
-								name = random
-								species = owner_main_species
-							}
-						}
-						set_leader = last_created_leader
-					}
-				}
-
-				#constructor
-				create_fleet = {
-					effect = {
-						set_owner = last_created_country
-
-						create_ship = {
-							name = random
-							random_existing_design = constructor
-						}
-
-						set_fleet_stance = evasive
-						set_location = PREV
-					}
-				}
-
-				#military
-				create_fleet = {
-					set_take_point = yes
-					effect = {
-						set_owner = last_created_country
-
-						while = {
-							count = 3
-							create_ship = {
-								name = random
-								random_existing_design = corvette
-							}
-						}
-
-						set_location = PREV
-					}
-				}
 			}
 		}
 		
@@ -1726,6 +1617,8 @@ npc_dal_lokkur_system_initializer = {
 		create_starbase = {
 			size = starbase_starport
 			module = shipyard
+			module = trading_hub
+			building = crew_quarters
 			owner = last_created_country
 		}
 	}
@@ -1904,6 +1797,10 @@ npc_kel_azak_system_initializer = {
 						species = last_created
 					}
 				}
+
+				clear_blockers = yes
+				create_primitive_blockers = yes
+
 				set_owner = last_created_country
 				set_capital = yes
 				add_district = district_city
@@ -1936,6 +1833,7 @@ npc_kel_azak_system_initializer = {
 					capital_scope = { set_name = "PRESCRIPTED_planet_name_kel_azaan" }
 					set_country_flag = kel_azaan_starbase
 					create_starting_leaders = yes
+					country_event = { id = game_start.9 }
 					country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
 				}
 
@@ -1950,66 +1848,6 @@ npc_kel_azak_system_initializer = {
 					owner = last_created
 					species = last_created
 					type = "defense_army"
-				}
-
-				system_star = {
-
-					#science
-					create_fleet = {
-						effect = {
-							set_owner = last_created_country
-
-							create_ship = {
-								name = random
-								random_existing_design = science
-							}
-
-							set_fleet_stance = evasive
-							set_location = PREV
-
-							owner = {
-								create_leader = {
-									sub_type = survey
-									name = random
-									species = owner_main_species
-								}
-							}
-							set_leader = last_created_leader
-						}
-					}
-
-					#constructor
-					create_fleet = {
-						effect = {
-							set_owner = last_created_country
-
-							create_ship = {
-								name = random
-								random_existing_design = constructor
-							}
-
-							set_fleet_stance = evasive
-							set_location = PREV
-						}
-					}
-
-					#military
-					create_fleet = {
-						set_take_point = yes
-						effect = {
-							set_owner = last_created_country
-
-							while = {
-								count = 3
-								create_ship = {
-									name = random
-									random_existing_design = corvette
-								}
-							}
-
-							set_location = PREV
-						}
-					}
 				}
 			}
 		}		
@@ -2072,6 +1910,8 @@ npc_kel_azak_system_initializer = {
 		create_starbase = {
 			size = starbase_starport
 			module = shipyard
+			module = trading_hub
+			building = crew_quarters
 			owner = last_created_country
 		}
 	}
