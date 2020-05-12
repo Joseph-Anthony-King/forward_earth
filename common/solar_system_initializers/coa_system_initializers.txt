@@ -749,7 +749,7 @@ coa_sol_neighbor_t1_first_colony = {
 		initializer = "coa_sol_neighbor_t2_tau_ceti"
 	}
 	neighbor_system = {
-		trigger = { num_ai_empires_setting = 1 }
+		trigger = { num_ai_empires_setting <= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "coa_virgin_sol_neighbor_t2_tau_ceti"
 	}
@@ -937,7 +937,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		initializer = "coa_sol_neighbor_t2_tau_ceti"
 	}
 	neighbor_system = {
-		trigger = { num_ai_empires_setting = 1 }
+		trigger = { num_ai_empires_setting <= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "coa_virgin_sol_neighbor_t2_tau_ceti"
 	}
@@ -2819,7 +2819,7 @@ coa_neighbor_t3_Luytens_star = {
 	}
 
 	neighbor_system = {
-		trigger = { num_ai_empires_setting = 1 }
+		trigger = { num_ai_empires_setting <= 1 }
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
 		initializer = "virgin_dal_lokkur_system_initializer"
 	}
@@ -2917,7 +2917,7 @@ coa_neighbor_t3_trappist_1 = {
 	}
 
 	neighbor_system = {
-		trigger = { num_ai_empires_setting = 1 }
+		trigger = { num_ai_empires_setting <= 1 }
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
 		initializer = "virgin_kel_azak_system_initializer"
 	}
@@ -3124,7 +3124,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 	}
 
 	neighbor_system = {
-		trigger = { num_ai_empires_setting = 1 }
+		trigger = { num_ai_empires_setting <= 1 }
 		hyperlane_jumps = { min = @minJumps max = @maxJumps }
 		initializer = "virgin_scyldari_system_initializer"
 	}
