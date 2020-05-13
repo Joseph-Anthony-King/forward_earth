@@ -21,7 +21,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "css_fedbuild_01_military_station_large_mesh"
-        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        file = "css_fedbuilder_nsc_defence_station.mesh"
         scale = 1.0
     }	
 	
@@ -39,7 +39,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "css_fedbuild_01_military_station_section_heavy_mesh"
-        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        file = "css_fedbuilder_nsc_defence_station.mesh"
         scale = 1.0
     }	
 
@@ -63,6 +63,18 @@ objectTypes = {
         file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s4_citadel.mesh"
         scale = 0.85
     }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_station_nsc_stronghold_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s5_stronghold.mesh"
+        scale = 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_01_station_nsc_starcommand_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s6_starcommand.mesh"
+        scale = 0.85
+    }	
 
 	pdxmesh = {
 		name = "css_fedbuild_01_station_medium_mesh"
@@ -101,10 +113,22 @@ objectTypes = {
     }
 
 	pdxmesh = {
-		name = "css_fedbuild_01_habitat_mesh"
-        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat.mesh"
+		name = "css_fedbuild_01_habitat_1_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
         scale = 1.0
     }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_habitat_2_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_two.mesh"
+        scale = 1.0
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_01_habitat_3_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_three.mesh"
+        scale = 1.0
+    }	
 
 ####### station sections #######
 

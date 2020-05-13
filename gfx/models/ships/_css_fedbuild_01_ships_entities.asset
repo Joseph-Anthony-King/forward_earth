@@ -409,7 +409,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_corvette_M1S1_entity"
-	pdxmesh = "css_fedbuild_01_corvette_mesh"
+	pdxmesh = "css_fedbuild_01_corvette_two_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -513,7 +513,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_destroyer_bow_L1_entity"
-	pdxmesh = "css_fedbuild_01_destroyer_mesh"
+	pdxmesh = "css_fedbuild_01_strike_cruiser_mesh"
 	
 	
 	default_state = "idle"
@@ -557,7 +557,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_destroyer_bow_M1S2_entity"
-	pdxmesh = "css_fedbuild_01_destroyer_mesh"
+	pdxmesh = "css_fedbuild_01_exploration_cruiser_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -580,7 +580,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_destroyer_stern_S2_entity"
-	pdxmesh = "css_fedbuild_01_destroyer_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 	default_state = "idle"
@@ -602,7 +602,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_destroyer_stern_M1_entity"
-	pdxmesh = "css_fedbuild_01_destroyer_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 	default_state = "idle"
@@ -624,7 +624,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_destroyer_stern_PD2_entity"
-	pdxmesh = "css_fedbuild_01_destroyer_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 		
@@ -724,7 +724,7 @@ entity = {
 # BOW
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_S4_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -745,7 +745,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_L1_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "css_fedbuild_01_battle_cruiser_small_mesh"
 
 	
 	default_state = "idle"
@@ -786,7 +786,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_M2_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "css_fedbuild_01_battle_cruiser_small_mesh"
 	
 	
 	default_state = "idle"
@@ -810,7 +810,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_S2HB_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 	default_state = "idle"
@@ -830,7 +830,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_L1M1_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -851,7 +851,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_M3_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 	default_state = "idle"
@@ -873,7 +873,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_M2S2_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -895,7 +895,7 @@ entity = {
 # STERN
 entity = {
 	name = "css_fedbuild_01_cruiser_stern_M1_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -916,7 +916,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_stern_S2_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -1081,7 +1081,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_battleship_bow_M1S2SHB_entity"
-	pdxmesh = "css_fedbuild_01_battleship_sakura_saucer_mesh"
+	pdxmesh = "css_fedbuild_01_carrier_saucer_mesh"
 	
 	
 	default_state = "idle"
@@ -1175,7 +1175,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_battleship_mid_M4SHB_entity"
-	pdxmesh = "css_fedbuild_01_battleship_wayfinder_hull_mesh"
+	pdxmesh = "css_fedbuild_01_battleship_sakura_hull_mesh"
 	
 	
 	default_state = "idle"
@@ -1205,7 +1205,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_battleship_mid_S4LHB_entity"
-	pdxmesh = "css_fedbuild_01_battleship_sakura_hull_mesh"
+	pdxmesh = "css_fedbuild_01_carrier_hull_mesh"
 	
 	
 	default_state = "idle"
@@ -1288,7 +1288,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_battleship_stern_M2_entity"
-	pdxmesh = "css_fedbuild_01_battleship_wayfinder_nacelles_mesh"
+	pdxmesh = "css_fedbuild_01_carrier_nacelles_mesh"
 
 	
 	default_state = idle
