@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Föderationsbauer (Statisches Blau)"
+css_fedbuild:0 "Föderationsbauer
 css_fedbuild_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder."
 
-css_fedbuild_colours:0 "Föderationsbauer"
+css_fedbuild_colours:0 "[Farben] Föderationsbauer"
 css_fedbuild_colours_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder mit dynamischen Farben."

@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Federation Builders (Static Blue)"
-css_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset."
-
-css_fedbuild_colours:0 "Federation Builders"
-css_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours."
+css_fedbuild:0 "Federation Builders"
+ css_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset."
+ 
+css_fedbuild_colours:0 "[Colors] Federation Builders"
+ css_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours."

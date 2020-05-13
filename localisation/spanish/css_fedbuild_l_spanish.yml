@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Constructores de Federaciones (Azul Estático)"
+css_fedbuild:0 "Constructores de Federaciones"
 css_fedbuild_desc:1 "Conjunto de barcos de Cheek y Gatekeeper's constructores de federaciones."
 
-css_fedbuild_colours:0 "Constructores de federaciones"
+css_fedbuild_colours:0 "[Colores] Constructores de federaciones"
 css_fedbuild_colours_desc:1 "Juego de barcos de Cheek y Gatekeeper's constructores de federaciones con colores dinámicos."

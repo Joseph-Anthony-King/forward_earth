@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Федерация Строителей (Статический синий)"
+css_fedbuild:0 "Федерация Строителей"
 css_fedbuild_desc:1 "Щит и привратный корабль Федерации строителей."
 
-css_fedbuild_colours:0 "Федерация Строителей"
+css_fedbuild_colours:0 "[Цвета] Федерация Строителей"
 css_fedbuild_colours_desc:1 "Щит и набор Gatekeeper's Federation Builder с динамическими цветами."

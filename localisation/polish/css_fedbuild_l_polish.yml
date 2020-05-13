@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Konstruktorzy Federacji (Statyczny Niebieski)"
+css_fedbuild:0 "Konstruktorzy Federacji"
 css_fedbuild_desc:1 "Zestaw statku Konstruktora Federacji Policzków i Gatekeeperów."
 
-css_fedbuild_colours:0 "Konstruktorzy Federacji"
+css_fedbuild_colours:0 "[Zabarwienie] Konstruktorzy Federacji"
 css_fedbuild_colours_desc:1 "Zestaw dynamiczny kolorów dla budowniczego federacji policzków i strażników."

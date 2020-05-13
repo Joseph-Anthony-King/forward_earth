@@ -8,8 +8,8 @@
  #
  ####################################
 
-css_fedbuild:0 "Constructeurs de Fédérations (Bleu Statique)"
+css_fedbuild:0 "Constructeurs de Fédérations"
 css_fedbuild_desc:1 "Jeu de construction du constructeur de la joue et du portier."
 
-css_fedbuild_colours:0 "Constructeurs de fédérations"
+css_fedbuild_colours:0 "[Couleurs] Constructeurs de fédérations"
 css_fedbuild_colours_desc:1 "Navire de Cheek and Gatekeeper's Federation Builder avec des couleurs dynamiques."
