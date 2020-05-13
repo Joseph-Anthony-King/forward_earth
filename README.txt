@@ -43,7 +43,7 @@ This mod also includes the star names included in my [url=https://steamcommunity
 [*]Stronad
 [*]Theta Upsilon[/list]
 
-This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  All included ship mods support NSC2.  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
+This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  All included ship mods support [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2[/url].  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
