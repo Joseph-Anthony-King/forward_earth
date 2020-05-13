@@ -1,6 +1,6 @@
 ﻿l_english:
  immense:0 "Immense"
- colossal:0 "Colossal"
+ gigantic:0 "Gigantic"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Sol System w/o Eta Cassiopeiae"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "System modeled after Earth's solar system without the Eta Cassiopeiae system.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Early Space Age Sol System"

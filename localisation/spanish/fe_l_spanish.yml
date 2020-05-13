@@ -1,6 +1,6 @@
 ﻿l_spanish:
- immense:0 "Inmenso"
- colossal:0 "Colosal"
+ immense:0 "Imenso"
+ gigantic:0 "Gigantesco"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Sistema Sol no Eta Cassiopeiae"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "Sistema modelado después del sistema solar de la Tierra sin el sistema Eta Cassiopeiae.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Edad Espacial Temprana Sol"

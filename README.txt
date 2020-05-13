@@ -41,7 +41,7 @@ This mod also includes the star names included in my [url=https://steamcommunity
 [*]Stronad
 [*]Theta Upsilon[/list]
 
-This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
+This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  All included ship mods support NSC2.  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
@@ -57,6 +57,8 @@ This mod took quite a bit of time and I used my programming skills to script a l
 This mod also has a dependenacy on [b]Dwaine's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357]Immersive Galaxy - Planet Variety - Clouds[/url] but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - BASE[/url]
+
+This mod adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the galaxy size.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction.
 
 This mod supports Portuguese, French, German, Polish, Russian and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 

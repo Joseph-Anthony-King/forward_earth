@@ -1,6 +1,6 @@
 ﻿l_braz_por:
  immense:0 "Imenso"
- colossal:0 "Colossal"
+ gigantic:0 "Gigantesco"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Sistema Sol no Eta Cassiopeiae"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "Sistema modelado segundo o sistema solar da Terra sem o sistema Eta Cassiopeiae.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Sistema Sol inicial de idade do espaço espacial"

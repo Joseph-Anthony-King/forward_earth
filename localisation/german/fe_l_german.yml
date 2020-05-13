@@ -1,6 +1,6 @@
 ﻿l_german:
  immense:0 "Immens"
- colossal:0 "Kolossal"
+ gigantic:0 "Riesig"
  eta_cassiopeiae_with_sol_system_initializer_NAME:0 "Sol-System nein Eta Cassiopeiae"
  eta_cassiopeiae_with_sol_system_initializer_DESC:0 "System modelliert nach dem Sol-System der Erde ohne das Eta Cassiopeiae-System.\n\n$system_initializer_DESC$"
  space_age_sol_system_initializer_NAME:0 "Frühe Raumalter Sol-System"
