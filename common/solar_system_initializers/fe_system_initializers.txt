@@ -5,7 +5,7 @@
 @maxJumps = 9
 
 if = {
-	limit - {
+	limit = {
 		OR = {
 			galaxy_size = tiny
 			galaxy_size = small
@@ -16,7 +16,7 @@ if = {
 	@maxJumps = 6
 }
 else_if = {
-	limit - {
+	limit = {
 		OR = {
 			galaxy_size = medium
 			galaxy_size = large
@@ -27,7 +27,7 @@ else_if = {
 	@maxJumps = 7	
 }
 else_if = {
-	limit - {
+	limit = {
 		galaxy_size = huge
 	}
 
@@ -35,7 +35,7 @@ else_if = {
 	@maxJumps = 8
 }
 else = {
-	
+
 }
 
 ### Sol System
