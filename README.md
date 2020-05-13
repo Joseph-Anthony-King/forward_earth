@@ -12,6 +12,8 @@ There are various Easter Eggs scattered throughout the galaxy, as an example Bet
 
 Even though this is an human centric mod the scripts have been adjusted to be responsive to the set up screen.  As an example, say you set the the number of AI players to 1 and no guaranteed colonizable worlds, then the Scyldari Confederacy, Lokken Directorate, and Kel-Azaan Republic will not spawn, there will be no colonizable worlds in your immediate vicinity, and there will only be one AI player somewhere out there in the void.  This holds even if you play as a non-human player.  Additionally, I did test this out and suppose you want to play as a Roman inspired earth, then you can simply edit the United Nations of Earth faction and you will assume their seat.  The CoA will still spawn but you can then play in the place of the United Nations.
 
+This mod adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the galaxy size.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction.
+
 *…but wait!  There’s more!*  The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 
 This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
@@ -52,8 +54,6 @@ This mod took quite a bit of time and I used my programming skills to script a l
 This mod also has a dependenacy on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
 [Forward Earth - BASE](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914) 
-
-This mod adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the galaxy size.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction.
 
 This mod supports Portuguese, French, German, Polish, Russian and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 
