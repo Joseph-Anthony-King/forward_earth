@@ -13,7 +13,7 @@ if = {
 	}
 
 	@minJumps = 4
-	@maxJumps = 6
+	@maxJumps = 5
 }
 else_if = {
 	limit = {
@@ -23,7 +23,7 @@ else_if = {
 		}
 	}
 
-	@minJumps = 5
+	@minJumps = 6
 	@maxJumps = 7	
 }
 else_if = {
