@@ -4,40 +4,6 @@
 @minJumps = 8
 @maxJumps = 9
 
-if = {
-	limit = {
-		OR = {
-			galaxy_size = tiny
-			galaxy_size = small
-		}		
-	}
-
-	@minJumps = 4
-	@maxJumps = 5
-}
-else_if = {
-	limit = {
-		OR = {
-			galaxy_size = medium
-			galaxy_size = large
-		}
-	}
-
-	@minJumps = 6
-	@maxJumps = 7	
-}
-else_if = {
-	limit = {
-		galaxy_size = huge
-	}
-
-	@minJumps = 7
-	@maxJumps = 8
-}
-else = {
-
-}
-
 ### Sol System
 eta_cassiopeiae_with_sol_system_initializer = {
 	name = "NAME_Sol"
