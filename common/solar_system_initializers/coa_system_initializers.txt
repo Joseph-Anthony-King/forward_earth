@@ -2880,12 +2880,9 @@ coa_neighbor_t3_Luytens_star = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
 				}
 				num_ai_empires_setting > 1
 			}
@@ -2899,12 +2896,9 @@ coa_neighbor_t3_Luytens_star = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
 				}
 				num_ai_empires_setting <= 1
 			}
@@ -3067,12 +3061,10 @@ coa_neighbor_t3_trappist_1 = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
 				}
 				num_ai_empires_setting > 1
 			}
@@ -3086,12 +3078,9 @@ coa_neighbor_t3_trappist_1 = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
 				}
 				num_ai_empires_setting <= 1
 			}
@@ -3363,12 +3352,9 @@ coa_sol_neighbor_t3_ophiuchi = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
 				}
 				num_ai_empires_setting > 1
 			}
@@ -3382,12 +3368,9 @@ coa_sol_neighbor_t3_ophiuchi = {
 		trigger = {
 			AND = {
 				OR = {
-					NOT = {
-						galaxy_size = tiny
-						galaxy_size = small
-						galaxy_size = medium
-						galaxy_size = large
-					}
+					galaxy_size = huge
+					galaxy_size = gigantic
+					galaxy_size = immense
 				}
 				num_ai_empires_setting <= 1
 			}
