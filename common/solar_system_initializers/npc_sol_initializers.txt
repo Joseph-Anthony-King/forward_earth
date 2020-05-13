@@ -24,7 +24,7 @@ else_if = {
 	}
 
 	@minJumps = 5
-	@maxJumps = 7	
+	@maxJumps = 6	
 }
 else_if = {
 	limit - {
