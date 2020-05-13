@@ -252,7 +252,7 @@ eta_cassiopeiae_system_initializer = {
 		initializer = "neighbor_t1_first_colony"
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = @jumps max = 5 }	
+		hyperlane_jumps = { min = 5 max = 6 }	
 		initializer = "eta_cassiopeiae_with_sol_system_initializer"
 	}
 }

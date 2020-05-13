@@ -21,6 +21,29 @@ sol_system_initializer = {
 	usage = custom_empire
 
 	init_effect = {
+
+
+		if = {
+			limit = {
+				galaxy_size = gigantic
+			}
+
+			log = "Galaxy size is gigantic"
+		}
+		else_if = {
+			limit = {
+				galaxy_size = immense
+			}
+
+			log = "Galaxy size is immense"
+		}
+		else = {
+
+			log = "Galaxy size is not custom"
+		}
+	}
+
+	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
 			every_neighbor_system = {
@@ -796,6 +819,11 @@ sol_neighbor_t1 = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "sol_neighbor_t2_sirius"
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t3_eridani"
 	}
 }
 

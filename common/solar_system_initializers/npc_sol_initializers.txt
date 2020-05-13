@@ -1463,6 +1463,11 @@ npc_sol_neighbor_t1 = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "npc_sol_neighbor_t2_sirius"
 	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "npc_sol_neighbor_t3_eridani"
+	}
 }
 
 # Sol Neighbor Tier 1 second colony
@@ -2198,8 +2203,8 @@ npc_sol_neighbor_t2_tau_ceti = {
 			init_effect = {
 
 				create_species = {
-					name = Prillrian
-					plural = Prillrians
+					name = Tehrian
+					plural = Tehrians
 					class = "REP"
 					portrait = "rep5"
 					homeworld = THIS
@@ -2209,7 +2214,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 					}
 				}
 				create_country = {
-					name = "Prillrian Realms"
+					name = "Tehrian Realms"
 					authority = auth_imperial
 					civics = {
 						civic = civic_landed_nobility
@@ -2270,7 +2275,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 				}
 				
 				last_created_country = {
-					capital_scope = { set_name = "Prill" }
+					capital_scope = { set_name = "Tehria" }
 				}
 			}
 		}
@@ -2576,16 +2581,8 @@ npc_sol_neighbor_t2_tau_ceti = {
 		has_ring = no
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "npc_sol_neighbor_t3_eridani"
-	}
-	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "npc_sol_neighbor_t3_epsilon_indi"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "npc_eta_cassiopeiae_system_initializer"
 	}
 }
 
@@ -2985,16 +2982,8 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 		has_ring = no
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "npc_sol_neighbor_t3_eridani"
-	}
-	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "npc_sol_neighbor_t3_epsilon_indi"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "npc_eta_cassiopeiae_system_initializer"
 	}
 }
 
@@ -4001,6 +3990,10 @@ npc_sol_neighbor_t3_eridani = {
 			size = 15
 			has_ring = no
 		}
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }	
+		initializer = "npc_eta_cassiopeiae_system_initializer"
 	}
 }
 

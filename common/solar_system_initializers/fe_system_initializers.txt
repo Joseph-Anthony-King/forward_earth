@@ -983,8 +983,8 @@ sol_neighbor_t2_tau_ceti = {
 			init_effect = {
 
 				create_species = {
-					name = Prillrian
-					plural = Prillrians
+					name = Tehrian
+					plural = Tehrians
 					class = "REP"
 					portrait = "rep5"
 					homeworld = THIS
@@ -994,7 +994,7 @@ sol_neighbor_t2_tau_ceti = {
 					}
 				}
 				create_country = {
-					name = "Prillrian Realms"
+					name = "Tehrian Realms"
 					authority = auth_imperial
 					civics = {
 						civic = civic_landed_nobility
@@ -1055,7 +1055,7 @@ sol_neighbor_t2_tau_ceti = {
 				}
 				
 				last_created_country = {
-					capital_scope = { set_name = "Prill" }
+					capital_scope = { set_name = "Tehria" }
 				}
 			}
 		}
@@ -1361,16 +1361,8 @@ sol_neighbor_t2_tau_ceti = {
 		has_ring = no
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t3_eridani"
-	}
-	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "sol_neighbor_t3_epsilon_indi"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "sol_with_eta_cassiopeiae_system_initializer"
 	}
 }
 
@@ -1770,16 +1762,8 @@ virgin_sol_neighbor_t2_tau_ceti = {
 		has_ring = no
 	}
 	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t3_eridani"
-	}
-	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }	
 		initializer = "sol_neighbor_t3_epsilon_indi"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "sol_with_eta_cassiopeiae_system_initializer"
 	}
 }
 
@@ -2300,7 +2284,7 @@ sol_neighbor_t3_Luytens_star = {
 		}
 	}
 
-	# Small and Tiny Dal Lokkur System Initializers
+	# Small and Tiny Kel Azak System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2312,8 +2296,8 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "npc_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_kel_azak_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2327,11 +2311,11 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "virgin_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "virgin_kel_azak_system_initializer"
 	}
 
-	# Medium and Large Dal Lokkur System Initializers
+	# Medium and Large Kel Azak System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2343,8 +2327,8 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "npc_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_kel_azak_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2358,11 +2342,11 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "virgin_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "virgin_kel_azak_system_initializer"
 	}
 
-	# All other galaxy sizes Dal Lokkur System Initializers
+	# All other galaxy sizes Kel Azak System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2375,8 +2359,8 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "npc_kel_azak_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2391,8 +2375,8 @@ sol_neighbor_t3_Luytens_star = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_dal_lokkur_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "virgin_kel_azak_system_initializer"
 	}
 }
 
@@ -2481,7 +2465,7 @@ sol_neighbor_t3_trappist_1 = {
 		has_ring = no
 	}
 
-	# Small and Tiny Kel Azak System Initializers
+	# Small and Tiny Scyldari System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2493,8 +2477,8 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "npc_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_scyldari_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2508,11 +2492,11 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "virgin_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "virgin_scyldari_system_initializer"
 	}
 
-	# Medium and Large Kel Azak System Initializers
+	# Medium and Large Scyldari System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2524,8 +2508,8 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "npc_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_scyldari_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2539,11 +2523,11 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "virgin_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "virgin_scyldari_system_initializer"
 	}
 
-	# All other galaxy sizes Kel Azak System Initializers
+	# All other galaxy sizes Scyldari System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2556,8 +2540,8 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "npc_scyldari_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2572,8 +2556,8 @@ sol_neighbor_t3_trappist_1 = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_kel_azak_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "virgin_scyldari_system_initializer"
 	}
 }
 
@@ -2771,7 +2755,7 @@ sol_neighbor_t3_ophiuchi = {
 		has_ring = no
 	}
 
-	# Small and Tiny Scyldari System Initializers
+	# Small and Tiny Dal Lokkur System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2783,8 +2767,8 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "npc_scyldari_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_dal_lokkur_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2798,11 +2782,11 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 4 max = 5 }
-		initializer = "virgin_scyldari_system_initializer"
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "virgin_dal_lokkur_system_initializer"
 	}
 
-	# Medium and Large Scyldari System Initializers
+	# Medium and Large Dal Lokkur System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2814,8 +2798,8 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "npc_scyldari_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_dal_lokkur_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2829,11 +2813,11 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 6 max = 7 }
-		initializer = "virgin_scyldari_system_initializer"
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "virgin_dal_lokkur_system_initializer"
 	}
 
-	# All other galaxy sizes Scyldari System Initializers
+	# All other galaxy sizes Dal Lokkur System Initializers
 	neighbor_system = {
 		trigger = {
 			AND = {
@@ -2846,8 +2830,8 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_scyldari_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "npc_dal_lokkur_system_initializer"
 	}
 
 	neighbor_system = {
@@ -2862,8 +2846,8 @@ sol_neighbor_t3_ophiuchi = {
 			}
 		}
 		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_scyldari_system_initializer"
+		hyperlane_jumps = { min = 9 max = 10 }
+		initializer = "virgin_dal_lokkur_system_initializer"
 	}
 }
 
@@ -3071,6 +3055,11 @@ sol_neighbor_t3_eridani = {
 			size = 15
 			has_ring = no
 		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 2 max = 3 }	
+		initializer = "sol_with_eta_cassiopeiae_system_initializer"
 	}
 }
 

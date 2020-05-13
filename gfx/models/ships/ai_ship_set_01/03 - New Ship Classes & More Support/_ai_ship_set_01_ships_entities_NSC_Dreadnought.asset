@@ -445,7 +445,7 @@ entity = {
 	
 	locator = { name = "medium_gun_01"				position = { -6  	-22 	0 } 		rotation = {  0  0 0 }}
 	locator = { name = "small_gun_02"				position = {  6  	-22 	0 } 		rotation = {  0  0 0 }}
-	locator = { name = "small_gun_03"				position = {  12 	-20 	0 } 		rotation = {  0  0 0 }}
+	locator = { name = "small_gun_01"				position = {  12 	-20 	0 } 		rotation = {  0  0 0 }}
 }
 
 entity = {

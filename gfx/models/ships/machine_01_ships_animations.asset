@@ -104,6 +104,8 @@ animation = {
 	file = "molluscoid_01_orbital_station_main_death.anim"
 }
 
-
-
+animation = {
+	name = "machine_01_super_habitat_frame_idle"
+	file = "Habitat_Assets/machine_01_super_habitat_idle.anim"
+}
 

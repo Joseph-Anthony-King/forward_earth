@@ -95,9 +95,9 @@ entity = {
 		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }	
+		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
 	
 	
 		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -138,9 +138,9 @@ entity = {
 		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }
-		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
 		
 		
 		

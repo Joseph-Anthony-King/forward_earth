@@ -1608,26 +1608,79 @@ entity = {
 }
 
 entity = {
-	name = "machine_01_habitat_core_entity"
+	name = "machine_01_orbital_station_hydroponics_section_entity"
+	pdxmesh = "machine_01_orbital_station_science_section_mesh"  ###will be given new model at some pt.###
+}
+
+###################################################
+################ORBITAL HABITATS###################
+###################################################
+
+entity = {
+	name = "machine_01_habitat_core_entity"  ####Shamfered-Triangular base for the habs.
 	pdxmesh = "machine_01_habitat_core_mesh"
 	
 		game_data = {
-		emissive_recolor_crunch = 10.0
-	}
+			emissive_recolor_crunch = 10.0
+			shader_type = ship
+			}
 }
 
 entity = {
-	name = "machine_01_orbital_station_habitat_section_entity"
+	name = "machine_01_orbital_station_habitat_section_entity"  ###city section outriggers
 	pdxmesh = "machine_01_orbital_station_habitat_section_mesh"
 
 	game_data = {
 		emissive_recolor_crunch = 10.0
-	}
+		shader_type = ship
+		}
+}
+
+entity = {
+	name = "machine_01_habitat_phase_01_entity"
+	pdxmesh = "machine_01_orbital_station_frame_mesh"	
+		default_state = "idle" 
+		state = { name = "idle" state_time = 5
+			start_event = { trigger_once = yes sound = { soundeffect = "spaceport_hum_idle" stop_on_state_change = yes } }
+			event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		}
+		state = { name = "death" state_time = 5 looping = no	
+			event = { time = 0.0 node = "explosion_locator_1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+			event = { time = 0.5 node = "explosion_locator_2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+			event = { time = 1.5 node = "explosion_locator_3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+			event = { time = 2.0 node = "explosion_locator_4" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+			event = { time = 3.0 node = "explosion_locator_5" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+			event = { time = 4.0 node = "explosion_locator_2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		}
+		state = { name = "construction" state_time = 5 }
+		state = { name = "habitat_idle" state_time = 5 
+			start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
+			event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		}
+		
+	locator = { name = "part1"	position = { 0	0  0 } }
+	
+	attach = { "part1"				= "machine_01_habitat_window_entity"}
+	attach = { "part1" 		 		= "machine_01_habitat_core_entity" }
+		
+		
+		
+		
+	locator = { name = "large_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_03" position = { 0 0 0 } }
+	locator = { name = "small_gun_04" position = { 0 0 0 } }
+	locator = { name = "medium_gun_01" position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { 0 0 0 } }
+				
+	scale = 1.0
+
 }
 
 
 entity = {
-	name = 		"machine_01_orbital_habitat_entity"
+	name = 		"machine_01_habitat_phase_02_entity"
 	pdxmesh = 	"machine_01_orbital_station_frame_mesh"
 	
 	locator = { name = "part1"	position = { 0	0  0 } }	
@@ -1654,7 +1707,6 @@ entity = {
 	state = { name = "construction" looping = yes }
 	
 	game_data = {
-		shader_type = ship
 		emissive_recolor_crunch = 5.0
 	}
 }
@@ -1668,47 +1720,45 @@ entity = {
 		uv_animation_speed 		= 0.05
 		uv_animation_direction 	= { 0.5 0 }
 		emissive_recolor_crunch = 50.0
+		
 	}
 
 }
 
 
-
-#######BLENDERUNIT =       X                  Z                    Y
-#######position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
-
-
-
-
 entity = {
-	name = "machine_01_upgraded_orbital_habitat_entity"
-	locator = { name = part1 }
+	name = "machine_01_habitat_phase_03_entity"
+	pdxmesh = "machine_01_upgraded_orbital_habitat_frame_mesh"
 	locator = { name = explosion_effect position = { 0 3 0 } }
 	
 	scale = 1.5
 	
-	default_state = "habitat_idle"
-	state = { name = "habitat_idle" state_time = 5 }
-	state = { name = "construction" state_time = 5 }
+	default_state = "idle"
+	state = { name = "idle" animation = "rotate" animation_speed = 0.7}
 	
-	state = { name = "death" state_time = 5 looping = no
-		event = { time = 4.9 node = "explosion_effect" particle = "large_lithoid_ship_explosion_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	state = { name = "construction" animation = "rotate" animation_speed = 0.7 state_time = 5 }
+	
+	state = { name = "death" animation = "rotate" animation_speed = 0.7 state_time = 5 looping = no
+		event = { time = 4.9 node = "explosion_effect" particle = "large_lithoid_ship_explosion_effect" keep_particle = yes trigger_once = yes 
+
+sound = { soundeffect = "station_explosion_large" } }
 	}
 	
-	game_data = {
-		shader_type = ship
-		emissive_recolor_crunch = 5.0
-	}
+	attach = { "part1" = "machine_01_habitat_phase_03_section_entity" }
+	attach = { "part1" = "machine_01_ring_habitat_landmass_entity" } 
+	attach = { "part1" = "machine_01_ring_habitat_nightlights_entity" } 
 	
-	attach = { name = "station" part1 = "machine_01_upgraded_orbital_habitat_section_entity" }
 }
 
 entity = {
-	name = "machine_01_upgraded_orbital_habitat_section_entity"
+	name = "machine_01_habitat_phase_03_section_entity"
 	pdxmesh = "machine_01_upgraded_orbital_habitat_mesh"	
 	
+	scale = 1.5
+	
+	
 	default_state = "habitat_idle"
-	state = { name = "habitat_idle" animation = "idle" animation_speed = 0.3
+	state = { name = "habitat_idle"
 		start_event = { trigger_once = yes sound = { soundeffect = "habitat_station_hum" } }
 		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
 		event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
@@ -1725,188 +1775,22 @@ entity = {
 		event = { time = 3.5 node = "explosion_locator_04" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
 		event = { time = 4.2 node = "explosion_locator_05" particle = "lithoid_ship_explosion_s_effect" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
 	}
-	
-	locator = { name = "part1"	position = { 0	0  0 } }	
-	locator = { name = "part2"	position = { 7.640	4.590  0 } rotation = { 270 0 0 }	}
-	locator = { name = "part3"	position = { -7.640	4.590  0 } rotation = { -270 0 0 }	}
-	locator = { name = "part4"	position = { 0	4.590  -8.63 } rotation = { 0 0 0 }	}
-	locator = { name = "part5"	position = { 0	4.590  8.63 } rotation = { 180 0 0 }	}
-	locator = { name = "part6"	position = { 0	-4.35  -5.816 } rotation = { 0 0 0 }	}
-	locator = { name = "part7"	position = { 0	-4.35  5.816 } rotation = { 180 0 0 }	}
-	
-	attach = { "part1" 		 		= "machine_01_starbase_citadel_section_entity" }
-	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	attach = { "part4" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	attach = { "part5" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	attach = { "part6" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	attach = { "part7" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-	
-	#locator = { name = "medium_gun_01"	position = { 0 0 0 } }
-	#locator = { name = "medium_gun_02"	position = { 0 0 0 } }
-	#locator = { name = "small_gun_01"	position = { 0 0 0 } }
-	#locator = { name = "small_gun_02"	position = { 0 0 0 } }
-	#locator = { name = "small_gun_03"	position = { 0 0 0 } }
-	#locator = { name = "small_gun_04"	position = { 0 0 0 } }
+
+		game_data = {
+			shader_type = ship
+			emissive_recolor_crunch = 2.0
+		}
+
+
 }
 	
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_00_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#	
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#			
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_01_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
 
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_02_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_03_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part4" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_04_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part4" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part5" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_05_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-
-#	attach = { "part1" 		 		= "machine_01_orbital_station_core_entity" }
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part4" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part5" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	attach = { "part6" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_06_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-
-#	scale = 1.0
-#	
-#	meshsettings = {
-#		shader = "PdxMeshTerra"
-#	}
-#}		
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_01_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#	
-#	attach = { "part2" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_02_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#
-#	attach = { "part3" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#
-#	scale = 1.0
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_03_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#
-#	attach = { "part4" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_04_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#
-#	attach = { "part5" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_05_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#
-#	attach = { "part6" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#}
-#
-#entity = {
-#	name = "machine_01_orbital_habitat_phase_06_construction_entity"
-#	pdxmesh = "machine_01_orbital_station_frame_mesh"
-#
-#	attach = { "part7" 		 		= "machine_01_orbital_station_habitat_section_entity" }
-#	
-#	scale = 1.0
-#}	
+entity = {
+	name = "machine_01_ring_habitat_nightlights_entity"
+	pdxmesh = machine_01_ring_habitat_nightlights_mesh
+	scale = 1.5
+	
+}
 
 
 entity = {
@@ -2191,7 +2075,7 @@ entity = {
 	
 	locator = { name = "part1" 		position = { 0  0 	0 	} rotation = { 0 180 180} }
 	
-	default_state = "idle"`
+	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
 	

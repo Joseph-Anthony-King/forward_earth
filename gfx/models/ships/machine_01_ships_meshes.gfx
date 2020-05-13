@@ -81,7 +81,7 @@ objectTypes = {
 		scale = 1.0
 	}
 	
-	pdxmesh = (
+	pdxmesh = {
 		name = "machine_01_cruiser_bow_L2_mesh"
 		file = "gfx/models/ships/Cruiser_Assets/machine_01_cruiser_bow_L2.mesh"
 		scale = 1.0
@@ -304,11 +304,8 @@ objectTypes = {
 		name = "machine_01_habitat_window_mesh"
 		file = "gfx/models/ships/starbases/machine_01_habitat_windows.mesh"
 		scale = 1.0
-	
 	}
-	
-	
-	
+		
 	pdxmesh = {
 		name = "machine_01_habitat_core_mesh"
 		file = "gfx/models/ships/starbases/machine_01_habitat_core.mesh"
@@ -316,6 +313,25 @@ objectTypes = {
 	
 	}
 	
+	pdxmesh = {
+		name = "machine_01_ring_habitat_landmass_mesh"
+		file = "gfx/models/ships/Habitat_Assets/machine_01_super_habitat_landmass.mesh"
+		scale = 1.0
+	
+		meshsettings = {
+		shader = "PdxMeshPlanet"
+		}
+	}
+	
+	pdxmesh = {
+		name = "machine_01_ring_habitat_nightlights_mesh"
+		file = "gfx/models/ships/Habitat_Assets/machine_01_super_habitat_nightlights.mesh"
+		scale = 1.0	
+	}
+	
+	
+
+
 	pdxmesh = {
 		name = "machine_01_orbital_station_hangarbay_section_mesh"
 		file = "gfx/models/ships/starbases/machine_01_orbital_station_hangarbay_section.mesh"
@@ -335,9 +351,15 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "machine_01_upgraded_orbital_habitat_mesh"
-		file = "gfx/models/ships/starbases/machine_01_citadel.mesh"
-		animation = { id = "idle"			type = "machine_01_upgraded_orbital_habitat_rotate_animation" }				
-		animation = { id = "death"			type = "machine_01_upgraded_orbital_habitat_death_animation" }				
+		file = "gfx/models/ships/Habitat_Assets/machine_01_super_habitat.mesh"
+		scale = 1.0
+		
+	}
+
+	pdxmesh = {
+		name = "machine_01_upgraded_orbital_habitat_frame_mesh"
+		file = "gfx/models/ships/Habitat_Assets/machine_01_super_habitat_rig.mesh"
+		animation = { id = "rotate"			type = "machine_01_super_habitat_frame_idle" }								
 		scale = 1.0
 	}
 

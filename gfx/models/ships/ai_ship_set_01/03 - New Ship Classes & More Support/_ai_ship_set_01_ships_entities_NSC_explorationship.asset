@@ -156,7 +156,7 @@ entity = {
 
 	###General Information
 	
-	name = "ai_ship_set_01_escortcarrier_mid1_L1M1_entity"
+	name = "ai_ship_set_01_explorationship_mid1_L1M1_entity"
 	pdxmesh = "locator_mesh"
 	
 	###Locators for Weapons
