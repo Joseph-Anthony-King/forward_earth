@@ -40,7 +40,7 @@ This mod also includes the star names included in my [This is Alpha Ceti V!](htt
 - Stronad
 - Theta Upsilon
 
-This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics mod in order to include some additional ship models and planets.  All included ship mods support [NSC2](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077).  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
+This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [NSC2](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077).  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
 
 - [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by [AryxErin](https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990)
 - [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by [Grumpy Gremlin](https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990)
