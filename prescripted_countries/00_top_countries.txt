@@ -37,7 +37,7 @@ humans1 = {
 	system_name = "NAME_Sol"
 	
 	graphical_culture = "css_fedbuild_01"
-	city_graphical_culture = "machine_01"
+	city_graphical_culture = "css_fedbuild_01"
 	
 	empire_flag = {
 		icon= {
