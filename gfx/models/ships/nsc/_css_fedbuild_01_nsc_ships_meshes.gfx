@@ -2,7 +2,7 @@ objectTypes = {
 
 	#######  hq  #######	
 	pdxmesh = {
-		name = css_fedbuild_01_battle_fortress_mesh"
+		name = "css_fedbuild_01_battle_fortress_mesh"
         file = "gfx/models/ships/nsc/nsc_hq/css_fedbuilder_nsc_hq.mesh"
 		scale = 5.0
 
