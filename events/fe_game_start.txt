@@ -182,11 +182,11 @@ event = {
                                     flag = {
                                         icon = {
                                             category="human"
-                                            file="flag_human_4.dds"
+                                            file="flag_human_zge.dds"
                                         }
                                         background = {
                                             category="backgrounds"
-                                            file="stripe.dds"
+                                            file="circle.dds"
                                         }
                                         colors = {
                                             "red"
@@ -471,11 +471,11 @@ event = {
                                     flag = {
                                         icon = {
                                             category="human"
-                                            file="flag_human_4.dds"
+                                            file="flag_human_zge.dds"
                                         }
                                         background = {
                                             category="backgrounds"
-                                            file="stripe.dds"
+                                            file="circle.dds"
                                         }
                                         colors = {
                                             "red"
@@ -763,11 +763,11 @@ event = {
                                 flag = {
                                     icon = {
                                         category="human"
-                                        file="flag_human_4.dds"
+                                        file="flag_human_zge.dds"
                                     }
                                     background = {
                                         category="backgrounds"
-                                        file="stripe.dds"
+                                        file="circle.dds"
                                     }
                                     colors = {
                                         "red"
