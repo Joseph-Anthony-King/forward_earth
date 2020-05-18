@@ -538,7 +538,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 19
+							count = 28
 							create_pop = {
 								species = last_created
 							}
@@ -569,7 +569,7 @@ npc_sol_system_initializer = {
 							homeworld = this
 						}
 						create_country = {
-							name = random
+							name = "League of Nations"
 							authority = random
 							civics = {
 								civic = civic_increasing_urbanization
@@ -582,16 +582,16 @@ npc_sol_system_initializer = {
 							}
 							flag = {
 								icon = {
-									category = "human"
-									file = "flag_human_7.dds"
+									category="human"
+									file="flag_human_12.dds"
 								}
-								background= {
-									category = "backgrounds"
-									file = "circle.dds"
+								background={
+									category="backgrounds"
+									file="circle.dds"
 								}
 								colors={
+									"beige"
 									"dark_blue"
-									"red"
 									"null"
 									"null"
 								}
@@ -612,7 +612,7 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes
 		
 						while = {
-							count = 14
+							count = 22
 							create_pop = {
 								species = last_created
 							}					
@@ -628,8 +628,8 @@ npc_sol_system_initializer = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
 					}
-					# Medieval
-					10 = {
+					# Renaissance
+					5 = {
 						create_species = {
 							name = NAME_Human
 							plural = NAME_Humans
@@ -656,17 +656,97 @@ npc_sol_system_initializer = {
 								ethic = "ethic_authoritarian"
 							}
 							flag = {
-								icon = {
-									category = "ornate"
-									file = "flag_ornate_11.dds"
+								icon={
+									category="human"
+									file="flag_human_2.dds"
 								}
-								background = {
-									category = "backgrounds"
-									file = "00_solid.dds"
+								background={
+									category="backgrounds"
+									file="vertical.dds"
 								}
-								colors = {
-									"dark_blue"
-									"dark_blue"
+								colors={
+									"yellow"
+									"black"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = renaissance_age
+							set_country_flag = primitive_humans
+							set_primitive_age = renaissance_age
+						}
+						
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						create_primitive_blockers = yes		
+											
+						while = {
+							count = 12
+							create_pop = {
+								species = last_created
+							}					
+						}
+						add_building = building_stone_palace
+						
+						while = {
+							count = 3
+							create_army = {
+								name = "NAME_Feudal_Levies"
+								owner = last_created
+								species = last_created
+								type = "primitive_army"
+							}
+						}
+						
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Medieval
+					5 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_landed_nobility
+								civic = civic_flat_world_theory
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon={
+									category="human"
+									file="flag_human_2.dds"
+								}
+								background={
+									category="backgrounds"
+									file="vertical.dds"
+								}
+								colors={
+									"yellow"
+									"black"
 									"null"
 									"null"
 								}
@@ -688,7 +768,7 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes		
 											
 						while = {
-							count = 9
+							count = 10
 							create_pop = {
 								species = last_created
 							}					
