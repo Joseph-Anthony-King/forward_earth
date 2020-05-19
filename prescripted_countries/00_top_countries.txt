@@ -112,7 +112,7 @@ humans2 = {
 	empire_flag = {
 		icon= {
 			category = "human"
-			file = "flag_human_zge.dds"
+			file = "flag_human_zca.dds"
 		}
 		background= {
 			category = "backgrounds"
