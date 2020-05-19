@@ -538,7 +538,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 28
+							count = 22
 							create_pop = {
 								species = last_created
 							}
@@ -612,7 +612,7 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes
 		
 						while = {
-							count = 22
+							count = 18
 							create_pop = {
 								species = last_created
 							}					
@@ -2328,14 +2328,13 @@ npc_sol_neighbor_t2_tau_ceti = {
 				last_created_country = {
 					set_graphical_culture = preindustrial_01
 					set_country_flag = late_medieval_age
-					set_country_flag = humans_late_medieval_age
 					set_primitive_age = late_medieval_age
 				}
 				
 				set_owner = last_created_country		
 									
 				while = {
-					count = 3
+					count = 10
 					create_pop = {
 						species = last_created
 					}					

@@ -1035,7 +1035,7 @@ sol_neighbor_t2_tau_ceti = {
 				set_owner = last_created_country		
 									
 				while = {
-					count = 3
+					count = 10
 					create_pop = {
 						species = last_created
 					}					
