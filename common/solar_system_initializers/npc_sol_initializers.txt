@@ -524,6 +524,31 @@ npc_sol_system_initializer = {
 
 						clear_blockers = yes
 						create_primitive_blockers = yes
+					
+						create_army = {
+							name = "US Armed Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Chinese PLA"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "EU Combined Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "Russian Armed Forces"
+							owner = last_created
+							species = last_created
+							type = "postatomic_army"
+						}
 
 						create_fleet = {
 							name = "NAME_ISS_II"
@@ -610,6 +635,31 @@ npc_sol_system_initializer = {
 
 						clear_blockers = yes
 						create_primitive_blockers = yes
+					
+						create_army = {
+							name = "NAME_German_Wehrmacht"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_US_Armed_Forces"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_British_Armed_Forces"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
+						create_army = {
+							name = "NAME_Soviet_Red_Army"
+							owner = last_created
+							species = last_created
+							type = "industrial_army"
+						}
 		
 						while = {
 							count = 18
