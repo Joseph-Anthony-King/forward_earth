@@ -311,6 +311,7 @@ special_init_03 = {
 							}					
 						}
 						add_building = building_stone_palace
+						add_building = building_primitive_farm
 						
 						while = {
 							count = 3
@@ -389,6 +390,8 @@ special_init_03 = {
 							}					
 						}
 						add_building = building_stone_palace
+						add_building = building_primitive_farm
+						add_building = building_primitive_dwellings
 						
 						while = {
 							count = 3

@@ -1040,9 +1040,9 @@ sol_neighbor_t2_tau_ceti = {
 						species = last_created
 					}					
 				}
-				add_building = building_primitive_dwellings
-				add_building = building_primitive_dwellings
-				add_building = building_stone_palace			
+				add_building = building_stone_palace
+				add_building = building_primitive_farm
+				add_building = building_primitive_dwellings		
 				
 				while = {
 					count = 2
