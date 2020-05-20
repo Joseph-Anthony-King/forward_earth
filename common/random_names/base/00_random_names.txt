@@ -3213,7 +3213,7 @@ star_names = {
 	Mamba
 	Mambra
 	Mamendin
-	Mami
+	Mameni
 	Mamihaf
 	Mamitu
 	Mammetun

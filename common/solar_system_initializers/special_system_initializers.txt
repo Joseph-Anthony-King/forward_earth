@@ -1,5 +1,6 @@
 @distance = 50
 @base_moon_distance = 10
+@jumps = 3
 
 # Black Holes
 special_init_01 = {
@@ -234,16 +235,6 @@ special_init_03 = {
 						}
 						add_building = building_stone_palace
 						
-						while = {
-							count = 3
-							create_army = {
-								name = "NAME_Primitive_Army"
-								owner = last_created
-								species = last_created
-								type = "primitive_army"
-							}
-						}
-						
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -314,7 +305,7 @@ special_init_03 = {
 						add_building = building_primitive_farm
 						
 						while = {
-							count = 3
+							count = 1
 							create_army = {
 								name = "NAME_Primitive_Army"
 								owner = last_created
