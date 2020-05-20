@@ -248,7 +248,7 @@ event = {
                                 set_owner = event_target:npc_CoA
 
                                 while = {	
-                                    count = 16	
+                                    count = 20	
                                     create_pop = {	
                                         species = event_target:human_species
                                     }	
@@ -266,7 +266,7 @@ event = {
                                 }	
 
                                 while = {	
-                                    count = 7	
+                                    count = 8	
                                     create_pop = {	
                                         species = last_created	
                                     }	
@@ -274,6 +274,8 @@ event = {
 
                                 set_owner = last_created_country	
                                 set_capital = yes	
+                                add_building = building_robot_assembly_plant
+
                                 add_district = district_city	
                                 add_district = district_city	
                                 add_district = district_city	
@@ -284,11 +286,13 @@ event = {
                                 add_district = district_mining	
                                 add_district = district_mining	
                                 add_district = district_generator	
+                                add_district = district_generator		
                                 add_district = district_generator	
+                                add_district = district_generator
                                 add_building = building_capital	
                                 add_building = building_research_lab_1	
                                 add_building = building_foundry_1	
-                                add_building = building_factory_1
+                                add_building = building_factory_1	
 
                                 create_army = {	
                                     name = "1st Colonial Gendarmerie"	
@@ -537,7 +541,7 @@ event = {
                                 set_owner = event_target:npc_CoA
 
                                 while = {	
-                                    count = 16	
+                                    count = 20	
                                     create_pop = {	
                                         species = event_target:human_species
                                     }	
@@ -555,7 +559,7 @@ event = {
                                 }	
 
                                 while = {	
-                                    count = 7	
+                                    count = 8	
                                     create_pop = {	
                                         species = last_created	
                                     }	
@@ -563,6 +567,8 @@ event = {
 
                                 set_owner = last_created_country	
                                 set_capital = yes	
+                                add_building = building_robot_assembly_plant
+
                                 add_district = district_city	
                                 add_district = district_city	
                                 add_district = district_city	
@@ -573,7 +579,9 @@ event = {
                                 add_district = district_mining	
                                 add_district = district_mining	
                                 add_district = district_generator	
+                                add_district = district_generator		
                                 add_district = district_generator	
+                                add_district = district_generator
                                 add_building = building_capital	
                                 add_building = building_research_lab_1	
                                 add_building = building_foundry_1	
@@ -829,7 +837,7 @@ event = {
                             set_owner = event_target:npc_CoA
 
                             while = {	
-                                count = 16	
+                                count = 20	
                                 create_pop = {	
                                     species = event_target:human_species	
                                     ethos = {	
@@ -850,14 +858,16 @@ event = {
                             }	
 
                             while = {	
-                                count = 7	
+                                count = 8	
                                 create_pop = {	
                                     species = last_created	
                                 }	
                             } 
 
                             set_owner = last_created_country	
-                            set_capital = yes	
+                            set_capital = yes		
+                            add_building = building_robot_assembly_plant
+
                             add_district = district_city	
                             add_district = district_city	
                             add_district = district_city	
@@ -868,7 +878,9 @@ event = {
                             add_district = district_mining	
                             add_district = district_mining	
                             add_district = district_generator	
+                            add_district = district_generator		
                             add_district = district_generator	
+                            add_district = district_generator
                             add_building = building_capital	
                             add_building = building_research_lab_1	
                             add_building = building_foundry_1	

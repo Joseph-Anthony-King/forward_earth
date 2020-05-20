@@ -351,7 +351,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 23
+							count = 32
 							create_pop = {
 								species = last_created
 							}
@@ -563,7 +563,7 @@ npc_sol_system_initializer = {
 						}
 
 						while = {
-							count = 22
+							count = 28
 							create_pop = {
 								species = last_created
 							}
@@ -662,7 +662,7 @@ npc_sol_system_initializer = {
 						}
 		
 						while = {
-							count = 18
+							count = 22
 							create_pop = {
 								species = last_created
 							}					
@@ -737,7 +737,7 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes		
 											
 						while = {
-							count = 12
+							count = 16
 							create_pop = {
 								species = last_created
 							}					

@@ -148,7 +148,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						}
 
 						while = {
-							count = 23
+							count = 32
 							create_pop = {
 								species = last_created
 							}
