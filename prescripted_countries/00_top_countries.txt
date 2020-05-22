@@ -63,7 +63,6 @@ humans1 = {
 		texture = 0
 		hair = 1
 		clothes = 0
-		ruler_title="Grand Poo Bah"
 		leader_class = ruler
 	}
 }
