@@ -1703,3 +1703,171 @@ event = {
         }
     }
 }
+
+### fe.11 - Spawn Trantor
+event = {
+	id = fe.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		no_scope = {
+
+            if = {
+                
+                limit = {
+                    galaxy_size = tiny
+                }
+            
+                spawn_system = {
+                    min_distance = 49
+                    max_distance = 49
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = small
+                }
+            
+                spawn_system = {
+                    min_distance = 74
+                    max_distance = 74
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = medium
+                }
+            
+                spawn_system = {
+                    min_distance = 98
+                    max_distance = 98
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = large
+                        galaxy_size = huge
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 110
+                    max_distance = 110
+                    initializer = trantor_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = gigantic
+                        galaxy_size = immense
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 124
+                    max_distance = 124
+                    initializer = trantor_initializer
+                }
+            }
+		}
+    }
+}
+
+### fe.12 - Spawn Terminus
+event = {
+	id = fe.12
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+
+		no_scope = {
+
+            if = {
+                
+                limit = {
+                    galaxy_size = tiny
+                }
+            
+                spawn_system = {
+                    min_distance = 210
+                    max_distance = 212
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = small
+                }
+            
+                spawn_system = {
+                    min_distance = 310
+                    max_distance = 312
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    galaxy_size = medium
+                }
+            
+                spawn_system = {
+                    min_distance = 410
+                    max_distance = 412
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = large
+                        galaxy_size = huge
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 460
+                    max_distance = 472
+                    initializer = terminus_initializer
+                }
+            }
+
+            if = {
+                
+                limit = {
+                    OR = {
+                        galaxy_size = gigantic
+                        galaxy_size = immense
+                    }
+                }
+            
+                spawn_system = {
+                    min_distance = 510
+                    max_distance = 512
+                    initializer = terminus_initializer
+                }
+            }
+		}
+    }
+}

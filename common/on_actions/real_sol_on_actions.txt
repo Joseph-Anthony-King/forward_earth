@@ -24,12 +24,6 @@ on_yearly_pulse = {
 	}
 }
 
-on_megastructure_upgraded = {
-	events = {
-		real_sol.222
-	}
-}
-
 # Class check for Earth
 on_terraforming_complete = {
 	events = {
@@ -56,12 +50,6 @@ on_yearly_pulse = {
 	}
 }
 
-on_megastructure_upgraded = {
-	events = {
-		real_sol.444
-	}
-}
-
 # Class check for Mars
 on_terraforming_complete = {
 	events = {
@@ -72,33 +60,5 @@ on_terraforming_complete = {
 on_yearly_pulse = {
 	events = {
 		real_sol.55
-	}
-}
-
-# Class check for Jupiter
-on_megastructure_upgraded = {
-	events = {
-		real_sol.6
-	}
-}
-
-# Class check for Saturn
-on_megastructure_upgraded = {
-	events = {
-		real_sol.7
-	}
-}
-
-# Class check for Uranus
-on_megastructure_upgraded = {
-	events = {
-		real_sol.8
-	}
-}
-
-# Class check for Neptune
-on_megastructure_upgraded = {
-	events = {
-		real_sol.9
 	}
 }

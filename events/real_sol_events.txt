@@ -165,29 +165,6 @@ event = {
 }
 
 event = {
-	id = real_sol.222
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = realsol_venus
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_ll_foggy
-				}
-				set_planet_entity = {
-                    entity = "realsol_lifeless_venus_entity"
-                }
-			}
-		}
-	}
-}
-
-event = {
 	id = real_sol.3
 	hide_window = yes
 	
@@ -292,14 +269,6 @@ event = {
 				}
 				set_planet_entity = {
                     entity = "continental_planet_earth_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_shrouded_paradise
-				}
-				set_planet_entity = {
-                    entity = "realsol_psi_earth_entity"
                 }
 			}
 		}
@@ -417,29 +386,6 @@ event = {
 				}
 				set_planet_entity = {
                     entity = "realsol_nuked_moon_entity"
-                }
-			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.444
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = planet_earth_moon
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_ll_temperate
-				}
-				set_planet_entity = {
-                    entity = "realsol_lifeless_moon_entity"
                 }
 			}
 		}
@@ -587,161 +533,5 @@ country_event = {
 	}
 	option = {
 		name = real_sol.555.a	
-	}
-}
-
-event = {
-	id = real_sol.6
-	hide_window = yes
-	title = real_sol.6.name
-	desc = real_sol.6.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = realsol_jupiter
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_habitable_gas_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_jupiter_habitable_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_food_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_jupiter_food_entity"
-                }
-			}
-		}
-	}
-	option = {
-		name = real_sol.6.a	
-	}
-}
-
-event = {
-	id = real_sol.7
-	hide_window = yes
-	title = real_sol.7.name
-	desc = real_sol.7.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = realsol_saturn
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_habitable_gas_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_saturn_habitable_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_food_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_saturn_food_entity"
-                }
-			}
-		}
-	}
-	option = {
-		name = real_sol.7.a	
-	}
-}
-
-event = {
-	id = real_sol.8
-	hide_window = yes
-	title = real_sol.8.name
-	desc = real_sol.8.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = realsol_uranus
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_habitable_gas_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_uranus_habitable_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_food_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_uranus_food_entity"
-                }
-			}
-		}
-	}
-	option = {
-		name = real_sol.8.a	
-	}
-}
-
-event = {
-	id = real_sol.9
-	hide_window = yes
-	title = real_sol.9.name
-	desc = real_sol.9.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = realsol_neptune
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_habitable_gas_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_neptune_habitable_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_food_giant
-				}
-				set_planet_entity = {
-                    entity = "gas_giant_neptune_food_entity"
-                }
-			}
-		}
-	}
-	option = {
-		name = real_sol.9.a	
 	}
 }

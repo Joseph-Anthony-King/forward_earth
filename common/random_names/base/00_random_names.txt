@@ -2325,6 +2325,7 @@ star_names = {
 	Hera
 	Herbert
 	Hermes
+	Hesperia
 	Hestia
 	Heva
 	Heward
@@ -2620,6 +2621,7 @@ star_names = {
 	Incabulus
 	Indross
 	Inferna
+	Inferno
 	Inmed
 	Intercrus
 	Intham
@@ -3595,6 +3597,7 @@ star_names = {
 	Neverwinter
 	Nevrast
 	Newton
+	Nexon
 	Ne'ya
 	Ni
 	Niamba
@@ -5086,7 +5089,6 @@ star_names = {
 	Terebellum
 	Terikof
 	Terlina
-	Terminus
 	Terosa
 	Terzam
 	Tessen
@@ -5242,7 +5244,6 @@ star_names = {
 	Trabbur
 	"Tram Bodon"
 	Tranquil
-	Trantor
 	Trauth
 	"Trax Ofko"
 	Trellberg
