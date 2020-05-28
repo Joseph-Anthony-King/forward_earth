@@ -43,7 +43,7 @@ tebrid = {
 	origin = "origin_default"
 	
 	planet_name = "Tebri"
-	planet_class = "pc_ocean"
+	planet_class = "pc_subarctic"
 	system_name = "Tebiron"
 	initializer = ""
 
