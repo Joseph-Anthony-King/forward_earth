@@ -171,7 +171,7 @@ ixidar = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_ixidar"
 	
 	planet_name = "PRESCRIPTED_planet_name_ixidar"
-	planet_class = "pc_arctic"
+	planet_class = "pc_karst"
 	system_name = "PRESCRIPTED_system_name_ixidar"
 	
 	room = "personality_hive_mind_room"

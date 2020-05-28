@@ -2408,7 +2408,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1c
 	planet = {
 		name = "Trappist-1 c"
-		class = "pc_barren"
+		class = "pc_toxic"
 		orbit_distance = 16
 		orbit_angle = 85
 		size = 16
@@ -2418,7 +2418,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1d
 	planet = {
 		name = "Trappist-1 d"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
@@ -2428,7 +2428,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1e
 	planet = {
 		name = "Trappist-1 e"
-		class = "pc_ocean"
+		class = "pc_tidallylocked"
 		orbit_distance = 16
 		orbit_angle = 125
 		size = 14
@@ -2438,7 +2438,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1f
 	planet = {
 		name = "Trappist-1 f"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
@@ -2448,7 +2448,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1g
 	planet = {
 		name = "Trappist-1 g"
-		class = "pc_arctic"
+		class = "pc_glacial"
 		orbit_distance = 16
 		orbit_angle = -130
 		size = 18

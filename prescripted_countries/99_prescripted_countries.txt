@@ -279,7 +279,7 @@ jehetma = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_jehetma"
 	
 	planet_name = "PRESCRIPTED_planet_name_jehetma"
-	planet_class = "pc_tundra"
+	planet_class = "pc_mushroom"
 	system_name = "PRESCRIPTED_system_name_jehetma"
 	
 	room = "personality_harmonious_hierarchy_room"
