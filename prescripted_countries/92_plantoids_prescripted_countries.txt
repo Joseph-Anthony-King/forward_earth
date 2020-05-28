@@ -33,7 +33,7 @@ maweer = {
 
 	adjective = "PRESCRIPTED_adjective_maweer"
 	planet_name = "PRESCRIPTED_planet_name_maweer"
-	planet_class = "pc_tropical"
+	planet_class = "pc_forest"
 	system_name = "PRESCRIPTED_system_name_maweer"
 	initializer = ""
 	graphical_culture = "plantoid_01"

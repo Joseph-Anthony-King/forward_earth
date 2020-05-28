@@ -34,7 +34,7 @@ kilik = {
 	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_kilik"
-	planet_class = "pc_tropical"
+	planet_class = "pc_boreal"
 	system_name = "PRESCRIPTED_system_name_kilik"
 	initializer = ""
 
@@ -106,7 +106,7 @@ orbis = {
 	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_orbis"
-	planet_class = "pc_ocean"
+	planet_class = "pc_desertislands"
 	system_name = "PRESCRIPTED_system_name_orbis"
 	initializer = ""
 
@@ -246,7 +246,7 @@ hazbuzan = {
 	origin = "origin_default"
 	
 	planet_name = "PRESCRIPTED_planet_name_hazbuzan"
-	planet_class = "pc_savannah"
+	planet_class = "pc_mangrove"
 	system_name = "PRESCRIPTED_system_name_hazbuzan"
 	initializer = ""
 

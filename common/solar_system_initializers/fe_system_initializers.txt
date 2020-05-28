@@ -1808,13 +1808,12 @@ sol_neighbor_t2_epsilon_eridani = {
 	}
 	
 	planet = {
-		class = "pc_continental"
+		class = "pc_med"
 		orbit_distance = 35
 		orbit_angle = 120
 		size = 16
 		has_ring = no
 		modifiers = none
-		entity = "continental_planet_09_entity"
 		
 		init_effect = {
 			prevent_anomaly = yes
