@@ -31,7 +31,7 @@ tzynn = {
 	ethic = "ethic_fanatic_militarist"
 	
 	planet_name = "PRESCRIPTED_planet_name_tzynn"
-	planet_class = "pc_desert"
+	planet_class = "pc_dune"
 	system_name = "PRESCRIPTED_system_name_tzynn"
 	
 	graphical_culture = "reptilian_01"
@@ -85,7 +85,7 @@ yondar = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_yondar"
 	
 	planet_name = "PRESCRIPTED_planet_name_yondar"
-	planet_class = "pc_alpine"
+	planet_class = "pc_highland"
 	system_name = "PRESCRIPTED_system_name_yondar"
 	
 	room = "personality_evangelizing_zealots_room" 
