@@ -797,10 +797,9 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			name = "Alpha Centauri B II"
 			orbit_distance = 25
 			orbit_angle = 120
-			class = "pc_barren"
+			class = "pc_hothouse"
 			size = 16
 			has_ring = no
-			entity = "barren_planet_01_entity"
 		
 			init_effect = {
 				add_modifier = {
