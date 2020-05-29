@@ -538,6 +538,7 @@ scyldari_system_initializer = {
 		modifiers = none
 		starting_planet = yes
 		has_ring = yes
+		entity = "ocean_planet_02_entity"
 		flags = { planet_scyldari }
 		
 		init_effect = {
@@ -1070,6 +1071,7 @@ npc_scyldari_system_initializer = {
 		size = 16
 		modifiers = none
 		has_ring = yes
+		entity = "ocean_planet_02_entity"
 		flags = { planet_scyldari }
 		
 		init_effect = {
@@ -1993,6 +1995,7 @@ virgin_scyldari_system_initializer = {
 		size = 16
 		modifiers = none
 		has_ring = yes
+		entity = "ocean_planet_02_entity"
 		
 		init_effect = {
 			prevent_anomaly = yes
