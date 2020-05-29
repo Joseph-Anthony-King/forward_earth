@@ -26,6 +26,7 @@ This mod took quite a bit of time and I used my programming skills to script a l
 - [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by [Leaf](https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by  [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
+- [Immersive Galaxy - Planet Variety for Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=1128927140) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 
 This mod has three dependencies on **Gatekeeper's** [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) and [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279) mods and on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since **Dwaine's** mod is not always updated timely I've created a wrapper for the mod available at:
 
