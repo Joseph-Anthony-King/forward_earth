@@ -4568,7 +4568,6 @@ trantor_initializer = {
 		size = 24
 		has_ring = no
 		flag = "pd_ignore"
-		flag = "planet_trantor"
 		
 		moon = {
 			class = "pc_barren"
@@ -4685,7 +4684,6 @@ terminus_initializer = {
 		size = 16
 		has_ring = yes
 		flag = "pd_ignore"
-		flag = "planet_terminus"
 	}
 	
 	planet = {
