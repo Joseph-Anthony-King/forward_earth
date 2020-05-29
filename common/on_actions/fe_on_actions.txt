@@ -1,15 +1,16 @@
 # Triggers when the game starts
 on_game_start = {
 	events = {
-		fe.1
-		fe.2
-		fe.3
-		fe.4
-		fe.5
-		fe.6
-		fe.7
-		fe.8
-		fe.9
+		fe.00
+		fe.01
+		fe.02
+		fe.03
+		fe.04
+		fe.05
+		fe.06
+		fe.07
+		fe.08
+		fe.09
 		fe.10
 		fe.11
 		fe.12
@@ -19,5 +20,6 @@ on_game_start = {
 empire_init_add_technologies = {
 	events = {
 		fe.100
+		fe.200
 	}
 }

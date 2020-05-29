@@ -1,8 +1,17 @@
 namespace = fe
 
-### fe.1 - Instantiate Earth if not done so yet
+### fe.00 - Set forwardEarthPD global flag
 event = {
-	id = fe.1
+	id = fe.00
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { set_global_flag = forwardEarth }
+}
+
+### fe.01 - Instantiate Earth if not done so yet
+event = {
+	id = fe.01
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -35,9 +44,9 @@ event = {
     }
 }
 
-### fe.2 - Instantiate LHC and CoA for UNE
+### fe.02 - Instantiate LHC and CoA for UNE
 event = {
-	id = fe.2
+	id = fe.02
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -316,9 +325,9 @@ event = {
     }
 }
 
-### fe.3 - Instantiate LHC and CoA for Earth Custondianship
+### fe.03 - Instantiate LHC and CoA for Earth Custondianship
 event = {
-	id = fe.3
+	id = fe.03
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -610,9 +619,9 @@ event = {
     }
 }
 
-### fe.4 - Instantiate LHC and CoA for ICARUS
+### fe.04 - Instantiate LHC and CoA for ICARUS
 event = {
-	id = fe.4
+	id = fe.04
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -910,9 +919,9 @@ event = {
     }
 }
 
-### fe.5 - Set Human Space planet modifiers
+### fe.05 - Set Human Space planet modifiers
 event = {
-	id = fe.5
+	id = fe.05
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1000,9 +1009,9 @@ event = {
     }
 }
 
-### fe.6 - Set barycenters
+### fe.06 - Set barycenters
 event = {
-    id = fe.6
+    id = fe.06
     hide_window = yes
     is_triggered_only = yes
 
@@ -1017,9 +1026,9 @@ event = {
     }
 }
 
-### fe.7 - Set Earth to nuked if unpopulated and CoA instantiated
+### fe.07 - Set Earth to nuked if unpopulated and CoA instantiated
 event = {
-	id = fe.7
+	id = fe.07
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1047,9 +1056,9 @@ event = {
     }
 }
 
-### fe.8 - Nuke Earth for ICARUS faction
+### fe.08 - Nuke Earth for ICARUS faction
 event = {
-    id = fe.8
+    id = fe.08
     hide_window = yes
     is_triggered_only = yes
 
@@ -1068,9 +1077,9 @@ event = {
     }
 }
 
-### fe.9 - Revert Eta Cassiopeiae to default names if unpopulated
+### fe.09 - Revert Eta Cassiopeiae to default names if unpopulated
 event = {
-	id = fe.9
+	id = fe.09
 	hide_window = yes
 	is_triggered_only = yes
 
