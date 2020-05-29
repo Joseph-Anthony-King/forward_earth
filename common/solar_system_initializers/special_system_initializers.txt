@@ -149,7 +149,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol II"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -575,7 +575,7 @@ special_init_03 = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
 		
@@ -735,7 +735,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -906,7 +906,7 @@ special_init_04 = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
 		

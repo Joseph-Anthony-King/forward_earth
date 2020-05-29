@@ -54,7 +54,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -251,7 +251,7 @@ icarus_sol_system_initializer = {
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 125
-		size = 20
+		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
 		
@@ -1808,7 +1808,7 @@ sol_neighbor_t2_epsilon_eridani = {
 	}
 	
 	planet = {
-		class = "pc_med"
+		class = "pc_cascadian"
 		orbit_distance = 35
 		orbit_angle = 120
 		size = 16
@@ -2019,7 +2019,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	}
 	
 	planet = {
-		class = "pc_savannah"
+		class = "pc_med"
 		orbit_distance = 35
 		orbit_angle = 120
 		size = 16
@@ -4567,6 +4567,8 @@ trantor_initializer = {
 		orbit_angle = 85
 		size = 24
 		has_ring = no
+		flag = "pd_ignore"
+		flag = "planet_trantor"
 		
 		moon = {
 			class = "pc_barren"
@@ -4682,6 +4684,8 @@ terminus_initializer = {
 		orbit_angle = 85
 		size = 16
 		has_ring = yes
+		flag = "pd_ignore"
+		flag = "planet_terminus"
 	}
 	
 	planet = {
