@@ -1,4 +1,4 @@
-### This mod is a version of my [Forward Earth](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388) with a dependencies on [Gatekeeper's](https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990) [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) and [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279) mods.
+### This mod is a version of my [Forward Earth](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388) with dependencies on [Gatekeeper's](https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990) [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) and [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279) mods.
 
 # FORWARD EARTH
 

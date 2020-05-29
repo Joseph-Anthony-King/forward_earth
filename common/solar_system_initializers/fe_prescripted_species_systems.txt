@@ -522,11 +522,18 @@ scyldari_system_initializer = {
 	
 	planet = {
 		name = "Gildern's Garnet"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 10
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {
@@ -623,8 +630,8 @@ scyldari_system_initializer = {
 		
 		moon = {
 			name = "Noilan"
-			class = "pc_frozen"
-			size = 6
+			class = "pc_ammonia"
+			size = 10
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
@@ -762,11 +769,18 @@ dal_lokkur_system_initializer = {
 	
 	planet = {
 		name = "Ficash"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 20
 		orbit_angle = 130
 		size = 13
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {
@@ -787,9 +801,9 @@ dal_lokkur_system_initializer = {
 		}
 		
 		moon = {
-			name = "Scha"
-			class = "pc_frozen"
-			size = 6
+			name = "Socha"
+			class = "pc_methane"
+			size = 10
 			orbit_distance = 18
 			orbit_angle = 110
 			has_ring = no
@@ -959,7 +973,7 @@ kel_azak_system_initializer = {
 	
 	planet = {
 		name = "Hullpax Haxizabb"
-		class = "pc_frozen"
+		class = "pc_ammonia"
 		orbit_distance = 40
 		orbit_angle = 200
 		size = 16
@@ -1056,11 +1070,18 @@ npc_scyldari_system_initializer = {
 	
 	planet = {
 		name = "Gildern's Garnet"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 10
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {
@@ -1281,8 +1302,8 @@ npc_scyldari_system_initializer = {
 		
 		moon = {
 			name = "Noilan"
-			class = "pc_frozen"
-			size = 6
+			class = "pc_ammonia"
+			size = 10
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
@@ -1563,11 +1584,18 @@ npc_dal_lokkur_system_initializer = {
 	
 	planet = {
 		name = "Ficash"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 20
 		orbit_angle = 130
 		size = 13
 		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "terraforming_candidate"
+				days = -1
+			}
+		}
 	}
 	
 	planet = {
@@ -1588,9 +1616,9 @@ npc_dal_lokkur_system_initializer = {
 		}
 		
 		moon = {
-			name = "Scha"
-			class = "pc_frozen"
-			size = 6
+			name = "Socha"
+			class = "pc_methane"
+			size = 10
 			orbit_distance = 18
 			orbit_angle = 110
 			has_ring = no
@@ -1884,7 +1912,7 @@ npc_kel_azak_system_initializer = {
 	
 	planet = {
 		name = "Hullpax Haxizabb"
-		class = "pc_frozen"
+		class = "pc_ammonia"
 		orbit_distance = 40
 		orbit_angle = 200
 		size = 16
