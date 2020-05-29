@@ -561,12 +561,13 @@ special_init_03 = {
 		
 		moon = {
 			name = "Sol VIb"
-			class = "pc_frozen"
-			size = 8
+			class = "pc_methane"
+			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 	
@@ -893,12 +894,13 @@ special_init_04 = {
 		}
 		
 		moon = {
-			class = "pc_frozen"
-			size = 8
+			class = "pc_methane"
+			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 	

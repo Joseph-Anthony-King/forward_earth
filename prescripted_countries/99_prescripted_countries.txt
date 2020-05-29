@@ -225,7 +225,7 @@ glebsig = {
 	origin = "origin_default"
 
 	planet_name = "PRESCRIPTED_planet_name_glebsig"
-	planet_class ="pc_biolumen"
+	planet_class ="pc_ammoniaf"
 	system_name = "PRESCRIPTED_system_name_glebsig"
 	initializer = ""
 	graphical_culture = "molluscoid_01"

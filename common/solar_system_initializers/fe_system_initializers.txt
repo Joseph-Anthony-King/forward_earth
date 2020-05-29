@@ -237,12 +237,13 @@ icarus_sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
-			size = 8
+			class = "pc_methane"
+			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
+			flags = { planet_titan }
 		}
 	}
 	

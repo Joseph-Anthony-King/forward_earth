@@ -1,6 +1,6 @@
 ﻿[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 
-[h3]This mod is a version of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388]Forward Earth[/url] with a dependency on [url=https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990]Gatekeeper's[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] mod.[/h3]
+[h3]This mod is a version of my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388]Forward Earth[/url] with a dependencies on [url=https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990]Gatekeeper's[/url] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] and [url=https://steamcommunity.com/workshop/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url] mods.[/h3]
 
 [h1]FORWARD EARTH[/h1]
 
@@ -16,30 +16,7 @@ There are various tweaks and Easter Eggs scattered throughout the galaxy, some e
 
 This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the size of the galaxy.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction in order to prevent duplicate appearances of these factions.
 
-This mod also includes the star names included in my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Alpha Ceti V![/url] mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
-
-[list]
-[*]Alkaid
-[*]Athyr
-[*]Baobab
-[*]Ceti Alpha (of course)
-[*]Dagda
-[*]Dastamon
-[*]Dressel
-[*]Felis
-[*]Fentrul
-[*]HD 153095
-[*]HIP 418058
-[*]Hydra Centauri
-[*]Hydra Iota
-[*]Lambda Alpha
-[*]Lambda Nu
-[*]Matjar
-[*]Monea
-[*]Rayhadya
-[*]Sanopel
-[*]Stronad
-[*]Theta Upsilon[/list]
+This mod also includes a little over 5,000 star names that are included in my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Alpha Ceti V![/url] mod.
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2[/url].  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
@@ -54,15 +31,13 @@ This mod took quite a bit of time and I used my programming skills to script a l
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety - LITE[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
 [/list]
 
-This mod has two dependenacies on [b]Gatekeeper's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] mod and on [b]Dwaine's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357]Immersive Galaxy - Planet Variety - Clouds[/url] but since [b]Dwaine's{/b] mod is not always updated timely I've created a wrapper for the mod available at:
+This mod has three dependenacies on [b]Gatekeeper's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] and [url=https://steamcommunity.com/workshop/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url] mods and on [b]Dwaine's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357]Immersive Galaxy - Planet Variety - Clouds[/url] but since [b]Dwaine's{/b] mod is not always updated timely I've created a wrapper for the mod available at:
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - BASE[/url]
 
 This mod supports Portuguese, French, German, Polish, Russian and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 
 Hope everyone enjoys it and please let me know if you note any bugs or issues!
-
-Joe
 
 [h2]ICARUS[/h2]
 
