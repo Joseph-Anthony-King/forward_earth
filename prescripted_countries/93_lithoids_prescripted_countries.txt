@@ -33,7 +33,7 @@ khennet = {
 
 	adjective = "PRESCRIPTED_adjective_khennet"
 	planet_name = "PRESCRIPTED_planet_name_khennet"
-	planet_class = "pc_arid"
+	planet_class = "pc_irradiated"
 	system_name = "PRESCRIPTED_system_name_khennet"
 	initializer = ""
 	graphical_culture = "lithoid_01"
