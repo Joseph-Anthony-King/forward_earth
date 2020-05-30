@@ -75,6 +75,7 @@ deneb_system = {
 		size = 40
 		has_ring = no
 		entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -91,6 +92,7 @@ deneb_system = {
 			starting_planet = yes
 			has_ring = no
 			entity = "continental_planet_01_entity"	
+			flags = { pd_ignore }
 			modifiers = none
 		}		
 	}
@@ -110,6 +112,7 @@ deneb_system = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -181,6 +184,7 @@ vultaumar_system = {
 		size = 25
 		has_ring = no
 		entity = "barren_planet_01_destroyed_entity"
+		flags = { pd_ignore }
 		#anomaly = "VULTAUMAR"
 		flags = { vultaum_homeworld }
 		
@@ -292,6 +296,7 @@ yuhtaan_system = {
 		size = 25
 		has_ring = no
 		entity = "barren_planet_01_destroyed_entity"
+		flags = { pd_ignore }
 		#anomaly = "YUHTAAN"
 		flags = { yuht_homeworld }
 		

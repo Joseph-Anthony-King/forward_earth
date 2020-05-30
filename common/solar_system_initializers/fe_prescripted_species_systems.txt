@@ -42,7 +42,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 10
 			has_ring = no
 			entity = "molten_planet_06_entity"
-			flags = { planet_inferno }
+			flags = { planet_inferno pd_ignore }
 		}
 		
 		planet = {
@@ -53,7 +53,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 30
 			has_ring = no
 			entity = "gas_giant_05_entity"
-			flags = { planet_astraeus }
+			flags = { planet_astraeus pd_ignore }
 			
 			moon = {
 				name = "NAME_Notus"
@@ -128,7 +128,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 35
 			has_ring = yes
 			entity = "gas_giant_11_entity"
-			flags = { planet_anemoi }
+			flags = { planet_anemoi pd_ignore }
 			
 			moon = {
 				name = "NAME_Boreas"
@@ -137,7 +137,7 @@ eta_cassiopeiae_system_initializer = {
 				orbit_distance = 25
 				orbit_angle = 100
 				has_ring = no
-				flags = { planet_boreas }
+				flags = { planet_boreas pd_ignore }
 			}
 			moon = {
 				name = "NAME_Zephyrus"
@@ -147,7 +147,7 @@ eta_cassiopeiae_system_initializer = {
 				size = 12
 				has_ring = no
 				modifiers = none
-				flags = { planet_zephyrus }
+				flags = { planet_zephyrus pd_ignore }
 			}		
 		}
 		
@@ -186,7 +186,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 25
 			has_ring = yes
 			entity = "gas_giant_07_entity"
-			flags = { planet_hyperion }
+			flags = { planet_hyperion pd_ignore }
 			
 			moon = {
 				name = "NAME_Selene"
@@ -225,7 +225,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 20
 			has_ring = yes
 			entity = "gas_giant_09_entity"
-			flags = { planet_olympus }
+			flags = { planet_olympus pd_ignore }
 
 			moon = {
 				name = "NAME_Horae"
@@ -236,7 +236,7 @@ eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				entity = "frozen_planet_04_entity"
 				modifiers = none
-				flags = { planet_horae }
+				flags = { planet_horae pd_ignore }
 			}
 		}
 	}
@@ -546,7 +546,7 @@ scyldari_system_initializer = {
 		starting_planet = yes
 		has_ring = yes
 		entity = "ocean_planet_02_entity"
-		flags = { planet_scyldari }
+		flags = { planet_scyldari pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -1093,7 +1093,7 @@ npc_scyldari_system_initializer = {
 		modifiers = none
 		has_ring = yes
 		entity = "ocean_planet_02_entity"
-		flags = { planet_scyldari }
+		flags = { planet_scyldari pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2024,6 +2024,7 @@ virgin_scyldari_system_initializer = {
 		modifiers = none
 		has_ring = yes
 		entity = "ocean_planet_02_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes

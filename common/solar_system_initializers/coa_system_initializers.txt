@@ -621,6 +621,7 @@ coa_sol_neighbor_t1_first_colony = {
     		size = 16
     		has_ring = no
     		entity = "continental_planet_01_entity"
+			flags = { pd_ignore }
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_barren_cold"
@@ -1064,6 +1065,7 @@ coa_sol_neighbor_t1_second_colony = {
 		size = 13
 		has_ring = no
     	entity = "continental_planet_04_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Cygni A IIa"
@@ -1163,6 +1165,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1474,6 +1477,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		size = 20
 		has_ring = no
 		entity = "desert_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			set_planet_flag = planet_tau_ceti_3
@@ -1499,6 +1503,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			size = 18
 			has_ring = no
 			entity = "ocean_planet_01_entity"
+			flags = { pd_ignore }
 			
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4
@@ -1591,6 +1596,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_03_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4b
@@ -1957,6 +1963,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		size = 20
 		has_ring = no
 		entity = "desert_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			set_planet_flag = planet_tau_ceti_3
@@ -1982,6 +1989,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			size = 18
 			has_ring = no
 			entity = "ocean_planet_01_entity"
+			flags = { pd_ignore }
 			
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4
@@ -1996,6 +2004,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_03_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4b
@@ -3128,6 +3137,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		size = 22
 		has_ring = no
     	entity = "molten_planet_02_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -3163,6 +3173,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		size = 20
 		has_ring = yes
     	entity = "gaia_planet_01_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Ophiuchi A IIa"
@@ -3172,6 +3183,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = 40
 			has_ring = no
     		entity = "savannah_planet_01_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -3190,6 +3202,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		size = 8
 		has_ring = no
     	entity = "barren_planet_03_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -3209,6 +3222,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			size = 8
 			has_ring = no
 			entity = "barren_planet_04_entity"
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -3219,6 +3233,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			size = 8
 			has_ring = no
 			entity = "continental_planet_02_entity"
+			flags = { pd_ignore }
 		
 			moon = {
 				name = "Ophiuchi B IIa"
@@ -3228,6 +3243,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 				orbit_angle = 95
 				has_ring = no
 				entity = "barren_planet_01_entity"
+				flags = { pd_ignore }
 			}
 		}
 	}
@@ -3240,6 +3256,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		size = 20
 		has_ring = yes
     	entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Ophiuchi ABa"
@@ -3249,6 +3266,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = -5
 			has_ring = no
 			entity = "frozen_planet_02_entity"
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -3259,6 +3277,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "frozen_planet_04_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -3457,6 +3476,7 @@ coa_sol_neighbor_t3_eridani = {
 		size = 16
 		has_ring = no
 		entity = "arctic_planet_05_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {

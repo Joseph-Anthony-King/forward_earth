@@ -70,6 +70,7 @@ sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -80,7 +81,7 @@ sol_system_initializer = {
 		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { realsol_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 	
 	planet = {
@@ -120,6 +121,7 @@ sol_system_initializer = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
+		flags = { pd_ignore planet_mars }
 		
 		init_effect = {
 			add_modifier = {
@@ -127,8 +129,6 @@ sol_system_initializer = {
 				days = -1
 			}
 		}
-		
-		flags = { planet_mars }
 		
 		moon = {
 			name = "NAME_Phobos"
@@ -138,7 +138,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
@@ -149,7 +149,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -160,6 +160,7 @@ sol_system_initializer = {
 		orbit_angle = -210
 		size = 5
 		entity = "ceres_entity"
+		flags = { pd_ignore }
 		has_ring = no
 	}
 	
@@ -198,6 +199,7 @@ sol_system_initializer = {
 		size = 35
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
+		flags = { pd_ignore }
 		change_orbit = 6
 		
 		moon = {
@@ -208,6 +210,7 @@ sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -217,6 +220,7 @@ sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -226,6 +230,7 @@ sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -235,6 +240,7 @@ sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -246,6 +252,7 @@ sol_system_initializer = {
 		size = 30
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
+		flags = { pd_ignore }
 		change_orbit = 7
 		
 		moon = {
@@ -256,6 +263,7 @@ sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -266,7 +274,7 @@ sol_system_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 	
@@ -278,6 +286,7 @@ sol_system_initializer = {
 		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -287,6 +296,7 @@ sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -296,6 +306,7 @@ sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -307,6 +318,7 @@ sol_system_initializer = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
+		flags = { pd_ignore }
 		change_orbit = 4
 		
 		moon = {
@@ -316,6 +328,7 @@ sol_system_initializer = {
 			orbit_distance = 7
 			orbit_angle = 115
 			entity = "triton_entity"
+			flags = { pd_ignore }
 			has_ring = no
 		}
 	}
@@ -328,6 +341,7 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -433,6 +447,7 @@ sol_neighbor_t1_first_colony = {
     		size = 16
     		has_ring = no
     		entity = "continental_planet_01_entity"
+			flags = { pd_ignore }
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_barren_cold"
@@ -878,6 +893,7 @@ sol_neighbor_t1_second_colony = {
 		size = 13
 		has_ring = no
     	entity = "continental_planet_04_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Cygni A IIa"
@@ -977,6 +993,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1361,6 +1378,7 @@ com_sol_system = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1377,7 +1395,7 @@ com_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
@@ -1388,7 +1406,7 @@ com_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -1399,6 +1417,7 @@ com_sol_system = {
 		orbit_angle = -210
 		size = 5
 		entity = "ceres_entity"
+		flags = { pd_ignore }
 		has_ring = no
 	}
 	
@@ -1437,6 +1456,7 @@ com_sol_system = {
 		size = 35
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
+		flags = { pd_ignore }
 		change_orbit = 6
 		
 		moon = {
@@ -1481,6 +1501,7 @@ com_sol_system = {
 		size = 30
 		has_ring = yes
 		entity = "gas_giant_05_entity"
+		flags = { pd_ignore }
 		change_orbit = 7
 		
 		moon = {
@@ -1491,6 +1512,7 @@ com_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
+		flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -1501,7 +1523,7 @@ com_sol_system = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 	
@@ -1513,6 +1535,7 @@ com_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_03_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1523,6 +1546,7 @@ com_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 		change_orbit = 4
 		
 		moon = {
@@ -1532,6 +1556,7 @@ com_sol_system = {
 			orbit_distance = 7
 			orbit_angle = 115
 			entity = "triton_entity"
+		flags = { pd_ignore }
 			has_ring = no
 		}
 	}
@@ -1544,6 +1569,7 @@ com_sol_system = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1973,6 +1999,7 @@ lost_colony_sol_system = {
 		starting_planet = yes
 		has_ring = no
 		entity = "continental_planet_earth_entity"
+		flags = { pd_ignore }
 		deposit_blockers = none
 		modifiers = none
 		
@@ -2072,6 +2099,7 @@ lost_colony_sol_system = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -2088,7 +2116,7 @@ lost_colony_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
@@ -2099,7 +2127,7 @@ lost_colony_sol_system = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -2110,6 +2138,7 @@ lost_colony_sol_system = {
 		orbit_angle = -210
 		size = 5
 		entity = "ceres_entity"
+		flags = { pd_ignore }
 		has_ring = no
 	}
 	
@@ -2148,6 +2177,7 @@ lost_colony_sol_system = {
 		size = 35
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
+		flags = { pd_ignore }
 		change_orbit = 6
 		
 		moon = {
@@ -2192,6 +2222,7 @@ lost_colony_sol_system = {
 		size = 30
 		has_ring = yes
 		entity = "gas_giant_05_entity"
+		flags = { pd_ignore }
 		change_orbit = 7
 		
 		moon = {
@@ -2202,6 +2233,7 @@ lost_colony_sol_system = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2212,7 +2244,7 @@ lost_colony_sol_system = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 	
@@ -2224,6 +2256,7 @@ lost_colony_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_03_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2234,6 +2267,7 @@ lost_colony_sol_system = {
 		size = 20
 		has_ring = no
 		entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 		change_orbit = 4
 		
 		moon = {
@@ -2243,6 +2277,7 @@ lost_colony_sol_system = {
 			orbit_distance = 7
 			orbit_angle = 115
 			entity = "triton_entity"
+			flags = { pd_ignore }
 			has_ring = no
 		}
 	}
@@ -2255,6 +2290,7 @@ lost_colony_sol_system = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {

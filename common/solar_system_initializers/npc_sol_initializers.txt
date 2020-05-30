@@ -59,7 +59,7 @@ npc_sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
-		flags = { planet_mercury }
+		flags = { planet_mercury pd_ignore }
 	}
 	
 	planet = {
@@ -70,7 +70,7 @@ npc_sol_system_initializer = {
 		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { planet_venus pd_ignore }
 	}
 	
 	planet = {
@@ -82,7 +82,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none
-		flags = { planet_earth }
+		flags = { planet_earth pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -854,7 +854,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "realsol_new_moon_entity"
-			flags = { planet_luna }
+			flags = { planet_luna pd_ignore }
 		}
 	}
 	
@@ -867,7 +867,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "barren_planet_new_mars_entity"
 		anomaly = "terraforming_candidate_category"
-		flags = { planet_mars }
+		flags = { planet_mars pd_ignore }
 		
 		moon = {
 			name = "NAME_Phobos"
@@ -877,7 +877,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_phobos }
+			flags = { planet_phobos pd_ignore }
 		}
 		
 		moon = {
@@ -888,7 +888,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_deimos }
+			flags = { planet_deimos pd_ignore }
 		}
 	}
 	
@@ -900,7 +900,7 @@ npc_sol_system_initializer = {
 		size = 5
 		entity = "ceres_entity"
 		has_ring = no
-		flags = { planet_ceres }
+		flags = { planet_ceres pd_ignore }
 	}
 	
 	planet = {
@@ -942,7 +942,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		flags = { planet_jupiter }
+		flags = { planet_jupiter pd_ignore }
 		
 		moon = {
 			name = "NAME_Io"
@@ -952,7 +952,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
-			flags = { planet_io }
+			flags = { planet_io pd_ignore }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -962,7 +962,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
-			flags = { planet_europa }
+			flags = { planet_europa pd_ignore }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -972,7 +972,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
-			flags = { planet_ganymede }
+			flags = { planet_ganymede pd_ignore }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -982,7 +982,7 @@ npc_sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
-			flags = { planet_callisto }
+			flags = { planet_callisto pd_ignore }
 		}
 	}
 	
@@ -995,7 +995,7 @@ npc_sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
-		flags = { planet_saturn }
+		flags = { planet_saturn pd_ignore }
 		
 		moon = {
 			name = "NAME_Rhea"
@@ -1005,7 +1005,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
-			flags = { planet_rhea }
+			flags = { planet_rhea pd_ignore }
 		}
 		
 		moon = {
@@ -1016,7 +1016,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 	
@@ -1028,7 +1028,7 @@ npc_sol_system_initializer = {
 		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
-		flags = { planet_uranus }
+		flags = { planet_uranus pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -1038,7 +1038,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
-			flags = { planet_titania }
+			flags = { planet_titania pd_ignore }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -1048,7 +1048,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
-			flags = { planet_oberon }
+			flags = { planet_oberon pd_ignore }
 		}
 	}
 	
@@ -1061,7 +1061,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		flags = { planet_neptune }
+		flags = { planet_neptune pd_ignore }
 		
 		moon = {
 			name = "NAME_Triton"
@@ -1071,7 +1071,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 115
 			entity = "triton_entity"
 			has_ring = no
-			flags = { planet_triton }
+			flags = { planet_triton pd_ignore }
 		}
 	}
 
@@ -1083,7 +1083,7 @@ npc_sol_system_initializer = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
-		flags = { planet_pluto }
+		flags = { planet_pluto pd_ignore }
 	}
 
 	planet = {
@@ -1206,6 +1206,8 @@ npc_sol_neighbor_t1_first_colony = {
     		size = 16
     		has_ring = no
     		entity = "continental_planet_01_entity"
+			flags = { pd_ignore }
+
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_barren_cold"
@@ -1651,6 +1653,7 @@ npc_sol_neighbor_t1_second_colony = {
 		size = 13
 		has_ring = no
     	entity = "continental_planet_04_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Cygni A IIa"
@@ -1750,6 +1753,7 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1997,7 +2001,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			size = 10
 			has_ring = no
 			entity = "molten_planet_06_entity"
-			flags = { planet_inferno }
+			flags = { planet_inferno pd_ignore }
 		}
 		
 		planet = {
@@ -2008,7 +2012,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			size = 30
 			has_ring = no
 			entity = "gas_giant_05_entity"
-			flags = { planet_astraeus }
+			flags = { planet_astraeus pd_ignore }
 			
 			moon = {
 				name = "NAME_Notus"
@@ -2051,7 +2055,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				modifiers = none
 				entity = "continental_planet_01_entity"
-				flags = { coa_home planet_aurora }
+				flags = { coa_home planet_aurora pd_ignore }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -2067,7 +2071,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				modifiers = none
 				entity = "savannah_planet_11_entity"
-				flags = { planet_tithonus }
+				flags = { planet_tithonus pd_ignore }
 				
 				init_effect = {
 					prevent_anomaly = yes
@@ -2083,7 +2087,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			size = 35
 			has_ring = yes
 			entity = "gas_giant_11_entity"
-			flags = { planet_anemoi }
+			flags = { planet_anemoi pd_ignore }
 			
 			moon = {
 				name = "NAME_Boreas"
@@ -2141,7 +2145,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			size = 25
 			has_ring = yes
 			entity = "gas_giant_07_entity"
-			flags = { planet_hyperion }
+			flags = { planet_hyperion pd_ignore }
 			
 			moon = {
 				name = "NAME_Selene"
@@ -2150,7 +2154,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				orbit_distance = 18
 				orbit_angle = 14
 				has_ring = no
-				flags = { planet_selene }
+				flags = { planet_selene pd_ignore }
 			}
 		}
 	}
@@ -2180,7 +2184,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			size = 20
 			has_ring = yes
 			entity = "gas_giant_09_entity"
-			flags = { planet_olympus }
+			flags = { planet_olympus pd_ignore }
 
 			moon = {
 				name = "NAME_Horae"
@@ -2191,7 +2195,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				entity = "frozen_planet_04_entity"
 				modifiers = none
-				flags = { planet_horae }
+				flags = { planet_horae pd_ignore }
 			}
 		}
     }
@@ -2310,6 +2314,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 		size = 20
 		has_ring = no
 		entity = "desert_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			set_planet_flag = planet_tau_ceti_3
@@ -2335,6 +2340,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 			size = 18
 			has_ring = no
 			entity = "ocean_planet_01_entity"
+			flags = { pd_ignore }
 			
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4
@@ -2427,6 +2433,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_03_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4b
@@ -2789,6 +2796,7 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 		size = 20
 		has_ring = no
 		entity = "desert_planet_01_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			set_planet_flag = planet_tau_ceti_3
@@ -2814,6 +2822,7 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 			size = 18
 			has_ring = no
 			entity = "ocean_planet_01_entity"
+			flags = { pd_ignore }
 			
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4
@@ -2828,6 +2837,7 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "continental_planet_03_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				set_planet_flag = planet_tau_ceti_4b
@@ -3757,6 +3767,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 		size = 22
 		has_ring = no
     	entity = "molten_planet_02_entity"
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -3792,6 +3803,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 		size = 20
 		has_ring = yes
     	entity = "gaia_planet_01_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Ophiuchi A IIa"
@@ -3801,6 +3813,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = 40
 			has_ring = no
     		entity = "savannah_planet_01_entity"
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -3819,6 +3832,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 		size = 8
 		has_ring = no
     	entity = "barren_planet_03_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -3838,6 +3852,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 			size = 8
 			has_ring = no
 			entity = "barren_planet_04_entity"
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -3848,6 +3863,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 			size = 8
 			has_ring = no
 			entity = "continental_planet_02_entity"
+			flags = { pd_ignore }
 		
 			moon = {
 				name = "Ophiuchi B IIa"
@@ -3857,6 +3873,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 				orbit_angle = 95
 				has_ring = no
 				entity = "barren_planet_01_entity"
+				flags = { pd_ignore }
 			}
 		}
 	}
@@ -3869,6 +3886,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 		size = 20
 		has_ring = yes
     	entity = "gas_giant_02_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Ophiuchi ABa"
@@ -3878,6 +3896,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = -5
 			has_ring = no
 			entity = "frozen_planet_02_entity"
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -3888,6 +3907,7 @@ npc_sol_neighbor_t3_ophiuchi = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "frozen_planet_04_entity"
+			flags = { pd_ignore }
 		}
 	}
 
@@ -3991,6 +4011,7 @@ npc_sol_neighbor_t3_eridani = {
 		size = 16
 		has_ring = no
 		entity = "arctic_planet_05_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
