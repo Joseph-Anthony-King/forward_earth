@@ -18,6 +18,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_tidallylocked
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "tidallylocked_planet_01_entity" } }
@@ -29,6 +30,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_glacial
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "glacial_planet_01_entity" } }
@@ -40,6 +42,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_frozen_desert
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "frozen_desert_planet_01_entity" } }
@@ -51,6 +54,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_steppe
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "steppe_planet_01_entity" } }
@@ -62,6 +66,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_hadesert
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "hadesert_planet_01_entity" } }
@@ -73,6 +78,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_antarctic
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "antarctic_planet_01_entity" } }
@@ -84,6 +90,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_sandsea
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "sandsea_planet_01_entity" } }
@@ -95,6 +102,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_subarctic
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "subarctic_planet_01_entity" } }
@@ -106,6 +114,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_geothermal
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "geothermal_planet_01_entity" } }
@@ -117,6 +126,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_cascadian
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "cascadian_planet_01_entity" } }
@@ -128,6 +138,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_swamp
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "swamp_planet_01_entity" } }
@@ -139,6 +150,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_mangrove
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "mangrove_planet_01_entity" } }
@@ -150,6 +162,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_desertislands
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "desertislands_planet_01_entity" } }
@@ -161,6 +174,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_mesa
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "mesa_planet_01_entity" } }
@@ -172,6 +186,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_oasis
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "oasis_planet_01_entity" } }
@@ -183,6 +198,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_hajungle
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "hajungle_planet_01_entity" } }
@@ -194,7 +210,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_methane
-					NOT = { has_planet_flag = planet_titan }
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "methane_planet_01_entity" } }
@@ -206,6 +222,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_ammonia
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "ammonia_planet_01_entity" } }
@@ -217,6 +234,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_hothouse
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "hothouse_planet_01_entity" } }
@@ -232,6 +250,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_alpine
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "alpine_planet_01_entity" } }
@@ -254,6 +273,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_arctic
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "arctic_planet_01_entity" } }
@@ -276,6 +296,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_arid
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "arid_planet_01_entity" } }
@@ -298,6 +319,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_continental
+					NOT = { has_planet_flag = pd_ignore }
 					solar_system = {
 						NOR = {
 							has_star_flag = sol_system
@@ -328,6 +350,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_desert
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "desert_planet_01_entity" } }
@@ -350,6 +373,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_desert
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "desert_planet_01_entity" } }
@@ -372,6 +396,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_ocean
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "ocean_planet_01_entity" } }
@@ -394,6 +419,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_tropical
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "tropical_planet_01_entity" } }
@@ -416,6 +442,7 @@ event = { # triggers after button press
 			if = {
 				limit = {
 					is_planet_class = pc_tundra
+					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
 					1 = { set_planet_entity = { entity = "tundra_planet_01_entity" } }
