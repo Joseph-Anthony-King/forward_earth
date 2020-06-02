@@ -16,29 +16,7 @@ Even though this is an human centric mod the scripts have been adjusted to be re
 
 This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the size of the galaxy.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction in order to prevent duplicate appearances of these factions.
 
-This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link). Below is a random sampling:
-
-- Alkaid
-- Athyr
-- Baobab
-- Ceti Alpha (of course)
-- Dagda
-- Dastamon
-- Dressel
-- Felis
-- Fentrul
-- HD 153095
-- HIP 418058
-- Hydra Centauri
-- Hydra Iota
-- Lambda Alpha
-- Lambda Nu
-- Matjar
-- Monea
-- Rayhadya
-- Sanopel
-- Stronad
-- Theta Upsilon
+This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link).
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [NSC2](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077).  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
 
