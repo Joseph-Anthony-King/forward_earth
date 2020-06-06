@@ -2458,6 +2458,8 @@ sol_neighbor_t3_trappist_1 = {
 		orbit_angle = 125
 		size = 14
 		has_ring = no
+		entity = "tidallylocked_planet_01_entity"
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1f
