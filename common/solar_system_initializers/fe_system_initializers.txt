@@ -2935,7 +2935,7 @@ sol_neighbor_t3_eridani = {
 		size = 20
 		has_ring = no
 		modifiers = none
-		flags = { epsilon_a_two }
+		flags = { epsilon_a_two pd_ignore }
 		
 		moon = {
 			name = "Eridani A IIa"

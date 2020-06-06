@@ -328,7 +328,7 @@ chiconaph_system_initializer = {
 		starting_planet = yes
 		has_ring = yes
 		modifiers = none
-		flags = { planet_chicora }
+		flags = { planet_chicora pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes

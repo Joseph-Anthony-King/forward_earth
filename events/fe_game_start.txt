@@ -997,7 +997,6 @@ event = {
             }
             change_pc = pc_desert
             set_planet_entity = { entity = "desert_planet_02_entity" }
-            set_planet_flag = { pd_ignore }
         }
 
         every_planet = {
@@ -1006,7 +1005,6 @@ event = {
 
             change_pc = pc_arid
             set_planet_entity = { entity = "arid_planet_03_entity" }
-            set_planet_flag = { pd_ignore }
         }
     }
 }
@@ -1054,7 +1052,6 @@ event = {
             }
             change_pc = pc_nuked
             set_planet_entity = { entity = "nuked_planet_earth_entity" }
-            set_planet_flag = { pd_ignore }
         }
     }
 }
@@ -1076,7 +1073,6 @@ event = {
             }
             change_pc = pc_nuked
             set_planet_entity = { entity = "nuked_planet_earth_entity" }
-            set_planet_flag = { pd_ignore }
         }
     }
 }
