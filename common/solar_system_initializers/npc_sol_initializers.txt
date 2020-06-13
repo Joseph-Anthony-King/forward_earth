@@ -865,7 +865,7 @@ npc_sol_system_initializer = {
 		orbit_angle = 60
 		size = 13
 		has_ring = no
-		entity = "barren_planet_mars_entity"
+		entity = "barren_planet_new_mars_entity"
 		anomaly = "terraforming_candidate_category"
 		flags = { pd_ignore planet_mars }
 		

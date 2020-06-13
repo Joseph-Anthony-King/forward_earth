@@ -426,7 +426,7 @@ special_init_03 = {
 		orbit_angle = 60
 		size = 13
 		has_ring = no
-		entity = "barren_planet_mars_entity"
+		entity = "barren_planet_new_mars_entity"
 		flags = { pd_ignore }
 		
 		init_effect = {
@@ -791,7 +791,7 @@ special_init_04 = {
 		orbit_angle = 60
 		size = 13
 		has_ring = no
-		entity = "barren_planet_mars_entity"
+		entity = "barren_planet_new_mars_entity"
 		flags = { pd_ignore }
 		
 		init_effect = {
