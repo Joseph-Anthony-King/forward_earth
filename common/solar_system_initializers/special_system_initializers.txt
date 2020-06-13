@@ -421,7 +421,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol IV"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
@@ -786,7 +786,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13

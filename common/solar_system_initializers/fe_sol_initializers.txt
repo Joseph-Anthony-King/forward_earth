@@ -115,7 +115,7 @@ sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
@@ -1372,13 +1372,13 @@ com_sol_system = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
-		flags = { pd_ignore }
+		flags = { pd_ignore planet_mars }
 		
 		init_effect = {
 			add_modifier = {
@@ -2093,13 +2093,13 @@ lost_colony_sol_system = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
-		flags = { pd_ignore }
+		flags = { pd_ignore planet_mars }
 		
 		init_effect = {
 			add_modifier = {

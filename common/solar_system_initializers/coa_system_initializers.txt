@@ -297,14 +297,14 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
 		has_ring = no
-		entity = "barren_planet_new_mars_entity"
+		entity = "barren_planet_mars_entity"
 		anomaly = "terraforming_candidate_category"
-		flags = { planet_mars }
+		flags = { pd_ignore planet_mars }
 		
 		moon = {
 			name = "NAME_Phobos"
