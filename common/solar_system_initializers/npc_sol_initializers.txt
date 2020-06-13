@@ -860,7 +860,7 @@ npc_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_desolate"
+		class = "pc_barren"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
@@ -1010,7 +1010,7 @@ npc_sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_methane"
+			class = "pc_cold_reducing"
 			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
