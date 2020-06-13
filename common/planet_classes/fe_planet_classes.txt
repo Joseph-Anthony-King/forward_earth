@@ -4,6 +4,7 @@ random_list = {
         "pc_molten"
         "pc_volcanic"
         "pc_radiated"
+        "pc_underground_rocky"
     }
 }
 
@@ -14,6 +15,9 @@ random_list = {
         "pc_toxic"
         "pc_primordial"
         "pc_waterworld"
+        "pc_irradiated_marginal"
+        "pc_marginal_warm"
+        "pc_hothouse"
     }
 }
 
@@ -29,6 +33,8 @@ random_list = {
         "pc_ethaneworld"
         "pc_methane"
         "pc_ammonia"
+        "pc_underground_icy"
+        "pc_marginal_cold"
     }
 }
 
@@ -39,6 +45,7 @@ random_list = {
         "pc_barren_cold"
         "pc_desolate"
 		"pc_frozen"
+        "pc_underground_icy"
     }
 }
 
@@ -50,5 +57,6 @@ random_list = {
         "pc_ethaneworld"
         "pc_methane"
         "pc_ammonia"
+        "pc_marginal_cold"
     }
 }
