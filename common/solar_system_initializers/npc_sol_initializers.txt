@@ -3262,7 +3262,7 @@ npc_sol_neighbor_t2_epsilon_eridani = {
 	}
 	
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 30
 		orbit_angle = 200
 		size = 20
@@ -3468,7 +3468,7 @@ npc_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	}
 	
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 30
 		orbit_angle = 200
 		size = 20
