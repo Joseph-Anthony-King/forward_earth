@@ -150,7 +150,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol II"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -510,7 +510,7 @@ special_init_03 = {
 		
 		moon = {
 			name = "Sol Va"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 6
 			orbit_distance = 10
 			orbit_angle = 110
@@ -586,7 +586,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol VII"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 21
@@ -618,7 +618,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol VIII"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = -195
 		size = 20
@@ -756,7 +756,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -867,7 +867,7 @@ special_init_04 = {
 		change_orbit = 6
 		
 		moon = {
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 6
 			orbit_distance = 10
 			orbit_angle = 110
@@ -935,7 +935,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 21
@@ -964,7 +964,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = -195
 		size = 20

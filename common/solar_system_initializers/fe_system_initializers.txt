@@ -55,7 +55,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -185,7 +185,7 @@ icarus_sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Io"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 6
 			orbit_distance = 10
 			orbit_angle = 110
@@ -261,7 +261,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Uranus"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 30
 		orbit_angle = 125
 		size = 21
@@ -293,7 +293,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Neptune"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = -195
 		size = 20
@@ -559,7 +559,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		
 		planet = {
 			name = "NAME_Hyperion"
-			class = "pc_gas_giant"
+			class = "pc_ice_giant"
 			orbit_distance = 40
 			orbit_angle = 0
 			size = 25
@@ -797,7 +797,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 		}
 		
 		planet = {
-			class = "pc_gas_giant"
+			class = "pc_ice_giant"
 			orbit_distance = 40
 			orbit_angle = 0
 			size = 25
@@ -955,7 +955,7 @@ sol_neighbor_t2_tau_ceti = {
 	
 	planet = {
 		name = "Tau Ceti II"
-		class = "pc_molten"
+		class = "pc_volcanic"
 		orbit_distance = 10
 		orbit_angle = 40
 		size = 18
@@ -1438,7 +1438,7 @@ virgin_sol_neighbor_t2_tau_ceti = {
 	
 	planet = {
 		name = "Tau Ceti II"
-		class = "pc_molten"
+		class = "pc_volcanic"
 		orbit_distance = 10
 		orbit_angle = 40
 		size = 18
@@ -2282,8 +2282,8 @@ sol_neighbor_t3_Luytens_star = {
 	}
 	
 	planet = {
-		name = "Luyten's Star II"
-		class = "pc_molten"
+		name = "Luyten's Star I"
+		class = "pc_radiated"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 7
@@ -2292,7 +2292,7 @@ sol_neighbor_t3_Luytens_star = {
 	
 	planet = {
 		name = "Luyten's Star II"
-		class = "pc_toxic"
+		class = "pc_cold_reducing"
 		orbit_distance = 30
 		orbit_angle = 170
 		size = 19
@@ -2300,12 +2300,11 @@ sol_neighbor_t3_Luytens_star = {
 			
 		moon = {
 			name = "Luyten's Star II A"
-			class = "pc_barren"
+			class = "pc_barren_cold"
 			size = 5
 			orbit_distance = 16
 			orbit_angle = 100
 			has_ring = no
-			flags = { planet_notus }
 		}
 	}
 
@@ -2443,7 +2442,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1d
 	planet = {
 		name = "Trappist-1 d"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
@@ -2465,7 +2464,7 @@ sol_neighbor_t3_trappist_1 = {
 	# Trappist-1f
 	planet = {
 		name = "Trappist-1 f"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
@@ -2610,13 +2609,11 @@ sol_neighbor_t3_ophiuchi = {
 	
 	planet = {
 		name = "Ophiuchi A I"
-		class = "pc_molten"
+		class = "pc_volcanic"
 		orbit_distance = 40
 		orbit_angle = 90
 		size = 22
 		has_ring = no
-    	entity = "molten_planet_02_entity"
-		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -2920,7 +2917,7 @@ sol_neighbor_t3_eridani = {
 	
 	planet = {
 		name = "Eridani A I"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 30
 		orbit_angle = 60
 		size = 8
@@ -3046,7 +3043,7 @@ sol_neighbor_t3_eridani = {
 	
 	planet = {
 		name = "Eridani A VII"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 30
 		orbit_angle = 200
 		size = 20

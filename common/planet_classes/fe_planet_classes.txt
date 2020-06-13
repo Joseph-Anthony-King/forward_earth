@@ -1,0 +1,54 @@
+random_list = {
+    name = "fe_hot_no_atmosphere_planets"
+    planets = {
+        "pc_molten"
+        "pc_volcanic"
+        "pc_radiated"
+    }
+}
+
+random_list = {
+    name = "fe_hot_atmosphere_planets"
+    planets = {
+        "pc_hot_reducing"
+        "pc_toxic"
+        "pc_primordial"
+        "pc_waterworld"
+    }
+}
+
+random_list = {
+    name = "fe_cold_planets"
+    planets = {
+        "pc_barren"
+        "pc_barren_cold"
+        "pc_desolate"
+		"pc_frozen"
+        "pc_cold_reducing"
+        "pc_toxic"
+        "pc_ethaneworld"
+        "pc_methane"
+        "pc_ammonia"
+    }
+}
+
+random_list = {
+    name = "fe_cold_no_atmosphere_planets"
+    planets = {
+        "pc_barren"
+        "pc_barren_cold"
+        "pc_desolate"
+		"pc_frozen"
+    }
+}
+
+random_list = {
+    name = "fe_cold_atmosphere_planets"
+    planets = {
+        "pc_cold_reducing"
+        "pc_toxic"
+        "pc_ethaneworld"
+        "pc_methane"
+        "pc_ammonia"
+    }
+}

@@ -16,7 +16,7 @@ fe_type_one_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -24,7 +24,7 @@ fe_type_one_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -84,7 +84,7 @@ fe_type_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -100,15 +100,31 @@ fe_type_one_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -134,7 +150,7 @@ fe_type_two_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -142,7 +158,7 @@ fe_type_two_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -202,7 +218,7 @@ fe_type_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -218,15 +234,31 @@ fe_type_two_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -252,7 +284,7 @@ fe_type_three_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -260,7 +292,7 @@ fe_type_three_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -320,7 +352,7 @@ fe_type_three_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -336,15 +368,31 @@ fe_type_three_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -370,7 +418,7 @@ fe_type_four_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -378,7 +426,7 @@ fe_type_four_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -438,7 +486,7 @@ fe_type_four_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -454,15 +502,31 @@ fe_type_four_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -488,7 +552,7 @@ fe_type_five_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -496,7 +560,7 @@ fe_type_five_binary_planet_system_initializer = {
     planet = {
         count = { min = 0 max = 1 }
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -555,7 +619,7 @@ fe_type_five_binary_planet_system_initializer = {
 	}
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -563,6 +627,23 @@ fe_type_five_binary_planet_system_initializer = {
         has_ring = yes
 
 		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 12 max = 18 }
 			size = { min = 1 max = 16 }
@@ -571,14 +652,14 @@ fe_type_five_binary_planet_system_initializer = {
 
     planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -604,7 +685,7 @@ fe_six_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -671,7 +752,7 @@ fe_six_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -687,15 +768,31 @@ fe_six_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -763,7 +860,7 @@ fe_seven_binary_planet_system_initializer = {
 		}
     
         planet = {
-            class = pc_toxic
+            class = fe_hot_atmosphere_planets
             orbit_distance = 10
             orbit_angle = -90
             size = { min = 17 max = 20 }
@@ -772,7 +869,7 @@ fe_seven_binary_planet_system_initializer = {
         }
 
         planet = {
-            class = pc_toxic
+            class = fe_hot_atmosphere_planets
             orbit_distance = 0
             orbit_angle = 180
             size = { min = 12 max = 16 }
@@ -782,7 +879,7 @@ fe_seven_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -798,15 +895,31 @@ fe_seven_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -874,7 +987,7 @@ fe_eight_binary_planet_system_initializer = {
 		}
     
         planet = {
-            class = pc_barren
+            class = fe_cold_planets
             orbit_distance = 10
             orbit_angle = -90
             size = { min = 17 max = 20 }
@@ -890,7 +1003,7 @@ fe_eight_binary_planet_system_initializer = {
         }
 
         planet = {
-            class = pc_barren
+            class = fe_cold_planets
             orbit_distance = 0
             orbit_angle = 180
             size = { min = 12 max = 16 }
@@ -907,8 +1020,24 @@ fe_eight_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
         size = { min = 21 max = 26 }
@@ -983,7 +1112,7 @@ fe_nine_binary_planet_system_initializer = {
 		}
     
         planet = {
-            class = pc_toxic
+            class = fe_hot_atmosphere_planets
             orbit_distance = 10
             orbit_angle = -90
             size = { min = 17 max = 20 }
@@ -992,7 +1121,7 @@ fe_nine_binary_planet_system_initializer = {
         }
 
         planet = {
-            class = pc_barren
+            class = fe_cold_planets
             orbit_distance = 0
             orbit_angle = 180
             size = { min = 12 max = 14 }
@@ -1009,8 +1138,24 @@ fe_nine_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
         size = { min = 21 max = 26 }
@@ -1162,7 +1307,7 @@ fe_eleven_binary_planet_system_initializer = {
         has_ring = no
 
         moon = {
-            class = pc_molten
+            class = fe_hot_no_atmosphere_planets
             count = { min = 0 max = 1 }
             orbit_distance = { min = 12 max = 15 }
             size = { min = 1 max = 16 }
@@ -1368,7 +1513,7 @@ fe_thirteen_planet_system_initializer = {
         has_ring = no
 
         moon = {
-            class = pc_molten
+            class = fe_hot_no_atmosphere_planets
             count = { min = 0 max = 1 }
             orbit_distance = { min = 12 max = 15 }
             size = { min = 1 max = 16 }
@@ -1465,7 +1610,7 @@ fe_fourteen_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1473,7 +1618,7 @@ fe_fourteen_binary_planet_system_initializer = {
     planet = {
 		count = { min = 1 max = 2 }
 		orbit_distance = { min = 20 max = 30 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1524,7 +1669,7 @@ fe_fourteen_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -1540,15 +1685,31 @@ fe_fourteen_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 8 }
@@ -1584,7 +1745,7 @@ fe_fifteen_binary_planet_system_initializer = {
 
     planet = {
         count = 1
-        class = pc_molten
+        class = fe_hot_no_atmosphere_planets
         orbit_distance = 30
         orbit_angle = { min = 90 max = 270 }
         size = { min = 26 max = 30 }
@@ -1603,7 +1764,7 @@ fe_fifteen_binary_planet_system_initializer = {
 		}
     
         planet = {
-            class = pc_molten
+            class = fe_hot_no_atmosphere_planets
             orbit_distance = 10
             orbit_angle = -90
             size = { min = 12 max = 15 }
@@ -1612,7 +1773,7 @@ fe_fifteen_binary_planet_system_initializer = {
         }
 
         planet = {
-            class = pc_molten
+            class = fe_hot_no_atmosphere_planets
             orbit_distance = 0
             orbit_angle = 180
             size = { min = 10 max = 12 }
@@ -1623,7 +1784,7 @@ fe_fifteen_binary_planet_system_initializer = {
 
     planet = {
         count = 1
-        class = pc_barren
+        class = fe_cold_planets
         orbit_distance = 30
         orbit_angle = { min = 90 max = 270 }
         size = { min = 26 max = 30 }
@@ -1633,7 +1794,7 @@ fe_fifteen_binary_planet_system_initializer = {
     planet = {
         count = { min = 0 max = 1 }
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1641,7 +1802,7 @@ fe_fifteen_binary_planet_system_initializer = {
     planet = {
         count = { min = 0 max = 2 }
 		orbit_distance = 25
-		class = pc_barren
+		class = fe_cold_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1663,7 +1824,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1671,7 +1832,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1728,7 +1889,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -1744,15 +1905,31 @@ fe_random_empire_one_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -1776,7 +1953,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1784,7 +1961,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1849,7 +2026,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -1865,15 +2042,31 @@ fe_random_empire_two_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -1903,7 +2096,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -1911,7 +2104,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -2003,7 +2196,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -2019,15 +2212,31 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }
@@ -2057,7 +2266,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
 
     planet = {
 		orbit_distance = 25
-		class = pc_molten
+		class = fe_hot_no_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -2065,7 +2274,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
     planet = {
 		count = { min = 0 max = 1 }
 		orbit_distance = { min = 10 max = 20 }
-		class = pc_toxic
+		class = fe_hot_atmosphere_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
@@ -2165,7 +2374,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = { min = 1 max = 3 }
+        count = 1
         class = pc_gas_giant
         orbit_distance = 40
         orbit_angle = { min = 90 max = 270 }
@@ -2181,15 +2390,31 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
     }
 
     planet = {
+        count = { min = 0 max = 2 }
+        class = pc_ice_giant
+        orbit_distance = 40
+        orbit_angle = { min = 90 max = 270 }
+        size = { min = 21 max = 26 }
+        has_ring = yes
+
+		moon = {
+            class = random_non_colonizable
+			count = { min = 0 max = 2 }
+			orbit_distance = { min = 12 max = 18 }
+			size = { min = 1 max = 16 }
+		}
+    }
+
+    planet = {
 		count = { min = 0 max = 1 }
-        class = pc_frozen
+        class = fe_cold_planets
 		orbit_distance = { min = 10 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
         size = { min = 8 max = 20 }
         has_ring = yes
 
 		moon = {
-            class = pc_frozen
+            class = fe_cold_no_atmosphere_planets
 			count = { min = 0 max = 2 }
 			orbit_distance = { min = 10 max = 12 }
 			size = { min = 1 max = 7 }

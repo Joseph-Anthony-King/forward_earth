@@ -75,7 +75,7 @@ sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -204,7 +204,7 @@ sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Io"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 6
 			orbit_distance = 10
 			orbit_angle = 110
@@ -280,7 +280,7 @@ sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Uranus"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 21
@@ -312,7 +312,7 @@ sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Neptune"
-		class = "pc_gas_giant"
+		class = "pc_ice_giant"
 		orbit_distance = 25
 		orbit_angle = -195
 		size = 20
@@ -432,7 +432,7 @@ sol_neighbor_t1_first_colony = {
 
     	planet = {
     		name = "Alpha Centauri B I"
-    		class = "pc_molten"
+    		class = "pc_volcanic"
     		orbit_distance = 25
     		orbit_angle = 125
     		size = 16
@@ -512,7 +512,7 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "Alpha Centauri A I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 40
 			orbit_angle = 90
 			size = 15
@@ -521,7 +521,7 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "Alpha Centauri A II"
-			class = "pc_hothouse"
+			class = "pc_hot_reducing"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 15
@@ -619,7 +619,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
     	planet = {
     		name = "Alpha Centauri B I"
-    		class = "pc_molten"
+    		class = "pc_volcanic"
     		orbit_distance = 25
     		orbit_angle = 125
     		size = 16
@@ -630,7 +630,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			name = "Alpha Centauri B II"
 			orbit_distance = 25
 			orbit_angle = 120
-			class = "pc_hothouse"
+			class = "pc_hot_reducing"
 			size = 16
 			has_ring = no
 		
@@ -704,7 +704,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "Alpha Centauri A I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 40
 			orbit_angle = 90
 			size = 15
@@ -713,7 +713,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "Alpha Centauri A II"
-			class = "pc_hothouse"
+			class = "pc_hot_reducing"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 15
@@ -925,7 +925,7 @@ sol_neighbor_t1_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1032,7 +1032,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1098,7 +1098,7 @@ sol_neighbor_t1_2 = {
 	
 	planet = {
 		name = "Procyon A II"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 20
 		orbit_angle = 60
 		size = 25
@@ -1116,7 +1116,7 @@ sol_neighbor_t1_2 = {
 	
 	planet = {
 		name = "Procyon A III"
-		class = "pc_toxic"
+		class = "pc_primordial"
 		orbit_distance = 20
 		orbit_angle = 180
 		size = 14
@@ -1184,15 +1184,15 @@ sol_neighbor_t1_2 = {
 
 		planet = {
 			name = "Procyon B I"
-			class = pc_gas_giant
+			class = pc_hot_giant
 			orbit_distance = 40
 			orbit_angle = 5
-			size = 26
+			size = 20
 			has_ring = no
 
 			moon = {
 				name = "Procyon B Ia"
-				class = pc_molten
+				class = pc_volcanic
 				orbit_distance = 16
 				orbit_angle = 340
 				size = 8

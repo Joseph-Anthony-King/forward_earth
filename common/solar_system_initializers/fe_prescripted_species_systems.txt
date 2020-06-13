@@ -180,7 +180,7 @@ eta_cassiopeiae_system_initializer = {
 		
 		planet = {
 			name = "NAME_Hyperion"
-			class = "pc_gas_giant"
+			class = "pc_ice_giant"
 			orbit_distance = 40
 			orbit_angle = 0
 			size = 25
@@ -303,7 +303,7 @@ chiconaph_system_initializer = {
 	
 	planet = {
 		name = "Daggibah"
-		class = "pc_gas_giant"
+		class = "pc_hot_giant"
 		orbit_distance = 60
 		orbit_angle = 45
 		size = 22
@@ -311,7 +311,7 @@ chiconaph_system_initializer = {
 
 		moon = {
 			name = "Oniphat"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 126
@@ -346,7 +346,7 @@ chiconaph_system_initializer = {
 
 	planet = {
 		name = "Aniphobah"
-		class = "pc_toxic"
+		class = "pc_hot_reducing"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 16
@@ -522,7 +522,7 @@ scyldari_system_initializer = {
 	
 	planet = {
 		name = "Gildern's Garnet"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 10
 		orbit_angle = 120
 		size = 15
@@ -641,7 +641,7 @@ scyldari_system_initializer = {
 	planet = {
 		name = "Ultan"
 		class = "pc_frozen"
-		orbit_distance = 10
+		orbit_distance = 20
 		orbit_angle = 160
 		size = 16
 		has_ring = yes
@@ -769,7 +769,7 @@ dal_lokkur_system_initializer = {
 	
 	planet = {
 		name = "Ficash"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 20
 		orbit_angle = 130
 		size = 13
@@ -921,7 +921,7 @@ kel_azak_system_initializer = {
 		
 		moon = {
             name = "Mox Tymcrix"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 5
 			orbit_distance = 18
 			orbit_angle = 100
@@ -1070,7 +1070,7 @@ npc_scyldari_system_initializer = {
 	
 	planet = {
 		name = "Gildern's Garnet"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 10
 		orbit_angle = 120
 		size = 15
@@ -1313,7 +1313,7 @@ npc_scyldari_system_initializer = {
 	planet = {
 		name = "Ultan"
 		class = "pc_frozen"
-		orbit_distance = 10
+		orbit_distance = 20
 		orbit_angle = 160
 		size = 16
 		has_ring = yes
@@ -1584,7 +1584,7 @@ npc_dal_lokkur_system_initializer = {
 	
 	planet = {
 		name = "Ficash"
-		class = "pc_hothouse"
+		class = "pc_hot_reducing"
 		orbit_distance = 20
 		orbit_angle = 130
 		size = 13
@@ -1736,7 +1736,7 @@ npc_kel_azak_system_initializer = {
 		
 		moon = {
             name = "Mox Tymcrix"
-			class = "pc_molten"
+			class = "pc_volcanic"
 			size = 5
 			orbit_distance = 18
 			orbit_angle = 100
