@@ -2785,7 +2785,7 @@ coa_neighbor_t3_Luytens_star = {
 	}
 	
 	planet = {
-		name = "Luyten's Star II"
+		name = "Luyten's Star I"
 		class = "pc_molten"
 		orbit_distance = 25
 		orbit_angle = 60
