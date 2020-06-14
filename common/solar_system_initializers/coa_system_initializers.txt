@@ -695,7 +695,7 @@ coa_sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "Alpha Centauri A II"
-			class = "pc_hot_reducing"
+			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 15
@@ -888,7 +888,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "Alpha Centauri A II"
-			class = "pc_hot_reducing"
+			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 15
