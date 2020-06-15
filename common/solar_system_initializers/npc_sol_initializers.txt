@@ -2174,7 +2174,7 @@ npc_eta_cassiopeiae_system_initializer = {
 			orbit_angle = 180
 			size = 8
 			has_ring = no
-			flags = { planet_jackson_s_planet }
+			flags = { planet_jackson_s_planet pd_ignore }
 		}
 		planet = {
 			name = "NAME_Olympus"
