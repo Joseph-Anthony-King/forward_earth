@@ -185,7 +185,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_angle = 0
 			size = 25
 			has_ring = yes
-			entity = "gas_giant_07_entity"
+			entity = "ice_giant_02_entity"
 			flags = { planet_hyperion pd_ignore }
 			
 			moon = {
