@@ -475,7 +475,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 				has_ring = no
 				modifiers = none
 				entity = "continental_planet_01_entity"
-				flags = { planet_aurora coa_home }
+				flags = { planet_aurora coa_home pd_ignore }
 				
 				init_effect = {
 					prevent_anomaly = yes
