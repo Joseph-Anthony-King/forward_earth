@@ -1840,6 +1840,7 @@ sol_neighbor_t2_epsilon_eridani = {
 		size = 16
 		has_ring = no
 		modifiers = none
+		flags = { pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -1852,6 +1853,7 @@ sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 15
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2050,6 +2052,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 120
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2058,6 +2061,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 15
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
