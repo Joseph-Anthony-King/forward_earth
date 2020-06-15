@@ -60,3 +60,23 @@ random_list = {
         "pc_marginal_cold"
     }
 }
+
+random_list = {
+    name = "fe_blackhole_hot_planets"
+    planets = {
+        "pc_molten"
+        "pc_volcanic"
+        "pc_broken"
+    }
+}
+
+random_list = {
+    name = "fe_blackhole_cold_planets"
+    planets = {
+        "pc_barren"
+        "pc_barren_cold"
+        "pc_desolate"
+		"pc_frozen"
+        "pc_underground_icy"
+    }
+}

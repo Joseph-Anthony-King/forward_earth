@@ -1717,7 +1717,7 @@ fe_fifteen_binary_planet_system_initializer = {
 
     planet = {
         count = 1
-        class = fe_hot_no_atmosphere_planets
+        class = fe_blackhole_hot_planets
         orbit_distance = 30
         orbit_angle = { min = 90 max = 270 }
         size = { min = 26 max = 30 }
@@ -1736,7 +1736,7 @@ fe_fifteen_binary_planet_system_initializer = {
 		}
     
         planet = {
-            class = fe_hot_no_atmosphere_planets
+            class = fe_blackhole_hot_planets
             orbit_distance = 10
             orbit_angle = -90
             size = { min = 12 max = 15 }
@@ -1745,7 +1745,7 @@ fe_fifteen_binary_planet_system_initializer = {
         }
 
         planet = {
-            class = fe_hot_no_atmosphere_planets
+            class = fe_blackhole_hot_planets
             orbit_distance = 0
             orbit_angle = 180
             size = { min = 10 max = 12 }
@@ -1755,26 +1755,9 @@ fe_fifteen_binary_planet_system_initializer = {
     }
 
     planet = {
-        count = 1
-        class = fe_cold_planets
-        orbit_distance = 30
-        orbit_angle = { min = 90 max = 270 }
-        size = { min = 26 max = 30 }
-        has_ring = no
-    }
-
-    planet = {
-        count = { min = 0 max = 1 }
+        count = { min = 0 max = 4 }
 		orbit_distance = 25
 		class = fe_hot_no_atmosphere_planets
-        size = { min = 5 max = 20 }
-		orbit_angle = { min = 90 max = 270 }
-	}
-
-    planet = {
-        count = { min = 0 max = 2 }
-		orbit_distance = 25
-		class = fe_cold_planets
         size = { min = 5 max = 20 }
 		orbit_angle = { min = 90 max = 270 }
 	}
