@@ -94,7 +94,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
@@ -2479,6 +2479,7 @@ sol_neighbor_t3_trappist_1 = {
 		orbit_angle = -130
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1h
@@ -2894,7 +2895,7 @@ sol_neighbor_t3_eridani = {
 		radius = 150
 	}
 	
-	flags = { eridani_system }
+	flags = { empire_home_system eridani_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -4621,7 +4622,7 @@ trantor_initializer = {
 		orbit_angle = 85
 		size = 24
 		has_ring = no
-		flags = { pd_ignore }
+		flags = { pd_ignore planet_trantor}
 		
 		moon = {
 			class = "pc_barren"
@@ -4737,7 +4738,7 @@ terminus_initializer = {
 		orbit_angle = 85
 		size = 16
 		has_ring = yes
-		flags = { pd_ignore }
+		flags = { pd_ignore planet_terminus }
 	}
 	
 	planet = {

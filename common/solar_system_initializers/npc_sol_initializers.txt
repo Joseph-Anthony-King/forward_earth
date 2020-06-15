@@ -860,7 +860,7 @@ npc_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mars"
-		class = "pc_barren"
+		class = "pc_desolate"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
@@ -3727,6 +3727,7 @@ npc_sol_neighbor_t3_trappist_1 = {
 		orbit_angle = -130
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1h
@@ -3952,7 +3953,7 @@ npc_sol_neighbor_t3_eridani = {
 		radius = 150
 	}
 	
-	flags = { eridani_system }
+	flags = { empire_home_system eridani_system }
 
 	init_effect = {
 		every_neighbor_system = {
