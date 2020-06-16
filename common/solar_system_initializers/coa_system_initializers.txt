@@ -1097,7 +1097,7 @@ coa_sol_neighbor_t1_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1204,7 +1204,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -3664,6 +3664,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 90
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {

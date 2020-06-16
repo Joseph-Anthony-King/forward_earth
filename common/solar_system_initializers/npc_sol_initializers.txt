@@ -1685,7 +1685,7 @@ npc_sol_neighbor_t1_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1792,7 +1792,7 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
