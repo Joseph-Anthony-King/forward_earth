@@ -64,7 +64,7 @@ sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Mercury"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10

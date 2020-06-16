@@ -139,7 +139,7 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol I"
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
@@ -746,7 +746,7 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_molten"
+		class = "pc_radiated"
 		orbit_distance = 40
 		orbit_angle = 15
 		size = 10
