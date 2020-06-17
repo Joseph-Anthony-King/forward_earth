@@ -222,7 +222,7 @@ Kepler-11_system_initializer = {
     }
     planet = {
         name = "Kepler-11 b"
-        size = 18
+        size = 22
         orbit_distance = 15
         orbit_angle = 122
         has_ring = no

@@ -50,6 +50,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -60,7 +61,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { realsol_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 	
 	planet = {
@@ -73,7 +74,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none
-		flags = { planet_earth }
+		flags = { planet_earth pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -291,7 +292,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "realsol_new_moon_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -314,7 +315,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "phobos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
@@ -325,7 +326,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "deimos_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -337,6 +338,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		size = 5
 		entity = "ceres_entity"
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -375,6 +377,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Io"
@@ -384,6 +387,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -393,6 +397,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -402,6 +407,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -411,6 +417,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -423,6 +430,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Rhea"
@@ -432,6 +440,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -442,7 +451,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 	
@@ -454,6 +463,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		size = 21
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -463,6 +473,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -472,6 +483,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -484,6 +496,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "NAME_Triton"
@@ -493,6 +506,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 			orbit_angle = 115
 			entity = "triton_entity"
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -504,6 +518,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -611,6 +626,7 @@ coa_sol_neighbor_t1_first_colony = {
     		orbit_angle = 125
     		size = 16
     		has_ring = no
+			flags = { pd_ignore }
     	}
 
     	planet = {
@@ -622,12 +638,14 @@ coa_sol_neighbor_t1_first_colony = {
     		has_ring = no
     		entity = "continental_planet_01_entity"
 			flags = { pd_ignore }
+
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_barren_cold"
     			size = 1
     			orbit_distance = 7
     			has_ring = no
+				flags = { pd_ignore }
     		}
 
     		moon = {
@@ -636,6 +654,7 @@ coa_sol_neighbor_t1_first_colony = {
     			size = 2
     			orbit_distance = 4
     			has_ring = no
+				flags = { pd_ignore }
     		}
     	}
 
@@ -691,6 +710,7 @@ coa_sol_neighbor_t1_first_colony = {
 			orbit_angle = 90
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -700,6 +720,7 @@ coa_sol_neighbor_t1_first_colony = {
 			orbit_angle = 270
 			size = 15
 			has_ring = yes
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -727,6 +748,7 @@ coa_sol_neighbor_t1_first_colony = {
 			orbit_angle = 268
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -736,6 +758,7 @@ coa_sol_neighbor_t1_first_colony = {
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -745,6 +768,7 @@ coa_sol_neighbor_t1_first_colony = {
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -799,6 +823,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
     		orbit_angle = 125
     		size = 16
     		has_ring = no
+			flags = { pd_ignore }
     	}
 
 		planet = {
@@ -808,6 +833,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			class = "pc_hot_reducing"
 			size = 16
 			has_ring = no
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -821,6 +847,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 				size = 1
 				orbit_distance = 7
 				has_ring = no
+				flags = { pd_ignore }
 			}
 
 			moon = {
@@ -829,6 +856,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 				size = 2
 				orbit_distance = 4
 				has_ring = no
+				flags = { pd_ignore }
 			}
 		}
 
@@ -884,6 +912,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 90
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -893,6 +922,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 270
 			size = 15
 			has_ring = yes
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -920,6 +950,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 268
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -929,6 +960,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -938,6 +970,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -989,6 +1022,7 @@ coa_sol_neighbor_t1 = {
 		orbit_angle = 125
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -997,6 +1031,7 @@ coa_sol_neighbor_t1 = {
 		orbit_angle = 40
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -1005,6 +1040,7 @@ coa_sol_neighbor_t1 = {
 		orbit_angle = 95
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	neighbor_system = {
@@ -1055,6 +1091,7 @@ coa_sol_neighbor_t1_second_colony = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1074,6 +1111,7 @@ coa_sol_neighbor_t1_second_colony = {
 			orbit_distance = 4
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1084,6 +1122,7 @@ coa_sol_neighbor_t1_second_colony = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -1094,6 +1133,7 @@ coa_sol_neighbor_t1_second_colony = {
 		orbit_angle = 75
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	
 		planet = {
 			name = "Cygni B I"
@@ -1102,6 +1142,7 @@ coa_sol_neighbor_t1_second_colony = {
 			orbit_angle = 180
 			size = 10
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1111,6 +1152,7 @@ coa_sol_neighbor_t1_second_colony = {
 			orbit_angle = 175
 			size = 12
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1120,6 +1162,7 @@ coa_sol_neighbor_t1_second_colony = {
 			orbit_angle = 15
 			size = 17
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 }
@@ -1155,6 +1198,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1181,6 +1225,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_distance = 4
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1191,6 +1236,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -1201,6 +1247,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 75
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	
 		planet = {
 			name = "Cygni B I"
@@ -1209,6 +1256,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 180
 			size = 10
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1218,6 +1266,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 175
 			size = 12
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1227,6 +1276,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 15
 			size = 17
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 }
@@ -1257,6 +1307,7 @@ coa_sol_neighbor_t1_2 = {
 		orbit_angle = 1
 		size = 35
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1266,6 +1317,7 @@ coa_sol_neighbor_t1_2 = {
 		orbit_angle = 15
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1275,6 +1327,7 @@ coa_sol_neighbor_t1_2 = {
 		orbit_angle = 60
 		size = 25
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Procyon A IIa"
@@ -1283,6 +1336,7 @@ coa_sol_neighbor_t1_2 = {
 			orbit_distance = 10
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1293,6 +1347,7 @@ coa_sol_neighbor_t1_2 = {
 		orbit_angle = 180
 		size = 14
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Procyon A IIIa"
@@ -1301,6 +1356,7 @@ coa_sol_neighbor_t1_2 = {
 			orbit_distance = 8
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -1310,6 +1366,7 @@ coa_sol_neighbor_t1_2 = {
 			orbit_distance = 3
 			orbit_angle = 90
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1361,6 +1418,7 @@ coa_sol_neighbor_t1_2 = {
 			orbit_angle = 5
 			size = 20
 			has_ring = no
+			flags = { pd_ignore }
 
 			moon = {
 				name = "Procyon B Ia"
@@ -1370,6 +1428,7 @@ coa_sol_neighbor_t1_2 = {
 				size = 8
 				has_ring = no
 				modifiers = none
+				flags = { pd_ignore }
 			}
 		}
 	}
@@ -1396,6 +1455,7 @@ coa_sol_neighbor_t2_wolf_359 = {
 		orbit_angle = 60
 		size = 7
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1405,6 +1465,7 @@ coa_sol_neighbor_t2_wolf_359 = {
 		orbit_angle = 170
 		size = 5
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	neighbor_system = {
@@ -1458,6 +1519,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 30
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1467,6 +1529,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 40
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1489,7 +1552,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 40
 		orbit_angle = 60
 		size = 0
-        flags = { planetary_barrycenter }
+        flags = { planetary_barrycenter pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -1643,6 +1706,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 125
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti Va"
@@ -1651,6 +1715,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Tau Ceti Vb"
@@ -1659,6 +1724,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1669,6 +1735,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 90
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIa"
@@ -1677,6 +1744,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Tau Ceti VIb"
@@ -1685,6 +1753,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1766,6 +1835,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 30
 		orbit_angle = 60
 		size = 25
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIIa"
@@ -1774,6 +1844,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 125
 			has_ring = no
+			flags = { pd_ignore }
 		}	
 	}
 
@@ -1783,6 +1854,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 40
 		orbit_angle = 60
 		size = 23
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIIIa"
@@ -1791,6 +1863,7 @@ coa_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 125
 			has_ring = no
+			flags = { pd_ignore }
 		}	
 	}
 	
@@ -1944,6 +2017,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 30
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1953,6 +2027,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 40
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1975,7 +2050,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 40
 		orbit_angle = 60
 		size = 0
-        flags = { planetary_barrycenter }
+        flags = { planetary_barrycenter pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2051,6 +2126,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 125
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti Va"
@@ -2059,6 +2135,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Tau Ceti Vb"
@@ -2067,6 +2144,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2077,6 +2155,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_angle = 90
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIa"
@@ -2085,6 +2164,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Tau Ceti VIb"
@@ -2093,6 +2173,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2174,6 +2255,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 30
 		orbit_angle = 60
 		size = 25
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIIa"
@@ -2182,6 +2264,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 125
 			has_ring = no
+			flags = { pd_ignore }
 		}	
 	}
 
@@ -2191,6 +2274,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 		orbit_distance = 40
 		orbit_angle = 60
 		size = 23
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Tau Ceti VIIIa"
@@ -2199,6 +2283,7 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 			orbit_distance = 12
 			orbit_angle = 125
 			has_ring = no
+			flags = { pd_ignore }
 		}	
 	}
 	
@@ -2345,6 +2430,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2400,6 +2486,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 200
 		size = 40
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_toxic"
@@ -2407,6 +2494,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 			orbit_distance = 25
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2416,6 +2504,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 200
 		size = 25
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren_cold"
@@ -2423,6 +2512,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2431,6 +2521,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 			orbit_distance = 5
 			orbit_angle = 130
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2440,6 +2531,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 200
 		size = 20
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2447,6 +2539,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2504,6 +2597,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 		orbit_angle = 15
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2511,6 +2605,7 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2558,6 +2653,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2608,6 +2704,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 200
 		size = 40
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_toxic"
@@ -2615,6 +2712,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 			orbit_distance = 25
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2624,6 +2722,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 200
 		size = 25
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren_cold"
@@ -2631,6 +2730,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2639,6 +2739,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 			orbit_distance = 5
 			orbit_angle = 130
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2648,6 +2749,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 200
 		size = 20
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2655,6 +2757,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2712,6 +2815,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		orbit_angle = 15
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2719,6 +2823,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2759,6 +2864,7 @@ coa_sol_neighbor_t2_sirius = {
 		orbit_angle = 15
 		size = 8
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2768,6 +2874,7 @@ coa_sol_neighbor_t2_sirius = {
 		orbit_angle = 170
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2777,6 +2884,7 @@ coa_sol_neighbor_t2_sirius = {
 		orbit_angle = 120
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -2786,6 +2894,7 @@ coa_sol_neighbor_t2_sirius = {
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	neighbor_system = {
@@ -2815,6 +2924,7 @@ coa_neighbor_t3_Luytens_star = {
 		orbit_angle = 60
 		size = 7
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2824,6 +2934,7 @@ coa_neighbor_t3_Luytens_star = {
 		orbit_angle = 170
 		size = 19
 		has_ring = yes
+		flags = { pd_ignore }
 			
 		moon = {
 			name = "Luyten's Star II A"
@@ -2832,6 +2943,7 @@ coa_neighbor_t3_Luytens_star = {
 			orbit_distance = 16
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -2954,6 +3066,7 @@ coa_neighbor_t3_trappist_1 = {
 		orbit_angle = 15
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	# Trappist-1c
@@ -2964,6 +3077,7 @@ coa_neighbor_t3_trappist_1 = {
 		orbit_angle = 85
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1d
@@ -2974,6 +3088,7 @@ coa_neighbor_t3_trappist_1 = {
 		orbit_angle = 110
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1e
@@ -2996,6 +3111,7 @@ coa_neighbor_t3_trappist_1 = {
 		orbit_angle = 65
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1g
@@ -3017,6 +3133,7 @@ coa_neighbor_t3_trappist_1 = {
 		orbit_angle = 245
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Small and Tiny Scyldari System Initializers
@@ -3142,6 +3259,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		orbit_angle = 90
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -3157,6 +3275,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			orbit_distance = 8
 			orbit_angle = 60
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -3166,6 +3285,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 			orbit_distance = 8
 			orbit_angle = 60
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3217,6 +3337,7 @@ coa_sol_neighbor_t3_ophiuchi = {
 		orbit_angle = 335
 		size = 21
 		has_ring = no
+		flags = { pd_ignore }
 	
 		planet = {
 			name = "Ophiuchi B I"
@@ -3450,6 +3571,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 60
 		size = 8
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -3469,6 +3591,7 @@ coa_sol_neighbor_t3_eridani = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3490,6 +3613,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -3531,6 +3655,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 170
 		size = 40
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Eridani A Va"
@@ -3539,6 +3664,7 @@ coa_sol_neighbor_t3_eridani = {
 			orbit_distance = 25
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3549,6 +3675,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 200
 		size = 25
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Eridani A VIa"
@@ -3557,6 +3684,7 @@ coa_sol_neighbor_t3_eridani = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -3566,6 +3694,7 @@ coa_sol_neighbor_t3_eridani = {
 			orbit_distance = 5
 			orbit_angle = 130
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3576,6 +3705,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 200
 		size = 20
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Eridani A VIIa"
@@ -3584,6 +3714,7 @@ coa_sol_neighbor_t3_eridani = {
 			orbit_distance = 15
 			orbit_angle = 70
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3593,7 +3724,7 @@ coa_sol_neighbor_t3_eridani = {
 		orbit_angle = 200
 		size = 0
 		has_ring = no
-		flags = { planetary_barrycenter }
+		flags = { planetary_barrycenter pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -3648,6 +3779,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 45
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -3689,6 +3821,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -3698,6 +3831,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 			orbit_distance = 6
 			orbit_angle = 120
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -3708,6 +3842,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 190
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -3717,6 +3852,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 125
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -3774,6 +3910,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 125
 		size = 40
 		has_ring = yes
+		flags = { pd_ignore }
 
 		moon = {
 			name = "Epsilon Indi A Va"
@@ -3782,6 +3919,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 			orbit_distance = 23
 			orbit_angle = 10
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		moon = {
 			name = "Epsilon Indi A Vb"
@@ -3790,6 +3928,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 			orbit_distance = 5
 			orbit_angle = 80
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -3798,7 +3937,7 @@ coa_sol_neighbor_t3_epsilon_indi = {
 		orbit_distance = 140
 		orbit_angle = 125
 		size = 0
-		flags = { planetary_barrycenter }
+		flags = { planetary_barrycenter pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes

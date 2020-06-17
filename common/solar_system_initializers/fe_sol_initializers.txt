@@ -21,29 +21,6 @@ sol_system_initializer = {
 	usage = custom_empire
 
 	init_effect = {
-
-
-		if = {
-			limit = {
-				galaxy_size = gigantic
-			}
-
-			log = "Galaxy size is gigantic"
-		}
-		else_if = {
-			limit = {
-				galaxy_size = immense
-			}
-
-			log = "Galaxy size is immense"
-		}
-		else = {
-
-			log = "Galaxy size is not custom"
-		}
-	}
-
-	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
 			every_neighbor_system = {
@@ -95,7 +72,7 @@ sol_system_initializer = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_earth }
+		flags = { planet_earth pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -109,7 +86,7 @@ sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "cold_barren_planet_luna_entity"
-			flags = { planet_earth_moon }
+			flags = { planet_earth_moon pd_ignore }
 		}
 	}
 	
@@ -121,7 +98,7 @@ sol_system_initializer = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_new_mars_entity"
-		flags = { pd_ignore planet_mars }
+		flags = { pd_ignore planet_mars pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -437,6 +414,7 @@ sol_neighbor_t1_first_colony = {
     		orbit_angle = 125
     		size = 16
     		has_ring = no
+			flags = { pd_ignore }
     	}
 
     	planet = {
@@ -448,12 +426,14 @@ sol_neighbor_t1_first_colony = {
     		has_ring = no
     		entity = "continental_planet_01_entity"
 			flags = { pd_ignore }
+
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_barren_cold"
     			size = 1
     			orbit_distance = 7
     			has_ring = no
+				flags = { pd_ignore }
     		}
 
     		moon = {
@@ -462,6 +442,7 @@ sol_neighbor_t1_first_colony = {
     			size = 2
     			orbit_distance = 4
     			has_ring = no
+				flags = { pd_ignore }
     		}
     	}
 
@@ -517,6 +498,7 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = 90
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -526,6 +508,7 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = 270
 			size = 15
 			has_ring = yes
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -544,6 +527,7 @@ sol_neighbor_t1_first_colony = {
 		size = 15
 		has_ring = no
 		change_orbit = 4
+		flags = { pd_ignore }
 
 		planet = {
 			name = "Proxima Centauri I"
@@ -552,6 +536,7 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = 268
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -561,6 +546,7 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -570,6 +556,7 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -624,6 +611,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
     		orbit_angle = 125
     		size = 16
     		has_ring = no
+			flags = { pd_ignore }
     	}
 
 		planet = {
@@ -633,6 +621,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			class = "pc_hot_reducing"
 			size = 16
 			has_ring = no
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -646,6 +635,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 				size = 1
 				orbit_distance = 7
 				has_ring = no
+				flags = { pd_ignore }
 			}
 
 			moon = {
@@ -654,6 +644,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 				size = 2
 				orbit_distance = 4
 				has_ring = no
+				flags = { pd_ignore }
 			}
 		}
 
@@ -701,6 +692,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		orbit_angle = 0
 		size = 35
 		has_ring = no
+		flags = { pd_ignore }
 
 		planet = {
 			name = "Alpha Centauri A I"
@@ -709,6 +701,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 90
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -718,6 +711,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 270
 			size = 15
 			has_ring = yes
+			flags = { pd_ignore }
 		
 			init_effect = {
 				add_modifier = {
@@ -744,6 +738,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 268
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -753,6 +748,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
@@ -762,6 +758,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -813,6 +810,7 @@ sol_neighbor_t1 = {
 		orbit_angle = 125
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -821,6 +819,7 @@ sol_neighbor_t1 = {
 		orbit_angle = 40
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -829,6 +828,7 @@ sol_neighbor_t1 = {
 		orbit_angle = 95
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	neighbor_system = {
@@ -883,6 +883,7 @@ sol_neighbor_t1_second_colony = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -902,6 +903,7 @@ sol_neighbor_t1_second_colony = {
 			orbit_distance = 4
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -912,6 +914,7 @@ sol_neighbor_t1_second_colony = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -922,6 +925,7 @@ sol_neighbor_t1_second_colony = {
 		orbit_angle = 75
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	
 		planet = {
 			name = "Cygni B I"
@@ -930,6 +934,7 @@ sol_neighbor_t1_second_colony = {
 			orbit_angle = 180
 			size = 10
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -939,6 +944,7 @@ sol_neighbor_t1_second_colony = {
 			orbit_angle = 175
 			size = 12
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -948,6 +954,7 @@ sol_neighbor_t1_second_colony = {
 			orbit_angle = 15
 			size = 17
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 }
@@ -983,6 +990,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1009,6 +1017,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_distance = 4
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1019,6 +1028,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	planet = {
@@ -1037,6 +1047,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 180
 			size = 10
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1046,6 +1057,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 175
 			size = 12
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	
 		planet = {
@@ -1055,6 +1067,7 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 			orbit_angle = 15
 			size = 17
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 }
@@ -1094,6 +1107,7 @@ sol_neighbor_t1_2 = {
 		orbit_angle = 15
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1103,6 +1117,7 @@ sol_neighbor_t1_2 = {
 		orbit_angle = 60
 		size = 25
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Procyon A IIa"
@@ -1111,6 +1126,7 @@ sol_neighbor_t1_2 = {
 			orbit_distance = 10
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1121,6 +1137,7 @@ sol_neighbor_t1_2 = {
 		orbit_angle = 180
 		size = 14
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Procyon A IIIa"
@@ -1129,6 +1146,7 @@ sol_neighbor_t1_2 = {
 			orbit_distance = 8
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -1138,6 +1156,7 @@ sol_neighbor_t1_2 = {
 			orbit_distance = 3
 			orbit_angle = 90
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1189,6 +1208,7 @@ sol_neighbor_t1_2 = {
 			orbit_angle = 5
 			size = 20
 			has_ring = no
+			flags = { pd_ignore }
 
 			moon = {
 				name = "Procyon B Ia"
@@ -1198,6 +1218,7 @@ sol_neighbor_t1_2 = {
 				size = 8
 				has_ring = no
 				modifiers = none
+				flags = { pd_ignore }
 			}
 		}
 	}

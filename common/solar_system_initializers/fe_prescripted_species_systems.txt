@@ -62,7 +62,7 @@ eta_cassiopeiae_system_initializer = {
 				orbit_distance = 18
 				orbit_angle = 100
 				has_ring = no
-				flags = { planet_notus }
+				flags = { planet_notus pd_ignore }
 			}
 			moon = {
 				name = "NAME_Eurus"
@@ -71,7 +71,7 @@ eta_cassiopeiae_system_initializer = {
 				orbit_angle = 340
 				size = 12
 				has_ring = no
-				flags = { planet_eurus }
+				flags = { planet_eurus pd_ignore }
 			}		
 		}
 
@@ -80,7 +80,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_distance = 40
 			orbit_angle = 120
 			size = 0
-			flags = { planetary_barrycenter }
+			flags = { planetary_barrycenter pd_ignore }
 		
 			init_effect = {
 				prevent_anomaly = yes
@@ -195,7 +195,7 @@ eta_cassiopeiae_system_initializer = {
 				orbit_distance = 18
 				orbit_angle = 14
 				has_ring = no
-				flags = { planet_selene }
+				flags = { planet_selene pd_ignore }
 			}
 		}
 	}
@@ -308,6 +308,7 @@ chiconaph_system_initializer = {
 		orbit_angle = 45
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 
 		moon = {
 			name = "Oniphat"
@@ -316,6 +317,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 126
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -341,6 +343,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -351,6 +354,7 @@ chiconaph_system_initializer = {
 		orbit_angle = 125
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -392,6 +396,7 @@ chiconaph_system_initializer = {
 		orbit_angle = 125
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "kilvo"
@@ -400,6 +405,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -410,6 +416,7 @@ chiconaph_system_initializer = {
 		orbit_angle = 125
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Vohlo"
@@ -418,6 +425,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Pahlbo"
@@ -426,6 +434,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -436,6 +445,7 @@ chiconaph_system_initializer = {
 		orbit_angle = 195
 		size = 20
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Polgo"
@@ -444,6 +454,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Ulho"
@@ -452,6 +463,7 @@ chiconaph_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -518,6 +530,7 @@ scyldari_system_initializer = {
 		orbit_angle = 60
 		size = 8
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -527,6 +540,7 @@ scyldari_system_initializer = {
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -559,6 +573,7 @@ scyldari_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -569,6 +584,7 @@ scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Pollimin"
@@ -577,6 +593,7 @@ scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Kormli"
@@ -585,6 +602,7 @@ scyldari_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -627,6 +645,7 @@ scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Noilan"
@@ -635,6 +654,7 @@ scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -645,6 +665,7 @@ scyldari_system_initializer = {
 		orbit_angle = 160
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 	}
 
 	init_effect = {
@@ -739,6 +760,7 @@ dal_lokkur_system_initializer = {
 		orbit_angle = 70
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -751,7 +773,7 @@ dal_lokkur_system_initializer = {
 		deposit_blockers = none
 		modifiers = none
 		starting_planet = yes
-		flags = { planet_lokken }
+		flags = { planet_lokken pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -764,6 +786,7 @@ dal_lokkur_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -774,6 +797,7 @@ dal_lokkur_system_initializer = {
 		orbit_angle = 130
 		size = 13
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -790,6 +814,7 @@ dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 26
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Taxaz"
@@ -798,6 +823,7 @@ dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 80
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -807,6 +833,7 @@ dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 110
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -817,6 +844,7 @@ dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Xortesh"
@@ -825,6 +853,7 @@ dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -918,6 +947,7 @@ kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 40
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
             name = "Mox Tymcrix"
@@ -926,6 +956,7 @@ kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		moon = {
             name = "PRESCRIPTED_planet_name_kel_azaan"
@@ -936,7 +967,7 @@ kel_azak_system_initializer = {
 			has_ring = no
 			modifiers = none
 			starting_planet = yes
-			flags = { planet_kel_azaan }
+			flags = { planet_kel_azaan pd_ignore }
 		
 			init_effect = {
 				prevent_anomaly = yes
@@ -951,6 +982,7 @@ kel_azak_system_initializer = {
 		orbit_angle = 160
 		size = 35
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
             name = "Mox Zajkax"
@@ -959,6 +991,7 @@ kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -968,6 +1001,7 @@ kel_azak_system_initializer = {
 			orbit_distance = 8
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 	}
 	
@@ -978,6 +1012,7 @@ kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Mox Haxizabb"
@@ -986,6 +1021,7 @@ kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -995,6 +1031,7 @@ kel_azak_system_initializer = {
 		orbit_distance = 40
 		orbit_angle = 130
 		size = 8
+		flags = { pd_ignore }
 	}
 
 	init_effect = {
@@ -1066,6 +1103,7 @@ npc_scyldari_system_initializer = {
 		orbit_angle = 60
 		size = 8
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1075,6 +1113,7 @@ npc_scyldari_system_initializer = {
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1231,6 +1270,7 @@ npc_scyldari_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1241,6 +1281,7 @@ npc_scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Pollimin"
@@ -1249,6 +1290,7 @@ npc_scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			name = "Kormli"
@@ -1257,6 +1299,7 @@ npc_scyldari_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1299,6 +1342,7 @@ npc_scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Noilan"
@@ -1307,6 +1351,7 @@ npc_scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1317,6 +1362,7 @@ npc_scyldari_system_initializer = {
 		orbit_angle = 160
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 	}
 
 	init_effect = {
@@ -1422,7 +1468,7 @@ npc_dal_lokkur_system_initializer = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-		flags = { planet_lokken }
+		flags = { planet_lokken pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -1579,6 +1625,7 @@ npc_dal_lokkur_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1589,6 +1636,7 @@ npc_dal_lokkur_system_initializer = {
 		orbit_angle = 130
 		size = 13
 		has_ring = no
+		flags = { pd_ignore }
 		
 		init_effect = {
 			add_modifier = {
@@ -1605,6 +1653,7 @@ npc_dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 26
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Taxaz"
@@ -1613,6 +1662,7 @@ npc_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 80
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -1622,6 +1672,7 @@ npc_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 110
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1632,6 +1683,7 @@ npc_dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Xortesh"
@@ -1640,6 +1692,7 @@ npc_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -1733,6 +1786,7 @@ npc_kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 40
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
             name = "Mox Tymcrix"
@@ -1741,6 +1795,7 @@ npc_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		moon = {
             name = "PRESCRIPTED_planet_name_kel_azaan"
@@ -1750,7 +1805,7 @@ npc_kel_azak_system_initializer = {
 			size = 18
 			has_ring = no
 			modifiers = none
-			flags = { planet_kel_azaan }
+			flags = { planet_kel_azaan pd_ignore }
 		
 			init_effect = {
 				prevent_anomaly = yes
@@ -1890,6 +1945,7 @@ npc_kel_azak_system_initializer = {
 		orbit_angle = 160
 		size = 35
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
             name = "Mox Zajkax"
@@ -1898,6 +1954,7 @@ npc_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -1907,6 +1964,7 @@ npc_kel_azak_system_initializer = {
 			orbit_distance = 8
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 	}
 	
@@ -1917,6 +1975,7 @@ npc_kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			name = "Mox Haxizabb"
@@ -1925,6 +1984,7 @@ npc_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -1934,6 +1994,7 @@ npc_kel_azak_system_initializer = {
 		orbit_distance = 40
 		orbit_angle = 130
 		size = 8
+		flags = { pd_ignore }
 	}
 
 	init_effect = {
@@ -2006,14 +2067,16 @@ virgin_scyldari_system_initializer = {
 		orbit_angle = 60
 		size = 8
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hot_reducing"
 		orbit_distance = 10
 		orbit_angle = 120
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2036,6 +2099,7 @@ virgin_scyldari_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2045,6 +2109,7 @@ virgin_scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 22
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren"
@@ -2052,6 +2117,7 @@ virgin_scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 		moon = {
 			class = "pc_barren"
@@ -2059,6 +2125,7 @@ virgin_scyldari_system_initializer = {
 			orbit_distance = 4
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2096,6 +2163,7 @@ virgin_scyldari_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2103,6 +2171,7 @@ virgin_scyldari_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2112,6 +2181,7 @@ virgin_scyldari_system_initializer = {
 		orbit_angle = 160
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 	}
 	
 	neighbor_system = {
@@ -2205,6 +2275,7 @@ virgin_dal_lokkur_system_initializer = {
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
+		flags = { pd_ignore }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -2216,15 +2287,17 @@ virgin_dal_lokkur_system_initializer = {
 			orbit_distance = 12
 			orbit_angle = 40
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hot_reducing"
 		orbit_distance = 20
 		orbit_angle = 130
 		size = 13
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -2233,6 +2306,7 @@ virgin_dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 26
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_toxic"
@@ -2240,6 +2314,7 @@ virgin_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 80
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2248,6 +2323,7 @@ virgin_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 110
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2257,6 +2333,7 @@ virgin_dal_lokkur_system_initializer = {
 		orbit_angle = 125
 		size = 24
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2264,6 +2341,7 @@ virgin_dal_lokkur_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2346,6 +2424,7 @@ virgin_kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 40
 		has_ring = no
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_molten"
@@ -2353,6 +2432,7 @@ virgin_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		moon = {
 			class = "pc_savannah"
@@ -2361,6 +2441,7 @@ virgin_kel_azak_system_initializer = {
 			size = 18
 			has_ring = no
 			modifiers = none
+			flags = { pd_ignore }
 		}		
 	}
 	
@@ -2370,6 +2451,7 @@ virgin_kel_azak_system_initializer = {
 		orbit_angle = 160
 		size = 35
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_barren"
@@ -2377,6 +2459,7 @@ virgin_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}
 		
 		moon = {
@@ -2385,6 +2468,7 @@ virgin_kel_azak_system_initializer = {
 			orbit_distance = 8
 			orbit_angle = 100
 			has_ring = no
+			flags = { pd_ignore }
 		}		
 	}
 	
@@ -2394,6 +2478,7 @@ virgin_kel_azak_system_initializer = {
 		orbit_angle = 200
 		size = 16
 		has_ring = yes
+		flags = { pd_ignore }
 		
 		moon = {
 			class = "pc_frozen"
@@ -2401,6 +2486,7 @@ virgin_kel_azak_system_initializer = {
 			orbit_distance = 18
 			orbit_angle = 66
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2409,6 +2495,7 @@ virgin_kel_azak_system_initializer = {
 		orbit_distance = 40
 		orbit_angle = 130
 		size = 8
+		flags = { pd_ignore }
 	}
 	
 	neighbor_system = {

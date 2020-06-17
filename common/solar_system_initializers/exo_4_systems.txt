@@ -6,6 +6,7 @@ Upsilon_Andromedae_system_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+
     planet = {
         name = "Upsilon Andromedae A"
         class = "pc_f_star"
@@ -28,28 +29,28 @@ Upsilon_Andromedae_system_initializer = {
         orbit_angle = 56
         has_ring = no
         class = "pc_gas_giant"
-	change_orbit = 8
-	moon = {
-		name = "Samh a"
-		orbit_distance = { min = 2 max = 3 }
-		class = "pc_molten"
-	}
-	moon = {
-		name = "Samh b"
-		size = { min = 10 max = 12 }
-		orbit_distance = 5
-	}
-	moon = {
-		name = "Samh c"
-		size = { min = 10 max = 12 }
-		orbit_distance = 5
-	}
-	moon = {
-		name = "Samh d"
-		size = { min = 4 max = 8 }
-		orbit_distance = { min = 3 max = 5 }
-		class = "pc_toxic"
-	}
+        change_orbit = 8
+        moon = {
+            name = "Samh a"
+            orbit_distance = { min = 2 max = 3 }
+            class = "pc_molten"
+        }
+        moon = {
+            name = "Samh b"
+            size = { min = 10 max = 12 }
+            orbit_distance = 5
+        }
+        moon = {
+            name = "Samh c"
+            size = { min = 10 max = 12 }
+            orbit_distance = 5
+        }
+        moon = {
+            name = "Samh d"
+            size = { min = 4 max = 8 }
+            orbit_distance = { min = 3 max = 5 }
+            class = "pc_toxic"
+        }
     }
 
     planet = {
@@ -59,24 +60,24 @@ Upsilon_Andromedae_system_initializer = {
         orbit_angle = 245
         has_ring = no
         class = "pc_gas_giant"
-	change_orbit = 10
-	moon = {
-		name = "Majriti a"
-		size = { min = 4 max = 6 }
-		orbit_distance = { min = 3 max = 4 }
-		class = "pc_barren_cold"
-	}
-	moon = {
-		name = "Majriti b"
-		size = { min = 10 max = 16 }
-		orbit_distance = { min = 5 max = 6 }
-	}
-	moon = {
-		name = "Majriti c"
-		size = { min = 4 max = 8 }
-		orbit_distance = { min = 3 max = 6 }
-		class = "pc_frozen"
-	}
+        change_orbit = 10
+        moon = {
+            name = "Majriti a"
+            size = { min = 4 max = 6 }
+            orbit_distance = { min = 3 max = 4 }
+            class = "pc_barren_cold"
+        }
+        moon = {
+            name = "Majriti b"
+            size = { min = 10 max = 16 }
+            orbit_distance = { min = 5 max = 6 }
+        }
+        moon = {
+            name = "Majriti c"
+            size = { min = 4 max = 8 }
+            orbit_distance = { min = 3 max = 6 }
+            class = "pc_frozen"
+        }
     }
 
     planet = {
@@ -133,15 +134,15 @@ mu_Arae_system_initializer = {
         orbit_angle = 20
         has_ring = no
         class = "pc_gas_giant"
-	change_orbit = 10
-	moon = {
-		name = "Rocinante a"
-		orbit_distance = 3
-	}
-	moon = {
-		name = "Rocinante b"
-		orbit_distance = 5
-	}
+        change_orbit = 10
+        moon = {
+            name = "Rocinante a"
+            orbit_distance = 3
+        }
+        moon = {
+            name = "Rocinante b"
+            orbit_distance = 5
+        }
     }
 
     planet = {
@@ -151,24 +152,24 @@ mu_Arae_system_initializer = {
         orbit_angle = 195
         has_ring = no
         class = "pc_gas_giant"
-	change_orbit = 10
+        change_orbit = 10
 
-	moon = {
-		size = { min = 3 max = 7 }
-		orbit_distance = 3
-		name = "Quijote a"
-		class = "pc_barren_cold"
-	}
-	moon = {
-		size = { min = 10 max = 14 }
-		orbit_distance = { min = 3 max = 5 }
-		name = "Quijote b"
-	}
-	moon = {
-		size = { min = 10 max = 12 }
-		orbit_distance = { min = 5 max = 7 }
-		name = "Quijote c"
-	}
+        moon = {
+            size = { min = 3 max = 7 }
+            orbit_distance = 3
+            name = "Quijote a"
+            class = "pc_barren_cold"
+        }
+        moon = {
+            size = { min = 10 max = 14 }
+            orbit_distance = { min = 3 max = 5 }
+            name = "Quijote b"
+        }
+        moon = {
+            size = { min = 10 max = 12 }
+            orbit_distance = { min = 5 max = 7 }
+            name = "Quijote c"
+        }
     }
 
     planet = {
