@@ -20,7 +20,7 @@ deneb_system = {
 		}
 	}
 	
-	flags = { empire_home_system deneb_system }
+	flags = { empire_home_system deneb_system custom_system }
 	
 	usage = custom_empire
 	

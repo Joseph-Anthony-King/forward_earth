@@ -6,6 +6,8 @@
 eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
 	class = sc_binary_8
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
@@ -261,6 +263,7 @@ eta_cassiopeiae_system_initializer = {
 chiconaph_system_initializer = {
 	name = "PRESCRIPTED_system_name_chinorr"
 	class = sc_g
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -483,6 +486,7 @@ chiconaph_system_initializer = {
 scyldari_system_initializer = {
 	name = "PRESCRIPTED_system_name_scyldari"
 	class = sc_binary_8
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -690,9 +694,10 @@ scyldari_system_initializer = {
 
 ### Dal Lokkur System
 dal_lokkur_system_initializer = {
-	name = "PRESCRIPTED_system_name_lokken"
-	
+	name = "PRESCRIPTED_system_name_lokken"	
 	class = "sc_g"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 35
@@ -881,6 +886,8 @@ dal_lokkur_system_initializer = {
 kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 40
@@ -1058,6 +1065,7 @@ kel_azak_system_initializer = {
 npc_scyldari_system_initializer = {
 	name = "PRESCRIPTED_system_name_scyldari"
 	class = sc_binary_8
+	flags = { custom_system }	
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1389,9 +1397,10 @@ npc_scyldari_system_initializer = {
 
 ### NPC Dal Lokkur System
 npc_dal_lokkur_system_initializer = {
-	name = "PRESCRIPTED_system_name_lokken"
-	
+	name = "PRESCRIPTED_system_name_lokken"	
 	class = "sc_g"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 35
@@ -1722,6 +1731,8 @@ npc_dal_lokkur_system_initializer = {
 npc_kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 40
@@ -2023,6 +2034,7 @@ npc_kel_azak_system_initializer = {
 virgin_scyldari_system_initializer = {
 	name = "PRESCRIPTED_system_name_scyldari"
 	class = sc_binary_8
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -2198,9 +2210,10 @@ virgin_scyldari_system_initializer = {
 
 ### Virgin Dal Lokkur System
 virgin_dal_lokkur_system_initializer = {
-	name = "PRESCRIPTED_system_name_lokken"
-	
+	name = "PRESCRIPTED_system_name_lokken"	
 	class = "sc_g"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 35
@@ -2361,6 +2374,8 @@ virgin_dal_lokkur_system_initializer = {
 virgin_kel_azak_system_initializer = {
 	name = "PRESCRIPTED_system_name_kel_azaan"
 	class = "sc_a"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 40
@@ -2513,7 +2528,7 @@ virgin_kel_azak_system_initializer = {
 # Neighbor Tier 1 Scyldari First Colony
 neighbor_t1_scyldari_first_colony = {	
 	class = "rl_standard_stars"
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 
 	init_effect = {
 		every_neighbor_system = { set_star_flag = empire_cluster }
@@ -2577,7 +2592,7 @@ neighbor_t1_scyldari_first_colony = {
 # Neighbor Tier 1 Dal Lokkur First Colony
 neighbor_t1_dal_lokkur_first_colony = {	
 	class = "rl_standard_stars"
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 
 	init_effect = {
 		every_neighbor_system = { set_star_flag = empire_cluster }
@@ -2641,7 +2656,7 @@ neighbor_t1_dal_lokkur_first_colony = {
 # Neighbor Tier 1 Kel Azak First Colony
 neighbor_t1_kel_azak_first_colony = {	
 	class = "rl_standard_stars"
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 
 	init_effect = {
 		every_neighbor_system = { set_star_flag = empire_cluster }

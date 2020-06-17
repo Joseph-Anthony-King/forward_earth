@@ -16,7 +16,7 @@ sol_system_initializer = {
 		radius = 290
 	}
 	
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol custom_system }
 	
 	usage = custom_empire
 
@@ -382,7 +382,7 @@ sol_system_initializer = {
 sol_neighbor_t1_first_colony = {	
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -580,6 +580,7 @@ sol_neighbor_t1_first_colony = {
 sol_neighbor_t1_no_guaranteed_colony = {
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
+	flags = { custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -782,6 +783,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 sol_neighbor_t1 = {
 	name = "NAME_Barnard's_Star"
 	class = sc_m
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -856,6 +858,7 @@ sol_neighbor_t1 = {
 sol_neighbor_t1_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -963,6 +966,7 @@ sol_neighbor_t1_second_colony = {
 sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1076,6 +1080,8 @@ sol_neighbor_t1_no_guaranteed_second_colony = {
 sol_neighbor_t1_2 = {
 	name = "NAME_Procyon"
 	class = sc_binary_9
+	flags = { custom_system }
+	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 120

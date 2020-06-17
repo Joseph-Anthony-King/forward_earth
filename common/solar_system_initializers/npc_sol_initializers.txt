@@ -6,9 +6,10 @@
 
 ### Sol System
 npc_sol_system_initializer = {
-	name = "NAME_Sol"
-	
+	name = "NAME_Sol"	
 	class = "sc_g"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 145
@@ -1164,7 +1165,7 @@ npc_sol_system_initializer = {
 npc_sol_neighbor_t1_first_colony = {	
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1361,6 +1362,7 @@ npc_sol_neighbor_t1_first_colony = {
 npc_sol_neighbor_t1_no_guaranteed_colony = {
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
+	flags = { custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1563,6 +1565,7 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 npc_sol_neighbor_t1 = {
 	name = "NAME_Barnard's_Star"
 	class = sc_m
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1637,6 +1640,7 @@ npc_sol_neighbor_t1 = {
 npc_sol_neighbor_t1_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1743,6 +1747,7 @@ npc_sol_neighbor_t1_second_colony = {
 npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1856,6 +1861,8 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 npc_sol_neighbor_t1_2 = {
 	name = "NAME_Procyon"
 	class = sc_binary_9
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 120
@@ -2008,6 +2015,8 @@ npc_sol_neighbor_t1_2 = {
 npc_eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
 	class = sc_binary_8
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
@@ -2257,6 +2266,7 @@ npc_eta_cassiopeiae_system_initializer = {
 npc_sol_neighbor_t2_wolf_359 = {	
 	name = "Wolf 359"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Wolf 359"
@@ -2297,6 +2307,8 @@ npc_sol_neighbor_t2_wolf_359 = {
 npc_sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { tau_ceti_system custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -2309,8 +2321,6 @@ npc_sol_neighbor_t2_tau_ceti = {
 		type = icy_asteroid_belt
 		radius = 340
 	}
-	
-	flags = { tau_ceti_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -2791,6 +2801,7 @@ npc_sol_neighbor_t2_tau_ceti = {
 npc_virgin_sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { tau_ceti_system custom_system }
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -2803,8 +2814,6 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 		type = icy_asteroid_belt
 		radius = 340
 	}
-	
-	flags = { tau_ceti_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -3207,6 +3216,8 @@ npc_virgin_sol_neighbor_t2_tau_ceti = {
 npc_sol_neighbor_t2_epsilon_eridani = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -3430,6 +3441,8 @@ npc_sol_neighbor_t2_epsilon_eridani = {
 npc_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -3648,6 +3661,7 @@ npc_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 npc_sol_neighbor_t2_sirius = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
+	flags = { custom_system }
 
 	planet = {
 		name = "NAME_Sirius_A"
@@ -3708,6 +3722,7 @@ npc_sol_neighbor_t2_sirius = {
 npc_sol_neighbor_t3_Luytens_star = {	
 	name = "Luyten's Star"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Luyten's Star"
@@ -3753,6 +3768,7 @@ npc_sol_neighbor_t3_Luytens_star = {
 npc_sol_neighbor_t3_trappist_1 = {
 	name = "Trappist-1"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Trappist-1"
@@ -3847,6 +3863,7 @@ npc_sol_neighbor_t3_trappist_1 = {
 npc_sol_neighbor_t3_ophiuchi = {	
 	name = "Ophiuchi"
 	class = sc_binary_7
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
@@ -4053,6 +4070,8 @@ npc_sol_neighbor_t3_ophiuchi = {
 npc_sol_neighbor_t3_eridani = {
 	name = "Eridani"
 	class = sc_trinary_5
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 150
@@ -4272,14 +4291,14 @@ npc_sol_neighbor_t3_eridani = {
 
 # Sol Neighbor Tier 3
 npc_sol_neighbor_t3_epsilon_indi = {
-	name = "Epsilon Indi"
-	
+	name = "Epsilon Indi"	
 	class = "sc_k"
+	flags = { epsilon_indi_system custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 160
 	}
-	flags = { epsilon_indi_system }
 	
 	planet = {
 		name = "Epsilon Indi A"

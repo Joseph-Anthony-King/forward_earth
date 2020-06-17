@@ -126,7 +126,7 @@ special_init_03 = {
 		}
 	}
 
-	flags = { primitive_sol sol }
+	flags = { primitive_sol sol custom_system }
 	
 	planet = {
 		name = "NAME_Sol"
@@ -734,7 +734,7 @@ special_init_04 = {
 
 	max_instances = 1
 
-	flags = { nuked_sol sol }
+	flags = { nuked_sol sol custom_system }
 	
 	planet = {
 		name = "NAME_Sol"

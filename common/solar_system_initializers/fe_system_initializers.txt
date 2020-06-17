@@ -18,7 +18,7 @@ icarus_sol_system_initializer = {
 		radius = 297
 	}
 
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol custom_system }
 	
 	usage = custom_empire
 
@@ -391,7 +391,7 @@ sol_with_eta_cassiopeiae_system_initializer = {
 		radius = 200
 	}
 	
-	flags = { empire_home_system eta_cassiopeiae_system }
+	flags = { empire_home_system eta_cassiopeiae_system custom_system }
 	
 	#usage = custom_empire
 
@@ -637,6 +637,8 @@ sol_with_eta_cassiopeiae_system_initializer = {
 uncolonized_eta_cassiopeiae_system_initializer = {
 	name = "Eta Cassiopeiae"
 	class = sc_binary_8
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 200
@@ -872,6 +874,7 @@ uncolonized_eta_cassiopeiae_system_initializer = {
 sol_neighbor_t2_wolf_359 = {	
 	name = "Wolf 359"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Wolf 359"
@@ -912,6 +915,8 @@ sol_neighbor_t2_wolf_359 = {
 sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -1404,6 +1409,8 @@ sol_neighbor_t2_tau_ceti = {
 virgin_sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -1820,6 +1827,8 @@ virgin_sol_neighbor_t2_tau_ceti = {
 sol_neighbor_t2_epsilon_eridani = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -2043,6 +2052,8 @@ sol_neighbor_t2_epsilon_eridani = {
 sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -2261,6 +2272,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 sol_neighbor_t2_sirius = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
+	flags = { custom_system }
 
 	planet = {
 		name = "NAME_Sirius_A"
@@ -2321,6 +2333,7 @@ sol_neighbor_t2_sirius = {
 sol_neighbor_t3_Luytens_star = {	
 	name = "Luyten's Star"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Luyten's Star"
@@ -2461,6 +2474,7 @@ sol_neighbor_t3_Luytens_star = {
 sol_neighbor_t3_trappist_1 = {
 	name = "Trappist-1"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Trappist-1"
@@ -2650,6 +2664,7 @@ sol_neighbor_t3_trappist_1 = {
 sol_neighbor_t3_ophiuchi = {	
 	name = "Ophiuchi"
 	class = sc_binary_7
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
@@ -2951,6 +2966,8 @@ sol_neighbor_t3_ophiuchi = {
 sol_neighbor_t3_eridani = {
 	name = "Eridani"
 	class = sc_trinary_5
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 150
@@ -3172,14 +3189,14 @@ sol_neighbor_t3_eridani = {
 
 # Sol Neighbor Tier 3
 sol_neighbor_t3_epsilon_indi = {
-	name = "Epsilon Indi"
-	
+	name = "Epsilon Indi"	
 	class = "sc_k"
+	flags = { epsilon_indi_system custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 160
 	}
-	flags = { epsilon_indi_system }
 	
 	planet = {
 		name = "Epsilon Indi A"
@@ -3395,6 +3412,8 @@ sol_neighbor_t3_epsilon_indi = {
 npc_deneb_system = {
 	name = "NAME_Deneb"
 	class = "sc_a"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 90
@@ -3563,6 +3582,7 @@ polaris_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 	
 	planet = {
 		name = "Polaris A"
@@ -3625,6 +3645,7 @@ betelgeuse_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 	
 	planet = {
 		name = "Betelgeuse"
@@ -3721,6 +3742,7 @@ rigel_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -3820,6 +3842,7 @@ vega_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -3960,6 +3983,7 @@ antares_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4041,6 +4065,7 @@ canopus_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	planet = {
 		name = "Canopus"
@@ -4154,6 +4179,7 @@ fomalhaut_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4298,6 +4324,7 @@ vy_canis_majoris_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 	
 	planet = {
 		name = "VY Canis Majoris"
@@ -4342,6 +4369,7 @@ mu_cephei_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4431,6 +4459,7 @@ kobol_initializer = {
     usage = misc_system_init
     usage_odds = 100
     max_instances = 1
+	flags = { custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -4679,6 +4708,7 @@ kobol_initializer = {
 trantor_initializer = {
 	name = "Trantor"
 	class = "sc_k"
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
@@ -4803,6 +4833,7 @@ trantor_initializer = {
 terminus_initializer = {
 	name = "Terminus"
 	class = "sc_k"
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = icy_asteroid_belt

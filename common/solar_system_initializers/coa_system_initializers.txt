@@ -18,7 +18,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		radius = 297
 	}
 
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol custom_system }
 	
 	#usage = custom_empire
 
@@ -594,7 +594,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 coa_sol_neighbor_t1_first_colony = {	
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
-	flags = { neighbor_t1_first_colony }
+	flags = { neighbor_t1_first_colony custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -792,6 +792,7 @@ coa_sol_neighbor_t1_first_colony = {
 coa_sol_neighbor_t1_no_guaranteed_colony = {
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
+	flags = { custom_system }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -994,6 +995,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 coa_sol_neighbor_t1 = {
 	name = "NAME_Barnard's_Star"
 	class = sc_m
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1064,6 +1066,7 @@ coa_sol_neighbor_t1 = {
 coa_sol_neighbor_t1_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1171,6 +1174,7 @@ coa_sol_neighbor_t1_second_colony = {
 coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1285,6 +1289,8 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 coa_sol_neighbor_t1_2 = {
 	name = "NAME_Procyon"
 	class = sc_binary_9
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 120
@@ -1438,6 +1444,7 @@ coa_sol_neighbor_t1_2 = {
 coa_sol_neighbor_t2_wolf_359 = {	
 	name = "Wolf 359"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Wolf 359"
@@ -1478,6 +1485,8 @@ coa_sol_neighbor_t2_wolf_359 = {
 coa_sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -1976,6 +1985,8 @@ coa_sol_neighbor_t2_tau_ceti = {
 coa_virgin_sol_neighbor_t2_tau_ceti = {
 	name = "Tau Ceti"
 	class = sc_g
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 130
@@ -2396,6 +2407,8 @@ coa_virgin_sol_neighbor_t2_tau_ceti = {
 coa_sol_neighbor_t2_epsilon_eridani = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -2619,6 +2632,8 @@ coa_sol_neighbor_t2_epsilon_eridani = {
 coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 	name = "NAME_Epsilon_Eridani"
 	class = "sc_k"
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 125
@@ -2837,6 +2852,7 @@ coa_sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 coa_sol_neighbor_t2_sirius = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
+	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -2907,6 +2923,7 @@ coa_sol_neighbor_t2_sirius = {
 coa_neighbor_t3_Luytens_star = {	
 	name = "Luyten's Star"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Luyten's Star"
@@ -3047,6 +3064,7 @@ coa_neighbor_t3_Luytens_star = {
 coa_neighbor_t3_trappist_1 = {
 	name = "Trappist-1"
 	class = sc_m
+	flags = { custom_system }
 
 	planet = {
 		name = "Trappist-1"
@@ -3236,6 +3254,7 @@ coa_neighbor_t3_trappist_1 = {
 coa_sol_neighbor_t3_ophiuchi = {	
 	name = "Ophiuchi"
 	class = sc_binary_7
+	flags = { custom_system }
 
 	asteroid_belt = {
 		type = icy_asteroid_belt
@@ -3538,6 +3557,8 @@ coa_sol_neighbor_t3_ophiuchi = {
 coa_sol_neighbor_t3_eridani = {
 	name = "Eridani"
 	class = sc_trinary_5
+	flags = { custom_system }
+
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 150
@@ -3754,9 +3775,10 @@ coa_sol_neighbor_t3_eridani = {
 
 # CoA Sol Neighbor Tier 3
 coa_sol_neighbor_t3_epsilon_indi = {
-	name = "Epsilon Indi"
-	
+	name = "Epsilon Indi"	
 	class = "sc_k"
+	flags = { custom_system }
+	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 160
