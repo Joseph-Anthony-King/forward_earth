@@ -1322,7 +1322,7 @@ npc_sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "Proxima Centauri II"
-			class = "pc_methane"
+			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
@@ -1524,7 +1524,7 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "Proxima Centauri II"
-			class = "pc_methane"
+			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
