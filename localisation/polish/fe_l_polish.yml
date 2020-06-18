@@ -27,3 +27,6 @@
  dal_lokkur_system_initializer_DESC:0 "System początkowy dla Dyrekcji Lokken.\n\n$system_initializer_DESC$"
  kel_azak_system_initializer_NAME:0 "System Kel-Azak"
  kel_azak_system_initializer_DESC:0 "System startowy dla Republiki Kel-Azaan.\n\n$system_initializer_DESC$"
+ fe.101.name:0 "Podróż jałowca"
+ fe.101.desc:0 "Chryzantema nie była jedynym okrętem arkowym sponsorowanym przez Ulysses, który z powodzeniem osiągnął inny system gwiezdny. Jałowiec również z powodzeniem przemierzał tunel czasoprzestrzenny, choć reszta ludzkości nie była tego znana.\n\nJednak w przeciwieństwie do chryzantemy, która przybyła do świata kontynentalnego na orbicie Eta Cassiopeiae, Jałowiec przybył do świata pustynnego na orbicie 40 Eridani A. na jego powierzchni. Pasażerowie Jałowca założyli kilka kolonii, ale ograniczone zasoby i drobna rywalizacja prowadzą do ciągłej wojny między kolonistami.\n\nStarając się powstrzymać przemoc, kolonie utworzyły forum planetarne, aby spróbować ustalić ich różnice i koordynować osadę Eridani A II, Ligi Ludzkich Kolonii. Jednak to forum planetarne szybko przekształciło się w militarystyczną hegemonię, w której silniejsze kolonie zdominowały słabych."
+ fe.101.a:0 "Fascynujący."
