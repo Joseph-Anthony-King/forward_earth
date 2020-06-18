@@ -3027,12 +3027,12 @@ sol_neighbor_t3_eridani = {
 	
 	planet = {
 		name = "Eridani A III"
-		class = "pc_arctic"
+		class = "pc_marginal_cold"
 		orbit_distance = 25
 		orbit_angle = 30
 		size = 16
 		has_ring = no
-		entity = "arctic_planet_05_entity"
+		entity = "marginal_cold_planet_01_entity"
 		flags = { pd_ignore }
 	}
 	
