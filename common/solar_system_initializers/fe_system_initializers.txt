@@ -113,23 +113,23 @@ icarus_sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}

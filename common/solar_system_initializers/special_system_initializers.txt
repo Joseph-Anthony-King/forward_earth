@@ -438,23 +438,23 @@ special_init_03 = {
 		
 		moon = {
 			name = "Sol IVa"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "Sol IVb"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}
@@ -802,22 +802,22 @@ special_init_04 = {
 		}
 		
 		moon = {
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}

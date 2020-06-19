@@ -109,23 +109,23 @@ sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}
@@ -429,8 +429,8 @@ sol_neighbor_t1_first_colony = {
 
     		moon = {
     			name = "Alpha Centauri B IIa"
-    			class = "pc_barren_cold"
-    			size = 1
+    			class = "pc_orbiting_asteroid"
+    			size = 4
     			orbit_distance = 7
     			has_ring = no
 				flags = { pd_ignore }
@@ -438,8 +438,8 @@ sol_neighbor_t1_first_colony = {
 
     		moon = {
     			name = "Alpha Centauri B IIb"
-    			class = "pc_barren_cold"
-    			size = 2
+    			class = "pc_orbiting_asteroid"
+    			size = 3
     			orbit_distance = 4
     			has_ring = no
 				flags = { pd_ignore }
@@ -632,8 +632,8 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			}
 			moon = {
 				name = "Alpha Centauri B IIa"
-				class = "pc_barren_cold"
-				size = 1
+				class = "pc_orbiting_asteroid"
+				size = 4
 				orbit_distance = 7
 				has_ring = no
 				flags = { pd_ignore }
@@ -641,8 +641,8 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 			moon = {
 				name = "Alpha Centauri B IIb"
-				class = "pc_barren_cold"
-				size = 2
+				class = "pc_orbiting_asteroid"
+				size = 3
 				orbit_distance = 4
 				has_ring = no
 				flags = { pd_ignore }
@@ -1147,8 +1147,8 @@ sol_neighbor_t1_2 = {
 		
 		moon = {
 			name = "Procyon A IIIa"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 8
 			orbit_angle = 40
 			has_ring = no
@@ -1157,8 +1157,8 @@ sol_neighbor_t1_2 = {
 		
 		moon = {
 			name = "Procyon A IIIb"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 3
 			orbit_angle = 90
 			has_ring = no
@@ -1416,23 +1416,23 @@ com_sol_system = {
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}
@@ -2137,23 +2137,23 @@ lost_colony_sol_system = {
 		
 		moon = {
 			name = "NAME_Phobos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 3
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			entity = "phobos_entity"
+			#entity = "phobos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
-			class = "pc_barren_cold"
-			size = 1
+			class = "pc_orbiting_asteroid"
+			size = 4
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			entity = "deimos_entity"
+			#entity = "deimos_entity"
 			flags = { planet_earth_moon pd_ignore }
 		}
 	}
