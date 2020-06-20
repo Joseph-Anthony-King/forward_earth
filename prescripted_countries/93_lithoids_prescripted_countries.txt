@@ -9,7 +9,7 @@ khennet = {
 	
 	species = {
 		class = "LITHOID"
-		portrait = "lith11"
+		portrait = "lith7"
 		name = "PRESCRIPTED_species_name_khennet"
 		plural = "PRESCRIPTED_species_plural_khennet"
 		adjective = "PRESCRIPTED_species_adjective_khennet"
@@ -29,7 +29,7 @@ khennet = {
 		"civic_environmentalist"
 	}
 	government="gov_theocratic_monarchy"
-	origin = "origin_default"
+	origin = "origin_lithoid"
 
 	adjective = "PRESCRIPTED_adjective_khennet"
 	planet_name = "PRESCRIPTED_planet_name_khennet"
@@ -59,7 +59,7 @@ khennet = {
 	ruler = {
 		gender = female
 		name = "PRESCRIPTED_ruler_name_khennet"
-		portrait = "lith11"
+		portrait = "lith7"
 		texture = 4
 		hair = 0
 		clothes = 0

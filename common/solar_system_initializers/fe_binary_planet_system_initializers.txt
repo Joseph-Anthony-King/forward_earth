@@ -806,7 +806,7 @@ fe_seven_binary_planet_system_initializer = {
 	class = "rl_starting_stars"
 
 	usage = misc_system_init
-	usage_odds = 3
+	usage_odds = 2
 	
 	planet = {
 		class = star
@@ -933,7 +933,7 @@ fe_eight_binary_planet_system_initializer = {
 	class = "rl_starting_stars"
 
 	usage = misc_system_init
-	usage_odds = 3
+	usage_odds = 2
 	
 	planet = {
 		class = star
@@ -1058,7 +1058,7 @@ fe_nine_binary_planet_system_initializer = {
 	class = "rl_starting_stars"
 
 	usage = misc_system_init
-	usage_odds = 3
+	usage_odds = 2
 	
 	planet = {
 		class = star
@@ -2035,7 +2035,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
 	class = sc_g
 	
 	usage = misc_system_init
-	usage_odds = 1.5
+	usage_odds = 1
 	max_instances = 2
 	primitive_system = yes	# usage odds modified by primitives setup slider
 
@@ -2205,7 +2205,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
 	class = sc_k
 	
 	usage = misc_system_init
-	usage_odds = 1.5
+	usage_odds = 1
 	max_instances = 2
 	primitive_system = yes	# usage odds modified by primitives setup slider
 
