@@ -1101,6 +1101,7 @@ npc_scyldari_system_initializer = {
 				ship_prefix = "SCS"
 
 				authority = "auth_democratic"
+				origin = "origin_default"
 
 				civics = {
 					civic = civic_environmentalist
@@ -1144,7 +1145,7 @@ npc_scyldari_system_initializer = {
 			}
 
 			while = {
-				count = 23
+				count = 31
 				create_pop = {
 					species = last_created
 				}
@@ -1432,6 +1433,7 @@ npc_dal_lokkur_system_initializer = {
 				ship_prefix = "LOK"
 
 				authority = "auth_democratic"
+				origin = "origin_mechanists"
 
 				civics = {
 					civic = civic_technocracy
@@ -1492,7 +1494,7 @@ npc_dal_lokkur_system_initializer = {
 			}	
 
 			while = {	
-				count = 3
+				count = 8
 				create_pop = {	
 					species = last_created	
 				}	
@@ -1518,6 +1520,7 @@ npc_dal_lokkur_system_initializer = {
 			add_building = building_research_lab_1
 			add_building = building_foundry_1
 			add_building = building_factory_1
+			add_building = building_robot_assembly_plant
 
 			create_colony = {
 				owner = last_created_country
@@ -1752,6 +1755,7 @@ npc_kel_azak_system_initializer = {
 					ship_prefix = "KAS"
 
 					authority = "auth_oligarchic"
+					origin = "origin_default"
 
 					civics = {
 						civic = civic_warrior_culture
@@ -1794,7 +1798,7 @@ npc_kel_azak_system_initializer = {
 				}
 
 				while = {
-					count = 23
+					count = 31
 					create_pop = {
 						species = last_created
 					}
