@@ -5,6 +5,7 @@ fe_type_one_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
 		class = "pc_g_star"
@@ -123,6 +124,7 @@ fe_type_two_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
 		class = "pc_g_star"
@@ -241,6 +243,7 @@ fe_type_three_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
 		class = "pc_g_star"
@@ -359,6 +362,7 @@ fe_type_four_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 2
 	
 	planet = {
 		class = "pc_g_star"
@@ -477,6 +481,7 @@ fe_type_five_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
 		class = "pc_f_star"
@@ -593,6 +598,7 @@ fe_six_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
 		class = "pc_g_star"
@@ -710,6 +716,7 @@ fe_seven_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 2
+    max_instances = 10
 	
 	planet = {
 		class = star
@@ -821,6 +828,7 @@ fe_eight_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 2
+    max_instances = 10
 	
 	planet = {
 		class = star
@@ -930,6 +938,7 @@ fe_nine_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 2
+    max_instances = 10
 	
 	planet = {
 		class = star
@@ -1032,6 +1041,7 @@ fe_ten_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
@@ -1135,6 +1145,7 @@ fe_eleven_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
@@ -1238,6 +1249,7 @@ fe_twelve_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
@@ -1341,6 +1353,7 @@ fe_thirteen_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
@@ -1444,6 +1457,7 @@ fe_fourteen_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
@@ -1563,6 +1577,7 @@ fe_fifteen_binary_planet_system_initializer = {
 
 	usage = misc_system_init
 	usage_odds = 1
+    max_instances = 5
 	
 	planet = {
         count = 1
