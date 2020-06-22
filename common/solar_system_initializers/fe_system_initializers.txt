@@ -3778,20 +3778,22 @@ rigel_initializer = {
 	
 	planet = {
 		name = "Rigel A II"
-		class = "pc_desert"
+		class = "pc_hothouse"
 		orbit_distance = 30
 		orbit_angle = 120
 		size = 13
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
 		name = "Rigel A III"
-		class = "pc_toxic"
+		class = "pc_retinal"
 		orbit_distance = 40
 		orbit_angle = 170
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 	
 	planet = {
