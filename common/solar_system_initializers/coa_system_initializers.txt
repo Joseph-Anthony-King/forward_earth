@@ -1068,6 +1068,11 @@ coa_sol_neighbor_t1_second_colony = {
 	class = sc_binary_6
 	flags = { custom_system }
 
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -1102,7 +1107,7 @@ coa_sol_neighbor_t1_second_colony = {
 		class = "pc_continental"
 		orbit_distance = 15
 		orbit_angle = 90
-		size = 13
+		size = 18
 		has_ring = no
     	entity = "continental_planet_04_entity"
 		flags = { pd_ignore }
@@ -1110,8 +1115,8 @@ coa_sol_neighbor_t1_second_colony = {
 		moon = {
 			name = "Cygni A IIa"
 			class = "pc_barren_cold"
-			size = 1
-			orbit_distance = 4
+			size = 3
+			orbit_distance = 5
 			orbit_angle = 40
 			has_ring = no
 			flags = { pd_ignore }
@@ -1127,20 +1132,51 @@ coa_sol_neighbor_t1_second_colony = {
 		has_ring = no
 		flags = { pd_ignore }
 	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 25
+		orbit_angle = 47
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
 
 	planet = {
 		name = "Cygni B"
 		count = 1
 		class = pc_k_star
-		orbit_distance = 180
+		orbit_distance = 155
 		orbit_angle = 75
 		size = 18
 		has_ring = no
-		flags = { pd_ignore }
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1152,7 +1188,7 @@ coa_sol_neighbor_t1_second_colony = {
 			name = "Cygni B II"
 			class = "pc_arctic"
 			orbit_distance = 20
-			orbit_angle = 175
+			orbit_angle = 350
 			size = 12
 			has_ring = no
 			flags = { pd_ignore }
@@ -1162,7 +1198,7 @@ coa_sol_neighbor_t1_second_colony = {
 			name = "Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
-			orbit_angle = 15
+			orbit_angle = 10
 			size = 17
 			has_ring = no
 			flags = { pd_ignore }
@@ -1175,6 +1211,11 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
 	flags = { custom_system }
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 100
+	}
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1210,7 +1251,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		class = "pc_barren"
 		orbit_distance = 15
 		orbit_angle = 90
-		size = 13
+		size = 18
 		has_ring = no
 		entity = "barren_planet_01_entity"
 		flags = { pd_ignore }
@@ -1225,8 +1266,8 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		moon = {
 			name = "Cygni A IIa"
 			class = "pc_barren_cold"
-			size = 1
-			orbit_distance = 4
+			size = 3
+			orbit_distance = 5
 			orbit_angle = 40
 			has_ring = no
 			flags = { pd_ignore }
@@ -1242,20 +1283,51 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 		has_ring = no
 		flags = { pd_ignore }
 	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 25
+		orbit_angle = 47
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
 
 	planet = {
 		name = "Cygni B"
 		count = 1
 		class = pc_k_star
-		orbit_distance = 180
+		orbit_distance = 155
 		orbit_angle = 75
 		size = 18
 		has_ring = no
-		flags = { pd_ignore }
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_molten"
+			class = "pc_radiated"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1265,9 +1337,9 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B II"
-			class = "pc_barren_cold"
+			class = "pc_arctic"
 			orbit_distance = 20
-			orbit_angle = 175
+			orbit_angle = 350
 			size = 12
 			has_ring = no
 			flags = { pd_ignore }
@@ -1277,7 +1349,7 @@ coa_sol_neighbor_t1_no_guaranteed_second_colony = {
 			name = "Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
-			orbit_angle = 15
+			orbit_angle = 10
 			size = 17
 			has_ring = no
 			flags = { pd_ignore }
