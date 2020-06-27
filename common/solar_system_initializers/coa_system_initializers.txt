@@ -1076,7 +1076,6 @@ coa_sol_neighbor_t1_second_colony = {
 		size = 10
 		has_ring = no
 	}
-	}
 	
 	planet = {
 		class = "pc_asteroid"
