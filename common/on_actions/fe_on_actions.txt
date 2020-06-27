@@ -14,7 +14,6 @@ on_game_start = {
 		fe.10
 		fe.11
 		fe.12
-		fe.13
 	}
 }
 

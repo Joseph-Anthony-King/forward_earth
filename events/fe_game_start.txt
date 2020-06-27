@@ -919,124 +919,9 @@ event = {
     }
 }
 
-### fe.05 - Instantiate LHC for CoA
+### fe.05 - Set Human Space planet modifiers
 event = {
 	id = fe.05
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		
-
-            if = {
-                random_country = {
-                    limit = {
-                        AND = {
-                            has_country_flag = human_2
-                            num_ai_empires_setting > 1
-                        }
-                    }
-
-                    random_country = {
-                        limit = { has_country_flag = human_1 }
-                        owner_species = { save_event_target_as = human_species }
-                    }
-
-                    random_planet = {
-                        limit = {
-                            AND = {
-                                not = { any_country = { has_country_flag = custodian_faction } }
-                                not = { any_country = { has_country_flag = icarus_faction } }
-                                any_country = { has_country_flag = human_1 }
-                                has_planet_flag = epsilon_a_two
-                            }                
-                        }
-
-                        create_country = {
-                            name = "NAME_League_of_Human_Colonies"
-                            name_list = HUMAN1              
-                            ship_prefix = "LHCS"
-                            
-                            authority = auth_oligarchic
-                            
-                            origin = "origin_lost_colony"
-
-                            species = event_target:human_species
-                            ethos = {
-                                ethic = ethic_authoritarian
-                                ethic = ethic_fanatic_militarist
-                            }
-                            civics = {
-                                civic = civic_cutthroat_politics
-                                civic = civic_warrior_culture
-                            }
-                            flag = {
-                                icon = {
-                                    category="spherical"
-                                    file="flag_spherical_8.dds"
-                                }
-                                background = {
-                                    category="backgrounds"
-                                    file="vertical.dds"
-                                }
-                                colors = {
-                                    "dark_green"
-                                    "yellow"
-                                    "null"
-                                    "null"
-                                }
-                            }
-                            type = default
-                                    
-                            effect = {
-                                save_global_event_target_as = npc_LHC
-                                add_resource = {
-                                    minerals = 0
-                                    energy = 0
-                                    food = 0
-                                    alloys = 0
-                                    consumer_goods = 0
-                                    influence = 0
-                                }
-                            }
-                        }
-
-                        event_target:npc_LHC = {
-                            set_country_flag = human_3
-                            set_country_flag = human_faction
-                            save_global_event_target_as = LHC
-                        }
-                        
-                        set_owner = event_target:npc_LHC
-
-                        while = {
-                            count = 14
-                            create_pop = {
-                                species = event_target:human_species
-                            }
-                        }
-
-                        set_owner = last_created_country
-                        set_capital = yes
-                        add_district = district_farming
-                        add_district = district_farming
-                        add_district = district_mining
-                        add_district = district_generator
-                        add_building = building_capital
-
-                        last_created_country = {
-                            capital_scope = { set_name = "Eridani A II" }
-                            set_graphical_culture = mammalian_01
-                        }
-                    }
-                }
-            }
-    }
-}
-
-### fe.06 - Set Human Space planet modifiers
-event = {
-	id = fe.06
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1124,9 +1009,9 @@ event = {
     }
 }
 
-### fe.07 - Set barycenters
+### fe.06 - Set barycenters
 event = {
-    id = fe.07
+    id = fe.06
     hide_window = yes
     is_triggered_only = yes
 
@@ -1141,9 +1026,9 @@ event = {
     }
 }
 
-### fe.08 - Set Earth to nuked if unpopulated and CoA instantiated
+### fe.07 - Set Earth to nuked if unpopulated and CoA instantiated
 event = {
-	id = fe.08
+	id = fe.07
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1171,9 +1056,9 @@ event = {
     }
 }
 
-### fe.09 - Nuke Earth for ICARUS faction
+### fe.08 - Nuke Earth for ICARUS faction
 event = {
-    id = fe.09
+    id = fe.08
     hide_window = yes
     is_triggered_only = yes
 
@@ -1192,9 +1077,9 @@ event = {
     }
 }
 
-### fe.10 - Revert Eta Cassiopeiae to default names if unpopulated
+### fe.09 - Revert Eta Cassiopeiae to default names if unpopulated
 event = {
-	id = fe.10
+	id = fe.09
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1342,9 +1227,9 @@ event = {
     }
 }
 
-### fe.11 - Revert Sol to default names if humans are below space age
+### fe.10 - Revert Sol to default names if humans are below space age
 event = {
-	id = fe.11
+	id = fe.10
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1828,9 +1713,9 @@ event = {
     }
 }
 
-### fe.12 - Spawn Trantor
+### fe.11 - Spawn Trantor
 event = {
-	id = fe.12
+	id = fe.11
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -1912,9 +1797,9 @@ event = {
     }
 }
 
-### fe.13 - Spawn Terminus
+### fe.12 - Spawn Terminus
 event = {
-	id = fe.13
+	id = fe.12
 	hide_window = yes
 	is_triggered_only = yes
 
