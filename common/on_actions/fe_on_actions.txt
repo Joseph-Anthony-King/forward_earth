@@ -20,7 +20,6 @@ on_game_start = {
 empire_init_add_technologies = {
 	events = {
 		fe.100
-		fe.200
 	}
 }
 
