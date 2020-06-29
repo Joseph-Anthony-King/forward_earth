@@ -22,9 +22,3 @@ empire_init_add_technologies = {
 		fe.100
 	}
 }
-
-on_post_communications_established = {
-	events = {
-		fe.101
-	}
-}

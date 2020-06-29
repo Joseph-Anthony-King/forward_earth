@@ -175,6 +175,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						last_created_country = {
 							set_graphical_culture = css_fedbuild_01
 							set_country_flag = human_1
+							set_country_flag = human_faction
 							set_country_flag = human_starbase
 							save_global_event_target_as = UNoE_1
 						}
