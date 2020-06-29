@@ -3,6 +3,9 @@
 # Progress Events
 #
 # Written by Henrik Thyrwall
+# Edited by Joseph King
+# Edits made to progress.4 to account for Human to Human faction contacts
+# Edits start on lines 494 and 584
 #
 ############################
 
@@ -488,8 +491,36 @@ country_event = {
 	id = progress.4
 	title = "progress.4.name"
 	picture = GFX_evt_news_room
-	
-	desc = {
+
+	# Set Text Dynamically
+	desc = { # Human to UNE contact text
+		text = fe.progress.desc_00
+		exclusive_trigger = {
+			has_country_flag = human_faction
+			event_target:contact_empire = {
+				has_country_flag = human_1
+			}
+		}
+	}
+	desc = { # Human to CoA contact text
+		text = fe.progress.desc_01
+		exclusive_trigger = {
+			has_country_flag = human_faction
+			event_target:contact_empire = {
+				has_country_flag = human_2
+			}
+		}
+	}
+	desc = { # Human to CoA contact text
+		text = fe.progress.desc_02
+		exclusive_trigger = {
+			has_country_flag = human_faction
+			event_target:contact_empire = {
+				has_country_flag = human_3
+			}
+		}
+	}	
+	desc = { # Default
 		text = progress.4.desc_01
 		trigger = {
 			NOT = {
@@ -549,18 +580,22 @@ country_event = {
 			}
 			is_primitive = no
 		}
-		AND = {
-			NOT = { has_country_flag = human_faction }
-			event_target:contact_empire = {
-				NOT = {
-					has_country_flag = human_faction
-				}
-			}
-		}
 	}
 	
 	immediate = {
-		set_country_flag = first_contact_event
+
+		if = { # Filter Out Human to Human Contacts for First Contact Flag
+			limit = {
+				NOT = { has_country_flag = human_faction }
+				event_target:contact_empire = {
+					NOT = {
+						has_country_flag = human_faction
+					}
+				}
+			}
+
+			set_country_flag = first_contact_event
+		}
 	}
 
 	option = {

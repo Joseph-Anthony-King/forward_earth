@@ -1,6 +1,9 @@
 ###############################
 # Narrative Progression Events
 # by Maximilian Olbers
+# Edited by Joseph King
+# Edits made to story.7 to account for Human to Human faction contacts
+# Edits start on lines 464 and 556
 ###############################
 
 namespace = story
@@ -458,6 +461,18 @@ country_event = {
 country_event = {
 	id = story.7
 	title = story.7.name
+	
+	# Human to Human First Contact
+	desc = {
+		exclusive_trigger = {
+			NOT = { has_country_flag = StoryFirst }
+			has_country_flag = human_faction
+			FROM = {
+				has_country_flag = human_faction
+			}
+		}
+		text = fe.story.desc_00
+	}
 	# First
 	desc = {
 		trigger = { NOT = { has_country_flag = StoryFirst } }
@@ -538,26 +553,32 @@ country_event = {
 				has_country_flag = day_0
 			}
 		}
-		AND = {
-			NOT = { has_country_flag = human_faction }
-			FROM = {
-				NOT = {
-					has_country_flag = human_faction
-				}
-			}
-		}
 	}
 
 	immediate = {
-		set_country_flag = Story7
-		set_country_flag = has_encountered_other_empire
-		if = {
-			limit = { NOT = { has_country_flag = StoryFirst } }
-			set_country_flag = StoryFirst
-		}
-		if = {
-			limit = { NOT = { has_country_flag = first_alien_life } }
-			set_country_flag = first_alien_life
+
+		if = { # Filter Out Human to Human Contacts for First Contact Flag
+			limit = {
+				NOT = { has_country_flag = human_faction }
+				FROM = {
+					NOR = {
+						has_country_flag = human_1
+						has_country_flag = human_2
+						has_country_flag = human_3
+					}
+				}
+			}
+
+			set_country_flag = Story7
+			set_country_flag = has_encountered_other_empire
+			if = {
+				limit = { NOT = { has_country_flag = StoryFirst } }
+				set_country_flag = StoryFirst
+			}
+			if = {
+				limit = { NOT = { has_country_flag = first_alien_life } }
+				set_country_flag = first_alien_life
+			}
 		}
 	}
 
