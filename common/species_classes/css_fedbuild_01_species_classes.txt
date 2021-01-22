@@ -21,3 +21,21 @@ css_fedbuild_colours = {
 	graphical_culture = css_fedbuild_02
 	move_pop_sound_effect = "moving_pop_confirmation"
 }
+
+css_dss_fedbuild = {
+	randomized = no
+	portraits = {
+	}
+	
+	graphical_culture = css_fedbuild_03
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
+
+css_dss_fedbuild_colours = {
+	randomized = no
+	portraits = {
+	}
+	
+	graphical_culture = css_fedbuild_04
+	move_pop_sound_effect = "moving_pop_confirmation"
+}
