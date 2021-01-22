@@ -21,7 +21,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "css_fedbuild_01_military_station_large_mesh"
-        file = "css_fedbuilder_nsc_defence_station.mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuilder_nsc_defence_station.mesh"
         scale = 1.0
     }	
 	
@@ -39,7 +39,7 @@ objectTypes = {
 	
 	pdxmesh = {
 		name = "css_fedbuild_01_military_station_section_heavy_mesh"
-        file = "css_fedbuilder_nsc_defence_station.mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuilder_nsc_defence_station.mesh"
         scale = 1.0
     }	
 

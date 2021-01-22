@@ -1,0 +1,35 @@
+objectTypes = {
+	
+	####### civilian ships  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_science_mesh"
+        file = "gfx/models/ships/css_fedbuild_civ/science_ship/css_fedbuild_science_ship.mesh"
+        scale = 0.55 #1.5
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_construction_mesh"
+        file = "gfx/models/ships/css_fedbuild_civ/construction_ship/css_fedbuild_construction_ship.mesh"
+        scale = 0.7 #2.3
+	}
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_construction_window_mesh"
+		file = "gfx/models/ships/mammalian_01/mammalian_01_construction_window.mesh"
+		scale = 0.35 #1.0
+	}
+	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_transport_mesh"
+        file = "gfx/models/ships/css_fedbuild_civ/transport_ship/css_fedbuild_transport_ship.mesh"
+        scale = 0.45 #1.1
+	}
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_colony_mesh"
+        scale = 0.55 #1.8
+		file = "gfx/models/ships/css_fedbuild_civ/colony_ship/css_fedbuild_colony_ship.mesh"
+    }
+}

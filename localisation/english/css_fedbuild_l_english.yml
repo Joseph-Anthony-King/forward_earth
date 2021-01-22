@@ -11,5 +11,11 @@
 css_fedbuild:0 "Federation Builders"
  css_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset."
  
-css_fedbuild_colours:0 "[Colors] Federation Builders"
+css_fedbuild_colours:0 "[Colours]Federation Builders"
  css_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours."
+ 
+ css_dss_fedbuild:0 "Downscaled Ships: Federation Builders"
+ css_dss_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset. Downscaled ships patch."
+ 
+css_dss_fedbuild_colours:0 "Downscaled Ships: [Colours] Federation Builders"
+ css_dss_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours. Downscaled ships patch."
