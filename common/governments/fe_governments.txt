@@ -1,0 +1,13 @@
+# Planetary Union
+gov_planetary_union = {
+	ruler_title = RT_SECRETARY_GENERAL
+	ruler_title_female = RT_SECRETARY_GENERAL
+
+	possible = {
+		has_authority = auth_democratic
+	}
+
+	weight = {
+		base = 1
+	}
+}

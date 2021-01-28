@@ -205,6 +205,21 @@ part = {
 	}
 }
 
+# Planetary Union
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_REPRESENTATIVE_DEMOCRACY"
+
+	trigger = {
+		has_government = gov_planetary_union
+		NOR = {
+			has_country_flag = custom_start_screen
+			has_origin = origin_post_apocalyptic
+			has_origin = origin_life_seeded
+		}
+	}
+}
+
 # Theocratic Monarchy
 part = {
 	location = 1
@@ -760,6 +775,31 @@ part = {
 
 ### Origins - Placed before the pre-scripted empires as only the first valid one is chosen.
 
+# Necrophage
+part = {
+	location = 0
+	localization = "START_SCREEN_NECROPHAGE"
+	
+	trigger = {
+		has_origin = origin_necrophage
+		is_xenophile = no
+		is_pacifist = no
+	}
+}
+part = {
+	location = 0
+	localization = "START_SCREEN_NECROPHAGE_PEACEFUL"
+	
+	trigger = {
+		has_origin = origin_necrophage
+		OR = {
+			is_xenophile = yes
+			is_pacifist = yes
+		}
+	}
+}
+
+
 # Void Dwellers
 part = {
 	location = 0
@@ -840,13 +880,39 @@ part = {
 	}
 }
 
-# Galactic Doorstep 
+# Galactic Doorstep - Standard
 part = {
 	location = 0
 	localization = "START_SCREEN_GALACTIC_DOORSTEP"
 	
 	trigger = {
 		has_origin = origin_galactic_doorstep
+		NOR = {
+			has_authority = auth_hive_mind
+			has_authority = auth_machine_intelligence
+		}
+	}
+}
+
+# Galactic Doorstep - Machine Intelligence
+part = {
+	location = 0
+	localization = "START_SCREEN_GALACTIC_DOORSTEP_MACH"
+	
+	trigger = {
+		has_origin = origin_galactic_doorstep
+		has_authority = auth_machine_intelligence
+	}
+}
+
+# Galactic Doorstep - Hive Mind
+part = {
+	location = 0
+	localization = "START_SCREEN_GALACTIC_DOORSTEP_HIVE"
+	
+	trigger = {
+		has_origin = origin_galactic_doorstep
+		has_authority = auth_hive_mind
 	}
 }
 
@@ -910,25 +976,5 @@ part = {
 
 	trigger = {
 		has_country_flag = human_2
-	}
-}
-
-# ICARUS
-part = {
-	location = 0
-	localization = "START_SCREEN_ICARUS"
-	
-	trigger = {
-		has_country_flag = icarus_faction
-	}
-}
-
-# Earth Custondianship
-part = {
-	location = 0
-	localization = "START_SCREEN_CUSTODIANSHIP"
-	
-	trigger = {
-		has_country_flag = custodian_faction
 	}
 }

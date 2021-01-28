@@ -22,7 +22,7 @@ humans1 = {
 	
 	authority = "auth_democratic"
 	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
-	government = gov_representative_democracy
+	government = gov_planetary_union
 	
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"

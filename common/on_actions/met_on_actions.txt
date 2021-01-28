@@ -1,0 +1,12 @@
+# Class Check
+on_terraforming_complete = {
+	events = {
+		met.1
+	}
+}
+
+on_press_begin = {
+	events = {
+		met.1
+	}
+}
