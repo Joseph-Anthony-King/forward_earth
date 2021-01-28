@@ -1,4 +1,4 @@
-### This mod is a version of my [Forward Earth](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388) mod with dependencies on [Gatekeeper's](https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990) [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) and [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279) mods and on [Lex Peregrine's](https://steamcommunity.com/id/lexperegrine/myworkshopfiles/?appid=281990) [Planetary Diversity New Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1616934635&searchtext=Planetary_Diversity) mod.
+### Please note this is an update of a prior mod I had uploaded to steam.  That mod is no longer available for new subscriptions and will not be upgraded past version 2.6.*.
 
 # FORWARD EARTH
 
@@ -12,9 +12,11 @@ In addition to the above this mod can also be described as a poor man’s versio
 
 There are various tweaks and Easter Eggs scattered throughout the galaxy, some examples; Betelguese actually spawns as a red giant, the Chinorr start with a tropical world preference but Chicora is an arid world, the Trantor and Terminus system spawn where they should, references to people such as Christopher Columbus and Von Braun is removed and many more.  You’re going to have to download and play the mod to find others.
 
+Even though this is an human centric mod the scripts have been adjusted to be responsive to the set up screen.  As an example, say you set the the number of AI players to 1 or less and no guaranteed colonizable worlds, then the Scyldari, Kel-Azaan, and Lok will not spawn; there will be no colonizable worlds in your immediate vicinity and there will only be one or less AI player (depending on your selection) somewhere out there in the void.  You can even play with no AI players.  This holds true even if you play as a non-human player.  Additionally, I did test this out and suppose you want to play as a Roman inspired earth, then you can simply edit the United Nations of Earth faction and you will assume their seat.  The CoA will still spawn but you can then play in the place of the United Nations.
+
 This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000.  Additionally, the starting distances to the Scyldari, Kel-Azaan, and Lok are proportional to the size of the galaxy.  When playing as a Human faction they appear closer to Earth the smaller the galaxy.  The Scyldari, Kel-Azaan, and Lok are not scripted to appear when playing as a non-human faction in order to prevent duplicate appearances of these factions.
 
-This mod also includes a little over 5,000 star names that are included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod.
+This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link).
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [NSC2](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077).  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
 
@@ -24,17 +26,19 @@ This mod took quite a bit of time and I used my programming skills to script a l
 - [Natural Spiral Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=866156261) by [phidinh6](https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990)
 - [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by [Alex FRD](https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990)
 - [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by [Leaf](https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990)
+- [More Earth Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=2270866032) by [Kayess](https://steamcommunity.com/id/Kayess_/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by  [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
-- [Immersive Galaxy - Planet Variety for Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=1128927140) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 
-This mod has four required items: **Gatekeeper's** [Planetary Diversity](https://steamcommunity.com/sharedfiles/filedetails/?id=819148835) and [Planetary Diversity - Exotic Worlds](https://steamcommunity.com/workshop/filedetails/?id=1732437279) mods; **Lex Peregrine's** [Planetary Diversity New Worlds](https://steamcommunity.com/sharedfiles/filedetails/?id=1616934635&searchtext=Planetary_Diversity) mod; and on **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since **Dwaine's** mod is not always updated timely I've created a wrapper for the mod available at:
+This mod also has a required items: **Dwaine's** [Immersive Galaxy - Planet Variety - Clouds](https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357) but since that mod is not always updated timely I've created a wrapper for the mod available at:
 
 [Forward Earth - BASE](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914) 
 
 This mod supports Portuguese, French, German, Polish, Russian and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 
 Hope everyone enjoys it and please let me know if you note any bugs or issues!
+
+Joe
 
 ## ICARUS
 
