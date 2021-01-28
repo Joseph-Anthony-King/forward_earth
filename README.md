@@ -26,6 +26,7 @@ This mod took quite a bit of time and I used my programming skills to script a l
 - [Natural Spiral Galaxies](https://steamcommunity.com/sharedfiles/filedetails/?id=866156261) by [phidinh6](https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990)
 - [Real Sol Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=731621473) by [Alex FRD](https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990)
 - [Real Sol Textures Expansion](https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410) by [Leaf](https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990)
+- [More Earth Textures](https://steamcommunity.com/sharedfiles/filedetails/?id=2270866032) by [Kayess](https://steamcommunity.com/id/Kayess_/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Nightfall](https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428) by  [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 - [Immersive Galaxy - Planet Variety - LITE](https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705) by [Dwaine](https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990)
 

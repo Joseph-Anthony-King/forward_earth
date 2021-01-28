@@ -29,6 +29,7 @@ This mod took quite a bit of time and I used my programming skills to script a l
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [url=https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990]phidinh6[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/url] by [url=https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990]Alex FRD[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410]Real Sol Textures Expansion[/url] by [url=https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990]Leaf[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2270866032]More Earth Textures[/url] by [url=https://steamcommunity.com/id/Kayess_/myworkshopfiles/?appid=281990]Kayess[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1173995428]Immersive Galaxy - Nightfall[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety - LITE[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
 [/list]
