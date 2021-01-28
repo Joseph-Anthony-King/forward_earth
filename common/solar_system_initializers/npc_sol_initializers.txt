@@ -6,10 +6,9 @@
 
 ### Sol System
 npc_sol_system_initializer = {
-	name = "NAME_Sol"	
+	name = "NAME_Sol"
+	
 	class = "sc_g"
-	flags = { custom_system }
-
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 145
@@ -60,7 +59,7 @@ npc_sol_system_initializer = {
 		size = 10
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
-		flags = { planet_mercury pd_ignore }
+		flags = { planet_mercury }
 	}
 	
 	planet = {
@@ -71,7 +70,7 @@ npc_sol_system_initializer = {
 		size = 16
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus pd_ignore }
+		flags = { planet_venus }
 	}
 	
 	planet = {
@@ -83,7 +82,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none
-		flags = { planet_earth pd_ignore }
+		flags = { planet_earth }
 		
 		init_effect = {
 			prevent_anomaly = yes
@@ -856,7 +855,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 40
 			has_ring = no
 			entity = "realsol_new_moon_entity"
-			flags = { planet_luna pd_ignore }
+			flags = { planet_luna }
 		}
 	}
 	
@@ -869,28 +868,26 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "barren_planet_new_mars_entity"
 		anomaly = "terraforming_candidate_category"
-		flags = { pd_ignore planet_mars }
+		flags = { planet_mars }
 		
 		moon = {
 			name = "NAME_Phobos"
 			class = "pc_orbiting_asteroid"
-			size = 3
+			size = 1
 			orbit_distance = 6
 			orbit_angle = 40
 			has_ring = no
-			#entity = "phobos_entity"
-			flags = { planet_phobos pd_ignore }
+			flags = { planet_phobos }
 		}
 		
 		moon = {
 			name = "NAME_Deimos"
 			class = "pc_orbiting_asteroid"
-			size = 4
+			size = 1
 			orbit_distance = 2
 			orbit_angle = 40
 			has_ring = no
-			#entity = "deimos_entity"
-			flags = { planet_deimos pd_ignore }
+			flags = { planet_deimos }
 		}
 	}
 	
@@ -902,7 +899,7 @@ npc_sol_system_initializer = {
 		size = 5
 		entity = "ceres_entity"
 		has_ring = no
-		flags = { planet_ceres pd_ignore }
+		flags = { planet_ceres }
 	}
 	
 	planet = {
@@ -944,7 +941,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		flags = { planet_jupiter pd_ignore }
+		flags = { planet_jupiter }
 		
 		moon = {
 			name = "NAME_Io"
@@ -954,7 +951,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 110
 			has_ring = no
 			entity = "moon_jup_io_entity"
-			flags = { planet_io pd_ignore }
+			flags = { planet_io }
 		}
 		moon = {
 			name = "NAME_Europa"
@@ -964,7 +961,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 10
 			has_ring = no
 			entity = "moon_jup_europa_entity"
-			flags = { planet_europa pd_ignore }
+			flags = { planet_europa }
 		}
 		moon = {
 			name = "NAME_Ganymede"
@@ -974,7 +971,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 80
 			has_ring = no
 			entity = "moon_jup_ganymede_entity"
-			flags = { planet_ganymede pd_ignore }
+			flags = { planet_ganymede }
 		}
 		moon = {
 			name = "NAME_Callisto"
@@ -984,7 +981,7 @@ npc_sol_system_initializer = {
 			orbit_angle = -155
 			has_ring = no
 			entity = "moon_jup_callisto_entity"
-			flags = { planet_callisto pd_ignore }
+			flags = { planet_callisto }
 		}
 	}
 	
@@ -997,7 +994,7 @@ npc_sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_saturn_entity"
 		change_orbit = 7
-		flags = { planet_saturn pd_ignore }
+		flags = { planet_saturn }
 		
 		moon = {
 			name = "NAME_Rhea"
@@ -1007,18 +1004,18 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "rhea_entity"
-			flags = { planet_rhea pd_ignore }
+			flags = { planet_rhea }
 		}
 		
 		moon = {
 			name = "NAME_Titan"
 			class = "pc_cold_reducing"
-			size = 10
+			size = 8
 			orbit_distance = 10
 			orbit_angle = 180
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan pd_ignore }
+			flags = { planet_titan }
 		}
 	}
 	
@@ -1027,10 +1024,10 @@ npc_sol_system_initializer = {
 		class = "pc_ice_giant"
 		orbit_distance = 30
 		orbit_angle = 125
-		size = 21
+		size = 20
 		has_ring = no
 		entity = "gas_giant_uranus_entity"
-		flags = { planet_uranus pd_ignore }
+		flags = { planet_uranus }
 		
 		moon = {
 			name = "NAME_Titania"
@@ -1040,7 +1037,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "titania_entity"
-			flags = { planet_titania pd_ignore }
+			flags = { planet_titania }
 		}		
 		moon = {
 			name = "NAME_Oberon"
@@ -1050,7 +1047,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 66
 			has_ring = no
 			entity = "oberon_entity"
-			flags = { planet_oberon pd_ignore }
+			flags = { planet_oberon }
 		}
 	}
 	
@@ -1063,7 +1060,7 @@ npc_sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		flags = { planet_neptune pd_ignore }
+		flags = { planet_neptune }
 		
 		moon = {
 			name = "NAME_Triton"
@@ -1073,7 +1070,7 @@ npc_sol_system_initializer = {
 			orbit_angle = 115
 			entity = "triton_entity"
 			has_ring = no
-			flags = { planet_triton pd_ignore }
+			flags = { planet_triton }
 		}
 	}
 
@@ -1085,7 +1082,7 @@ npc_sol_system_initializer = {
 		size = 5
 		has_ring = no
 		entity = "realsol_pluto_entity"
-		flags = { planet_pluto pd_ignore }
+		flags = { planet_pluto }
 	}
 
 	planet = {
@@ -1166,7 +1163,7 @@ npc_sol_system_initializer = {
 npc_sol_neighbor_t1_first_colony = {	
 	name = "NAME_Alpha_Centauri"
 	class = sc_trinary_1
-	flags = { neighbor_t1_first_colony custom_system }
+	flags = { neighbor_t1_first_colony }
 	
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1214,7 +1211,7 @@ npc_sol_neighbor_t1_first_colony = {
     		moon = {
     			name = "Alpha Centauri B IIa"
     			class = "pc_orbiting_asteroid"
-    			size = 4
+    			size = 1
     			orbit_distance = 7
     			has_ring = no
 				flags = { pd_ignore }
@@ -1223,7 +1220,7 @@ npc_sol_neighbor_t1_first_colony = {
     		moon = {
     			name = "Alpha Centauri B IIb"
     			class = "pc_orbiting_asteroid"
-    			size = 3
+    			size = 2
     			orbit_distance = 4
     			has_ring = no
 				flags = { pd_ignore }
@@ -1292,6 +1289,7 @@ npc_sol_neighbor_t1_first_colony = {
 			orbit_angle = 270
 			size = 15
 			has_ring = yes
+			entity = "toxic_planet_15_entity"
 			flags = { pd_ignore }
 		
 			init_effect = {
@@ -1301,6 +1299,7 @@ npc_sol_neighbor_t1_first_colony = {
 				}
 			}
 		}
+
 	}
 
 	planet = {
@@ -1566,7 +1565,6 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 npc_sol_neighbor_t1 = {
 	name = "NAME_Barnard's_Star"
 	class = sc_m
-	flags = { custom_system }
 
 	init_effect = {
 		every_neighbor_system = {
@@ -1641,7 +1639,6 @@ npc_sol_neighbor_t1 = {
 npc_sol_neighbor_t1_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
-	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1706,6 +1703,7 @@ npc_sol_neighbor_t1_second_colony = {
 		size = 10
 		has_ring = no
 		flags = { pd_ignore }
+	}
 	
 	planet = {
 		class = "pc_asteroid"
@@ -1750,7 +1748,7 @@ npc_sol_neighbor_t1_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1762,7 +1760,7 @@ npc_sol_neighbor_t1_second_colony = {
 			name = "Cygni B II"
 			class = "pc_arctic"
 			orbit_distance = 20
-			orbit_angle = 350
+			orbit_angle = 175
 			size = 12
 			has_ring = no
 			flags = { pd_ignore }
@@ -1772,7 +1770,7 @@ npc_sol_neighbor_t1_second_colony = {
 			name = "Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
-			orbit_angle = 10
+			orbit_angle = 15
 			size = 17
 			has_ring = no
 			flags = { pd_ignore }
@@ -1784,7 +1782,6 @@ npc_sol_neighbor_t1_second_colony = {
 npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 	name = "Cygni"
 	class = sc_binary_6
-	flags = { custom_system }
 
 	asteroid_belt = {
 		type = rocky_asteroid_belt
@@ -1855,7 +1852,6 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 		orbit_angle = 180
 		size = 10
 		has_ring = no
-		flags = { pd_ignore }
 	}
 	
 	planet = {
@@ -1901,7 +1897,7 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B I"
-			class = "pc_radiated"
+			class = "pc_molten"
 			orbit_distance = 20
 			orbit_angle = 180
 			size = 10
@@ -1911,9 +1907,9 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 	
 		planet = {
 			name = "Cygni B II"
-			class = "pc_arctic"
+			class = "pc_barren_cold"
 			orbit_distance = 20
-			orbit_angle = 350
+			orbit_angle = 175
 			size = 12
 			has_ring = no
 			flags = { pd_ignore }
@@ -1923,7 +1919,7 @@ npc_sol_neighbor_t1_no_guaranteed_second_colony = {
 			name = "Cygni B III"
 			class = "pc_frozen"
 			orbit_distance = 20
-			orbit_angle = 10
+			orbit_angle = 15
 			size = 17
 			has_ring = no
 			flags = { pd_ignore }
