@@ -1,0 +1,104 @@
+namespace = met
+
+event = {
+	id = met.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_planet = {
+			limit= {
+				has_planet_flag = planet_earth
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				set_planet_entity = {
+					entity = "met_desert"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+					entity = "met_arid"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				set_planet_entity = {
+					entity = "met_savannah"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				set_planet_entity = {
+					entity = "met_tropical"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+					entity = "continental_planet_earth_entity"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				set_planet_entity = {
+					entity = "met_ocean"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				set_planet_entity = {
+					entity = "met_arctic"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				set_planet_entity = {
+					entity = "met_alpine"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				set_planet_entity = {
+					entity = "met_tundra"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+					entity = "met_gaia"
+				}
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+					entity = "met_nuked"
+				}
+			}
+		}
+	}
+}

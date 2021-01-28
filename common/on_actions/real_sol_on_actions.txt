@@ -24,13 +24,6 @@ on_yearly_pulse = {
 	}
 }
 
-# Class check for Earth
-on_terraforming_complete = {
-	events = {
-		real_sol.3
-	}
-}
-
 on_yearly_pulse = {
 	events = {
 		real_sol.33
