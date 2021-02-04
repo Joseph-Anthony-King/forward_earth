@@ -99,6 +99,22 @@ event = {
 					entity = "met_nuked"
 				}
 			}
+			IF = {
+				limit = {
+					is_planet_class = pc_hive
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_hive_entity"
+                }
+			}
+			IF = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_earth_entity"
+                }
+			}
 		}
 	}
 }
