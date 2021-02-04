@@ -995,8 +995,8 @@ event = {
                 modifier = "strong_magnetic_field"
                 days = -1
             }
-            change_pc = pc_desert
-            set_planet_entity = { entity = "desert_planet_02_entity" }
+            change_pc = pc_semiarid
+            set_planet_entity = { entity = "semiarid_planet_01_entity" }
         }
 
         every_planet = {
