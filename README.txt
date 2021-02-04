@@ -1,7 +1,5 @@
 ﻿[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
 
-[h3]Please note this is an update of a prior mod I had uploaded to steam.  That mod is no longer available for new subscriptions and will not be upgraded past version 2.6.*.[/h3]
-
 [h1]FORWARD EARTH[/h1]
 
 [b]Forward Earth[/b] is a galaxy generation mod that scripts the creation of [i]Human Space[/i] in the vicinity of Earth.  One of the biggest changes is the recasting of the [i]Commonwealth of Man[/i] as the [i]Commonwealth of Aurora[/i].  This change is more than just a name change, the [i]Commonwealth of Aurora[/i] (CoA) now spawns in the Eta Cassiopeiae System, which is a binary system close to Sol.  Additionally, the CoA are no longer Nazi in space but are inspired by the Terran Federation as depicted in Robert Heinlein’s [i]Starship Troopers[/i], the novel not the movie, and their symbol is now the Spaceship-and-Sun as inspired by Asimov's Galactic Empire.  This new emblem symbolizes the importance of the navy in their social structure.  The CoA is not a country with a navy, but a navy with a country.
