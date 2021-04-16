@@ -37,21 +37,9 @@ on_terraforming_complete = {
 	}
 }
 
-on_yearly_pulse = {
-	events = {
-		real_sol.44
-	}
-}
-
 # Class check for Mars
 on_terraforming_complete = {
 	events = {
 		real_sol.5
-	}
-}
-
-on_yearly_pulse = {
-	events = {
-		real_sol.55
 	}
 }

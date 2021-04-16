@@ -50,8 +50,7 @@ event = {
 	hide_window = yes
 	is_triggered_only = yes
 
-	immediate = {
-		
+	immediate = {		
 
             if = {
                 random_country = {
@@ -67,7 +66,7 @@ event = {
                         owner_species = { save_event_target_as = human_species }
                     }
 
-                    random_planet = {
+                    random_galaxy_planet = {
                         limit = {
                             AND = {
                                 not = { any_country = { has_country_flag = custodian_faction } }
@@ -155,7 +154,7 @@ event = {
                         }
                     }
                     
-                    random_planet = {
+                    random_galaxy_planet = {
                         limit = {
                             AND = {
                                 not = { any_country = { has_country_flag = human_2 } }
@@ -343,7 +342,7 @@ event = {
                         }
                     }
 
-                    random_planet = {
+                    random_galaxy_planet = {
 
                         limit = {
 
@@ -367,7 +366,7 @@ event = {
                         }
                     }
 
-                    random_planet = {
+                    random_galaxy_planet = {
                         limit = {
                             AND = {
                                 has_planet_flag = epsilon_a_two
@@ -452,7 +451,7 @@ event = {
                         }
                     }
                     
-                    random_planet = {
+                    random_galaxy_planet = {
                         limit = {
                             AND = {
                                 not = { any_country = { has_country_flag = human_2 } }
@@ -637,7 +636,7 @@ event = {
                     }
                 }
 
-                random_planet = {
+                random_galaxy_planet = {
 
                     limit = {
 
@@ -661,7 +660,7 @@ event = {
                     }
                 }
 
-                random_planet = {
+                random_galaxy_planet = {
                     limit = {
                         AND = {
                             has_planet_flag = epsilon_a_two
@@ -749,7 +748,7 @@ event = {
                     }
                 }
                 
-                random_planet = {
+                random_galaxy_planet = {
                     limit = {
                         AND = {
                             not = { any_country = { has_country_flag = human_2 } }
@@ -927,7 +926,7 @@ event = {
 
 	immediate = {
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_tau_ceti_3 }
             add_modifier = {
@@ -940,7 +939,7 @@ event = {
             }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_tau_ceti_4 }
             add_modifier = {
@@ -953,7 +952,7 @@ event = {
             }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_tau_ceti_4b }
             add_modifier = {
@@ -966,7 +965,7 @@ event = {
             }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_aurora }
             add_modifier = {
@@ -975,7 +974,7 @@ event = {
             }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_tithonus }
             add_modifier = {
@@ -984,7 +983,7 @@ event = {
             }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = epsilon_a_two }
             add_modifier = {
@@ -999,7 +998,7 @@ event = {
             set_planet_entity = { entity = "desert_planet_02_entity" }
         }
 
-        every_planet = {
+        every_galaxy_planet = {
 
             limit = { has_planet_flag = planet_chicora }
 
@@ -1017,7 +1016,7 @@ event = {
 
     immediate = {
 
-        every_planet = {
+        every_galaxy_planet = {
             limit = {
                 has_planet_flag = planetary_barrycenter              
             }
@@ -1034,7 +1033,7 @@ event = {
 
 	immediate = {
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     any_country = { has_country_flag = human_2 }
@@ -1064,7 +1063,7 @@ event = {
 
     immediate = {
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     any_country = { has_country_flag = icarus_faction }
@@ -1085,7 +1084,7 @@ event = {
 
 	immediate = {
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1095,7 +1094,7 @@ event = {
             set_name = "Eta Cassiopeiae A I"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1105,7 +1104,7 @@ event = {
             set_name = "Eta Cassiopeiae A II"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1115,7 +1114,7 @@ event = {
             set_name = "Eta Cassiopeiae A IIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1125,7 +1124,7 @@ event = {
             set_name = "Eta Cassiopeiae A IIb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1135,7 +1134,7 @@ event = {
             set_name = "Eta Cassiopeiae A IIIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1145,7 +1144,7 @@ event = {
             set_name = "Eta Cassiopeiae A IIIb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1155,7 +1154,7 @@ event = {
             set_name = "Eta Cassiopeiae A IV"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1165,7 +1164,7 @@ event = {
             set_name = "Eta Cassiopeiae A IVa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1175,7 +1174,7 @@ event = {
             set_name = "Eta Cassiopeiae A IVb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1185,7 +1184,7 @@ event = {
             set_name = "Eta Cassiopeiae A V"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1195,7 +1194,7 @@ event = {
             set_name = "Eta Cassiopeiae A Va"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1205,7 +1204,7 @@ event = {
             set_name = "Eta Cassiopeiae B I"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1215,7 +1214,7 @@ event = {
             set_name = "Eta Cassiopeiae B II"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = { any_country = { has_country_flag = human_2 } }
@@ -1235,7 +1234,7 @@ event = {
 
 	immediate = {
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1252,7 +1251,7 @@ event = {
             set_name = "Sol I"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1269,7 +1268,7 @@ event = {
             set_name = "Sol II"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1286,7 +1285,7 @@ event = {
             set_name = "Sol III"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1303,7 +1302,7 @@ event = {
             set_name = "Sol IIIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1320,7 +1319,7 @@ event = {
             set_name = "Sol IV"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1337,7 +1336,7 @@ event = {
             set_name = "Sol IVa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1354,7 +1353,7 @@ event = {
             set_name = "Sol IVb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1371,7 +1370,7 @@ event = {
             set_name = "TXC-6735"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1388,7 +1387,7 @@ event = {
             set_name = "RTD-4377"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1405,7 +1404,7 @@ event = {
             set_name = "YKQ-9137"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1422,7 +1421,7 @@ event = {
             set_name = "PLM-4371"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1439,7 +1438,7 @@ event = {
             set_name = "Sol V"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1456,7 +1455,7 @@ event = {
             set_name = "Sol Va"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1473,7 +1472,7 @@ event = {
             set_name = "Sol Vb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1490,7 +1489,7 @@ event = {
             set_name = "Sol Vc"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1507,7 +1506,7 @@ event = {
             set_name = "Sol Vd"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1524,7 +1523,7 @@ event = {
             set_name = "Sol VI"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1541,7 +1540,7 @@ event = {
             set_name = "Sol VIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1558,7 +1557,7 @@ event = {
             set_name = "Sol VIb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1575,7 +1574,7 @@ event = {
             set_name = "Sol VII"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1592,7 +1591,7 @@ event = {
             set_name = "Sol VIIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1609,7 +1608,7 @@ event = {
             set_name = "Sol VIIb"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1626,7 +1625,7 @@ event = {
             set_name = "Sol VIII"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1643,7 +1642,7 @@ event = {
             set_name = "Sol VIIIa"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1660,7 +1659,7 @@ event = {
             set_name = "DIS-7865"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1677,7 +1676,7 @@ event = {
             set_name = "PUR-1436"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {
@@ -1694,7 +1693,7 @@ event = {
             set_name = "LHR-0978"
         }
 
-        random_planet = {
+        random_galaxy_planet = {
             limit = {
                 AND = {
                     NOT = {

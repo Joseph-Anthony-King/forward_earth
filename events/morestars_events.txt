@@ -17,43 +17,43 @@ event = {
 	fire_only_once = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_a
 			}
 			set_name = "[This.GetName] A"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_b
 			}
 			set_name = "[This.GetName] B"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_c
 			}
 			set_name = "[This.GetName] C"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_d
 			}
 			set_name = "[This.GetName] D"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_e
 			}
 			set_name = "[This.GetName] E"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_f
 			}
 			set_name = "[This.GetName] F"
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = morestars_binary_g
 			}

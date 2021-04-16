@@ -7,7 +7,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_mercury
 			}
@@ -38,7 +38,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_mercury
 			}
@@ -85,7 +85,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_venus
 			}
@@ -124,7 +124,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_venus
 			}
@@ -171,7 +171,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth
 			}
@@ -282,7 +282,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth
 			}
@@ -321,7 +321,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth_moon
 			}
@@ -354,55 +354,13 @@ event = {
 }
 
 event = {
-	id = real_sol.44
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = planet_earth_moon
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren
-				}
-				set_planet_entity = {
-                    entity = "realsol_new_moon_warm_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren_cold
-				}
-				set_planet_entity = {
-                    entity = "realsol_new_moon_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_nuked
-				}
-				set_planet_entity = {
-                    entity = "realsol_nuked_moon_entity"
-                }
-			}
-		}
-	}
-}
-
-event = {
 	id = real_sol.5
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
-		root = {
-			country_event = { id = real_sol.555 }
-		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_mars
 			}
@@ -412,14 +370,6 @@ event = {
 				}
 				set_planet_entity = {
                     entity = "terraformed_mars_continental_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_machine
-				}
-				set_planet_entity = {
-                    entity = "realsol_ai_mars_entity"
                 }
 			}
 			IF = {
@@ -437,21 +387,6 @@ event = {
 				set_planet_entity = {
                     entity = "terraformed_mars_arid_entity"
                 }
-			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.55
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = planet_mars
 			}
 			IF = {
 				limit = {
@@ -471,42 +406,6 @@ event = {
 			}
 			IF = {
 				limit = {
-					is_planet_class = pc_infested
-				}
-				set_planet_entity = {
-                    entity = "infested_planet_mars_entity"
-                }
-			}
-		}
-	}
-}
-
-country_event = {
-	id = real_sol.555
-	title = real_sol.555.name
-	desc = real_sol.555.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-
-	immediate = {
-		every_planet = {
-			limit = {
-				has_planet_flag = planet_mars
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_continental
-				}
-				set_planet_entity = {
-                    entity = "terraformed_mars_continental_entity"
-                }
-			}
-			IF = {
-				limit = {
 					is_planet_class = pc_machine
 				}
 				set_planet_entity = {
@@ -515,23 +414,12 @@ country_event = {
 			}
 			IF = {
 				limit = {
-					is_planet_class = pc_gaia
+					is_planet_class = pc_infested
 				}
 				set_planet_entity = {
-                    entity = "terraformed_mars_continental_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_arid
-				}
-				set_planet_entity = {
-                    entity = "terraformed_mars_arid_entity"
+                    entity = "infested_planet_mars_entity"
                 }
 			}
 		}
-	}
-	option = {
-		name = real_sol.555.a	
 	}
 }
