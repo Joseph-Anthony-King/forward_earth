@@ -13,7 +13,7 @@ event = { # triggers after button press
 	
 	immediate = {
 		set_global_flag = ig_pd_entities # Set flags at game start
-		every_planet = {
+		every_galaxy_planet = {
 		# PD planets here
 			if = {
 				limit = {

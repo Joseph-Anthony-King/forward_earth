@@ -34,7 +34,7 @@ tzynn = {
 	planet_class = "pc_desert"
 	system_name = "PRESCRIPTED_system_name_tzynn"
 	
-	graphical_culture = "reptilian_01"
+	graphical_culture = "nemesis_01"
 	city_graphical_culture = "reptilian_01"
 	
 	empire_flag = {

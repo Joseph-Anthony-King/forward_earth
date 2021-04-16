@@ -55,7 +55,7 @@ sol_system_initializer = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 16
+		size = 20
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus pd_ignore }
@@ -245,7 +245,7 @@ sol_system_initializer = {
 		
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_cold_reducing"
+			class = "pc_hydrocarbon"
 			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
@@ -1607,7 +1607,7 @@ com_sol_system = {
 		
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_cold_reducing"
+			class = "pc_hydrocarbon"
 			size = 10
 			orbit_distance = 10
 			orbit_angle = 180
@@ -2328,7 +2328,7 @@ lost_colony_sol_system = {
 		
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_cold_reducing"
+			class = "pc_hydrocarbon"
 			size = 10
 			orbit_distance = 10
 			orbit_angle = 180

@@ -7,7 +7,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_mercury
 			}
@@ -38,7 +38,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_mercury
 			}
@@ -85,7 +85,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_venus
 			}
@@ -108,7 +108,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = realsol_venus
 			}
@@ -155,7 +155,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth
 			}
@@ -194,7 +194,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth_moon
 			}
@@ -233,7 +233,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_earth_moon
 			}
@@ -275,7 +275,7 @@ event = {
 		root = {
 			country_event = { id = real_sol.555 }
 		}
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_mars
 			}
@@ -298,7 +298,7 @@ event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_mars
 			}
@@ -342,7 +342,7 @@ country_event = {
 
 
 	immediate = {
-		every_planet = {
+		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_mars
 			}

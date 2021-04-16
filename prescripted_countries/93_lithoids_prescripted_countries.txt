@@ -29,7 +29,7 @@ khennet = {
 		"civic_environmentalist"
 	}
 	government="gov_theocratic_monarchy"
-	origin = "origin_lithoid"
+	origin = "origin_default"
 
 	adjective = "PRESCRIPTED_adjective_khennet"
 	planet_name = "PRESCRIPTED_planet_name_khennet"

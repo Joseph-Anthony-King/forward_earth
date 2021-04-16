@@ -4,7 +4,7 @@ setup_scenario = {
 	num_stars = 1500
 	radius = 500	#should be less than 500, preferably less than ~460
 	num_empires = { min = 0 max = 40 }	#limits player customization
-	num_empire_default = 20
+	num_empire_default = 16
 	fallen_empire_default = 4
 	fallen_empire_max = 5
 	marauder_empire_default = 3
