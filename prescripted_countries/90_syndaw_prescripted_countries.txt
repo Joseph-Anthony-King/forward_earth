@@ -179,7 +179,6 @@ icarus = {
 		plural = "Autodrones"
 		adjective = "Autodrone"
 		name_list = "MACHINE4"
-		trait = "trait_machine_unit"
 		trait="trait_machine_unit"
 		trait="trait_robot_logic_engines"
 		trait="trait_robot_mass_produced"
