@@ -943,10 +943,6 @@ event = {
 
             limit = { has_planet_flag = planet_tau_ceti_4 }
             add_modifier = {
-                modifier = "high_gravity"
-                days = -1
-            }
-            add_modifier = {
                 modifier = "strong_magnetic_field"
                 days = -1
             }

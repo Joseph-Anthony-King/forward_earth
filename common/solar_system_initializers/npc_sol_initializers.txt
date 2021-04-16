@@ -78,7 +78,7 @@ npc_sol_system_initializer = {
 		class = "pc_continental"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 16
+		size = 18
 		has_ring = no
 		entity = "continental_planet_earth_entity"
 		modifiers = none
@@ -1204,7 +1204,7 @@ npc_sol_neighbor_t1_first_colony = {
     		orbit_distance = 25
     		orbit_angle = 120
     		class = "pc_continental"
-    		size = 16
+    		size = 18
     		has_ring = no
     		entity = "continental_planet_01_entity"
     		moon = {
@@ -1283,7 +1283,7 @@ npc_sol_neighbor_t1_first_colony = {
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
-			size = 15
+			size = 18
 			has_ring = yes
 			entity = "toxic_planet_15_entity"
 		}
@@ -1385,7 +1385,7 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 			orbit_distance = 25
 			orbit_angle = 120
 			class = "pc_barren"
-			size = 16
+			size = 18
 			has_ring = no
 			entity = "barren_planet_01_entity"
 		
@@ -1471,7 +1471,7 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
-			size = 15
+			size = 18
 			has_ring = yes
 			entity = "toxic_planet_15_entity"
 		}
@@ -1941,7 +1941,7 @@ npc_sol_neighbor_t1_2 = {
 		class = "pc_toxic"
 		orbit_distance = 20
 		orbit_angle = 180
-		size = 14
+		size = 18
 		has_ring = no
 		
 		moon = {
@@ -2113,7 +2113,7 @@ npc_eta_cassiopeiae_system_initializer = {
 				class = "pc_continental"
 				orbit_distance = 10
 				orbit_angle = -90
-				size = 16
+				size = 18
 				has_ring = no
 				modifiers = none
 				entity = "continental_planet_01_entity"
@@ -2129,10 +2129,10 @@ npc_eta_cassiopeiae_system_initializer = {
 				class = "pc_arid"
 				orbit_distance = 0
 				orbit_angle = 180
-				size = 13
+				size = 15
 				has_ring = no
 				modifiers = none
-				entity = "savannah_planet_11_entity"
+				entity = "arid_planet_01_entity"
 				flags = { planet_tithonus }
 				
 				init_effect = {
@@ -3912,14 +3912,14 @@ npc_sol_neighbor_t3_ophiuchi = {
 			class = "pc_continental"
 			orbit_distance = 25
 			orbit_angle = 10
-			size = 8
+			size = 13
 			has_ring = no
 			entity = "continental_planet_02_entity"
 		
 			moon = {
 				name = "Ophiuchi B IIa"
 				class = "pc_barren"
-				size = 5
+				size = 8
 				orbit_distance = 12
 				orbit_angle = 95
 				has_ring = no
@@ -4245,14 +4245,6 @@ npc_sol_neighbor_t3_epsilon_indi = {
 		orbit_angle = 90
 		size = 18
 		has_ring = no
-		
-		init_effect = {
-			add_modifier = {
-				modifier = "high_gravity"
-				days = -1
-			}
-			prevent_anomaly = yes
-		}
 		
 		init_effect = {
 			add_modifier = {
