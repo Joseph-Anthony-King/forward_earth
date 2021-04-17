@@ -965,7 +965,12 @@ part = {
 	localization = "START_SCREEN_UNE"
 
 	trigger = {
-		has_country_flag = human_1
+		AND = {
+			has_country_flag = human_1
+			NOT = {
+				has_country_flag = custodian_faction
+			}
+		}
 	}
 }
 
@@ -976,5 +981,28 @@ part = {
 
 	trigger = {
 		has_country_flag = human_2
+	}
+}
+
+# Custodians
+part = {
+	location = 0
+	localization = "START_SCREEN_CUSTODIANSHIP"
+
+	trigger = {
+		AND = {
+			has_country_flag = human_1
+			has_country_flag = custodian_faction
+		}
+	}
+}
+
+# ICARUS
+part = {
+	location = 0
+	localization = "START_SCREEN_ICARUS"
+
+	trigger = {
+		has_country_flag = icarus_faction
 	}
 }
