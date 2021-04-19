@@ -73,7 +73,7 @@ fe_type_one_binary_planet_system_initializer = {
             class = pc_ocean
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -192,7 +192,7 @@ fe_type_two_binary_planet_system_initializer = {
             class = pc_continental
 		    orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -311,7 +311,7 @@ fe_type_three_binary_planet_system_initializer = {
             class = pc_tropical
 		    orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -430,7 +430,7 @@ fe_type_four_binary_planet_system_initializer = {
             class = pc_gaia
 		    orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -541,7 +541,7 @@ fe_type_five_binary_planet_system_initializer = {
             class = pc_savannah
 		    orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -665,7 +665,7 @@ fe_six_binary_planet_system_initializer = {
             class = pc_arctic
 		    orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -777,7 +777,7 @@ fe_seven_binary_planet_system_initializer = {
             class = pc_toxic
             orbit_distance = 10
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -889,7 +889,7 @@ fe_eight_binary_planet_system_initializer = {
             class = pc_barren
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
 		
@@ -999,7 +999,7 @@ fe_nine_binary_planet_system_initializer = {
             class = pc_toxic
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1096,7 +1096,7 @@ fe_ten_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1200,7 +1200,7 @@ fe_eleven_binary_planet_system_initializer = {
             class = pc_arid
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1304,7 +1304,7 @@ fe_twelve_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1408,7 +1408,7 @@ fe_thirteen_planet_system_initializer = {
             class = pc_tropical
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1526,7 +1526,7 @@ fe_fourteen_binary_planet_system_initializer = {
             class = pc_arctic
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
             modifiers = none
         }
@@ -1727,7 +1727,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
             class = ideal_planet_class
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
 			modifiers = none
 
@@ -1848,7 +1848,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
             class = ideal_planet_class
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
 			modifiers = none
 
@@ -1967,7 +1967,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
             class = pc_ocean
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
 			modifiers = none
 		
@@ -2129,7 +2129,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = { min = 8 max = 12 }
             orbit_angle = { min = 1 max = 359 }
-            size = { min = 17 max = 20 }
+            size = { min = 17 max = 26 }
             has_ring = no
 			modifiers = none
 		
