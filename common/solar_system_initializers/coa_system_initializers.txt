@@ -55,10 +55,10 @@ eta_cassiopeiae_with_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hot_reducing"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 20
+		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus pd_ignore }

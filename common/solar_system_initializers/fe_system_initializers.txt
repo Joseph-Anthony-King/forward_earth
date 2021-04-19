@@ -55,7 +55,7 @@ icarus_sol_system_initializer = {
 	
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_hot_reducing"
+		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 20

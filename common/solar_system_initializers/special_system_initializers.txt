@@ -150,10 +150,10 @@ special_init_03 = {
 	
 	planet = {
 		name = "Sol II"
-		class = "pc_hot_reducing"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 16
+		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { pd_ignore }
@@ -756,10 +756,10 @@ special_init_04 = {
 	}
 	
 	planet = {
-		class = "pc_hot_reducing"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 16
+		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
 		flags = { pd_ignore }
@@ -769,7 +769,7 @@ special_init_04 = {
 		class = "pc_nuked"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 20
+		size = 18
 		has_ring = no
 		anomaly = "sol_wasteland_category"
 		flags = { nuked_earth pd_ignore }
