@@ -324,7 +324,7 @@ chiconaph_system_initializer = {
 		class = "pc_tropical"
 		orbit_distance = 50
 		orbit_angle = 120
-		size = 16
+		size = 20
 		starting_planet = yes
 		has_ring = yes
 		modifiers = none
@@ -534,7 +534,7 @@ scyldari_system_initializer = {
 		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 18
 		modifiers = none
 		starting_planet = yes
 		has_ring = yes
@@ -739,7 +739,7 @@ dal_lokkur_system_initializer = {
 		class = "pc_arid"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 20
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
@@ -1068,7 +1068,7 @@ npc_scyldari_system_initializer = {
 		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 18
 		modifiers = none
 		has_ring = yes
 		entity = "ocean_planet_02_entity"
@@ -1398,7 +1398,7 @@ npc_dal_lokkur_system_initializer = {
 		class = "pc_arid"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 20
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
@@ -1996,7 +1996,7 @@ virgin_scyldari_system_initializer = {
 		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 18
 		modifiers = none
 		has_ring = yes
 		entity = "ocean_planet_02_entity"
@@ -2176,7 +2176,7 @@ virgin_dal_lokkur_system_initializer = {
 		class = "pc_arid"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 16
+		size = 20
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
@@ -2437,7 +2437,7 @@ neighbor_t1_scyldari_first_colony = {
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 12 max = 18 }
+		size = { min = 12 max = 20 }
 		
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
@@ -2501,7 +2501,7 @@ neighbor_t1_dal_lokkur_first_colony = {
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 12 max = 18 }
+		size = { min = 12 max = 20 }
 		
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
@@ -2565,7 +2565,7 @@ neighbor_t1_kel_azak_first_colony = {
 		modifiers = none
 		anomaly = none
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 12 max = 18 }
+		size = { min = 12 max = 20 }
 		
 		init_effect = {
 			set_planet_flag = prescripted_ideal		# used by code, do not remove
