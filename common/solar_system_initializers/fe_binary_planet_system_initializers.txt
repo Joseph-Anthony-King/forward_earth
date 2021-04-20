@@ -82,7 +82,7 @@ fe_type_one_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -217,7 +217,7 @@ fe_type_two_binary_planet_system_initializer = {
             class = pc_savannah
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -352,7 +352,7 @@ fe_type_three_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -487,7 +487,7 @@ fe_type_four_binary_planet_system_initializer = {
             class = pc_gaia
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -614,7 +614,7 @@ fe_type_five_binary_planet_system_initializer = {
             class = pc_desert
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -755,7 +755,7 @@ fe_six_binary_planet_system_initializer = {
             class = pc_tundra
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -883,7 +883,7 @@ fe_seven_binary_planet_system_initializer = {
             class = fe_hot_atmosphere_planets
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1018,7 +1018,7 @@ fe_eight_binary_planet_system_initializer = {
             class = fe_cold_planets
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
 		
@@ -1243,7 +1243,7 @@ fe_ten_binary_planet_system_initializer = {
             class = pc_savannah
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1340,7 +1340,7 @@ fe_eleven_binary_planet_system_initializer = {
             class = pc_desert
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1437,7 +1437,7 @@ fe_twelve_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1534,7 +1534,7 @@ fe_thirteen_planet_system_initializer = {
             class = pc_tropical
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1652,7 +1652,7 @@ fe_fourteen_binary_planet_system_initializer = {
             class = pc_tundra
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1856,7 +1856,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -1993,7 +1993,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
             class = pc_desert
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
         }
@@ -2142,7 +2142,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
             class = pc_continental
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
 		
@@ -2320,7 +2320,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
             class = pc_savannah
             orbit_distance = 0
             orbit_angle = 180
-            size = { min = 12 max = 16 }
+            size = { min = 12 max = 20 }
             has_ring = no
             modifiers = none
 		
