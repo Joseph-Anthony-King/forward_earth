@@ -147,37 +147,23 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							}
 						}
 
-						while = {
-							count = 32
-							create_pop = {
-								species = last_created
-							}
-						}
-						set_owner = last_created_country
-						set_capital = yes
-						add_district = district_city
-						add_district = district_city
-						add_district = district_city
-						add_district = district_city
-						add_district = district_farming
-						add_district = district_farming
-						add_district = district_farming
-						add_district = district_mining
-						add_district = district_mining
-						add_district = district_generator
-						add_district = district_generator
-						add_building = building_capital
-						add_building = building_research_lab_1
-						add_building = building_foundry_1
-						add_building = building_factory_1
-
 						last_created_country = {
 							set_graphical_culture = css_fedbuild_01
 							set_country_flag = human_1
 							set_country_flag = human_faction
 							set_country_flag = human_starbase
+							create_starting_leaders = yes
 							save_global_event_target_as = UNoE_1
 						}
+
+						set_owner = last_created_country
+
+						set_capital = yes
+						generate_earth_deposits_and_blockers = yes
+						generate_start_buildings_and_districts = yes
+						generate_start_pops = yes
+						clear_blockers = yes
+
 						create_colony = {
 							owner = last_created_country
 							species = last_created
@@ -185,19 +171,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 								ethic = "ethic_xenophile"
 								ethic = "ethic_fanatic_egalitarian"
 							}
-						}
-
-						create_army = {
-							name = "1st Planetary Guard"
-							owner = last_created
-							species = last_created
-							type = "defense_army"
-						}
-						create_army = {
-							name = "2nd Planetary Guard"
-							owner = last_created
-							species = last_created
-							type = "defense_army"
 						}
 
 						system_star = {
@@ -280,6 +253,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							}
 						}
 					}
+				}
 				}
 			}
 		}
@@ -1595,8 +1569,8 @@ coa_sol_neighbor_t2_tau_ceti = {
 					}
 					flag = {
 						icon = {
-							category = "ornate"
-							file = "flag_ornate_15.dds"
+							category = "special"
+							file = "primitive.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -1618,27 +1592,11 @@ coa_sol_neighbor_t2_tau_ceti = {
 					set_primitive_age = late_medieval_age
 				}
 				
-				set_owner = last_created_country		
-									
-				while = {
-					count = 10
-					create_pop = {
-						species = last_created
-					}					
-				}
-				add_building = building_stone_palace
-				add_building = building_primitive_farm
-				add_building = building_primitive_dwellings
-				
-				while = {
-					count = 2
-					create_army = {
-						name = "NAME_Feudal_Levies"
-						owner = last_created
-						species = last_created
-						type = "primitive_army"
-					}
-				}
+				set_owner = last_created_country
+
+				clear_blockers = yes
+				setup_primitive_planet = yes
+				create_primitive_armies = yes
 				
 				last_created_country = {
 					capital_scope = { set_name = "Tau Ceti IVa" }
