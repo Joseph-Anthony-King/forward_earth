@@ -256,7 +256,7 @@ event = {
                                 set_owner = event_target:npc_CoA
 
                                 while = {	
-                                    count = 20	
+                                    count = 19	
                                     create_pop = {	
                                         species = event_target:human_species
                                     }	
@@ -281,26 +281,14 @@ event = {
                                 }                        
 
                                 set_owner = last_created_country	
-                                set_capital = yes	
+                                set_capital = yes
 
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_city	
-                                add_district = district_farming	
-                                add_district = district_farming	
-                                add_district = district_farming	
-                                add_district = district_mining	
-                                add_district = district_mining	
-                                add_district = district_generator	
-                                add_district = district_generator		
-                                add_district = district_generator	
+                                generate_start_deposits_and_blockers = yes
+                                generate_start_buildings_and_districts = yes
+                                
                                 add_district = district_generator
-
-                                add_building = building_capital	
-                                add_building = building_research_lab_1	
-                                add_building = building_foundry_1	
-                                add_building = building_factory_1	
+                                add_district = district_generator
+                                add_district = district_generator                           	
                                 add_building = building_robot_assembly_plant
 
                                 create_army = {	

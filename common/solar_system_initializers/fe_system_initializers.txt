@@ -1039,8 +1039,8 @@ sol_neighbor_t2_tau_ceti = {
 					}
 					flag = {
 						icon = {
-							category = "ornate"
-							file = "flag_ornate_15.dds"
+							category = "special"
+							file = "primitive.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -1063,27 +1063,10 @@ sol_neighbor_t2_tau_ceti = {
 					set_primitive_age = late_medieval_age
 				}
 				
-				set_owner = last_created_country		
-									
-				while = {
-					count = 10
-					create_pop = {
-						species = last_created
-					}					
-				}
-				add_building = building_stone_palace
-				add_building = building_primitive_farm
-				add_building = building_primitive_dwellings		
+				set_owner = last_created_country
 				
-				while = {
-					count = 2
-					create_army = {
-						name = "NAME_Feudal_Levies"
-						owner = last_created
-						species = last_created
-						type = "primitive_army"
-					}
-				}
+				clear_blockers = yes
+				setup_primitive_planet = yes
 				
 				last_created_country = {
 					capital_scope = { set_name = "Tau Ceti IVa" }

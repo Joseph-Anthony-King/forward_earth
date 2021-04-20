@@ -92,7 +92,7 @@ npc_sol_system_initializer = {
 			if = {
 				random_list = {
 					# ICARUS
-					10 = {
+					6 = {
 						generate_empire_home_planet = yes
 
 						create_species = {
@@ -178,7 +178,7 @@ npc_sol_system_initializer = {
 						set_capital = yes
 						add_district = district_nexus
 						add_district = district_nexus
-						add_district = district_nexus
+						add_district = district_industrial
 						add_district = district_mining
 						add_district = district_mining
 						add_district = district_generator
@@ -187,10 +187,9 @@ npc_sol_system_initializer = {
 						add_district = district_generator
 						add_district = district_generator
 						add_building = building_machine_capital
-						add_building = building_maintenance_depot
-						add_building = building_research_lab_1
-						add_building = building_foundry_1
 						add_building = building_machine_assembly_plant
+						add_building = building_uplink_node
+						add_building = building_research_lab_1
 
 						create_colony = {
 							owner = last_created_country
@@ -347,58 +346,18 @@ npc_sol_system_initializer = {
 							set_graphical_culture = css_fedbuild_01
 							set_country_flag = human_1
 							set_country_flag = human_faction
+							set_country_flag = human_starbase
+							create_starting_leaders = yes
 							save_global_event_target_as = UNoE_1
 						}
-
-						while = {
-							count = 32
-							create_pop = {
-								species = last_created
-							}
-						}
-
-						clear_blockers = yes
-						create_primitive_blockers = yes
-
+						
 						set_owner = last_created_country
+
 						set_capital = yes
-						add_district = district_city
-						add_district = district_city
-						add_district = district_city
-						add_district = district_city
-						add_district = district_farming
-						add_district = district_farming
-						add_district = district_farming
-						add_district = district_mining
-						add_district = district_mining
-						add_district = district_generator
-						add_district = district_generator
-						add_building = building_capital
-						add_building = building_research_lab_1
-						add_building = building_foundry_1
-						add_building = building_factory_1
-
-						create_colony = {
-							owner = last_created_country
-							species = last_created
-							ethos = {
-								ethic = "ethic_xenophile"
-								ethic = "ethic_fanatic_egalitarian"
-							}
-						}
-
-						create_army = {
-							name = "1st Planetary Guard"
-							owner = last_created
-							species = last_created
-							type = "defense_army"
-						}
-						create_army = {
-							name = "2nd Planetary Guard"
-							owner = last_created
-							species = last_created
-							type = "defense_army"
-						}
+						generate_earth_deposits_and_blockers = yes
+						generate_start_buildings_and_districts = yes
+						generate_start_pops = yes
+						clear_blockers = yes
 
 						system_star = {
 
@@ -466,7 +425,7 @@ npc_sol_system_initializer = {
 						}
 					}
 					# Early Space Age
-					25 = {
+					6 = {
 						create_species = {
 							name = Human
 							plural = Humans
@@ -526,27 +485,33 @@ npc_sol_system_initializer = {
 						create_primitive_blockers = yes
 					
 						create_army = {
-							name = "US Armed Forces"
-							owner = last_created
-							species = last_created
+							name = "US Armed Forces West"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}					
+						create_army = {
+							name = "US Armed Forces East"
+							owner = last_created_country
+							species = last_created_species
 							type = "postatomic_army"
 						}
 						create_army = {
 							name = "Chinese PLA"
-							owner = last_created
-							species = last_created
+							owner = last_created_country
+							species = last_created_species
 							type = "postatomic_army"
 						}
 						create_army = {
 							name = "EU Combined Forces"
-							owner = last_created
-							species = last_created
+							owner = last_created_country
+							species = last_created_species
 							type = "postatomic_army"
 						}
 						create_army = {
 							name = "Russian Armed Forces"
-							owner = last_created
-							species = last_created
+							owner = last_created_country
+							species = last_created_species
 							type = "postatomic_army"
 						}
 
@@ -579,22 +544,22 @@ npc_sol_system_initializer = {
 							capital_scope = { set_name = "NAME_Earth" }
 						}
 					}
-					# Industrial Age
-					10 = {
+					# Machine Age
+					6 = {
 						create_species = {
-							name = Human
-							plural = Humans
+							name = NAME_Human
+							plural = NAME_Humans
 							class = "HUM"
 							portrait = "human"
+							homeworld = THIS
 							traits = {
 								trait = "trait_adaptive"
 								trait = "trait_nomadic"	
 								trait = "trait_wasteful"
 							}
-							homeworld = this
 						}
 						create_country = {
-							name = "League of Nations"
+							name = random
 							authority = random
 							civics = {
 								civic = civic_increasing_urbanization
@@ -602,21 +567,22 @@ npc_sol_system_initializer = {
 							}
 							species = last_created
 							ethos = { 
-								ethic = "ethic_materialist"
-								ethic = "ethic_fanatic_militarist"
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
 							}
 							flag = {
 								icon = {
-									category="human"
-									file="flag_human_12.dds"
+									category = "spherical"
+									file = "flag_spherical_22.dds"
 								}
-								background={
-									category="backgrounds"
-									file="circle.dds"
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
 								}
 								colors={
-									"beige"
-									"dark_blue"
+									"light_blue"
+									"blue"
 									"null"
 									"null"
 								}
@@ -626,60 +592,85 @@ npc_sol_system_initializer = {
 						}
 						last_created_country = {
 							set_graphical_culture = industrial_01
-							set_country_flag = machine_age
-							set_country_flag = humans_machine_age
 							set_country_flag = primitive_humans
+							set_country_flag = machine_age
 							set_primitive_age = machine_age
 						}
+						
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						create_primitive_blockers = yes
-					
-						create_army = {
-							name = "NAME_German_Wehrmacht"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_US_Armed_Forces"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_British_Armed_Forces"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created
-							species = last_created
-							type = "industrial_army"
-						}
-		
-						while = {
-							count = 22
-							create_pop = {
-								species = last_created
-							}					
-						}
-						add_building = building_primitive_capital
-						add_building = building_primitive_farm
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_factory
-						add_building = building_urban_dwellings
-
+						setup_primitive_planet = yes
+						
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
 					}
-					# Renaissance
-					5 = {
+					# Industrial Age
+					6 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon = {
+									category = "spherical"
+									file = "flag_spherical_22.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
+								}
+								colors={
+									"light_blue"
+									"blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = primitive_humans
+							set_country_flag = industrial_age
+							set_primitive_age = industrial_age
+						}
+						
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						setup_primitive_planet = yes
+						
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Renaissance Age
+					6 = {
 						create_species = {
 							name = NAME_Human
 							plural = NAME_Humans
@@ -706,17 +697,17 @@ npc_sol_system_initializer = {
 								ethic = "ethic_authoritarian"
 							}
 							flag = {
-								icon={
-									category="human"
-									file="flag_human_2.dds"
+								icon = {
+									category = "special"
+									file = "primitive.dds"
 								}
-								background={
-									category="backgrounds"
-									file="vertical.dds"
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
 								}
 								colors={
-									"yellow"
-									"black"
+									"light_blue"
+									"blue"
 									"null"
 									"null"
 								}
@@ -724,42 +715,25 @@ npc_sol_system_initializer = {
 							day_zero_contact = no
 							type = primitive
 						}
+
 						last_created_country = {
 							set_graphical_culture = preindustrial_01
-							set_country_flag = renaissance_age
 							set_country_flag = primitive_humans
+							set_country_flag = renaissance_age
 							set_primitive_age = renaissance_age
 						}
 						
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						create_primitive_blockers = yes		
-											
-						while = {
-							count = 16
-							create_pop = {
-								species = last_created
-							}					
-						}
-						add_building = building_stone_palace
-						
-						while = {
-							count = 3
-							create_army = {
-								name = "NAME_Feudal_Levies"
-								owner = last_created
-								species = last_created
-								type = "primitive_army"
-							}
-						}
+						setup_primitive_planet = yes
 						
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
 					}
-					# Medieval
-					5 = {
+					# Medieval Age
+					6 = {
 						create_species = {
 							name = NAME_Human
 							plural = NAME_Humans
@@ -786,17 +760,80 @@ npc_sol_system_initializer = {
 								ethic = "ethic_authoritarian"
 							}
 							flag = {
-								icon={
-									category="human"
-									file="flag_human_2.dds"
+								icon = {
+									category = "special"
+									file = "primitive.dds"
 								}
-								background={
-									category="backgrounds"
-									file="vertical.dds"
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
 								}
 								colors={
-									"yellow"
-									"black"
+									"light_blue"
+									"blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = primitive_humans
+							set_country_flag = late_medieval_age
+							set_primitive_age = late_medieval_age
+						}
+						
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						setup_primitive_planet = yes
+						
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Iron Age
+					6 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_secret_of_fire
+								civic = civic_the_wheel
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon = {
+									category = "special"
+									file = "primitive.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
+								}
+								colors={
+									"light_blue"
+									"blue"
 									"null"
 									"null"
 								}
@@ -806,43 +843,146 @@ npc_sol_system_initializer = {
 						}
 						last_created_country = {
 							set_graphical_culture = preindustrial_01
-							set_country_flag = late_medieval_age
-							set_country_flag = humans_late_medieval_age
 							set_country_flag = primitive_humans
-							set_primitive_age = late_medieval_age
+							set_country_flag = iron_age
+							set_primitive_age = iron_age
 						}
 						
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						create_primitive_blockers = yes		
-											
-						while = {
-							count = 10
-							create_pop = {
-								species = last_created
-							}					
-						}
-						add_building = building_stone_palace
-						add_building = building_primitive_farm
-						add_building = building_primitive_dwellings
+						setup_primitive_planet = yes
 						
-						while = {
-							count = 3
-							create_army = {
-								name = "NAME_Feudal_Levies"
-								owner = last_created
-								species = last_created
-								type = "primitive_army"
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Bronze Age
+					6 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
 							}
 						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_secret_of_fire
+								civic = civic_the_wheel
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon = {
+									category = "special"
+									file = "primitive.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
+								}
+								colors={
+									"light_blue"
+									"blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = primitive_humans
+							set_country_flag = bronze_age
+							set_primitive_age = bronze_age
+						}
+						
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						setup_primitive_planet = yes
+						
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Stone Age
+					6 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"	
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							civics = {
+								civic = civic_secret_of_fire
+								civic = civic_the_wheel
+							}
+							species = last_created
+							ethos = { 
+								ethic = "ethic_xenophobe"
+								ethic = "ethic_spiritualist"
+								ethic = "ethic_authoritarian"
+							}
+							flag = {
+								icon = {
+									category = "special"
+									file = "primitive.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "new_dawn.dds"
+								}
+								colors={
+									"light_blue"
+									"blue"
+									"null"
+									"null"
+								}
+							}
+							day_zero_contact = no
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = preindustrial_01
+							set_country_flag = primitive_humans
+							set_country_flag = stone_age
+							set_primitive_age = stone_age
+						}
+						
+						set_owner = last_created_country
+
+						clear_blockers = yes
+						setup_primitive_planet = yes
 						
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
 					}
 					# No Humans
-					5 = {}
+					6 = {}
 				}
 			}
 		}
@@ -2499,8 +2639,8 @@ npc_sol_neighbor_t2_tau_ceti = {
 					}
 					flag = {
 						icon = {
-							category = "ornate"
-							file = "flag_ornate_15.dds"
+							category = "special"
+							file = "primitive.dds"
 						}
 						background = {
 							category = "backgrounds"
@@ -2522,27 +2662,10 @@ npc_sol_neighbor_t2_tau_ceti = {
 					set_primitive_age = late_medieval_age
 				}
 				
-				set_owner = last_created_country		
-									
-				while = {
-					count = 10
-					create_pop = {
-						species = last_created
-					}					
-				}
-				add_building = building_stone_palace
-				add_building = building_primitive_farm
-				add_building = building_primitive_dwellings			
+				set_owner = last_created_country
 				
-				while = {
-					count = 2
-					create_army = {
-						name = "NAME_Feudal_Levies"
-						owner = last_created
-						species = last_created
-						type = "primitive_army"
-					}
-				}
+				clear_blockers = yes
+				setup_primitive_planet = yes
 				
 				last_created_country = {
 					capital_scope = { set_name = "Tau Ceti IVa" }

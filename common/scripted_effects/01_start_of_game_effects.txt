@@ -1705,7 +1705,7 @@ generate_start_pops = {
 		}
 
 		while = {
-			limit = { num_pops < 27 }
+			limit = { num_pops < 28 }
 			create_pop = {
 				species = owner_main_species
 				ethos = random
