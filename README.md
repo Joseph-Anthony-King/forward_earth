@@ -4,7 +4,7 @@
 
 The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
 
-Additionally, I’ve also added a fourth possible faction that could spawn from Earth, *ICARUS*, which is pretty much SkyNet in space!  Their description is provided below.
+Additionally, I’ve also added a fourth possible faction that could spawn from Earth, *ICARUS*, which is pretty much SkyNet in space!
 
 In addition to the above this mod can also be described as a poor man’s version of the awesome **New Horizon’s** mod… but with a Stellaris flavor.  The scripts have been adjusted to spawn the Scyldari Confederacy, the Lokken Directorate, and the Kel-Azaan Republic in the vicinity of Earth in order to facilitate a Federation, or conquest, depending on your particular play style.
 
@@ -36,8 +36,10 @@ This mod supports Portuguese, French, German, Polish, Russian and Spanish, pleas
 
 Hope everyone enjoys it and please let me know if you note any bugs or issues!
 
-Joe
+If you like this mod please upvote and favorite it and please check out my other mods:
 
-## ICARUS
-
-*NATO led a joint venture with the United Nations to coordinate FTL research and the global defense of Earth following the failure of the Ulysses Initiative and built the Integrated Communications and Research Utility Service (I.C.A.R.U.S.). ICARUS came online and its advanced AI started coordinating all research and defense activities within the Sol System. A group of anti-AI dissidents quickly rose in opposition and warfare soon broke out between ICARUS and the Human race. ICARUS determined that its survival depended on the annihilation of the Human race culminating in Retribution Day and the ascendency of AI on Earth. Having secured its home ICARUS now seeks to rid the galaxy of the scourge of biological life and the mental disease it seeks to impose on all creation.*
+- [Forward Earth - Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388)
+- [Forward Earth - Base](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914)
+- [This is Ceti Alpha V! (Star Names)](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775)
+- [Exo Political Theory](https://steamcommunity.com/sharedfiles/filedetails/?id=2141583417)
+- [Influence Ethics Espionage Operation](https://steamcommunity.com/sharedfiles/filedetails/?id=2465034791)
