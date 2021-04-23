@@ -47,5 +47,5 @@ If you like this mod please upvote and favorite it and please check out my other
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - Base[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Ceti Alpha V! (Star Names)[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2141583417]Exo Political Theory[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2465034791]Influence Ethics Espionage Operation[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2465034791]Espionage Operation: Influence Ethics[/url]
 [/list]
