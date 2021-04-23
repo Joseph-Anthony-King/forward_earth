@@ -1795,7 +1795,7 @@ sol_neighbor_t2_epsilon_eridani = {
 		class = "pc_continental"
 		orbit_distance = 35
 		orbit_angle = 120
-		size = 16
+		size = 18
 		has_ring = no
 		modifiers = none
 		entity = "continental_planet_09_entity"
@@ -1809,7 +1809,7 @@ sol_neighbor_t2_epsilon_eridani = {
 		class = "pc_tundra"
 		orbit_distance = 25
 		orbit_angle = 15
-		size = 16
+		size = 17
 		has_ring = no
 	}
 	
@@ -2007,7 +2007,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		class = "pc_savannah"
 		orbit_distance = 35
 		orbit_angle = 120
-		size = 16
+		size = 18
 		has_ring = no
 	}
 	
@@ -2015,7 +2015,7 @@ sol_neighbor_t2_epsilon_eridani_no_guaranteed_second_colony = {
 		class = "pc_tundra"
 		orbit_distance = 25
 		orbit_angle = 15
-		size = 16
+		size = 17
 		has_ring = no
 	}
 	
@@ -2415,7 +2415,7 @@ sol_neighbor_t3_trappist_1 = {
 		class = "pc_ocean"
 		orbit_distance = 16
 		orbit_angle = 125
-		size = 14
+		size = 15
 		has_ring = no
 	}
 
@@ -2661,7 +2661,7 @@ sol_neighbor_t3_ophiuchi = {
 			class = "pc_continental"
 			orbit_distance = 25
 			orbit_angle = 10
-			size = 13
+			size = 15
 			has_ring = no
 			entity = "continental_planet_02_entity"
 		
@@ -3088,7 +3088,7 @@ sol_neighbor_t3_epsilon_indi = {
 		class = "pc_ocean"
 		orbit_distance = 30
 		orbit_angle = 90
-		size = 18
+		size = 20
 		has_ring = no
 		
 		init_effect = {
@@ -3438,7 +3438,7 @@ polaris_initializer = {
 		class = "pc_tropical"
 		orbit_distance = 90
 		orbit_angle = 120
-		size = 18
+		size = 20
 		has_ring = no
 	}
 	
@@ -3610,7 +3610,7 @@ rigel_initializer = {
 		class = "pc_desert"
 		orbit_distance = 30
 		orbit_angle = 120
-		size = 13
+		size = 18
 		has_ring = no
 	}
 	
@@ -3738,7 +3738,7 @@ vega_initializer = {
 		moon = {
 			name = "Vega IIa"
 			class = "pc_arid"
-			size = 8
+			size = 12
 			orbit_distance = 18
 			orbit_angle = 120
 			has_ring = no
@@ -3755,7 +3755,7 @@ vega_initializer = {
 			class = "pc_continental"
 			orbit_distance = 5
 			orbit_angle = 180
-			size = 18
+			size = 20
 			starting_planet = yes
 			has_ring = no
 		
@@ -3779,7 +3779,7 @@ vega_initializer = {
 		moon = {
 			name = "Vega IIIa"
 			class = "pc_frozen"
-			size = 5
+			size = 8
 			orbit_distance = 20
 			orbit_angle = 120
 			has_ring = no
@@ -4341,7 +4341,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IIa"
 			class = "pc_arid"
-			size = 14
+			size = 16
 			orbit_distance = 15
 			orbit_angle = 60
 			has_ring = no
@@ -4350,7 +4350,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IIb"
 			class = "pc_savannah"
-			size = 15
+			size = 18
 			orbit_distance = 5
 			orbit_angle = 180
 			has_ring = no
@@ -4370,7 +4370,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IIIa"
 			class = "pc_ocean"
-			size = 15
+			size = 19
 			orbit_distance = 20
 			orbit_angle = 90
 			has_ring = no
@@ -4379,7 +4379,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IIIb"
 			class = "pc_continental"
-			size = 16
+			size = 18
 			orbit_distance = 5
 			orbit_angle = 180
 			has_ring = no
@@ -4399,7 +4399,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IVa"
 			class = "pc_alpine"
-			size = 14
+			size = 16
 			orbit_distance = 20
 			orbit_angle = 120
 			has_ring = no
@@ -4408,7 +4408,7 @@ kobol_initializer = {
 		moon = {
 			name = "Kobol IVb"
 			class = "pc_tundra"
-			size = 15
+			size = 18
 			orbit_distance = 5
 			orbit_angle = 180
 			has_ring = no
@@ -4457,7 +4457,7 @@ kobol_initializer = {
 		class = "pc_frozen"
 		orbit_distance = 20
 		orbit_angle = 280
-		size = 12
+		size = 13
 		has_ring = yes
 		entity = "frozen_planet_02_entity"
 	}
@@ -4485,7 +4485,7 @@ kobol_initializer = {
 			class = "pc_desert"
 			orbit_distance = 15
 			orbit_angle = 2
-			size = 14
+			size = 18
 			has_ring = no
 			entity = "desert_planet_02_entity"
 		}
@@ -4495,7 +4495,7 @@ kobol_initializer = {
 			class = "pc_tropical"
 			orbit_distance = 15
 			orbit_angle = -4
-			size = 15
+			size = 19
 			has_ring = no
 			entity = "tropical_planet_02_entity"
 		}
@@ -4505,7 +4505,7 @@ kobol_initializer = {
 			class = "pc_frozen"
 			orbit_distance = 20
 			orbit_angle = 4
-			size = 8
+			size = 12
 			has_ring = no
 			entity = "frozen_planet_02_entity"
 		}
@@ -4563,7 +4563,7 @@ trantor_initializer = {
 		
 		moon = {
 			class = "pc_molten"
-			size = 7
+			size = 9
 			orbit_distance = 13
 			orbit_angle = 70
 			has_ring = no
@@ -4571,7 +4571,7 @@ trantor_initializer = {
 		
 		moon = {
 			class = "pc_arctic"
-			size = 11
+			size = 15
 			orbit_distance = 10
 			orbit_angle = 135
 			has_ring = no
@@ -4657,7 +4657,7 @@ terminus_initializer = {
 		class = "pc_ocean"
 		orbit_distance = 60
 		orbit_angle = 85
-		size = 16
+		size = 19
 		has_ring = yes
 	}
 	
