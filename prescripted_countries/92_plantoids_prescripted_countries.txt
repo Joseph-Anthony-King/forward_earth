@@ -3,7 +3,7 @@ maweer = {
 	name = "maweer"
 	ship_prefix = "PRESCRIPTED_ship_prefix_maweer"
 	spawn_enabled = always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_plantoids # scripted_triggers
 	
