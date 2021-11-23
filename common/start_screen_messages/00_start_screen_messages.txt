@@ -1006,3 +1006,68 @@ part = {
 		has_country_flag = icarus_faction
 	}
 }
+
+# Clone Army
+part = {
+	location = 0
+	localization = "START_SCREEN_CLONE_ARMY"
+
+	trigger = {
+		has_origin = origin_clone_army
+	}
+}
+
+# Here Be Dragons - normal
+part = {
+	location = 0
+	localization = "START_SCREEN_HERE_BE_DRAGONS"
+
+	trigger = {
+		has_origin = origin_here_be_dragons
+		is_gestalt = no
+	}
+}
+
+# Here Be Dragons - hive
+part = {
+	location = 0
+	localization = "START_SCREEN_HERE_BE_DRAGONS_HIVE"
+
+	trigger = {
+		has_origin = origin_here_be_dragons
+		is_hive_empire = yes
+	}
+}
+
+# Here Be Dragons - machine
+part = {
+	location = 0
+	localization = "START_SCREEN_HERE_BE_DRAGONS_MACHINE"
+
+	trigger = {
+		has_origin = origin_here_be_dragons
+		is_machine_empire = yes
+	}
+}
+
+# Ocean Paradise - normal
+part = {
+	location = 0
+	localization = "START_SCREEN_OCEAN_PARADISE"
+
+	trigger = {
+		has_origin = origin_ocean_paradise
+		is_gestalt = no
+	}
+}
+
+# Ocean Paradise - hive
+part = {
+	location = 0
+	localization = "START_SCREEN_OCEAN_PARADISE_HIVE"
+
+	trigger = {
+		has_origin = origin_ocean_paradise
+		is_hive_empire = yes
+	}
+}
