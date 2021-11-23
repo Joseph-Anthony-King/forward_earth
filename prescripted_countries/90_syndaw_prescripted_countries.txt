@@ -3,7 +3,7 @@ tebrid = {
 	name = "tebrid"
 	adjective = "PRESCRIPTED_adjective_tebrid"
 	spawn_enabled = always # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers
 	
@@ -84,7 +84,7 @@ custodianship = {
 	name = "custodianship"
 	adjective = "PRESCRIPTED_adjective_custodianship"
 	spawn_enabled = no # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers
 	
@@ -166,7 +166,7 @@ icarus = {
 	name = "icarus"
 	adjective = "Autodrone"
 	spawn_enabled = no # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers
 	
@@ -239,7 +239,7 @@ xt489 = {
 	name = "xt489"
 	adjective = "PRESCRIPTED_adjective_xt489"
 	spawn_enabled = always # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers
 	

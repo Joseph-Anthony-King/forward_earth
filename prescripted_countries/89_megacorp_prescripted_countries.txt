@@ -4,7 +4,7 @@ kilik = {
 	name = "kilik"
 	adjective = "PRESCRIPTED_adjective_kilik"
 	spawn_enabled = always # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
 	
@@ -74,7 +74,7 @@ orbis = {
 	name = "orbis"
 	adjective = "PRESCRIPTED_adjective_orbis"
 	spawn_enabled = always # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
 	
@@ -217,7 +217,7 @@ hazbuzan = {
 	name = "hazbuzan"
 	adjective = "PRESCRIPTED_adjective_hazbuzan"
 	spawn_enabled = always # yes / no / always
-	ignore_portrait_duplication = yes
+	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
 	
