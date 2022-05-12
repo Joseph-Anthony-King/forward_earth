@@ -2,7 +2,7 @@
 xanid = {
 	name = "EMPIRE_DESIGN_xanid"
 	adjective = "PRESCRIPTED_adjective_xanid"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	playable = has_utopia # scripted_triggers
 	
@@ -151,7 +151,7 @@ lokken = {
 ixidar = {
 	name = "EMPIRE_DESIGN_ixidar"
 	adjective = "PRESCRIPTED_adjective_ixidar"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	playable = has_utopia # scripted_triggers
 	

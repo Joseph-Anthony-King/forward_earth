@@ -2,7 +2,7 @@
 tebrid = {
 	name = "EMPIRE_DESIGN_tebrid"
 	adjective = "PRESCRIPTED_adjective_tebrid"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers
@@ -238,7 +238,7 @@ icarus = {
 xt489 = {
 	name = "EMPIRE_DESIGN_xt489"
 	adjective = "PRESCRIPTED_adjective_xt489"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_synthethic_dawn # scripted_triggers

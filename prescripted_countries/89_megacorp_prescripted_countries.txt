@@ -3,7 +3,7 @@
 kilik = {
 	name = "EMPIRE_DESIGN_kilik"
 	adjective = "PRESCRIPTED_adjective_kilik"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
@@ -73,7 +73,7 @@ kilik = {
 orbis = {
 	name = "EMPIRE_DESIGN_orbis"
 	adjective = "PRESCRIPTED_adjective_orbis"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
@@ -146,7 +146,7 @@ orbis = {
 chinorr = {
 	name = "EMPIRE_DESIGN_chinorr"
 	adjective = "PRESCRIPTED_adjective_chinorr"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	playable = has_megacorp
 	
@@ -216,7 +216,7 @@ chinorr = {
 hazbuzan = {
 	name = "EMPIRE_DESIGN_hazbuzan"
 	adjective = "PRESCRIPTED_adjective_hazbuzan"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_megacorp
