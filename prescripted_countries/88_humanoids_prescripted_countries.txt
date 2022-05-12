@@ -1,5 +1,5 @@
 voor = {
-	name = "VOOR"
+	name = "EMPIRE_DESIGN_VOOR"
 	adjective = "PRESCRIPTED_adjective_voor"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no

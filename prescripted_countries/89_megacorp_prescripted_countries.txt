@@ -1,7 +1,7 @@
 # Advisor Voice assigned in 00_advisor_voice_types
 
 kilik = {
-	name = "kilik"
+	name = "EMPIRE_DESIGN_kilik"
 	adjective = "PRESCRIPTED_adjective_kilik"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no
@@ -71,7 +71,7 @@ kilik = {
 }
 
 orbis = {
-	name = "orbis"
+	name = "EMPIRE_DESIGN_orbis"
 	adjective = "PRESCRIPTED_adjective_orbis"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no
@@ -144,7 +144,7 @@ orbis = {
 
 # Chinorr MegaCorp
 chinorr = {
-	name = "chinorr"
+	name = "EMPIRE_DESIGN_chinorr"
 	adjective = "PRESCRIPTED_adjective_chinorr"
 	spawn_enabled = always # yes / no / always
 	
@@ -214,7 +214,7 @@ chinorr = {
 
 # Hazbuzan Syndicate
 hazbuzan = {
-	name = "hazbuzan"
+	name = "EMPIRE_DESIGN_hazbuzan"
 	adjective = "PRESCRIPTED_adjective_hazbuzan"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no

@@ -1,6 +1,6 @@
 # Xanid Suzerainty - Syncretic Evolution
 xanid = {
-	name = "xanid"
+	name = "EMPIRE_DESIGN_xanid"
 	adjective = "PRESCRIPTED_adjective_xanid"
 	spawn_enabled = always # yes / no / always
 	
@@ -82,7 +82,7 @@ xanid = {
 }
 
 lokken = {
-	name = "lokken"
+	name = "EMPIRE_DESIGN_lokken"
 	adjective="PRESCRIPTED_adjective_lokken"
 	spawn_enabled = no # yes / no / always
 	
@@ -149,7 +149,7 @@ lokken = {
 
 # Ix'Idar # is now a hive mind
 ixidar = {
-	name = "ixidar"
+	name = "EMPIRE_DESIGN_ixidar"
 	adjective = "PRESCRIPTED_adjective_ixidar"
 	spawn_enabled = always # yes / no / always
 	
