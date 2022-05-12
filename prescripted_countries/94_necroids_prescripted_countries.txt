@@ -1,6 +1,6 @@
 # Pasharti Devourers
 pasharti = {
-	name = "pasharti"
+	name = "EMPIRE_DESIGN_pasharti"
 	ship_prefix = "PRESCRIPTED_ship_prefix_pasharti"
 	spawn_enabled = always
 	ignore_portrait_duplication = no

@@ -1,6 +1,6 @@
 # Driven Assimilator - Tebrid Homolog
 tebrid = {
-	name = "tebrid"
+	name = "EMPIRE_DESIGN_tebrid"
 	adjective = "PRESCRIPTED_adjective_tebrid"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no
@@ -43,7 +43,7 @@ tebrid = {
 	origin = "origin_default"
 	
 	planet_name = "Tebri"
-	planet_class = "pc_subarctic"
+	planet_class = "pc_ocean"
 	system_name = "Tebiron"
 	initializer = ""
 
@@ -81,7 +81,7 @@ tebrid = {
 
 # Rogue Servitor - Earth Custodianship
 custodianship = {
-	name = "custodianship"
+	name = "EMPIRE_DESIGN_custodianship"
 	adjective = "PRESCRIPTED_adjective_custodianship"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = no
@@ -163,7 +163,7 @@ custodianship = {
 
 # Determined Exterminator - ICARUS
 icarus = {
-	name = "icarus"
+	name = "EMPIRE_DESIGN_icarus"
 	adjective = "Autodrone"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = no
@@ -236,7 +236,7 @@ icarus = {
 
 # Determined Exterminator - XT-489 Eliminators
 xt489 = {
-	name = "xt489"
+	name = "EMPIRE_DESIGN_xt489"
 	adjective = "PRESCRIPTED_adjective_xt489"
 	spawn_enabled = always # yes / no / always
 	ignore_portrait_duplication = no

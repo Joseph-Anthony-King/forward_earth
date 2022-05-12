@@ -1,6 +1,6 @@
 # Keepers of Ave'brenn
 khennet = {
-	name = "khennet"
+	name = "EMPIRE_DESIGN_khennet"
 	ship_prefix = "PRESCRIPTED_ship_prefix_khennet"
 	spawn_enabled = always
 	ignore_portrait_duplication = no
@@ -9,7 +9,7 @@ khennet = {
 	
 	species = {
 		class = "LITHOID"
-		portrait = "lith7"
+		portrait = "lith11"
 		name = "PRESCRIPTED_species_name_khennet"
 		plural = "PRESCRIPTED_species_plural_khennet"
 		adjective = "PRESCRIPTED_species_adjective_khennet"
@@ -33,7 +33,7 @@ khennet = {
 
 	adjective = "PRESCRIPTED_adjective_khennet"
 	planet_name = "PRESCRIPTED_planet_name_khennet"
-	planet_class = "pc_irradiated"
+	planet_class = "pc_arid"
 	system_name = "PRESCRIPTED_system_name_khennet"
 	initializer = ""
 	graphical_culture = "lithoid_01"
@@ -59,7 +59,7 @@ khennet = {
 	ruler = {
 		gender = female
 		name = "PRESCRIPTED_ruler_name_khennet"
-		portrait = "lith7"
+		portrait = "lith11"
 		texture = 4
 		hair = 0
 		clothes = 0

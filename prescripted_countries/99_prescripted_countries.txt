@@ -1,6 +1,6 @@
 # Tzynn
 tzynn = {
-	name = "tzynn"
+	name = "EMPIRE_DESIGN_tzynn"
 	adjective = "PRESCRIPTED_adjective_tzynn"
 	spawn_enabled = always # yes / no / always
 	
@@ -34,7 +34,7 @@ tzynn = {
 	planet_class = "pc_desert"
 	system_name = "PRESCRIPTED_system_name_tzynn"
 	
-	graphical_culture = "nemesis_01"
+	graphical_culture = "reptilian_01"
 	city_graphical_culture = "reptilian_01"
 	
 	empire_flag = {
@@ -66,7 +66,7 @@ tzynn = {
 
 # Yondar
 yondar = {
-	name = "yondar"
+	name = "EMPIRE_DESIGN_yondar"
 	adjective = "PRESCRIPTED_adjective_yondar"
 	spawn_enabled = always # yes / no / always
 	
@@ -85,7 +85,7 @@ yondar = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_yondar"
 	
 	planet_name = "PRESCRIPTED_planet_name_yondar"
-	planet_class = "pc_highland"
+	planet_class = "pc_alpine"
 	system_name = "PRESCRIPTED_system_name_yondar"
 	
 	room = "personality_evangelizing_zealots_room" 
@@ -130,7 +130,7 @@ yondar = {
 
 #  Iferyx
 iferyx = {
-	name = "iferyx"
+	name = "EMPIRE_DESIGN_iferyx"
 	adjective = "PRESCRIPTED_adjective_iferyx"
 	spawn_enabled = always # yes / no / always
 	
@@ -197,7 +197,7 @@ iferyx = {
 
 # Glebsig Foundation
 glebsig = {
-	name = "glebsig"
+	name = "EMPIRE_DESIGN_glebsig"
 	adjective = "PRESCRIPTED_adjective_glebsig"
 	spawn_enabled = always # yes / no / always
 	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
@@ -225,7 +225,7 @@ glebsig = {
 	origin = "origin_default"
 
 	planet_name = "PRESCRIPTED_planet_name_glebsig"
-	planet_class ="pc_ammonia"
+	planet_class ="pc_alpine"
 	system_name = "PRESCRIPTED_system_name_glebsig"
 	initializer = ""
 	graphical_culture = "molluscoid_01"
@@ -259,7 +259,7 @@ glebsig = {
 
 # Jehetma
 jehetma = {
-	name = "jehetma"
+	name = "EMPIRE_DESIGN_jehetma"
 	adjective = "PRESCRIPTED_adjective_jehetma"
 	spawn_enabled = always # yes / no / always
 	
@@ -279,7 +279,7 @@ jehetma = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_jehetma"
 	
 	planet_name = "PRESCRIPTED_planet_name_jehetma"
-	planet_class = "pc_mushroom"
+	planet_class = "pc_tundra"
 	system_name = "PRESCRIPTED_system_name_jehetma"
 	
 	room = "personality_harmonious_hierarchy_room"
@@ -325,7 +325,7 @@ jehetma = {
 
 # Scyldari
 scyldari = {
-	name = "scyldari"
+	name = "EMPIRE_DESIGN_scyldari"
 	adjective = "PRESCRIPTED_adjective_scyldari"
 	spawn_enabled = no # yes / no / always
 	
@@ -392,7 +392,7 @@ scyldari = {
 
 ## Kel-Azaan
 kel_azaan = {
-	name = "kel_azaan"
+	name = "EMPIRE_DESIGN_kel_azaan"
 	adjective = "PRESCRIPTED_adjective_kel_azaan"
 	spawn_enabled = no
 	
@@ -459,7 +459,7 @@ kel_azaan = {
 
 # Blorg Commonality
 blorg={
-	name = "blorg"
+	name = "EMPIRE_DESIGN_blorg"
 	adjective = "PRESCRIPTED_adjective_blorg"
 	spawn_enabled = no # yes / no / always
 	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires

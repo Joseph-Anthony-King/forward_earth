@@ -1,6 +1,6 @@
 # Xanid Suzerainty - Syncretic Evolution
 xanid = {
-	name = "xanid"
+	name = "EMPIRE_DESIGN_xanid"
 	adjective = "PRESCRIPTED_adjective_xanid"
 	spawn_enabled = always # yes / no / always
 	
@@ -36,7 +36,7 @@ xanid = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_xanid"
 	
 	planet_name = "PRESCRIPTED_planet_name_xanid"
-	planet_class = "pc_med"
+	planet_class = "pc_arid"
 	system_name = "PRESCRIPTED_system_name_xanid"
 	initializer = ""
 	
@@ -82,7 +82,7 @@ xanid = {
 }
 
 lokken = {
-	name = "lokken"
+	name = "EMPIRE_DESIGN_lokken"
 	adjective="PRESCRIPTED_adjective_lokken"
 	spawn_enabled = no # yes / no / always
 	
@@ -149,7 +149,7 @@ lokken = {
 
 # Ix'Idar # is now a hive mind
 ixidar = {
-	name = "ixidar"
+	name = "EMPIRE_DESIGN_ixidar"
 	adjective = "PRESCRIPTED_adjective_ixidar"
 	spawn_enabled = always # yes / no / always
 	
@@ -171,7 +171,7 @@ ixidar = {
 	ship_prefix = "PRESCRIPTED_ship_prefix_ixidar"
 	
 	planet_name = "PRESCRIPTED_planet_name_ixidar"
-	planet_class = "pc_karst"
+	planet_class = "pc_arctic"
 	system_name = "PRESCRIPTED_system_name_ixidar"
 	
 	room = "personality_hive_mind_room"
