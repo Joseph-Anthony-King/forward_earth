@@ -2,7 +2,7 @@
 sathyrel = {
 	name = "EMPIRE_DESIGN_sathyrel"
 	ship_prefix = "PRESCRIPTED_ship_prefix_sathyrel"
-	spawn_enabled = always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 
 	playable = has_aquatics #scripted_triggers

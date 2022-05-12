@@ -2,7 +2,7 @@
 tzynn = {
 	name = "EMPIRE_DESIGN_tzynn"
 	adjective = "PRESCRIPTED_adjective_tzynn"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_tzynn"
 	
@@ -68,7 +68,7 @@ tzynn = {
 yondar = {
 	name = "EMPIRE_DESIGN_yondar"
 	adjective = "PRESCRIPTED_adjective_yondar"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	species = {
 		class = "AVI"
@@ -132,7 +132,7 @@ yondar = {
 iferyx = {
 	name = "EMPIRE_DESIGN_iferyx"
 	adjective = "PRESCRIPTED_adjective_iferyx"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	playable = has_not_megacorp
 	
@@ -199,7 +199,7 @@ iferyx = {
 glebsig = {
 	name = "EMPIRE_DESIGN_glebsig"
 	adjective = "PRESCRIPTED_adjective_glebsig"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
 	
 	ship_prefix = "PRESCRIPTED_ship_prefix_glebsig"
@@ -261,7 +261,7 @@ glebsig = {
 jehetma = {
 	name = "EMPIRE_DESIGN_jehetma"
 	adjective = "PRESCRIPTED_adjective_jehetma"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	
 	species = {
 		class = "FUN"

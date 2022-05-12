@@ -1,7 +1,7 @@
 voor = {
 	name = "EMPIRE_DESIGN_VOOR"
 	adjective = "PRESCRIPTED_adjective_voor"
-	spawn_enabled = always # yes / no / always
+	spawn_enabled = yes # yes / no / always
 	ignore_portrait_duplication = no
 	
 	playable = has_humanoids # scripted_triggers
