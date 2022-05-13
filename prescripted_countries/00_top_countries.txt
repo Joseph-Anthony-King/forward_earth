@@ -49,7 +49,7 @@ humans1 = {
 			file = "00_solid.dds"
 		}
 		colors={
-			"dark_blue"
+			"blue"
 			"black"
 			"null"
 			"null"

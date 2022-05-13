@@ -13,3 +13,11 @@ css_fedbuild_desc:1 "Conjunto de barcos de Cheek y Gatekeeper's constructores de
 
 css_fedbuild_colours:0 "[Colores] Constructores de federaciones"
 css_fedbuild_colours_desc:1 "Juego de barcos de Cheek y Gatekeeper's constructores de federaciones con colores dinámicos."
+ 
+css_dss_fedbuild:0 "Barcos reducidos: constructores de la Federación"
+css_dss_fedbuild_desc:1 "Conjunto de naves de Cheek y Gatekeeper's Federation Builder. Parche de barcos reducido."
+ 
+css_dss_fedbuild_colours:0 "Barcos reducidos: [Colores] Constructores de la Federación"
+css_dss_fedbuild_colours_desc:1 "Conjunto de barcos Cheek and Gatekeeper's Federation Builder con colores dinámicos. Parche de barcos reducido."
+ 
+CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Barco de piquete clase Kabuto"

@@ -13,3 +13,11 @@ css_fedbuild_desc:1 "Conjunto de navios do Construtor da Federação de Cheek e 
 
 css_fedbuild_colours:0 "[Cores] Construtores de Federação"
 css_fedbuild_colours_desc:1 "Conjunto de navios do Federation Builder de Cheek e Gatekeeper com cores dinâmicas."
+ 
+css_dss_fedbuild:0 "Navios reduzidos: construtores de federação"
+css_dss_fedbuild_desc:1 "Shipset do construtor da federação de Cheek e Gatekeeper. Patch de naves reduzido."
+ 
+css_dss_fedbuild_colours:0 "Navios reduzidos: [Cores] Construtores de Federação"
+css_dss_fedbuild_colours_desc:1 "Shipset da Cheek and Gatekeeper's Federation Builder com cores dinâmicas. Patch de naves reduzido."
+ 
+CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Navio de Piquete Classe Kabuto"

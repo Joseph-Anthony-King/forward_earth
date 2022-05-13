@@ -1004,7 +1004,7 @@ event = {
             limit = {
                 has_planet_flag = planetary_barrycenter              
             }
-            set_name = ""
+            set_name = "NAME_Empty"
         }
     }
 }

@@ -111,24 +111,34 @@ objectTypes = {
         file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s0_outpost.mesh"
         scale = 0.85
     }
-
-	pdxmesh = {
-		name = "css_fedbuild_01_habitat_1_mesh"
-        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
-        scale = 1.0
-    }
 	
 	pdxmesh = {
-		name = "css_fedbuild_01_habitat_2_mesh"
-        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_two.mesh"
-        scale = 1.0
-    }
+		name = "css_fedbuild_01_starbase_habitat_section_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
+		scale = 1.0
+	}
+
 
 	pdxmesh = {
-		name = "css_fedbuild_01_habitat_3_mesh"
-        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_three.mesh"
-        scale = 1.0
-    }	
+		name = "css_fedbuild_01_habitat_level_1_frame_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_01_habitat_level_2_frame_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_two.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_habitat_level_3_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_3.mesh"		
+		scale = 1.0
+	}
+	
 
 ####### station sections #######
 

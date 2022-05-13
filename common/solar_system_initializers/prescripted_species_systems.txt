@@ -181,6 +181,7 @@ vultaumar_system = {
 		size = 25
 		has_ring = no
 		entity = "barren_planet_01_destroyed_entity"
+		flags = { pd_ignore }
 		#anomaly = "VULTAUMAR"
 		flags = { vultaum_homeworld }
 		
@@ -292,6 +293,7 @@ yuhtaan_system = {
 		size = 25
 		has_ring = no
 		entity = "barren_planet_01_destroyed_entity"
+		flags = { pd_ignore }
 		#anomaly = "YUHTAAN"
 		flags = { yuht_homeworld }
 		

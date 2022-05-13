@@ -13,3 +13,11 @@ css_fedbuild_desc:1 "Zestaw statku Konstruktora Federacji Policzków i Gatekeepe
 
 css_fedbuild_colours:0 "[Zabarwienie] Konstruktorzy Federacji"
 css_fedbuild_colours_desc:1 "Zestaw dynamiczny kolorów dla budowniczego federacji policzków i strażników."
+ 
+css_dss_fedbuild:0 "Przeskalowane statki: budowniczowie federacji"
+css_dss_fedbuild_desc:1 "Okręty konstruktora federacji Cheeka i Gatekeepera. Zmniejszona łatka statków."
+ 
+css_dss_fedbuild_colours:0 "Przeskalowane statki: [Kolory] Budowniczowie Federacji"
+css_dss_fedbuild_colours_desc:1 "Zestaw konstruktorów federacji Cheek i Gatekeeper w dynamicznych kolorach. Zmniejszona łatka statków."
+ 
+CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Statek pikietowy klasy Kabuto"

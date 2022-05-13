@@ -50,7 +50,7 @@ sathyrel = {
 			file = "circle.dds"
 		}
 		colors = {
-			"dark_blue"
+			"blue"
 			"light_blue"
 			"null"
 			"null"

@@ -138,7 +138,7 @@ npc_sol_system_initializer = {
 									file = "00_solid.dds"
 								}
 								colors = {
-									"dark_blue"
+									"blue"
 									"black"
 									"null"
 									"null"
@@ -146,6 +146,7 @@ npc_sol_system_initializer = {
 							}
 							type = default
 							effect = {
+								save_event_target_as = icarus_npc
 								add_resource = {
 									minerals = 200
 									energy = 200
@@ -157,11 +158,37 @@ npc_sol_system_initializer = {
 							}
 						}
 
+						create_colony = {
+							owner = event_target:icarus_npc
+							species = last_created
+							ethos = {
+								ethic = "ethic_gestalt_consciousness"
+							}
+						}
+
+						solar_system = {
+							create_starbase = {
+								size = starbase_starport
+								module = shipyard
+								building = crew_quarters
+								owner = event_target:icarus_npc
+								effect = {
+									set_starbase_module = {
+										slot = 1
+										module = trading_hub
+									}
+								}
+							}
+						}
+
 						last_created_country = {
 							set_graphical_culture = ai_ship_set_01
 							set_country_flag = icarus_faction
 							set_country_flag = human_1
 							save_global_event_target_as = icarus_npc
+							country_event = { id = game_start.9 }
+							country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+							capital_scope = { set_name = "NAME_Earth" }
 						}
 
 						while = {
@@ -191,14 +218,6 @@ npc_sol_system_initializer = {
 						add_building = building_uplink_node
 						add_building = building_research_lab_1
 
-						create_colony = {
-							owner = last_created_country
-							species = last_created
-							ethos = {
-								ethic = "ethic_gestalt_consciousness"
-							}
-						}
-
 						create_army = {
 							name = "1st Fortification Assignment"
 							owner = last_created
@@ -210,71 +229,6 @@ npc_sol_system_initializer = {
 							owner = last_created
 							species = last_created
 							type = "defense_army"
-						}
-
-						system_star = {
-
-							#science
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = science
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-
-									owner = {
-										create_leader = {
-											class = scientist
-											sub_type = survey
-											name = random
-											species = owner_main_species
-										}
-									}
-									set_leader = last_created_leader
-								}
-							}
-
-							#constructor
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = constructor
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-								}
-							}
-
-							#military
-							create_fleet = {
-								set_take_point = yes
-								effect = {
-									set_owner = last_created_country
-
-									while = {
-										count = 3
-										create_ship = {
-											name = random
-											random_existing_design = corvette
-										}
-									}
-
-									set_location = PREV
-								}
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Earth" }
 						}
 					}
 					# Space Age
@@ -331,6 +285,7 @@ npc_sol_system_initializer = {
 							}
 							type = default
 							effect = {
+								save_event_target_as = UNoE_npc
 								add_resource = {
 									minerals = 200
 									energy = 200
@@ -342,13 +297,39 @@ npc_sol_system_initializer = {
 							}
 						}
 
+						create_colony = {
+							owner = event_target:UNoE_npc
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+						}
+
+						solar_system = {
+							create_starbase = {
+								size = starbase_starport
+								module = shipyard
+								building = crew_quarters
+								owner = event_target:UNoE_npc
+								effect = {
+									set_starbase_module = {
+										slot = 1
+										module = trading_hub
+									}
+								}
+							}
+						}
+
 						last_created_country = {
 							set_graphical_culture = css_fedbuild_01
 							set_country_flag = human_1
 							set_country_flag = human_faction
-							set_country_flag = human_starbase
 							create_starting_leaders = yes
-							save_global_event_target_as = UNoE_1
+							save_global_event_target_as = UNoE_npc
+							country_event = { id = game_start.9 }
+							country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+							capital_scope = { set_name = "NAME_Earth" }
 						}
 						
 						set_owner = last_created_country
@@ -358,71 +339,6 @@ npc_sol_system_initializer = {
 						generate_start_buildings_and_districts = yes
 						generate_start_pops = yes
 						clear_blockers = yes
-
-						system_star = {
-
-							#science
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = science
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-
-									owner = {
-										create_leader = {
-											class = scientist
-											sub_type = survey
-											name = random
-											species = owner_main_species
-										}
-									}
-									set_leader = last_created_leader
-								}
-							}
-
-							#constructor
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = constructor
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-								}
-							}
-
-							#military
-							create_fleet = {
-								set_take_point = yes
-								effect = {
-									set_owner = last_created_country
-
-									while = {
-										count = 3
-										create_ship = {
-											name = random
-											random_existing_design = corvette
-										}
-									}
-
-									set_location = PREV
-								}
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Earth" }
-						}
 					}
 					# Early Space Age
 					6 = {
@@ -1255,20 +1171,6 @@ npc_sol_system_initializer = {
 		size = 5
 		has_ring = no
 		flags = { planet_varuna }
-	}
-
-	init_effect = {
-		if = {
-			limit = {
-				any_country = { has_country_flag = human_1 }
-			}
-
-			create_starbase = {
-				size = starbase_starport
-				module = shipyard
-				owner = last_created_country
-			}
-		}
 	}
 	
 	neighbor_system = {

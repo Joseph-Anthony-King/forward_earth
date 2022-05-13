@@ -1366,8 +1366,8 @@ com_sol_system = {
 						file = "00_solid.dds"
 					}
 					colors = {
-						"dark_blue"
-						"dark_blue"
+						"blue"
+						"blue"
 						"null"
 						"null"
 					}
