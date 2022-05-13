@@ -3,7 +3,7 @@
 # Culture is scripted for species classes, see "common/species_classes/" and "graphical_culture = xxx"
 
 css_fedbuild_01 = {
-	fallback = humanoid_01
+	fallback = mammalian_01
 
 	ship_color = no
 	ship_lighting = {

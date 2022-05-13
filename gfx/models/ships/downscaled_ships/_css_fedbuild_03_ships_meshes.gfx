@@ -24,7 +24,13 @@ objectTypes = {
         file = "gfx/models/ships/css_fedbuild_corvette/css_fedbuild_corvette_two.mesh"
 		scale = 0.4 # 1.0
     }	
-	
+
+	pdxmesh = {
+		name = "css_fedbuild_03_corvette_three_mesh"
+        file = "gfx/models/ships/css_fedbuild_corvette/css_fedbuild_corvette_three.mesh"
+		scale = 0.38
+    }	
+		
 	#######  destroyer  #######	
 	
 	pdxmesh = {

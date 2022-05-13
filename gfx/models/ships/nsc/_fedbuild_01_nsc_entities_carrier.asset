@@ -81,7 +81,7 @@ entity = {
 # BOW
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_L1M1S2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -121,7 +121,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_L1S4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -161,7 +161,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_L2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -201,7 +201,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_M1S2SHB_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -239,7 +239,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_M2S4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -278,7 +278,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_M3S2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L1S4_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -319,7 +319,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_bow_XL1_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_bow_L2_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -363,7 +363,7 @@ entity = {
 #MID1
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_L2S4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -398,7 +398,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_L1M4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -431,7 +431,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_L2M2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -466,7 +466,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_L3_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -501,7 +501,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_M4SHB_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_S2HB_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -536,7 +536,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid1_S4LHB_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid1_L1M1_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -572,7 +572,7 @@ entity = {
 #MID2
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_L2S4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_L2S4_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_L2S4_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -607,7 +607,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_L1M4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_L1M4_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_L1M4_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -640,7 +640,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_L2M2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_L2M2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_L2M2_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -675,7 +675,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_L3_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_L3_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_L3_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -710,7 +710,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_M4SHB_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_M4SHB_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_M4SHB_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -745,7 +745,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_mid2_S4LHB_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_mid_S4LHB_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_mid_S4LHB_mesh"
 	
 	default_state = "idle"
 	state = { name = idle	state_time = 5
@@ -782,7 +782,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_stern_L1_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_stern_L1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_stern_L1_mesh"
 	
 	default_state = idle
 	state = { name = "idle" state_time = 5
@@ -833,7 +833,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_stern_M1S2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_stern_M1S2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_stern_M1S2_mesh"
 	
 	default_state = idle
 	state = { name = "idle" state_time = 5
@@ -884,7 +884,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_stern_M2_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_stern_lakota_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_stern_lakota_mesh"
 	
 	default_state = idle
 	state = { name = "idle" state_time = 5
@@ -933,7 +933,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_Carrier_stern_S4_entity"
-	pdxmesh = "css_fedbuild_01_carrier_mesh"    #"fedbuild_01_carrier_stern_L1_mesh" 
+	pdxmesh = "empty_mesh"    #"fedbuild_01_carrier_stern_L1_mesh" 
 	
 	default_state = idle
 	state = { name = "idle" state_time = 5

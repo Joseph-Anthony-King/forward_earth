@@ -112,7 +112,7 @@ yondar = {
 		}
 		colors={
 			"blue"
-			"dark_blue"
+			"blue"
 			"null"
 			"null"
 		}

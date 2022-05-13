@@ -137,6 +137,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							}
 							type = default
 							effect = {
+								save_event_target_as = UNoE_npc
 								add_resource = {
 									minerals = 200
 									energy = 200
@@ -148,13 +149,81 @@ eta_cassiopeiae_with_sol_system_initializer = {
 							}
 						}
 
+						create_colony = {
+							owner = event_target:UNoE_npc
+							species = last_created
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+						}
+
+						solar_system = {
+							create_starbase = {
+								size = starbase_starport
+								module = shipyard
+								building = crew_quarters
+								owner = event_target:UNoE_npc
+								effect = {
+									set_starbase_module = {
+										slot = 1
+										module = trading_hub
+									}
+								}
+							}
+						}
+
 						last_created_country = {
 							set_graphical_culture = css_fedbuild_01
+							capital_scope = { set_name = "NAME_Earth" }
 							set_country_flag = human_1
 							set_country_flag = human_faction
-							set_country_flag = human_starbase
+							set_country_flag = sol_starbase
 							create_starting_leaders = yes
-							save_global_event_target_as = UNoE_1
+							save_global_event_target_as = UNoE_npc
+							country_event = { id = game_start.9 }
+							country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+						}
+						
+						#science
+						create_fleet = {
+							effect = {
+								set_owner = event_target:UNoE_npc
+
+								create_ship = {
+									name = random
+									random_existing_design = science
+								}
+
+								set_fleet_stance = evasive
+								#set_location = prev.capital_star
+								set_location = prev.capital_scope.star
+
+								owner = {
+									create_leader = {
+										class = scientist
+										sub_type = survey
+										name = random
+										species = owner_main_species
+									}
+								}
+								set_leader = last_created_leader
+							}
+						}
+
+						#constructor
+						create_fleet = {
+							effect = {
+								set_owner = event_target:UNoE_npc
+
+								create_ship = {
+									name = random
+									random_existing_design = constructor
+								}
+
+								set_fleet_stance = evasive
+								set_location = prev.capital_star
+							}
 						}
 
 						set_owner = last_created_country
@@ -164,80 +233,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						generate_start_buildings_and_districts = yes
 						generate_start_pops = yes
 						clear_blockers = yes
-
-						create_colony = {
-							owner = last_created_country
-							species = last_created
-							ethos = {
-								ethic = "ethic_xenophile"
-								ethic = "ethic_fanatic_egalitarian"
-							}
-						}
-
-						system_star = {
-
-							#science
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = science
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-
-									owner = {
-										create_leader = {
-											class = scientist
-											sub_type = survey
-											name = random
-											species = owner_main_species
-										}
-									}
-									set_leader = last_created_leader
-								}
-							}
-
-							#constructor
-							create_fleet = {
-								effect = {
-									set_owner = last_created_country
-
-									create_ship = {
-										name = random
-										random_existing_design = constructor
-									}
-
-									set_fleet_stance = evasive
-									set_location = PREV
-								}
-							}
-
-							#military
-							create_fleet = {
-								set_take_point = yes
-								effect = {
-									set_owner = last_created_country
-
-									while = {
-										count = 3
-										create_ship = {
-											name = random
-											random_existing_design = corvette
-										}
-									}
-
-									set_location = PREV
-								}
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Earth" }
-						}
 					}
 					# Earth no civilization
 					5 = {
@@ -520,18 +515,6 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		orbit_angle = -80
 		size = 5
 		has_ring = no
-	}
-
-	init_effect = {
-
-		if = {
-			any_country = { has_country_flag = human_starbase }
-			create_starbase = {
-				size = starbase_starport
-				module = shipyard
-				owner = last_created_country
-			}
-		}
 	}
 	
 	neighbor_system = {

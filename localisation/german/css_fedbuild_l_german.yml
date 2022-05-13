@@ -13,3 +13,11 @@ css_fedbuild_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder."
 
 css_fedbuild_colours:0 "[Farben] Föderationsbauer"
 css_fedbuild_colours_desc:1 "Schiffssatz von Cheek and Gatekeeper's Federation Builder mit dynamischen Farben."
+ 
+css_dss_fedbuild:0 "Verkleinerte Schiffe: Federation Builders"
+css_dss_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset. Patch für verkleinerte Schiffe."
+ 
+css_dss_fedbuild_colours:0 "Verkleinerte Schiffe: [Farben] Federation Builders"
+css_dss_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's Shipset mit dynamischen Farben. Patch für verkleinerte Schiffe."
+ 
+CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Streikpostenschiff der Kabuto-Klasse"

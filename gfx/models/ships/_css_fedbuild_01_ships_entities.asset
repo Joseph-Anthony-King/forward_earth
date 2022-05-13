@@ -448,6 +448,28 @@ entity = {
 }
 
 
+entity = {
+	name = "css_fedbuild_01_corvette_S1PD1_entity"
+	pdxmesh = "css_fedbuild_01_corvette_three_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" state_time = 5 }
+
+	game_data = {
+		emissive_recolor_crunch = 2.0
+	}
+
+}
+
+
 ###################            DESTROYER             ########################
 
 # FRAME

@@ -1260,13 +1260,13 @@ npc_scyldari_system_initializer = {
 
 			create_army = {
 				name = "1st Defensive Column"
-				owner = last_created
+				owner = last_created_country
 				species = last_created
 				type = "defense_army"
 			}
 			create_army = {
 				name = "2nd Defensive Column"
-				owner = last_created
+				owner = last_created_country
 				species = last_created
 				type = "defense_army"
 			}
@@ -1618,13 +1618,13 @@ npc_dal_lokkur_system_initializer = {
 
 			create_army = {
 				name = "1st Planetary Patrol"
-				owner = last_created
+				owner = last_created_country
 				species = last_created
 				type = "defense_army"
 			}
 			create_army = {
 				name = "2nd Planetary Patrol"
-				owner = last_created
+				owner = last_created_country
 				species = last_created
 				type = "defense_army"
 			}
@@ -1939,13 +1939,13 @@ npc_kel_azak_system_initializer = {
 
 				create_army = {
 					name = "1st Planetary Cast"
-					owner = last_created
+					owner = last_created_country
 					species = last_created
 					type = "defense_army"
 				}
 				create_army = {
 					name = "2nd Planetary Cast"
-					owner = last_created
+					owner = last_created_country
 					species = last_created
 					type = "defense_army"
 				}

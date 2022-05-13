@@ -23,7 +23,7 @@
 #FRAME
 entity = {
 	name = "css_fedbuild_01_escortcarrier_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_frame_mesh"    #"fedbuild_01_battlecruiser_frame_mesh"
+	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_battlecruiser_frame_mesh"
 	
 	locator = { name = "part1"	position = { 0 0 3 } rotation = { 0 0 0 } }
 	locator = { name = "part2"	position = { 0 0 3 } rotation = { 0 0 0 } }
@@ -81,7 +81,7 @@ entity = {
 # BOW
 entity = {
 	name = "css_fedbuild_01_escortcarrier_bow_L1_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_cruiser_bow_excellsior_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_cruiser_bow_excellsior_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -112,7 +112,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_bow_M1S2_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_battlecruiser_bow_M1S2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_battlecruiser_bow_M1S2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -143,7 +143,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_bow_M2_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_cruiser_bow_ambassador_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_cruiser_bow_ambassador_mesh"
 	
 	state = { name = "death"
 		event = { time = 0.00 node = "root" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed } }
@@ -169,7 +169,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid1_S2HB_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -208,7 +208,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid1_L1M1_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -243,7 +243,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid1_M3_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -280,7 +280,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid1_M2S2_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid1_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -319,7 +319,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid2_S2HB_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -358,7 +358,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid2_L1M1_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -393,7 +393,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid2_M3_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -430,7 +430,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_mid2_M2S2_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_nsc_escortcarrier_mid2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -469,7 +469,7 @@ entity = {
 # STERN
 entity = {
 	name = "css_fedbuild_01_escortcarrier_stern_M1_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_escortcarrier_stern_M1_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_escortcarrier_stern_M1_mesh"
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
 		event = { time = 0 node = "engine_large_01" particle = "mammalian_01_2_35_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
@@ -528,7 +528,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_escortcarrier_stern_S2_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"    #"fedbuild_01_escortcarrier_stern_S2_mesh"
+	pdxmesh = "empty_mesh"    #"fedbuild_01_escortcarrier_stern_S2_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
