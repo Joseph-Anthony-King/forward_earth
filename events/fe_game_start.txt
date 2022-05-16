@@ -22,15 +22,21 @@ event = {
 			limit = {
 				NOT = {
 					any_system = {
-						has_star_flag = sol
+						has_star_flag = sol_system
 					}
 				}
 			}
 			random_list = {
-				90 = {
+				75 = {
 					random_system = {
 						limit = { has_owner = no }
 						spawn_system = { initializer = "special_init_03" }
+					}
+				}
+				15 = {
+					random_system = {
+						limit = { has_owner = no }
+						spawn_system = { initializer = "eta_cassiopeiae_with_sol_system_initializer" }
 					}
 				}
 				10 = {
