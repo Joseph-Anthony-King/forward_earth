@@ -18,7 +18,7 @@ icarus_sol_system_initializer = {
 		radius = 297
 	}
 
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol custom_system }
 	
 	usage = custom_empire
 

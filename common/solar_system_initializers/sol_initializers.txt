@@ -16,7 +16,7 @@ sol_system_initializer = {
 		radius = 290
 	}
 	
-	flags = { empire_home_system sol_system sol }
+	flags = { empire_home_system sol_system sol custom_system }
 	
 	usage = custom_empire
 

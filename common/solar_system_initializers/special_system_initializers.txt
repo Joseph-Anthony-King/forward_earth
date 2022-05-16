@@ -126,7 +126,7 @@ special_init_03 = {
 		}
 	}
 
-	flags = { primitive_sol sol }
+	flags = { primitive_sol sol_system custom_system sol }
 	
 	planet = {
 		name = "NAME_Sol"
@@ -172,7 +172,7 @@ special_init_03 = {
 			if = {
 				random_list = {
 					# Stone Age
-					10 = {
+					5 = {
 						create_species = {
 							name = NAME_Human
 							plural = NAME_Humans
@@ -216,6 +216,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = stone_age
@@ -225,9 +228,22 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
-						create_primitive_armies = yes
-						
+
+						add_building = building_crude_huts
+						remove_building = building_colony_shelter
+						while = {
+							count = 4
+							create_pop = {
+								species = last_created_species
+							}
+						}
+						create_army = {
+							name = "NAME_Primitive_Army"
+							owner = last_created_country
+							species = last_created_species
+							type = "primitive_army"
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -277,6 +293,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = bronze_age
@@ -286,9 +305,24 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
-						create_primitive_armies = yes
-						
+
+						add_building = building_primitive_dwellings
+						add_building = building_stone_palace
+						remove_building = building_colony_shelter
+						while = {
+							count = 8
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						create_army = {
+							name = "NAME_Primitive_Army"
+							owner = last_created_country
+							species = last_created_species
+							type = "primitive_army"
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -338,6 +372,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = iron_age
@@ -347,9 +384,27 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
-						create_primitive_armies = yes
-						
+
+						add_building = building_primitive_dwellings
+						add_building = building_stone_palace
+						remove_building = building_colony_shelter
+						while = {
+							count = 9
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						while = {
+							count = 2
+							create_army = {
+								name = "NAME_Primitive_Army"
+								owner = last_created_country
+								species = last_created_species
+								type = "primitive_army"
+							}
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -399,6 +454,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = late_medieval_age
@@ -408,9 +466,28 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
-						create_primitive_armies = yes
-						
+
+						add_building = building_primitive_dwellings
+						add_building = building_primitive_dwellings
+						add_building = building_stone_palace
+						remove_building = building_colony_shelter
+						while = {
+							count = 10
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						while = {
+							count = 3
+							create_army = {
+								name = "NAME_Primitive_Army"
+								owner = last_created_country
+								species = last_created_species
+								type = "primitive_army"
+							}
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -460,6 +537,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = renaissance_age
@@ -469,9 +549,28 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
-						create_primitive_armies = yes
-						
+
+						add_building = building_primitive_dwellings
+						add_building = building_primitive_dwellings
+						add_building = building_stone_palace
+						remove_building = building_colony_shelter
+						while = {
+							count = 12
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						while = {
+							count = 4
+							create_army = {
+								name = "NAME_Primitive_Army"
+								owner = last_created_country
+								species = last_created_species
+								type = "primitive_army"
+							}
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -521,6 +620,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = steam_age
@@ -530,12 +632,34 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
+
+						add_building = building_urban_dwellings
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_stone_palace
+						remove_building = building_colony_shelter
+						while = {
+							count = 16
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
 						create_primitive_armies = yes
-						
+
+						while = {
+							count = 3
+							create_army = {
+								name = "NAME_Industrial_Army"
+								owner = last_created_country
+								species = last_created_species
+								type = "industrial_army"
+							}
+						}
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
-						}
+						}					
 					}
 					# Industrial Age
 					10 = {
@@ -582,6 +706,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = industrial_age
@@ -591,7 +718,20 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
+						
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+						remove_building = building_colony_shelter
+						while = {
+							count = 22
+							create_pop = {
+								species = last_created_species
+							}
+						}
 
 						create_army = {
 							name = "NAME_German_Wehrmacht"
@@ -623,7 +763,7 @@ special_init_03 = {
 							species = last_created_species
 							type = "industrial_army"
 						}
-						
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
@@ -673,6 +813,9 @@ special_init_03 = {
 							}
 							day_zero_contact = no
 							type = primitive
+							effect = {
+								save_event_target_as = primitive_humans
+							}
 						}
 						last_created_country = {
 							set_primitive_age = machine_age
@@ -682,7 +825,20 @@ special_init_03 = {
 						set_owner = last_created_country
 
 						clear_blockers = yes
-						setup_primitive_planet = yes
+						
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+						remove_building = building_colony_shelter
+						while = {
+							count = 24
+							create_pop = {
+								species = last_created_species
+							}
+						}
 
 						create_army = {
 							name = "NAME_German_Wehrmacht"
@@ -714,13 +870,231 @@ special_init_03 = {
 							species = last_created_species
 							type = "industrial_army"
 						}
-						
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Atomic Age
+					10 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							day_zero_contact = no
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created_species
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_9.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "circle.dds"
+								}
+								colors={
+									"dark_blue"
+									"green"
+									"null"
+									"null"
+								}
+							}
+							type = primitive
+						}
+						last_created_country = {
+							set_country_flag = atomic_age
+							set_primitive_age = atomic_age
+						}
+						set_owner = last_created_country
+
+						create_primitive_blockers = yes
+
+						create_army = {
+							name = "NAME_US_Armed_Forces"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_British_Armed_Forces"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_Chinese_PLA"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_Soviet_Red_Army"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_Soviet_Red_Army"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+						remove_building = building_colony_shelter
+						while = {
+							count = 26
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						last_created_country = {
+							capital_scope = { set_name = "NAME_Sol_III" }
+						}
+					}
+					# Early Space Age
+					10 = {
+						create_species = {
+							name = NAME_Human
+							plural = NAME_Humans
+							class = "HUM"
+							portrait = "human"
+							homeworld = THIS
+							traits = {
+								trait = "trait_adaptive"
+								trait = "trait_nomadic"
+								trait = "trait_wasteful"
+							}
+						}
+						create_country = {
+							name = random
+							authority = random
+							day_zero_contact = no
+							civics = {
+								civic = civic_increasing_urbanization
+								civic = civic_atmospheric_pollution
+							}
+							species = last_created_species
+							ethos = {
+								ethic = "ethic_xenophile"
+								ethic = "ethic_fanatic_egalitarian"
+							}
+							origin = "origin_enlightened" # Should only be visible if they become spacefaring
+							flag = {
+								icon = {
+									category = "human"
+									file = "flag_human_9.dds"
+								}
+								background= {
+									category = "backgrounds"
+									file = "circle.dds"
+								}
+								colors={
+									"dark_blue"
+									"green"
+									"null"
+									"null"
+								}
+							}
+							type = primitive
+						}
+						last_created_country = {
+							set_graphical_culture = industrial_01
+							set_country_flag = early_space_age
+							set_country_flag = humans_early_space_age
+							set_primitive_age = early_space_age
+						}
+						set_owner = last_created_country
+
+						create_primitive_blockers = yes
+
+						create_army = {
+							name = "NAME_US_Armed_Forces_West"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_US_Armed_Forces_East"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_Chinese_PLA"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_Russian_Armed_Forces"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_army = {
+							name = "NAME_EU_Combined_Forces"
+							owner = last_created_country
+							species = last_created_species
+							type = "postatomic_army"
+						}
+						create_fleet = {
+							name = "NAME_ISS_II"
+							effect = {
+								set_owner = last_created_country
+								create_ship = {
+									name = "NAME_ISS_II"
+									design = "NAME_Space_Station"
+								}
+								set_location = PREV
+							}
+						}
+						while = {
+							count = 28
+							create_pop = {
+								species = last_created_species
+							}
+						}
+
+						add_building = building_primitive_farm
+						add_building = building_primitive_factory
+						add_building = building_primitive_mine
+						add_building = building_primitive_power_plant
+						add_building = building_primitive_capital
+						add_building = building_urban_dwellings
+
 						last_created_country = {
 							capital_scope = { set_name = "NAME_Sol_III" }
 						}
 					}
 					# No Humans
-					20 = {}
+					5 = {				
+					}
 				}
 			}
 		}
@@ -1035,7 +1409,7 @@ special_init_04 = {
 
 	max_instances = 1
 
-	flags = { nuked_sol sol }
+	flags = { nuked_sol sol_system custom_system sol }
 	
 	planet = {
 		name = "NAME_Sol"
