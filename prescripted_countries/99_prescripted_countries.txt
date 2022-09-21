@@ -227,7 +227,6 @@ glebsig = {
 	planet_name = "PRESCRIPTED_planet_name_glebsig"
 	planet_class ="pc_alpine"
 	system_name = "PRESCRIPTED_system_name_glebsig"
-	initializer = ""
 	graphical_culture = "molluscoid_01"
 	city_graphical_culture = "molluscoid_01"
 	empire_flag = {
@@ -346,7 +345,6 @@ scyldari = {
 
 	planet_name = "PRESCRIPTED_planet_name_scyldari"
 	planet_class = "pc_ocean"
-	initializer = "scyldari_system_initializer"
 	system_name = "PRESCRIPTED_system_name_scyldari"
 
 	room = "personality_spiritual_seekers_room"
@@ -414,7 +412,6 @@ kel_azaan = {
 
 	planet_name = "PRESCRIPTED_planet_name_kel_azaan"
 	system_name = "PRESCRIPTED_system_name_kel_azaan"
-	initializer = "kel_azak_system_initializer"
 	planet_class = "pc_savannah"
 
 	room = "personality_honorbound_warriors_room"
