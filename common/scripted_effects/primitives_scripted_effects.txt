@@ -3,7 +3,7 @@ generate_primitives_on_planet = {
 	create_primitive_species = yes
 	create_primitive_empire = yes
 	setup_primitive_planet = yes
-	create_primitive_armies = yes ### Done via Pop job now
+	#create_primitive_armies = yes ### Done via Pop job now
 }
 
 generate_very_early_primitives_on_planet = {
@@ -11,7 +11,7 @@ generate_very_early_primitives_on_planet = {
 	create_primitive_species = yes
 	create_very_early_primitive_empire = yes
 	setup_primitive_planet = yes
-	create_primitive_armies = yes ### Done via Pop job now
+	#create_primitive_armies = yes ### Done via Pop job now
 }
 
 
@@ -20,7 +20,7 @@ generate_early_primitives_on_planet = {
 	create_primitive_species = yes
 	create_early_primitive_empire = yes
 	setup_primitive_planet = yes
-	create_primitive_armies = yes ### Done via Pop job now
+	#create_primitive_armies = yes ### Done via Pop job now
 }
 
 generate_late_primitives_on_planet = {
@@ -28,7 +28,7 @@ generate_late_primitives_on_planet = {
 	create_primitive_species = yes
 	create_late_primitive_empire = yes
 	setup_primitive_planet = yes
-	create_primitive_armies = yes ### Done via Pop job now
+	#create_primitive_armies = yes ### Done via Pop job now
 }
 
 create_primitive_species = {
@@ -1212,7 +1212,7 @@ create_primitive_armies = {
 				while = {
 					count = 4
 					create_army = {
-						name = "NAME_Post-Atomic_Army"
+						name = "NAME_Post_Atomic_Army"
 						owner = last_created_country
 						species = last_created_species
 						type = "postatomic_army"
@@ -1227,7 +1227,7 @@ create_primitive_armies = {
 				while = {
 					count = 5
 					create_army = {
-						name = "NAME_Post-Atomic_Army"
+						name = "NAME_Post_Atomic_Army"
 						owner = last_created_country
 						species = last_created_species
 						type = "postatomic_army"
