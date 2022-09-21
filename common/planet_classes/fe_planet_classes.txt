@@ -22,6 +22,30 @@ random_list = {
 }
 
 random_list = {
+    name = "fe_hot_atmosphere_planets_possible_colony"
+    planets = {
+        "pc_hot_reducing"
+        "pc_toxic"
+        "pc_primordial"
+        "pc_waterworld"
+        "pc_irradiated_marginal"
+        "pc_marginal_warm"
+        "pc_hothouse"
+        "pc_arid"
+        "pc_semiarid"
+        "pc_hajungle"
+        "pc_med"
+        "pc_tropical"
+        "pc_desertislands"
+        "pc_supercon"
+        "pc_desert"
+        "pc_outback"
+        "pc_aquatichot"
+        "pc_hot_gaia"
+    }
+}
+
+random_list = {
     name = "fe_cold_planets"
     planets = {
         "pc_barren"
@@ -35,6 +59,34 @@ random_list = {
         "pc_ammonia"
         "pc_underground_icy"
         "pc_marginal_cold"
+    }
+}
+
+random_list = {
+    name = "fe_cold_planets_possible_colony"
+    planets = {
+        "pc_barren"
+        "pc_barren_cold"
+        "pc_desolate"
+		"pc_frozen"
+        "pc_cold_reducing"
+        "pc_toxic"
+        "pc_ethaneworld"
+        "pc_methane"
+        "pc_ammonia"
+        "pc_underground_icy"
+        "pc_marginal_cold"
+        "pc_coastal"
+        "pc_cascadian"
+        "pc_boreal"
+        "pc_snowball"
+        "pc_tepid"
+        "pc_mushroom"
+        "pc_antarctic"
+        "pc_snow"
+        "pc_glacial"
+        "pc_aquaticcold"
+        "pc_cold_gaia"
     }
 }
 
@@ -58,6 +110,14 @@ random_list = {
         "pc_methane"
         "pc_ammonia"
         "pc_marginal_cold"
+    }
+}
+
+random_list = {
+    name = "fe_gal_risian_colony_target_planet_types"
+    planets = {
+        "pc_continental"
+        "pc_retinal"
     }
 }
 

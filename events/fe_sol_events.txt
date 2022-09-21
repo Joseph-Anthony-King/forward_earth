@@ -1,7 +1,8 @@
-namespace = real_sol
+namespace = fe
 
+### fe.20 - Venus terraforming event
 event = {
-	id = real_sol.1
+	id = fe.20
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -9,87 +10,17 @@ event = {
 	immediate = {
 		every_galaxy_planet = {
 			limit = {
-				has_planet_flag = realsol_mercury
+				has_planet_flag = planet_venus
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_continental
 				}
 				set_planet_entity = {
-                    entity = "continental_planet_mercury_entity"
+                    entity = "realsol_continental_venus_entity"
                 }
 			}
-			IF = {
-				limit = {
-					is_planet_class = pc_gaia
-				}
-				set_planet_entity = {
-                    entity = "continental_planet_mercury_entity"
-                }
-			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.11
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = realsol_mercury
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren
-				}
-				set_planet_entity = {
-                    entity = "barren_planet_mercury_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren_cold
-				}
-				set_planet_entity = {
-                    entity = "barren_planet_mercury_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_frozen
-				}
-				set_planet_entity = {
-                    entity = "barren_planet_mercury_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_nuked
-				}
-				set_planet_entity = {
-                    entity = "nuked_planet_mercury_entity"
-                }
-			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.2
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = realsol_venus
-			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_machine
 				}
@@ -97,12 +28,21 @@ event = {
                     entity = "realsol_ai_venus_entity"
                 }
 			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+                    entity = "realsol_continental_venus_entity"
+                }
+			}
 		}
 	}
 }
 
+### fe.21 - Venus yearly pulse event
 event = {
-	id = real_sol.22
+	id = fe.21
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -110,9 +50,9 @@ event = {
 	immediate = {
 		every_galaxy_planet = {
 			limit = {
-				has_planet_flag = realsol_venus
+				has_planet_flag = planet_venus
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_barren
 				}
@@ -120,7 +60,7 @@ event = {
                     entity = "realsol_barren_venus_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_barren_cold
 				}
@@ -128,7 +68,7 @@ event = {
                     entity = "realsol_barren_venus_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_infested
 				}
@@ -136,7 +76,7 @@ event = {
                     entity = "realsol_infested_venus_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_nuked
 				}
@@ -148,8 +88,9 @@ event = {
 	}
 }
 
+### fe.22 - Earth terraforming event
 event = {
-	id = real_sol.33
+	id = fe.22
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -159,7 +100,127 @@ event = {
 			limit = {
 				has_planet_flag = planet_earth
 			}
-			IF = {
+			if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				set_planet_entity = {
+					entity = "met_desert"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+					entity = "met_arid"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				set_planet_entity = {
+					entity = "met_savannah"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				set_planet_entity = {
+					entity = "met_tropical"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				set_planet_entity = {
+					entity = "met_ocean"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				set_planet_entity = {
+					entity = "met_tundra"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				set_planet_entity = {
+					entity = "met_arctic"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				set_planet_entity = {
+					entity = "met_alpine"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_hive
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_hive_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+					entity = "met_gaia"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+					entity = "met_nuked"
+				}
+			}
+		}
+	}
+}
+
+### fe.23 - Earth yearly pulse event
+event = {
+	id = fe.23
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_earth
+			}
+			if = {
 				limit = {
 					is_planet_class = pc_barren
 				}
@@ -167,7 +228,7 @@ event = {
                     entity = "barren_planet_post_prethoryn_earth_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_barren_cold
 				}
@@ -175,7 +236,7 @@ event = {
                     entity = "barren_planet_post_prethoryn_earth_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_infested
 				}
@@ -187,8 +248,9 @@ event = {
 	}
 }
 
+### fe.24 - Earth megastructure completed event
 event = {
-	id = real_sol.4
+	id = fe.24
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -196,157 +258,122 @@ event = {
 	immediate = {
 		every_galaxy_planet = {
 			limit = {
-				has_planet_flag = planet_earth_moon
+				has_planet_flag = planet_earth
 			}
-			IF = {
+			if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_desert_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_arid_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_savannah_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_tropical_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_ocean_entity"
+                }
+			}
+			if = {
 				limit = {
 					is_planet_class = pc_tundra
 				}
 				set_planet_entity = {
-                    entity = "realsol_tundra_moon_entity"
+                    entity = "realsol_earth_tundra_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
-					is_planet_class = pc_continental
+					is_planet_class = pc_arctic
 				}
 				set_planet_entity = {
-                    entity = "realsol_continental_moon_entity"
+                    entity = "realsol_earth_arctic_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
-					is_planet_class = pc_gaia
+					is_planet_class = pc_alpine
 				}
 				set_planet_entity = {
-                    entity = "realsol_continental_moon_entity"
+                    entity = "realsol_earth_alpine_entity"
                 }
 			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.44
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = planet_earth_moon
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren
-				}
-				set_planet_entity = {
-                    entity = "realsol_new_moon_warm_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren_cold
-				}
-				set_planet_entity = {
-                    entity = "realsol_new_moon_entity"
-                }
-			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_nuked
 				}
 				set_planet_entity = {
-                    entity = "realsol_nuked_moon_entity"
+                    entity = "nuked_planet_earth_entity"
                 }
 			}
-		}
-	}
-}
-
-event = {
-	id = real_sol.5
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		root = {
-			country_event = { id = real_sol.555 }
-		}
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = planet_mars
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_machine
 				}
 				set_planet_entity = {
-                    entity = "realsol_ai_mars_entity"
+                    entity = "realsol_ai_earth_entity"
                 }
 			}
 		}
 	}
 }
 
+### fe.25 - Mars terraforming event
 event = {
-	id = real_sol.55
+	id = fe.25
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {
+		
 		every_galaxy_planet = {
 			limit = {
 				has_planet_flag = planet_mars
 			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren
-				}
-				set_planet_entity = {
-                    entity = "barren_planet_new_mars_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_barren_cold
-				}
-				set_planet_entity = {
-                    entity = "barren_planet_cold_mars_entity"
-                }
-			}
-			IF = {
-				limit = {
-					is_planet_class = pc_infested
-				}
-				set_planet_entity = {
-                    entity = "infested_planet_mars_entity"
-                }
-			}
-		}
-	}
-}
-
-country_event = {
-	id = real_sol.555
-	title = real_sol.555.name
-	desc = real_sol.555.desc
-	picture = GFX_evt_fallen_empire
-	show_sound = event_alien_signal
-	location = from
-	
-	is_triggered_only = yes
-
-
-	immediate = {
-		every_galaxy_planet = {
-			limit = {
-				has_planet_flag = planet_mars
-			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_continental
 				}
@@ -354,7 +381,7 @@ country_event = {
                     entity = "terraformed_mars_continental_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_machine
 				}
@@ -362,7 +389,7 @@ country_event = {
                     entity = "realsol_ai_mars_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_gaia
 				}
@@ -370,7 +397,7 @@ country_event = {
                     entity = "terraformed_mars_continental_entity"
                 }
 			}
-			IF = {
+			if = {
 				limit = {
 					is_planet_class = pc_arid
 				}
@@ -379,8 +406,5 @@ country_event = {
                 }
 			}
 		}
-	}
-	option = {
-		name = real_sol.555.a	
 	}
 }

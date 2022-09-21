@@ -1,3 +1,4 @@
+
 @distance = 50
 @base_moon_distance = 10
 @jumps = 3
@@ -18,29 +19,33 @@ deneb_system = {
 				set_star_flag = empire_cluster
 			}
 		}
+
+		generate_home_system_resources = yes
 	}
-	
-	flags = { empire_home_system deneb_system custom_system }
-	
+
+	flags = { empire_home_system deneb_system }
+
 	usage = custom_empire
-	
+
 	planet = {
 		name = "NAME_Deneb"
 		class = "pc_a_star"
 		orbit_distance = 0
 		orbit_angle = 1
-		size = 60
+		size = 32
 		has_ring = no
 	}
-	
+
 	planet = {
+		name = "NAME_Inferno"
 		class = "pc_molten"
 		orbit_distance = 60
 		orbit_angle = 45
 		size = 10
 		has_ring = no
+		flags = { pd_ignore }
 	}
-	
+
 	planet = {
 		name = "NAME_DT4-298"
 		class = "pc_asteroid"
@@ -49,7 +54,7 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "NAME_LR-2129"
 		class = "pc_asteroid"
@@ -58,7 +63,7 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "NAME_GR-345"
 		class = "pc_asteroid"
@@ -67,8 +72,9 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
+		name = "NAME_Olympus"
 		class = "pc_gas_giant"
 		orbit_distance = 30
 		orbit_angle = 200
@@ -76,7 +82,167 @@ deneb_system = {
 		has_ring = no
 		entity = "gas_giant_02_entity"
 		flags = { pd_ignore }
-		
+
+		moon = {
+			name = "NAME_New_Luna"
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+			flags = { pd_ignore }
+		}
+		moon = {
+			name = "NAME_Unity"
+			class = ideal_planet_class
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 20
+			starting_planet = yes
+			has_ring = no
+			entity = "continental_planet_01_entity"
+			deposit_blockers = none
+			modifiers = none
+			flags = { pd_ignore }
+
+			init_effect = {
+				prevent_anomaly = yes
+			}
+
+			init_effect = {
+				generate_empire_home_planet = yes
+			}
+		}
+	}
+
+	planet = {
+		name = "NAME_Marble"
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 325
+		size = 10
+		has_ring = no
+		flags = { pd_ignore }
+	}
+
+	planet = {
+		name = "NAME_Hyperion"
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = 110
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+		flags = { pd_ignore }
+
+		moon = {
+			name = "NAME_Helios"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 14
+			orbit_angle = 14
+			has_ring = no
+			flags = { pd_ignore }
+		}
+	}
+
+	planet = {
+		name = "NAME_Tumbleweed"
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 35
+		size = 15
+		has_ring = no
+		flags = { pd_ignore }
+	}
+
+	planet = {
+		name = "NAME_Jackson's_Planet"
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 150
+		size = 20
+		has_ring = no
+		flags = { pd_ignore }
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Deneb System - Was UNE start but edited due to CoA
+une_deneb_system = {
+	name = "NAME_Deneb"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	planet = {
+		name = "NAME_Deneb"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		entity = "gas_giant_02_entity"
+
 		moon = {
 			class = "pc_frozen"
 			size = 5
@@ -85,18 +251,18 @@ deneb_system = {
 			has_ring = no
 		}
 		moon = {
-			class = "pc_continental"
+			class = pc_continental
 			orbit_distance = 5
 			orbit_angle = 340
 			size = 18
 			starting_planet = yes
 			has_ring = no
-			entity = "continental_planet_01_entity"	
-			flags = { pd_ignore }
+			entity = "continental_planet_01_entity"
+			deposit_blockers = none
 			modifiers = none
-		}		
+		}
 	}
-	
+
 	planet = {
 		class = "pc_barren_cold"
 		orbit_distance = 20
@@ -104,7 +270,7 @@ deneb_system = {
 		size = 10
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_gas_giant"
 		orbit_distance = 20
@@ -112,8 +278,7 @@ deneb_system = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
-		flags = { pd_ignore }
-		
+
 		moon = {
 			class = "pc_frozen"
 			size = 8
@@ -122,7 +287,7 @@ deneb_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		class = "pc_barren"
 		orbit_distance = 20
@@ -130,7 +295,7 @@ deneb_system = {
 		size = 15
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_frozen"
 		orbit_distance = 20
@@ -138,26 +303,16 @@ deneb_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1"
+		initializer = "deneb_neighbor_t1"
 	}
 	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
 		hyperlane_jumps = { min = 1 max = @jumps }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}		
-		initializer = "neighbor_t1_first_colony"
-	}
-	neighbor_system = {
-		distance = { min = 50 max = 60 }
-		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
-			#want this?
-		}
+		initializer = "deneb_neighbor_t1_first_colony"
 	}
 }
 
@@ -200,6 +355,133 @@ deneb_neighbor_t1 = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "deneb_neighbor_t2_second_colony"
+	}
+}
+
+# Neighbor Tier 1 First Colony
+deneb_neighbor_t1_first_colony = {
+	class = "rl_standard_stars"
+	flags = { neighbor_t1_first_colony }
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_distance = 20
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 25
+		class = "pc_continental"
+		modifiers = none
+		anomaly = none
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 18 }
+	}
+
+	planet = {
+		count = { min = 2 max = 5 }
+		orbit_distance = 25
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			orbit_distance = 5
+		}
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t2"
+	}
+}
+
+# Neighbor Tier 2 Second Colony
+deneb_neighbor_t2_second_colony = {
+	class = "rl_standard_stars"
+	flags = { neighbor_t2_second_colony }
+
+	init_effect = {
+		every_neighbor_system = { set_star_flag = empire_cluster }
+	}
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 25
+
+	planet = {
+		count = 2
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 20
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 25
+		class = "pc_continental"
+		modifiers = none
+		anomaly = none
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 14 max = 24 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = 2
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 20
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = { min = 0 max = 1 }
+			class = random_non_colonizable
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	planet = {
+		count = { min = 0 max = 2 }
+		orbit_angle = { min = 90 max = 270 }
+		orbit_distance = 20
 	}
 }
 
@@ -1028,4 +1310,3 @@ cybrex_system = {
 		}
 	}
 }
-

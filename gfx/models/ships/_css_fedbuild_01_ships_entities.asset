@@ -355,7 +355,7 @@ entity = {
 
 entity = {
  name = "css_fedbuild_01_corvette_entity"
- pdxmesh = "mammalian_01_corvette_mesh"
+ pdxmesh = "molluscoid_01_corvette_frame_mesh"
  locator = { name = "engine_large_01" position = { 0 0 0 } } #X,Up/Down,Forward/Back
  
  start_event = { time = 0 node = "engine_large_01" particle = "mammalian_01_3_35_exhaust_idle_particle" trigger_once = yes keep_particle = yes }
@@ -746,7 +746,7 @@ entity = {
 # BOW
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_S4_entity"
-	pdxmesh = "css_fedbuild_01_escort_carrier_mesh"
+	pdxmesh = "empty_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -767,7 +767,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_L1_entity"
-	pdxmesh = "css_fedbuild_01_battle_cruiser_small_mesh"
+	pdxmesh = "empty_mesh"
 
 	
 	default_state = "idle"
@@ -789,7 +789,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_M1S2_entity"
-	pdxmesh = "css_fedbuild_01_cruiser_mesh"
+	pdxmesh = "empty_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -808,7 +808,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_bow_M2_entity"
-	pdxmesh = "css_fedbuild_01_battle_cruiser_small_mesh"
+	pdxmesh = "empty_mesh"
 	
 	
 	default_state = "idle"
@@ -832,7 +832,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_S2HB_entity"
-	pdxmesh = "empty_mesh"
+	pdxmesh = "css_fedbuild_01_cruiser_mesh"
 	
 	
 	default_state = "idle"
@@ -852,7 +852,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_L1M1_entity"
-	pdxmesh = "empty_mesh"
+	pdxmesh = "css_fedbuild_01_cruiser_artillery_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5
@@ -873,7 +873,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_M3_entity"
-	pdxmesh = "empty_mesh"
+	pdxmesh = "css_fedbuild_01_cruiser_broadside_mesh"
 	
 	
 	default_state = "idle"
@@ -895,7 +895,7 @@ entity = {
 
 entity = {
 	name = "css_fedbuild_01_cruiser_mid_M2S2_entity"
-	pdxmesh = "empty_mesh"
+	pdxmesh = "css_fedbuild_01_battle_cruiser_small_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" state_time = 5

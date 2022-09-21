@@ -524,7 +524,7 @@ entity = {
 	name = "css_fedbuild_01_habitat_phase_01_entity"
 	pdxmesh = "empty_mesh"
 	
-	attach = { "part1" 		 		= "css_fedbuild_01_habitat_phase_01_core_entity" }
+	attach = { "part1" = "css_fedbuild_01_habitat_phase_01_core_entity" }
 			
 	scale = 1.5
 	
@@ -536,7 +536,6 @@ entity = {
 		emissive_recolor_crunch = 5.0
 	}
 }
-
 
 entity = {
 	name = "css_fedbuild_01_habitat_phase_01_entity"
@@ -922,3 +921,117 @@ entity = {
 			emissive_recolor_crunch = 5.0
 		}
 	}
+
+#Coloured Habitats  
+
+entity = {
+	name = "css_fedbuild_02_orbital_station_habitat_section_entity"
+	pdxmesh = "css_fedbuild_01_habitat_1_mesh"
+}
+
+entity = {
+	name = "css_fedbuild_02_habitat_phase_01_entity"
+	pdxmesh = "empty_mesh"
+	
+	attach = { "part1" = "css_fedbuild_01_habitat_phase_01_core_entity" }
+			
+	scale = 1.5
+	
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" looping = yes }
+	state = { name = "construction" looping = yes }
+	
+	game_data = {
+		emissive_recolor_crunch = 5.0
+	}
+}
+
+entity = {
+	name = "css_fedbuild_02_habitat_phase_01_entity"
+	pdxmesh = "css_fedbuild_01_habitat_level_1_frame_mesh"
+
+	attach = { "part1" 		 		= "fedbuild_01_starbase_outpost_section_entity" }
+
+	scale = 1
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" looping = yes }
+	state = { name = "construction" looping = yes }
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 2.0
+	}
+	
+}
+
+entity = {
+	name = "css_fedbuild_02_habitat_phase_02_entity"
+	pdxmesh = "css_fedbuild_01_habitat_level_2_frame_mesh"
+
+	attach = { "part1" = "fedbuild_01_starbase_outpost_section_entity" }
+	attach = { "part2" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part3" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part4" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part5" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part6" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part7" = "fedbuild_01_habitat_phase_02_section_entity" }
+
+	scale = 1
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" looping = yes }
+	state = { name = "construction" looping = yes }
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 2.0
+	}
+}
+
+entity = {
+	name = "css_fedbuild_02_habitat_phase_02_section_entity"
+	pdxmesh = "css_fedbuild_01_starbase_habitat_section_mesh"
+}
+
+entity = {
+	name = "css_fedbuild_02_habitat_phase_03_entity"
+	pdxmesh = "css_fedbuild_01_habitat_level_3_frame_mesh"
+
+	locator = { name = part1 }
+	locator = { name = explosion_effect position = { 0 3 0 } }
+	
+	attach = { "part1" = "fedbuild_01_starbase_outpost_section_entity" }
+	attach = { "part2" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part3" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part4" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part5" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part6" = "fedbuild_01_habitat_phase_02_section_entity" }
+	attach = { "part7" = "fedbuild_01_habitat_phase_02_section_entity" }
+
+	scale = 1
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" state_time = 5 }
+	state = { name = "construction" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+	event = { time = 4.9 node = "explosion_effect" particle = "fedbuild_01_large_player_ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+
+	game_data = {
+		shader_type = ship
+		emissive_recolor_crunch = 2.0
+	}
+
+	attach = { name = "station" part1 = "fedbuild_01_habitat_phase_03_section_entity" }
+}
+
+entity = {
+	name = "fedbuild_02_habitat_phase_03_section_entity"
+	pdxmesh = "css_fedbuild_01_habitat_level_3_mesh"
+
+	default_state = "habitat_idle"
+	state = { name = "habitat_idle" animation = "idle" animation_speed = 0.2 }
+	state = { name = "construction" animation = "idle" animation_speed = 0.0 }
+
+}

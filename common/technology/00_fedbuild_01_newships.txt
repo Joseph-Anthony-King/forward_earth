@@ -7,8 +7,13 @@ tech_css_fedbuild_01 = {
 	start_tech = yes
     
 	potential = {
-        graphical_culture = "css_fedbuild_01"
-    		}
+		OR = {
+			graphical_culture = "css_fedbuild_01"
+			graphical_culture = "css_fedbuild_02"
+			graphical_culture = "css_fedbuild_03"
+			graphical_culture = "css_fedbuild_04"
+		}
+	}
 			
 	prereqfor_desc = {
 		ship = {
@@ -26,8 +31,13 @@ tech_css_fedbuild_02 = {
 	start_tech = yes
     
 	potential = {
-        graphical_culture = "css_fedbuild_02"
-    		}
+		OR = {
+			graphical_culture = "css_fedbuild_01"
+			graphical_culture = "css_fedbuild_02"
+			graphical_culture = "css_fedbuild_03"
+			graphical_culture = "css_fedbuild_04"
+		}
+	}
 			
 	prereqfor_desc = {
 		ship = {

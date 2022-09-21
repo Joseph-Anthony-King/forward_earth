@@ -12,7 +12,7 @@ entity = {
 	}
 	
 	default_state = "idle"
-	playback_rate = -1.0 # Rotation is reversed
+	playback_rate = 1.0
  	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
 		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }

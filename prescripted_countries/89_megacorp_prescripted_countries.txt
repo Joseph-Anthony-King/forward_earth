@@ -4,7 +4,7 @@ kilik = {
 	name = "EMPIRE_DESIGN_kilik"
 	adjective = "PRESCRIPTED_adjective_kilik"
 	spawn_enabled = yes # yes / no / always
-	ignore_portrait_duplication = no
+	ignore_portrait_duplication = yes
 	
 	playable = has_megacorp
 	
@@ -74,7 +74,7 @@ orbis = {
 	name = "EMPIRE_DESIGN_orbis"
 	adjective = "PRESCRIPTED_adjective_orbis"
 	spawn_enabled = yes # yes / no / always
-	ignore_portrait_duplication = no
+	ignore_portrait_duplication = yes
 	
 	playable = has_megacorp
 	
@@ -116,7 +116,7 @@ orbis = {
 	empire_flag = {
 		icon = {
 			category = "corporate"
-			file= "corporate_01.dds"
+			file = "corporate_01.dds"
 		}
 		background = {
 			category = "backgrounds"
@@ -217,7 +217,7 @@ hazbuzan = {
 	name = "EMPIRE_DESIGN_hazbuzan"
 	adjective = "PRESCRIPTED_adjective_hazbuzan"
 	spawn_enabled = yes # yes / no / always
-	ignore_portrait_duplication = no
+	ignore_portrait_duplication = yes
 	
 	playable = has_megacorp
 	
