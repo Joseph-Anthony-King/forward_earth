@@ -1,0 +1,410 @@
+namespace = fe
+
+### fe.20 - Venus terraforming event
+event = {
+	id = fe.20
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_venus
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "realsol_continental_venus_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_venus_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+                    entity = "realsol_continental_venus_entity"
+                }
+			}
+		}
+	}
+}
+
+### fe.21 - Venus yearly pulse event
+event = {
+	id = fe.21
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_venus
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_barren
+				}
+				set_planet_entity = {
+                    entity = "realsol_barren_venus_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_barren_cold
+				}
+				set_planet_entity = {
+                    entity = "realsol_barren_venus_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_infested
+				}
+				set_planet_entity = {
+                    entity = "realsol_infested_venus_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+                    entity = "realsol_nuked_venus_entity"
+                }
+			}
+		}
+	}
+}
+
+### fe.22 - Earth terraforming event
+event = {
+	id = fe.22
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_earth
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				set_planet_entity = {
+					entity = "met_desert"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+					entity = "met_arid"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				set_planet_entity = {
+					entity = "met_savannah"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				set_planet_entity = {
+					entity = "met_tropical"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				set_planet_entity = {
+					entity = "met_ocean"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				set_planet_entity = {
+					entity = "met_tundra"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				set_planet_entity = {
+					entity = "met_arctic"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				set_planet_entity = {
+					entity = "met_alpine"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_hive
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_hive_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+					entity = "met_gaia"
+				}
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+					entity = "met_nuked"
+				}
+			}
+		}
+	}
+}
+
+### fe.23 - Earth yearly pulse event
+event = {
+	id = fe.23
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_earth
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_barren
+				}
+				set_planet_entity = {
+                    entity = "barren_planet_post_prethoryn_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_barren_cold
+				}
+				set_planet_entity = {
+                    entity = "barren_planet_post_prethoryn_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_infested
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_hive_entity"
+                }
+			}
+		}
+	}
+}
+
+### fe.24 - Earth megastructure completed event
+event = {
+	id = fe.24
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_earth
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_desert_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_arid_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_savannah_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_tropical_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_ocean_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_tundra_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_arctic_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				set_planet_entity = {
+                    entity = "realsol_earth_alpine_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_nuked
+				}
+				set_planet_entity = {
+                    entity = "nuked_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+                    entity = "continental_planet_earth_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_earth_entity"
+                }
+			}
+		}
+	}
+}
+
+### fe.25 - Mars terraforming event
+event = {
+	id = fe.25
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		every_galaxy_planet = {
+			limit = {
+				has_planet_flag = planet_mars
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_continental
+				}
+				set_planet_entity = {
+                    entity = "terraformed_mars_continental_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_machine
+				}
+				set_planet_entity = {
+                    entity = "realsol_ai_mars_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				set_planet_entity = {
+                    entity = "terraformed_mars_continental_entity"
+                }
+			}
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				set_planet_entity = {
+                    entity = "terraformed_mars_arid_entity"
+                }
+			}
+		}
+	}
+}

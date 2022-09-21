@@ -121,21 +121,21 @@ objectTypes = {
 
 	pdxmesh = {
 		name = "css_fedbuild_01_habitat_level_1_frame_mesh"
-		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_new_habitat_level_one.mesh"
 		scale = 1.0
 
 	}
 
 	pdxmesh = {
 		name = "css_fedbuild_01_habitat_level_2_frame_mesh"
-		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_two.mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_new_habitat_level_two.mesh"
 		scale = 1.0
 
 	}
 	
 	pdxmesh = {
 		name = "css_fedbuild_01_habitat_level_3_mesh"
-		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_3.mesh"		
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_new_habitat_level_three.mesh"		
 		scale = 1.0
 	}
 	

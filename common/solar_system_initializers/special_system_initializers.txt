@@ -115,19 +115,13 @@ special_init_03 = {
 		radius = 290
 	}
 
-	usage = misc_system_init
+	flags = { primitive_sol sol }
 
-	usage_odds = {
-		base = 0
-		modifier = {
-			NOT = { any_system = { has_star_flag = sol } }
-			add = 99999
-			num_ai_empires_setting  = 0
-		}
+	init_effect = {
+		
+		###log = "special_init_03 loaded..."
 	}
 
-	flags = { primitive_sol sol_system custom_system sol }
-	
 	planet = {
 		name = "NAME_Sol"
 		class = "pc_g_star"
@@ -136,9 +130,8 @@ special_init_03 = {
 		size = 30
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "Sol I"
 		class = "pc_molten"
 		orbit_distance = 40
 		orbit_angle = 15
@@ -146,19 +139,18 @@ special_init_03 = {
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
 	}
-	
+
 	planet = {
-		name = "Sol II"
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 16
+		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
+		flags = { planet_venus }
 	}
-	
+
 	planet = {
-		name = "Sol III"
 		class = "pc_continental"
 		orbit_distance = 25
 		orbit_angle = 120
@@ -167,940 +159,313 @@ special_init_03 = {
 		entity = "continental_planet_earth_entity"
 		deposit_blockers = none
 		modifiers = none
-		
+		flags = { planet_earth }
+
 		init_effect = {
-			if = {
-				random_list = {
-					# Stone Age
-					5 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
+			save_global_event_target_as = sol_system_earth
+			random_list = {
+				# Early Space Age
+				25 = {
+					create_species = {
+						name = NAME_Human
+						plural = NAME_Humans
+						class = "HUM"
+						portrait = "human"
+						homeworld = THIS
+						traits = {
+							trait = "trait_adaptive"
+							trait = "trait_nomadic"
+							trait = "trait_wasteful"
+						}
+					}
+					create_country = {
+						name = random
+						authority = random
+						day_zero_contact = no
+						civics = {
+							civic = civic_increasing_urbanization
+							civic = civic_atmospheric_pollution
+						}
+						species = last_created_species
+						ethos = {
+							ethic = "ethic_xenophile"
+							ethic = "ethic_fanatic_egalitarian"
+						}
+						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						flag = {
+							icon = {
+								category = "human"
+								file = "flag_human_9.dds"
+							}
+							background= {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors={
+								"dark_blue"
+								"green"
+								"null"
+								"null"
 							}
 						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_secret_of_fire
-								civic = civic_the_wheel
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = stone_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
+						type = primitive
+					}
+					last_created_country = {
+						set_graphical_culture = industrial_01
+						set_country_flag = early_space_age
+						set_country_flag = humans_early_space_age
+						set_primitive_age = early_space_age
+					}
+					set_owner = last_created_country
 
-						clear_blockers = yes
+					create_primitive_blockers = yes
 
-						add_building = building_crude_huts
-						remove_building = building_colony_shelter
-						while = {
-							count = 4
-							create_pop = {
-								species = last_created_species
+					create_army = {
+						name = "NAME_US_Armed_Forces_West"
+						owner = last_created_country
+						species = last_created_species
+						type = "postatomic_army"
+					}
+					create_army = {
+						name = "NAME_US_Armed_Forces_East"
+						owner = last_created_country
+						species = last_created_species
+						type = "postatomic_army"
+					}
+					create_army = {
+						name = "NAME_Chinese_PLA"
+						owner = last_created_country
+						species = last_created_species
+						type = "postatomic_army"
+					}
+					create_army = {
+						name = "NAME_Russian_Armed_Forces"
+						owner = last_created_country
+						species = last_created_species
+						type = "postatomic_army"
+					}
+					create_army = {
+						name = "NAME_EU_Combined_Forces"
+						owner = last_created_country
+						species = last_created_species
+						type = "postatomic_army"
+					}
+					create_fleet = {
+						name = "NAME_ISS_II"
+						effect = {
+							set_owner = last_created_country
+							create_ship = {
+								name = "NAME_ISS_II"
+								design = "NAME_Space_Station"
+							}
+							set_location = PREV
+						}
+					}
+					while = {
+						count = 28
+						create_pop = {
+							species = last_created_species
+						}
+					}
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+
+					last_created_country = {
+						capital_scope = { set_name = "NAME_Sol_III" }
+					}
+				}
+				# Industrial Age
+				25 = {
+					create_species = {
+						name = NAME_Human
+						plural = NAME_Humans
+						class = "HUM"
+						portrait = "human"
+						traits = {
+							trait = "trait_adaptive"
+							trait = "trait_nomadic"
+							trait = "trait_wasteful"
+						}
+						homeworld = this
+					}
+					create_country = {
+						name = random
+						authority = random
+						civics = {
+							civic = civic_increasing_urbanization
+							civic = civic_atmospheric_pollution
+						}
+						species = last_created_species
+						ethos = {
+							ethic = "ethic_materialist"
+							ethic = "ethic_fanatic_militarist"
+						}
+						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						flag = {
+							icon = {
+								category = "human"
+								file = "flag_human_7.dds"
+							}
+							background= {
+								category = "backgrounds"
+								file = "circle.dds"
+							}
+							colors={
+								"dark_blue"
+								"red"
+								"null"
+								"null"
 							}
 						}
+						day_zero_contact = no
+						type = primitive
+					}
+					last_created_country = {
+						set_graphical_culture = industrial_01
+						set_country_flag = machine_age
+						set_country_flag = humans_machine_age
+						set_primitive_age = machine_age
+					}
+					set_owner = last_created_country
+
+					create_primitive_blockers = yes
+
+					while = {
+						count = 24
+						create_pop = {
+							species = last_created_species
+						}
+					}
+					add_building = building_primitive_farm
+					add_building = building_primitive_factory
+					add_building = building_primitive_mine
+					add_building = building_primitive_power_plant
+					add_building = building_primitive_capital
+					add_building = building_urban_dwellings
+
+					create_army = {
+						name = "NAME_German_Wehrmacht"
+						owner = last_created_country
+						species = last_created_species
+						type = "industrial_army"
+					}
+					create_army = {
+						name = "NAME_Soviet_Red_Army"
+						owner = last_created_country
+						species = last_created_species
+						type = "industrial_army"
+					}
+					create_army = {
+						name = "NAME_US_Armed_Forces"
+						owner = last_created_country
+						species = last_created_species
+						type = "industrial_army"
+					}
+					create_army = {
+						name = "NAME_British_Armed_Forces"
+						owner = last_created_country
+						species = last_created_species
+						type = "industrial_army"
+					}
+					create_army = {
+						name = "NAME_Imperial_Japanese_Forces"
+						owner = last_created_country
+						species = last_created_species
+						type = "industrial_army"
+					}
+
+					last_created_country = {
+						capital_scope = { set_name = "NAME_Sol_III" }
+					}
+				}
+				# Medieval
+				25 = {
+					create_species = {
+						name = NAME_Human
+						plural = NAME_Humans
+						class = "HUM"
+						portrait = "human"
+						homeworld = THIS
+						traits = {
+							trait = "trait_adaptive"
+							trait = "trait_nomadic"
+							trait = "trait_wasteful"
+						}
+					}
+					create_country = {
+						name = random
+						authority = random
+						civics = {
+							civic = civic_landed_nobility
+							civic = civic_flat_world_theory
+						}
+						species = last_created_species
+						ethos = {
+							ethic = "ethic_xenophobe"
+							ethic = "ethic_spiritualist"
+							ethic = "ethic_authoritarian"
+						}
+						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						flag = {
+							icon = {
+								category = "ornate"
+								file = "flag_ornate_11.dds"
+							}
+							background = {
+								category = "backgrounds"
+								file = "00_solid.dds"
+							}
+							colors = {
+								"dark_blue"
+								"dark_blue"
+								"null"
+								"null"
+							}
+						}
+						day_zero_contact = no
+						type = primitive
+					}
+					last_created_country = {
+						set_graphical_culture = preindustrial_01
+						set_country_flag = late_medieval_age
+						set_country_flag = humans_late_medieval_age
+						set_primitive_age = late_medieval_age
+					}
+
+					set_owner = last_created_country
+
+					while = {
+						count = 10
+						create_pop = {
+							species = last_created_species
+						}
+					}
+					add_building = building_primitive_dwellings
+					add_building = building_primitive_dwellings
+					add_building = building_stone_palace
+
+					while = {
+						count = 3
 						create_army = {
-							name = "NAME_Primitive_Army"
+							name = "NAME_Feudal_Levies"
 							owner = last_created_country
 							species = last_created_species
 							type = "primitive_army"
 						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
 					}
-					# Bronze Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_secret_of_fire
-								civic = civic_the_wheel
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = bronze_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
 
-						clear_blockers = yes
-
-						add_building = building_primitive_dwellings
-						add_building = building_stone_palace
-						remove_building = building_colony_shelter
-						while = {
-							count = 8
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						create_army = {
-							name = "NAME_Primitive_Army"
-							owner = last_created_country
-							species = last_created_species
-							type = "primitive_army"
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Iron Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_secret_of_fire
-								civic = civic_the_wheel
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = iron_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-
-						add_building = building_primitive_dwellings
-						add_building = building_stone_palace
-						remove_building = building_colony_shelter
-						while = {
-							count = 9
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						while = {
-							count = 2
-							create_army = {
-								name = "NAME_Primitive_Army"
-								owner = last_created_country
-								species = last_created_species
-								type = "primitive_army"
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Medieval Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_landed_nobility
-								civic = civic_flat_world_theory
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = late_medieval_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-
-						add_building = building_primitive_dwellings
-						add_building = building_primitive_dwellings
-						add_building = building_stone_palace
-						remove_building = building_colony_shelter
-						while = {
-							count = 10
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						while = {
-							count = 3
-							create_army = {
-								name = "NAME_Primitive_Army"
-								owner = last_created_country
-								species = last_created_species
-								type = "primitive_army"
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Renaissance Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_landed_nobility
-								civic = civic_flat_world_theory
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = renaissance_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-
-						add_building = building_primitive_dwellings
-						add_building = building_primitive_dwellings
-						add_building = building_stone_palace
-						remove_building = building_colony_shelter
-						while = {
-							count = 12
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						while = {
-							count = 4
-							create_army = {
-								name = "NAME_Primitive_Army"
-								owner = last_created_country
-								species = last_created_species
-								type = "primitive_army"
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Steam Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_landed_nobility
-								civic = civic_flat_world_theory
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "special"
-									file = "primitive.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = steam_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-
-						add_building = building_urban_dwellings
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_stone_palace
-						remove_building = building_colony_shelter
-						while = {
-							count = 16
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						create_primitive_armies = yes
-
-						while = {
-							count = 3
-							create_army = {
-								name = "NAME_Industrial_Army"
-								owner = last_created_country
-								species = last_created_species
-								type = "industrial_army"
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}					
-					}
-					# Industrial Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_increasing_urbanization
-								civic = civic_atmospheric_pollution
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "spherical"
-									file = "flag_spherical_22.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = industrial_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-						
-						add_building = building_primitive_farm
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_capital
-						add_building = building_urban_dwellings
-						remove_building = building_colony_shelter
-						while = {
-							count = 22
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						create_army = {
-							name = "NAME_German_Wehrmacht"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_US_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_British_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Imperial_Japanese_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Machine Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"	
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							civics = {
-								civic = civic_increasing_urbanization
-								civic = civic_atmospheric_pollution
-							}
-							species = last_created
-							ethos = { 
-								ethic = "ethic_xenophobe"
-								ethic = "ethic_spiritualist"
-								ethic = "ethic_authoritarian"
-							}
-							flag = {
-								icon = {
-									category = "spherical"
-									file = "flag_spherical_22.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "new_dawn.dds"
-								}
-								colors={
-									"light_blue"
-									"blue"
-									"null"
-									"null"
-								}
-							}
-							day_zero_contact = no
-							type = primitive
-							effect = {
-								save_event_target_as = primitive_humans
-							}
-						}
-						last_created_country = {
-							set_primitive_age = machine_age
-							set_country_flag = primitive_humans
-						}
-						
-						set_owner = last_created_country
-
-						clear_blockers = yes
-						
-						add_building = building_primitive_farm
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_capital
-						add_building = building_urban_dwellings
-						remove_building = building_colony_shelter
-						while = {
-							count = 24
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						create_army = {
-							name = "NAME_German_Wehrmacht"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_US_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_British_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-						create_army = {
-							name = "NAME_Imperial_Japanese_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "industrial_army"
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Atomic Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							day_zero_contact = no
-							civics = {
-								civic = civic_increasing_urbanization
-								civic = civic_atmospheric_pollution
-							}
-							species = last_created_species
-							ethos = {
-								ethic = "ethic_xenophile"
-								ethic = "ethic_fanatic_egalitarian"
-							}
-							flag = {
-								icon = {
-									category = "human"
-									file = "flag_human_9.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "circle.dds"
-								}
-								colors={
-									"dark_blue"
-									"green"
-									"null"
-									"null"
-								}
-							}
-							type = primitive
-						}
-						last_created_country = {
-							set_country_flag = atomic_age
-							set_primitive_age = atomic_age
-						}
-						set_owner = last_created_country
-
-						create_primitive_blockers = yes
-
-						create_army = {
-							name = "NAME_US_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_British_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_Chinese_PLA"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_Soviet_Red_Army"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-
-						add_building = building_primitive_farm
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_capital
-						add_building = building_urban_dwellings
-						remove_building = building_colony_shelter
-						while = {
-							count = 26
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# Early Space Age
-					10 = {
-						create_species = {
-							name = NAME_Human
-							plural = NAME_Humans
-							class = "HUM"
-							portrait = "human"
-							homeworld = THIS
-							traits = {
-								trait = "trait_adaptive"
-								trait = "trait_nomadic"
-								trait = "trait_wasteful"
-							}
-						}
-						create_country = {
-							name = random
-							authority = random
-							day_zero_contact = no
-							civics = {
-								civic = civic_increasing_urbanization
-								civic = civic_atmospheric_pollution
-							}
-							species = last_created_species
-							ethos = {
-								ethic = "ethic_xenophile"
-								ethic = "ethic_fanatic_egalitarian"
-							}
-							origin = "origin_enlightened" # Should only be visible if they become spacefaring
-							flag = {
-								icon = {
-									category = "human"
-									file = "flag_human_9.dds"
-								}
-								background= {
-									category = "backgrounds"
-									file = "circle.dds"
-								}
-								colors={
-									"dark_blue"
-									"green"
-									"null"
-									"null"
-								}
-							}
-							type = primitive
-						}
-						last_created_country = {
-							set_graphical_culture = industrial_01
-							set_country_flag = early_space_age
-							set_country_flag = humans_early_space_age
-							set_primitive_age = early_space_age
-						}
-						set_owner = last_created_country
-
-						create_primitive_blockers = yes
-
-						create_army = {
-							name = "NAME_US_Armed_Forces_West"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_US_Armed_Forces_East"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_Chinese_PLA"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_Russian_Armed_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_army = {
-							name = "NAME_EU_Combined_Forces"
-							owner = last_created_country
-							species = last_created_species
-							type = "postatomic_army"
-						}
-						create_fleet = {
-							name = "NAME_ISS_II"
-							effect = {
-								set_owner = last_created_country
-								create_ship = {
-									name = "NAME_ISS_II"
-									design = "NAME_Space_Station"
-								}
-								set_location = PREV
-							}
-						}
-						while = {
-							count = 28
-							create_pop = {
-								species = last_created_species
-							}
-						}
-
-						add_building = building_primitive_farm
-						add_building = building_primitive_factory
-						add_building = building_primitive_mine
-						add_building = building_primitive_power_plant
-						add_building = building_primitive_capital
-						add_building = building_urban_dwellings
-
-						last_created_country = {
-							capital_scope = { set_name = "NAME_Sol_III" }
-						}
-					}
-					# No Humans
-					5 = {				
+					last_created_country = {
+						capital_scope = { set_name = "NAME_Sol_III" }
 					}
 				}
 			}
 		}
-		
+
 		moon = {
-			name = "Sol IIIa"
 			class = "pc_barren_cold"
 			size = 5
 			orbit_distance = 12
@@ -1109,16 +474,14 @@ special_init_03 = {
 			entity = "cold_barren_planet_luna_entity"
 		}
 	}
-	
+
 	planet = {
-		name = "Sol IV"
 		class = "pc_barren"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
-		
 		init_effect = {
 			add_modifier = {
 				modifier = "terraforming_candidate"
@@ -1126,8 +489,10 @@ special_init_03 = {
 			}
 		}
 		
+		flags = { planet_mars }
+		
 		moon = {
-			name = "Sol IVa"
+			name = "NAME_Phobos"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 6
@@ -1138,7 +503,7 @@ special_init_03 = {
 		}
 		
 		moon = {
-			name = "Sol IVb"
+			name = "NAME_Deimos"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 2
@@ -1148,46 +513,40 @@ special_init_03 = {
 			flags = { planet_earth_moon }
 		}
 	}
-	
+
 	planet = {
-		name = "TXC-6735"
-		class = "pc_barren_cold"
+		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
-		entity = "ceres_entity"
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "RTD-4377"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -95
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "YKQ-9137"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "PLM-4371"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "Sol V"
 		class = "pc_gas_giant"
 		orbit_distance = 40
 		orbit_angle = -160
@@ -1195,9 +554,8 @@ special_init_03 = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		
+
 		moon = {
-			name = "Sol Va"
 			class = "pc_molten"
 			size = 6
 			orbit_distance = 10
@@ -1206,7 +564,6 @@ special_init_03 = {
 			entity = "moon_jup_io_entity"
 		}
 		moon = {
-			name = "Sol Vb"
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 2.5
@@ -1215,7 +572,6 @@ special_init_03 = {
 			entity = "moon_jup_europa_entity"
 		}
 		moon = {
-			name = "Sol Vc"
 			class = "pc_frozen"
 			size = 9
 			orbit_distance = 2.5
@@ -1224,7 +580,6 @@ special_init_03 = {
 			entity = "moon_jup_ganymede_entity"
 		}
 		moon = {
-			name = "Sol Vd"
 			class = "pc_frozen"
 			size = 7
 			orbit_distance = 2.5
@@ -1233,9 +588,8 @@ special_init_03 = {
 			entity = "moon_jup_callisto_entity"
 		}
 	}
-	
+
 	planet = {
-		name = "Sol VI"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 170
@@ -1245,28 +599,25 @@ special_init_03 = {
 		change_orbit = 7
 		
 		moon = {
-			name = "Sol VIa"
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
-			orbit_angle = 66
+			orbit_angle = 90
 			has_ring = no
-			entity = "rhea_entity"
+			entity = "frozen_planet_04_entity"
 		}
-		
+
 		moon = {
-			name = "Sol VIb"
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 10
-			orbit_angle = 180
+			orbit_distance = 3
+			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
 	}
-	
+
 	planet = {
-		name = "Sol VII"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = 125
@@ -1275,7 +626,6 @@ special_init_03 = {
 		entity = "gas_giant_uranus_entity"
 		
 		moon = {
-			name = "Sol VIIa"
 			class = "pc_barren_cold"
 			size = 6
 			orbit_distance = 12
@@ -1284,7 +634,6 @@ special_init_03 = {
 			entity = "titania_entity"
 		}		
 		moon = {
-			name = "Sol VIIb"
 			class = "pc_barren_cold"
 			size = 4
 			orbit_distance = 4
@@ -1293,9 +642,8 @@ special_init_03 = {
 			entity = "oberon_entity"
 		}
 	}
-	
+
 	planet = {
-		name = "Sol VIII"
 		class = "pc_gas_giant"
 		orbit_distance = 25
 		orbit_angle = -195
@@ -1303,82 +651,75 @@ special_init_03 = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		
+
 		moon = {
-			name = "Sol VIIIa"
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
-			entity = "triton_entity"
 			has_ring = no
+			entity = "triton_entity"
 		}
 	}
 
 	planet = {
-		name = "DIS-7865"
-		class = "pc_barren_cold"
+		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
-		entity = "realsol_pluto_entity"
 	}
-	
+
 	planet = {
-		name = "PUR-1436"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -95
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "LHR-0978"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = 285
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
-		name = "WXY-7825"
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
 		size = 5
 		has_ring = no
 	}
-	
+
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 1 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "npc_sol_neighbor_t1_first_colony"
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_first_colony"
 	}
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies = 0 }
-		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "npc_sol_neighbor_t1_no_guaranteed_colony"
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_no_guaranteed_colony"
 	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_3"
+	}
+
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "npc_sol_neighbor_t1"
-	}
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies >= 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "npc_sol_neighbor_t1_second_colony"
-	}
-	neighbor_system = {
-		trigger = { num_guaranteed_colonies < 2 }
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "npc_sol_neighbor_t1_no_guaranteed_second_colony"
-	}
-	neighbor_system = {
-		hyperlane_jumps = { min = 1 max = @jumps }	
-		initializer = "npc_sol_neighbor_t1_2"
+		initializer = "sol_neighbor_t1_4"
 	}
 }
 
@@ -1397,20 +738,15 @@ special_init_04 = {
 
 	usage = misc_system_init
 
-	usage_odds = {
-		base = 0
-		modifier = {
-			NOT = { any_system = { has_star_flag = sol_system } }
-			num_ai_empires_setting  >= 1
-			
-			add = 99999
-		}
+	init_effect = {
+		
+		###log = "special_init_04 loaded..."
 	}
 
 	max_instances = 1
 
-	flags = { nuked_sol sol_system custom_system sol }
-	
+	flags = { nuked_sol sol }
+
 	planet = {
 		name = "NAME_Sol"
 		class = "pc_g_star"
@@ -1419,7 +755,7 @@ special_init_04 = {
 		size = 30
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_molten"
 		orbit_distance = 40
@@ -1428,25 +764,40 @@ special_init_04 = {
 		has_ring = no
 		entity = "barren_planet_mercury_entity"
 	}
-	
+
 	planet = {
 		class = "pc_toxic"
 		orbit_distance = 25
 		orbit_angle = 125
-		size = 16
+		size = 20
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
+		flags = { planet_venus }
 	}
-	
+
 	planet = {
 		class = "pc_nuked"
 		orbit_distance = 25
 		orbit_angle = 120
-		size = 20
+		size = 18
 		has_ring = no
+		entity = "met_nuked"
 		anomaly = "sol_wasteland_category"
 		flags = { nuked_earth }
-		
+
+		init_effect = {
+			save_global_event_target_as = sol_system_earth
+
+			if = {
+				limit = {
+					any_country = {
+						species_portrait = human
+					}
+				}
+				set_name = "NAME_Earth"
+			}
+		}
+
 		moon = {
 			class = "pc_barren_cold"
 			size = 5
@@ -1456,7 +807,7 @@ special_init_04 = {
 			entity = "cold_barren_planet_luna_entity"
 		}
 	}
-	
+
 	planet = {
 		class = "pc_barren"
 		orbit_distance = 25
@@ -1464,7 +815,6 @@ special_init_04 = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
-		
 		init_effect = {
 			add_modifier = {
 				modifier = "terraforming_candidate"
@@ -1472,7 +822,10 @@ special_init_04 = {
 			}
 		}
 		
+		flags = { planet_mars }
+		
 		moon = {
+			name = "NAME_Phobos"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 6
@@ -1483,6 +836,7 @@ special_init_04 = {
 		}
 		
 		moon = {
+			name = "NAME_Deimos"
 			class = "pc_barren_cold"
 			size = 1
 			orbit_distance = 2
@@ -1492,16 +846,15 @@ special_init_04 = {
 			flags = { planet_earth_moon }
 		}
 	}
-	
+
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
-		entity = "ceres_entity"
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1509,7 +862,7 @@ special_init_04 = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1517,7 +870,7 @@ special_init_04 = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1525,7 +878,7 @@ special_init_04 = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_gas_giant"
 		orbit_distance = 40
@@ -1534,7 +887,7 @@ special_init_04 = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		
+
 		moon = {
 			class = "pc_molten"
 			size = 6
@@ -1568,7 +921,7 @@ special_init_04 = {
 			entity = "moon_jup_callisto_entity"
 		}
 	}
-	
+
 	planet = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
@@ -1582,21 +935,21 @@ special_init_04 = {
 			class = "pc_frozen"
 			size = 2
 			orbit_distance = 12
-			orbit_angle = 66
+			orbit_angle = 90
 			has_ring = no
-			entity = "rhea_entity"
+			entity = "frozen_planet_04_entity"
 		}
-		
+
 		moon = {
 			class = "pc_frozen"
 			size = 8
-			orbit_distance = 10
-			orbit_angle = 180
+			orbit_distance = 3
+			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
 		}
 	}
-	
+
 	planet = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
@@ -1606,6 +959,7 @@ special_init_04 = {
 		entity = "gas_giant_uranus_entity"
 		
 		moon = {
+			name = "NAME_Titania"
 			class = "pc_barren_cold"
 			size = 6
 			orbit_distance = 12
@@ -1614,6 +968,7 @@ special_init_04 = {
 			entity = "titania_entity"
 		}		
 		moon = {
+			name = "NAME_Oberon"
 			class = "pc_barren_cold"
 			size = 4
 			orbit_distance = 4
@@ -1622,7 +977,7 @@ special_init_04 = {
 			entity = "oberon_entity"
 		}
 	}
-	
+
 	planet = {
 		class = "pc_gas_giant"
 		orbit_distance = 25
@@ -1631,26 +986,25 @@ special_init_04 = {
 		has_ring = no
 		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		
+
 		moon = {
 			class = "pc_frozen"
 			size = 6
 			orbit_distance = 7
 			orbit_angle = 115
-			entity = "triton_entity"
 			has_ring = no
+			entity = "triton_entity"
 		}
 	}
 
 	planet = {
-		class = "pc_barren_cold"
+		class = "pc_asteroid"
 		orbit_distance = 30
 		orbit_angle = -210
 		size = 5
 		has_ring = no
-		entity = "realsol_pluto_entity"
 	}
-	
+
 	planet = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
@@ -1658,7 +1012,7 @@ special_init_04 = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
@@ -1666,13 +1020,41 @@ special_init_04 = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_ice_asteroid"
 		orbit_distance = 0
 		orbit_angle = -80
 		size = 5
 		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_first_colony"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies = 0 }
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_no_guaranteed_colony"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_2"
+	}
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = 3 }
+		initializer = "sol_neighbor_t1_3"
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t1_4"
 	}
 }
 
@@ -1897,9 +1279,9 @@ special_init_07 = {
 			NOT = { is_in_cluster = resource_cluster_1 }
 		}
 		modifier = {
-            factor = 0
-            has_star_flag = empire_cluster
-        }
+			factor = 0
+			has_star_flag = empire_cluster
+		}
 		modifier = {
 			factor = 0
 			is_bottleneck_system = yes
@@ -2151,18 +1533,18 @@ sanctuary_system = {
 	}
 	usage = misc_system_init
 	usage_odds = {
-        base = 2000000
-        modifier = {
-            factor = 0
-            is_fe_cluster = yes
-        }
-        modifier = {
-            factor = 0
-            has_star_flag = empire_cluster
-        }
-    }
+		base = 2000000
+		modifier = {
+			factor = 0
+			is_fe_cluster = yes
+		}
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+	}
 	max_instances = 1
-	flags = { sanctuary_system }
+	flags = { sanctuary_system ring_world_built }
 	scaled_spawn_chance = 2	# scales by galaxy size (1000 stars = 10x base)
 
 	name = "NAME_Sanctuary"
@@ -2841,9 +2223,10 @@ trappist_initializer = {
 	name = "NAME_Trappist"
 	class = "sc_m"
 	usage = misc_system_init
-	usage_odds = 0
-	max_instances = 0
-	
+	usage_odds = 2000000
+	max_instances = 1
+	scaled_spawn_chance = 10
+
 	planet = {
 		class = "pc_m_star"
 		orbit_distance = 0
@@ -2851,7 +2234,7 @@ trappist_initializer = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	# Trappist-1b
 	planet = {
 		class = "pc_molten"
@@ -2860,7 +2243,7 @@ trappist_initializer = {
 		size = 16
 		has_ring = no
 	}
-	
+
 	# Trappist-1c
 	planet = {
 		class = "pc_barren"
@@ -2913,5 +2296,693 @@ trappist_initializer = {
 		orbit_angle = 245
 		size = 12
 		has_ring = no
+	}
+}
+
+parvus_system = {
+	name = "NAME_Parvus"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 170
+	}
+	usage = misc_system_init
+	usage_odds = {
+		base = 2000000
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
+		}
+	}
+	max_instances = 1
+	scaled_spawn_chance = 3	# scales by galaxy size (1000 stars = 10x base)
+
+	planet = {
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 22 max = 22 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+
+	planet = {
+		count = 1
+		class = "pc_molten"
+		size = 13
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 10
+
+	planet = {
+		count = 1
+		class = "pc_barren"
+		size = 13
+		orbit_angle = { min = 90 max = 270 }
+	}
+	planet = {
+		count = 1
+		orbit_distance = 30
+		class = "pc_desert"
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+			add_anomaly = {
+				category = NANO_SWARM_CAT
+			}
+		}
+	}
+	change_orbit = 50
+	planet = {
+		count = { min = 3 max = 6 }
+		class = pc_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 40 max = 100 }
+	}
+
+	change_orbit = 40
+
+	planet = {
+		count = 1
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 110
+		size = 30
+		change_orbit = 7
+	}
+
+	change_orbit = 10
+
+	planet = {
+		count = 1
+		class = "pc_gas_giant"
+		orbit_distance = 25
+		orbit_angle = 90
+		size = 36
+		has_ring = yes
+		change_orbit = 7
+		moon = {
+			class = "pc_barren"
+			size = 16
+			orbit_distance = 13
+			orbit_angle = 20
+			has_ring = no
+		}
+	}
+}
+
+#Polaris
+polaris_civilization = {
+	name = "NAME_Polaris"
+	class = "sc_trinary_3"
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 120
+	}
+	usage = misc_system_init
+	usage_odds = {
+		base = 2000000
+		modifier = {
+			factor = 0
+			is_bottleneck_system = yes
+		}
+	}
+	max_instances = 1
+	scaled_spawn_chance = 5
+
+	planet = {
+		name = "NAME_PolarisAa"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 33 max = 33 }
+		has_ring = no
+		flags = { polaris_patrol_1 }
+	}
+	change_orbit = 20
+
+	planet = {
+		name = "NAME_PolarisAb"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 7 max = 7 }
+		has_ring = no
+	}
+
+	change_orbit = 65
+
+	planet = {
+		name = "NAME_PolarisB"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 7 max = 7 }
+		has_ring = no
+	}
+
+	change_orbit = 33
+
+	planet = {
+		count = { min = 1 max = 4 }
+		class = pc_ice_asteroid
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+	}
+
+	change_orbit = 80
+
+	planet = {
+		count = 1
+		class = "pc_molten"
+		size = 12
+		orbit_angle = { min = 90 max = 270 }
+
+		init_effect = { prevent_anomaly = yes }
+		flags = { polaris_patrol_2 }
+	}
+
+	planet = {
+		count = 1
+		orbit_distance = 30
+		class = "pc_ocean"
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		flags = { polaris_patrol_3 }
+		init_effect = {
+			save_event_target_as = polaris_planet
+			prevent_anomaly = yes
+			add_deposit = d_polaris_city
+			create_archaeological_site = site_polaris_seed_vault
+			create_country = {
+				name = "NAME_Polaris_space_name"
+				type = faction
+			}
+			last_created_country = {
+				set_country_flag = polaris_country
+				create_fleet = {
+					name = "NAME_Polaris_space_name"
+					settings = { spawn_debris = no }
+					effect = {
+						set_owner = PREV
+						set_fleet_flag = polaris_fleet
+						create_ship = {
+							name = "NAME_Polaris_A"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_B"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_C"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_D"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_E"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_F"
+							design = "NAME_Polaris_ship"
+						}
+						create_ship = {
+							name = "NAME_Polaris_G"
+							design = "NAME_Polaris_ship"
+						}
+						set_location = event_target:polaris_planet
+						set_fleet_stance = aggressive
+						set_aggro_range_measure_from = return_point
+						set_aggro_range = 250
+
+						queue_actions = {
+							repeat = {
+								find_closest_planet = {
+									trigger = {
+										id = polaris.patrol.1
+										has_planet_flag = polaris_patrol_1
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 30
+										}
+									}
+								}
+								find_closest_planet  = {
+									trigger = {
+										id = polaris.patrol.2
+										has_planet_flag = polaris_patrol_2
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 30
+										}
+									}
+								}
+								find_closest_planet  = {
+									trigger = {
+										id = polaris.patrol.3
+										has_planet_flag = polaris_patrol_3
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 30
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	change_orbit = 40
+
+    planet = {
+        count = { min = 1 max = 3 }
+        orbit_distance = 20
+        orbit_angle = { min = 90 max = 270 }
+
+        change_orbit = @base_moon_distance
+
+        moon = {
+            count = { min = 0 max = 2 }
+            orbit_distance = 5
+            orbit_angle = { min = 90 max = 270 }
+        }
+    }
+
+	init_effect = {
+		while = {
+			count = 2
+			create_ambient_object = {
+				type = "abandoned_ship_2_object"
+				location = solar_system
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = solar_system
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = solar_system
+			}
+		}
+	}
+}
+
+#fumongus
+
+fumongus_init_01 = {
+	name = "NAME_Fumongus_System"
+	class = "rl_standard_stars"
+	usage = misc_system_init
+	usage_odds = 200
+	max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 110
+	}
+	flags = { fumongus_system hostile_system }
+
+	#create nebula
+	init_effect = {
+		create_ambient_object = {
+			type = "nebula_L3_entity"
+			entity_offset_height = -5
+			# Set to spawn far below the planets
+			location = this
+		}
+		last_created_ambient_object = {
+			set_location = {
+				target = prev
+				distance = 0
+				angle = random
+			}
+		}
+
+		#Spawn grazing tiyanki and have them patrol the system semi-randomly
+		create_tiyanki_country = yes
+		random_system_planet = {
+			limit = {
+				is_star = no
+				is_moon = no
+			}
+			save_event_target_as = fumongus_trigger_1
+		}
+		random_system_planet = {
+			limit = {
+				is_star = no
+				is_moon = no
+				NOT = {
+					is_same_value = event_target:fumongus_trigger_1
+				}
+			}
+			save_event_target_as = fumongus_trigger_2
+		}
+		random_system_planet = {
+			limit = {
+				is_star = no
+				is_moon = no
+				NOR = {
+					is_same_value = event_target:fumongus_trigger_1
+					is_same_value = event_target:fumongus_trigger_2
+				}
+			}
+			save_event_target_as = fumongus_trigger_3
+		}
+		event_target:tiyanki_country = {
+			create_fleet = {
+				name = "NAME_Grazing_Tiyanki"
+				effect = {
+					set_owner = event_target:tiyanki_country
+					create_ship = {
+						name = ""
+						design = "NAME_Tiyanki_Cow"
+					}
+					while = {
+						count = 1
+						create_ship = {
+							name = ""
+							design = "NAME_Tiyanki_Bull"
+						}
+					}
+					while = {
+						count = 4
+						create_ship = {
+							name = ""
+							design = "NAME_Tiyanki_Calf"
+						}
+					}
+					set_location = event_target:fumongus_trigger_3
+					set_fleet_stance = aggressive
+					set_aggro_range_measure_from = self
+					set_aggro_range = 20
+					queue_actions = {
+						repeat = {
+							find_closest_planet = {
+								trigger = {
+									id = "fumongusC.1.trigger.1"
+									is_planet = event_target:fumongus_trigger_1
+								}
+								found_planet = {
+									move_to = this
+									orbit_planet = THIS
+								}
+							}
+							find_closest_planet = {
+								trigger = {
+									id = "fumongusC.1.trigger.2"
+									is_planet = event_target:fumongus_trigger_2
+								}
+								found_planet = {
+									move_to = this
+									orbit_planet = THIS
+								}
+							}
+							find_closest_planet = {
+								trigger = {
+									id = "fumongusC.1.trigger.3"
+									is_planet = event_target:fumongus_trigger_3
+								}
+								found_planet = {
+									move_to = this
+									orbit_planet = THIS
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	planet = {
+		count = 1
+		class = star
+		name = "NAME_Fumongus_Star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 40
+
+	planet = {
+		count = 1
+		name = "NAME_Fumongus_Planet01"
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+	}
+
+	change_orbit = 10
+
+	planet = {
+		count = 1
+		name = "NAME_Fumongus_Planet02"
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = 1
+			name = "NAME_Fumongus_Planet02a"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 20
+
+	planet = {
+		count = 1
+		orbit_distance = 20
+		name = "NAME_Fumongus_PlanetDig"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 12 max = 16 }
+		has_ring = no
+		class = "pc_barren"
+
+		init_effect = {
+			prevent_anomaly = yes
+			save_global_event_target_as = fumongus_planet
+			create_archaeological_site = site_fumongus_dig
+			set_global_flag = fumongus_spawned
+		}
+	}
+
+	change_orbit = 30
+
+	planet = {
+		count = 1
+		name = "NAME_Fumongus_Planet03"
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+
+		change_orbit = @base_moon_distance
+
+		moon = {
+			count = 1
+			name = "NAME_Fumongus_Planet03a"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+}
+
+### Ghost Ship System ###
+
+ghost_ship_system_initializer_01 = {
+	name = "NAME_Hillos"
+	class = "rl_standard_stars"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	usage = misc_system_init
+	usage_odds = 10
+	max_instances = 1
+	
+	planet = {
+		name = "NAME_Hillos_Star"
+		count = 1
+		class = star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = { min = 20 max = 30 }
+		has_ring = no
+	}
+
+	change_orbit = 45
+	
+	planet = {
+		count = 1
+		name = "NAME_HillosA"
+		class = "pc_barren_cold"
+		size = 13
+		orbit_angle = { min = 90 max = 270 }
+		flags = { hillos_patrol_1 }
+		
+		change_orbit = @base_moon_distance
+		
+		moon = {
+			count = 1
+			name = "NAME_HillosA_moon"
+			orbit_angle = { min = 90 max = 270 }
+			orbit_distance = 5
+		}
+	}
+
+	change_orbit = 60
+
+	planet = {
+		count = 1
+		class = pc_barren
+		name = "NAME_HillosB"
+		size = 15
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 5 max = 10 }
+		flags = { hillos_patrol_2 }
+		has_ring = no
+	}
+		
+	change_orbit = 65
+		
+	planet = {
+		count = 1
+		name = "NAME_HillosC"
+		class = "pc_tundra"
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 10 max = 15 }
+		has_ring = yes
+		flags = { hillos_patrol_3 }
+		init_effect = {
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = solar_system
+			}
+			last_created_ambient_object = {
+				set_ambient_object_flag = debris
+			}
+			add_anomaly = {
+				category = UBUME_BABY_CAT
+			}
+		}
+	}
+
+	change_orbit = 33
+		
+	planet = {
+		count = 1
+		class = pc_asteroid
+		orbit_angle = { min = 90 max = 270 }
+		flags = { hillos_patrol_4 }
+		init_effect = {
+			save_event_target_as = hillos_asteroid
+			prevent_anomaly = yes
+			create_country = {
+				name = "NAME_Hillos_fleet"
+				type = faction
+				effect = { save_event_target_as = hillos_country }
+			}
+			event_target:hillos_country = {
+				set_country_flag = hillos_country
+				create_fleet = {
+					name = "NAME_Hillos_fleet"
+					settings = { spawn_debris = no }
+					effect = {
+						set_owner = PREV
+						set_fleet_flag = hillos_fleet
+						create_ship = {
+							name = "NAME_Hillos_ship"
+							design = "NAME_Hillos_ship"
+						}
+						set_location = event_target:hillos_asteroid
+						set_fleet_stance = passive
+						
+						queue_actions = {
+							repeat = {
+								find_closest_planet = {
+									trigger = {
+										id = hillos.patrol.1
+										has_planet_flag = hillos_patrol_2
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 50
+										}
+									}
+								}
+								find_closest_planet  = {
+									trigger = {
+										id = hillos.patrol.2
+										has_planet_flag = hillos_patrol_3
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 50
+										}
+									}
+								}
+								find_closest_planet  = {
+									trigger = {
+										id = hillos.patrol.3
+										has_planet_flag = hillos_patrol_4
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 50
+										}
+									}
+								}
+								find_closest_planet  = {
+									trigger = {
+										id = hillos.patrol.4
+										has_planet_flag = hillos_patrol_1
+									}
+									found_planet = {
+										move_to = this
+										orbit_planet = this
+										wait = {
+											duration = 50
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

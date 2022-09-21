@@ -1,6 +1,6 @@
 # SPIRAL WITH 4 ARMS
 
-core_radius_perc = 0.3				# Core radius is 30% of the galaxy radius
+core_radius_perc = 0.15				# Core radius is 20% of the galaxy radius
 stars_min_dist = 3.0
 
 arms = {

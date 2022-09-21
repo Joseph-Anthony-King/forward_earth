@@ -1,7 +1,7 @@
 # Start Screen Messages
 # Parameters:
-#   trigger, a trigger with country which decides if this is a valid part. Empty will be treated as always=yes.
-#   localization, a key to a localized string.
+#	trigger, a trigger with country which decides if this is a valid part. Empty will be treated as always=yes.
+#	localization, a key to a localized string.
 #	location, decides where this chunk of text is located in the description, cannot be negative.
 
 ### FIRST PARTS
@@ -197,21 +197,6 @@ part = {
 
 	trigger = {
 		has_government = gov_representative_democracy
-		NOR = {
-			has_country_flag = custom_start_screen
-			has_origin = origin_post_apocalyptic
-			has_origin = origin_life_seeded
-		}
-	}
-}
-
-# Planetary Union
-part = {
-	location = 1
-	localization = "START_SCREEN_PART_TWO_REPRESENTATIVE_DEMOCRACY"
-
-	trigger = {
-		has_government = gov_planetary_union
 		NOR = {
 			has_country_flag = custom_start_screen
 			has_origin = origin_post_apocalyptic
@@ -779,17 +764,16 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_NECROPHAGE"
-	
+
 	trigger = {
 		has_origin = origin_necrophage
-		is_xenophile = no
-		is_pacifist = no
+		is_hive_empire = no
 	}
 }
 part = {
 	location = 0
 	localization = "START_SCREEN_NECROPHAGE_PEACEFUL"
-	
+
 	trigger = {
 		has_origin = origin_necrophage
 		OR = {
@@ -798,23 +782,43 @@ part = {
 		}
 	}
 }
+part = {
+	location = 0
+	localization = "START_SCREEN_NECROPHAGE_HIVE"
+
+	trigger = {
+		has_origin = origin_necrophage
+		is_hive_empire = yes
+	}
+}
 
 
 # Void Dwellers
 part = {
 	location = 0
 	localization = "START_SCREEN_VOID_DWELLERS"
-	
+
 	trigger = {
 		has_origin = origin_void_dwellers
+		capital_scope = { NOT = { has_planet_flag = earth_habitat } }
 	}
 }
 
-# Shattered Ring 
+part = {
+	location = 0
+	localization = "START_SCREEN_VOID_DWELLERS_SOL"
+
+	trigger = {
+		has_origin = origin_void_dwellers
+		capital_scope = { has_planet_flag = earth_habitat }
+	}
+}
+
+# Shattered Ring
 part = {
 	location = 0
 	localization = "START_SCREEN_SRW"
-	
+
 	trigger = {
 		has_origin = origin_shattered_ring
 	}
@@ -824,7 +828,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_REMNANTS"
-	
+
 	trigger = {
 		has_origin = origin_remnants
 	}
@@ -834,7 +838,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_TREE"
-	
+
 	trigger = {
 		has_origin = origin_tree_of_life
 	}
@@ -844,7 +848,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_LITHOID"
-	
+
 	trigger = {
 		has_origin = origin_lithoid
 	}
@@ -854,7 +858,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_SCION"
-	
+
 	trigger = {
 		has_origin = origin_scion
 	}
@@ -862,19 +866,19 @@ part = {
 
 ### # Eldest Sibling
 ### part = {
-### 	location = 0
-### 	localization = "START_SCREEN_ELDEST_SIBLING"
-### 	
-### 	trigger = {
-### 		has_origin = origin_eldest_sibling
-### 	}
+###	location = 0
+###	localization = "START_SCREEN_ELDEST_SIBLING"
+###
+###	trigger = {
+###		has_origin = origin_eldest_sibling
+###	}
 ### }
 
 # On the Shoulders of Giants
 part = {
 	location = 0
 	localization = "START_SCREEN_SHOULDERS_OF_GIANTS"
-	
+
 	trigger = {
 		has_origin = origin_shoulders_of_giants
 	}
@@ -884,7 +888,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_GALACTIC_DOORSTEP"
-	
+
 	trigger = {
 		has_origin = origin_galactic_doorstep
 		NOR = {
@@ -898,7 +902,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_GALACTIC_DOORSTEP_MACH"
-	
+
 	trigger = {
 		has_origin = origin_galactic_doorstep
 		has_authority = auth_machine_intelligence
@@ -909,7 +913,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_GALACTIC_DOORSTEP_HIVE"
-	
+
 	trigger = {
 		has_origin = origin_galactic_doorstep
 		has_authority = auth_hive_mind
@@ -920,7 +924,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_COMMON_GROUND"
-	
+
 	trigger = {
 		has_origin = origin_common_ground
 	}
@@ -930,7 +934,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_HEGEMON"
-	
+
 	trigger = {
 		has_origin = origin_hegemon
 	}
@@ -940,7 +944,7 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_DOOMSDAY"
-	
+
 	trigger = {
 		has_origin = origin_doomsday
 	}
@@ -950,10 +954,117 @@ part = {
 part = {
 	location = 0
 	localization = "START_SCREEN_LOST_COLONY"
-	
+
 	trigger = {
 		has_origin = origin_lost_colony
 		NOT = { has_country_flag = human_2 }
+	}
+}
+
+# Progenitor Hive
+part = {
+	location = 0
+	localization = "START_SCREEN_PROGENITOR_HIVE"
+
+	trigger = {
+		has_origin = origin_progenitor_hive
+	}
+}
+
+# Star Slingshot
+part = {
+	location = 0
+	localization = "START_SCREEN_STAR_SLINGSHOT"
+
+	trigger = {
+		has_origin = origin_star_slingshot
+		is_gestalt = no
+	}
+}
+
+part = { # Gestalt
+	location = 0
+	localization = "START_SCREEN_STAR_SLINGSHOT_GESTALT"
+
+	trigger = {
+		has_origin = origin_star_slingshot
+		is_gestalt = yes
+	}
+}
+
+# Shroudwalker Apprentice
+part = {
+	location = 0
+	localization = "START_SCREEN_SHROUDWALKER_APPRENTICE"
+
+	trigger = {
+		has_origin = "origin_shroudwalker_apprentice"
+		NOR = {
+			has_government = gov_megachurch
+			has_government = gov_sacrificial_megachurch
+		}
+	}
+}
+
+# Shroudwalker Apprentice - Corporate (Megachurch) variant
+part = {
+	location = 0
+	localization = "START_SCREEN_SHROUDWALKER_APPRENTICE_CORPORATE"
+
+	trigger = {
+		has_origin = "origin_shroudwalker_apprentice"
+		OR = {
+			has_government = gov_megachurch
+			has_government = gov_sacrificial_megachurch
+		}
+	}
+}
+
+# Imperial Vassal
+part = {
+	location = 0
+	localization = "START_SCREEN_IMPERIAL_VASSAL"
+
+	trigger = {
+		has_origin = "origin_imperial_vassal"
+	}
+}
+
+# Subterranean
+part = {
+	location = 0
+	localization = "START_SCREEN_SUBTERRANEAN"
+
+	trigger = {
+		has_origin = origin_subterranean
+		NOR = {
+			is_lithoid_empire = yes
+			owner_species = { is_species_class = PLANT }
+			owner_species = { is_species_class = FUN }
+		}
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_SUBTERRANEAN_LITHOID"
+
+	trigger = {
+		has_origin = origin_subterranean
+		is_lithoid_empire = yes
+	}
+}
+
+part = {
+	location = 0
+	localization = "START_SCREEN_SUBTERRANEAN_PLANT"
+
+	trigger = {
+		has_origin = origin_subterranean
+		OR = {
+			owner_species = { is_species_class = PLANT }
+			owner_species = { is_species_class = FUN }
+		}
 	}
 }
 

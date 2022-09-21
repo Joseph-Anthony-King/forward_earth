@@ -1060,10 +1060,10 @@ entity = {
 	scale = 1.2
 }
 
-# Jupiter - Food
+# Jupiter - Food (If Gigastructures gets updated to change the current entities, replace the pdxmesh with no_pole_no_clouds and delete the cloud overides)
 entity = {
 	name = "gas_giant_jupiter_food_entity"
-	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	pdxmesh = "planet_clouded_mesh"
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
@@ -1072,6 +1072,24 @@ entity = {
 	texture_specular = "realsol_gas_specular.dds"
 	}
 	
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_islands_diffuse.dds"
+		texture_normal = "clouds_islands_normal.dds"
+		texture_specular = "clouds_islands_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_islands_shadows.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
@@ -1200,7 +1218,7 @@ entity = {
 # Saturn - Food
 entity = {
 	name = "gas_giant_saturn_food_entity"
-	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	pdxmesh = "planet_clouded_mesh"
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
@@ -1209,11 +1227,64 @@ entity = {
 	texture_specular = "realsol_gas_specular.dds"
 	}
 	
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_islands_diffuse.dds"
+		texture_normal = "clouds_islands_normal.dds"
+		texture_specular = "clouds_islands_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_islands_shadows.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
 	}
 	scale = 1.2
+}
+
+# Enceladus
+entity = {
+	name = "frozen_planet_04_entity"
+	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "frozen_04_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+		
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_thin_diffuse.dds"
+	texture_normal = "clouds_thin_normal.dds"
+	texture_specular = "clouds_thin_specular.dds"
+	}
+	
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
 }
 
 # Titan
@@ -1276,7 +1347,7 @@ entity = {
 # Uranus - Food
 entity = {
 	name = "gas_giant_uranus_food_entity"
-	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	pdxmesh = "planet_clouded_mesh"
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
@@ -1285,6 +1356,24 @@ entity = {
 	texture_specular = "realsol_gas_specular.dds"
 	}
 	
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_islands_diffuse.dds"
+		texture_normal = "clouds_islands_normal.dds"
+		texture_specular = "clouds_islands_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_islands_shadows.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }
@@ -1333,7 +1422,7 @@ entity = {
 # Neptune - Food
 entity = {
 	name = "gas_giant_neptune_food_entity"
-	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	pdxmesh = "planet_clouded_mesh"
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
@@ -1342,6 +1431,24 @@ entity = {
 	texture_specular = "realsol_gas_specular.dds"
 	}
 	
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "clouds_islands_diffuse.dds"
+		texture_normal = "clouds_islands_normal.dds"
+		texture_specular = "clouds_islands_specular.dds"
+		shader = "PdxMeshClouds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "clouds_islands_shadows.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+		shader = "PdxMeshClouds"
+	}
+
 	default_state = "idle"
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
 		start_event = { trigger_once = yes sound = { soundeffect = "gas_giant_amb_hum" } }

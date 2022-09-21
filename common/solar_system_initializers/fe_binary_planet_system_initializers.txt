@@ -59,7 +59,7 @@ fe_type_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 25 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -178,7 +178,7 @@ fe_type_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -297,7 +297,7 @@ fe_type_three_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -416,7 +416,7 @@ fe_type_four_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -527,7 +527,7 @@ fe_type_five_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -651,7 +651,7 @@ fe_six_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -763,7 +763,7 @@ fe_seven_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = 30
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -875,7 +875,7 @@ fe_eight_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -935,7 +935,7 @@ fe_eight_binary_planet_system_initializer = {
     }
 }
 
-### type eight binary planet system
+### type nine binary planet system
 fe_nine_binary_planet_system_initializer = {
     
 	class = "rl_starting_stars"
@@ -985,7 +985,7 @@ fe_nine_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1038,7 +1038,7 @@ fe_nine_binary_planet_system_initializer = {
     }
 }
 
-### type nine binary planet system
+### type ten binary planet system
 fe_ten_binary_planet_system_initializer = {
     
 	class = sc_binary_6
@@ -1081,7 +1081,7 @@ fe_ten_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 30 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1142,7 +1142,7 @@ fe_ten_binary_planet_system_initializer = {
     }
 }
 
-### type ten binary planet system
+### type eleven binary planet system
 fe_eleven_binary_planet_system_initializer = {
     
 	class = sc_binary_5
@@ -1185,7 +1185,7 @@ fe_eleven_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 30 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1246,7 +1246,7 @@ fe_eleven_binary_planet_system_initializer = {
     }
 }
 
-### type eleven binary planet system
+### type twelve binary planet system
 fe_twelve_binary_planet_system_initializer = {
     
 	class = sc_binary_7
@@ -1289,7 +1289,7 @@ fe_twelve_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 30 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1350,7 +1350,7 @@ fe_twelve_binary_planet_system_initializer = {
     }
 }
 
-### type twelve binary planet system
+### type thirteen binary planet system
 fe_thirteen_planet_system_initializer = {
     
 	class = sc_binary_8
@@ -1393,7 +1393,7 @@ fe_thirteen_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 30 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1454,7 +1454,7 @@ fe_thirteen_planet_system_initializer = {
     }
 }
 
-### type six binary planet system
+### type fourteen binary planet system
 fe_fourteen_binary_planet_system_initializer = {
     
 	class = sc_binary_10
@@ -1512,7 +1512,7 @@ fe_fourteen_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1611,7 +1611,7 @@ fe_fifteen_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 30 max = 40 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1666,6 +1666,92 @@ fe_fifteen_binary_planet_system_initializer = {
 	}
 }
 
+### type sixteen binary planet system
+fe_sixteen_binary_planet_system_initializer = {
+	class = sc_g
+
+	usage = misc_system_init
+	usage_odds = 1
+    max_instances = @rare
+
+	planet = {
+		count = 1
+		class = pc_g_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 28
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 0 max = 2}
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 8 max = 15 }
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 1 max = 2}
+		orbit_distance = 20
+		orbit_angle = { min = 90 max = 270 }
+		size = { min = 18 max = 24 }
+		has_ring = no
+	}
+
+    planet = {
+        class = pc_asteroid
+		orbit_distance = 25
+		orbit_angle = 60
+		size = 0
+        flags = { planetary_barrycenter pd_ignore }
+
+		planet = {
+			class = pc_ocean
+			orbit_distance = 10
+			orbit_angle = 60
+            size = { min = 18 max = 24 }
+			has_ring = no
+		}
+
+        planet = {
+			class = pc_continental
+            size = { min = 15 max = 17 }
+			orbit_distance = 0
+			orbit_angle = 180
+			has_ring = no
+		}
+    }
+
+	planet = {
+        count = { min = 1 max = 2}
+		orbit_distance = 25
+		orbit_angle = 125
+		size = { min = 22 max = 28 }
+		has_ring = no
+	}
+
+	planet = {
+        count = { min = 0 max = 3}
+		class = pc_gas_giant
+		orbit_distance = 25
+		orbit_angle = 170
+		size = 30
+		has_ring = yes
+		change_orbit = 7
+
+        change_orbit = 12
+		
+		moon = {
+            count = { min = 0 max = 3}
+			size = { min = 5 max = 15 }
+			orbit_distance = 3
+			orbit_angle = 66
+			has_ring = no
+		}
+	}
+}
+
 ### random empire one binary planet system
 fe_random_empire_one_binary_planet_system_initializer = {
     
@@ -1712,7 +1798,7 @@ fe_random_empire_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1833,7 +1919,7 @@ fe_random_empire_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -1952,7 +2038,7 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0
@@ -2114,7 +2200,7 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
     }
 
     planet = {
-        class = pc_barren
+        class = pc_asteroid
         orbit_distance = { min = 20 max = 30 }
         orbit_angle = { min = 90 max = 270 }
         size = 0

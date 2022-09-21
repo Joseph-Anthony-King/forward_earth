@@ -47,6 +47,20 @@ objectTypes = {
 		scale = 0.85
 
     }
+
+	pdxmesh = {
+		name = "css_fedbuild_01_cruiser_broadside_mesh"
+		file = "gfx/models/ships/css_fedbuild_cruiser/css_fedbuild_cruiser_broadside.mesh"
+		scale = 0.85
+		
+	}
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_cruiser_artillery_mesh"
+		file = "gfx/models/ships/css_fedbuild_cruiser/css_fedbuild_cruiser_artillery.mesh"
+		scale = 0.85
+		
+	}
 	
 	#######  battleship  #######	
 	
