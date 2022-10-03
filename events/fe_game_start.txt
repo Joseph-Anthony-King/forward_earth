@@ -535,7 +535,10 @@ event = {
 			}
             random_galaxy_planet = {
                 limit = {
-                    has_planet_flag = planet_earth
+                    and = {
+                        has_planet_flag = planet_earth
+                        num_pops < 1
+                    }
                 }
                 random_list = {
                     # Stone Age
