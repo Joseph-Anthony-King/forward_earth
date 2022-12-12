@@ -203,8 +203,8 @@ icarus = {
 	system_name = "NAME_Sol"
 	initializer = "sol_system_initializer"
 
-	graphical_culture = "ai_ship_set_01"
-	city_graphical_culture = "ai_ship_set_01"
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
 
 	empire_flag={
 		icon={

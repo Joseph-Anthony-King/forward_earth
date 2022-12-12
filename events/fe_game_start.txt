@@ -366,7 +366,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = css_fedbuild_01
+                            set_graphical_culture = humanoid_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = human_1
                             set_country_flag = human_faction
@@ -475,7 +475,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = ai_ship_set_01
+                            set_graphical_culture = mammalian_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = icarus_faction
                             set_country_flag = earth_faction
@@ -1554,7 +1554,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = css_fedbuild_01
+                            set_graphical_culture = humanoid_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = human_1
                             set_country_flag = human_faction
@@ -1663,7 +1663,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = ai_ship_set_01
+                            set_graphical_culture = mammalian_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = icarus_faction
                             set_country_flag = earth_faction
@@ -1920,7 +1920,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
+                                set_graphical_culture = mammalian_01
                             }
 
                             solar_system = {
@@ -2281,7 +2281,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
+                                set_graphical_culture = mammalian_01
                             }
 
                             solar_system = {
