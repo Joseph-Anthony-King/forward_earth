@@ -1,0 +1,176 @@
+###position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
+
+### Headquarters ###
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_headquarters_entity"
+	pdxmesh = "locator_mesh"
+	scale = 0.8
+	game_data = {size = 35 emissive_recolor_crunch = 10.0}
+	
+	###Locators for Sections
+	
+	locator = { name = "core1" 	    position = {   0 		0 		 0 		} 	rotation = {  0 	0   0  }}
+	locator = { name = "core2" 	    position = {   0 		0 		 0 		} 	rotation = {  30 	0   0  }}
+	locator = { name = "core3" 	    position = {   0 		0 		 0 		} 	rotation = {  45 	0   0  }}
+	locator = { name = "core4" 	    position = {   0 		0 		 0 		} 	rotation = {  60 	0   0  }}
+	locator = { name = "corex1" 	position = {   0 		20 		 0 		} 	rotation = {  180   90  45 }}
+	locator = { name = "corex2" 	position = {   0 		20 		 0 		} 	rotation = {  180   90 -45 }}
+	locator = { name = "corex3" 	position = {   0 	   -20 		 0 		} 	rotation = {  180   90  45 }}
+	locator = { name = "corex4" 	position = {   0 	   -20 		 0 		} 	rotation = {  180   90 -45 }}
+	locator = { name = "corex5" 	position = {   0 	    20 		 0 		} 	rotation = {  180   90 -90 }}
+	locator = { name = "corex6" 	position = {   0 	    20 		 0 		} 	rotation = {  180   90  0  }}
+	locator = { name = "corex7" 	position = {   0 	   -20 		 0 		} 	rotation = {  180   90 -90 }}
+	locator = { name = "corex8" 	position = {   0 	   -20 		 0 		} 	rotation = {  180   90  0  }}
+	
+	###Extensions
+	
+	attach = { core1				= "ai_ship_set_01_starbase_core_entity" }
+	attach = { core2				= "ai_ship_set_01_starbase_core_entity" }
+	attach = { core3				= "ai_ship_set_01_starbase_core_entity" }
+	attach = { core4				= "ai_ship_set_01_starbase_core_entity" }
+	attach = { corex1		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex2		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex3		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex4		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex5		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex6		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex7		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { corex8		= "ai_ship_set_01_starbase_section_heavy_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}
+
+### Headquarters Sections ###
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_headquarters_core1_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+		
+	##Locators for Weapons
+	
+	locator = { name = "large_gun_01" 		position = {   0  		0  		 30		} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_02" 		position = {   0  		0  		 30		} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_03" 		position = {   24.5 	0  		 24.5	} 	rotation = {  45 	0 0 }}
+	locator = { name = "medium_gun_04" 		position = {  -30  		0  		 0 		} 	rotation = {  270 	0 0 }}
+	locator = { name = "medium_gun_05" 		position = {  -24.5  	0  		 24.5 	} 	rotation = {  315	0 0 }}
+	
+	###Extensions
+	
+	attach = { medium_gun_02		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_03		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_04		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_05		= "ai_ship_set_01_starbase_section_heavy_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_headquarters_core2_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+		
+	##Locators for Weapons
+	
+	locator = { name = "large_gun_01" 		position = {   0  		0  		-30	    } 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_02" 		position = {   0  		0  		-30	    } 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_03" 		position = {  -20 	    0  		-20  	} 	rotation = {  45 	0 0 }}
+	locator = { name = "medium_gun_04" 		position = {   30  		0  		 0 		} 	rotation = {  270 	0 0 }}
+	locator = { name = "medium_gun_05" 		position = {   24.5  	0  		-24.5 	} 	rotation = {  315	0 0 }}
+	
+	###Extensions
+	
+	attach = { medium_gun_02		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_03		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_04		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_05		= "ai_ship_set_01_starbase_section_heavy_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_headquarters_core3_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+		
+	##Locators for Weapons
+	
+	locator = { name = "large_gun_01" 		position = {   0  		0  		 70		} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_02" 		position = {   0  		0  		 70		} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_03" 		position = {   60 	    0  		 60	    } 	rotation = {  45 	0 0 }}
+	locator = { name = "medium_gun_04" 		position = {  -70  		0  		 0 		} 	rotation = {  270 	0 0 }}
+	locator = { name = "medium_gun_05" 		position = {  -50  	    0  		 50 	} 	rotation = {  315	0 0 }}
+	
+	###Extensions
+	
+	attach = { medium_gun_02		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_03		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_04		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_05		= "ai_ship_set_01_starbase_section_heavy_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_headquarters_core4_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+		
+	##Locators for Weapons
+	
+	locator = { name = "large_gun_01" 		position = {    0  		0  		 -70	} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_02" 		position = {    0  		0  		 -70	} 	rotation = {  0  	0 0 }}
+	locator = { name = "medium_gun_03" 		position = {   -60 	    0  		 -60	} 	rotation = {  45 	0 0 }}
+	locator = { name = "medium_gun_04" 		position = {    70      0  		  0 	} 	rotation = {  270 	0 0 }}
+	locator = { name = "medium_gun_05" 		position = {    50  	0  		 -50 	} 	rotation = {  315	0 0 }}
+	
+	###Extensions
+	
+	attach = { medium_gun_02		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_03		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_04		= "ai_ship_set_01_starbase_section_heavy_entity" }
+	attach = { medium_gun_05		= "ai_ship_set_01_starbase_section_heavy_entity" }
+		
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 }
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 4.9 particle = "large_ai_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_energy" }}}
+}

@@ -173,7 +173,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						}
 
 						last_created_country = {
-							set_graphical_culture = humanoid_01
+							set_graphical_culture = css_fedbuild_01
 							capital_scope = { set_name = "NAME_Earth" }
 							set_country_flag = human_1
 							set_country_flag = human_faction
@@ -1524,20 +1524,20 @@ coa_sol_neighbor_t2_tau_ceti = {
 			}
 			
 			init_effect = {
+				create_species = {
+					name = Tehrian
+					plural = Tehrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
 				if = {
 					random_list = {
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1573,31 +1573,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = late_medieval_age
-								set_primitive_age = late_medieval_age
+								set_pre_ftl_age = late_medieval_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1633,31 +1620,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = renaissance_age
-								set_primitive_age = renaissance_age
+								set_pre_ftl_age = renaissance_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1693,31 +1667,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = steam_age
-								set_primitive_age = steam_age
+								set_pre_ftl_age = steam_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1753,31 +1714,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = industrial_age
-								set_primitive_age = industrial_age
+								set_pre_ftl_age = industrial_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = random
@@ -1813,14 +1761,12 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = machine_age
-								set_primitive_age = machine_age
+								set_pre_ftl_age = machine_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
@@ -3071,102 +3017,6 @@ coa_neighbor_t3_Luytens_star = {
 			flags = { planet_notus }
 		}
 	}
-
-	# Small and Tiny Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# Medium and Large Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# All other galaxy sizes Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-}
 
 # CoA Neighbor Tier 3
 coa_neighbor_t3_trappist_1 = {

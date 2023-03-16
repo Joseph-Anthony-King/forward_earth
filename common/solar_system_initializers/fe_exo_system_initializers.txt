@@ -2401,6 +2401,105 @@ mu_Arae_system_initializer = {
     }
 }
 
+rigel_initializer = {	
+	name = "Rigel"
+	class = sc_trinary_2
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
+
+	planet = {
+		name = "Rigel A"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 70
+		has_ring = no
+	
+		planet = {
+			name = "Rigel B"
+			class = "pc_a_star"
+			orbit_distance = 80
+			orbit_angle = 45
+			size = 15
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Rigel A I"
+		class = "pc_molten"
+		orbit_distance = 100
+		orbit_angle = 120
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel A II"
+		class = "pc_desert"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel A III"
+		class = "pc_toxic"
+		orbit_distance = 40
+		orbit_angle = 170
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel C"
+		class = "pc_a_star"
+		orbit_distance = 80
+		orbit_angle = 45
+		size = 15
+		has_ring = no
+	}
+}
+
 sagittarius_a_star_initializer = {
 	name = "NAME_Sagittarius_A"
 	class = "sc_black_hole"
@@ -2767,160 +2866,6 @@ mu_cephei_initializer = {
 		orbit_distance = 0
 		orbit_angle = 45
 		size = 5
-		has_ring = no
-	}
-}
-
-polaris_initializer = {	
-	name = "NAME_Polaris"
-	class = sc_binary_8
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	
-	planet = {
-		name = "NAME_Polaris_A"
-		class = "pc_g_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 40
-		has_ring = no
-	
-		planet = {
-			name = "NAME_Polaris_B"
-			class = "pc_k_star"
-			orbit_distance = 60
-			orbit_angle = 45
-			size = 25
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_tropical"
-		orbit_distance = 90
-		orbit_angle = 120
-		size = 20
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_barren"
-		orbit_distance = 30
-		orbit_angle = 170
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-		orbit_distance = 30
-		orbit_angle = 45
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-		orbit_distance = 40
-		orbit_angle = 95
-		size = 15
-		has_ring = yes
-	}
-}
-
-rigel_initializer = {	
-	name = "NAME_Rigel"
-	class = sc_trinary_2
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 200
-	}
-
-	planet = {
-		name = "NAME_Rigel_A"
-		class = "pc_a_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 70
-		has_ring = no
-	
-		planet = {
-			name = "NAME_Rigel_B"
-			class = "pc_a_star"
-			orbit_distance = 80
-			orbit_angle = 45
-			size = 15
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_molten"
-		orbit_distance = 100
-		orbit_angle = 120
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_desert"
-		orbit_distance = 30
-		orbit_angle = 120
-		size = 18
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_toxic"
-		orbit_distance = 40
-		orbit_angle = 170
-		size = 16
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 30
-		orbit_angle = 90
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		name = "NAME_Rigel_C"
-		class = "pc_a_star"
-		orbit_distance = 80
-		orbit_angle = 45
-		size = 15
 		has_ring = no
 	}
 }

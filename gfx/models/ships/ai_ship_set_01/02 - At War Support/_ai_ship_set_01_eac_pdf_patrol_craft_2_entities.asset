@@ -1,0 +1,54 @@
+###position = { 0<-[+Left,-Right] | 0<-[+Up,-Down] | 0<-[+Back,-Forward] }
+
+################
+### eac_pdf_patrol_craft_2 ###
+################
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_eac_pdf_patrol_craft_2_entity"
+	pdxmesh = "locator_mesh"
+	scale = 1
+	game_data = {
+		size = 12
+		emissive_recolor_crunch = 10.0
+	}
+	
+	###Locators for Extensions
+	
+	locator = { name = "part1"	position = { 0 0 0 } 	rotation = {  0 0 0 }}
+
+	attach = { part1		= "ai_ship_set_01_eac_pdf_patrol_craft_2_extension_01_entity" }
+	
+	###Locators for Animations
+	
+	locator = { name = "engine_small_01"	position = { 0 -0.1 2.6 } 	rotation = {  0 180 180 }}
+	
+	###Animations
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		event = { time = 0 node = "engine_small_01" particle = "ai_ship_set_small_ship_exhaust_idle_particle" trigger_once = yes keep_particle = yes }}
+	state = { name = "moving" state_time = 5
+		event = { time = 0 node = "engine_small_01" particle = "ai_ship_set_small_ship_exhaust_moving_particle" trigger_once = yes keep_particle = yes }}
+	state = { name = "death" state_time = 3.5 chance = 1 looping = no	
+		event = { time = 0.0 node = "root" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed }}
+		event = { time = 0.5 node = "part1" particle = "ship_burn_particle" }
+		event = { time = 1.5 node = "part1" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed }}
+		event = { time = 3.3 node = "part1" particle = "large_ship_explosion_particle" sound = { soundeffect = ship_destroyed }}}
+}
+
+##################
+### Extensions ###
+##################
+
+entity = {
+
+	###General Information
+	
+	name = "ai_ship_set_01_eac_pdf_patrol_craft_2_extension_01_entity"
+	pdxmesh = "ai_01_fighter_mesh"
+	scale = 2
+}

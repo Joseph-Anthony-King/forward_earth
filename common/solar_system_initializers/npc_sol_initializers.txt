@@ -1250,20 +1250,20 @@ npc_sol_neighbor_t2_tau_ceti = {
 			}
 			
 			init_effect = {
+				create_species = {
+					name = Tehrian
+					plural = Tehrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
 				if = {
 					random_list = {
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1299,31 +1299,18 @@ npc_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = late_medieval_age
-								set_primitive_age = late_medieval_age
+								set_pre_ftl_age = late_medieval_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1359,31 +1346,18 @@ npc_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = renaissance_age
-								set_primitive_age = renaissance_age
+								set_pre_ftl_age = renaissance_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1419,31 +1393,18 @@ npc_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = steam_age
-								set_primitive_age = steam_age
+								set_pre_ftl_age = steam_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1479,31 +1440,18 @@ npc_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = industrial_age
-								set_primitive_age = industrial_age
+								set_pre_ftl_age = industrial_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = random
@@ -1539,14 +1487,12 @@ npc_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = machine_age
-								set_primitive_age = machine_age
+								set_pre_ftl_age = machine_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
