@@ -1,0 +1,15 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "css_test_01_juggernaut_mesh"
+		file = "gfx/models/ships/css_test_juggernaut/css_fedbuild_juggernaut.mesh"
+		
+		scale = 2.0
+		
+		animation = { id = "idle" 			type = "css_test_01_juggernaut_still_animation" }
+		animation = { id = "open_idle" 			type = "css_test_01_juggernaut_idle_animation" }	
+		animation = { id = "opening" 			type = "css_test_01_juggernaut_opening_animation" }
+		animation = { id = "closing" 			type = "css_test_01_juggernaut_closing_animation" }		
+	}
+	
+}

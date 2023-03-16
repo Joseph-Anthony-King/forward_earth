@@ -454,37 +454,41 @@ sol_neighbor_t1_first_colony = {
     		}
     	}
 
-      	planet = {
-      		class = "pc_asteroid"
-      		orbit_distance = 50
-      		orbit_angle = -210
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-100"
+			class = "pc_asteroid"
+			orbit_distance = 50
+			orbit_angle = -210
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = -95
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-200"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = -95
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = 285
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-300"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = 285
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = -80
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-400"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = -80
+			size = 5
+			has_ring = no
+		}
 	}
 
 	planet = {
@@ -512,8 +516,8 @@ sol_neighbor_t1_first_colony = {
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
-			entity = "toxic_planet_15_entity"
 			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
 		
 			init_effect = {
 				add_modifier = {
@@ -546,12 +550,13 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_tidallylocked"
+			class = "pc_eyeball"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+			entity = "eyeball_planet_01_entity"
 
 			init_effect = {
 				add_modifier = {
@@ -714,6 +719,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			size = 18
 			has_ring = yes
 			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
 		
 			init_effect = {
 				add_modifier = {
@@ -746,12 +752,13 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_tidallylocked"
+			class = "pc_eyeball"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+			entity = "eyeball_planet_01_entity"
 
 			init_effect = {
 				add_modifier = {
@@ -2114,6 +2121,7 @@ sol_neighbor_t2_third_colony = {
 		size = 16
 		has_ring = no
 		flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
 	}
 	
 	# Trappist-1c
@@ -2136,6 +2144,7 @@ sol_neighbor_t2_third_colony = {
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+		entity = tidallylocked_planet_01_entity
 
 		init_effect = {
 			add_modifier = {
@@ -4124,7 +4133,7 @@ lost_colony_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -4132,108 +4141,127 @@ lost_colony_sol_neighbor_t1_first_colony = {
 		size = 28
 		has_ring = no
 
-    	planet = {
-    		name = "Alpha Centauri B I"
-    		class = "pc_molten"
-    		orbit_distance = 25
-    		orbit_angle = 125
-    		size = 16
-    		has_ring = no
-    	}
+		planet = {
+			name = "NAME_Alpha_Centauri_B_I"
+			class = "pc_volcanic"
+			orbit_distance = 25
+			orbit_angle = 125
+			size = 16
+			has_ring = no
+			flags = { pd_ignore }
+		}
 
-    	planet = {
-    		name = "Alpha Centauri B II"
-    		orbit_distance = 25
-    		orbit_angle = 120
-    		class = "pc_continental"
-    		size = 18
-    		has_ring = no
-    		entity = "continental_planet_01_entity"
-    		moon = {
-    			name = "Alpha Centauri B IIa"
-    			class = "pc_barren_cold"
-    			size = 1
-    			orbit_distance = 7
-    			has_ring = no
-    		}
+		planet = {
+    		name = "NAME_Alpha_Centauri_B_II"
+			orbit_distance = 25
+			orbit_angle = 120
+			class = "pc_hot_reducing"
+			size = 18
+			has_ring = no
+			flags = { pd_ignore }
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = -1
+				}
+			}
+			moon = {
+    		name = "NAME_Alpha_Centauri_B_IIa"
+				class = "pc_orbiting_asteroid"
+				size = 4
+				orbit_distance = 7
+				has_ring = no
+				flags = { pd_ignore }
+			}
 
-    		moon = {
-    			name = "Alpha Centauri B IIb"
-    			class = "pc_barren_cold"
-    			size = 2
-    			orbit_distance = 4
-    			has_ring = no
-    		}
-    	}
+			moon = {
+    		name = "NAME_Alpha_Centauri_B_IIb"
+				class = "pc_orbiting_asteroid"
+				size = 3
+				orbit_distance = 4
+				has_ring = no
+				flags = { pd_ignore }
+			}
+		}
 
-      	planet = {
-      		name = "ACB-100"
-      		class = "pc_asteroid"
-      		orbit_distance = 50
-      		orbit_angle = -210
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-100"
+			class = "pc_asteroid"
+			orbit_distance = 50
+			orbit_angle = -210
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		name = "ACB-200"
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = -95
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-200"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = -95
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		name = "ACB-300"
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = 285
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-300"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = 285
+			size = 5
+			has_ring = no
+		}
 
-      	planet = {
-      		name = "ACB-400"
-      		class = "pc_asteroid"
-      		orbit_distance = 0
-      		orbit_angle = -80
-      		size = 5
-      		has_ring = no
-      	}
+		planet = {
+			name = "ACB-400"
+			class = "pc_asteroid"
+			orbit_distance = 0
+			orbit_angle = -80
+			size = 5
+			has_ring = no
+		}
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
 		size = 35
 		has_ring = no
+		flags = { pd_ignore }
 
 		planet = {
-			name = "Alpha Centauri A I"
-			class = "pc_molten"
+			name = "NAME_Alpha_Centauri_A_I"
+			class = "pc_radiated"
 			orbit_distance = 40
 			orbit_angle = 90
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
-			class = "pc_toxic"
+			name = "NAME_Alpha_Centauri_A_II"
+			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
-			entity = "toxic_planet_15_entity"
+			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "terraforming_candidate"
+					days = -1
+				}
+			}
 		}
-
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -4242,30 +4270,41 @@ lost_colony_sol_neighbor_t1_first_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
-			class = "pc_tundra"
+			name = "NAME_Proxima_Centauri_II"
+			class = "pc_eyeball"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
+			entity = "eyeball_planet_01_entity"
+
+			init_effect = {
+				add_modifier = {
+					modifier = "tidal_locked"
+					days = -1
+				}
+			}
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 

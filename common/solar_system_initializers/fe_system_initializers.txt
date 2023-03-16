@@ -1012,20 +1012,20 @@ sol_neighbor_t2_tau_ceti = {
 			}
 			
 			init_effect = {
+				create_species = {
+					name = Tehrian
+					plural = Tehrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
 				if = {
 					random_list = {
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1061,31 +1061,18 @@ sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = late_medieval_age
-								set_primitive_age = late_medieval_age
+								set_pre_ftl_age = late_medieval_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1121,31 +1108,18 @@ sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = renaissance_age
-								set_primitive_age = renaissance_age
+								set_pre_ftl_age = renaissance_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1181,31 +1155,18 @@ sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = steam_age
-								set_primitive_age = steam_age
+								set_pre_ftl_age = steam_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1241,31 +1202,18 @@ sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = industrial_age
-								set_primitive_age = industrial_age
+								set_pre_ftl_age = industrial_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = random
@@ -1301,14 +1249,12 @@ sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = machine_age
-								set_primitive_age = machine_age
+								set_pre_ftl_age = machine_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
@@ -2601,111 +2547,15 @@ sol_neighbor_t3_Luytens_star = {
 			flags = { pd_ignore }
 		}
 	}
-
-	# Small and Tiny Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# Medium and Large Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# All other galaxy sizes Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
 }
 
 # Sol Neighbor Tier 3
 sol_neighbor_t3_trappist_1 = {
-	name = "Trappist-1"
+	name = "NAME_Trappist_1"
 	class = sc_m
-	flags = { custom_system }
 
 	planet = {
-		name = "Trappist-1"
+		name = "NAME_Trappist_1"
 		count = 1
 		class = pc_m_star
 		orbit_distance = 0
@@ -2716,19 +2566,20 @@ sol_neighbor_t3_trappist_1 = {
 	
 	# Trappist-1b
 	planet = {
-		name = "Trappist-1 b"
-		class = "pc_molten"
+		name = "NAME_Trappist_1_b"
+		class = "pc_hothouse"
 		orbit_distance = 20
 		orbit_angle = 15
 		size = 16
 		has_ring = no
 		flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
 	}
 	
 	# Trappist-1c
 	planet = {
-		name = "Trappist-1 c"
-		class = "pc_toxic"
+		name = "NAME_Trappist_1_c"
+		class = "pc_hot_reducing"
 		orbit_distance = 16
 		orbit_angle = 85
 		size = 16
@@ -2738,31 +2589,38 @@ sol_neighbor_t3_trappist_1 = {
 
 	# Trappist-1d
 	planet = {
-		name = "Trappist-1 d"
-		class = "pc_hot_reducing"
+		name = "NAME_Trappist_1_d"
+		class = "pc_tidallylocked"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+		entity = tidallylocked_planet_01_entity
+
+		init_effect = {
+			add_modifier = {
+				modifier = "tidal_locked"
+				days = -1
+			}
+		}
 	}
 
 	# Trappist-1e
 	planet = {
-		name = "Trappist-1 e"
-		class = "pc_tidallylocked"
+		name = "NAME_Trappist_1_e"
+		class = "pc_aquaticcold"
 		orbit_distance = 16
 		orbit_angle = 125
 		size = 15
 		has_ring = no
-		entity = "tidallylocked_planet_01_entity"
 		flags = { pd_ignore }
 	}
 
 	# Trappist-1f
 	planet = {
-		name = "Trappist-1 f"
-		class = "pc_hot_reducing"
+		name = "NAME_Trappist_1_f"
+		class = "pc_waterworld"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
@@ -2772,8 +2630,8 @@ sol_neighbor_t3_trappist_1 = {
 
 	# Trappist-1g
 	planet = {
-		name = "Trappist-1 g"
-		class = "pc_glacial"
+		name = "NAME_Trappist_1_g"
+		class = "pc_waterworld"
 		orbit_distance = 16
 		orbit_angle = -130
 		size = 18
@@ -2783,13 +2641,54 @@ sol_neighbor_t3_trappist_1 = {
 
 	# Trappist-1h
 	planet = {
-		name = "Trappist-1 h"
+		name = "NAME_Trappist_1_h"
 		class = "pc_frozen"
 		orbit_distance = 16
 		orbit_angle = 245
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+	}
+
+	# Small and Tiny 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = tiny
+				galaxy_size = small
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# Medium, Large, and Huge 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = medium
+				galaxy_size = large
+				galaxy_size = huge
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# All other galaxy sizes 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = gigantic
+				galaxy_size = immense
+			}
+			num_ai_empires_setting > 1
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_70_virginis_system_initializer"
 	}
 }
 
@@ -3698,1322 +3597,5 @@ npc_deneb_system = {
 			#want this?
 		}		
 		initializer = "neighbor_t1_first_colony"
-	}
-}
-
-polaris_initializer = {	
-	name = "Polaris"
-	class = sc_binary_8
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-	
-	planet = {
-		name = "Polaris A"
-		class = "pc_g_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 40
-		has_ring = no
-	
-		planet = {
-			name = "Polaris B"
-			class = "pc_k_star"
-			orbit_distance = 60
-			orbit_angle = 45
-			size = 25
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Polaris A I"
-		class = "pc_tropical"
-		orbit_distance = 90
-		orbit_angle = 120
-		size = 20
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Polaris A II"
-		class = "pc_barren"
-		orbit_distance = 30
-		orbit_angle = 170
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Polaris A III"
-		class = "pc_barren_cold"
-		orbit_distance = 30
-		orbit_angle = 45
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Polaris A IV"
-		class = "pc_barren_cold"
-		orbit_distance = 40
-		orbit_angle = 95
-		size = 15
-		has_ring = yes
-	}
-}
-
-betelgeuse_initializer = {	
-	name = "Betelgeuse"
-	class = sc_m_giant
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-	
-	planet = {
-		name = "Betelgeuse"
-		class = "pc_m_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 100
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Betelgeuse I"
-		class = "pc_gas_giant"
-		orbit_distance = 110
-		orbit_angle = 175
-		size = 40
-		has_ring = no
-		
-		moon = {
-			name = "Betelgeuse Ia"
-			class = "pc_molten"
-			size = 5
-			orbit_distance = 20
-			orbit_angle = 100
-			has_ring = no
-		}		
-		moon = {
-			name = "Betelgeuse Ib"
-			class = "pc_barren"
-			size = 8
-			orbit_distance = 10
-			orbit_angle = 95
-			has_ring = no
-		}		
-	}
-	
-	planet = {
-		name = "Betelgeuse II"
-		class = "pc_gas_giant"
-		orbit_distance = 40
-		orbit_angle = 120
-		size = 30
-		has_ring = yes
-		
-		moon = {
-			name = "Betelgeuse IIa"
-			class = "pc_barren_cold"
-			size = 8
-			orbit_distance = 20
-			orbit_angle = 95
-			has_ring = no
-		}		
-		moon = {
-			name = "Betelgeuse IIb"
-			class = "pc_frozen"
-			size = 5
-			orbit_distance = 10
-			orbit_angle = 120
-			has_ring = no
-		}		
-	}
-	
-	planet = {
-		name = "Betelgeuse III"
-		class = "pc_barren_cold"
-		orbit_distance = 30
-		orbit_angle = 95
-		size = 15
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Betelgeuse IV"
-		class = "pc_frozen"
-		orbit_distance = 40
-		orbit_angle = 60
-		size = 8
-		has_ring = yes
-		
-		moon = {
-			name = "Betelgeuse IVa"
-			class = "pc_frozen"
-			size = 6
-			orbit_distance = 10
-			orbit_angle = 120
-			has_ring = no
-		}
-	}
-}
-
-rigel_initializer = {	
-	name = "Rigel"
-	class = sc_trinary_2
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 200
-	}
-
-	planet = {
-		name = "Rigel A"
-		class = "pc_a_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 70
-		has_ring = no
-	
-		planet = {
-			name = "Rigel B"
-			class = "pc_a_star"
-			orbit_distance = 80
-			orbit_angle = 45
-			size = 15
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Rigel A I"
-		class = "pc_molten"
-		orbit_distance = 100
-		orbit_angle = 120
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Rigel A II"
-		class = "pc_hothouse"
-		orbit_distance = 30
-		orbit_angle = 120
-		size = 16
-		has_ring = no
-		flags = { pd_ignore }
-	}
-	
-	planet = {
-		name = "Rigel A III"
-		class = "pc_retinal"
-		orbit_distance = 40
-		orbit_angle = 170
-		size = 18
-		has_ring = no
-		flags = { pd_ignore }
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 30
-		orbit_angle = 90
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Rigel C"
-		class = "pc_a_star"
-		orbit_distance = 80
-		orbit_angle = 45
-		size = 15
-		has_ring = no
-	}
-}
-
-vega_initializer = {	
-	name = "Vega"
-	class = sc_a
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 90
-	}
-
-	planet = {
-		name = "Vega"
-		class = "pc_a_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Vega I"
-		class = "pc_broken"
-		orbit_distance = 40
-		orbit_angle = 60
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 50
-		orbit_angle = 45
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Vega II"
-		class = "pc_gas_giant"
-		orbit_distance = 40
-		orbit_angle = 180
-		size = 30
-		has_ring = no
-		
-		moon = {
-			name = "Vega IIa"
-			class = "pc_arid"
-			size = 12
-			orbit_distance = 18
-			orbit_angle = 120
-			has_ring = no
-		
-			init_effect = {
-				add_modifier = {
-					modifier = "low_gravity"
-					days = -1
-				}
-			}
-		}
-		moon = {
-			name = "Vega IIb"
-			class = "pc_continental"
-			orbit_distance = 5
-			orbit_angle = 180
-			size = 20
-			starting_planet = yes
-			has_ring = no
-		
-			init_effect = {
-				add_modifier = {
-					modifier = "lush_planet"
-					days = -1
-				}
-			}
-		}
-	}
-	
-	planet = {
-		name = "Vega III"
-		class = "pc_gas_giant"
-		orbit_distance = 40
-		orbit_angle = 105
-		size = 30
-		has_ring = yes
-		
-		moon = {
-			name = "Vega IIIa"
-			class = "pc_frozen"
-			size = 8
-			orbit_distance = 20
-			orbit_angle = 120
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Vega IV"
-		class = "pc_frozen"
-		orbit_distance = 40
-		orbit_angle = 200
-		size = 9
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Vega V"
-		class = "pc_frozen"
-		orbit_distance = 40
-		orbit_angle = 70
-		size = 10
-		has_ring = no
-	}
-}
-
-antares_initializer = {	
-	name = "Antares"
-	class = sc_m_giant
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 115
-	}
-	
-	planet = {
-		name = "Antares"
-		class = "pc_m_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 70
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Antares I"
-		class = "pc_molten"
-		orbit_distance = 45
-		orbit_angle = 70
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Antares II"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 110
-		size = 8
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Antares III"
-		class = "pc_molten"
-		orbit_distance = 20
-		orbit_angle = 85
-		size = 7
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 20
-		orbit_angle = 105
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-}
-
-canopus_initializer = {	
-	name = "Canopus"
-	class = sc_a
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	planet = {
-		name = "Canopus"
-		class = "pc_a_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 60
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Canopus I"
-		class = "pc_molten"
-		orbit_distance = 50
-		orbit_angle = 70
-		size = 15
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Canopus II"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 110
-		size = 18
-		has_ring = no
-		
-		init_effect = {
-			add_modifier = {
-				modifier = "chthonian_planet"
-				days = -1
-			}
-		}
-		
-		moon = {
-			name = "Canopus IIa"
-			class = "pc_molten"
-			size = 5
-			orbit_distance = 20
-			orbit_angle = 100
-			has_ring = no
-		}		
-		moon = {
-			name = "Canopus IIb"
-			class = "pc_molten"
-			size = 8
-			orbit_distance = 10
-			orbit_angle = 95
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Canopus III"
-		class = "pc_desert"
-		orbit_distance = 60
-		orbit_angle = 120
-		size = 18
-		has_ring = no
-		
-		moon = {
-			name = "Canopus IVa"
-			class = "pc_barren"
-			size = 5
-			orbit_distance = 10
-			orbit_angle = 100
-			has_ring = no
-		}
-		
-		moon = {
-			name = "Canopus IVb"
-			class = "pc_frozen"
-			size = 2
-			orbit_distance = 10
-			orbit_angle = 170
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Canopus IV"
-		class = "pc_toxic"
-		orbit_distance = 30
-		orbit_angle = 120
-		size = 18
-		has_ring = no
-		
-		moon = {
-			name = "Canopus IVa"
-			class = "pc_barren"
-			size = 5
-			orbit_distance = 10
-			orbit_angle = 100
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Canopus V"
-		class = "pc_frozen"
-		orbit_distance = 30
-		orbit_angle = 70
-		size = 12
-		has_ring = no
-	}
-}
-
-fomalhaut_initializer = {	
-	name = "Fomalhaut"
-	class = sc_a
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 90
-	}
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 140
-	}
-	asteroid_belt = {
-		type = icy_asteroid_belt
-		radius = 200
-	}
-
-	planet = {
-		name = "Fomalhaut"
-		class = "pc_a_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 70
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 90
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Fomalhaut I"
-		class = "pc_barren"
-		orbit_distance = 20
-		orbit_angle = 70
-		size = 15
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 30
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Fomalhaut II"
-		class = "pc_frozen"
-		orbit_distance = 30
-		orbit_angle = 70
-		size = 15
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 30
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = -95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-}
-
-vy_canis_majoris_initializer = {
-	name = "VY Canis Majoris"
-	class = sc_m_giant
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-	
-	planet = {
-		name = "VY Canis Majoris"
-		class = "pc_m_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 110
-		has_ring = no
-	}
-	
-	planet = {
-		name = "VY Canis Majoris I"
-		class = "pc_molten"
-		orbit_distance = 70
-		orbit_angle = 175
-		size = 8
-		has_ring = no
-	}
-	
-	planet = {
-		name = "VY Canis Majoris II"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 60
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		name = "VY Canis Majoris III"
-		class = "pc_molten"
-		orbit_distance = 20
-		orbit_angle = 90
-		size = 10
-		has_ring = no
-	}
-}
-
-mu_cephei_initializer = {
-	name = "Mu Cephei"
-	class = sc_m_giant
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 120
-	}
-	
-	planet = {
-		name = "Mu Cephei"
-		class = "pc_m_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 100
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Mu Cephei I"
-		class = "pc_molten"
-		orbit_distance = 50
-		orbit_angle = 60
-		size = 8
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Mu Cephei II"
-		class = "pc_molten"
-		orbit_distance = 30
-		orbit_angle = 70
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		name = "Mu Cephei III"
-		class = "pc_molten"
-		orbit_distance = 20
-		orbit_angle = 180
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 20
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 95
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 90
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 45
-		size = 5
-		has_ring = no
-	}
-}
-
-kobol_initializer = {	
-	name = "Kobol"
-	class = sc_trinary_1
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	flags = { custom_system }
-	
-	asteroid_belt = {
-		type = rocky_asteroid_belt
-		radius = 270
-	}
-	
-	planet = {
-		class = pc_barren
-		orbit_distance = 0
-		orbit_angle = 0
-		size = 0
-		has_ring = no
-		flags = { planetary_barrycenter pd_ignore }
-		
-		init_effect = {
-			prevent_anomaly = yes
-		}
-	
-		planet = {
-			name = "Kobol A"
-			class = "pc_g_star"
-			orbit_distance = 40
-			orbit_angle = 60
-			size = 30
-			has_ring = no
-		}
-	
-		planet = {
-			name = "Kobol B"
-			class = "pc_k_star"
-			orbit_distance = 0
-			orbit_angle = 180
-			size = 25
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		name = "Kobol I"
-		class = "pc_molten"
-		orbit_distance = 80
-		orbit_angle = 60
-		size = 10
-		has_ring = no
-		entity = "molten_planet_04_entity"
-		flags = { pd_ignore }
-	}
-	
-	planet = {
-		name = "Kobol II"
-		class = "pc_gas_giant"
-		orbit_distance = 40
-		orbit_angle = 90
-		size = 26
-		has_ring = no
-		entity = "gas_giant_03_entity"
-		flags = { pd_ignore }
-		
-		moon = {
-			name = "Kobol IIa"
-			class = "pc_arid"
-			size = 16
-			orbit_distance = 15
-			orbit_angle = 60
-			has_ring = no
-			entity = "arid_planet_01_entity"
-			flags = { pd_ignore }
-		}
-		moon = {
-			name = "Kobol IIb"
-			class = "pc_savannah"
-			size = 18
-			orbit_distance = 5
-			orbit_angle = 180
-			has_ring = no
-			entity = "savannah_planet_04_entity"
-			flags = { pd_ignore }
-		}
-	}
-	
-	planet = {
-		name = "Kobol III"
-		class = "pc_gas_giant"
-		orbit_distance = 60
-		orbit_angle = 180
-		size = 26
-		has_ring = no
-		entity = "gas_giant_04_entity"
-		flags = { pd_ignore }
-		
-		moon = {
-			name = "Kobol IIIa"
-			class = "pc_ocean"
-			size = 19
-			orbit_distance = 20
-			orbit_angle = 90
-			has_ring = no
-			entity = "ocean_planet_01_entity"
-			flags = { pd_ignore }
-		}
-		moon = {
-			name = "Kobol IIIb"
-			class = "pc_continental"
-			size = 18
-			orbit_distance = 5
-			orbit_angle = 180
-			has_ring = no
-			entity = "continental_planet_01_entity"
-			flags = { pd_ignore }
-		}
-	}
-	
-	planet = {
-		name = "Kobol IV"
-		class = "pc_gas_giant"
-		orbit_distance = 60
-		orbit_angle = 90
-		size = 24
-		has_ring = yes
-		entity = "gas_giant_06_entity"
-		flags = { pd_ignore }
-		
-		moon = {
-			name = "Kobol IVa"
-			class = "pc_alpine"
-			size = 16
-			orbit_distance = 20
-			orbit_angle = 120
-			has_ring = no
-			entity = "alpine_planet_03_entity"
-			flags = { pd_ignore }
-		}
-		moon = {
-			name = "Kobol IVb"
-			class = "pc_tundra"
-			size = 18
-			orbit_distance = 5
-			orbit_angle = 180
-			has_ring = no
-			entity = "tundra_planet_04_entity"
-			flags = { pd_ignore }
-		}
-	}
-
-	planet = {
-		name = "KAB-100"
-		class = "pc_asteroid"
-		orbit_distance = 30
-		orbit_angle = 60
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "KAB-200"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 90
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "KAB-300"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 90
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "KAB-400"
-		class = "pc_asteroid"
-		orbit_distance = 0
-		orbit_angle = 45
-		size = 5
-		has_ring = no
-	}
-
-	planet = {
-		name = "Kobol V"
-		class = "pc_frozen"
-		orbit_distance = 20
-		orbit_angle = 280
-		size = 13
-		has_ring = yes
-		entity = "frozen_planet_02_entity"
-		flags = { pd_ignore }
-	}
-	
-	planet = {
-		name = "Kobol C"
-		class = "pc_m_star"
-		orbit_distance = 120
-		orbit_angle = 180
-		size = 25
-		has_ring = no
-	
-		planet = {
-			name = "Kobol C I"
-			class = "pc_barren"
-			orbit_distance = 20
-			orbit_angle = 90
-			size = 8
-			has_ring = no
-			entity = "barren_planet_02_entity"
-			flags = { pd_ignore }
-		}
-	
-		planet = {
-			name = "Kobol C II"
-			class = "pc_desert"
-			orbit_distance = 15
-			orbit_angle = 2
-			size = 18
-			has_ring = no
-			entity = "desert_planet_02_entity"
-			flags = { pd_ignore }
-		}
-	
-		planet = {
-			name = "Kobol C III"
-			class = "pc_tropical"
-			orbit_distance = 15
-			orbit_angle = -4
-			size = 19
-			has_ring = no
-			entity = "tropical_planet_02_entity"
-			flags = { pd_ignore }
-		}
-	
-		planet = {
-			name = "Kobol C IV"
-			class = "pc_frozen"
-			orbit_distance = 20
-			orbit_angle = 4
-			size = 12
-			has_ring = no
-			entity = "frozen_planet_02_entity"
-			flags = { pd_ignore }
-		}
-	}
-}
-
-trantor_initializer = {
-	name = "Trantor"
-	class = "sc_k"
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = icy_asteroid_belt
-		radius = 175
-	}
-
-	planet = {
-		name = "Trantor"
-		class = pc_k_star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_molten"
-		orbit_distance = 35
-		orbit_angle = 70
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_tundra"
-		orbit_distance = 25
-		orbit_angle = 85
-		size = 24
-		has_ring = no
-		flags = { pd_ignore planet_trantor}
-		
-		moon = {
-			class = "pc_barren"
-			size = 10
-			orbit_distance = 15
-			orbit_angle = 135
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_gas_giant"
-		orbit_distance = 30
-		orbit_angle = 200
-		size = 25
-		has_ring = no
-		
-		moon = {
-			class = "pc_molten"
-			size = 9
-			orbit_distance = 13
-			orbit_angle = 70
-			has_ring = no
-		}
-		
-		moon = {
-			class = "pc_arctic"
-			size = 15
-			orbit_distance = 10
-			orbit_angle = 135
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_gas_giant"
-		orbit_distance = 30
-		orbit_angle = 200
-		size = 25
-		has_ring = yes
-		
-		moon = {
-			class = "pc_frozen"
-			size = 11
-			orbit_distance = 15
-			orbit_angle = 70
-			has_ring = no
-		}
-		
-		moon = {
-			class = "pc_frozen"
-			size = 9
-			orbit_distance = 8
-			orbit_angle = 135
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 55
-		orbit_angle = -210
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = 135
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
-	}
-}
-
-terminus_initializer = {
-	name = "Terminus"
-	class = "sc_k"
-	flags = { custom_system }
-
-	asteroid_belt = {
-		type = icy_asteroid_belt
-		radius = 100
-	}
-
-	planet = {
-		name = "Terminus"
-		class = pc_k_star
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 30
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ocean"
-		orbit_distance = 60
-		orbit_angle = 85
-		size = 19
-		has_ring = yes
-		flags = { pd_ignore planet_terminus }
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 40
-		orbit_angle = 135
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = 135
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = 285
-		size = 5
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_ice_asteroid"
-		orbit_distance = 0
-		orbit_angle = -80
-		size = 5
-		has_ring = no
 	}
 }

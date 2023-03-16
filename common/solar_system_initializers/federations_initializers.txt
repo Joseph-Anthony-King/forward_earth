@@ -352,8 +352,8 @@ intercepting_history_system_initializer_02 = {
 #					save_global_event_target_as = primitive_benefactor_species
 				}
 			}
-			create_early_primitive_empire = yes
-			setup_primitive_planet = yes
+			create_early_pre_ftl_empire = yes
+			setup_pre_ftl_planet = yes
 			last_created_country = {
 				set_country_flag = benefactor_empire
 			}
@@ -563,8 +563,8 @@ relentless_pursuit_system_initializer_02 = {
 					save_global_event_target_as = primitive_relentless_species
 				}
 			}
-			create_early_primitive_empire = yes
-			setup_primitive_planet = yes
+			create_early_pre_ftl_empire = yes
+			setup_pre_ftl_planet = yes
 			last_created_country = {
 				set_country_flag = relentless_empire
 			}

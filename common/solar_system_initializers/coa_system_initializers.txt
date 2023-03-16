@@ -174,7 +174,7 @@ eta_cassiopeiae_with_sol_system_initializer = {
 						}
 
 						last_created_country = {
-							set_graphical_culture = humanoid_01
+							set_graphical_culture = css_fedbuild_01
 							capital_scope = { set_name = "NAME_Earth" }
 							set_country_flag = human_1
 							set_country_flag = human_faction
@@ -568,7 +568,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -577,7 +577,7 @@ coa_sol_neighbor_t1_first_colony = {
 		has_ring = no
 
     	planet = {
-    		name = "Alpha Centauri B I"
+    		name = "NAME_Alpha_Centauri_B_I"
     		class = "pc_volcanic"
     		orbit_distance = 25
     		orbit_angle = 125
@@ -587,7 +587,7 @@ coa_sol_neighbor_t1_first_colony = {
     	}
 
     	planet = {
-    		name = "Alpha Centauri B II"
+    		name = "NAME_Alpha_Centauri_B_II"
     		orbit_distance = 25
     		orbit_angle = 120
     		class = "pc_continental"
@@ -597,7 +597,7 @@ coa_sol_neighbor_t1_first_colony = {
 			flags = { pd_ignore }
 
     		moon = {
-    			name = "Alpha Centauri B IIa"
+    			name = "NAME_Alpha_Centauri_B_IIa"
     			class = "pc_orbiting_asteroid"
     			size = 4
     			orbit_distance = 7
@@ -606,7 +606,7 @@ coa_sol_neighbor_t1_first_colony = {
     		}
 
     		moon = {
-    			name = "Alpha Centauri B IIb"
+    			name = "NAME_Alpha_Centauri_B_IIb"
     			class = "pc_orbiting_asteroid"
     			size = 3
     			orbit_distance = 4
@@ -653,7 +653,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -661,7 +661,7 @@ coa_sol_neighbor_t1_first_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_radiated"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -671,13 +671,14 @@ coa_sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
 			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
 		
 			init_effect = {
 				add_modifier = {
@@ -690,7 +691,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -699,7 +700,7 @@ coa_sol_neighbor_t1_first_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -709,17 +710,25 @@ coa_sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
-			class = "pc_tundra"
+			name = "NAME_Proxima_Centauri_II"
+			class = "pc_eyeball"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+			entity = "eyeball_planet_01_entity"
+
+			init_effect = {
+				add_modifier = {
+					modifier = "tidal_locked"
+					days = -1
+				}
+			}
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
@@ -766,7 +775,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -774,18 +783,18 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		size = 28
 		has_ring = no
 
-    	planet = {
-    		name = "Alpha Centauri B I"
-    		class = "pc_volcanic"
-    		orbit_distance = 25
-    		orbit_angle = 125
-    		size = 16
-    		has_ring = no
+		planet = {
+			name = "NAME_Alpha_Centauri_B_I"
+			class = "pc_volcanic"
+			orbit_distance = 25
+			orbit_angle = 125
+			size = 16
+			has_ring = no
 			flags = { pd_ignore }
-    	}
+		}
 
 		planet = {
-			name = "Alpha Centauri B II"
+    	name = "NAME_Alpha_Centauri_B_II"
 			orbit_distance = 25
 			orbit_angle = 120
 			class = "pc_hot_reducing"
@@ -800,7 +809,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 				}
 			}
 			moon = {
-				name = "Alpha Centauri B IIa"
+    			name = "NAME_Alpha_Centauri_B_IIa"
 				class = "pc_orbiting_asteroid"
 				size = 4
 				orbit_distance = 7
@@ -809,7 +818,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			}
 
 			moon = {
-				name = "Alpha Centauri B IIb"
+    			name = "NAME_Alpha_Centauri_B_IIb"
 				class = "pc_orbiting_asteroid"
 				size = 3
 				orbit_distance = 4
@@ -856,7 +865,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -864,7 +873,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_radiated"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -874,13 +883,14 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
 			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
 		
 			init_effect = {
 				add_modifier = {
@@ -893,7 +903,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -902,7 +912,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -912,17 +922,25 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
-			class = "pc_tundra"
+			name = "NAME_Proxima_Centauri_II"
+			class = "pc_eyeball"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
 			flags = { pd_ignore }
+			entity = "eyeball_planet_01_entity"
+
+			init_effect = {
+				add_modifier = {
+					modifier = "tidal_locked"
+					days = -1
+				}
+			}
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
@@ -1611,20 +1629,20 @@ coa_sol_neighbor_t2_tau_ceti = {
 			}
 			
 			init_effect = {
+				create_species = {
+					name = Tehrian
+					plural = Tehrians
+					class = "REP"
+					portrait = "rep5"
+					homeworld = THIS
+					traits = {
+						trait = "trait_communal"
+						trait = "trait_strong"
+					}
+				}
 				if = {
 					random_list = {
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1660,31 +1678,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = late_medieval_age
-								set_primitive_age = late_medieval_age
+								set_pre_ftl_age = late_medieval_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1720,31 +1725,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = renaissance_age
-								set_primitive_age = renaissance_age
+								set_pre_ftl_age = renaissance_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1780,31 +1772,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = preindustrial_01
 								set_country_flag = steam_age
-								set_primitive_age = steam_age
+								set_pre_ftl_age = steam_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = auth_imperial
@@ -1840,31 +1819,18 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = industrial_age
-								set_primitive_age = industrial_age
+								set_pre_ftl_age = industrial_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
 							}
 						}
 						20 = {
-							create_species = {
-								name = Tehrian
-								plural = Tehrians
-								class = "REP"
-								portrait = "rep5"
-								homeworld = THIS
-								traits = {
-									trait = "trait_communal"
-									trait = "trait_strong"
-								}
-							}
 							create_country = {
 								name = "Tehrian Civilization"
 								authority = random
@@ -1900,14 +1866,12 @@ coa_sol_neighbor_t2_tau_ceti = {
 							last_created_country = {
 								set_graphical_culture = industrial_01
 								set_country_flag = machine_age
-								set_primitive_age = machine_age
+								set_pre_ftl_age = machine_age
 							}
 							
 							set_owner = last_created_country
 
-							clear_blockers = yes
-							setup_primitive_planet = yes
-							create_primitive_armies = yes
+							setup_pre_ftl_planet = yes
 							
 							last_created_country = {
 								capital_scope = { set_name = "Tau Ceti IVa" }
@@ -3221,111 +3185,15 @@ coa_neighbor_t3_Luytens_star = {
 			flags = { pd_ignore }
 		}
 	}
-
-	# Small and Tiny Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = tiny
-					galaxy_size = small
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 7 max = 8 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# Medium and Large Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = medium
-					galaxy_size = large
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 8 max = 9 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
-
-	# All other galaxy sizes Kel Azak System Initializers
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting > 1
-			}
-		}
-
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "npc_kel_azak_system_initializer"
-	}
-
-	neighbor_system = {
-		trigger = {
-			AND = {
-				OR = {
-					galaxy_size = huge
-					galaxy_size = gigantic
-					galaxy_size = immense
-				}
-				num_ai_empires_setting <= 1
-			}
-		}
-		
-		hyperlane_jumps = { min = 9 max = 10 }
-		initializer = "virgin_kel_azak_system_initializer"
-	}
 }
 
 # CoA Neighbor Tier 3
 coa_neighbor_t3_trappist_1 = {
-	name = "Trappist-1"
+	name = "NAME_Trappist_1"
 	class = sc_m
-	flags = { custom_system }
 
 	planet = {
-		name = "Trappist-1"
+		name = "NAME_Trappist_1"
 		count = 1
 		class = pc_m_star
 		orbit_distance = 0
@@ -3336,19 +3204,20 @@ coa_neighbor_t3_trappist_1 = {
 	
 	# Trappist-1b
 	planet = {
-		name = "Trappist-1 b"
-		class = "pc_molten"
+		name = "NAME_Trappist_1_b"
+		class = "pc_hothouse"
 		orbit_distance = 20
 		orbit_angle = 15
 		size = 16
 		has_ring = no
 		flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
 	}
 	
 	# Trappist-1c
 	planet = {
-		name = "Trappist-1 c"
-		class = "pc_toxic"
+		name = "NAME_Trappist_1_c"
+		class = "pc_hot_reducing"
 		orbit_distance = 16
 		orbit_angle = 85
 		size = 16
@@ -3358,31 +3227,38 @@ coa_neighbor_t3_trappist_1 = {
 
 	# Trappist-1d
 	planet = {
-		name = "Trappist-1 d"
-		class = "pc_hot_reducing"
+		name = "NAME_Trappist_1_d"
+		class = "pc_tidallylocked"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+		entity = tidallylocked_planet_01_entity
+
+		init_effect = {
+			add_modifier = {
+				modifier = "tidal_locked"
+				days = -1
+			}
+		}
 	}
 
 	# Trappist-1e
 	planet = {
-		name = "Trappist-1 e"
-		class = "pc_tidallylocked"
+		name = "NAME_Trappist_1_e"
+		class = "pc_aquaticcold"
 		orbit_distance = 16
 		orbit_angle = 125
 		size = 15
 		has_ring = no
-		entity = "tidallylocked_planet_01_entity"
 		flags = { pd_ignore }
 	}
 
 	# Trappist-1f
 	planet = {
-		name = "Trappist-1 f"
-		class = "pc_hot_reducing"
+		name = "NAME_Trappist_1_f"
+		class = "pc_waterworld"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
@@ -3392,8 +3268,8 @@ coa_neighbor_t3_trappist_1 = {
 
 	# Trappist-1g
 	planet = {
-		name = "Trappist-1 g"
-		class = "pc_glacial"
+		name = "NAME_Trappist_1_g"
+		class = "pc_waterworld"
 		orbit_distance = 16
 		orbit_angle = -130
 		size = 18
@@ -3403,13 +3279,54 @@ coa_neighbor_t3_trappist_1 = {
 
 	# Trappist-1h
 	planet = {
-		name = "Trappist-1 h"
+		name = "NAME_Trappist_1_h"
 		class = "pc_frozen"
 		orbit_distance = 16
 		orbit_angle = 245
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
+	}
+
+	# Small and Tiny 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = tiny
+				galaxy_size = small
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# Medium, Large, and Huge 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = medium
+				galaxy_size = large
+				galaxy_size = huge
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# All other galaxy sizes 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = gigantic
+				galaxy_size = immense
+			}
+			num_ai_empires_setting > 1
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_70_virginis_system_initializer"
 	}
 }
 

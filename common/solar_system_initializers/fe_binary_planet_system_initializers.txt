@@ -2062,15 +2062,15 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
                 random_list = {
                     # Early Space Age
                     25 = {
-                        generate_late_primitives_on_planet = yes		
+                        generate_late_pre_ftls_on_planet = yes		
                     }
                     # Industrial Age
                     50 = {
-                        generate_early_primitives_on_planet = yes
+                        generate_early_pre_ftls_on_planet = yes
                     }
                     # Medieval
                     25 = {
-                        generate_primitives_on_planet = yes
+                        generate_pre_ftls_on_planet = yes
                     }
                 }
             }
@@ -2089,15 +2089,15 @@ fe_random_pre_ftl_one_binary_planet_system_initializer = {
                 random_list = {
                     # Early Space Age
                     15 = {
-                        generate_late_primitives_on_planet = yes		
+                        generate_late_pre_ftls_on_planet = yes		
                     }
                     # Industrial Age
                     20 = {
-                        generate_early_primitives_on_planet = yes
+                        generate_early_pre_ftls_on_planet = yes
                     }
                     # Medieval
                     15 = {
-                        generate_primitives_on_planet = yes
+                        generate_pre_ftls_on_planet = yes
                     }
                     50 = {
 
@@ -2224,15 +2224,15 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
                 random_list = {
                     # Early Space Age
                     25 = {
-                        generate_late_primitives_on_planet = yes		
+                        generate_late_pre_ftls_on_planet = yes		
                     }
                     # Industrial Age
                     50 = {
-                        generate_early_primitives_on_planet = yes
+                        generate_early_pre_ftls_on_planet = yes
                     }
                     # Medieval
                     25 = {
-                        generate_primitives_on_planet = yes
+                        generate_pre_ftls_on_planet = yes
                     }
                 }
             }
@@ -2251,15 +2251,15 @@ fe_random_pre_ftl_two_binary_planet_system_initializer = {
                 random_list = {
                     # Early Space Age
                     15 = {
-                        generate_late_primitives_on_planet = yes		
+                        generate_late_pre_ftls_on_planet = yes		
                     }
                     # Industrial Age
                     20 = {
-                        generate_early_primitives_on_planet = yes
+                        generate_early_pre_ftls_on_planet = yes
                     }
                     # Medieval
                     15 = {
-                        generate_primitives_on_planet = yes
+                        generate_pre_ftls_on_planet = yes
                     }
                     50 = {
 

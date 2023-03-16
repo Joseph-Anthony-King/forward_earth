@@ -2874,65 +2874,6 @@ mu_cephei_initializer = {
 	}
 }
 
-polaris_initializer = {	
-	name = "NAME_Polaris"
-	class = sc_binary_8
-    usage = misc_system_init
-    usage_odds = 100
-    max_instances = 1
-	
-	planet = {
-		name = "NAME_Polaris_A"
-		class = "pc_g_star"
-		orbit_distance = 0
-		orbit_angle = 1
-		size = 40
-		has_ring = no
-	
-		planet = {
-			name = "NAME_Polaris_B"
-			class = "pc_k_star"
-			orbit_distance = 60
-			orbit_angle = 45
-			size = 25
-			has_ring = no
-		}
-	}
-	
-	planet = {
-		class = "pc_tropical"
-		orbit_distance = 90
-		orbit_angle = 120
-		size = 20
-		has_ring = no
-		flags = { pd_ignore }
-	}
-	
-	planet = {
-		class = "pc_barren"
-		orbit_distance = 30
-		orbit_angle = 170
-		size = 12
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-		orbit_distance = 30
-		orbit_angle = 45
-		size = 10
-		has_ring = no
-	}
-	
-	planet = {
-		class = "pc_barren_cold"
-		orbit_distance = 40
-		orbit_angle = 95
-		size = 15
-		has_ring = yes
-	}
-}
-
 rigel_initializer = {	
 	name = "NAME_Rigel"
 	class = sc_trinary_2

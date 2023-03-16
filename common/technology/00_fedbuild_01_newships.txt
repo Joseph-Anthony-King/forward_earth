@@ -1,0 +1,48 @@
+#Enables Federation Builder Components to appear
+tech_css_fedbuild_01 = {
+	area = engineering
+	tier = 0
+	cost = 0
+	category = { voidcraft }
+	start_tech = yes
+    
+	potential = {
+		OR = {
+			graphical_culture = "css_fedbuild_01"
+			graphical_culture = "css_fedbuild_02"
+			graphical_culture = "css_fedbuild_03"
+			graphical_culture = "css_fedbuild_04"
+		}
+	}
+			
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_CSS_FEDBUILD"
+			desc = "TECH_CSS_FEDBUILD"
+		}
+	}
+}
+
+tech_css_fedbuild_02 = {
+	area = engineering
+	tier = 0
+	cost = 0
+	category = { voidcraft }
+	start_tech = yes
+    
+	potential = {
+		OR = {
+			graphical_culture = "css_fedbuild_01"
+			graphical_culture = "css_fedbuild_02"
+			graphical_culture = "css_fedbuild_03"
+			graphical_culture = "css_fedbuild_04"
+		}
+	}
+			
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_CSS_FEDBUILD"
+			desc = "TECH_CSS_FEDBUILD"
+		}
+	}
+}
