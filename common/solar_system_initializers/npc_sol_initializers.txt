@@ -376,7 +376,7 @@ npc_sol_neighbor_t1_no_guaranteed_colony = {
 
 # Sol Neighbor Tier 1
 npc_sol_neighbor_t1 = {
-	name = "NAME_Barnard's_Star"
+	name = "NAME_Barnards_Star"
 	class = sc_m
 
 	init_effect = {
@@ -389,7 +389,7 @@ npc_sol_neighbor_t1 = {
 	}
 
 	planet = {
-		name = "NAME_Barnard's_Star"
+		name = "NAME_Barnards_Star"
 		class = star
 		class = "pc_m_star"
 		orbit_distance = 0
