@@ -792,7 +792,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 # Sol Neighbor Tier 1 - Barnard's Star
 sol_neighbor_t1 = {
-	name = "NAME_Barnard's_Star"
+	name = "NAME_Barnards_Star"
 	class = sc_m
 
 	init_effect = {
@@ -805,7 +805,7 @@ sol_neighbor_t1 = {
 	}
 
 	planet = {
-		name = "NAME_Barnard's_Star"
+		name = "NAME_Barnards_Star"
 		class = star
 		class = "pc_m_star"
 		orbit_distance = 0
@@ -3495,7 +3495,7 @@ com_sol_neighbor_t1_first_colony = {
 
 # Commonwealth Sol Neighbor Tier 1
 com_sol_neighbor_t1 = {
-	name = "NAME_Barnard's_Star"
+	name = "NAME_Barnards_Star"
 	class = sc_m
 
 	init_effect = {
@@ -3508,7 +3508,7 @@ com_sol_neighbor_t1 = {
 	}
 
 	planet = {
-		name = "NAME_Barnard's_Star"
+		name = "NAME_Barnards_Star"
 		class = star
 		class = "pc_m_star"
 		orbit_distance = 0
@@ -4321,7 +4321,7 @@ lost_colony_sol_neighbor_t1_first_colony = {
 
 # Human Lost Colony Sol Neighbor Tier 1
 lost_colony_sol_neighbor_t1 = {
-	name = "NAME_Barnard's_Star"
+	name = "NAME_Barnards_Star"
 	class = sc_m
 
 	init_effect = {
@@ -4334,7 +4334,7 @@ lost_colony_sol_neighbor_t1 = {
 	}
 
 	planet = {
-		name = "NAME_Barnard's_Star"
+		name = "NAME_Barnards_Star"
 		class = star
 		class = "pc_m_star"
 		orbit_distance = 0
