@@ -2746,7 +2746,7 @@ sol_neighbor_t1_3_1 = {
 		orbit_angle = 125
 		size = 35
 		has_ring = yes
-		entity = "gas_giant_11_entity"
+		entity = "gas_giant_02_entity"
 		flags = { planet_anemoi pd_ignore }
 		
 		moon = {
@@ -2804,7 +2804,7 @@ sol_neighbor_t1_3_1 = {
 		orbit_angle = 0
 		size = 25
 		has_ring = yes
-		entity = "gas_giant_07_entity"
+		entity = "gas_giant_neptune_entity"
 		flags = { planet_hyperion pd_ignore }
 		
 		moon = {
@@ -2842,7 +2842,7 @@ sol_neighbor_t1_3_1 = {
 			orbit_angle = 4
 			size = 20
 			has_ring = yes
-			entity = "gas_giant_09_entity"
+			entity = "gas_giant_03_entity"
 			flags = { planet_olympus pd_ignore }
 
 			moon = {

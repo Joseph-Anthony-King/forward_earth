@@ -2285,7 +2285,7 @@ kobol_initializer = {
 		orbit_angle = 90
 		size = 24
 		has_ring = yes
-		entity = "gas_giant_06_entity"
+		entity = "gas_giant_05_entity"
         flags = { pd_ignore }
 		
 		moon = {

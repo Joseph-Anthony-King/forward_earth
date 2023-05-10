@@ -132,7 +132,7 @@ deneb_system = {
 		orbit_angle = 110
 		size = 30
 		has_ring = no
-		entity = "gas_giant_05_entity"
+		entity = "gas_giant_neptune_entity"
 		flags = { pd_ignore }
 
 		moon = {
