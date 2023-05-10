@@ -27,9 +27,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_venus_continental.dds"
+	texture_diffuse = "venus_continental_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_venus_specular.dds"
+	texture_specular = "venus_specular_realsol.dds"
 	}
 	
 	##cloud texture override
@@ -62,7 +62,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_venus_barren.dds"
+	texture_diffuse = "venus_barren_realsol.dds"
 	texture_normal = "nonormal.dds"
 	texture_specular = "nospec.dds"
 	}
@@ -85,6 +85,7 @@ entity = {
 	texture_diffuse = "venus.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
 	}
 	
 	
@@ -110,9 +111,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_venus_nuked.dds"
+	texture_diffuse = "venus_nuked_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_venus_specular.dds"
+	texture_specular = "venus_specular_realsol.dds"
 	}
 	
 	##pole texture override
@@ -153,9 +154,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_machine_venus.dds"
+	texture_diffuse = "venus_machine_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_venus_specular.dds"
+	texture_specular = "venus_specular_realsol.dds"
 	}
 	
 	##pole texture override
@@ -196,9 +197,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_venus_nuked.dds"
+	texture_diffuse = "venus_nuked_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_venus_specular.dds"
+	texture_specular = "venus_specular_realsol.dds"
 	}
 	
 	##pole texture override
@@ -232,6 +233,49 @@ entity = {
 	}
 }
 
+# Psionic Venus
+entity = {
+ 	name = "realsol_psi_venus_entity"
+ 	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "venus_continental_realsol.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "venus_specular_realsol.dds"
+	}
+
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_shroud_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_shroud_4_01_diffuse.dds"
+	texture_normal = "clouds_medium_normal.dds"
+	texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_shroud_shadow_01_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+ 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
 # Desert Earth
 entity = {
 	name = "realsol_earth_desert_entity"
@@ -239,9 +283,9 @@ entity = {
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_desert.dds"
-	texture_normal = "realsol_earth_desert_normal.dds"
-	texture_specular = "realsol_earth_desert_spec.dds"
+	texture_diffuse = "earth_desert_realsol.dds"
+	texture_normal = "earth_desert_normal_realsol.dds"
+	texture_specular = "earth_desert_spec_realsol.dds"
 	}
 
 	##cloud texture override
@@ -282,7 +326,7 @@ entity = {
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_arid.dds"
+	texture_diffuse = "earth_arid_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -310,15 +354,15 @@ entity = {
 	}
 }
 
-# Savannah Earth
+# Savannah Earth - More Earth Textures
 entity = {
 	name = "realsol_earth_savannah_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_savannah.dds"
-	texture_normal = "realsol_earth_alpine_normal.dds"
+	texture_diffuse = "earth_savannah_realsol.dds"
+	texture_normal = "earth_alpine_normal_realsol.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
 
@@ -352,7 +396,7 @@ entity = {
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_tropical.dds"
+	texture_diffuse = "earth_tropical_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -387,9 +431,9 @@ entity = {
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_ocean.dds"
-	texture_normal = "realsol_earth_ocean_normal.dds"
-	texture_specular = "realsol_earth_ocean_spec.dds"
+	texture_diffuse = "earth_ocean_realsol.dds"
+	texture_normal = "earth_ocean_normal_realsol.dds"
+	texture_specular = "earth_ocean_spec_realsol.dds"
 	}
 
 	##cloud texture override
@@ -415,14 +459,14 @@ entity = {
 	}
 }
 
-# Tundra Earth
+# Tundra Earth - More Earth Textures
 entity = {
 	name = "realsol_earth_tundra_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_tundra.dds"
+	texture_diffuse = "earth_tundra_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -457,9 +501,9 @@ entity = {
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_arctic.dds"
-	texture_normal = "realsol_earth_arctic_normal.dds"
-	texture_specular = "realsol_earth_arctic_spec.dds"
+	texture_diffuse = "earth_arctic_realsol.dds"
+	texture_normal = "earth_arctic_normal_realsol.dds"
+	texture_specular = "earth_arctic_spec_realsol.dds"
 	}
 
 	##cloud texture override
@@ -485,15 +529,15 @@ entity = {
 	}
 }
 
-# Alpine Earth
+# Alpine Earth - More Earth Textures
 entity = {
 	name = "realsol_earth_alpine_entity"
 	pdxmesh = "planet_clouded_mesh"
 
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_earth_alpine.dds"
-	texture_normal = "realsol_earth_alpine_normal.dds"
+	texture_diffuse = "earth_alpine_realsol.dds"
+	texture_normal = "earth_alpine_normal_realsol.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
 
@@ -527,7 +571,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "barren_earth.dds"
+	texture_diffuse = "earth_barren_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -546,7 +590,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "fallout_earth.dds"
+	texture_diffuse = "earth_nuked_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -589,7 +633,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "infested_earth.dds"
+	texture_diffuse = "earth_infested_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -622,6 +666,41 @@ entity = {
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 } }
 }
 
+# Gaia Earth - More Earth Textures
+entity = {
+	name = "realsol_earth_gaia_entity"
+	pdxmesh = "planet_clouded_mesh"
+
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "earth_gaia_realsol"
+	texture_normal = "continental_05_normals.dds"
+	texture_specular = "continental_05_spec.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_medium_diffuse.dds"
+	texture_normal = "clouds_medium_normal.dds"
+	texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_medium_shadow_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+	start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
 # Machine Earth
 entity = {
  	name = "realsol_ai_earth_entity"
@@ -629,7 +708,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "barren_earth.dds"
+	texture_diffuse = "earth_barren_realsol.dds"
 	texture_normal = "continental_05_normals.dds"
 	texture_specular = "continental_05_spec.dds"
 	}
@@ -664,7 +743,7 @@ entity = {
 	##cloud texture override
 	meshsettings = {
 	name = "clouds_geosphereShape"
-	texture_diffuse = "clouds_shroud_01_diffuse.dds"
+	texture_diffuse = "clouds_shroud_4_01_diffuse.dds"
 	texture_normal = "clouds_medium_normal.dds"
 	texture_specular = "clouds_medium_specular.dds"
 	}
@@ -684,16 +763,16 @@ entity = {
 	}
 }
 
-# New Moon
+# New Luna
 entity = {
 	name = "realsol_new_moon_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_moon.dds"
+	texture_diffuse = "luna.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	default_state = "idle"
@@ -703,16 +782,16 @@ entity = {
 	}
 }
 
-# New Moon Warm
+# New Luna Warm
 entity = {
 	name = "realsol_new_moon_warm_entity"
 	pdxmesh = "planet_no_pole_no_clouds_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_moon_warm.dds"
+	texture_diffuse = "luna_warm_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	default_state = "idle"
@@ -722,16 +801,16 @@ entity = {
 	}
 }
 
-# Continental Moon
+# Continental Luna
 entity = {
 	name = "realsol_continental_moon_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_continental_moon.dds"
+	texture_diffuse = "luna_continental_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	##cloud texture override
@@ -757,16 +836,16 @@ entity = {
 	}
 }
 
-# Tundra Moon
+# Tundra Luna
 entity = {
 	name = "realsol_tundra_moon_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_tundra_moon.dds"
+	texture_diffuse = "luna_tundra_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	##cloud texture override
@@ -792,16 +871,16 @@ entity = {
 	}
 }
 
-# Lifeless Moon
+# Nuked Luna
 entity = {
 	name = "realsol_lifeless_moon_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_nuked_moon.dds"
+	texture_diffuse = "luna_nuked_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	##cloud texture override
@@ -834,9 +913,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_nuked_moon.dds"
+	texture_diffuse = "luna_nuked_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "realsol_moon_specular.dds"
+	texture_specular = "luna_specular_realsol.dds"
 	}
 	
 	##cloud texture override
@@ -862,7 +941,7 @@ entity = {
 	}
 }
 
-# New Mars
+# New Mars (3/30/2023 the old newmars dds was added back for compatibility with mods that use old structure of Real Sol. Remove once updates are made by their authors.)
 entity = {
  	name = "barren_planet_new_mars_entity"
 
@@ -870,9 +949,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "newmars.dds"
+	texture_diffuse = "mars.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 
 	default_state = "idle"
@@ -890,9 +969,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "cold_mars.dds"
+	texture_diffuse = "mars_cold_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 
 	default_state = "idle"
@@ -910,9 +989,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "continental_mars.dds"
+	texture_diffuse = "mars_continental_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 
 	default_state = "idle"
@@ -930,9 +1009,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "arid_mars.dds"
+	texture_diffuse = "mars_arid_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 
 	default_state = "idle"
@@ -950,9 +1029,9 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_machine_mars.dds"
+	texture_diffuse = "mars_machine_realsol.dds"
 	texture_normal = "nonormal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 
 	default_state = "idle"
@@ -962,16 +1041,16 @@ entity = {
 	}
 }
 
-# Prethoryn Mars
+# Infested Mars
 entity = {
 	name = "infested_planet_mars_entity"
 	pdxmesh = "planet_clouded_mesh"
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "infested_mars.dds"
+	texture_diffuse = "mars_infested_realsol.dds"
 	texture_normal = "barren_04_normal.dds"
-	texture_specular = "terraformed_mars_specular.dds"
+	texture_specular = "mars_specular_realsol.dds"
 	}
 	
 	##pole texture override
@@ -1002,6 +1081,49 @@ entity = {
 	state = { name = "idle" animation = "idle" time_offset = { 0 100 } }
 }
 
+# Psionic Mars
+entity = {
+ 	name = "realsol_mars_psi_entity"
+ 	pdxmesh = "planet_clouded_mesh"
+	
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "mars_continental_realsol.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "mars_specular_realsol.dds"
+	}
+
+	##pole texture override
+	meshsettings = {
+	name = "polesShape"
+	texture_diffuse = "poles_shroud_1_diffuse.dds"
+	texture_normal = "poles_1_normal.dds"
+	texture_specular = "poles_1_specular.dds"
+	}
+
+	##cloud texture override
+	meshsettings = {
+	name = "clouds_geosphereShape"
+	texture_diffuse = "clouds_shroud_4_01_diffuse.dds"
+	texture_normal = "clouds_medium_normal.dds"
+	texture_specular = "clouds_medium_specular.dds"
+	}
+
+	##cloud shadow texture override
+	meshsettings = {
+	name = "clouds_shadow_geosphereShape"
+	texture_diffuse = "clouds_shroud_shadow_01_diffuse.dds"
+	texture_normal = "nonormal.dds"
+	texture_specular = "nospec.dds"
+	}
+
+	default_state = "idle"
+ 	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+
 # Ceres - Barren
 entity = {
  	name = "barren_planet_ceres_entity"
@@ -1010,7 +1132,7 @@ entity = {
 	
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_barren_ceres.dds"
+	texture_diffuse = "ceres_barren_realsol.dds"
 	texture_normal = "nonormal.dds"
 	texture_specular = "nospec.dds"
 	}
@@ -1029,9 +1151,10 @@ entity = {
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_jupiter.dds"
+	texture_diffuse = "jupiter.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
 	}
 	
 	default_state = "idle"
@@ -1048,7 +1171,7 @@ entity = {
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_jupiter.dds"
+	texture_diffuse = "jupiter.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "realsol_gas_specular.dds"
 	}
@@ -1067,7 +1190,7 @@ entity = {
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_jupiter_food.dds"
+	texture_diffuse = "jupiter_food_realsol.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "realsol_gas_specular.dds"
 	}
@@ -1137,6 +1260,26 @@ entity = {
 	scale = 1.2
 }
 
+# Europa - Arctic
+entity = {
+	name = "moon_jup_europa_arctic_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+		
+	meshsettings = {
+	name = "planet_geosphereShape"
+	texture_diffuse = "europa.dds"
+	texture_normal = "arctic_01_normals.dds"
+	texture_specular = "arctic_01_spec.dds"
+	}
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+	scale = 1.2
+}
+
 # Ganymede
 entity = {
 	name = "moon_jup_ganymede_entity"
@@ -1187,6 +1330,7 @@ entity = {
 	texture_diffuse = "saturn.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
 	}
 	
 	default_state = "idle"
@@ -1252,41 +1396,6 @@ entity = {
 	scale = 1.2
 }
 
-# Enceladus
-entity = {
-	name = "frozen_planet_04_entity"
-	pdxmesh = "planet_clouded_mesh"
-	
-	meshsettings = {
-	name = "planet_geosphereShape"
-	texture_diffuse = "frozen_04_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-		
-	##cloud texture override
-	meshsettings = {
-	name = "clouds_geosphereShape"
-	texture_diffuse = "clouds_thin_diffuse.dds"
-	texture_normal = "clouds_thin_normal.dds"
-	texture_specular = "clouds_thin_specular.dds"
-	}
-	
-	##cloud shadow texture override
-	meshsettings = {
-	name = "clouds_shadow_geosphereShape"
-	texture_diffuse = "clouds_thin_shadow_diffuse.dds"
-	texture_normal = "nonormal.dds"
-	texture_specular = "nospec.dds"
-	}
-	
-	default_state = "idle"
-	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
-		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
-	}
-}
-
 # Titan
 entity = {
 	name = "moon_sat_titan_entity"
@@ -1316,6 +1425,7 @@ entity = {
 	texture_diffuse = "uranus.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
 	}
 	
 	default_state = "idle"
@@ -1391,6 +1501,7 @@ entity = {
 	texture_diffuse = "neptune.dds"
 	texture_normal = "gas_giant_01_normal.dds"
 	texture_specular = "gas_giant_01_specular.dds"
+	shader = PdxMeshGasGiant
 	}
 	
 	default_state = "idle"
@@ -1463,7 +1574,7 @@ entity = {
 		
 	meshsettings = {
 	name = "planet_geosphereShape"
-	texture_diffuse = "realsol_pluto.dds"
+	texture_diffuse = "pluto_barren_realsol.dds"
 	texture_normal = "nonormal.dds"
 	texture_specular = "nospec.dds"
 	}
