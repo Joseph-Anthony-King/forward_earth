@@ -1,518 +1,501 @@
 ﻿l_japanese:
-# See also: english\random_names\random_names_l_english.yml, which contains the names used for randomly-generated stars. The stars named in this file belong to particular, scripted star systems.
-
-######################
-# PRESCRIPTED SYSTEMS
-######################
-
-# United Nations of Earth
- NAME_United_Nations_of_Earth:0 "国際地球連合"
- NAME_Sol:0 "ソル"
- NAME_1_Ceres:0 "1 ケレス"
- NAME_2_Pallas:0 "2 パラス"
- NAME_3_Juno:0 "3 ジュノー"
- NAME_4_Vesta:0 "4 ヴェスタ"
- NAME_Mercury:0 "水星"
- NAME_Venus:0 "金星"
- NAME_Earth:0 "地球"
- NAME_Luna:0 "月"
- NAME_Mars:0 "火星"
- NAME_Jupiter:0 "木星"
- NAME_Io:0 "イオ"
- NAME_Europa:0 "エウロパ"
- NAME_Ganymede:0 "ガニメデ"
- NAME_Callisto:0 "カリスト"
- NAME_Saturn:0 "土星"
- NAME_Titan:0 "タイタン"
- NAME_Uranus:0 "天王星"
- NAME_Neptune:0 "海王星"
- NAME_Triton:0 "トリトン"
- NAME_134340_Pluto:0 "134340 冥王星"
-
-# UNE neighboring systems
- NAME_Alpha_Centauri:0 "アルファ・ケンタウリ"
- NAME_Alpha_Centauri_A:0 "アルファ・ケンタウリ A"
- NAME_Alpha_Centauri_B:0 "アルファ・ケンタウリ B"
- NAME_Alpha_Centauri_B_I:0 "アルファ・ケンタウリ B I"
- NAME_Alpha_Centauri_B_II:0 "アルファ・ケンタウリ B II"
- NAME_Alpha_Centauri_B_III:0 "アルファ・ケンタウリ B III"
- NAME_Barnards_Star:0 "バーナード星"
- NAME_Polaris:0 "ポラリス"
- NAME_PolarisAa:0 "ポラリス Aa"
- NAME_PolarisAb:0 "ポラリス Ab"
- NAME_PolarisB:0 "ポラリス B"
- NAME_Procyon:0 "プロキオン"
- NAME_Procyon_A:0 "プロキオン A"
- NAME_Procyon_B:0 "プロキオン B"
- NAME_Proxima_Centauri:0 "プロキシマ・ケンタウリ"
- NAME_Proxima_Centauri_b:0 "プロキシマ・ケンタウリ b"
- NAME_Proxima_Centauri_c:0 "プロキシマ・ケンタウリ c"
- NAME_Sirius:0 "シリウス"
- NAME_Sirius_A:0 "シリウス A"
- NAME_Sirius_B:0 "シリウス B"
-
- NAME_136472_Makemake:0 "136472 マケマケ"
- NAME_136108_Haumea:0 "136108 ハウメア"
- NAME_20000_Varuna:0 "20000 ヴァルナ"
-
-# Deneb (Commonwealth of Man/UNE)
- NAME_Deneb:0 "デネブ" #star
- NAME_Inferno:0 "インフェルノ" #planet
- NAME_DT4-298:0 "DT4-298" #asteroid
- NAME_LR-2129:0 "LR-2129" #asteroid
- NAME_GR-345:0 "GR-345" #asteroid
- NAME_Olympus:0 "オリンパス" #planet
- NAME_New_Luna:0 "ニュー・ルナ" #moon, as in 'NAME_Luna'
- NAME_Unity:0 "ユニティ" #moon
- NAME_Marble:0 "マーブル" #planet
- NAME_Hyperion:0 "ハイペリオン" #planet
- NAME_Helios:0 "ヘリオス" #moon
- NAME_Tumbleweed:0 "タンブルウィード" #planet
- NAME_Jackson's_Planet:0 "ジャクソンの惑星" #planet
-
-# Sol (Void Dweller origin)
- NAME_Sol_Void_Dweller:0 "ソル (宇宙生まれ)" #system
- NAME_Old_Earth:0 "古き地球" #planet
- NAME_Earth_Habitat:0 "地球居住地"
- NAME_Mars_Habitat:0 "火星居住地"
- NAME_Saturn_Habitat:0 "土星居住地"
-
-# Sol (Knights of the Toxic God)
- NAME_Luna_Habitat:0 "ニュー・ルナ居住地"
-
-#L-Cluster
- NAME_Final_Egress:0 "ターミナル・エグレス" #star
- NAME_Sel-Ufaan:0 "セル＝ウファアン"
- NAME_Ten-Aard-Shel:0 "テン＝アールド＝シェル"
- NAME_Diim-Fu-Rem:0 "ディイム＝フー＝レム"
- NAME_Dora-Fu-Rem:0 "ドラ＝フー＝レム"
- NAME_Naal-Di-Kor:0 "ナアル＝ディ＝コル"
- NAME_Tao-Enar-Vi:0 "タオ＝エナール＝ヴィ"
- NAME_Tao-Fun-Vi:0 "タオ＝フン＝ヴィ"
- NAME_Tao-Arl-Vi:0 "タオ＝アール＝ヴィ"
- NAME_Tao-Got-Vi:0 "タオ＝ゴット＝ヴィ"
- NAME_Gol-Unda-Fiir:0 "ゴル＝ウンダ＝フィイル"
- NAME_Dora-Enar-Fiir:0 "ドラ＝エナール＝フィイル"
- NAME_Dora-Fun-Fiir:0 "ドラ＝フン＝フィイル"
- NAME_Dora-Arl-Fiir:0 "ドラ＝アール＝フィイル"
- NAME_Dora-Got-Fiir:0 "ドラ＝ゴット＝フィイル"
- NAME_Gol-Umn-Toor:0 "ゴル＝ウムン＝トオル"
- NAME_Dora-Enar-Toor:0 "ドラ＝エナール＝トオル"
- NAME_Gol-Salm-Ri:0 "ゴル＝サルム＝リ"
- NAME_Gol-Mel-Rood:0 "ゴル＝メル＝ルウド"
- NAME_Dora-Enar-Rood:0 "ドラ＝エナール＝ルウド"
-
-##############
-# CARAVANEERS
-##############
-
-# Ship names
- NAME_Caravaneer_Starbase:0 "キャラバンビーコン"
-
-###########
-# ENCLAVES
-###########
-
-# Artisans
- NAME_Artisan_Troupe:0 "工匠中立機構" #empire
- NAME_Artisan_adj:0 "工匠" #empire, e.g. 'an Artisan starbase'
- NAME_Ars_Artem:0 "アルス・アルテム"
-
-# Curators
- NAME_Curator_Order:0 "学術中立機構" #empire
- NAME_Curator_adj:0 "学術" #empire, e.g. 'a Curator starbase'
- NAME_Curator_Alpha_Enclave:0 "学術中立機構アルファ" #starbase
- NAME_Curator_Lambda_Enclave:0 "学術中立機構ラムダ" #starbase
- NAME_Curator_Sigma_Enclave:0 "学術中立機構シグマ" #starbase
-
-# Traders
- NAME_Muutagan_Merchant_Guild:0 "ムウタガン商人ギルド" #empire
- NAME_Muutagan_adj:0 "ムウタガン" #empire
- NAME_Muutagan:0 "ムウタガン" #species
- NAME_Muutagan_plural:0 "ムウタガン"
- NAME_Muutag_Station:0 "ムウタグステーション" #starbase
- NAME_Riggan_Commerce_Exchange:0 "リガン商品取引所" #empire
- NAME_Riggan_adj:0 "リガン" #empire
- NAME_Riggan:0 "リガン" #species
- NAME_Riggan_plural:0 "リガン"
- NAME_Grand_Bazaar:0 "グランドバザール" #starbase
- NAME_XuraCorp:0 "ジュラコープ" #empire
- NAME_XuraCorp_adj:0 "ジュラコープ" #empire
- NAME_Xuri:0 "ジュリ" #species
- NAME_Xuri_plural:0 "ジュリ"
- NAME_XuraCorp_HQ:0 "ジュラコープ本部" #starbase
-
-# Salvagers
- NAME_Asters_Workshop:0 "アステルの作業場" #starbase
-
-# Shroudwalkers
- NAME_Shroud_Teachers:0 "シュラウドの座" #starbase
-
-#################
-# FALLEN EMPIRES
-#################
-# See also: entries in event_names_l_<language>.yml, which pertain to Awakened Empires.
-
-# Star system names
- NAME_Alpha_Refuge:0 "アルファ避難所"
- NAME_Beta_Refuge:0 "ベータ避難所"
- NAME_Gamma_Refuge:0 "ガンマ避難所"
- NAME_Delta_Refuge:0 "デルタ避難所"
- NAME_Great_Nexus:0 "知識の源泉"
- NAME_Custodian_Nexus:0 "中央処理"
-
-# Planet names
- NAME_Apostasy:0 "背教"
- NAME_Boundary:0 "境界"
- NAME_Brother:0 "兄弟"
- NAME_Celestial_Throne:0 "天上の帝位"
- NAME_The_Core:0 "ザ・コア"
- NAME_Cradle:0 "揺り籠"
- NAME_The_Mistake:0 "ザ・ミステイク"
- NAME_Mother:0 "母"
- NAME_The_Preserve:0 "保護区"
- NAME_Pristine_Jewel:0 "原始宝石"
- NAME_Prophets_Retreat:0 "預言者の隠れ家"
- NAME_Sister:0 "姉妹"
- NAME_Sky_Father:0 "空の父"
- NAME_Sky_Temple:0 "空の聖堂"
- NAME_Walled_Garden:0 "壁に囲まれた庭園"
- NAME_Wanderer:0 "放浪者"
- NAME_Alpha_Complex:0 "アルファ複合施設"
- NAME_The_Archives:0 "記録"
- NAME_Production_Unit:0 "生産ユニット"
- NAME_Processing_Unit:0 "処理ユニット"
- NAME_Circuit_I:0 "基盤 I" #ringworld segment
- NAME_Circuit_II:0 "基盤 II" #ringworld segment
- NAME_Circuit_III:0 "基盤 III" #ringworld segment
- NAME_Superstructure_I:0 "上部構造 I" #ringworld segment
- NAME_Superstructure_II:0 "上部構造 II" #ringworld segment
- NAME_Superstructure_III:0 "上部構造 III" #ringworld segment
-
-# Species names
- NAME_Dead_Species:0 "死せる種族"
- NAME_Synthetic:0 "人工生命体" #servant robot
- NAME_Synthetic_plural:0 "人工生命体"
-
-# Ship names
- NAME_Adjuster:0 "調停者"
- NAME_Alpha:0 "アルファ"
- NAME_Archivist:0 "記録者"
- NAME_Avatar:0 "アバター"
- NAME_Benevolence:0 "良心的"
- NAME_Beta:0 "ベータ"
- NAME_Cleanser:0 "浄化者"
- NAME_Cloaker:0 "隠匿者"
- NAME_Delta:0 "デルタ"
- NAME_Enforcer:0 "執行者"
- NAME_Librarian:0 "司書"
- NAME_Sage:0 "賢者"
- NAME_Savant:0 "識者"
- NAME_Scholar:0 "学者"
- NAME_Seeker:0 "偵察体"
- NAME_Epsilon:0 "イプシロン"
- NAME_Gamma:0 "ガンマ"
- NAME_Omega:0 "オメガ"
- NAME_Progress:0 "進捗"
- NAME_Surplus_I:0 "余剰"
- NAME_Surplus_II:1 "$NAME_Surplus_I$"
- NAME_Surplus_III:1 "$NAME_Surplus_I$"
- NAME_Tau:0 "タウ"
- NAME_Theta:0 "シータ"
-
-###########################
-# LEVIATHANS & SPACE FAUNA
-###########################
-# See also: event_names_l_english.yml, which caontains names used for when additional entities spawn, typically around mid-game.
-
-# Guardians/Leviathans
- NAME_Automated_Dreadnought:0 "自律巨大戦艦" #fleet
- NAME_JuukTidir:0 "ジュウクティーダー" #ship/entity
-
- NAME_Enigmatic_Fortress:0 "謎めいた要塞"
-
- NAME_Infinity_Machine:0 "永久機械" #empire, ship design
- NAME_I_O:0 "アイオー" #ship/entity
- NAME_The_Infinity_Machine:0 "永久機械" #fleet
- NAME_Gargantua:0 "ガルガンチュア" #black hole
-
- NAME_Voidwyrm:0 "宇宙竜" #empire
- NAME_Ether_Drake:0 "エーテルドレイク" #fleet
- NAME_Avice:0 "アヴィス" #ship/entity (named dragon)
- NAME_Grand_Dragon:0 "グランドドラゴン" #'ship' type
- NAME_Dragons_Hoard:0 "ドラゴンの財宝" #planet
-
-# Ancient Mining Drones
- NAME_Mineral_Extraction_Operation:0 "鉱物抽出作戦" #empire
- NAME_Central_Processing:0 "中央処理" #planet
- NAME_Ore_Grinder:0 "鉱石グラインダー" #planet
- NAME_Asset_Protection_Unit:0 "資産保護ユニット" #fleet
- NAME_Mining_Corps:0 "採掘結社" #fleet
-
-# Space Amoebae
- NAME_Spaceborne_Organics:0 "宇宙有機生命体" #empire
- NAME_Space_Amoebas_United:0 "宇宙アメーバ集合体" #empire
- NAME_Amor_Alveo:0 "アモール・アルヴェオ" #star
- NAME_Amor_Toreo:0 "アモール・トレオ" #planet
- NAME_Amor_Dareetheo:0 "アモール・ダレイセオ" #planet
- NAME_Veronax:0 "ヴェロナックス" #planet
- NAME_Evor_Aras:0 "イヴォール・アラス" #planet
- NAME_Evor_Tomos:0 "イヴォール・トモス" #planet
- NAME_Eberax:0 "エベラックス" #planet
- NAME_Tharonax:0 "サロナックス" #planet
- NAME_Narnax:0 "ナルナックス" #planet
- NAME_Tior:0 "ティオール" #planet
- NAME_Lemior:0 "レミオール" #planet
- NAME_Isior:0 "イシオール" #planet
- NAME_Selor:0 "セロール" #planet
- NAME_Theresior:0 "テレシオール" #planet
- NAME_Pesior:0 "ペシオール" #planet
- NAME_Amoeba_Swarm:0 "アメーバ群" #fleet
- NAME_Space_Amoeba_Hunters:0 "宇宙アメーバハンター" #fleet
-
-# Space Crystals
- NAME_Prism:0 "プリズム" #empire
- NAME_Crystal_Nidus:0 "クリスタルニダス" #ship
- NAME_Kappa:0 "カッパ" #ship
- NAME_Shardlings:0 "かけら" #fleet
- NAME_Shardling:0 "かけら" #ship
- NAME_Emerald_Guardians:0 "エメラルドの守護者" #fleet
- NAME_Emerald_Mausoleum:0 "エメラルドの大霊廟" #planet
- NAME_Emerald_Roamers:0 "エメラルドの放浪者" #fleet
- NAME_Ruby_Guardians:0 "ルビーの守護者" #fleet
- NAME_Ruby_Stack:0 "ルビーの山" #fleet
- NAME_Ruby_Swarm:0 "ルビーの群れ" #fleet
- NAME_Sapphire_Guardians:0 "サファイアの守護者" #fleet
- NAME_Sapphire_Lurkers:0 "サファイアの潜伏者" #fleet
- NAME_Topaz_Guardians:0 "トパーズの守護者" #fleet
- NAME_Shards_of_Diamond:0 "ダイヤモンドの破片" #fleet
- NAME_Shards_of_Obsidian:0 "黒曜石の破片" #fleet
- NAME_Shards_of_Onyx:0 "オニキスの破片" #fleet
- NAME_Shards_of_Sapphire:0 "サファイアの破片" #fleet
- NAME_Yormak's_Belly:0 "ヨーマクの腹" #planet
- NAME_Yormak's_Eye:0 "ヨーマクの眼" #planet
- NAME_Yormak's_Fist:0 "ヨーマクの拳" #planet
- NAME_Yormak's_Heart:0 "ヨーマクの心臓" #planet
- NAME_Yormak's_Snout:0 "ヨーマクの吻" #planet
- NAME_Yormak's_Tail:0 "ヨーマクの尾" #planet
- NAME_Yormak's_Tongue:0 "ヨーマクの舌" #planet
- NAME_Yormak's_Tusk:0 "ヨーマクの牙" #planet
-
-# Tiyanki
- NAME_Placid_Leviathans:0 "穏やかなるリヴァイアサン" #empire
- NAME_Tiyanki_Space_Whale:0 "宇宙鯨・ティヤンキ" #fleet
- NAME_Tiyanki_Bull:0 "ティヤンキ・オス"
- NAME_Tiyanki_Cow:0 "ティヤンキ・メス"
- NAME_Tiyanki_Hatchling:0 "ティヤンキ・幼生"
-
- NAME_Tiyana_Vek:0 "ティヤナ・ヴェク" #star
- NAME_Zathika_Mev:0 "ザティーカ・メヴ" #planet
- NAME_Surribzha:0 "スリーブザー" #planet
- NAME_Yllarv:0 "イリャールヴ" #planet
- NAME_Khetzhavu:0 "ケットザーヴ" #planet
- NAME_Dulna:0 "ドゥルナ" #planet
- NAME_Valzhuva:0 "ヴァルズーヴァ" #planet
-
- NAME_Tiyun_Ort:0 "ティユン・オルト" #star
- NAME_Ghanek:0 "ガーネク" #planet
- NAME_Zhaduva:0 "ザードゥヴァ" #planet
- NAME_Orek_Vuul:0 "オレク・ヴウル" #planet
-
-# Void Clouds
- NAME_Enigmatic_Energy:0 "不可解なエネルギー" #empire
- NAME_Great_Wound:0 "偉大なる傷" #star/black hole
- NAME_Subspace_Rupture_1:0 "亜空間分裂 F-49" #black hole
- NAME_Subspace_Rupture_2:0 "亜空間分裂 RX-199" #black hole
- NAME_Subspace_Rupture_3:0 "亜空間分裂 G-12" #black hole
- NAME_Subspace_Rupture_4:0 "亜空間分裂 NL889" #black hole
- NAME_Subspace_Rupture_5:0 "亜空間分裂 QX-3" #black hole
- NAME_Subspace_Rupture_6:0 "亜空間分裂 NGR-412" #black hole
- NAME_Subspace_Rupture_7:0 "亜空間分裂 ZT-34" #black hole
- NAME_Subspace_Rupture_8:0 "亜空間分裂 F-311" #black hole
- NAME_Subspace_Rupture_9:0 "亜空間分裂 SX-77" #black hole
- NAME_Subspace_Rupture_10:0 "亜空間分裂 PL-4499" #black hole
-
-##################
-# PRE-FTL SPECIES
-##################
-# See also: entries in event_names_l_<language>.yml
-
-# Earth
- NAME_Human:0 "人類" #species
- NAME_Human_plural:0 "人類" #species
- NAME_ISS_II:0 "国際宇宙ステーション II" #International Space Station (2nd generation)
- NAME_British_Armed_Forces:0 "英国軍" #army
- NAME_Chinese_PLA:0 "中国人民解放軍" #People's Liberation Army
- NAME_EU_Combined_Forces:0 "欧州連合軍" #European Union army
- NAME_Feudal_Levies:0 "封建徴兵軍" #army
- NAME_German_Wehrmacht:0 "ドイツ陸軍" #army
- NAME_Imperial_Japanese_Forces:0 "大日本帝国軍" #army
- NAME_Russian_Armed_Forces:0 "ロシア連邦軍" #army
- NAME_Soviet_Red_Army:0 "ソビエト連邦赤軍" #army
- NAME_US_Armed_Forces:0 "米国軍" #army
- NAME_US_Armed_Forces_East:0 "米国軍東部方面軍" #army
- NAME_US_Armed_Forces_West:0 "米国軍西部方面軍" #army
- NAME_Sol_III:0 "ソル III" #star
-
-################
-# OTHER CONTENT
-################
-
-# Guardians of Zanaam
- NAME_Guardians_of_Zanaam:0 "ザナームの守護者" #country, fleet
- NAME_Zanaam:0 "ザナーム" #planet
- NAME_Defensive_Alpha:0 "防御性アルファ" #ship
- NAME_Defensive_Beta:0 "防御性ベータ" #ship
- NAME_Defensive_Chi:0 "防御性カイ" #ship
- NAME_Defensive_Delta:0 "防御性デルタ" #ship
- NAME_Defensive_Epsilon:0 "防御性イプシロン" #ship
- NAME_Defensive_Eta:0 "防御性イータ" #ship
- NAME_Defensive_Gamma:0 "防御性ガンマ" #ship
- NAME_Defensive_Iota:0 "防御性イオタ" #ship
- NAME_Defensive_Kappa:0 "防御性カッパ" #ship
- NAME_Defensive_Ksi:0 "防御性クシー" #ship
- NAME_Defensive_Lambda:0 "防御性ラムダ" #ship
- NAME_Defensive_Mu:0 "防御性ミュー" #ship
- NAME_Defensive_Nu:0 "防御性ニュー" #ship
- NAME_Defensive_Omega:0 "防御性オメガ" #ship
- NAME_Defensive_Omicron:0 "防御性オミクロン" #ship
- NAME_Defensive_Phi:0 "防御性ファイ" #ship
- NAME_Defensive_Pi:0 "防御性パイ" #ship
- NAME_Defensive_Psi:0 "防御性プシー" #ship
- NAME_Defensive_Rho:0 "防御性ロー" #ship
- NAME_Defensive_Sigma:0 "防御性シグマ" #ship
- NAME_Defensive_Tau:0 "防御性タウ" #ship
- NAME_Defensive_Theta:0 "防御性シータ" #ship
- NAME_Defensive_Upsilon:0 "防御性ウプシロン" #ship
- NAME_Defensive_Zeta:0 "防御性ゼータ" #ship
-
-# The Sanctuary
- NAME_Sanctuary:0 "聖域" #star
- NAME_Administrator:0 "行政官" #ship
- NAME_Sanctuary_Core:0 "聖域コア" #ship design/type
- NAME_Sanctuary_A:0 "A聖域" #ringworld section
- NAME_Sanctuary-B:0 "B聖域" #ringworld section
- NAME_Sanctuary-C:0 "C聖域" #ringworld section
- NAME_Sanctuary-D:0 "D聖域" #ringworld section
- NAME_Sanctuary-E:0 "E聖域" #ringworld section
- NAME_Sanctuary-F:0 "F聖域" #ringworld section
- NAME_Sanctuary-G:0 "G聖域" #ringworld section
- NAME_Sanctuary-H:0 "H聖域" #ringworld section
- NAME_Sanctuary-I:0 "I聖域" #ringworld section
- NAME_Sanctuary-J:0 "J聖域" #ringworld section
- NAME_Sanctuary-K:0 "K聖域" #ringworld section
- NAME_Sanctuary-L:0 "L聖域" #ringworld section
-
-# Trappist system
- NAME_Trappist:0 "トラピスト" #system
-
-# Ratling systems
- NAME_Decayed_Hub:0 "腐食した拠点" #planet
-
-# Hauer system (Rutger Hauer tribute)
- NAME_Hauer:0 "ハウアー" #star
- NAME_Aureyon:0 "オーレイヨン" #planet
- NAME_Baage:0 "バージェ" #planet
- NAME_Baelte:0 "バールテ" #planet
- NAME_Bhete:0 "ベーテ" #planet
- NAME_Snaaraa:0 "ファウンゲ" #planet
- NAME_Floe:0 "フローエ" #planet
- NAME_Piyhl:0 "パイイール" #planet
- NAME_Snaara:0 "スナアラ" #planet
- NAME_Straeng:0 "ストレング" #planet
- NAME_Stykkia:0 "スティッキア" #planet
-
-# Kept Grounds (Wenkwort Artem)
- NAME_Gardeners:0 "アウロン管理機械" #empire
- NAME_Wenkwort_Keeper:0 "アウロン守護者" #species
- NAME_Wenkwort_Keeper_plural:0 "アウロン守護者" #species
- NAME_Warder_of_the_Ruins:0 "遺跡看守" #ship
- NAME_Wenkwort:0 "ウェンクウォート" #star
- NAME_wenkwort_prime:0 "ウェンクウォート・アルテム" #planet
- NAME_wenkwort_moon:0 "ミルフォド" #planet
- NAME_wenkwort_2:0 "レールレイト" #planet
- NAME_wenkwort_3:0 "ブラーヴェ" #planet
- NAME_wenkwort_4:0 "マクレン" #planet
- NAME_wenkwort_asteroid:0 "トルーイン" #planet
- NAME_Gardener_Drone:0 "アウロン管理機械ユニット" #ship
- NAME_Gardener_Drone_plural:0 "管理機械・14-WW地区" #fleet
- NAME_Gardener1:0 "CTパートン" #ship
- NAME_Gardener2:0 "CTスパルトン＝ブロン" #ship
- NAME_Gardener3:0 "CTウイゼントン" #ship
- NAME_Wenkwort_Enforcer:0 "アウロン巡洋艦" #ship design
- NAME_Wenkwort_Enforcer_plural:0 "執行者・61-VL地区" #fleet
-
-# Ruins of Shallash
- NAME_Darad:0 "ダラド" #planet
- NAME_Shallash:1 "シャラーシュ" #planet
- NAME_Shallasha:0 "シャラーシュ a" #moon
- NAME_Shallashb:0 "シャラーシュ b" #moon
- NAME_Shallashc:0 "シャラーシュ c" #moon
- NAME_Shallashd:0 "シャラーシュ d" #moon
- NAME_Shallashe:0 "シャラーシュ e" #moon
- NAME_Shallashf:0 "シャラーシュ f" #moon
- NAME_Parvus:0 "パルヴァス" #planet
-
-# Fumongus
- NAME_Fumongus_System:0 "オルヴァール" #star
- NAME_Grazing_Tiyanki:0 "放牧されしティヤンキ" #fleet
- NAME_Fumongus_Star:0 "コスモグ＝１" #star (also a personality/vanity system)
- NAME_Fumongus_Planet01:0 "ブレム＝セル"
- NAME_Fumongus_Planet02:0 "ゲイ＝ミグ"
- NAME_Fumongus_Planet02a:0 "ゲイ＝ミグ a"
- NAME_Fumongus_PlanetDig:0 "ムーラ＝スレットゥ"
- NAME_Fumongus_Planet03:0 "アン＝マイ"
- NAME_Fumongus_Planet03a:0 "アン＝マイ a"
-
-# Ghost Ship
- NAME_Hillos:0 "ヒロス" #system
- NAME_Hillos_Star:0 "ヒロス" #star
- NAME_HillosA:0 "ヒロス I"
- NAME_HillosB:0 "ヒロス II"
- NAME_HillosC:0 "ヒロス III"
- NAME_HillosA_moon:0 "シャールジャ"
-
-# Surveillance Supercomputer
- NAME_Ultima_Vigilis:0 "ウルティマ・ヴィジリス"
- NAME_Observation_Terminal:0 "観測ターミナル"
- NAME_Repurposed_Surveillance_Network:0 "転用監視ネットワーク"
-
-# Larionessi Refuge
- NAME_Unique_System_1:0 "連邦の終焉" #star
- NAME_Unique_System_2:0 "ラリオネッシ避難所" #star
- NAME_Unique_System_2_Planet:0 "ラリオン"
-
-# Zevox (Shrouded planet)
- NAME_Unique_System_3:0 "ゼヴォックス" #star
- NAME_Unique_System_3_Planet:0 "ゼロ＝ワン"
- NAME_Unique_System_3_Moon:0 "ゼロ＝ツー"
-
-# Ancient Battlefields
- NAME_Unique_System_4:0 "フェーンラックス・スタンド" #star
- NAME_Unique_System_5:0 "ザンロックスの休息" #star
- NAME_Unique_System_6:0 "アファリ" #star
-
-# Triple Planet systems
- NAME_Unique_System_7:0 "トラグラの十字架"
- NAME_Unique_System_8:0 "トリンの約束"
- NAME_Unique_System_9:0 "ロウ"
-
-# Lost Swarm System
- NAME_Lost_Swarm_System:0 "ウボグリールト"
- NAME_Ubogleelt:0 "ウボグリールト"
- NAME_UbogleeltA:0 "ウボグリールト I"
- NAME_UbogleeltB:0 "ウボグリールト II"
- NAME_UbogleeltC:0 "ウボグリールト III"
- NAME_UbogleeltD:0 "ウボグリールト IV"
- NAME_UbogleeltE:0 "ウボグリールト V"
- NAME_Lost_Swarm:0 "イナゴの大群"
- NAME_Lost_Swarm_Ship:0 "イナゴ"
- NAME_Lost_Swarm_Adult:0 "イナゴ"
-
-# Holibrae
- NAME_Holibrae:0 "グリーゼ581"
- NAME_Holibrae_Corps:0 "グリーゼ581兵団" #fleet
- NAME_Holibrae_Destroyer:0 "グリーゼ581デストロイヤー" #ship type
+ #See also: english\random_names\random_names_l_english.yml, which contains the names used for randomly-generated stars. The stars named in this file belong to particular, scripted star systems.
+ ######################
+ #PRESCRIPTED SYSTEMS
+ ######################
+ #United Nations of Earth
+ NAME_United_Nations_of_Earth: "国際地球連合"
+ NAME_Sol: "ソル"
+ NAME_1_Ceres: "1 ケレス"
+ NAME_2_Pallas: "2 パラス"
+ NAME_3_Juno: "3 ジュノー"
+ NAME_4_Vesta: "4 ヴェスタ"
+ NAME_Mercury: "水星"
+ NAME_Venus: "金星"
+ NAME_Earth: "地球"
+ NAME_Luna: "月"
+ NAME_Mars: "火星"
+ NAME_Jupiter: "木星"
+ NAME_Io: "イオ"
+ NAME_Europa: "エウロパ"
+ NAME_Ganymede: "ガニメデ"
+ NAME_Callisto: "カリスト"
+ NAME_Saturn: "土星"
+ NAME_Titan: "タイタン"
+ NAME_Uranus: "天王星"
+ NAME_Neptune: "海王星"
+ NAME_Triton: "トリトン"
+ NAME_134340_Pluto: "134340 冥王星"
+ #UNE neighboring systems
+ NAME_Alpha_Centauri: "アルファ・ケンタウリ"
+ NAME_Alpha_Centauri_A: "アルファ・ケンタウリ A"
+ NAME_Alpha_Centauri_B: "アルファ・ケンタウリ B"
+ NAME_Alpha_Centauri_B_I: "アルファ・ケンタウリ B I"
+ NAME_Alpha_Centauri_B_II: "アルファ・ケンタウリ B II"
+ NAME_Alpha_Centauri_B_III: "アルファ・ケンタウリ B III"
+ NAME_Barnards_Star: "バーナード星"
+ NAME_Polaris: "ポラリス"
+ NAME_PolarisAa: "ポラリス Aa"
+ NAME_PolarisAb: "ポラリス Ab"
+ NAME_PolarisB: "ポラリス B"
+ NAME_Procyon: "プロキオン"
+ NAME_Procyon_A: "プロキオン A"
+ NAME_Procyon_B: "プロキオン B"
+ NAME_Proxima_Centauri: "プロキシマ・ケンタウリ"
+ NAME_Proxima_Centauri_b: "プロキシマ・ケンタウリ b"
+ NAME_Proxima_Centauri_c: "プロキシマ・ケンタウリ c"
+ NAME_Sirius: "シリウス"
+ NAME_Sirius_A: "シリウス A"
+ NAME_Sirius_B: "シリウス B"
+ NAME_136472_Makemake: "136472 マケマケ"
+ NAME_136108_Haumea: "136108 ハウメア"
+ NAME_20000_Varuna: "20000 ヴァルナ"
+ #Deneb (Commonwealth of Man/UNE)
+ NAME_Deneb: "デネブ" #star
+ NAME_Inferno: "インフェルノ" #planet
+ NAME_DT4-298: "DT4-298" #asteroid
+ NAME_LR-2129: "LR-2129" #asteroid
+ NAME_GR-345: "GR-345" #asteroid
+ NAME_Olympus: "オリンパス" #planet
+ NAME_New_Luna: "ニュー・ルナ" #moon, as in 'NAME_Luna'
+ NAME_Unity: "ユニティ" #moon
+ NAME_Marble: "マーブル" #planet
+ NAME_Hyperion: "ハイペリオン" #planet
+ NAME_Helios: "ヘリオス" #moon
+ NAME_Tumbleweed: "タンブルウィード" #planet
+ NAME_Jackson's_Planet: "ジャクソンの惑星" #planet
+ #Sol (Void Dweller origin)
+ NAME_Sol_Void_Dweller: "ソル (宇宙生まれ)" #system
+ NAME_Old_Earth: "古き地球" #planet
+ NAME_Earth_Habitat: "地球居住地"
+ NAME_Mars_Habitat: "火星居住地"
+ NAME_Saturn_Habitat: "土星居住地"
+ #Titawin (Federated Theian Preservers)
+ titawin_init_NAME: "$NAME_Titawin$"
+ titawin_init_DESC: "連邦制テイアン保護区の開始星系。\n\n$system_initializer_DESC$"
+ NAME_Titawin: "タイタウィン" #Upsilon Andromedae
+ NAME_Titawin_A: "タイタウィンA" #F-Type Star
+ NAME_Titawin_B: "タイタウィンB" #Red Dwarf Star
+ NAME_Saffar: "サッファー" #Gas Giant
+ NAME_Samh: "サーム" #Gas Giant
+ NAME_Majriti: "マリティ" #Gas Giant
+ NAME_Curiel: "キュリエル" #Gas Giant
+ NAME_Theia: "テイア" #Homeworld
+ NAME_Akal_Amectuh: "アカル・アメク" #Moon
+ NAME_Yessefsi: "イェセフ" #Molten World
+ NAME_PHS_01: "PHS-01" #Asteroid
+ NAME_PHS_02: "PHS-02" #Asteroid
+ NAME_PHS_03: "PHS-03" #Asteroid
+ NAME_PHS_04: "PHS-04" #Asteroid
+ #Sol (Knights of the Toxic God)
+ NAME_Luna_Habitat: "ソル軌道上居住施設"
+ #Sol (Blooms of Gaea)
+ NAME_Gaea: "ガイア" #Homeworld
+ #L-Cluster
+ NAME_Final_Egress: "ターミナル・エグレス" #star
+ NAME_Sel-Ufaan: "セル＝ウファアン"
+ NAME_Ten-Aard-Shel: "テン＝アールド＝シェル"
+ NAME_Diim-Fu-Rem: "ディイム＝フー＝レム"
+ NAME_Dora-Fu-Rem: "ドラ＝フー＝レム"
+ NAME_Naal-Di-Kor: "ナアル＝ディ＝コル"
+ NAME_Tao-Enar-Vi: "タオ＝エナール＝ヴィ"
+ NAME_Tao-Fun-Vi: "タオ＝フン＝ヴィ"
+ NAME_Tao-Arl-Vi: "タオ＝アール＝ヴィ"
+ NAME_Tao-Got-Vi: "タオ＝ゴット＝ヴィ"
+ NAME_Gol-Unda-Fiir: "ゴル＝ウンダ＝フィイル"
+ NAME_Dora-Enar-Fiir: "ドラ＝エナール＝フィイル"
+ NAME_Dora-Fun-Fiir: "ドラ＝フン＝フィイル"
+ NAME_Dora-Arl-Fiir: "ドラ＝アール＝フィイル"
+ NAME_Dora-Got-Fiir: "ドラ＝ゴット＝フィイル"
+ NAME_Gol-Umn-Toor: "ゴル＝ウムン＝トオル"
+ NAME_Dora-Enar-Toor: "ドラ＝エナール＝トオル"
+ NAME_Gol-Salm-Ri: "ゴル＝サルム＝リ"
+ NAME_Gol-Mel-Rood: "ゴル＝メル＝ルウド"
+ NAME_Dora-Enar-Rood: "ドラ＝エナール＝ルウド"
+ ##############
+ #CARAVANEERS
+ ##############
+ #Ship names
+ NAME_Caravaneer_Starbase: "キャラバンビーコン"
+ ###########
+ #ENCLAVES
+ ###########
+ #Artisans
+ NAME_Artisan_Troupe: "工匠中立機構" #empire
+ NAME_Artisan_adj: "工匠" #empire, e.g. 'an Artisan starbase'
+ NAME_Ars_Artem: "アルス・アルテム"
+ #Curators
+ NAME_Curator_Order: "学術中立機構" #empire
+ NAME_Curator_adj: "学術" #empire, e.g. 'a Curator starbase'
+ NAME_Curator_Alpha_Enclave: "学術中立機構アルファ" #starbase
+ NAME_Curator_Lambda_Enclave: "学術中立機構ラムダ" #starbase
+ NAME_Curator_Sigma_Enclave: "学術中立機構シグマ" #starbase
+ #Traders
+ NAME_Muutagan_Merchant_Guild: "ムウタガン商人ギルド" #empire
+ NAME_Muutagan_adj: "ムウタガン" #empire
+ NAME_Muutagan: "ムウタガン" #species
+ NAME_Muutagan_plural: "ムウタガン"
+ NAME_Muutag_Station: "ムウタグステーション" #starbase
+ NAME_Riggan_Commerce_Exchange: "リガン商品取引所" #empire
+ NAME_Riggan_adj: "リガン" #empire
+ NAME_Riggan: "リガン" #species
+ NAME_Riggan_plural: "リガン"
+ NAME_Grand_Bazaar: "グランドバザール" #starbase
+ NAME_XuraCorp: "ジュラコープ" #empire
+ NAME_XuraCorp_adj: "ジュラコープ" #empire
+ NAME_Xuri: "ジュリ" #species
+ NAME_Xuri_plural: "ジュリ"
+ NAME_XuraCorp_HQ: "ジュラコープ本部" #starbase
+ #Salvagers
+ NAME_Asters_Workshop: "アステルの作業場" #starbase
+ #Shroudwalkers
+ NAME_Shroud_Teachers: "シュラウドの座" #starbase
+ #################
+ #FALLEN EMPIRES
+ #################
+ #See also: entries in event_names_l_<language>.yml, which pertain to Awakened Empires.
+ #Star system names
+ NAME_Alpha_Refuge: "アルファ避難所"
+ NAME_Beta_Refuge: "ベータ避難所"
+ NAME_Gamma_Refuge: "ガンマ避難所"
+ NAME_Delta_Refuge: "デルタ避難所"
+ NAME_Great_Nexus: "知識の源泉"
+ NAME_Custodian_Nexus: "中央処理"
+ #Planet names
+ NAME_Apostasy: "背教"
+ NAME_Boundary: "境界"
+ NAME_Brother: "兄弟"
+ NAME_Celestial_Throne: "天上の帝位"
+ NAME_The_Core: "ザ・コア"
+ NAME_Cradle: "揺り籠"
+ NAME_The_Mistake: "ザ・ミステイク"
+ NAME_Mother: "母"
+ NAME_The_Preserve: "保護区"
+ NAME_Pristine_Jewel: "原始宝石"
+ NAME_Prophets_Retreat: "預言者の隠れ家"
+ NAME_Sister: "姉妹"
+ NAME_Sky_Father: "空の父"
+ NAME_Sky_Temple: "空の聖堂"
+ NAME_Walled_Garden: "壁に囲まれた庭園"
+ NAME_Wanderer: "放浪者"
+ NAME_Alpha_Complex: "アルファ複合施設"
+ NAME_The_Archives: "記録"
+ NAME_Production_Unit: "生産ユニット"
+ NAME_Processing_Unit: "処理ユニット"
+ NAME_Circuit_I: "基盤 I" #ringworld segment
+ NAME_Circuit_II: "基盤 II" #ringworld segment
+ NAME_Circuit_III: "基盤 III" #ringworld segment
+ NAME_Superstructure_I: "上部構造 I" #ringworld segment
+ NAME_Superstructure_II: "上部構造 II" #ringworld segment
+ NAME_Superstructure_III: "上部構造 III" #ringworld segment
+ #Species names
+ NAME_Dead_Species: "死せる種族"
+ NAME_Synthetic: "人工生命体" #servant robot
+ NAME_Synthetic_plural: "人工生命体"
+ #Ship names
+ NAME_Adjuster: "調停者"
+ NAME_Alpha: "アルファ"
+ NAME_Archivist: "記録者"
+ NAME_Avatar: "アバター"
+ NAME_Benevolence: "良心的"
+ NAME_Beta: "ベータ"
+ NAME_Cleanser: "浄化者"
+ NAME_Cloaker: "隠匿者"
+ NAME_Delta: "デルタ"
+ NAME_Enforcer: "執行者"
+ NAME_Librarian: "司書"
+ NAME_Sage: "賢者"
+ NAME_Savant: "識者"
+ NAME_Scholar: "学者"
+ NAME_Seeker: "偵察体"
+ NAME_Epsilon: "イプシロン"
+ NAME_Gamma: "ガンマ"
+ NAME_Omega: "オメガ"
+ NAME_Progress: "進捗"
+ NAME_Surplus_I: "余剰"
+ NAME_Surplus_II: "$NAME_Surplus_I$"
+ NAME_Surplus_III: "$NAME_Surplus_I$"
+ NAME_Tau: "タウ"
+ NAME_Theta: "シータ"
+ ###########################
+ #LEVIATHANS & SPACE FAUNA
+ ###########################
+ #See also: event_names_l_english.yml, which caontains names used for when additional entities spawn, typically around mid-game.
+ #Guardians/Leviathans
+ NAME_Automated_Dreadnought: "自律巨大戦艦" #fleet
+ NAME_JuukTidir: "ジュウクティーダー" #ship/entity
+ NAME_Enigmatic_Fortress: "謎めいた要塞"
+ NAME_Infinity_Machine: "永久機械" #empire, ship design
+ NAME_I_O: "アイオー" #ship/entity
+ NAME_The_Infinity_Machine: "永久機械" #fleet
+ NAME_Gargantua: "ガルガンチュア" #black hole
+ NAME_Voidwyrm: "宇宙竜" #empire
+ NAME_Ether_Drake: "エーテルドレイク" #fleet
+ NAME_Avice: "アヴィス" #ship/entity (named dragon)
+ NAME_Grand_Dragon: "グランドドラゴン" #'ship' type
+ NAME_Dragons_Hoard: "ドラゴンの財宝" #planet
+ #Ancient Mining Drones
+ NAME_Mineral_Extraction_Operation: "鉱物抽出作戦" #empire
+ NAME_Central_Processing: "中央処理" #planet
+ NAME_Ore_Grinder: "鉱石グラインダー" #planet
+ NAME_Asset_Protection_Unit: "資産保護ユニット" #fleet
+ NAME_Mining_Corps: "採掘結社" #fleet
+ #Space Amoebae
+ NAME_Spaceborne_Organics: "宇宙有機生命体" #empire
+ NAME_Space_Amoebas_United: "宇宙アメーバ集合体" #empire
+ NAME_Amor_Alveo: "アモール・アルヴェオ" #star
+ NAME_Amor_Toreo: "アモール・トレオ" #planet
+ NAME_Amor_Dareetheo: "アモール・ダレイセオ" #planet
+ NAME_Veronax: "ヴェロナックス" #planet
+ NAME_Evor_Aras: "イヴォール・アラス" #planet
+ NAME_Evor_Tomos: "イヴォール・トモス" #planet
+ NAME_Eberax: "エベラックス" #planet
+ NAME_Tharonax: "サロナックス" #planet
+ NAME_Narnax: "ナルナックス" #planet
+ NAME_Tior: "ティオール" #planet
+ NAME_Lemior: "レミオール" #planet
+ NAME_Isior: "イシオール" #planet
+ NAME_Selor: "セロール" #planet
+ NAME_Theresior: "テレシオール" #planet
+ NAME_Pesior: "ペシオール" #planet
+ NAME_Amoeba_Swarm: "アメーバ群" #fleet
+ NAME_Amoeba_Swarm_seed: "アメーバ群 (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Space_Amoeba_Hunters: "宇宙アメーバハンター" #fleet
+ NAME_Space_Amoeba_Hunters_seed: "宇宙アメーバハンター (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ #Space Crystals
+ NAME_Prism: "プリズム" #empire
+ NAME_Crystal_Nidus: "クリスタルニダス" #ship
+ NAME_Kappa: "カッパ" #ship
+ NAME_Shardlings: "かけら" #fleet
+ NAME_Shardling: "かけら" #ship
+ NAME_Emerald_Guardians: "エメラルドの守護者" #fleet
+ NAME_Emerald_Mausoleum: "エメラルドの大霊廟" #planet
+ NAME_Emerald_Roamers: "エメラルドの放浪者" #fleet
+ NAME_Ruby_Guardians: "ルビーの守護者" #fleet
+ NAME_Ruby_Stack: "ルビーの山" #fleet
+ NAME_Ruby_Swarm: "ルビーの群れ" #fleet
+ NAME_Sapphire_Guardians: "サファイアの守護者" #fleet
+ NAME_Sapphire_Lurkers: "サファイアの潜伏者" #fleet
+ NAME_Topaz_Guardians: "トパーズの守護者" #fleet
+ NAME_Shards_of_Diamond: "ダイヤモンドの破片" #fleet
+ NAME_Shards_of_Obsidian: "黒曜石の破片" #fleet
+ NAME_Shards_of_Onyx: "オニキスの破片" #fleet
+ NAME_Shards_of_Sapphire: "サファイアの破片" #fleet
+ NAME_Yormak's_Belly: "ヨーマクの腹" #planet
+ NAME_Yormak's_Eye: "ヨーマクの眼" #planet
+ NAME_Yormak's_Fist: "ヨーマクの拳" #planet
+ NAME_Yormak's_Heart: "ヨーマクの心臓" #planet
+ NAME_Yormak's_Snout: "ヨーマクの吻" #planet
+ NAME_Yormak's_Tail: "ヨーマクの尾" #planet
+ NAME_Yormak's_Tongue: "ヨーマクの舌" #planet
+ NAME_Yormak's_Tusk: "ヨーマクの牙" #planet
+ #Tiyanki
+ NAME_Placid_Leviathans: "穏やかなるリヴァイアサン" #empire
+ NAME_Tiyanki_Space_Whale: "宇宙鯨・ティヤンキ" #fleet
+ NAME_Tiyanki_Space_Whale_seed: "宇宙鯨・ティヤンキ (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Tiyanki_Bull: "ティヤンキ・オス"
+ NAME_Tiyanki_Cow: "ティヤンキ・メス"
+ NAME_Tiyanki_Hatchling: "ティヤンキ・幼生"
+ NAME_Tiyana_Vek: "ティヤナ・ヴェク" #star
+ NAME_Zathika_Mev: "ザティーカ・メヴ" #planet
+ NAME_Surribzha: "スリーブザー" #planet
+ NAME_Yllarv: "イリャールヴ" #planet
+ NAME_Khetzhavu: "ケットザーヴ" #planet
+ NAME_Dulna: "ドゥルナ" #planet
+ NAME_Valzhuva: "ヴァルズーヴァ" #planet
+ NAME_Tiyun_Ort: "ティユン・オルト" #star
+ NAME_Ghanek: "ガーネク" #planet
+ NAME_Zhaduva: "ザードゥヴァ" #planet
+ NAME_Orek_Vuul: "オレク・ヴウル" #planet
+ #Void Clouds
+ NAME_Enigmatic_Energy: "不可解なエネルギー" #empire
+ NAME_Great_Wound: "偉大なる傷" #star/black hole
+ NAME_Subspace_Rupture_1: "亜空間分裂 F-49" #black hole
+ NAME_Subspace_Rupture_2: "亜空間分裂 RX-199" #black hole
+ NAME_Subspace_Rupture_3: "亜空間分裂 G-12" #black hole
+ NAME_Subspace_Rupture_4: "亜空間分裂 NL889" #black hole
+ NAME_Subspace_Rupture_5: "亜空間分裂 QX-3" #black hole
+ NAME_Subspace_Rupture_6: "亜空間分裂 NGR-412" #black hole
+ NAME_Subspace_Rupture_7: "亜空間分裂 ZT-34" #black hole
+ NAME_Subspace_Rupture_8: "亜空間分裂 F-311" #black hole
+ NAME_Subspace_Rupture_9: "亜空間分裂 SX-77" #black hole
+ NAME_Subspace_Rupture_10: "亜空間分裂 PL-4499" #black hole
+ ##################
+ #PRE-FTL SPECIES
+ ##################
+ #See also: entries in event_names_l_<language>.yml
+ #Earth
+ NAME_Human: "人類" #species
+ NAME_Human_plural: "人類" #species
+ NAME_ISS_II: "国際宇宙ステーション II" #International Space Station (2nd generation)
+ NAME_British_Armed_Forces: "英国軍" #army
+ NAME_Chinese_PLA: "中国人民解放軍" #People's Liberation Army
+ NAME_EU_Combined_Forces: "欧州連合軍" #European Union army
+ NAME_Feudal_Levies: "封建徴兵軍" #army
+ NAME_German_Wehrmacht: "ドイツ陸軍" #army
+ NAME_Imperial_Japanese_Forces: "大日本帝国軍" #army
+ NAME_Russian_Armed_Forces: "ロシア連邦軍" #army
+ NAME_Soviet_Red_Army: "ソビエト連邦赤軍" #army
+ NAME_US_Armed_Forces: "米国軍" #army
+ NAME_US_Armed_Forces_East: "米国軍東部方面軍" #army
+ NAME_US_Armed_Forces_West: "米国軍西部方面軍" #army
+ NAME_Sol_III: "ソル III" #star
+ ################
+ #OTHER CONTENT
+ ################
+ #Guardians of Zanaam
+ NAME_Guardians_of_Zanaam: "ザナームの守護者" #country, fleet
+ NAME_Zanaam: "ザナーム" #planet
+ NAME_Defensive_Alpha: "防御性アルファ" #ship
+ NAME_Defensive_Beta: "防御性ベータ" #ship
+ NAME_Defensive_Chi: "防御性カイ" #ship
+ NAME_Defensive_Delta: "防御性デルタ" #ship
+ NAME_Defensive_Epsilon: "防御性イプシロン" #ship
+ NAME_Defensive_Eta: "防御性イータ" #ship
+ NAME_Defensive_Gamma: "防御性ガンマ" #ship
+ NAME_Defensive_Iota: "防御性イオタ" #ship
+ NAME_Defensive_Kappa: "防御性カッパ" #ship
+ NAME_Defensive_Ksi: "防御性クシー" #ship
+ NAME_Defensive_Lambda: "防御性ラムダ" #ship
+ NAME_Defensive_Mu: "防御性ミュー" #ship
+ NAME_Defensive_Nu: "防御性ニュー" #ship
+ NAME_Defensive_Omega: "防御性オメガ" #ship
+ NAME_Defensive_Omicron: "防御性オミクロン" #ship
+ NAME_Defensive_Phi: "防御性ファイ" #ship
+ NAME_Defensive_Pi: "防御性パイ" #ship
+ NAME_Defensive_Psi: "防御性プシー" #ship
+ NAME_Defensive_Rho: "防御性ロー" #ship
+ NAME_Defensive_Sigma: "防御性シグマ" #ship
+ NAME_Defensive_Tau: "防御性タウ" #ship
+ NAME_Defensive_Theta: "防御性シータ" #ship
+ NAME_Defensive_Upsilon: "防御性ウプシロン" #ship
+ NAME_Defensive_Zeta: "防御性ゼータ" #ship
+ #The Sanctuary
+ NAME_Sanctuary: "聖域" #star
+ NAME_Administrator: "行政官" #ship
+ NAME_Sanctuary_Core: "聖域コア" #ship design/type
+ NAME_Sanctuary_A: "A聖域" #ringworld section
+ NAME_Sanctuary-B: "B聖域" #ringworld section
+ NAME_Sanctuary-C: "C聖域" #ringworld section
+ NAME_Sanctuary-D: "D聖域" #ringworld section
+ NAME_Sanctuary-E: "E聖域" #ringworld section
+ NAME_Sanctuary-F: "F聖域" #ringworld section
+ NAME_Sanctuary-G: "G聖域" #ringworld section
+ NAME_Sanctuary-H: "H聖域" #ringworld section
+ NAME_Sanctuary-I: "I聖域" #ringworld section
+ NAME_Sanctuary-J: "J聖域" #ringworld section
+ NAME_Sanctuary-K: "K聖域" #ringworld section
+ NAME_Sanctuary-L: "L聖域" #ringworld section
+ #Trappist system
+ NAME_Trappist: "トラピスト" #system
+ #Ratling systems
+ NAME_Decayed_Hub: "腐食した拠点" #planet
+ #Hauer system (Rutger Hauer tribute)
+ NAME_Hauer: "ハウアー" #star
+ NAME_Aureyon: "オーレイヨン" #planet
+ NAME_Baage: "バージェ" #planet
+ NAME_Baelte: "バールテ" #planet
+ NAME_Bhete: "ベーテ" #planet
+ NAME_Snaaraa: "ファウンゲ" #planet
+ NAME_Floe: "フローエ" #planet
+ NAME_Piyhl: "パイイール" #planet
+ NAME_Snaara: "スナアラ" #planet
+ NAME_Straeng: "ストレング" #planet
+ NAME_Stykkia: "スティッキア" #planet
+ #Kept Grounds (Wenkwort Artem)
+ NAME_Fruitful: "アウロン管理機械" #empire
+ NAME_Wenkwort_Keeper: "アウロン守護者" #species
+ NAME_Wenkwort_Keeper_plural: "アウロン守護者" #species
+ NAME_Warder_of_the_Ruins: "遺跡看守" #ship
+ NAME_Wenkwort: "ウェンクウォート" #star
+ NAME_wenkwort_prime: "ウェンクウォート・アルテム" #planet
+ NAME_wenkwort_moon: "ミルフォド" #planet
+ NAME_wenkwort_2: "レールレイト" #planet
+ NAME_wenkwort_3: "ブラーヴェ" #planet
+ NAME_wenkwort_4: "マクレン" #planet
+ NAME_wenkwort_asteroid: "トルーイン" #planet
+ NAME_Gardener_Drone: "アウロン管理機械ユニット" #ship
+ NAME_Gardener_Drone_plural: "管理機械・14-WW地区" #fleet
+ NAME_Gardener1: "CTパートン" #ship
+ NAME_Gardener2: "CTスパルトン＝ブロン" #ship
+ NAME_Gardener3: "CTウイゼントン" #ship
+ NAME_Wenkwort_Enforcer: "アウロン巡洋艦" #ship design
+ NAME_Wenkwort_Enforcer_plural: "執行者・61-VL地区" #fleet
+ #Ruins of Shallash
+ NAME_Darad: "ダラド" #planet
+ NAME_Shallash: "シャラーシュ" #planet
+ NAME_Shallasha: "シャラーシュ a" #moon
+ NAME_Shallashb: "シャラーシュ b" #moon
+ NAME_Shallashc: "シャラーシュ c" #moon
+ NAME_Shallashd: "シャラーシュ d" #moon
+ NAME_Shallashe: "シャラーシュ e" #moon
+ NAME_Shallashf: "シャラーシュ f" #moon
+ NAME_Parvus: "パルヴァス" #planet
+ #Fumongus
+ NAME_Fumongus_System: "オルヴァール" #star
+ NAME_Grazing_Tiyanki: "放牧されしティヤンキ" #fleet
+ NAME_Grazing_Tiyanki_seed: "放牧されしティヤンキ (£seed_pod£)" #fleet carrying seeds (Fruitful Origin)
+ NAME_Fumongus_Star: "コスモグ＝１" #star (also a personality/vanity system)
+ NAME_Fumongus_Planet01: "ブレム＝セル"
+ NAME_Fumongus_Planet02: "ゲイ＝ミグ"
+ NAME_Fumongus_Planet02a: "ゲイ＝ミグ a"
+ NAME_Fumongus_PlanetDig: "ムーラ＝スレットゥ"
+ NAME_Fumongus_Planet03: "アン＝マイ"
+ NAME_Fumongus_Planet03a: "アン＝マイ a"
+ #Ghost Ship
+ NAME_Hillos: "ヒロス" #system
+ NAME_Hillos_Star: "ヒロス" #star
+ NAME_HillosA: "ヒロス I"
+ NAME_HillosB: "ヒロス II"
+ NAME_HillosC: "ヒロス III"
+ NAME_HillosA_moon: "シャールジャ"
+ #Surveillance Supercomputer
+ NAME_Ultima_Vigilis: "ウルティマ・ヴィジリス"
+ NAME_Observation_Terminal: "観測ターミナル"
+ NAME_Repurposed_Surveillance_Network: "転用監視ネットワーク"
+ #Larionessi Refuge
+ NAME_Unique_System_1: "連邦の終焉" #star
+ NAME_Unique_System_2: "ラリオネッシ避難所" #star
+ NAME_Unique_System_2_Planet: "ラリオン"
+ #Zevox (Shrouded planet)
+ NAME_Unique_System_3: "ゼヴォックス" #star
+ NAME_Unique_System_3_Planet: "ゼロ＝ワン"
+ NAME_Unique_System_3_Moon: "ゼロ＝ツー"
+ #Ancient Battlefields
+ NAME_Unique_System_4: "フェーンラックス・スタンド" #star
+ NAME_Unique_System_5: "ザンロックスの休息" #star
+ NAME_Unique_System_6: "アファリ" #star
+ #Triple Planet systems
+ NAME_Unique_System_7: "トラグラの十字架"
+ NAME_Unique_System_8: "トリンの約束"
+ NAME_Unique_System_9: "ロウ"
+ #Lost Swarm System
+ NAME_Lost_Swarm_System: "ウボグリールト"
+ NAME_Ubogleelt: "ウボグリールト"
+ NAME_UbogleeltA: "ウボグリールト I"
+ NAME_UbogleeltB: "ウボグリールト II"
+ NAME_UbogleeltC: "ウボグリールト III"
+ NAME_UbogleeltD: "ウボグリールト IV"
+ NAME_UbogleeltE: "ウボグリールト V"
+ NAME_Lost_Swarm: "イナゴの大群"
+ NAME_Lost_Swarm_Ship: "イナゴ"
+ NAME_Lost_Swarm_Adult: "イナゴ"
+ #Holibrae
+ NAME_Holibrae: "グリーゼ581"
+ NAME_Holibrae_Corps: "グリーゼ581兵団" #fleet
+ NAME_Holibrae_Destroyer: "グリーゼ581デストロイヤー" #ship type
+ #Star Mall
+ NAME_Parking_Orbit_White_Dwarf: "パーキング軌道：白色矮星区域"
+ NAME_Parking_Orbit_Main_Sequence: "パーキング軌道：主系列区域"
+ NAME_Star_Mall: "恒星モール"
+ NAME_Parking_Orbit_Magnetar: "パーキング軌道：マグネター区域"
+ NAME_Parking_Orbit_Black_Hole: "パーキング軌道：ブラックホール区域"
+ NAME_Parking_Orbit_Pulsar: "パーキング軌道：パルサー区域"
+ NAME_Parking_Orbit_Brown: "パーキング軌道：褐色矮星区域"
+ star_mall_drone: "恒星モール パーキングドローン"
+ star_mall_drone_plural: "恒星モール パーキングドローン"
+ NAME_Star_Mall_Parking_Drones: "恒星モール パーキングサービス"
+ NAME_Star_Mall_Parking_Services: "恒星モール パーキングサービス"
  
 ##############
 # Forward Earth Tags

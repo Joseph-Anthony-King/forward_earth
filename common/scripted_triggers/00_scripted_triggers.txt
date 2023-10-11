@@ -333,6 +333,10 @@ has_humanoids = {
 	optimize_memory
 	host_has_dlc = "Humanoids Species Pack"
 }
+has_humanoids_local = {
+	optimize_memory
+	local_has_dlc = "Humanoids Species Pack"
+}
 
 has_not_humanoids = {
 	optimize_memory
@@ -1025,6 +1029,16 @@ is_robot_empire = {
 	}
 }
 
+# Scopes: country, leader, pop, army, (colony) ship
+is_mechanical_species = {
+	species = {
+		OR = {
+			has_trait = trait_machine_unit # Machine Intelligence
+			has_trait = trait_mechanical # Robots & Synthetically-ascended Pops
+		}
+	}
+}
+
 is_lithoid_empire = {
 	owner_species = { is_lithoid = yes }
 }
@@ -1315,20 +1329,20 @@ is_xenophobe = {
 is_regular_empire = {
 	OR = {
 		is_country_type = default
+		#for checks in buildings and districts
+		is_country_type = awakened_marauders
 		is_country_type = fallen_empire
-		is_country_type = awakened_fallen_empire #for checks in buildings
+		is_country_type = awakened_fallen_empire
 	}
 	NOT = { has_ethic = ethic_gestalt_consciousness	}
 }
 
-is_regular_empire_or_primitive = {
+is_default_or_fallen = {
 	OR = {
 		is_country_type = default
 		is_country_type = fallen_empire
 		is_country_type = awakened_fallen_empire #for checks in buildings
-		is_primitive = yes
 	}
-	NOT = { has_ethic = ethic_gestalt_consciousness	}
 }
 
 is_capitalist = {
@@ -1623,7 +1637,7 @@ has_no_non_gate_megastructure = {
 					is_megastructure_type = spy_orb_ruined
 					is_megastructure_type = spy_orb_restored
 
-					is_megastructure_type = habitat_0
+					is_megastructure_type = habitat_central_complex
 
 					is_megastructure_type = matter_decompressor_0
 					is_megastructure_type = matter_decompressor_1
@@ -1708,6 +1722,36 @@ is_slaver = {
 	OR = {
 		has_valid_civic = civic_barbaric_despoilers
 		has_ascension_perk = ap_nihilistic_acquisition
+	}
+}
+
+# country scope | see 'triggered_opinion_xenophage'
+is_xenophage = {
+	OR = {
+		allows_purge = yes
+		allows_slavery = yes
+	}
+	any_owned_species = {
+		is_sapient = yes
+		OR = {
+			AND = {
+				has_citizenship_type = { country = prev type = citizenship_slavery }
+				OR = {
+					has_slavery_type = { country = prev type = slavery_livestock }
+					has_slavery_type = { country = prev type = slavery_matrix }
+				}
+			}
+			AND = {
+				OR = {
+					has_citizenship_type = { country = prev type = citizenship_purge_machine }
+					has_citizenship_type = { country = prev type = citizenship_purge }
+				}
+				OR = {
+					has_purge_type = { country = prev type = purge_processing }
+					has_purge_type = { country = prev type = purge_matrix }
+				}
+			}
+		}
 	}
 }
 
@@ -1859,6 +1903,28 @@ can_have_trade_deposits = {
 	}
 }
 
+can_have_volatile_motes_deposit = {
+	OR = {
+		is_planet_class = pc_molten
+		is_planet_class = pc_asteroid
+	}
+}
+
+can_have_rare_crystals_deposits = {
+	OR = {
+		is_planet_class = pc_gas_giant
+		is_planet_class = pc_toxic
+	}
+}
+
+can_have_exotic_gases_deposits = {
+	OR = {
+		is_planet_class = pc_frozen
+		is_planet_class = pc_ice_asteroid
+		is_inside_nebula = yes
+	}
+}
+
 is_fallen_empire = {
 	OR = {
 		is_country_type = fallen_empire
@@ -1878,6 +1944,8 @@ can_build_megastructures = {
 	OR = {
 		has_technology = tech_gateway_construction
 		has_technology = tech_ring_world
+		has_technology = tech_orbital_ring_tier_1
+		has_technology = tech_hyper_relays
 		can_build_unity_megastructures = yes
 	}
 }
@@ -1892,6 +1960,7 @@ can_build_unity_megastructures = {
 		has_technology = tech_dyson_sphere
 		has_technology = tech_matter_decompressor
 		has_technology = tech_mega_shipyard
+		has_technology = tech_quantum_catapult
 	}
 }
 
@@ -2390,23 +2459,6 @@ enigmatic_modifier_jobs = { # Only pops with jobs affecting resources without mo
 	}
 }
 
-is_specialist_researcher = { #Specialist traits for recruitable leaders
-	OR = {
-		has_trait = leader_trait_expertise_biology
-		has_trait = leader_trait_expertise_computing
-		has_trait = leader_trait_expertise_field_manipulation
-		has_trait = leader_trait_expertise_industry
-		has_trait = leader_trait_expertise_materials
-		has_trait = leader_trait_expertise_military_theory
-		has_trait = leader_trait_expertise_new_worlds
-		has_trait = leader_trait_expertise_particles
-		has_trait = leader_trait_expertise_propulsion
-		has_trait = leader_trait_expertise_psionics
-		has_trait = leader_trait_expertise_statecraft
-		has_trait = leader_trait_expertise_voidcraft
-	}
-}
-
 is_special_colony_type = {
 	OR = {
 		has_modifier = penal_colony
@@ -2753,6 +2805,23 @@ is_drone_country_type = {
 	}
 }
 
+is_pacified_space_critter_country_type = {
+	OR = {
+		is_country_type = tiyanki
+		AND = {
+			OR = { 
+				is_country_type = amoeba
+				is_country_type = amoeba_borderless
+			}
+			root = { has_country_flag = pacified_amoebas }
+		}
+		AND = {
+			is_country_type = crystal
+			root = { has_country_flag = pacified_crystals }
+		}
+	}
+}
+
 #solar_system scope
 is_valid_drone_expansion_destination_system = {
 	NOR = {
@@ -2788,6 +2857,7 @@ is_valid_crystal_splitter_system = {
 		has_star_flag = amoeba_home_system
 		has_star_flag = lcluster
 		has_star_flag = sealed_system
+		has_star_flag = fruitful_colonization
 	}
 	any_system_planet = { is_asteroid = yes }
 }
@@ -2844,6 +2914,21 @@ default_endgame_early_start_triggers = {
 				has_global_flag = war_in_heaven_ended
 				NOT = { has_global_flag = war_in_heaven_recently_started }
 			}
+		}
+	}
+}
+
+should_ai_focus_on_trade = {
+	is_ai = yes
+	OR = {
+		has_ai_personality = peaceful_traders
+		has_ai_personality = ruthless_capitalists
+	}
+	owner_main_species = {
+		OR = {
+			has_trait = "trait_thrifty"
+			has_trait = "trait_cyborg_trading_algorithms"
+			has_trait = "trait_robot_trading_algorithms"
 		}
 	}
 }
@@ -3255,6 +3340,10 @@ is_death_cult_empire = {
 	}
 }
 
+is_worker_coop_empire = {
+	has_valid_civic = civic_worker_coop
+}
+
 is_subterranean_empire = {
 	has_origin = origin_subterranean
 }
@@ -3334,6 +3423,10 @@ is_orbital_ring = {
 	has_starbase_size >= orbital_ring_tier_1
 }
 
+is_normal_starbase = {
+	has_starbase_size >= starbase_outpost
+}
+
 is_faction_allowed = {
 	OR = {
 		AND = {
@@ -3393,6 +3486,7 @@ values_others = {
 		has_valid_civic = civic_hive_empath
 		has_valid_civic = civic_machine_servitor
 		has_valid_civic = civic_machine_exploration_protocol
+		has_origin = origin_fruitful
 	}
 }
 
@@ -3504,6 +3598,7 @@ is_reanimator = {
 		has_valid_civic = civic_reanimated_armies
 		has_valid_civic = civic_permanent_employment
 		has_valid_civic = civic_hive_cordyceptic_drones
+		has_ascension_perk = ap_mechromancy
 	}
 }
 
@@ -3660,6 +3755,44 @@ got_any_unprotected_drones = {
 	}
 }
 
+# This can replace all the specific ones.
+has_councilor = {
+	exists = owner
+	owner = {
+		any_owned_leader = {
+			is_councilor = yes
+			is_councilor_type = $COUNCILOR$
+		}
+	}
+}
+
+has_enclave_councilor = {
+	OR = {
+		has_councilor = { COUNCILOR = councilor_shroudwalker_teacher }
+		has_councilor = { COUNCILOR = councilor_master_salvager }
+		has_councilor = { COUNCILOR = councilor_curator_archivist }
+		has_councilor = { COUNCILOR = councilor_enclave_trader }
+	}
+}
+
+is_enclave_councilor_type = {
+	OR = {
+		is_councilor_type = councilor_shroudwalker_teacher
+		is_councilor_type = councilor_master_salvager
+		is_councilor_type = councilor_curator_archivist
+		is_councilor_type = councilor_enclave_trader
+	}
+}
+
+is_gestalt_node = {
+	OR = {
+		is_councilor_type = councilor_gestalt_governor
+		is_councilor_type = councilor_gestalt_scientist
+		is_councilor_type = councilor_gestalt_admiral
+		is_councilor_type = councilor_gestalt_general
+	}
+}
+
 has_special_star_flag_trigger = {
 	OR = {
 		# Start System Flags
@@ -3668,6 +3801,7 @@ has_special_star_flag_trigger = {
 		has_star_flag = neighbor_t1_first_colony
 		has_star_flag = neighbor_t2
 		has_star_flag = neighbor_t2_second_colony
+		has_star_flag = empire_cluster
 		# Enclaves
 		has_star_flag = enclave
 		has_star_flag = caravaneer_home
@@ -3766,6 +3900,7 @@ is_human_species = {
 	OR = {
 		species_portrait = human
 		species_portrait = human_legacy
+		species_portrait = pla17
 	}
 }
 
@@ -3875,6 +4010,8 @@ is_preftl_but_not_special = {
 	}
 }
 
+
+
 can_add_cybernetic_traits = {
 	hidden_trigger = { exists = from }
 	from = {
@@ -3915,28 +4052,10 @@ is_market_nominee_planet = {
 
 has_chosen_covenant_trait_non_ruler = {
 	OR = {
-		has_trait = leader_trait_general_composer_chosen
-		has_trait = leader_trait_scientist_composer_chosen
-		has_trait = leader_trait_governor_composer_chosen
-		has_trait = leader_trait_general_eater_chosen
-		has_trait = leader_trait_admiral_eater_chosen
-		has_trait = leader_trait_governor_eater_chosen
-		has_trait = leader_trait_admiral_instrument_chosen
-		has_trait = leader_trait_scientist_instrument_chosen
-		has_trait = leader_trait_governor_instrument_chosen
-		has_trait = leader_trait_general_whisperers_chosen
-		has_trait = leader_trait_admiral_whisperers_chosen
-		has_trait = leader_trait_scientist_whisperers_chosen
-	}
-}
-
-has_chosen_trait_ruler = {
-	OR = {
-		has_ruler_trait = leader_trait_ruler_chosen
-		has_ruler_trait = leader_trait_ruler_composer_chosen
-		has_ruler_trait = leader_trait_ruler_eater_chosen
-		has_ruler_trait = leader_trait_ruler_instrument_chosen
-		has_ruler_trait = leader_trait_ruler_whisperers_chosen
+		has_trait = leader_trait_composer_chosen
+		has_trait = leader_trait_eater_chosen
+		has_trait = leader_trait_instrument_chosen
+		has_trait = leader_trait_whisperers_chosen
 	}
 }
 
@@ -3949,5 +4068,71 @@ has_presapient_trait = {
 		has_trait = trait_presapient_conservative
 		has_trait = trait_presapient_irradiated
 		has_trait = trait_presapient_docile_livestock
+	}
+}
+
+is_memory_vault_empire = {
+	OR = {
+		has_valid_civic = civic_memory_vault
+		has_valid_civic = civic_memory_vault_corporate
+		has_valid_civic = civic_memory_vault_machine
+		has_valid_civic = civic_memory_vault_hive
+	}
+}
+
+is_ascensionist_empire = {
+	OR = {
+		has_valid_civic = civic_ascensionists
+		has_valid_civic = civic_corporate_ascensionists
+		has_valid_civic = civic_hive_ascensionists
+		has_valid_civic = civic_machine_ascensionists
+	}
+}
+
+is_flora_species = {
+	OR = {
+		is_species_class = FUN
+		is_species_class = PLANT
+	}
+}
+
+is_rival_technologically_superior = {
+	any_rival_country = {
+		 relative_power = {
+		 	who = root
+		 	category = technology
+		 	value >= superior
+		 }
+	}
+}
+
+is_rival_economically_superior = {
+	any_rival_country = {
+		 relative_power = {
+		 	who = root
+		 	category = economy
+		 	value >= superior
+		 }
+	}
+}
+
+is_rival_militarily_superior = {
+	any_rival_country = {
+		 relative_power = {
+		 	who = root
+		 	category = fleet
+		 	value >= superior
+		 }
+	}
+}
+
+blocks_disruptive_gameplay = { #In case we ever want to extend the effect to other game options
+	is_difficulty = 0
+}
+
+is_void_dweller_empire = {
+	OR = {
+		has_ascension_perk = ap_voidborn
+		has_origin = origin_void_dwellers
 	}
 }
