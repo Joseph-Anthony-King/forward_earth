@@ -139,10 +139,10 @@ country_event = {
 		text = advisor.1.desc_13
 		show_sound = plutocratic_materialist_intro
 		trigger = {
-            OR = {
-			    has_government = gov_science_directorate
-			    has_government = gov_planetary_union
-            }
+			OR = {
+				has_government = gov_science_directorate
+				has_government = gov_planetary_union
+			}
 		}
 	}
 
@@ -359,7 +359,10 @@ country_event = {
 		text = advisor.1.desc_34
 		# show_sound = TODO
 		trigger = {
-			has_government = gov_criminal_syndicate
+			OR = {
+				has_government = gov_pirate_haven
+				has_government = gov_criminal_syndicate
+			}
 		}
 	}
 
@@ -597,18 +600,17 @@ country_event = {
 	title = advisor.20.name
 	desc = advisor.20.desc
 	show_sound = event_negative_income_advisor
+	is_triggered_only = yes
 
 	is_advisor_event = yes
 
 	trigger = {
 		is_ai = no
-		NOT = { is_tutorial_level = 0 }
-		NOT = { has_country_flag = advisor_losing_energy }
 		running_balance < -1
-	}
-
-	mean_time_to_happen = {
-		months = 1
+		NOR = {
+			has_country_flag = advisor_losing_energy
+			is_tutorial_level = 0
+		}
 	}
 
 	immediate = {
