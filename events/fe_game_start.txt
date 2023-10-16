@@ -2528,6 +2528,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_mercury
@@ -2545,6 +2546,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_venus
@@ -2562,6 +2564,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_earth
@@ -2579,6 +2582,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_luna
@@ -2596,6 +2600,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_mars
@@ -2613,6 +2618,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_phobos
@@ -2630,6 +2636,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_deimos
@@ -2647,6 +2654,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_ceres
@@ -2664,6 +2672,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_pallas
@@ -2681,6 +2690,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_juno
@@ -2698,6 +2708,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_vesta
@@ -2715,6 +2726,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_jupiter
@@ -2732,6 +2744,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_io
@@ -2749,6 +2762,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_europa
@@ -2766,6 +2780,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_ganymede
@@ -2783,6 +2798,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_callisto
@@ -2800,6 +2816,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_saturn
@@ -2817,6 +2834,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_enceladus
@@ -2834,6 +2852,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_titan
@@ -2851,6 +2870,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_uranus
@@ -2868,6 +2888,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_titania
@@ -2885,6 +2906,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_oberon
@@ -2902,6 +2924,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_neptune
@@ -2919,6 +2942,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_triton
@@ -2936,6 +2960,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_pluto
@@ -2953,6 +2978,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_makemake
@@ -2970,6 +2996,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_haumea
@@ -2987,6 +3014,7 @@ event = {
                             any_country = { has_country_flag = human_2 }
                             any_country = { has_country_flag = humans_early_space_age }
                             any_country = { has_country_flag = icarus_faction }
+                            any_country = { has_country_flag = human_plantoid }
                         } 
                     }
                     has_planet_flag = planet_varuna
