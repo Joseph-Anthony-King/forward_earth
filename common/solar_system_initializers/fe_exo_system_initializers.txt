@@ -533,6 +533,7 @@ gliese_581_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
 
     planet = {
@@ -900,6 +901,7 @@ hd_219134_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
 
     planet = {
@@ -979,6 +981,7 @@ hip_41378_system_initializer = {
         orbit_angle = 10
         has_ring = no
         class = "pc_hothouse"
+		entity = hothouse_planet_01_entity
     }
 
     planet = {
@@ -1126,6 +1129,7 @@ kepler_11_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
 
     planet = {
@@ -1146,6 +1150,7 @@ kepler_11_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
 
     planet = {
@@ -1223,6 +1228,7 @@ kepler_20_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
     planet = {
         name = "NAME_Kepler_20_d"
@@ -1293,6 +1299,7 @@ kepler_32_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
     planet = {
         name = "NAME_Kepler_32_d"
@@ -1345,6 +1352,7 @@ kepler_33_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
     planet = {
         name = "NAME_Kepler_33_e"
@@ -1482,6 +1490,7 @@ kepler_62_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
     planet = {
         name = "NAME_Kepler_62_e"
@@ -1547,6 +1556,7 @@ kepler_80_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { pd_ignore }
+		entity = hothouse_planet_01_entity
     }
     planet = {
         name = "NAME_Kepler_80_b"

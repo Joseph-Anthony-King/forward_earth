@@ -2566,7 +2566,7 @@ sol_system_void_dweller_system = {
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 
 	planet = {

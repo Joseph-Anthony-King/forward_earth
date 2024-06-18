@@ -76,7 +76,7 @@ npc_sol_system_initializer = {
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 
 	planet = {
@@ -549,6 +549,7 @@ npc_70_virginis_system_initializer = {
 		size = 17
 		has_ring = no
         flags = { planet_70_viginis_1 }
+		entity = hothouse_planet_01_entity
 
 		moon = {
 			name = "HUM2_PLANET_ValkMasted"
@@ -1077,6 +1078,7 @@ kepler_186_system_initializer = {
         has_ring = no
         class = "pc_hothouse"
         flags = { planet_kepler_186_d }
+		entity = hothouse_planet_01_entity
     }
 
     planet = {

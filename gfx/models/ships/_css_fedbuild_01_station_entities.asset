@@ -376,29 +376,54 @@ entity = {
 entity = {
 	name = "css_fedbuild_01_ion_cannon_entity"
 	locator = { name = "part1" position = { 0 0 0 } }
-	pdxmesh = "css_fedbuild_01_ion_cannon_mesh"
-	scale = 1.0	
 }
 
 entity = {
 	name = "css_fedbuild_01_ion_cannon_section_entity"
 	pdxmesh = "css_fedbuild_01_ion_cannon_mesh"
-	scale = 1.0
+	scale = 0.5
 
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	start_event = { node = "xl_gun_01" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
 }
+
+	# attach = { "xl_gun_01" = "ion_cannon_core_entity" }
+}
+
+###### Ion Cannon ######
+
+# entity = {
+	# name = "css_fedbuild_01_ion_cannon_entity"
+	# locator = { name = "part1" position = { 0 0 0 } }
+	# pdxmesh = "css_fedbuild_01_ion_cannon_mesh"
+	# scale = 1.0	
+# }
+
+# entity = {
+	# name = "css_fedbuild_01_ion_cannon_section_entity"
+	# pdxmesh = "css_fedbuild_01_ion_cannon_mesh"
+	# scale = 1.0
+
+# }
 
 entity = {
 	name = "css_fedbuild_01_nsc_cannon_entity"
 	locator = { name = "part1" position = { 0 0 0 } }
-	pdxmesh = "css_fedbuild_01_ion_cannon_mesh"
-	scale = 1.0	
+	scale = 0.5
 }
 
 entity = {
 	name = "css_fedbuild_01_nsc_cannon_section_entity"
 	pdxmesh = "css_fedbuild_01_nsc_cannon_mesh"
-	scale = 1.0
+	scale = 0.5
 
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+	start_event = { node = "xl_gun_01" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+}
+
+	# attach = { "xl_gun_01" = "ion_cannon_core_entity" }
 }
 
 
@@ -871,6 +896,16 @@ entity = {
 		name = "css_fedbuild_01_military_station_section_light_entity"
 		pdxmesh = "css_fedbuild_01_military_station_section_light_mesh"	
 		scale = 1.0
+	}
+
+	entity = {
+		name = "css_fedbuild_01_military_station_section_hangar_entity"
+		pdxmesh = "css_fedbuild_01_military_station_section_heavy_mesh"
+		scale = 1.0
+
+		game_data = {
+			emissive_recolor_crunch = 10.0
+			}
 	}
 
 	entity = {

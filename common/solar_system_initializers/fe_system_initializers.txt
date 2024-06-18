@@ -61,7 +61,7 @@ icarus_sol_system_initializer = {
 		size = 20
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { pd_ignore }
+		flags = { realsol_venus pd_ignore }
 	}
 	
 	planet = {

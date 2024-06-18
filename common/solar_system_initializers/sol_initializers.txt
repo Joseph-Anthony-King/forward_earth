@@ -60,7 +60,7 @@ sol_system_initializer = {
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 
 	planet = {
@@ -550,7 +550,7 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_eyeball"
+			class = "pc_pd_cold_tidally_locked"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
@@ -634,6 +634,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			size = 18
 			has_ring = no
 			flags = { pd_ignore }
+			entity = hothouse_planet_01_entity
 		
 			init_effect = {
 				add_modifier = {
@@ -752,7 +753,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_eyeball"
+			class = "pc_pd_cold_tidally_locked"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
@@ -2952,7 +2953,7 @@ com_sol_system = {
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 
 	planet = {
@@ -3718,7 +3719,7 @@ lost_colony_sol_system = {
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus pd_ignore }
 	}
 
 	planet = {
@@ -4281,7 +4282,7 @@ lost_colony_sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_eyeball"
+			class = "pc_pd_cold_tidally_locked"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
