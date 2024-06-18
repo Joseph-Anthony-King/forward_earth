@@ -117,7 +117,7 @@ random_list = {
     name = "fe_gal_risian_colony_target_planet_types"
     planets = {
         "pc_continental"
-        "pc_retinal"
+        "pc_pd_retinal"
     }
 }
 

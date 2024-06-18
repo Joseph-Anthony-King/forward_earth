@@ -574,7 +574,7 @@ npc_70_virginis_system_initializer = {
 
 	planet = {
 		name = "NAME_Gal_Risia"
-		class = "pc_retinal"
+		class = "pc_pd_retinal"
 		orbit_distance = 25
 		orbit_angle = 190
 		size = 18
