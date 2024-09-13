@@ -168,36 +168,36 @@ custodianship = {
 # Determined Exterminator - ICARUS
 icarus = {
 	name = "EMPIRE_DESIGN_icarus"
-	adjective = "NAME_Autodrone"
+	adjective = "PRESCRIPTED_adjective_icarus"
 	spawn_enabled = no # yes / no / always
-	ignore_portrait_duplication = no
-	
-	playable = has_synthethic_dawn # scripted_triggers
-	
-	ship_prefix = "ICARUS"
-	
+	ignore_portrait_duplication = yes
+
+	playable = has_synthetic_dawn_not_machine_age # scripted_triggers
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_icarus"
+
 	species = {
 		class = "MACHINE"
 		portrait = "sd_hum_robot"
-		name = "NAME_Autodrone"
-		plural = "NAME_Autodrones"
-		adjective = "NAME_Autodrone"
-		name_list = "MACHINE4"
-		trait="trait_machine_unit"
-		trait="trait_robot_logic_engines"
-		trait="trait_robot_mass_produced"
-		trait="trait_robot_luxurious"
+		name = "PRESCRIPTED_species_name_icarus"
+		plural = "PRESCRIPTED_species_plural_icarus"
+		adjective = "PRESCRIPTED_species_adjective_icarus"
+		name_list = "MACHINE1"
+		gender = indeterminable
+		trait = "trait_machine_unit"
+		trait = "trait_robot_history_warbot"
+		trait = "trait_robot_power_drills"
+		trait = "trait_robot_mass_produced"
+		trait = "trait_robot_uncanny"
+		trait = "trait_robot_bulky"
 	}
-	
-	room = "machine_room"
-	
+
+	room = "ethic_ai_room"
+
 	ethic = ethic_gestalt_consciousness
 	authority = "auth_machine_intelligence"
 	government = gov_machine_terminator
-	civics={
-		"civic_machine_terminator"
-		"civic_machine_warbots"
-	}
+	civics = { "civic_machine_terminator" "civic_machine_warbots" }
 	origin = "origin_default"
 
 	flags = { icarus_faction earth_faction custom_start_screen }
@@ -212,29 +212,30 @@ icarus = {
 
 	empire_flag={
 		icon={
-			category = "human"
-			file = "flag_human_nato.dds"
+			category = "domination"
+			file = "domination_11.dds"
 		}
 		background = {
 			category = "backgrounds"
-			file = "00_solid.dds"
+			file = "triangle_split.dds"
 		}
 		colors = {
-			"blue"
+			"red"
 			"black"
 			"null"
 			"null"
 		}
 	}
-	
+
 	ruler = {
-		name="ICARUS"
+		name = "PRESCRIPTED_ruler_name_icarus"
 		gender = indeterminable
-		portrait="sd_hum_robot"
-		texture = 3
+		portrait = "sd_hum_robot"
+		texture = 2
 		attachment = 0
 		clothes = 0
- 		trait = "trait_ruler_warlike"
+		ruler_title = "PRESCRIPTED_ruler_title_icarus"
+ 		trait = "leader_trait_fleet_organizer"
 		leader_class = commander
 	}
 }
@@ -475,6 +476,81 @@ custodianship_machine_age = {
 		ruler_title = "PRESCRIPTED_ruler_title_custodianship"
  		trait = "trait_ruler_feedback_loop"
 		leader_class = official
+	}
+}
+
+# Determined Exterminator - ICARUS
+icarus_machine_age = {
+	name = "EMPIRE_DESIGN_icarus"
+	adjective = "PRESCRIPTED_adjective_icarus"
+	spawn_enabled = no # yes / no / always
+	ignore_portrait_duplication = yes
+
+	playable = has_synthetic_dawn_and_machine_age # scripted_triggers
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_icarus"
+
+	species = {
+		class = "MACHINE"
+		portrait = "sd_hum_robot"
+		name = "PRESCRIPTED_species_name_icarus"
+		plural = "PRESCRIPTED_species_plural_icarus"
+		adjective = "PRESCRIPTED_species_adjective_icarus"
+		name_list = "MACHINE1"
+		gender = indeterminable
+		trait = "trait_machine_unit"
+		trait = "trait_robot_history_warbot"
+		trait = "trait_robot_power_drills"
+		trait = "trait_robot_mass_produced"
+		trait = "trait_robot_uncanny"
+		trait = "trait_robot_bulky"
+	}
+
+	room = "ethic_ai_room"
+
+	ethic = ethic_gestalt_consciousness
+	authority = "auth_machine_intelligence"
+	government = gov_machine_terminator
+	civics = { "civic_machine_terminator" "civic_machine_warbots" }
+	origin = "origin_default"
+
+	flags = { icarus_faction earth_faction custom_start_screen }
+	
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	system_name = "NAME_Sol"
+	initializer = "sol_system_initializer"
+
+	graphical_culture = "ai_ship_set_01"
+	city_graphical_culture = "ai_ship_set_01"
+
+	empire_flag={
+		icon={
+			category = "domination"
+			file = "domination_11.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "triangle_split.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_icarus"
+		gender = indeterminable
+		portrait = "sd_hum_robot"
+		texture = 2
+		attachment = 0
+		clothes = 0
+		ruler_title = "PRESCRIPTED_ruler_title_icarus"
+ 		trait = "leader_trait_fleet_organizer"
+		leader_class = commander
 	}
 }
 

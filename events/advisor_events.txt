@@ -91,6 +91,7 @@ country_event = {
 		show_sound = democratic_pacifist_intro
 		trigger = {
 			has_government = gov_moral_democracy
+			has_government = gov_constitutional_monarchy
 		}
 	}
 
@@ -330,7 +331,6 @@ country_event = {
 	# Welcome, High Executioner
 	desc = {
 		text = advisor.1.desc_31
-		# show_sound = TODO
 		trigger = {
 			has_government = gov_blood_court
 		}
@@ -339,7 +339,6 @@ country_event = {
 	# Welcome, Lord/Lady Purifier
 	desc = {
 		text = advisor.1.desc_32
-		# show_sound = TODO
 		trigger = {
 			has_government = gov_purity_order
 		}
@@ -348,7 +347,6 @@ country_event = {
 	# Welcome, Grand Arbiter
 	desc = {
 		text = advisor.1.desc_33
-		# show_sound = TODO
 		trigger = {
 			has_government = gov_purification_committee
 		}
@@ -357,12 +355,27 @@ country_event = {
 	# Welcome, Oligarch
 	desc = {
 		text = advisor.1.desc_34
-		# show_sound = TODO
 		trigger = {
 			OR = {
 				has_government = gov_pirate_haven
 				has_government = gov_criminal_syndicate
 			}
+		}
+	}
+
+	# Welcome, High Shield
+	desc = {
+		text = advisor.1.desc_35
+		trigger = {
+			has_government = gov_defensive_union
+		}
+	}
+
+	# Welcome, First Ascendant
+	desc = {
+		text = advisor.1.desc_36
+		trigger = {
+			has_government = gov_dimensional_covenant
 		}
 	}
 
