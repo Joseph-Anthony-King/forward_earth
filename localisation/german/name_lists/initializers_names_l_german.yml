@@ -416,6 +416,7 @@
  NAME_wenkwort_asteroid: "Truin" #planet
  NAME_Gardener_Drone: "Audon-Aufsehereinheit" #ship
  NAME_Gardener_Drone_plural: "Aufseher-Division 14-WW" #fleet
+ NAME_Gardeners: "Gärtner"
  NAME_Gardener1: "CT Perton" #ship
  NAME_Gardener2: "CT Sparton-Bron" #ship
  NAME_Gardener3: "CT Whisenton" #ship
@@ -496,6 +497,19 @@
  star_mall_drone_plural: "Sternen-Mall-Parkdrohnen"
  NAME_Star_Mall_Parking_Drones: "Sternen-Mall-Parkservice"
  NAME_Star_Mall_Parking_Services: "Sternen-Mall-Parkservice"
+ #Breachsealers
+ NAME_Seddom: "Seddom" #Modders
+ NAME_Ariph: "Ariph" #Ariphaos
+ NAME_Hari_XXIV: "Hari XXIV" #Harain & The24thDS
+ NAME_Risasi: "Risasi" #Risa
+ NAME_Aridder: "Aridder" #alexrider903
+ NAME_E'cho: "E'cho" #ECHO
+ NAME_Rover: "Rover" #Roverstorm
+ NAME_Jasepe: "Jasepe" #jasonpepe
+ NAME_Blaxe: "Blaxe" #SirBlackAxe
+ NAME_Glavi: "Glavi" #Glavius
+ NAME_Salvold: "Salvold" #Savlor & OldEnt
+ NAME_Frince: "Frince" #Fireprince
  
 ##############
 # Forward Earth Tags
@@ -836,3 +850,4 @@
  NAME_Wolf_1061_b:0 "Wolf 1061 b"
  NAME_Wolf_1061_c:0 "Wolf 1061 c"
  NAME_Wolf_1061_d:0 "Wolf 1061 d"
+

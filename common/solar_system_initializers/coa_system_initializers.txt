@@ -49,7 +49,15 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
-		entity = "barren_planet_mercury_entity"
+		flags = { planet_mercury }
+		init_effect = {
+			set_planet_entity = {
+				entity = barren_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 	
 	planet = {
@@ -59,8 +67,15 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		orbit_angle = 125
 		size = 16
 		has_ring = no
-		entity = "toxic_planet_venus_entity"
-		flags = { realsol_venus }
+		flags = { realsol_venus planet_venus }
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
 	}
 	
 	planet = {
@@ -421,7 +436,15 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_uranus_entity"
+		flags = { planet_uranus }
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_uranus_entity
+				atmosphere_color = hsv { 0.548 0.519 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 		
 		moon = {
 			name = "NAME_Titania"
@@ -450,8 +473,17 @@ eta_cassiopeiae_with_sol_system_initializer = {
 		orbit_angle = -195
 		size = 20
 		has_ring = no
-		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
+		flags = { planet_neptune }
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 		
 		moon = {
 			name = "NAME_Triton"
@@ -552,7 +584,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -561,7 +593,7 @@ coa_sol_neighbor_t1_first_colony = {
 		has_ring = no
 
     	planet = {
-    		name = "Alpha Centauri B I"
+    		name = "NAME_Alpha_Centauri_B_I"
     		class = "pc_molten"
     		orbit_distance = 25
     		orbit_angle = 125
@@ -570,7 +602,7 @@ coa_sol_neighbor_t1_first_colony = {
     	}
 
     	planet = {
-    		name = "Alpha Centauri B II"
+    		name = "NAME_Alpha_Centauri_B_II"
     		orbit_distance = 25
     		orbit_angle = 120
     		class = "pc_continental"
@@ -578,7 +610,7 @@ coa_sol_neighbor_t1_first_colony = {
     		has_ring = no
     		entity = "continental_planet_01_entity"
     		moon = {
-    			name = "Alpha Centauri B IIa"
+    			name = "NAME_Alpha_Centauri_B_IIa"
     			class = "pc_barren_cold"
     			size = 1
     			orbit_distance = 7
@@ -586,7 +618,7 @@ coa_sol_neighbor_t1_first_colony = {
     		}
 
     		moon = {
-    			name = "Alpha Centauri B IIb"
+    			name = "NAME_Alpha_Centauri_B_IIb"
     			class = "pc_barren_cold"
     			size = 2
     			orbit_distance = 4
@@ -632,7 +664,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -640,7 +672,7 @@ coa_sol_neighbor_t1_first_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_molten"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -649,7 +681,7 @@ coa_sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
@@ -661,7 +693,7 @@ coa_sol_neighbor_t1_first_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -670,7 +702,7 @@ coa_sol_neighbor_t1_first_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -679,7 +711,7 @@ coa_sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
+			name = "NAME_Proxima_Centauri_II"
 			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
@@ -688,7 +720,7 @@ coa_sol_neighbor_t1_first_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6
@@ -733,7 +765,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri B"
+		name = "NAME_Alpha_Centauri_B"
 		count = 1
 		class = "pc_k_star"
 		orbit_distance = 0
@@ -742,7 +774,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		has_ring = no
 
     	planet = {
-    		name = "Alpha Centauri B I"
+			name = "NAME_Alpha_Centauri_B_I"
     		class = "pc_molten"
     		orbit_distance = 25
     		orbit_angle = 125
@@ -751,7 +783,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
     	}
 
 		planet = {
-			name = "Alpha Centauri B II"
+    	name = "NAME_Alpha_Centauri_B_II"
 			orbit_distance = 25
 			orbit_angle = 120
 			class = "pc_barren"
@@ -766,7 +798,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 				}
 			}
 			moon = {
-				name = "Alpha Centauri B IIa"
+    			name = "NAME_Alpha_Centauri_B_IIa"
 				class = "pc_barren_cold"
 				size = 1
 				orbit_distance = 7
@@ -774,7 +806,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 			}
 
 			moon = {
-				name = "Alpha Centauri B IIb"
+    			name = "NAME_Alpha_Centauri_B_IIb"
 				class = "pc_barren_cold"
 				size = 2
 				orbit_distance = 4
@@ -820,7 +852,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Alpha Centauri A"
+		name = "NAME_Alpha_Centauri_A"
 		class = "pc_g_star"
 		orbit_distance = 190
 		orbit_angle = 0
@@ -828,7 +860,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		has_ring = no
 
 		planet = {
-			name = "Alpha Centauri A I"
+			name = "NAME_Alpha_Centauri_A_I"
 			class = "pc_molten"
 			orbit_distance = 40
 			orbit_angle = 90
@@ -837,7 +869,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Alpha Centauri A II"
+			name = "NAME_Alpha_Centauri_A_II"
 			class = "pc_toxic"
 			orbit_distance = 20
 			orbit_angle = 270
@@ -849,7 +881,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 	}
 
 	planet = {
-		name = "Proxima Centauri"
+		name = "NAME_Proxima_Centauri"
 		class = "pc_m_star"
 		orbit_distance = 40
 		orbit_angle = 270
@@ -858,7 +890,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		change_orbit = 4
 
 		planet = {
-			name = "Proxima Centauri I"
+			name = "NAME_Proxima_Centauri_I"
 			class = "pc_molten"
 			orbit_distance = 12
 			orbit_angle = 268
@@ -867,7 +899,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri II"
+			name = "NAME_Proxima_Centauri_II"
 			class = "pc_tundra"
 			orbit_distance = 12
 			orbit_angle = 4
@@ -876,7 +908,7 @@ coa_sol_neighbor_t1_no_guaranteed_colony = {
 		}
 
 		planet = {
-			name = "Proxima Centauri III"
+			name = "NAME_Proxima_Centauri_III"
 			class = "pc_frozen"
 			orbit_distance = 12
 			orbit_angle = -6

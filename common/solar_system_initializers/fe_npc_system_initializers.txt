@@ -64,8 +64,15 @@ npc_sol_system_initializer = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
-		entity = "barren_planet_mercury_entity"
 		flags = { planet_mercury }
+		init_effect = {
+			set_planet_entity = {
+				entity = barren_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -75,8 +82,15 @@ npc_sol_system_initializer = {
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-		entity = "toxic_planet_venus_entity"
-		flags = { planet_venus }
+		flags = { realsol_venus planet_venus }
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -285,8 +299,15 @@ npc_sol_system_initializer = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_uranus_entity"
 		flags = { planet_uranus }
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_uranus_entity
+				atmosphere_color = hsv { 0.548 0.519 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 		
 		moon = {
 			name = "NAME_Titania"

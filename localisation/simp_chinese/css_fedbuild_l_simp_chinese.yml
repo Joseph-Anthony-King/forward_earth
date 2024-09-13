@@ -1,0 +1,32 @@
+﻿l_simp_chinese:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+ css_fedbuild:0 "联邦建设者"
+ css_fedbuild_desc:1 "奇克和守门人的联邦建造者的船舶组。"
+ 
+ css_fedbuild_colours:0 "联邦建设者 (C)"
+ css_fedbuild_colours_desc:1 "奇克和守门人的联邦建造者的船舶组具有动态色彩。"
+ 
+ css_dss_fedbuild:0 "联邦建设者 (DS)"
+ css_dss_fedbuild_desc:1 "奇克和守门人的联邦建造者的船舶组。 缩小规模的船舶补丁。"
+ 
+ css_dss_fedbuild_colours:0 "联邦建设者 (C+DS)"
+ css_dss_fedbuild_colours_desc:1 "奇克和守门人的联邦建造者的船舶组具有动态色彩。 缩小规模的船舶补丁。"
+ 
+ CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "缩兜级纠察船"
+ 
+ CORVETTE_CSS_FEDBUILD_01_MID_M1S1:1 "奈德·凯利级护卫舰"
+
+ #Odds and Ends
+ tech_css_fedbuild_01:0 "联邦建设者科技"
+ tech_css_fedbuild_01_desc:0 "联邦建设者科技"
+ TECH_CSS_FEDBUILD:0 "联邦建设者科技"
+ tech_css_fedbuild_02:0 "联邦建设者科技"
+ tech_css_fedbuild_02_desc:0 "联邦建设者科技"

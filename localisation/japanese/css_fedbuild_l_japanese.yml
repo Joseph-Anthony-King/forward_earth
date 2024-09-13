@@ -1,0 +1,32 @@
+﻿l_japanese:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+ css_fedbuild:0 "フェデレーションビルダー"
+ css_fedbuild_desc:1 "チークとゲートキーパーの連邦ビルダーのシップセット。"
+ 
+ css_fedbuild_colours:0 "フェデレーションビルダー (C)"
+ css_fedbuild_colours_desc:1 "チークとゲートキーパーのフェデレーション ビルダーのダイナミックなカラーのシップセット。"
+ 
+ css_dss_fedbuild:0 "フェデレーションビルダー (DS)"
+ css_dss_fedbuild_desc:1 "チークとゲートキーパーの連邦ビルダーのシップセット。 縮小された船のパッチ。"
+ 
+ css_dss_fedbuild_colours:0 "フェデレーションビルダー (C+DS)"
+ css_dss_fedbuild_colours_desc:1 "チークとゲートキーパーのフェデレーション ビルダーのダイナミックなカラーのシップセット。 縮小された船のパッチ。"
+ 
+ CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "カブト級ピケットシップ"
+ 
+ CORVETTE_CSS_FEDBUILD_01_MID_M1S1:1 "ネッド・ケリー級フリゲート"
+
+ #Odds and Ends
+ tech_css_fedbuild_01:0 "フェデレーション ビルダーズ テック"
+ tech_css_fedbuild_01_desc:0 "フェデレーション ビルダーズ テック"
+ TECH_CSS_FEDBUILD:0 "フェデレーション ビルダーズ テック"
+ tech_css_fedbuild_02:0 "フェデレーション ビルダーズ テック"
+ tech_css_fedbuild_02_desc:0 "フェデレーション ビルダーズ テック"

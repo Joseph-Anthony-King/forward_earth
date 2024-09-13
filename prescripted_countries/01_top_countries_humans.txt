@@ -4,9 +4,9 @@ humans1_1 = {
 	adjective = "PRESCRIPTED_adjective_humans1"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
-	
+
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
-	
+
 	species = {
 		class = "HUM"
 		portrait = "human"
@@ -18,9 +18,9 @@ humans1_1 = {
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
 	}
-	
+
 	room = "personality_federation_builders_room"
-	
+
 	authority = "auth_democratic"
 	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
 	government = gov_planetary_union
@@ -58,15 +58,16 @@ humans1_1 = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_humans1"
 		gender = female
 		portrait = "human_female_05"
 		texture = 0
-		hair = 1
+		attachment = 1
 		clothes = 0
-		leader_class = ruler
+ 		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
 	}
 }
 # Humans with Humanoid ships
@@ -77,7 +78,7 @@ humans2_1 = {
 	ignore_portrait_duplication = yes
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans2"
-	
+
 	species = {
 		class = "HUM"
 		portrait = "human"
@@ -89,8 +90,8 @@ humans2_1 = {
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
 	}
-	
-	room = "personality_hegemonic_imperialists_room"	
+
+	room = "personality_hegemonic_imperialists_room"
 
 	authority = "auth_oligarchic"
 	civics = { "civic_meritocracy" "civic_citizen_service" }
@@ -129,15 +130,16 @@ humans2_1 = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_humans2"
 		portrait = "human_female_04"
 		gender = female
 		texture = 0
-		hair = 6
+		attachment = 6
 		clothes = 4
-		leader_class = ruler
+		trait = "trait_ruler_warlike"
+		leader_class = commander
 	}
 }
 
@@ -147,9 +149,9 @@ lithoid_humans = {
 	adjective = "PRESCRIPTED_adjective_lithoid_humans"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
-	
+
 	ship_prefix = "PRESCRIPTED_ship_prefix_lithoid_humans"
-	
+
 	species = {
 		class = "LITHOID"
 		portrait = "lith_human"
@@ -164,30 +166,30 @@ lithoid_humans = {
 		trait = "trait_lithoid_gaseous_byproducts"
 		trait = "trait_deviants"
 	}
-	
+
 	playable = has_lithoids # scripted_triggers
-	
+
 	room = "pre_ftl_ancient_room"
-	
+
 	authority = "auth_oligarchic"
 	civics = { "civic_mining_guilds" "civic_meritocracy" }
 	government = gov_irenic_bureaucracy
-	
+
 	ethic = "ethic_pacifist"
 	ethic = "ethic_fanatic_materialist"
 
 	origin = "origin_lithoid"
 
 	flags = { human_lithoid custom_start_screen }
-	
+
 	planet_name = "NAME_Theia"
 	planet_class = "pc_desert"
 	initializer = "titawin_init"
 	system_name = "NAME_Titawin"
-	
+
 	graphical_culture = "lithoid_01"
 	city_graphical_culture = "lithoid_01"
-	
+
 	empire_flag = {
 		icon = {
 			category = "lithoid"
@@ -204,7 +206,7 @@ lithoid_humans = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_lithoid_humans"
 		gender = indeterminable
@@ -223,9 +225,9 @@ plantoid_humans = {
 	adjective = "PRESCRIPTED_adjective_humans1"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
-	
+
 	ship_prefix = "PRESCRIPTED_ship_prefix_plantoid_humans"
-	
+
 	species = {
 		class = "PLANT"
 		portrait = "pla17"
@@ -240,30 +242,30 @@ plantoid_humans = {
 		trait="trait_slow_learners"
 		trait="trait_slow_breeders"
 	}
-	
+
 	playable = has_plantoids # scripted_triggers
-	
+
 	room = "personality_spiritual_seekers_room"
-	
+
 	authority = "auth_democratic"
 	civics = { "civic_environmentalist" "civic_catalytic_processing" }
 	government = gov_moral_democracy
-	
+
 	ethic = "ethic_pacifist"
 	ethic = "ethic_fanatic_egalitarian"
 
 	origin = "origin_fruitful"
 
 	flags = { human_plantoid }
-	
+
 	planet_name = "NAME_Gaea"
 	planet_class = "pc_tropical"
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
-	
+
 	graphical_culture = "plantoid_01"
 	city_graphical_culture = "plantoid_01"
-	
+
 	empire_flag={
 		icon={
 			category="ornate"
@@ -280,7 +282,7 @@ plantoid_humans = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_plantoid_humans"
 		gender = female
@@ -289,6 +291,6 @@ plantoid_humans = {
 		attachment = 0
 		clothes = 2
 		trait = "trait_ruler_charismatic"
-		leader_class = governor
+		leader_class = official
 	}
 }

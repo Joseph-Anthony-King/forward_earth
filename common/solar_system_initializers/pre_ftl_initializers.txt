@@ -110,6 +110,14 @@ pre_ftl_init_sol = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
+		init_effect = {
+			set_planet_entity = {
+				entity = molten_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -118,8 +126,15 @@ pre_ftl_init_sol = {
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-		entity = "toxic_planet_venus_entity"
 		flags = { planet_venus }
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -454,6 +469,7 @@ pre_ftl_init_sol = {
 		size = 13
 		has_ring = no
 		entity = "barren_planet_mars_entity"
+		flags = { planet_mars }
 		init_effect = {
 			add_modifier = {
 				modifier = "terraforming_candidate"
@@ -557,7 +573,14 @@ pre_ftl_init_sol = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_03_entity"
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_uranus_entity
+				atmosphere_color = hsv { 0.548 0.519 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -575,6 +598,15 @@ pre_ftl_init_sol = {
 			orbit_distance = 7
 			orbit_angle = 115
 			has_ring = no
+		}
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
 		}
 	}
 
@@ -1324,9 +1356,8 @@ pre_ftl_deneb_system = {
 
 # Shattered Ring
 pre_ftl_shattered_ring = {
+	class = "sc_g"
 	flags = { ring_world_built shattered_ring_system }
-
-	scaled_spawn_chance = 5
 
 	max_instances = 1
 	usage = misc_system_init
@@ -1350,6 +1381,8 @@ pre_ftl_shattered_ring = {
 	}
 	primitive_system = yes	# usage odds modified by primitives setup slider
 
+	scaled_spawn_chance = 5
+
 	init_effect = {
 		generate_home_system_resources = yes
 		spawn_megastructure = {
@@ -1367,7 +1400,6 @@ pre_ftl_shattered_ring = {
 		}
 	}
 
-	class = "sc_g"
 	planet = {
 		class = star
 		orbit_distance = 0

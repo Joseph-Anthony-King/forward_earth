@@ -3,9 +3,9 @@ humans1 = {
 	adjective = "PRESCRIPTED_adjective_humans1"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
-	
+
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans1"
-	
+
 	species = {
 		class = "HUM"
 		portrait = "human"
@@ -17,22 +17,22 @@ humans1 = {
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
 	}
-	
+
 	playable = has_not_humanoids # scripted_triggers
-	
+
 	room = "personality_federation_builders_room"
-	
+
 	authority = "auth_democratic"
 	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
 	government = gov_planetary_union
-	
+
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"
 
 	origin = "origin_default"
 
 	flags = { human_1 earth_faction custom_start_screen }
-	
+
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
 	initializer = "sol_system_initializer"
@@ -40,7 +40,7 @@ humans1 = {
 	
 	graphical_culture = "css_fedbuild_01"
 	city_graphical_culture = "css_fedbuild_01"
-	
+
 	empire_flag = {
 		icon= {
 			category = "human"
@@ -57,15 +57,16 @@ humans1 = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_humans1"
 		gender = female
 		portrait = "human_female_05"
 		texture = 0
-		hair = 1
+		attachment = 1
 		clothes = 0
-		leader_class = ruler
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
 	}
 }
 
@@ -76,7 +77,7 @@ humans2 = {
 	ignore_portrait_duplication = yes
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_humans2"
-	
+
 	species = {
 		class = "HUM"
 		portrait = "human"
@@ -88,11 +89,11 @@ humans2 = {
 		trait = "trait_nomadic"
 		trait = "trait_wasteful"
 	}
-	
+
 	playable = has_not_humanoids # scripted_triggers
-	
-	room = "personality_hegemonic_imperialists_room"	
-	
+
+	room = "personality_hegemonic_imperialists_room"
+
 	authority = "auth_oligarchic"
 	civics = { "civic_meritocracy" "civic_citizen_service" }
 	government = gov_citizen_stratocracy
@@ -103,15 +104,15 @@ humans2 = {
 	origin = "origin_lost_colony"
 
 	flags = { human_2 earth_faction custom_start_screen }
-	
+
 	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
 	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "NAME_Eta_Cassiopeiae"
-	
+
 	graphical_culture = "machine_01"
 	city_graphical_culture = "machine_01"
-	
+
 	empire_flag = {
 		icon= {
 			category = "human"
@@ -128,14 +129,15 @@ humans2 = {
 			"null"
 		}
 	}
-	
+
 	ruler = {
 		name = "PRESCRIPTED_ruler_name_humans2"
 		portrait = "human_female_04"
 		gender = female
 		texture = 0
-		hair = 6
+		attachment = 6
 		clothes = 4
-		leader_class = ruler
+		trait = "trait_ruler_warlike"
+		leader_class = commander
 	}
 }
