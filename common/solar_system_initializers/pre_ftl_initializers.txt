@@ -80,7 +80,7 @@ pre_ftl_init_01 = {
 	}
 }
 
-# Sol System (Primitive Humans)
+# Sol System (Pre-FTL Humans)
 pre_ftl_init_sol = {
 	name = "NAME_Sol"
 	class = "sc_g"
@@ -94,11 +94,6 @@ pre_ftl_init_sol = {
 	}
 
 	flags = { primitive_sol sol }
-
-	init_effect = {
-		
-		###log = "special_init_03 loaded..."
-	}
 
 	planet = {
 		name = "NAME_Sol"
@@ -115,18 +110,32 @@ pre_ftl_init_sol = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
-		entity = "barren_planet_mercury_entity"
 		flags = { pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = barren_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-		entity = "toxic_planet_venus_entity"
 		flags = { realsol_venus pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -170,7 +179,7 @@ pre_ftl_init_sol = {
 							ethic = "ethic_xenophile"
 							ethic = "ethic_fanatic_egalitarian"
 						}
-						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						origin = origin_default_pre_ftl
 						flag = {
 							icon = {
 								category = "human"
@@ -197,7 +206,7 @@ pre_ftl_init_sol = {
 					}
 					set_owner = last_created_country
 
-					create_primitive_blockers = yes
+					create_pre_ftl_blockers = yes
 
 					create_army = {
 						name = "NAME_US_Armed_Forces_West"
@@ -241,7 +250,7 @@ pre_ftl_init_sol = {
 						}
 					}
 					while = {
-						count = 28
+						count = @early_space_age_pops
 						create_pop = {
 							species = last_created_species
 						}
@@ -283,7 +292,7 @@ pre_ftl_init_sol = {
 							ethic = "ethic_materialist"
 							ethic = "ethic_fanatic_militarist"
 						}
-						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						origin = origin_default_pre_ftl
 						flag = {
 							icon = {
 								category = "human"
@@ -311,10 +320,10 @@ pre_ftl_init_sol = {
 					}
 					set_owner = last_created_country
 
-					create_primitive_blockers = yes
+					create_pre_ftl_blockers = yes
 
 					while = {
-						count = 24
+						count = @industrial_age_pops
 						create_pop = {
 							species = last_created_species
 						}
@@ -388,7 +397,7 @@ pre_ftl_init_sol = {
 							ethic = "ethic_spiritualist"
 							ethic = "ethic_authoritarian"
 						}
-						origin = "origin_enlightened" # Should only be visible if they become spacefaring
+						origin = origin_default_pre_ftl
 						flag = {
 							icon = {
 								category = "ornate"
@@ -418,7 +427,7 @@ pre_ftl_init_sol = {
 					set_owner = last_created_country
 
 					while = {
-						count = 10
+						count = @late_medieval_age_pops
 						create_pop = {
 							species = last_created_species
 						}
@@ -461,15 +470,14 @@ pre_ftl_init_sol = {
 		orbit_angle = 60
 		size = 13
 		has_ring = no
-		entity = "barren_planet_mars_entity"
+		entity = "barren_planet_mars_entity"		
+		flags = { planet_mars pd_ignore }
 		init_effect = {
 			add_modifier = {
 				modifier = "terraforming_candidate"
 				days = -1
 			}
 		}
-		
-		flags = { planet_mars pd_ignore }
 		
 		moon = {
 			name = "NAME_Phobos"
@@ -611,8 +619,15 @@ pre_ftl_init_sol = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_uranus_entity"
 		flags = { pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_uranus_entity
+				atmosphere_color = hsv { 0.548 0.519 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 		
 		moon = {
 			class = "pc_barren_cold"
@@ -640,7 +655,6 @@ pre_ftl_init_sol = {
 		orbit_angle = -195
 		size = 20
 		has_ring = no
-		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
 		flags = { pd_ignore }
 
@@ -652,6 +666,15 @@ pre_ftl_init_sol = {
 			has_ring = no
 			entity = "triton_entity"
 			flags = { pd_ignore }
+		}
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
 		}
 	}
 
@@ -1429,9 +1452,8 @@ pre_ftl_deneb_system = {
 
 # Shattered Ring
 pre_ftl_shattered_ring = {
+	class = "sc_g"
 	flags = { ring_world_built shattered_ring_system }
-
-	scaled_spawn_chance = 5
 
 	max_instances = 1
 	usage = misc_system_init
@@ -1455,6 +1477,8 @@ pre_ftl_shattered_ring = {
 	}
 	primitive_system = yes	# usage odds modified by primitives setup slider
 
+	scaled_spawn_chance = 5
+
 	init_effect = {
 		generate_home_system_resources = yes
 		spawn_megastructure = {
@@ -1472,7 +1496,6 @@ pre_ftl_shattered_ring = {
 		}
 	}
 
-	class = "sc_g"
 	planet = {
 		class = star
 		orbit_distance = 0

@@ -1,0 +1,32 @@
+﻿l_korean:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+ css_fedbuild:0 "페더레이션 빌더"
+ css_fedbuild_desc:1 "치크 앤 게이트키퍼의 페더레이션 빌더의 함선입니다."
+ 
+ css_fedbuild_colours:0 "페더레이션 빌더 (C)"
+ css_fedbuild_colours_desc:1 "치크 앤 게이트키퍼의 페더레이션 빌더의 함선입니다 다이나믹한 컬러로."
+ 
+ css_dss_fedbuild:0 "페더레이션 빌더 (DS)"
+ css_dss_fedbuild_desc:1 "치크 앤 게이트키퍼의 페더레이션 빌더의 함선입니다. 축소된 선박 패치."
+ 
+ css_dss_fedbuild_colours:0 "페더레이션 빌더 (C+DS)"
+ css_dss_fedbuild_colours_desc:1 "치크 앤 게이트키퍼의 페더레이션 빌더의 함선입니다 다이나믹한 컬러로. 축소된 선박 패치."
+ 
+ CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "카부토급 피켓선"
+ 
+ CORVETTE_CSS_FEDBUILD_01_MID_M1S1:1 "네드 켈리급 호위함"
+
+ #Odds and Ends
+ tech_css_fedbuild_01:0 "페더레이션 빌더 기술"
+ tech_css_fedbuild_01_desc:0 "페더레이션 빌더 기술"
+ TECH_CSS_FEDBUILD:0 "페더레이션 빌더 기술"
+ tech_css_fedbuild_02:0 "페더레이션 빌더 기술"
+ tech_css_fedbuild_02_desc:0 "페더레이션 빌더 기술"

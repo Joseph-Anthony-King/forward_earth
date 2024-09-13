@@ -416,6 +416,7 @@
  NAME_wenkwort_asteroid: "Трайн" #planet
  NAME_Gardener_Drone: "Модуль-смотритель Аудона" #ship
  NAME_Gardener_Drone_plural: "Отряд смотрителей 14-WW" #fleet
+ NAME_Gardeners: "Садовники"
  NAME_Gardener1: "Смотритель Пертон" #ship
  NAME_Gardener2: "Смотритель Спартон-Брон" #ship
  NAME_Gardener3: "Смотритель Визентон" #ship
@@ -496,6 +497,19 @@
  star_mall_drone_plural: "Парковочные дроны Звездного центра"
  NAME_Star_Mall_Parking_Drones: "Парковочная служба Звездного центра"
  NAME_Star_Mall_Parking_Services: "Парковочная служба Звездного центра"
+ #Breachsealers
+ NAME_Seddom: "Седдом" #Modders
+ NAME_Ariph: "Ариф" #Ariphaos
+ NAME_Hari_XXIV: "Хари XXIV" #Harain & The24thDS
+ NAME_Risasi: "Рисаси" #Risa
+ NAME_Aridder: "Ариддер" #alexrider903
+ NAME_E'cho: "Э’хо" #ECHO
+ NAME_Rover: "Ровер" #Roverstorm
+ NAME_Jasepe: "Джасепе" #jasonpepe
+ NAME_Blaxe: "Блаксе" #SirBlackAxe
+ NAME_Glavi: "Глави" #Glavius
+ NAME_Salvold: "Сальвольд" #Savlor & OldEnt
+ NAME_Frince: "Фринс" #Fireprince
  
 ##############
 # Forward Earth Tags
@@ -836,3 +850,4 @@
  NAME_Wolf_1061_b:0 "Волк 1061 b"
  NAME_Wolf_1061_c:0 "Волк 1061 c"
  NAME_Wolf_1061_d:0 "Волк 1061 d"
+

@@ -242,7 +242,7 @@
  NAME_Mining_Corps: "采矿团" #fleet
  #Space Amoebae
  NAME_Spaceborne_Organics: "太空有机体" #empire
- NAME_Space_Amoebas_United: "太空变形虫聚集" #empire
+ NAME_Space_Amoebas_United: "太空变形虫集群" #empire
  NAME_Amor_Alveo: "爱神之槽" #star
  NAME_Amor_Toreo: "阿莫·托里欧" #planet
  NAME_Amor_Dareetheo: "阿莫·达里西奥" #planet
@@ -258,7 +258,7 @@
  NAME_Selor: "瑟洛尔" #planet
  NAME_Theresior: "泽尔塞尔" #planet
  NAME_Pesior: "普塞尔" #planet
- NAME_Amoeba_Swarm: "变形虫大潮" #fleet
+ NAME_Amoeba_Swarm: "变形虫群" #fleet
  NAME_Amoeba_Swarm_seed: "变形虫虫群（£seed_pod£）" #fleet carrying seeds (Fruitful Origin)
  NAME_Space_Amoeba_Hunters: "太空变形虫猎手" #fleet
  NAME_Space_Amoeba_Hunters_seed: "太空变形虫猎手（£seed_pod£）" #fleet carrying seeds (Fruitful Origin)
@@ -416,6 +416,7 @@
  NAME_wenkwort_asteroid: "特伦" #planet
  NAME_Gardener_Drone: "奥隆看护者单元" #ship
  NAME_Gardener_Drone_plural: "看护部门14-WW" #fleet
+ NAME_Gardeners: "园丁"
  NAME_Gardener1: "CT-佩东" #ship
  NAME_Gardener2: "CT-斯巴顿－布隆" #ship
  NAME_Gardener3: "CT-文森东" #ship
@@ -496,6 +497,19 @@
  star_mall_drone_plural: "星达广场停泊无人机"
  NAME_Star_Mall_Parking_Drones: "星达广场停泊服务"
  NAME_Star_Mall_Parking_Services: "星达广场停泊服务"
+ #Breachsealers
+ NAME_Seddom: "瑟顿" #Modders
+ NAME_Ariph: "阿睿夫" #Ariphaos
+ NAME_Hari_XXIV: "哈瑞XXIV" #Harain & The24thDS
+ NAME_Risasi: "瑞萨西" #Risa
+ NAME_Aridder: "啊瑞德" #alexrider903
+ NAME_E'cho: "艾可" #ECHO
+ NAME_Rover: "罗孚" #Roverstorm
+ NAME_Jasepe: "贾瑟皮" #jasonpepe
+ NAME_Blaxe: "布莱克斯" #SirBlackAxe
+ NAME_Glavi: "格拉维" #Glavius
+ NAME_Salvold: "萨伏德" #Savlor & OldEnt
+ NAME_Frince: "富林斯" #Fireprince
  
 ##############
 # Forward Earth Tags
@@ -1176,3 +1190,4 @@
  NAME_Wolf_1061_b:0 "狼 1061 b"
  NAME_Wolf_1061_c:0 "狼 1061 c"
  NAME_Wolf_1061_d:0 "狼 1061 d"
+

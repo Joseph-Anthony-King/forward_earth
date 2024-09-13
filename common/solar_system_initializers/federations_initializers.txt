@@ -16,7 +16,13 @@ hauer_system_initializer = {
 	class = "sc_g"
 
 	usage = misc_system_init
-	usage_odds = 1
+	usage_odds = {
+		base = 1
+		modifier = {
+			factor = 0
+			has_star_flag = empire_cluster
+		}
+	}
 	max_instances = 1
 
 	### 1
@@ -169,7 +175,10 @@ hauer_system_initializer = {
 		has_ring = no
 
 		init_effect = {
-			create_archaeological_site = site_lost_moments
+			if = {
+				limit = { has_ancrel = yes }
+				create_archaeological_site = site_lost_moments
+			}
 		}
 	}
 
@@ -341,12 +350,13 @@ intercepting_history_system_initializer_02 = {
 			create_species = {
 				name = "NAME_ThwaaPhyr"
 				plural = "NAME_ThwaaPhyr"
-				class = random_non_machine
+				class = random_pre_ftl
 				portrait = random
 				homeworld = THIS
 				traits = {
 					trait = "trait_adaptive"
 					trait = "trait_nomadic"
+					trait = "trait_presapient_forcefully_devolved"
 				}
 				effect = {
 #					save_global_event_target_as = primitive_benefactor_species
@@ -552,12 +562,13 @@ relentless_pursuit_system_initializer_02 = {
 			create_species = {
 				name = "NAME_Vemetosha"
 				plural = "NAME_Vemetosha"
-				class = random_non_machine
+				class = random_pre_ftl
 				portrait = random
 				homeworld = THIS
 				traits = {
 					trait = "trait_adaptive"
 					trait = "trait_nomadic"
+					trait = "trait_presapient_forcefully_devolved"
 				}
 				effect = {
 					save_global_event_target_as = primitive_relentless_species
@@ -655,15 +666,6 @@ void_dweller_system = {
 			init_effect = {
 				set_deposit = d_minerals_4
 			}
-
-			moon = {
-				class = pc_habitat
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				size = 6
-				flags = { void_dweller_habitat_2 megastructure habitat mining_habitat }
-				deposit_blockers = none
-			}
 		}
 
 		 planet = {
@@ -745,16 +747,7 @@ void_dweller_system = {
 			flags = { ignore_startup_effect habitat_3_planet has_megastructure }
 
 			init_effect = {
-				set_deposit = d_energy_6
-			}
-
-			moon = {
-				class = pc_habitat
-				orbit_angle = { min = 90 max = 270 }
-				orbit_distance = 5
-				size = 6
-				flags = { void_dweller_habitat_3 megastructure habitat energy_habitat }
-				deposit_blockers = none
+				set_deposit = d_energy_4
 			}
 		}
 	}
@@ -791,7 +784,7 @@ void_dweller_system = {
 		name = "NAME_The_Fragments"
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 16 max = 20 }
-		flags = { ignore_startup_effect has_megastructure }
+		flags = { ignore_startup_effect has_megastructure habitat_1_planet }
 
 		init_effect = {
 			set_deposit = d_physics_3
@@ -803,7 +796,7 @@ void_dweller_system = {
 			orbit_distance = 5
 			size = 6
 			starting_planet = yes
-			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat research_habitat }
+			flags = { void_dweller_habitat_1 special_start_planet megastructure habitat }
 			deposit_blockers = none
 		}
 	}
@@ -822,8 +815,18 @@ void_dweller_system = {
 			orbit_distance = 5
 		}
 	}
-}
 
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
 
 # Lost Colony Parent System 1
 lost_colony_1 = {
@@ -840,11 +843,17 @@ lost_colony_1 = {
 	usage_odds = {
 		base = 0
 		modifier = {
-			any_country = {
+			any_playable_country = {
 				has_origin = origin_lost_colony
+				OR = {
+					is_human_species = no
+					AND = {
+						is_human_species = yes
+						capital_scope = { has_planet_flag = planet_earth }
+					}
+				}
 				NOT = {
 					has_country_flag = parent_system_spawned
-					species_portrait = human
 					# don't spawn if AI-generated and adv start disabled
 					# see game_start.1
 					AND = {
@@ -915,33 +924,13 @@ lost_colony_1 = {
 					has_origin = origin_lost_colony
 					NOT = {
 						has_country_flag = parent_system_spawned
-						species_portrait = human
 					}
 				}
 				set_country_flag = parent_system_spawned
 				save_event_target_as = lost_colony_child
 			}
 
-			create_country = {
-				species = event_target:lost_colony_child
-				name_list = event_target:lost_colony_child
-				type = default
-				origin = "origin_default"
-				government_restrictions = {
-					authority = { NOT = { value = auth_machine_intelligence value = auth_hive_mind } }
-				}
-				effect = {
-					save_event_target_as = lost_colony_parent
-					add_resource = {
-						minerals = 2400
-						energy = 2400
-						food = 2400
-						alloys = 800
-						consumer_goods = 1200
-						influence = 600
-					}
-				}
-			}
+			lost_colony_generate_parent_effect = yes
 			create_colony = {
 				owner = event_target:lost_colony_parent
 			}
@@ -1014,9 +1003,35 @@ lost_colony_1 = {
 				building = crew_quarters
 				owner = event_target:lost_colony_parent
 				effect = {
-					set_starbase_module = {
-						slot = 1
-						module = trading_hub
+					if = {
+						limit = {
+							event_target:lost_colony_parent = {
+								is_gestalt = yes
+							}
+						}
+						if = {
+							limit = {
+								event_target:lost_colony_parent = {
+									has_valid_civic = civic_machine_astromining_drones
+								}
+							}
+							set_starbase_module = {
+								slot = 1
+								module = astromining_bay
+							}
+						}
+						else = {
+							set_starbase_module = {
+								slot = 1
+								module = solar_panel_network
+							}
+						}
+					}
+					else = {
+						set_starbase_module = {
+							slot = 1
+							module = trading_hub
+						}
 					}
 				}
 			}
@@ -1128,6 +1143,7 @@ lost_colony_neighbor_t1_first_colony = {
 			create_colony = {
 				owner = event_target:lost_colony_parent
 			}
+			generate_lost_colony_parent_colony_1 = yes
 		}
 	}
 
@@ -1196,6 +1212,7 @@ lost_colony_neighbor_t2_second_colony = {
 			create_colony = {
 				owner = event_target:lost_colony_parent
 			}
+			generate_lost_colony_parent_colony_2 = yes
 		}
 
 		change_orbit = @base_moon_distance
@@ -1286,7 +1303,11 @@ scion_fallen_1 = {
 		}
 
 		init_effect = {
-
+			create_cluster = {
+				id = scion_fe1_cluster
+				radius = 120
+				center = this.solar_system
+			}
 			create_species = {
 				name = random
 				class = random_non_machine
@@ -1332,6 +1353,7 @@ scion_fallen_1 = {
 				}
 			}
 			set_planet_flag = fallen_empire_world
+			set_planet_flag = fallen_empire_capital
 			prevent_anomaly = yes
 			set_owner = event_target:scion_fe
 			set_controller = event_target:scion_fe
@@ -1532,6 +1554,11 @@ scion_fallen_2 = {
 		modifiers = none
 
 		init_effect = {
+			create_cluster = {
+				id = scion_fe2_cluster
+				radius = 140
+				center = this.solar_system
+			}
 			create_species = {
 				name = random
 				class = random_non_machine
@@ -1579,6 +1606,7 @@ scion_fallen_2 = {
 
 
 			set_planet_flag = fallen_empire_world
+			set_planet_flag = fallen_empire_capital
 			prevent_anomaly = yes
 			set_owner = event_target:scion_fe
 			set_controller = event_target:scion_fe
@@ -1777,7 +1805,7 @@ scion_fallen_2 = {
 
 # Shattered Ring Origin
 shattered_ring_start = {
-	flags = { empire_home_system ring_world_built }
+	flags = { empire_home_system ring_world_built shattered_ring_system }
 	usage = origin
 
 	init_effect = {
@@ -1792,6 +1820,9 @@ shattered_ring_start = {
 			type = "ring_world_ruined"
 			orbit_angle = 0
 			orbit_distance = 45
+			init_effect = {
+				set_megastructure_flag = guaranteed_1
+			}
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
@@ -1801,7 +1832,6 @@ shattered_ring_start = {
 	}
 
 	class = "sc_g"
-
 	planet = {
 		class = star
 		orbit_distance = 0
@@ -1889,7 +1919,6 @@ shattered_ring_start = {
 		orbit_angle = 30
 		orbit_distance = 5
 	}
-	
 	neighbor_system = {
 		trigger = { num_guaranteed_colonies >= 2 }
 		hyperlane_jumps = { min = 1 max = @jumps }
@@ -1969,7 +1998,6 @@ mega_shipyard_init_01 = {
 	}
 }
 
-
 #Shallarian System with a powerful guardian
 planet_with_too_many_moons_system = {
 	class = "rl_standard_stars"
@@ -1981,16 +2009,29 @@ planet_with_too_many_moons_system = {
 	usage = misc_system_init
 	usage_odds = {
 		base = 0
-
 		modifier = { #spawns nearby the xenophobe FE
 			add = 200
 			any_country = {
 				has_country_flag = fallen_empire_4
 			}
 			NOT = { has_star_flag = empire_cluster }
-			NOT = { is_in_cluster = fe4_cluster }
+			NAND = {
+				exists = owner
+				owner = {
+					has_country_flag = fallen_empire_4
+				}
+			}
+			NOT = {
+				any_neighbor_system = {
+					exists = owner
+					owner = { has_country_flag = fallen_empire_4 }
+				}
+			}
 			any_neighbor_system = {
-				is_in_cluster = fe4_cluster
+				any_neighbor_system = {
+					exists = owner
+					owner = { has_country_flag = fallen_empire_4 }
+				}
 			}
 		}
 	}
@@ -2114,6 +2155,8 @@ planet_with_too_many_moons_system = {
 		has_ring = yes
 
 		name = "NAME_Shallash"
+
+		flags = { colony_event }
 
 		change_orbit = @base_moon_distance
 
@@ -2391,11 +2434,11 @@ wenkwort_initializer = {
 		base = 1
 		modifier = {
 			factor = 0
-			is_fe_cluster = yes #Clustered near a fallen empire
-		}
-		modifier = {
-			factor = 0
-			has_star_flag = empire_cluster #Clustered near a regular empire
+			OR = {
+				is_fe_cluster = yes
+				is_marauder_cluster = yes
+				has_star_flag = empire_cluster
+			}
 		}
 	}
 	max_instances = 1
@@ -2554,8 +2597,15 @@ sol_system_void_dweller_system = {
 		orbit_angle = 15
 		size = 10
 		has_ring = no
-		entity = "barren_planet_mercury_entity"
-		flags = { pd_ignore }
+		flags = { planet_mercury pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = barren_planet_mercury_entity
+				atmosphere_color = hsv { 0.8 0.1 0.2 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -2565,8 +2615,15 @@ sol_system_void_dweller_system = {
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-		entity = "toxic_planet_venus_entity"
-		flags = { realsol_venus pd_ignore }
+		flags = { realsol_venus planet_venus pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = toxic_planet_venus_entity
+				atmosphere_color = hsv { 0.854 0.072 0.7 }
+				atmosphere_intensity = 0.2
+				atmosphere_width = 1.0
+			}
+		}
 	}
 
 	planet = {
@@ -2824,8 +2881,15 @@ sol_system_void_dweller_system = {
 		orbit_angle = 125
 		size = 20
 		has_ring = no
-		entity = "gas_giant_uranus_entity"
-		flags = { pd_ignore }
+		flags = { planet_uranus pd_ignore }
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_uranus_entity
+				atmosphere_color = hsv { 0.548 0.519 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 		
 		moon = {
 			name = "NAME_Titania"
@@ -2856,9 +2920,17 @@ sol_system_void_dweller_system = {
 		orbit_angle = -195
 		size = 20
 		has_ring = no
-		entity = "gas_giant_neptune_entity"
 		change_orbit = 4
-		flags = { pd_ignore }
+		flags = { planet_neptune pd_ignore }
+
+		init_effect = {
+			set_planet_entity = {
+				entity = gas_giant_neptune_entity
+				atmosphere_color = hsv { 0.626 0.782 0.9 }
+				atmosphere_intensity = 0.1
+				atmosphere_width = 1.0
+			}
+		}
 
 		moon = {
 			name = "NAME_Triton"
