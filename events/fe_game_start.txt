@@ -390,25 +390,27 @@ event = {
                     # ICARUS
                     10 = {
                         create_species = {
-                            name = NAME_Autodrone
-                            plural = NAME_Autodrones
+                            name = PRESCRIPTED_species_name_icarus
+                            plural = PRESCRIPTED_species_plural_icarus
                             class = "MACHINE"
                             portrait = "sd_hum_robot"
                             homeworld = THIS
                             traits = {
-                                trait="trait_machine_unit"
-                                trait="trait_robot_logic_engines"
-                                trait="trait_robot_mass_produced"
-                                trait="trait_robot_luxurious"
+                                "trait_machine_unit"
+                                "trait_robot_history_warbot"
+                                "trait_robot_power_drills"
+                                "trait_robot_mass_produced"
+                                "trait_robot_uncanny"
+                                "trait_robot_bulky"
                             }
                         }
                         generate_empire_home_planet = yes
 
                         create_country = {
                             name = "EMPIRE_DESIGN_icarus"
-                            name_list = "MACHINE3"
+                            name_list = "MACHINE1"
 
-                            ship_prefix = "ICARUS"
+                            ship_prefix = "PRESCRIPTED_ship_prefix_icarus"
 
                             authority = "auth_machine_intelligence"
 
@@ -1578,25 +1580,27 @@ event = {
                     # ICARUS
                     8 = {
                         create_species = {
-                            name = NAME_Autodrone
-                            plural = NAME_Autodrones
+                            name = PRESCRIPTED_species_name_icarus
+                            plural = PRESCRIPTED_species_plural_icarus
                             class = "MACHINE"
                             portrait = "sd_hum_robot"
                             homeworld = THIS
                             traits = {
-                                trait="trait_machine_unit"
-                                trait="trait_robot_logic_engines"
-                                trait="trait_robot_mass_produced"
-                                trait="trait_robot_luxurious"
+                                "trait_machine_unit"
+                                "trait_robot_history_warbot"
+                                "trait_robot_power_drills"
+                                "trait_robot_mass_produced"
+                                "trait_robot_uncanny"
+                                "trait_robot_bulky"
                             }
                         }
                         generate_empire_home_planet = yes
 
                         create_country = {
                             name = "EMPIRE_DESIGN_icarus"
-                            name_list = "MACHINE3"
+                            name_list = "MACHINE1"
 
-                            ship_prefix = "ICARUS"
+                            ship_prefix = "PRESCRIPTED_ship_prefix_icarus"
 
                             authority = "auth_machine_intelligence"
 
