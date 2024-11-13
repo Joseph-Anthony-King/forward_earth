@@ -1,6 +1,6 @@
-[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
-
 [h1]FORWARD EARTH[/h1]
+
+[h2]Please note that when loading this mod you have to load [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - BASE[/url] first in the mod load order.[/h2]
 
 [b]Forward Earth[/b] is a galaxy generation mod that scripts the creation of [i]Human Space[/i] in the vicinity of Earth.  One of the biggest changes is the recasting of the [i]Commonwealth of Man[/i] as the [i]Commonwealth of Aurora[/i].  This is more than just a name change, the [i]Commonwealth of Aurora[/i] (CoA) now spawns in the Eta Cassiopeiae System, which is a binary system close to Sol.  The CoA a citizen stratocracy and is inspired by the Terran Federation as depicted in Robert Heinlein's novel [i]Starship Troopers[/i] and their symbol is now the Spaceship-and-Sun as inspired by Asimov's Galactic Empire.  This new emblem symbolizes the importance of the navy in their social structure.  The CoA is not a country with a navy, but a navy with a country.
 
@@ -14,11 +14,15 @@ There are various tweaks and Easter Eggs scattered throughout the galaxy, some e
 
 Two new government types are added: Planetary Union and Constitutional Monarchies.  Both are democratic governments with planetary unions functioning similarly to representative democracies and constitutional monarchies functioning similar to military commissariats.
 
-This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000. This mod also includes the star names included in my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Alpha Ceti V![/url] mod. This mod has 6425 star names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link).
+This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000. This mod also includes the star names included in my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Alpha Ceti V![/url] mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link).
 
 This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC2[/url].  These mods are absolutely [b]awesome[/b] and I definitely want to give credit where credit is due:
 
 [list]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [url=https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990]Grumpy Gremlin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [url=https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990]Cheek[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=866156261]Natural Spiral Galaxies[/url] by [url=https://steamcommunity.com/id/phidinh6/myworkshopfiles/?appid=281990]phidinh6[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=731621473]Real Sol Textures[/url] by [url=https://steamcommunity.com/profiles/76561198059246487/myworkshopfiles/?appid=281990]Alex FRD[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061888410]Real Sol Textures Expansion[/url] by [url=https://steamcommunity.com/id/HippieGold/myworkshopfiles/?appid=281990]Leaf[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2270866032]More Earth Textures[/url] by [url=https://steamcommunity.com/id/Kayess_/myworkshopfiles/?appid=281990]Kayess[/url]
