@@ -2527,7 +2527,7 @@ event = {
 
             limit = {
                 AND = {
-                    is_planet_class = pc_tidallylocked
+                    is_planet_class = pc_pd_wet_tidally_locked
                     NOT = {
                         has_modifier = tidal_locked
                     }
@@ -3308,7 +3308,7 @@ event = {
 
                         species = last_created_species
                         ethos = {
-                            ethic = "ethic_xenophobe"
+                            ethic = "ethic_xenophile"
                             ethic = "ethic_fanatic_materialist"
                         }
 
@@ -3333,7 +3333,7 @@ event = {
                         species = last_created_species
                         ethos = {
                             ethic = "ethic_xenophile"
-                            ethic = "ethic_fanatic_egalitarian"
+                            ethic = "ethic_fanatic_materialist"
                         }
                     }
 
@@ -3422,8 +3422,8 @@ event = {
                         portrait = random
                         homeworld = THIS
                         traits = {
-                            trait = "trait_quarrelsome"
-                            trait = "trait_wasteful"
+                            trait = "trait_pc_savannah"
+                            trait = "trait_slow_breeders"
                             trait = "trait_adaptive"
                             trait = "trait_nomadic"
                             trait = "trait_resilient"
@@ -3445,14 +3445,14 @@ event = {
                         day_zero_contact = no
 
                         civics = {
-                            civic = civic_distinguished_admiralty
                             civic = civic_efficient_bureaucracy
+                            civic = civic_diplomatic_corps
                         }
 
                         species = event_target:myrkrians
                         ethos = {
                             ethic = "ethic_fanatic_xenophile"
-                            ethic = "ethic_militarist"
+                            ethic = "ethic_pacifist"
                         }
 
                         origin = "origin_default"
@@ -3476,7 +3476,7 @@ event = {
                         species = event_target:myrkrians
                         ethos = {
                             ethic = "ethic_fanatic_xenophile"
-                            ethic = "ethic_militarist"
+                            ethic = "ethic_pacifist"
                         }
                     }
 
@@ -3510,13 +3510,13 @@ event = {
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
                     while = {
-                        count = 1
+                        count = 2
                         add_district_and_planet_size_if_needed_effect = {
                             district = district_industrial
                         }
                     }
                     while = {
-                        count = 4
+                        count = 3
                         add_district_and_planet_size_if_needed_effect = {
                             district = district_mining
                         }
@@ -3562,7 +3562,7 @@ event = {
                         species = event_target:myrkrians
                         ethos = {
                             ethic = "ethic_fanatic_xenophile"
-                            ethic = "ethic_militarist"
+                            ethic = "ethic_pacifist"
                         }
                     }
 
@@ -3570,6 +3570,12 @@ event = {
 
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
+                    while = {
+                        count = 1
+                        add_district_and_planet_size_if_needed_effect = {
+                            district = district_industrial
+                        }
+                    }
                     while = {
                         count = 3
                         add_district_and_planet_size_if_needed_effect = {
@@ -3641,8 +3647,8 @@ event = {
 
                             species = event_target:fallen_species
                             ethos = {
-                                ethic = "ethic_xenophile"
-                                ethic = "ethic_fanatic_pacifist"
+                                ethic = "ethic_fanatic_xenophile"
+                                ethic = "ethic_pacifist"
                             }
 
                             origin = "origin_remnants"

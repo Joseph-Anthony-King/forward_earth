@@ -2171,13 +2171,13 @@ sol_neighbor_t2_third_colony = {
 	# Trappist-1d
 	planet = {
 		name = "NAME_Trappist_1_d"
-		class = "pc_tidallylocked"
+		class = "pc_pd_wet_tidally_locked"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
 		has_ring = no
 		flags = { pd_ignore }
-		entity = tidallylocked_planet_01_entity
+		entity = wettidallylocked_planet_01_entity
 
 		init_effect = {
 			add_modifier = {

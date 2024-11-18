@@ -17,11 +17,11 @@ event = { # triggers after button press
 		# PD planets here
 			if = {
 				limit = {
-					is_planet_class = pc_tidallylocked
+					is_planet_class = pc_pd_wet_tidally_locked
 					NOT = { has_planet_flag = pd_ignore }
 				}
 				random_list = {
-					1 = { set_planet_entity = { entity = "tidallylocked_planet_01_entity" } }
+					1 = { set_planet_entity = { entity = "wettidallylocked_planet_01_entity" } }
 					1 = { set_planet_entity = { entity = "tidallylocked_planet_02_entity" } }
 					1 = { set_planet_entity = { entity = "tidallylocked_planet_03_entity" } }
 					1 = { set_planet_entity = { entity = "tidallylocked_planet_04_entity" } }

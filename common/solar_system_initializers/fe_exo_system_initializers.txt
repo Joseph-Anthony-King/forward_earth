@@ -542,7 +542,7 @@ gliese_581_system_initializer = {
         orbit_distance = 20
         orbit_angle = 321
         has_ring = no
-        class = "pc_tidallylocked"
+        class = "pc_pd_wet_tidally_locked"
         flags = { planet_gliese_581_g pd_ignore }
 
 		init_effect = {

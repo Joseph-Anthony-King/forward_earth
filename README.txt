@@ -1,7 +1,5 @@
 [h1]FORWARD EARTH - PLANETARY DIVERSITY[/h1]
 
-[h2]Please note that when loading this mod you have to load [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - BASE[/url] first in the mod load order.[/h2]
-
 [b]Forward Earth - PLANETARY DIVERSITY[/b] is a galaxy generation mod that scripts the creation of [i]Human Space[/i] in the vicinity of Earth and incorporates the functionality of *Gatekeepers* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] mod.  One of the biggest changes is the recasting of the [i]Commonwealth of Man[/i] as the [i]Commonwealth of Aurora[/i].  This is more than just a name change, the [i]Commonwealth of Aurora[/i] (CoA) now spawns in the Eta Cassiopeiae System, which is a binary system close to Sol.  The CoA a citizen stratocracy and is inspired by the Terran Federation as depicted in Robert Heinlein's novel [i]Starship Troopers[/i] and their symbol is now the Spaceship-and-Sun as inspired by Asimov's Galactic Empire.  This new emblem symbolizes the importance of the navy in their social structure.  The CoA is not a country with a navy, but a navy with a country.
 
 The CoA spawns in a binary planet system and the scripts have been updated to include binary planets!  They are rare, but they will occur and there is also the possibility they could be home to AI factions or primitive civilizations.
@@ -30,10 +28,6 @@ This mod took quite a bit of time and I used my programming skills to script a l
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1090786705]Immersive Galaxy - Planet Variety - LITE[/url] by [url=https://steamcommunity.com/profiles/76561198006654569/myworkshopfiles/?appid=281990]Dwaine[/url]
 [/list]
 
-This mod also has a required items: [b]Dwaine's[/b] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1085097357]Immersive Galaxy - Planet Variety - Clouds[/url] but since that mod is not always updated timely I've created a wrapper for the mod available at:
-
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - BASE[/url]
-
 This mod supports Portuguese, French, German, Japanese, Korean, Polish, Russian, Chinese (Simplified) and Spanish, please let me know if you notice any issues with the translations and I will correct them.
 
 Hope everyone enjoys it and please let me know if you note any bugs or issues!
@@ -42,7 +36,6 @@ If you like this mod please upvote and favorite it and please check out my other
 
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388]Forward Earth[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - Base[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Ceti Alpha V! (Star Names)[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2141583417]Exo Political Theory[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2465034791]Espionage Operation: Influence Ethics[/url]
