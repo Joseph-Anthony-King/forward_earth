@@ -1017,7 +1017,6 @@ npc_eta_cassiopeiae_system_initializer = {
 		}
 
 		planet = {
-            name = ""
 			class = pc_barren
 			orbit_distance = 40
 			orbit_angle = 120

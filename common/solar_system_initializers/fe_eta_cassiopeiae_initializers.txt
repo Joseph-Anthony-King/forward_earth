@@ -82,7 +82,7 @@ eta_cassiopeiae_system_initializer = {
 	}
 
 	planet = {
-		class = pc_asteroid
+		class = pc_barren
 		orbit_distance = 20
 		orbit_angle = 120
 		size = 0

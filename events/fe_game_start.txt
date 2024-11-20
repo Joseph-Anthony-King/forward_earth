@@ -24,7 +24,7 @@ event = {
             limit = {
                 has_planet_flag = planetary_barrycenter              
             }
-            set_name = "NAME_Empty"
+            set_name = " "
         }
 
         ###log = "Binary planet barrycenters renamed..."
