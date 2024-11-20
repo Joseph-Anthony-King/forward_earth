@@ -3071,7 +3071,7 @@ generate_start_pops = {
 		}
 	}
 	if = {
-		limit = { 
+		limit = {
 			has_planet_flag = planet_aurora 
 		}
 		create_species = {
@@ -4762,6 +4762,16 @@ create_ocean_paradise_planet = {
 	random_list = {
 		50 = { add_deposit = d_submerged_ore_veins }
 		50 = { add_deposit = d_underwater_vent }
+	}
+	# Planetscapers
+	if = {
+		limit = {
+			exists = owner
+			owner = {
+				is_environmental_architects_empire = yes
+			}
+		}
+		add_random_natural_blocker_and_give_tech = yes
 	}
 }
 

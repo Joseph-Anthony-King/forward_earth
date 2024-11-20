@@ -1390,7 +1390,7 @@ sol_neighbor_t2_3 = {
 	}
 
     planet = {
-        class = "pc_asteroid"
+        class = "pc_barren"
 		orbit_distance = 25
 		orbit_angle = 60
 		size = 0
@@ -2309,7 +2309,7 @@ sol_neighbor_t3 = {
 	}
 
 	planet = {
-		class = pc_asteroid
+		class = pc_barren
 		orbit_distance = 100
 		orbit_angle = 125
 		size = 0
@@ -2609,7 +2609,7 @@ sol_neighbor_t1_3_1 = {
 	}
 
 	planet = {
-		class = pc_asteroid
+		class = pc_barren
 		orbit_distance = 20
 		orbit_angle = 120
 		size = 0
