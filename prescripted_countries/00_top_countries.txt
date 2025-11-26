@@ -113,7 +113,7 @@ humans2 = {
 
 	planet_name = "NAME_Unity"
 	planet_class = "pc_continental"
-	initializer = "deneb_system"
+	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "NAME_Deneb"
 
 	graphical_culture = "mammalian_01"
@@ -261,7 +261,7 @@ humans2_1 = {
 
 	planet_name = "NAME_Unity"
 	planet_class = "pc_continental"
-	initializer = "deneb_system"
+	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "NAME_Deneb"
 
 	graphical_culture = "humanoid_01"
