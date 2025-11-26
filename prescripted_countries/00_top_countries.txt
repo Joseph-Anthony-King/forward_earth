@@ -111,9 +111,9 @@ humans2 = {
 
 	flag = empire_human_2
 
-	planet_name = "NAME_Unity"
+	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
-	initializer = "eta_cassiopeiae_system_initializer"
+	initializer = "deneb_system"
 	system_name = "NAME_Deneb"
 
 	graphical_culture = "mammalian_01"
@@ -259,10 +259,10 @@ humans2_1 = {
 
 	playable = has_humanoids # scripted_triggers
 
-	planet_name = "NAME_Unity"
+	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
 	initializer = "eta_cassiopeiae_system_initializer"
-	system_name = "NAME_Deneb"
+	system_name = "NAME_Eta_Cassiopeiae"
 
 	graphical_culture = "humanoid_01"
 	city_graphical_culture = "humanoid_01"
