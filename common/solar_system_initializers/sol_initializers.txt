@@ -23,6 +23,8 @@ sol_system_initializer = {
 
 	usage = custom_empire
 
+	max_instances = 1
+
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -365,6 +367,8 @@ sol_neighbor_t1_first_colony = {
 		###log = "sol_neighbor_t1_first_colony loaded..."
 	}
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_Alpha_Centauri_B"
 		count = 1
@@ -533,6 +537,8 @@ sol_neighbor_t1_no_guaranteed_colony = {
 		###log = "sol_neighbor_t1_no_guaranteed_colony loaded..."
 	}
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_Alpha_Centauri_B"
 		count = 1
@@ -698,6 +704,8 @@ sol_neighbor_t1 = {
 		###log = "sol_neighbor_t1 loaded..."
 	}
 
+	max_instances = 1
+
 	planet = {
 		count = 1
 		class = star
@@ -738,6 +746,8 @@ sol_neighbor_t1_2 = {
 
 	class = sc_m
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_Wolf_359"
 		class = "pc_m_star"
@@ -773,6 +783,8 @@ sol_neighbor_t1_2 = {
 sol_neighbor_t1_3 = {
 	name = "NAME_Lalande_21185"
 	class = sc_m
+
+	max_instances = 1
 
 	planet = {
 		name = "NAME_Lalande_21185"
@@ -818,6 +830,8 @@ sol_neighbor_t1_3 = {
 sol_neighbor_t1_4 = {
 	name = "NAME_Sirius"
 	class = sc_binary_9
+
+	max_instances = 1
 
 	planet = {
 		name = "NAME_Sirius_A"
@@ -883,6 +897,8 @@ sol_neighbor_t2 = {
 
 		###log = "sol_neighbor_t2 loaded..."
 	}
+
+	max_instances = 1
 
 	planet = {
 		name = "NAME_Procyon_A"
@@ -1040,6 +1056,8 @@ sol_neighbor_t2_2 = {
 
 		###log = "sol_neighbor_t2_2 loaded..."
 	}
+
+	max_instances = 1
 
 	planet = {
 		name = "NAME_Epsilon_Eridani"
@@ -1254,6 +1272,8 @@ sol_neighbor_t2_3 = {
 
 		###log = "sol_neighbor_t2_3 loaded..."
 	}
+
+	max_instances = 1
 
 	planet = {
 		count = 1
@@ -1491,6 +1511,8 @@ sol_neighbor_t3 = {
 		###log = "sol_neighbor_t3 loaded..."
 	}
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_40_Eridani_A"
 		count = 1
@@ -1689,6 +1711,8 @@ sol_neighbor_t3_second_colony = {
 		}
 	}
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_67_Cygni_A"
 		count = 1
@@ -1820,6 +1844,8 @@ sol_neighbor_t3_no_guaranteed_colony = {
 			}
 		}
 	}
+
+	max_instances = 1
 
 	planet = {
 		name = "NAME_67_Cygni_A"

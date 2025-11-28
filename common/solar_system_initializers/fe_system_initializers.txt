@@ -26,6 +26,8 @@ deneb_system = {
 
 	usage = custom_empire
 
+	max_instances = 1
+
 	planet = {
 		name = "NAME_Deneb"
 		class = "pc_a_star"
@@ -153,6 +155,7 @@ deneb_system = {
 }
 
 ### Deneb System - UNE start
+#Was UNE start but edited due to CoA
 une_deneb_system = {
 	name = "NAME_Deneb"
 	class = "sc_a"
@@ -171,7 +174,7 @@ une_deneb_system = {
 		generate_home_system_resources = yes
 	}
 
-	flags = { empire_home_system deneb_system }
+	flags = { deneb_system }
 
 	usage = misc_system_init
 
