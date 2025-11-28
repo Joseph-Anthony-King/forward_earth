@@ -1,0 +1,62 @@
+pc_barycenter = {
+	entity = "y_star_class_star_entity"
+	entity_scale = 0
+	picture = "pc_barycenter"
+
+	atmosphere_color 		= hsv { 0 0 0 }
+	atmosphere_intensity 	= 0
+	atmosphere_width 		= 0	
+	
+	star = yes
+	
+	min_distance_from_sun = 0
+	max_distance_from_sun = 0
+	spawn_odds = 0
+	
+	extra_orbit_size = 0
+	extra_planet_count = 0
+	
+	chance_of_ring = 0
+	
+	planet_size = { min = 20 max = 35 }
+	
+	colonizable = no
+}
+
+random_list = {
+	name = "rl_close_planets"
+	planets = {
+		"pc_molten"
+		"pc_barren"
+		"pc_toxic"
+	}
+}
+
+random_list = {
+	name = "rl_mid_planets"
+	planets = {
+		"pc_molten"
+		"pc_barren"
+		"pc_barren_cold"
+		"pc_arid"
+		"pc_desert"
+		"pc_savannah"
+		"pc_tropical"
+		"pc_continental"
+		"pc_ocean"
+		"pc_arctic"
+		"pc_tundra"
+		"pc_alpine"
+		"pc_toxic"
+		"pc_frozen"
+		"pc_nuked"
+	}
+}
+
+random_list = {
+	name = "rl_far_planets"
+	planets = {
+		"pc_barren_cold"
+		"pc_frozen"
+	}
+}
