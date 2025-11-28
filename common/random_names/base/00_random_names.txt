@@ -1,0 +1,6846 @@
+species_modification_prefix = {
+	Neo-
+	Post-
+	Super-
+	Ultra-
+	Meta-
+	Trans-
+}
+
+species_modification_postfix = {
+	Superior
+	Variatus
+	Mutatis
+	Clarus
+	Illustratum
+}
+
+black_hole_names = {
+	"Demon's Maw"
+	"Devil's Maw"
+	"Hell's Maw"
+	"Suskat's Maw"
+	"Viskarron's Maw"
+	"Rixikar's Maw"
+	"Zultar's Maw"
+	"Xulbak's Maw"
+	"Urakhannon's Maw"
+	"Yonnok's Maw"
+	"Xuukanis Black Hole"
+	"Luusaj Black Hole"
+	"Verrakas Black Hole"
+	"Geltauri Black Hole"
+	"Zantaris Black Hole"
+	"Zorikkan Black Hole"
+	"Huur Black Hole"
+	"Faranis Black Hole"
+	"Gindor Black Hole"
+	"Nivogi Black Hole"
+	"Ter Meku Black Hole"
+	"Sithonis Maelstrom"
+	"Cibaaran Maelstrom"
+	"Belvares Maelstrom"
+	"Gathri Maelstrom"
+	"Kelvan Maelstrom"
+	"Vha'Zi Maelstrom"
+	"Jebben's Maelstrom"
+	"Pathabaan Vortex"
+	"Miklor's Vortex"
+	"Uzh'ab Vortex"
+	"Tunari Vortex"
+	"Ribellan Vortex"
+	"Zi Pok Vortex"
+	"Lithyrian Vortex"
+	"Zantaris Black Hole"
+	"Yamek's Singularity"
+	"Broon's Singularity"
+	"D-471 Singularity"
+	"XT-81 Singularity"
+	"LR-9 Singularity"
+	"X-941 Singularity"
+	"BX-799 Singularity"
+	"P94-L Singularity"
+	"Heaven's Gate"
+	"Dubious Abyss"
+	"Screeching Abyss"
+	"Bavik's Bane"
+	"Howling Vortex"
+	"Gaping Maw"
+	"Eternal Horizon"
+	"Light's End"
+	"Ascension's End"
+	"Quiet Dark"
+	"Abaddon's Demesne"
+	"Centaurus A"
+	"Centaurus B"
+	"Centaurus C"
+	"Fornax A"
+	"Fornax B"
+	"Fornax C"
+	"Messier Black Hole"
+	"Mrk Black Hole"
+	"Langor Vortex"
+	"Balore Vortex"
+	"Burback's Heaven"
+	"Siffrin's Singularity"
+	"Zandthore's End"
+	"Daunting Maelstrom"
+	"Sagittarius B"
+	"Sagittarius C"
+	"Herschel's Gate"
+	"Zadra Maw"
+	"Seerukoz Black Hole"
+	"Zetasu Singularity"
+	"Shadedkin's Black Hole"
+	"Iotamin Maelstrom"
+	"Tauleer Vortex"
+	"Khrelan End"
+	"Strogonar Gate"
+	"Sene Abyss"
+	"Z'ho'won Maw"
+	"Pulgoy Maelstrom"
+	"Yucholl Vortex"
+	"Sobveer Gate"
+	"Crazir Maw"
+	"Reverie's Horizon"
+	"Nukya Abyss"
+	"Tintissi Horizon"
+	"Galagat Maelstrom"
+	"Apiwah Singularity"
+	"Xidalan Singularity"
+	"V'Zaftagor Horizon"
+	"Veecnor Black Hole"
+	"Klaenzen Vortex"
+	"Kosan Gate"
+	"Mansoon Maw"
+	"Taubir Abyss"
+	"Yayfut Abyss"
+	"AfafacusVortex"
+	"GTI-R Singularity"
+	"M-3 Singularity"
+	"XL-V Singularity"
+	"Fireball"
+	"Darkness"
+	"Despair"
+	"A-M-G Singularity"
+	"RS-4 Singularity"
+	"Gloom"
+	"Misery"
+	"Melancholy"
+	"Gaetz Maw"
+	"Cygnus X-1"
+}
+
+asteroid_prefix = {
+	TFL-
+	TD-1-
+	LM-
+	RX2-
+	A1-
+	BT-
+	425-
+	18-
+	THX-
+	LR-9-
+	B12-
+	F-29-
+	I11-
+	LV-
+	TBR-
+	TLDR-
+	M4-
+	PX-4-
+	QH-
+	RLS-
+	W1-H-
+	GR-
+	R2-
+	C-
+	T-
+	HAL-
+	XR-7-
+	X9-
+	XXN-
+	FL-
+	IL-
+	AZ-11-
+	UT-9-
+	VTR-
+	V4-XN-
+	234-
+	6467-
+	88D2-
+	14-S-
+	DSS-
+	AT-
+	GF53-
+	SSD-
+	SL9-
+	WO-
+	WPR-
+	13-S-
+	DTLF-
+	E-9-R
+	XC-
+	B134-
+	A-
+	X-
+	ZR-
+	ZL-1-
+	X-12-
+	BT-
+	E49-
+	R66-
+	333P-
+	CCC4-
+	CP-01
+	TF-B-
+	133-D-
+	49-F-
+	377D-
+	1337-
+	4-
+	39-
+	47-
+	91F-
+	P1-
+	32-PX-
+	41-CV-
+	BK5-
+	UL1M-
+	D-9-
+	M4-
+	EUD-
+	9965-
+	TE9-
+	1ES-
+	8FV-
+	HL-
+	H-77-
+	H4-
+	J00-
+	JX4-
+	JQQ-1-
+	J3L1-
+	OD1N-
+	ZI3-
+	LJ-G-
+	WX12-
+	ZA-19-
+	AA-23-
+	V413-
+	SP0-
+	PT-RE-
+	LK12-
+	YZ9-
+	VIR-
+}
+
+asteroid_postfix = {
+	413
+	3254
+	233-D
+	001B
+	1138
+	426
+	D2
+	3PO
+	1000
+	800
+	9000
+	AT
+	ST
+	2646
+	36367
+	3452
+	956
+	35-D
+	11B1
+	112
+	0909
+	DX-1
+	354-F
+	76-1
+	44-D1
+	12
+	94
+	BS12
+	GR-784
+	T-668
+	140
+	742
+	09-L
+	411
+	012
+	85-8
+	399
+	866
+	757
+	044
+	076
+	99
+	845
+	811
+	677
+	619
+	34-T1
+	7
+	QW1
+	Q38
+	H45
+	J88
+	M11
+	Y71
+	Y2K
+	OR95
+	66
+	97
+	83
+	88
+	37
+	111
+	NY1K
+	BR-F
+	397
+	937
+	893
+	951
+	863
+	915
+	872
+	138
+	947
+	863
+	234
+	394
+	438
+	758
+	784
+	728
+	328
+	906
+	038
+	3547
+	109-D
+	3427
+	5498
+	U-46
+	094
+	0935
+	6759
+	78
+	981
+	2340
+	21-12
+	2079
+	63089
+	63
+	6498
+	984
+	009
+}
+
+star_names = {
+	"1 Aquarii"
+	"1 Boötis"
+	"1 Cancri"
+	"1 Cassiopeiae"
+	"1 Centauri"
+	"1 Geminorum"
+	"1 Hydrae"
+	"1 Pegasi"
+	"1 Scorpii"
+	"2 Andromedae"
+	"2 Boötis"
+	"2 Centauri"
+	"1 Ceti"
+	"2 Ceti"
+	"2 Cygni"
+	"2 Hydrae"
+	"2 Librae"
+	"2 Pegasi"
+	"2 Scorpii"
+	"2 Ursae Majoris"
+	"3 Ursae Minoris"
+	"3 Andromedae"
+	"3 Aquarii"
+	"3 Boötis"
+	"3 Cancri"
+	"3 Centauri"
+	"3 Ceti"
+	"3 Geminorum"
+	"3 Hydrae"
+	"3 Librae"
+	"3 Pegasi"
+	"3 Scorpii"
+	"4 Andromedae"
+	"4 Aquarii"
+	"4 Cassiopeiae"
+	"4 Centauri"
+	"4 Cygni"
+	"4 Librae"
+	"4 Pegasi"
+	"4 Sagittarii"
+	"4 Scorpii"
+	"4 Ursae Minoris"
+	"4 Virginis"
+	"5 Andromedae"
+	"5 Ari"
+	"5 Aquarii"
+	"5 Cancri"
+	"5 Librae"
+	"5 Orionis"
+	"5 Pegasi"
+	"5 Sagittarii"
+	"5 Ursae Majoris"
+	"5 Ursae Minoris"
+	"6 Andromedae"
+	"6 Ari"
+	"6 Boötis"
+	"6 Cassiopeiae"
+	"6 Ceti"
+	"6 Geminorum"
+	"6 Hydrae"
+	"6 Draconis"
+	"6 Orionis"
+	"6 Sagittarii"
+	"6 Ursae Majoris"
+	"6 Ursae Minoris"
+	"6 Virginis"
+	"7 Andromedae"
+	"7 Aquarii"
+	"7 Boötis"
+	"7 Cancri"
+	"7 Ceti"
+	"7 Draconis"
+	"7 Pegasi"
+	"7 Sagittarii"
+	"7 Virginis"
+	"8 Andromedae"
+	"8 Aquarii"
+	"8 Cancri"
+	"8 Cygni"
+	"8 Draconis"
+	"8 Ursae Minoris"
+	"9 Andromedae"
+	"9 Aquarii"
+	"9 Boötis"
+	"9 Ceti"
+	"9 Cygni"
+	"9 Hydrae"
+	"9 Pegasi"
+	"9 Sagittarii"
+	"9 Ursae Minoris"
+	"10 Andromedae"
+	"10 Aquarii"
+	"10 Boötis"
+	"10 Draconis"
+	"10 Hydrae"
+	"10 Librae"
+	"10 Ursae Minoris"
+	"10 Virginis"
+	"11 Andromedae"
+	"11 Boötis"
+	"11 Cancri"
+	"11 Leonis Minoris"
+	"11 Librae"
+	"11 Orionis"
+	"11 Pegasi"
+	"11 Scorpii"
+	"11 Ursae Minoris"
+	"11 Virginis"
+	"12 Andromedae"
+	"12 Aquarii"
+	"12 Boötis"
+	"12 Cancri"
+	"12 Hydrae"
+	"12 Librae"
+	"12 Ophiuchi"
+	"12 Sagittarii"
+	"12 Scorpii"
+	"12 Ursae Minoris"
+	"12 Virginis"
+	"13 Andromedae"
+	"13 Ari"
+	"13 Boötis"
+	"13 Ceti"
+	"13 Pegasi"
+	"13 Scorpii"
+	"13 Virginis"
+	"14 Andromedae"
+	"14 Aquarii"
+	"14 Boötis"
+	"14 Ceti"
+	"14 Cygni"
+	"14 Eridani"
+	"14 Herculis"
+	"14 Hydrae"
+	"14 Ophiuchi"
+	"14 Pegasi"
+	"14 Sagittarii"
+	"14 Ursae Minoris"
+	"14 Virginis"
+	"15 Andromedae"
+	"15 Aquarii"
+	"15 Boötis"
+	"15 Cancri"
+	"15 Cygni"
+	"15 Eridani"
+	"15 Hydrae"
+	"15 Ophiuchi"
+	"15 Orionis"
+	"15 Pegasi"
+	"15 Sagittarii"
+	"15 Ursae Majoris"
+	"16 Aquarii"
+	"16 Cygni"
+	"16 Librae"
+	"16 Lyrae"
+	"16 Orionis"
+	"16 Pegasi"
+	"16 Sagittarii"
+	"16 Virginis"
+	"17 Aquarii"
+	"17 Cygni"
+	"17 Eridani"
+	"17 Hydrae"
+	"17 Librae"
+	"17 Lyrae"
+	"17 Pegasi"
+	"17 Sagittarii"
+	"17 Ursae Majoris"
+	"17 Ursae Minoris"
+	"17 Virginis"
+	"18 Andromedae"
+	"18 Aquarii"
+	"18 Boötis"
+	"18 Draconis"
+	"18 Librae"
+	"18 Ophiuchi"
+	"18 Orionis"
+	"18 Pegasi"
+	"18 Sagittarii"
+	"18 Scorpii"
+	"18 Ursae Majoris"
+	"19 Aquarii"
+	"19 Draconis"
+	"19 Hydrae"
+	"19 Lyrae"
+	"19 Ophiuchi"
+	"19 Pegasi"
+	"19 Ursae Majoris"
+	"19 Ursae Minoris"
+	"20 Aquarii"
+	"20 Boötis"
+	"20 Cancri"
+	"20 Ceti"
+	"20 Cygni"
+	"20 Hydrae"
+	"20 Ophiuchi"
+	"20 Pegasi"
+	"20 Ursae Majoris"
+	"20 Ursae Minoris"
+	"20 Virginis"
+	"21 Aquarii"
+	"21 Cancri"
+	"21 Ophiuchi"
+	"21 Orionis"
+	"21 Sagittarii"
+	"21 Hydrae"
+	"21 Pegasi"
+	"21 Ursae Majoris"
+	"21 Virginis"
+	"22 Andromedae"
+	"22 Boötis"
+	"22 Cygni"
+	"22 Librae"
+	"22 Orionis"
+	"22 Scorpii"
+	"22 Ursae Majoris"
+	"23 Andromedae"
+	"23 Cygni"
+	"23 Ophiuchi"
+	"23 Orionis"
+	"23 Pegasi"
+	"23 Sagittarii"
+	"23 Ursae Majoris"
+	"24 Aquarii"
+	"24 Boötis"
+	"24 Cancri"
+	"24 Capricorni"
+	"24 Hydrae"
+	"24 Ophiuchi"
+	"24 Sagittarii"
+	"24 Ursae Majoris"
+	"24 Ursae Minoris"
+	"25 Aquarii"
+	"25 Cancri"
+	"25 Geminorum"
+	"25 Hydrae"
+	"25 Pegasi"
+	"25 Sagittarii"
+	"25 Scorpii"
+	"25 Virginis"
+	"26 Andromedae"
+	"26 Aquarii"
+	"26 Boötis"
+	"26 Cygni"
+	"26 Draconis"
+	"26 Hydrae"
+	"26 Librae"
+	"26 Ophiuchi"
+	"26 Sagittarii"
+	"26 Ursae Majoris"
+	"27 Cancri"
+	"27 Cygni"
+	"27 Hydrae"
+	"27 Orionis"
+	"27 Scorpii"
+	"27 Ursae Majoris"
+	"27 Virginis"
+	"28 Andromedae"
+	"28 Aquarii"
+	"28 Cancri"
+	"28 Cygni"
+	"28 Herculis"
+	"28 Hydrae"
+	"28 Librae"
+	"28 Ophiuchi"
+	"28 Pegasi"
+	"28 Sagittarii"
+	"28 Ursae Majoris"
+	"28 Virginis"
+	"29 Aquarii"
+	"29 Cancri"
+	"29 Cygni"
+	"29 Hydrae"
+	"29 Ophiuchi"
+	"29 Orionis"
+	"29 Sagittarii"
+	"30 Aquarii"
+	"30 Cyngi"
+	"30 Geminorum"
+	"30 Herculis"
+	"30 Librae"
+	"30 Ophiuchi"
+	"30 Pegasi"
+	"30 Sagittarii"
+	"31 Boötis"
+	"31 Cygni"
+	"31 Ophiuchi"
+	"31 Orionis"
+	"31 Pegasi"
+	"31 Sagittarii"
+	"31 Ursae Majoris"
+	"31 Virginis"
+	"32 Andromedae"
+	"32 Aquarii"
+	"32 Boötis"
+	"32 Cygni"
+	"32 Orionis"
+	"32 Pegasi"
+	"32 Ursae Majoris"
+	"32 Virginis"
+	"33 Boötis"
+	"33 Cygni"
+	"33 Hydrae"
+	"33 Librae"
+	"33 Orionis"
+	"33 Pegasi"
+	"33 Sagittarii"
+	"33 Virginis"
+	"34 Boötis"
+	"34 Cancri"
+	"34 Hydrae"
+	"34 Pegasi"
+	"34 Virginis"
+	"35 Aquarii"
+	"35 Cancri"
+	"35 Cygni"
+	"35 Orionis"
+	"35 Virginis"
+	"35 Ursae Majoris"
+	"36 Aquarii"
+	"36 Cancri"
+	"36 Capricorni"
+	"36 Draconis"
+	"36 Librae"
+	"36 Ophiuchi"
+	"36 Pegasi"
+	"36 Ursae Majoris"
+	"37 Aquarii"
+	"37 Cancri"
+	"37 Geminorum"
+	"37 Hydrae"
+	"37 Librae"
+	"37 Ophiuchi"
+	"37 Pegasi"
+	"37 Ursae Majoris"
+	"37 Virginis"
+	"38 Boötis"
+	"38 Cancri"
+	"38 Geminorum"
+	"38 Ophiuchi"
+	"38 Orionis"
+	"38 Pegasi"
+	"38 Ursae Majoris"
+	"38 Virginis"
+	"39 Cancri"
+	"39 Cygni"
+	"39 Andromedae"
+	"39 Boötis"
+	"39 Draconis"
+	"39 Eridani"
+	"39 Pegasi"
+	"39 Ursae Majoris"
+	"39 Virginis"
+	"40 Aquarii"
+	"40 Boötis"
+	"40 Cancri"
+	"40 Pegasi"
+	"40 Ursae Majoris"
+	"41 Andromedae"
+	"41 Aquarii"
+	"41 Arae"
+	"41 Capricorni"
+	"41 Cygni"
+	"41 Librae"
+	"41 Ophiuchi"
+	"41 Ursae Majoris"
+	"41 Virginis"
+	"42 Aquarii"
+	"42 Cancri"
+	"42 Capricorni"
+	"42 Cassiopeiae"
+	"42 Draconis"
+	"42 Herculis"
+	"42 Librae"
+	"42 Orionis"
+	"42 Ursae Majoris"
+	"43 Ophiuchi"
+	"43 Sagittarii"
+	"43 Ursae Majoris"
+	"44 Andromedae"
+	"44 Aquarii"
+	"44 Boötis"
+	"44 Cancri"
+	"44 Hydrae"
+	"44 Ursae Majoris"
+	"44 Virginis"
+	"45 Andromedae"
+	"45 Boötis"
+	"45 Aquarii"
+	"45 Cancri"
+	"45 Draconis"
+	"45 Eridani"
+	"45 Herculis"
+	"45 Ophiuchi"
+	"45 Pegasi"
+	"46 Boötis"
+	"46 Cancri"
+	"46 Capricorni"
+	"46 Ceti"
+	"46 Ursae Majoris"
+	"46 Virginis"
+	"47 Andromedae"
+	"47 Aquarii"
+	"47 Boötis"
+	"47 Capricorni"
+	"47 Cygni"
+	"47 Hydrae"
+	"47 Librae"
+	"47 Ursae Majoris"
+	"48 Cassiopeiae"
+	"48 Hydrae"
+	"48 Librae"
+	"48 Virginis"
+	"49 Andromedae"
+	"49 Aquarii"
+	"49 Cancri"
+	"49 Cassiopeiae"
+	"49 Ceti"
+	"49 Librae"
+	"49 Orionis"
+	"49 Ursae Majoris"
+	"49 Virginis"
+	"50 Aquarii"
+	"50 Boötis"
+	"50 Cancri"
+	"50 Cassiopeiae"
+	"50 Hydrae"
+	"50 Librae"
+	"50 Ophiuchi"
+	"50 Sagittarii"
+	"50 Virginis"
+	"51 Andromedae"
+	"51 Eridani"
+	"51 Hydrae"
+	"51 Orionis"
+	"51 Pegasi"
+	"51 Ursae Majoris"
+	"52 Cancri"
+	"52 Cygni"
+	"52 Herculis"
+	"52 Hydrae"
+	"52 Ophiuchi"
+	"52 Orionis"
+	"52 Pegasi"
+	"52 Sagittarii"
+	"53 Aquarii"
+	"53 Cancri"
+	"53 Eridani"
+	"53 Ophiuchi"
+	"53 Sagittarii"
+	"53 Virginis"
+	"54 Aquarii"
+	"54 Cancri"
+	"54 Eridani"
+	"54 Hydrae"
+	"54 Ophiuchi"
+	"54 Sagittarii"
+	"54 Virginis"
+	"55 Andromedae"
+	"55 Cygni"
+	"55 Hydrae"
+	"55 Orionis"
+	"55 Pegasi"
+	"55 Sagittarii"
+	"55 Ursae Majoris"
+	"55 Virginis"
+	"56 Andromedae"
+	"56 Aquarii"
+	"56 Ceti"
+	"56 Cygni"
+	"56 Hydrae"
+	"56 Orionis"
+	"56 Pegasi"
+	"56 Sagittarii"
+	"56 Ursae Majoris"
+	"56 Virginis"
+	"57 Ari"
+	"57 Cancri"
+	"57 Hydrae"
+	"57 Orionis"
+	"57 Pegasi"
+	"57 Sagittarii"
+	"57 Ursae Majoris"
+	"57 Virginis"
+	"58 Andromedae"
+	"58 Aquarii"
+	"58 Eridani"
+	"58 Hydrae"
+	"58 Ophiuchi"
+	"58 Pegasi"
+	"58 Ursae Majoris"
+	"58 Virginis"
+	"59 Andromedae"
+	"59 Cygni"
+	"59 Hydrae"
+	"59 Orionis"
+	"59 Pegasi"
+	"59 Sagittarii"
+	"59 Ursae Majoris"
+	"59 Virginis"
+	"60 Andromedae"
+	"60 Aquarii"
+	"60 Cancri"
+	"60 Herculis"
+	"60 Hydrae"
+	"60 Orionis"
+	"60 Pegasi"
+	"60 Sagittarii"
+	"60 Ursae Majoris"
+	"61 Aquarii"
+	"61 Cygni"
+	"61 Ophiuchi"
+	"61 Pegasi"
+	"61 Sagittarii"
+	"61 Ursae Majoris"
+	"61 Virginis"
+	"62 Andromedae"
+	"62 Ursae Majoris"
+	"62 Virginis"
+	"63 Andromedae"
+	"63 Ceti"
+	"63 Cygni"
+	"63 Orionis"
+	"63 Pegasi"
+	"63 Sagittarii"
+	"63 Virginis"
+	"64 Andromedae"
+	"64 Aquarii"
+	"64 Draconis"
+	"64 Eridani"
+	"64 Orionis"
+	"64 Pegasi"
+	"64 Virginis"
+	"65 Andromedae"
+	"65 Aquarii"
+	"65 Pegasi"
+	"65 Sagittarii"
+	"65 Ursae Majoris"
+	"65 Virginis"
+	"66 Andromedae"
+	"66 Aquarii"
+	"66 Eridani"
+	"66 Ophiuchi"
+	"66 Orionis"
+	"66 Pegasi"
+	"66 Ursae Majoris"
+	"66 Virginis"
+	"67 Aquarii"
+	"67 Ophiuchi"
+	"67 Pegasi"
+	"67 Cancri"
+	"67 Ursae Majoris"
+	"68 Aquarii"
+	"68 Cancri"
+	"68 Cygni"
+	"68 Draconis"
+	"68 Herculis"
+	"68 Ophiuchi"
+	"68 Orionis"
+	"68 Ursae Majoris"
+	"68 Virginis"
+	"69 Ceti"
+	"69 Herculis"
+	"69 Orionis"
+	"69 Pegasi"
+	"69 Virginis"
+	"70 Aquarii"
+	"70 Cancri"
+	"70 Ophiuchi"
+	"70 Pegasi"
+	"70 Ursae Majoris"
+	"71 Cygni"
+	"71 Orionis"
+	"71 Ophiuchi"
+	"71 Pegasi"
+	"71 Virginis"
+	"72 Aquarii"
+	"72 Cygni"
+	"72 Herculis"
+	"72 Ophiuchi"
+	"72 Orionis"
+	"72 Pegasi"
+	"72 Ursae Majoris"
+	"72 Virginis"
+	"73 Orionis"
+	"73 Pegasi"
+	"73 Ursae Majoris"
+	"73 Virginis"
+	"74 Aquarii"
+	"74 Cygni"
+	"74 Ophiuchi"
+	"74 Orionis"
+	"74 Pegasi"
+	"74 Ursae Majoris"
+	"74 Virginis"
+	"75 Cancri"
+	"75 Ceti"
+	"75 Cygni"
+	"75 Aquarii"
+	"75 Pegasi"
+	"75 Ursae Majoris"
+	"75 Virginis"
+	"76 Pegasi"
+	"76 Ursae Majoris"
+	"77 Aquarii"
+	"77 Ceti"
+	"75 Orionis"
+	"77 Pegasi"
+	"77 Virginis"
+	"78 Aquarii"
+	"78 Cancri"
+	"78 Pegasi"
+	"78 Ursae Majoris"
+	"78 Virginis"
+	"79 Cancri"
+	"79 Ceti"
+	"80 Cancri"
+	"80 Pegasi"
+	"80 Ursae Majoris"
+	"80 Virginis"
+	"81 Aquarii"
+	"81 Ceti"
+	"81 Geminorum"
+	"81 Virginis"
+	"82 Aquarii"
+	"82 Pegasi"
+	"82 Ursae Majoris"
+	"82 Virginis"
+	"83 Aquarii"
+	"83 Cancri"
+	"83 Pegasi"
+	"83 Ursae Majoris"
+	"83 Virginis"
+	"84 Aquarii"
+	"84 Ceti"
+	"84 Pegasi"
+	"84 Ursae Majoris"
+	"84 Virginis"
+	"85 Aquarii"
+	"85 Pegasi"
+	"86 Aquarii"
+	"86 Pegasi"
+	"86 Ursae Majoris"
+	"86 Virginis"
+	"87 Aquarii"
+	"87 Pegasi"
+	"87 Virginis"
+	"88 Aquarii"
+	"88 Virginis"
+	"89 Aquarii"
+	"89 Herculis"
+	"89 Virginis"
+	"90 Virginis"
+	"91 Aquarii"
+	"92 Virginis"
+	"93 Herculis"
+	"94 Aquarii"
+	"94 Ceti"
+	"94 Virginis"
+	"95 Virginis"
+	"96 Aquarii"
+	"96 Virginis"
+	"97 Aquarii"
+	"97 Virginis"
+	"98 Aquarii"
+	"98 Herculis"
+	"99 Aquarii"
+	"99 Herculis"
+	"100 Aquarii"
+	"101 Aquarii"
+	"103 Herculis"
+	"103 Virginis"
+	"104 Aquarii"
+	"104 Herculis"
+	"104 Virginis"
+	"106 Aquarii"
+	"106 Herculis"
+	"106 Virginis"
+	"107 Aquarii"
+	"108 Aquarii"
+	"108 Virginis"
+	"109 Virginis"
+	"110 Virginis"
+	"110 Herculis"
+	"111 Herculis"
+	Aada
+	Aargau
+	Abakan
+	Ab-almouya
+	Ab-al'nabai
+	Abbadon
+	"Abbor Alaz"
+	Abkash
+	Abraxus
+	Abu
+	Abyad
+	Abyss
+	Acamar
+	Acculum
+	Acelloria
+	Achernar
+	Acheron
+	Achilles
+	Achird
+	Ackmall
+	Ackolam
+	Acrab
+	Acramalo
+	Acrux
+	Acubens
+	Adad
+	Adama
+	Adar
+	Adaus
+	Adhafera
+	Adhara
+	Adhia
+	Adhil
+	Adi-mizayd
+	Adranell
+	Adumar
+	Adumir
+	Advatir
+	Aegeus
+	Aegis
+	Aerdy
+	Aesir
+	A'fa
+	Agena
+	Agni
+	Aha
+	A'haab
+	Ahahia
+	Ahar'ra
+	Ahiama
+	Ahiruz
+	Ahoozic
+	Ahriman
+	Ahyrak
+	Ah'za
+	Aidi
+	Ain
+	Ainalrami
+	Ajam
+	Ajandis
+	Ajax
+	Akita
+	Akula
+	"Al Dhanab"
+	Aladfar
+	Alastor
+	Albaldah
+	Albali
+	Albion
+	Albireo
+	Alchiba
+	Alcinous
+	Alcor
+	Alcyone
+	Aldebaran
+	Alder
+	Alderaan
+	Alderamin
+	Aldhanab
+	Aldhibah
+	Aldra
+	Aldrin
+	Aldulfin
+	Alenil
+	Alexandria
+	Alexus
+	Alfirk
+	Algedi
+	Algenib
+	Algieba
+	Algol
+	Algorab
+	Algore
+	Alhena
+	Alifa
+	Alioth
+	Alitina
+	Aliyham
+	Alizarin
+	Aljanah
+	Alkaid
+	Alkalurops
+	Alkaphrah
+	Alkarab
+	Alkes
+	Allitur
+	Almaak
+	Almaaz
+	Almach
+	Alma'sa
+	Almaty
+	Alnaha
+	Alnair
+	Alnasl
+	Al'nazib
+	Alnilam
+	Alnitak
+	Alni-ya
+	Alniyat
+	Alora
+	Alpha
+	"Alpha Andromedae"
+	"Alpha Arae"
+	"Alpha Beta"
+	"Alpha Carinae"
+	"Alpha Capricorni"
+	"Alpha Cassiopeiae"
+	"Alpha Ceti"
+	"Alpha Chi"
+	"Alpha Delta"
+	"Alpha Epsilon"
+	"Alpha Eridani"
+	"Alpha Eta"
+	"Alpha Gamma"
+	"Alpha Iota"
+	"Alpha Kappa"
+	"Alpha Lambda"
+	"Alpha Major"
+	"Alpha Minor"
+	"Alpha Mu"
+	"Alpha Nu"
+	"Alpha Omega"
+	"Alpha Omicron"
+	"Alpha Ophiuchi"
+	"Alpha Orionis"
+	"Alpha Phi"
+	"Alpha Pi"
+	"Alpha Proxima"
+	"Alpha Psi"
+	"Alpha Rho"
+	"Alpha Sigma"
+	"Alpha Scorpii"
+	"Alpha Tau"
+	"Alpha Theta"
+	"Alpha Upsilon"
+	"Alpha Virginis"
+	"Alpha Xi"
+	"Alpha Zeta"
+	Alphard
+	Alphecca
+	Alpheratz
+	Alpherg
+	Alpherides
+	Alrakis
+	Alrescha
+	Alruba
+	Alsafi
+	Alsan
+	Alsciaukat
+	Alsephina
+	Alshain
+	Alshat
+	Altair
+	Altairinus
+	Altais
+	Altaris
+	Alterf
+	Altros
+	Aludra
+	"Alula Alpha"
+	"Alula Australis"
+	"Alula Borealis"
+	Alva
+	Alya
+	Alzirr
+	Alzoc
+	Alzoll
+	A'maal
+	Ama-arhus
+	Amaldia
+	Amaranth
+	Amber
+	Ambisia
+	Ambor
+	Ambria
+	Ambrosia
+	Amcor
+	Amgathorra
+	Amine
+	Amlitzer
+	Amon
+	"Ampal Dir"
+	Amsa
+	Amun
+	Amunet
+	Amun-Ra
+	Amurru
+	Amwra
+	Am-ya
+	Anab
+	Anachonus
+	Anacreon
+	Anahzaham
+	"Ananta Shayana"
+	Anasibsha
+	Anataha
+	Anaxador
+	Anaxes
+	Ancha
+	Ancros
+	Andack
+	Anderson
+	Andersona
+	Ando
+	Andoria
+	Andromeda
+	Anfalas
+	Angetenar
+	Angius
+	Angmar
+	Anhur
+	Ankaa
+	Ankra
+	An-ni
+	Anoat
+	Anput
+	Ansalon
+	Anser
+	Ansion
+	"Antak Rham"
+	Antar
+	Antarisa
+	Antiga
+	Antilla
+	Antos
+	Antra
+	Antu
+	Anu
+	Anubis
+	Anuket
+	Apeori
+	Aphris
+	Aphrodite
+	Apis
+	Apollo
+	Apon
+	Aqiassa
+	Aquarii
+	Aquilae
+	Ara
+	Arah
+	Arayya
+	Arboria
+	Arcadia
+	Arcadius
+	Archanis
+	Archer
+	Arcturus
+	Ardhanarishvara
+	Ardoz
+	Ares
+	Argus
+	Ariege
+	Ariel
+	"Arkab Posterior"
+	"Arkab Prior"
+	Arkania
+	"Arkin Minor"
+	Ar'mid
+	Armstrong
+	Arnach
+	Arneb
+	Arnor
+	Arrakis
+	Artemis
+	Arthedain
+	Aruru
+	Arvani
+	Aryaman
+	Asa
+	Ascella
+	"Asellus Australis"
+	"Asellus Borealis"
+	Asgard
+	Ashen
+	Asherah
+	Ash-hoo
+	Ashimax
+	Ashlesha
+	Ashnan
+	Ashur
+	Asi
+	Asimbu
+	Aslund
+	Asmodeus
+	Aspidiske
+	Asrobee
+	Assaniz
+	As'shai
+	Astapor
+	Astaroth
+	Astarte
+	Asterope
+	Asya
+	Asyaliya
+	Asylum
+	Aten
+	Athebyne
+	Athena
+	Athkatla
+	Athol
+	Athos
+	Athyr
+	Aticut
+	Atik
+	Atlabba
+	Atlantis
+	Atlas
+	Atmir
+	Ator
+	Atreides
+	Atria
+	Atroa
+	Atuf
+	Aurelian
+	Aurigae
+	Aurtor
+	Avaconea
+	Avalam
+	Avalon
+	Avathar
+	Avernus
+	Avignon
+	Avim
+	Avior
+	Avitus
+	Avolantis
+	Axanar
+	Aya
+	Ay'a
+	Azati
+	Azawakh
+	Azax
+	Azazel
+	Azbrian
+	Azeklob
+	Azelfafage
+	Azha
+	Azimua
+	Azma
+	Azmidi
+	Azolla
+	Azrael
+	A'zurah
+	Ba-ab
+	Baalzebul
+	Baator
+	Babel
+	Babi
+	Badrshamram
+	Badukan
+	Bafirtia
+	Baga
+	Baggol
+	Ba'ha
+	Bahamat
+	Bahihuman
+	Bahilya
+	Bah'na
+	Baidaan
+	Bajiol
+	Bajor
+	Bakadinkram
+	Bakura
+	"Bal Durk"
+	Balal
+	Balarama
+	Balawar
+	Balder
+	Balifiqza
+	Balili
+	Balmorra
+	Balosar
+	Balphegor
+	Baltar
+	Baltris
+	Balutyanir
+	Balyada
+	Bamusu
+	Ba-na
+	Banagho
+	Bandomeer
+	Bane
+	Banfield
+	Banthary
+	Banthelgaum
+	Baobab
+	Bapagia
+	Barachiel
+	Baranik
+	Barazinbar
+	Barban
+	Barbas
+	Barbet
+	Bardegan
+	Bargman
+	Barik
+	Barrayar
+	Barsoom
+	Bartledan
+	Bartyam
+	Ba-sal
+	Basalfu
+	Bashpat
+	Basilisk
+	Bast
+	Basta'ki
+	Bastamore
+	Bastet
+	Bastion
+	Batasveed
+	"Bateb Kaitos"
+	"Baten KaitosBeemim"
+	Ba'ti
+	Batraq
+	Bau
+	Bax
+	Baxom
+	Bayajasal
+	Bazkarat
+	Bazzanac
+	"BD 108299"
+	"BD 108989"
+	"BD 110974"
+	"BD 111520"
+	"BD 112167"
+	"BD 124738"
+	"BD 12731"
+	"BD 127836"
+	"BD 140527"
+	"BD 156400"
+	"BD 177959"
+	"BD 180581"
+	"BD 193491"
+	"BD 198689"
+	"BD 200635"
+	"BD 202266"
+	"BD 202767"
+	"BD 20378"
+	"BD 216434"
+	"BD 219662"
+	"BD 224911"
+	"BD 226794"
+	"BD 238363"
+	"BD 238616"
+	"BD 256998"
+	"BD 25917"
+	"BD 261385"
+	"BD 265508"
+	"BD 26873"
+	"BD 272323"
+	"BD 282525"
+	"BD 283180"
+	"BD 286658"
+	"BD 288110"
+	"BD 292480"
+	"BD 292704"
+	"BD 293493"
+	"BD 295255"
+	"BD 302770"
+	"BD 303972"
+	"BD 315407"
+	"BD 317408"
+	"BD 321241"
+	"BD 323180"
+	"BD 32717"
+	"BD 334271"
+	"BD 33875"
+	"BD 347610"
+	"BD 349111"
+	"BD 350965"
+	"BD 357941"
+	"BD 362044"
+	"BD 36300"
+	"BD 367678"
+	"BD 368895"
+	"BD 37251"
+	"BD 377962"
+	"BD 384153"
+	"BD 384154"
+	"BD 388335"
+	"BD 389460"
+	"BD 396443"
+	"BD 421817"
+	"BD 430458"
+	"BD 436424"
+	"BD 448118"
+	"BD 450849"
+	"BD 45557"
+	"BD 456810"
+	"BD 457659"
+	"BD 459225"
+	"BD 460332"
+	"BD 473566"
+	"BD 474791"
+	"BD 484599"
+	"BD 489685"
+	"BD 491665"
+	"BD 494436"
+	"BD 501570"
+	"BD 502494"
+	"BD 502710"
+	"BD 512740"
+	"BD 514394"
+	"BD 522017"
+	"BD 522152"
+	"BD 526585"
+	"BD 542848"
+	"BD 543337"
+	"BD 545579"
+	"BD 54818"
+	"BD 54880"
+	"BD 552106"
+	"BD 58576"
+	"BD 587872"
+	"BD 588221"
+	"BD 594652"
+	"BD 599065"
+	"BD 600822"
+	"BD 601040"
+	"BD 608812"
+	"BD 614367"
+	"BD 620547"
+	"BD 624145"
+	"BD 631815"
+	"BD 632090"
+	"BD 640381"
+	"BD 642468"
+	"BD 644348"
+	"BD 644466"
+	"BD 650967"
+	"BD 656519"
+	"BD 669720"
+	"BD 674442"
+	"BD 674453"
+	"BD 689561"
+	"BD 702034"
+	"BD 70410"
+	"BD 707330"
+	"BD 708195"
+	"BD 716264"
+	"BD 719982"
+	"BD 72781"
+	"BD 733004"
+	"BD 746893"
+	"BD 762328"
+	"BD 771257"
+	"BD 775807"
+	"BD 78414"
+	"BD 798421"
+	"BD 799775"
+	"BD 804344"
+	"BD 805553"
+	"BD 806221"
+	"BD 811919"
+	"BD 83263"
+	"BD 833930"
+	"BD 834525"
+	"BD 836271"
+	"BD 843278"
+	"BD 845752"
+	"BD 845883"
+	"BD 847729"
+	"BD 856517"
+	"BD 858762"
+	"BD 867125"
+	"BD 868814"
+	"BD 888177"
+	"BD 889517"
+	"BD 890723"
+	"BD 96428"
+	Beaumonde
+	Becquerel
+	Becrux
+	Bee
+	Beech
+	Beena
+	Beerikt
+	Begle
+	Beid
+	"Bela Tegeuse"
+	Belderone
+	Belerophon
+	Beleth
+	Belet-Ili
+	Belet-Seri
+	Belfalas
+	Belgaroth
+	Belial
+	Belkadan
+	Bellatrix
+	Bellerophon
+	Bellezir
+	Belphegor
+	Belsavis
+	Beltar
+	Benthar
+	Beophay
+	Beory
+	Bera
+	Berei
+	Berengaria
+	Bes
+	Beskell
+	Bespin
+	Bestia
+	Bestine
+	Beta
+	"Beta Andromedae"
+	"Beta Alpha"
+	"Beta Arae"
+	"Beta Carinae"
+	"Beta Capricorni"
+	"Beta Cassiopeiae"
+	"Beta Centauri"
+	"Beta Ceti"
+	"Beta Chi"
+	"Beta Delta"
+	"Beta Epsilon"
+	"Beta Eridani"
+	"Beta Eta"
+	"Beta Gamma"
+	"Beta Hydra"
+	"Beta Iota"
+	"Beta Kappa"
+	"Beta Lambda"
+	"Beta Major"
+	"Beta Minor"
+	"Beta Mu"
+	"Beta Nu"
+	"Beta Omega"
+	"Beta Omicron"
+	"Beta Ophiuchi"
+	"Beta Orionis"
+	"Beta Phi"
+	"Beta Pi"
+	"Beta Psi"
+	"Beta Rho"
+	"Beta Scorpii"
+	"Beta Sigma"
+	"Beta Tau"
+	"Beta Theta"
+	"Beta Upsilon"
+	"Beta Virginis"
+	"Beta Xi"
+	"Beta Zeta"
+	Betazed
+	Bethselamin
+	Bevora
+	Beznar
+	Bhadrakali
+	Bhaga
+	Bhairava
+	Bharani
+	"Bhekar Ro"
+	Bhikshatana
+	Bhumi
+	Bidtox
+	Bi-fa
+	Biham
+	Bihiram
+	Bihjall
+	Bijh
+	Bikhul
+	Bilbo
+	Bilbringi
+	Bildos
+	Biltron
+	Binami
+	Bindur
+	Bintu
+	"Bion Dazat"
+	Bir
+	"Bir Zun"
+	Birana
+	Birdu
+	Biryakha
+	Bisanmi
+	Bissel
+	Bistramar
+	Bitrius
+	Bivham
+	Biy'ah
+	Biybamir
+	Boccob
+	Bogden
+	Boggor
+	Bohr
+	Bokrimar
+	Bolarus
+	Boldoon
+	Bolthor
+	Bonadon
+	Bond
+	Bonos
+	Bootis
+	Bopak
+	Boraal
+	Boradis
+	Borbagon
+	Borce
+	Boreal
+	Borin
+	Borka
+	Borleias
+	Borrbo
+	Borzoi
+	Botein
+	Botor
+	Bovatir
+	"Boz Pity"
+	Braavos
+	Bracas
+	Brachium
+	Braddam
+	Brahma
+	Brakma
+	Bra'lie
+	Brallix
+	Bralm
+	Braslota
+	Brax
+	Braxis
+	Bre'el
+	Breen
+	Breka
+	Brendor
+	Brentaal
+	Brentalia
+	Brequinda
+	Brewer
+	Brewtine
+	Brier
+	Bril'zayd
+	Brinda
+	Bringloid
+	Briscoll
+	Britanion
+	Brius
+	Brockan
+	Brodie
+	Brontes
+	Browder
+	Brustam
+	Bryant
+	Brynnis
+	Buddha
+	Bunda
+	Bune
+	Bunene
+	Burtios
+	Busim
+	Bysh
+	Byss
+	Bythia
+	Bytopia
+	Cador
+	Caesar
+	Cait
+	Cajubus
+	Caladan
+	Calafia
+	Calam
+	Caldik
+	Caldos
+	Calimport
+	Calindara
+	Calinor
+	Callinon
+	Calondia
+	Camas
+	Campor
+	Campos
+	Camthrin
+	Camus
+	Canamar
+	"Canis Alpha"
+	"Canis Beta"
+	"Canis Chi"
+	"Canis Delta"
+	"Canis Epsilon"
+	"Canis Eta"
+	"Canis Gamma"
+	"Canis Iota"
+	"Canis Kappa"
+	"Canis Lambda"
+	"Canis Mu"
+	"Canis Nu"
+	"Canis Omega"
+	"Canis Omicron"
+	"Canis Orionis"
+	"Canis Phi"
+	"Canis Pi"
+	"Canis Psi"
+	"Canis Rho"
+	"Canis Sigma"
+	"Canis Tau"
+	"Canis Theta"
+	"Canis Upsilon"
+	"Canis Virginis"
+	"Canis Zeta"
+	Cannon
+	Canopus
+	Capella
+	Caph
+	Capra
+	Caprica
+	Capro
+	Caranis
+	Carceri
+	Card
+	Cardassia
+	Cardolan
+	Cardollia
+	Cardorth
+	Carerra
+	Carida
+	Carinex
+	Carinus
+	Carnori
+	Carovon
+	Carraya
+	Carthori
+	Carthoris
+	Carus
+	Carver
+	Caryno
+	Cascerius
+	Casia
+	Cassandra
+	Cassius
+	Castal
+	Castor
+	Castula
+	Catharsis
+	Caulron
+	Cavzek
+	Cazzabius
+	Cebalrai
+	Celadon
+	Celaeno
+	Celene
+	Celestia
+	Cemesta
+	Centauri
+	Cepheus
+	Cerberus
+	Cerdellia
+	Cerea
+	Cerebrus
+	Ceres
+	Cerise
+	Cerulean
+	Cervantes
+	Cestus
+	Cetaganda
+	"Ceti Alpha"
+	"Ceti Beta"
+	"Ceti Chi"
+	"Ceti Delta"
+	"Ceti Epsilon"
+	"Ceti Eta"
+	"Ceti Gamma"
+	"Ceti Iota"
+	"Ceti Kappa"
+	"Ceti Lambda"
+	"Ceti Mu"
+	"Ceti Nu"
+	"Ceti Omega"
+	"Ceti Omicron"
+	"Ceti Orionis"
+	"Ceti Phi"
+	"Ceti Pi"
+	"Ceti Psi"
+	"Ceti Rho"
+	"Ceti Sigma"
+	"Ceti Tau"
+	"Ceti Theta"
+	"Ceti Upsilon"
+	"Ceti Virginis"
+	"Ceti Xi"
+	"Ceti Zeta"
+	Chaar
+	Chalawan
+	Chalesim
+	Challon
+	Chamm
+	Chamra
+	Chamri
+	Chamukuy
+	Chandi
+	Chandra
+	Chandrila
+	Chaos
+	Chapman
+	Char
+	Chara
+	Charlotte
+	Charros
+	Chasin
+	Chatib
+	Chazwa
+	Chebychev
+	Cheleb
+	Cheli
+	"Chellen's Veil"
+	Chergamore
+	Cheron
+	Cherryh
+	Chertan
+	Chetrus
+	Cheynne
+	Chezti
+	Chi
+	"Chi Andromedae"
+	"Chi Alpha"
+	"Chi Beta"
+	"Chi Carinae"
+	"Chi Capricorni"
+	"Chi Cassiopeiae"
+	"Chi Centauri"
+	"Chi Ceti"
+	"Chi Delta"
+	"Chi Epsilon"
+	"Chi Eridani"
+	"Chi Eta"
+	"Chi Gamma"
+	"Chi Iota"
+	"Chi Kappa"
+	"Chi Lambda"
+	"Chi Ling"
+	"Chi Major"
+	"Chi Minor"
+	"Chi Mu"
+	"Chi Nu"
+	"Chi Omega"
+	"Chi Omicron"
+	"Chi Ophiuchi"
+	"Chi Orionis"
+	"Chi Phi"
+	"Chi Pi"
+	"Chi Psi"
+	"Chi Rho"
+	"Chi Scorpii"
+	"Chi Sigma"
+	"Chi Tau"
+	"Chi Theta"
+	"Chi Upsilon"
+	"Chi Virginis"
+	"Chi Xi"
+	"Chi Zeta"
+	Chiban
+	Chimera
+	Chiminol
+	Chiron
+	Chisellion
+	Chohar
+	Chok'noor
+	Chox
+	Churassix
+	Chusuk
+	Ciceronicus
+	Cidar
+	Cipollan
+	Cipux
+	Cirban
+	Cizar
+	Clair
+	Clak'dor
+	Clarion
+	Clarus
+	Cobra
+	Codria
+	Coggan
+	Collodor
+	Colomus
+	Comporellon
+	"Con Viab"
+	Condarra
+	Condular
+	Conthim
+	Coorq
+	Copernicus
+	Coppelius
+	"Cor Caroli"
+	"Cor Hydrae"
+	"Cor Leonis"
+	Corann
+	Cordannas
+	Cordelia
+	Cordip
+	Corellia
+	Coridan
+	Cormagas
+	Cormagion
+	Corneria
+	Corrin
+	Cortina
+	Corulag
+	Coruscant
+	Corydalis
+	Cossmallion
+	Cothium
+	Coumaphos
+	Covall
+	Craxima
+	Crematoria
+	Cremor
+	Crescim
+	Crevas
+	Crimdor
+	"Cron Drift"
+	Cruxwan
+	C'silla
+	Cujam
+	Culdax
+	Cunbar
+	Curie
+	Cursa
+	Cuvacia
+	Cyban
+	Cybertron
+	Cygnosus
+	Cynosura
+	Cyric
+	Cyrillia
+	Cytheria
+	Da
+	Daarasta
+	Dabih
+	Dachat
+	Dachlyd
+	Dad-basma
+	Da'diya
+	Daern
+	Dagan
+	Dagasa
+	Dagda
+	Dagobah
+	Dagon
+	Dagoola
+	Da'hamood
+	Daha'ti
+	Dahaydulmum
+	Dahrtag
+	Dakala
+	Daksa
+	Da'la
+	Dalba
+	Dalia
+	Dalim
+	Dalphene
+	Damad
+	Dam'hamat
+	Damiun
+	Damogran
+	Dam'rimam
+	Damu
+	Da'mur
+	Dandar
+	Dangal
+	"Dangrabad Beta"
+	Dantooine
+	Dantredun
+	Danwe
+	Daoud
+	Daranma
+	Darep
+	Dargan
+	Darwin
+	Dasafai
+	Dasallahsa
+	Dasavatara
+	Dasha'id
+	Dashalah
+	Dassatu
+	Dastamon
+	Dathaana
+	Dathomir
+	Daudbiyha
+	Daupherm
+	Davasa
+	Davlos
+	Dawcan
+	Dawkins
+	Dawn
+	Dawson
+	Da'yaa
+	Dearum
+	Debbux
+	Decarabia
+	Decius
+	Deemi
+	Delios
+	Delnaryam
+	Delphic
+	Delphon
+	Delta
+	"Delta Andromedae"
+	"Delta Alpha"
+	"Delta Arae"
+	"Delta Beta"
+	"Delta Canis"
+	"Delta Capricorni"
+	"Delta Centauri"
+	"Delta Ceti"
+	"Delta Chi"
+	"Delta Epsilon"
+	"Delta Eridani"
+	"Delta Eta"
+	"Delta Gamma"
+	"Delta Iota"
+	"Delta Kappa"
+	"Delta Lambda"
+	"Delta Leonis"
+	"Delta Major"
+	"Delta Minor"
+	"Delta Mu"
+	"Delta Nu"
+	"Delta Omega"
+	"Delta Omicron"
+	"Delta Ophiuchi"
+	"Delta Orionis"
+	"Delta Pavonis"
+	"Delta Phi"
+	"Delta Pi"
+	"Delta Psi"
+	"Delta Rho"
+	"Delta Scorpii"
+	"Delta Sigma"
+	"Delta Tau"
+	"Delta Theta"
+	"Delta Upsilon"
+	"Delta Virginis"
+	"Delta Xi"
+	"Delta Zeta"
+	Deltiri
+	Demeter
+	Demeton
+	Demogorgon
+	Demophon
+	Denaba
+	Denbra
+	"Deneb Algedi"
+	Denebola
+	Deneva
+	Denevar
+	Denius
+	Denon
+	Denorios
+	Dentaal
+	Derda
+	Derellis
+	Deres
+	Der'ha
+	Der-niy
+	Derra
+	Der'rahsim
+	Der-sawa
+	Dersira
+	Despad
+	Dester
+	Detheris
+	Devanus
+	Devaron
+	Devidia
+	Devin
+	Devoa
+	Devolin
+	Devra
+	Dharini
+	Dhat
+	Dhogha
+	Dhruva
+	Dhumravarna
+	Diadem
+	Dialeifa
+	Diam
+	Diamal
+	Diamanta
+	Dibra
+	Didia'run
+	Dieron
+	Dihaiyaham
+	Dilkaga
+	Dilthi
+	Dilworth
+	Dimanan
+	Dimis
+	Dimm
+	Dinmu
+	Dinoseb
+	Dinyazi
+	Diphda
+	Dirban
+	Dirmius
+	Diryashuma
+	Ditla
+	Ditrim
+	Diub
+	Dodonnam
+	"Dol Amroth"
+	Domitian
+	Dongar
+	Dontaur
+	Dopa
+	Dordellis
+	Dorellion
+	Dorfil
+	Doria
+	Doriath
+	Dorvan
+	Dorwinion
+	Dossel
+	Dothon
+	Douthart
+	Dozaria
+	Draconis
+	Dradim
+	Draelon
+	Dram
+	Dramia
+	Drasefta
+	Drathis
+	Drayan
+	Draylon
+	Dredd
+	Drema
+	Drendor
+	Drengia
+	Drenth
+	Dreon
+	Dressel
+	Drisk
+	Drogo
+	"Dromund Kaas"
+	Drondol
+	Dronegar
+	Drongar
+	Dropek
+	Druckenwell
+	Dschubba
+	Dubhe
+	Dudnalana
+	Duhor
+	Dulaisu
+	Dumuzi
+	Durabbius
+	Duracchus
+	Durascadon
+	Durbatur
+	Durenia
+	Durga
+	Durif
+	Durin
+	Durmeelmi
+	Duro
+	Durocher
+	Durth
+	Duryahmu
+	Duti
+	Duwix
+	Dyaus
+	D'yawa
+	Dyev
+	Dylar
+	Dyson
+	Dytallix
+	Dziban
+	Ea
+	Eadominar
+	Eadrax
+	Eagle
+	Eam
+	Eamus
+	Ecru
+	Ecynth
+	Edasich
+	Edellimar
+	Edemar
+	Eden
+	"Edor Vang"
+	Eiol
+	Eissam
+	Ejok
+	Ekbir
+	Ekos
+	Ekron
+	El-Adrel
+	El-Auria
+	Elaysia
+	Elderak
+	Eldora
+	Electra
+	Eleusis
+	Elgafar
+	Elhonna
+	Elissa
+	Elkurud
+	Ellamir
+	Ellor
+	Elnath
+	Eltanin
+	Eltheen
+	Elthior
+	Elthir
+	Elysia
+	Elysium
+	Embor
+	Emesh
+	Eminar
+	Emoralis
+	Enara
+	Enbilulu
+	Endari
+	Endoga
+	Endor
+	Endrin
+	Endursaga
+	Endymion
+	Enif
+	Enim
+	Enkef
+	Enki
+	Enkimdu
+	Enlil
+	Enmesarra
+	Ennan
+	Ennugi
+	Enten
+	Eos
+	Epsi
+	"Epsilon Andromedae"
+	"Epsilon Alpha"
+	"Epsilon Arae"
+	"Epsilon Beta"
+	"Epsilon Carinae"
+	"Epsilon Capricorni"
+	"Epsilon Cassiopeiae"
+	"Epsilon Centauri"
+	"Epsilon Ceti"
+	"Epsilon Chi"
+	"Epsilon Delta"
+	"Epsilon Eta"
+	"Epsilon Gamma"
+	"Epsilon Icos"
+	"Epsilon Kappa"
+	"Epsilon Lambda"
+	"Epsilon Leonis"
+	"Epsilon Major"
+	"Epsilon Minor"
+	"Epsilon Mu"
+	"Epsilon Nu"
+	"Epsilon Omega"
+	"Epsilon Omicron"
+	"Epsilon Ophiuchi"
+	"Epsilon Orionis"
+	"Epsilon Phi"
+	"Epsilon Pi"
+	"Epsilon Psi"
+	"Epsilon Rho"
+	"Epsilon Scorpii"
+	"Epsilon Sigma"
+	"Epsilon Tau"
+	"Epsilon Tauri"
+	"Epsilon Theta"
+	"Epsilon Upsilon"
+	"Epsilon Virginis"
+	"Epsilon Xi"
+	"Epsilon Zeta"
+	Eptraban
+	Erai
+	"82 Eridani"
+	Erasmadon
+	Erdosca
+	Eregion
+	Erelisia
+	Ereness
+	Ereshkigal
+	Erestor
+	Eriadu
+	Eriga
+	Erihu
+	Erikang
+	Erimadon
+	Eros
+	Eroticon
+	Errai
+	Erythnul
+	Escant
+	Eskellion
+	Esperi
+	Esteraeus
+	Estrada
+	Eta
+	"Eta Andromedae"
+	"Eta Alpha"
+	"Eta Arae"
+	"Eta Beta"
+	"Eta Capricorni"
+	"Eta Centauri"
+	"Eta Ceti"
+	"Eta Chi"
+	"Eta Delta"
+	"Eta Epsilon"
+	"Eta Eridani"
+	"Eta Gamma"
+	"Eta Iota"
+	"Eta Kappa"
+	"Eta Lambda"
+	"Eta Major"
+	"Eta Minor"
+	"Eta Mu"
+	"Eta Nu"
+	"Eta Omega"
+	"Eta Omicron"
+	"Eta Ophiuchi"
+	"Eta Orionis"
+	"Eta Phi"
+	"Eta Pi"
+	"Eta Polaris"
+	"Eta Psi"
+	"Eta Rho"
+	"Eta Scorpii"
+	"Eta Sigma"
+	"Eta Tau"
+	"Eta Theta"
+	"Eta Upsilon"
+	"Eta Virginis"
+	"Eta Xi"
+	"Eta Zeta"
+	Etamin
+	"Etan Stela"
+	Eternis
+	Ethion
+	Ethos
+	Eugenius
+	Eula
+	Europia
+	Evadne
+	Evarym
+	Evedil
+	Evendim
+	Evenstar
+	Evexus
+	Exilon
+	Exodus
+	Eyrie
+	Ezak
+	Fafnir
+	Fa-hai
+	Fahayalah
+	Fahikda
+	Fahleena
+	Faimifa
+	Fai'soud
+	Falcon
+	Faleola
+	Faleyzal
+	Falleen
+	Fallia
+	Falmir
+	Falorsi
+	Faltus
+	Falu
+	Fama
+	Fa'na
+	Fanamar
+	Fandar
+	Fang
+	Fangcor
+	Fangnaur
+	Fa'niyib
+	Faqifa
+	Farahula
+	Faramir
+	Faraway
+	Farius
+	Far-med
+	Farni
+	Farphin
+	Farulid
+	Fa'safa
+	Fasahja
+	Fashahwa
+	Faw'alsa
+	Fawaris
+	Fayariq
+	Fayasai
+	Fedalle
+	Fedeema
+	Feggor
+	Fejantris
+	Feldazir
+	Felis
+	Felix
+	Fellebia
+	Felucia
+	Femax
+	Fenex
+	Fennel
+	Fenrir
+	Fenris
+	Fenthion
+	Fentrul
+	Ferathon
+	Ferenginar
+	Ferirama
+	Fermento
+	Ferragon
+	Fer-riq
+	Fevallion
+	Fi'am
+	Figizar
+	Fihahaya
+	Fihir
+	Fijon
+	Fillamir
+	Filthor
+	Filtreus
+	Fi-nim
+	Fiorina
+	Firam
+	Fival
+	Fivel
+	Flanux
+	Flargathon
+	Flax
+	Flaxia
+	Florin
+	Flotsam
+	Focolor
+	Foldora
+	Folfanga
+	Folingar
+	Fondor
+	Fonofos
+	Forcas
+	Fordus
+	Forge
+	Forlindon
+	Formothion
+	Fornax
+	Forster
+	Foth
+	Fowla
+	Frastra
+	Frego
+	Frey
+	Freya
+	Frigg
+	Frodo
+	Fulaz
+	Fulu
+	Fumalsamakah
+	Furan
+	Furcas
+	Furland
+	Furlisia
+	Furud
+	Furya
+	Fuyue
+	Gabe
+	Gabriel
+	Gacrux
+	Gaga
+	Gagarin
+	Gaha'sha
+	Gaia
+	Gaila
+	Gajavaktra
+	Gakial
+	Galartha
+	Galas
+	Galatia
+	Galdonterre
+	Galerius
+	Gallam
+	Gallamun
+	Gallienus
+	Gallifrey
+	Gallos
+	Gallus
+	Galor
+	Galpan
+	Galurum
+	Galvin
+	Galvoni
+	Gama
+	Gamboge
+	Gambra
+	Gamelon
+	Gamgee
+	Gamigin
+	Gamma
+	"Gamma Andromedae"
+	"Gamma Alpha"
+	"Gamma Arae"
+	"Gamma Beta"
+	"Gamma Canaris"
+	"Gamma Capricorni"
+	"Gamma Cassiopeiae"
+	"Gamma Centauri"
+	"Gamma Ceti"
+	"Gamma Chi"
+	"Gamma Delta"
+	"Gamma Draconis"
+	"Gamma Epsilon"
+	"Gamma Eridani"
+	"Gamma Eta"
+	"Gamma Hromi"
+	"Gamma Hydra"
+	"Gamma Iota"
+	"Gamma Kappa"
+	"Gamma Lambda"
+	"Gamma Major"
+	"Gamma Minor"
+	"Gamma Mu"
+	"Gamma Nu"
+	"Gamma Omega"
+	"Gamma Omicron"
+	"Gamma Ophiuchi"
+	"Gamma Orionis"
+	"Gamma Phi"
+	"Gamma Pi"
+	"Gamma Psi"
+	"Gamma Rho"
+	"Gamma Sigma"
+	"Gamma Tau"
+	"Gamma Theta"
+	"Gamma Trianguli"
+	"Gamma Upsilon"
+	"Gamma Virginis"
+	"Gamma Xi"
+	"Gamma Zeta"
+	Gamont
+	Gamorr
+	"Gan Singh"
+	Gandalf
+	Gandeal
+	Gandera
+	Ganelon
+	Ganesh
+	Ganga
+	Ganges
+	Ganshoren
+	Ga'rid
+	Garmin
+	Garner
+	Garth
+	Garuda
+	Gasam'haj
+	Gasasimdi
+	Gatana
+	Gateway
+	Gathol
+	Gathrica
+	Gauss
+	Gauzor
+	Gavruxi
+	Gaxrux
+	Gazihramsha
+	Geb
+	Gedexus
+	Gehenna
+	Gemaris
+	Gemma
+	Gemulon
+	Geonosis
+	Gerenia
+	Gerica
+	Geronth
+	Gerra
+	Gerrard
+	Geshtai
+	Geshtinanna
+	Geta
+	Ghamisa
+	Ghas'ga
+	Ghasramti
+	Ghorman
+	Ghusasamda
+	Ghulion
+	Giausar
+	Gibil
+	Giedi
+	Gienah
+	Giju
+	Gildor
+	Gilgamesh
+	Gilprim
+	Gimble
+	Ginam
+	Ginan
+	Ginaz
+	Gindix
+	Ginigan
+	Ginnog
+	Gipana
+	Gladstone
+	Glaretram
+	Glasya
+	Glengarry
+	Gleykin
+	Glithnos
+	Glorigoth
+	Glory
+	Goeria
+	Goffia
+	Gol
+	Golandrinas
+	Golba
+	Golega
+	Gomeisa
+	Gonal
+	Gondolin
+	Gondor
+	Gordaldo
+	Gorim
+	Gorthar
+	Gossok
+	Gothra
+	Gottara
+	Gozam
+	Gralik
+	Gramilia
+	Graus
+	Grekil
+	Gre'thor
+	Greyhawk
+	Gribbon
+	Grizzly
+	Grokkan
+	Gromen
+	"Groombridge 1830"
+	Grugmora
+	Grumium
+	Grumman
+	Gudja
+	Gugalanna
+	Guhur
+	Gunara
+	Guniibuu
+	Gunlibuu
+	Guram
+	Gygax
+	Habakr
+	Ha-bas
+	Haber
+	Habra
+	Hadad
+	Hadar
+	Hades
+	Hadir
+	Hadrian
+	Hadricus
+	Haedus
+	Hafha
+	Ha'fider
+	Hagal
+	Hagen
+	Hahanu
+	Ha'i
+	Hai-ar
+	Hailwa
+	Haisuna
+	Haiwa
+	Hajmedra
+	Haj'ni
+	Hajurifra
+	Ha-ka
+	Halana
+	Halax
+	Haldus
+	Hamal
+	Hamania
+	Hamanra
+	Hambor
+	Hamkad
+	Ham'meer
+	Hammer
+	Hamud
+	Ha'muhbai
+	Hamunsa
+	Hanaswas
+	Hanaya
+	Hani
+	Hanneri
+	Hanoli
+	Hanon
+	Hantaron
+	Hanuman
+	Hapes
+	Hapi
+	Ha'ra
+	Haradwaith
+	Haramuth
+	Haran
+	Harandor
+	Harga
+	Haribas
+	Harihara
+	Hark
+	Harlindon
+	Harpalos
+	Harper
+	Har'ti
+	"Harun Kal"
+	Harvest
+	Hasasam
+	Ha'sim
+	Hasmilal
+	Hassaleh
+	Hastor
+	Hastromil
+	Hatazalih
+	Hatch
+	Hatcher
+	Hathor
+	Hatmah
+	Hatysa
+	Haven
+	Haviland
+	Havoc
+	Hawanqa
+	Hawasha
+	Hawayalim
+	Hawking
+	Haya
+	Hayagriva
+	Hayalosya
+	Hayasum
+	Haydajabr
+	Haylinan
+	Hayrid
+	Hazra
+	"HD 107111"
+	"HD 107701"
+	"HD 108161"
+	"HD 109351"
+	"HD 110490"
+	"HD 121034"
+	"HD 130165"
+	"HD 13618"
+	"HD 137282"
+	"HD 140492"
+	"HD 151669"
+	"HD 156571"
+	"HD 165252"
+	"HD 168324"
+	"HD 168785"
+	"HD 170497"
+	"HD 173025"
+	"HD 173329"
+	"HD 193151"
+	"HD 198434"
+	"HD 216067"
+	"HD 216679"
+	"HD 220386"
+	"HD 224809"
+	"HD 239298"
+	"HD 243502"
+	"HD 255650"
+	"HD 257557"
+	"HD 264683"
+	"HD 266188"
+	"HD 270366"
+	"HD 271047"
+	"HD 277518"
+	"HD 288950"
+	"HD 294625"
+	"HD 298142"
+	"HD 302398"
+	"HD 303836"
+	"HD 318088"
+	"HD 325497"
+	"HD 331243"
+	"HD 334577"
+	"HD 335068"
+	"HD 337629"
+	"HD 34007"
+	"HD 340427"
+	"HD 344115"
+	"HD 346749"
+	"HD 358274"
+	"HD 361106"
+	"HD 364388"
+	"HD 375816"
+	"HD 378298"
+	"HD 385679"
+	"HD 385845"
+	"HD 390636"
+	"HD 394082"
+	"HD 398502"
+	"HD 401063"
+	"HD 403999"
+	"HD 408561"
+	"HD 41014"
+	"HD 415209"
+	"HD 41614"
+	"HD 417459"
+	"HD 434662"
+	"HD 442087"
+	"HD 444631"
+	"HD 445149"
+	"HD 471659"
+	"HD 472868"
+	"HD 483060"
+	"HD 485945"
+	"HD 486360"
+	"HD 512312"
+	"HD 516359"
+	"HD 524132"
+	"HD 525880"
+	"HD 526454"
+	"HD 531774"
+	"HD 53857"
+	"HD 540551"
+	"HD 541136"
+	"HD 54350"
+	"HD 543944"
+	"HD 543983"
+	"HD 547740"
+	"HD 557664"
+	"HD 563714"
+	"HD 574231"
+	"HD 575559"
+	"HD 577035"
+	"HD 581964"
+	"HD 587436"
+	"HD 598550"
+	"HD 600150"
+	"HD 605646"
+	"HD 60611"
+	"HD 609659"
+	"HD 615290"
+	"HD 616852"
+	"HD 619736"
+	"HD 622338"
+	"HD 623271"
+	"HD 624455"
+	"HD 625771"
+	"HD 631907"
+	"HD 633717"
+	"HD 638197"
+	"HD 645901"
+	"HD 654767"
+	"HD 660442"
+	"HD 66453"
+	"HD 670364"
+	"HD 70132"
+	"HD 706977"
+	"HD 709337"
+	"HD 712885"
+	"HD 713600"
+	"HD 734207"
+	"HD 736112"
+	"HD 73788"
+	"HD 738985"
+	"HD 74021"
+	"HD 745293"
+	"HD 750667"
+	"HD 753258"
+	"HD 765222"
+	"HD 770012"
+	"HD 771350"
+	"HD 776252"
+	"HD 793973"
+	"HD 794111"
+	"HD 799013"
+	"HD 809452"
+	"HD 811762"
+	"HD 816935"
+	"HD 820602"
+	"HD 826314"
+	"HD 830523"
+	"HD 838080"
+	"HD 84045"
+	"HD 845020"
+	"HD 850960"
+	"HD 862227"
+	"HD 865889"
+	"HD 886590"
+	"HD 886667"
+	"HD 93019"
+	"HD 94367"
+	He'a
+	Hecate
+	Hector
+	Heflin
+	Heimdal
+	Heinlein
+	Heironeous
+	Heka
+	Hekaras
+	Heket
+	Hel
+	Helam
+	Helion
+	Helm
+	"Helm's Deep"
+	Helska
+	Helvetios
+	Hemel
+	Hemikek
+	Hemtares
+	Hendassa
+	Hendursaga
+	Hensedon
+	Hera
+	Herbert
+	Hermes
+	Hesperia
+	Hestia
+	Heva
+	Heward
+	Hextor
+	Heze
+	Hiann
+	Higma
+	Hijinasura
+	Hijra
+	Hij'sil
+	Hiklam
+	Hilnor
+	Himalaya
+	Himjad
+	Him'ju
+	Himpra
+	Hine
+	Hinra
+	"HIP 116948"
+	"HIP 121709"
+	"HIP 124545"
+	"HIP 125660"
+	"HIP 128477"
+	"HIP 138114"
+	"HIP 147566"
+	"HIP 150145"
+	"HIP 152496"
+	"HIP 15622"
+	"HIP 158838"
+	"HIP 165688"
+	"HIP 169922"
+	"HIP 173099"
+	"HIP 180063"
+	"HIP 186225"
+	"HIP 192906"
+	"HIP 215632"
+	"HIP 222763"
+	"HIP 22335"
+	"HIP 225748"
+	"HIP 22914"
+	"HIP 236883"
+	"HIP 238051"
+	"HIP 240415"
+	"HIP 251674"
+	"HIP 280542"
+	"HIP 287645"
+	"HIP 299705"
+	"HIP 317362"
+	"HIP 320823"
+	"HIP 321853"
+	"HIP 328757"
+	"HIP 336024"
+	"HIP 341990"
+	"HIP 346031"
+	"HIP 348668"
+	"HIP 361243"
+	"HIP 361583"
+	"HIP 367205"
+	"HIP 381365"
+	"HIP 386346"
+	"HIP 392828"
+	"HIP 39717"
+	"HIP 399841"
+	"HIP 407673"
+	"HIP 411343"
+	"HIP 414943"
+	"HIP 425219"
+	"HIP 426471"
+	"HIP 430222"
+	"HIP 430680"
+	"HIP 435418"
+	"HIP 436493"
+	"HIP 447553"
+	"HIP 448328"
+	"HIP 453482"
+	"HIP 471846"
+	"HIP 472176"
+	"HIP 474469"
+	"HIP 474919"
+	"HIP 477271"
+	"HIP 489952"
+	"HIP 507350"
+	"HIP 507682"
+	"HIP 516931"
+	"HIP 521892"
+	"HIP 523334"
+	"HIP 530604"
+	"HIP 532961"
+	"HIP 542717"
+	"HIP 54530"
+	"HIP 551488"
+	"HIP 551772"
+	"HIP 554384"
+	"HIP 572915"
+	"HIP 57439"
+	"HIP 575485"
+	"HIP 591972"
+	"HIP 598928"
+	"HIP 604549"
+	"HIP 605450"
+	"HIP 609743"
+	"HIP 611072"
+	"HIP 613099"
+	"HIP 622399"
+	"HIP 622925"
+	"HIP 633601"
+	"HIP 63641"
+	"HIP 640461"
+	"HIP 643180"
+	"HIP 647877"
+	"HIP 654058"
+	"HIP 660707"
+	"HIP 684283"
+	"HIP 686995"
+	"HIP 690218"
+	"HIP 691734"
+	"HIP 693097"
+	"HIP 697906"
+	"HIP 705668"
+	"HIP 707686"
+	"HIP 71114"
+	"HIP 718819"
+	"HIP 726454"
+	"HIP 728889"
+	"HIP 734498"
+	"HIP 741804"
+	"HIP 747766"
+	"HIP 755481"
+	"HIP 757675"
+	"HIP 758448"
+	"HIP 759238"
+	"HIP 761103"
+	"HIP 761708"
+	"HIP 762502"
+	"HIP 762671"
+	"HIP 766880"
+	"HIP 767019"
+	"HIP 774466"
+	"HIP 776098"
+	"HIP 776803"
+	"HIP 784800"
+	"HIP 785146"
+	"HIP 785499"
+	"HIP 792910"
+	"HIP 811549"
+	"HIP 815172"
+	"HIP 822218"
+	"HIP 826208"
+	"HIP 830664"
+	"HIP 832754"
+	"HIP 838792"
+	"HIP 844089"
+	"HIP 850158"
+	"HIP 85078"
+	"HIP 853618"
+	"HIP 86550"
+	"HIP 870947"
+	"HIP 87459"
+	"HIP 876049"
+	"HIP 880858"
+	"HIP 881893"
+	"HIP 886377"
+	"HIP 892068"
+	"HIP 892552"
+	"HIP 894254"
+	"HIP 898636"
+	"HIP 90701"
+	"HIP 93139"
+	Hiragabri
+	Hir-hi
+	Hirim
+	Hirogen
+	Hischmal
+	Hitaghama
+	Hithara
+	Hithram
+	Hitoria
+	Hixam
+	Hixar
+	Hixaros
+	Hizar
+	Hizzel
+	Hocryi
+	Hoek
+	Hoel
+	Hokaja
+	Holdebana
+	Holden
+	Hollin
+	Holmes
+	Homam
+	Hope
+	Horschim
+	Horus
+	Hoshfir
+	Hoskihi
+	Hoth
+	Hotram
+	Hough
+	Howoz
+	Hozint
+	Hubble
+	Hugin
+	Hunter
+	Huntress
+	Huntur
+	Huph
+	Hurada
+	Hyab
+	Hyadea
+	Hyadum
+	"Hydra Alpha"
+	"Hydra Beta"
+	"Hydra Centauri"
+	"Hydra Ceti"
+	"Hydra Chi"
+	"Hydra Delta"
+	"Hydra Epsilon"
+	"Hydra Eridani"
+	"Hydra Eta"
+	"Hydra Gamma"
+	"Hydra Iota"
+	"Hydra Kappa"
+	"Hydra Lambda"
+	"Hydra Ling"
+	"Hydra Major"
+	"Hydra Minor"
+	"Hydra Mu"
+	"Hydra Nu"
+	"Hydra Omega"
+	"Hydra Omicron"
+	"Hydra Orionis"
+	"Hydra Phi"
+	"Hydra Pi"
+	"Hydra Psi"
+	"Hydra Rho"
+	"Hydra Sigma"
+	"Hydra Tau"
+	"Hydra Theta"
+	"Hydra Upsilon"
+	"Hydra Virginis"
+	"Hydra Xi"
+	"Hydra Zeta"
+	Hydrobius
+	Hykkan
+	Hyperboria
+	Hyperian
+	Hypori
+	Hyrma
+	Hysajha
+	Hyshima
+	Hysleria
+	Hythara
+	Ibacca
+	Ibleen
+	Ibli
+	Iblis
+	Ibloranda
+	Ichium
+	Ico
+	Iconia
+	Iconis
+	Icor
+	Icos
+	I'dania
+	Idomor
+	Idran
+	Idross
+	Iego
+	Ieria
+	Ighabah
+	Ijax
+	Ikalian
+	Iklil
+	Ikrueb
+	Ilbis
+	Ilidaria
+	Illex
+	Illodia
+	Illyrica
+	Ilum
+	Imai
+	Imladris
+	"Imloth Melui"
+	"Impal Tov"
+	Impan
+	Imperius
+	Imriz
+	Imya-raha
+	Ina
+	Inanna
+	I'nasha
+	Incabulus
+	Indross
+	Inferna
+	Inferno
+	Inmed
+	Intercrus
+	Intham
+	Inthor
+	Inysh
+	In-yua
+	Iolam
+	Ionik
+	Ios
+	Iota
+	"Iota Andromedae"
+	"Iota Alpha"
+	"Iota Beta"
+	"Iota Carinae"
+	"Iota Capricorni"
+	"Iota Cassiopeiae"
+	"Iota Centauri"
+	"Iota Ceti"
+	"Iota Chi"
+	"Iota Delta"
+	"Iota Draconis"
+	"Iota Epsilon"
+	"Iota Eridani"
+	"Iota Eta"
+	"Iota Gamma"
+	"Iota Kappa"
+	"Iota Lambda"
+	"Iota Major"
+	"Iota Minor"
+	"Iota Mu"
+	"Iota Nu"
+	"Iota Omega"
+	"Iota Omicron"
+	"Iota Ophiuchi"
+	"Iota Orionis"
+	"Iota Phi"
+	"Iota Pi"
+	"Iota Psi"
+	"Iota Rho"
+	"Iota Scorpii"
+	"Iota Sigma"
+	"Iota Tau"
+	"Iota Theta"
+	"Iota Upsilon"
+	"Iota Virginis"
+	"Iota Xi"
+	"Iota Zeta"
+	Iotra
+	Iphigin
+	Ipos
+	Ipyr
+	Iram
+	Ireland
+	Iriamus
+	Iriani
+	Iridonia
+	Irim
+	Irindis
+	Iris
+	Irith
+	Irkalla
+	Ironhold
+	Irthius
+	Iryid-sa
+	Isadin
+	Isal
+	Ishanna
+	Ishikawa
+	Ishnor
+	Ishtar
+	Ishtrum
+	Ishum
+	Isimud
+	Isis
+	Isius
+	Iskander
+	Isralt
+	Iss
+	Issal
+	Is-sufi
+	Istaran
+	Ita
+	Ithilien
+	Ithor
+	Itraben
+	Iuz
+	Iversona
+	Iversonia
+	Ivey
+	Ix
+	Izar
+	Jaa
+	Jabbah
+	Jabeth
+	Jabim
+	Jabor
+	Jade
+	"Jade Falcon"
+	Jagannath
+	"Jaglan Beta"
+	Jahar
+	Jaipur
+	Jaltham
+	Jandon
+	Janna
+	Japhon
+	Japris
+	Jarad
+	Jaro
+	Jaros
+	Jasalsada
+	Jasmak
+	Jasoom
+	Jataramus
+	Javin
+	Jaya
+	Jefion
+	Jenkata
+	Jennisek
+	Jerado
+	J'happ
+	Jida
+	Jih
+	Jijo
+	Jikimri
+	Jillis
+	Jinkath
+	Jishui
+	Jomark
+	Jompron
+	Jondus
+	Joralla
+	Jotenheim
+	Jotunheim
+	Jovian
+	Jubilar
+	Jubushu
+	Jughum
+	Jugrad
+	Julau
+	Juli
+	Julian
+	Ju-ma
+	Jumla
+	Junction
+	Jundius
+	Junkin
+	Jurnast
+	Juvex
+	Jyabahada
+	Ka
+	Kabal
+	Kabatris
+	Kabta
+	Kaelon
+	Kaffaljidhma
+	Kafulah
+	Kahalajom
+	Kailor
+	Kaitain
+	Kaka
+	Ka'khaniaha
+	Kakka
+	Kakrafoon
+	Kalahda
+	Kalarba
+	Kaldra
+	Kaled
+	Kalgan
+	Kali
+	Kalidasa
+	Kalki
+	Kaloolon
+	Kamber
+	Kamino
+	Kanadrius
+	Kandauri
+	Kang
+	Kannam
+	Kaol
+	Kappa
+	"Kappa Andromedae"
+	"Kappa Alpha"
+	"Kappa Arae"
+	"Kappa Beta"
+	"Kappa Cassiopeiae"
+	"Kappa Centauri"
+	"Kappa Ceti"
+	"Kappa Chi"
+	"Kappa Delta"
+	"Kappa Epsilon"
+	"Kappa Eridani"
+	"Kappa Eta"
+	"Kappa Gamma"
+	"Kappa Iota"
+	"Kappa Lambda"
+	"Kappa Major"
+	"Kappa Minor"
+	"Kappa Mu"
+	"Kappa Nu"
+	"Kappa Omega"
+	"Kappa Omicron"
+	"Kappa Ophiuchi"
+	"Kappa Orionis"
+	"Kappa Phi"
+	"Kappa Pi"
+	"Kappa Psi"
+	"Kappa Rho"
+	"Kappa Scorpii"
+	"Kappa Sigma"
+	"Kappa Tau"
+	"Kappa Theta"
+	"Kappa Upsilon"
+	"Kappa Virginis"
+	"Kappa Xi"
+	"Kappa Zeta"
+	Kara
+	Karathor
+	Karazit
+	Karemma
+	Karnak
+	Karos
+	Karotelos
+	Karsch
+	Kartikeya
+	Karvoss
+	Kashin
+	Kashyapa
+	Kashyk
+	Kastaba
+	Kastor
+	Kataan
+	Kauboros
+	Kauri
+	"Kaus Australis"
+	"Kaus Borealis"
+	"Kaus Media"
+	"Kavis Alpha"
+	Kaybin
+	Kazikark
+	Kazon
+	Kazoo
+	Kebechet
+	Keid
+	Kel
+	Kelemvor
+	Keloda
+	Kelsim
+	Kendi
+	"Kenn Hijal"
+	Kenobi
+	Kentarus
+	Kentharom
+	Keoghtom
+	Keoland
+	Kepler
+	Kerchen
+	Kerensa
+	Kerensky
+	Kergaros
+	Keri
+	Kessel
+	Kessik
+	Khagaton
+	Khahyab
+	Khali
+	Kham'aya
+	Khamb
+	Khambalia
+	Khanah
+	Khandoba
+	Kharai
+	Kharak
+	Kharasta
+	"Khata Rishi"
+	Khay'fai
+	Khay'jarek
+	Khay'lah
+	Khepri
+	Khiram
+	Khitomer
+	Khonsu
+	Khonum
+	Khor
+	Khosia
+	Ki
+	Kibbin
+	"Kidiet Olgo"
+	Kievi
+	Kifex
+	Kikiywa
+	Kildatha
+	Kildor
+	Kimhayu
+	Kimithar
+	Kindar
+	Kingu
+	Kinnison
+	Kintan
+	Kinyen
+	Kiram
+	Kirfer
+	Kirov
+	Kisamanka
+	Kitalpha
+	Klaestron
+	"Klasse Ephemora"
+	Klatooine
+	Klavdia
+	Kleeslex
+	Kleft
+	Klendathu
+	Klo
+	Klueb
+	Kluth
+	Kobaria
+	Kobheria
+	Kochab
+	Kodracca
+	Kohl
+	Kola
+	Kolandra
+	Kolarus
+	Kolaz
+	Kolee
+	Kolhar
+	Komarr
+	Kongath
+	Korach
+	Kord
+	Kore
+	Korell
+	Korgas
+	Korhal
+	Koriva
+	Kornagi
+	Kornephoros
+	Koronor
+	Korriban
+	Korris
+	"Korus Major"
+	Korvas
+	Korvat
+	Kosk
+	"Kotara Barath"
+	Koter
+	Kouprey
+	Krakaum
+	Kramtros
+	Krant
+	Krasner
+	Kraz
+	Kria
+	Krikkit
+	Kriliya
+	Krimu
+	Krios
+	Krisadnas
+	Kriston
+	Kriyas
+	Kroll
+	Krondor
+	Kronos
+	Krypton
+	K'shahtrya
+	Ksora
+	Ktaria
+	Kuat
+	Kubaba
+	Kuk
+	Kulla
+	Kullat
+	Kuma
+	Kun
+	Kupe
+	Kurell
+	Kures
+	Kurhah
+	Kurili
+	Kurma
+	Kuroth
+	Kus
+	Kushmanda
+	Kuzom
+	"Kwan Ying"
+	K'wenn
+	K'wilas
+	Kylata
+	Kyuss
+	K'zin
+	"La Superba"
+	La'abyebsa
+	La'ahla
+	La'bin
+	Labumar
+	Lacaille
+	Lachium
+	Lacroix
+	Lactra
+	Ladiom
+	Lafite
+	Lagrone
+	Lah'a
+	La-ha
+	Lahar
+	Lahmu
+	Lahmusabli
+	Lah-sa
+	Lairais
+	Lai'thalos
+	Lakshmana
+	Lakshmi
+	"Lakshmi Narayan"
+	Lalande
+	Lal'lal
+	Lallikha
+	Lal-ram
+	Lal-sa
+	Lalshamarlah
+	Lamadderleh
+	Lamb
+	Lambda
+	"Lambda Andromedae"
+	"Lambda Alpha"
+	"Lambda Arae"
+	"Lambda Beta"
+	"Lambda Capricorni"
+	"Lambda Cassiopeiae"
+	"Lambda Centauri"
+	"Lambda Ceti"
+	"Lambda Chi"
+	"Lambda Delta"
+	"Lambda Epsilon"
+	"Lambda Eridani"
+	"Lambda Eta"
+	"Lambda Gamma"
+	"Lambda Iota"
+	"Lambda Kappa"
+	"Lambda Major"
+	"Lambda Minor"
+	"Lambda Mu"
+	"Lambda Nu"
+	"Lambda Omega"
+	"Lambda Omicron"
+	"Lambda Ophiuchi"
+	"Lambda Orionis"
+	"Lambda Phi"
+	"Lambda Pi"
+	"Lambda Psi"
+	"Lambda Rho"
+	"Lambda Scorpii"
+	"Lambda Sigma"
+	"Lambda Tau"
+	"Lambda Theta"
+	"Lambda Upsilon"
+	"Lambda Virginis"
+	"Lambda Xi"
+	"Lambda Zeta"
+	Lambodara
+	Lamenda
+	Lamia
+	Lampadas
+	La-mu
+	Lamuelle
+	Lanark
+	Landeen
+	Landiz
+	Lando
+	Lani
+	Lankhmar
+	Lankiveil
+	Lannisport
+	Lansono
+	Lanthra
+	Lapolis
+	Lapra
+	Laramya
+	Larawag
+	Larbo
+	Lares
+	Largo
+	Lasa
+	Lasahay
+	Laser
+	La'simaf
+	Lasitus
+	Lastus
+	Lathander
+	Lathoros
+	Laurentian
+	Lavascio
+	Lawam
+	Layadsha
+	Lazon
+	Leda
+	Ledonia
+	Leesak
+	Legara
+	Lehmisa
+	Lendore
+	Leonidas
+	Leptophos
+	"Ler Zumon"
+	Lerman
+	Lernaeus
+	Lesath
+	Lessim
+	Lessiria
+	Leto
+	Lianna
+	Liao
+	Libertas
+	Lich
+	Lid
+	Lidabiya
+	Lidiz
+	Ligon
+	Liharasha
+	Lijiz
+	Likfaijama
+	"Lilii Borea"
+	Lilith
+	Lilmammudra
+	"Lima Serra"
+	Limhirmud
+	Limidat
+	Lindon
+	Lingam
+	Lingodbhava
+	Linngol
+	Liram
+	Lithone
+	Loedorvi
+	Loggam
+	Loisar
+	Loki
+	Lolnar
+	Lolth
+	Lombidus
+	Lorien
+	Lorina
+	Lorta
+	Lothandra
+	Lothra
+	Loval
+	Luaklath
+	Lucre
+	Lugal
+	Lugnar
+	Lujo
+	Lulal
+	Lumi
+	LV426
+	LV514
+	Lyctabon
+	Lyfhir
+	Lyrum
+	Lys
+	Lysia
+	Lythorius
+	Lytirin
+	Ma
+	Maa
+	Maa-dilhus
+	Maahes
+	Ma'ai
+	Maarek
+	Maasym
+	Ma'at
+	Mab-Bu
+	Macrinus
+	Madamedal
+	Ma'dat
+	Maddiyaja
+	Madel'ghaya
+	Madena
+	Madilriaz
+	Madir
+	Mad-sin
+	Madyas-mas
+	Maestro
+	Ma'famya
+	Magellan
+	Maghama
+	Magica
+	Magramal
+	Magrathea
+	Mahasim
+	Mahi-haf
+	Mahjafajabr
+	Mahmus
+	Mahodara
+	Maia
+	"Makem Ti"
+	Ma'la
+	Malachite
+	Malastare
+	Malcor
+	Mal-khafaba
+	Malkus
+	Mallalaba
+	Malphas
+	Malsan
+	Malsim
+	Mal'simsalah
+	Ma-mah
+	Mamanyaa
+	Mamba
+	Mambra
+	Mamendin
+	Mameni
+	Mamihaf
+	Mamitu
+	Mammetun
+	Mammon
+	Mamurqa
+	Man'a
+	Manaan
+	Manayda
+	Mandalore
+	Mandanu
+	Mandar
+	Mandorla
+	Mandul
+	Mang
+	Manhayizhai
+	Manhiz
+	Mankhay
+	Man'lal
+	Manlalfara
+	Mann
+	Man'rif
+	Manroukalkub
+	Mansuhinif
+	Manthall
+	Mantilles
+	Manungal
+	Manyanoor'ad
+	Man'zarmu
+	Manziad
+	"Mar Sara"
+	Mara
+	Mar-Adetta
+	Maragdis
+	Marajaretus
+	Maranga
+	Marath
+	Marbas
+	Mardom
+	Marduk
+	Mareenius
+	Mareid
+	Marfak
+	Marfik
+	Maridun
+	Marilac
+	Mariposa
+	Mar'ja
+	Markab
+	Markaz
+	Markeb
+	Markhor
+	Markus
+	Marlonia
+	Marmouha
+	Marsack
+	Marsh
+	Marshall
+	Marsic
+	Martin
+	Martzia
+	Maryah-ya
+	Masa'iztal
+	Masal'der
+	Masayzaymat
+	Mashamedsay
+	Ma'shuma
+	Masqal
+	Matafai
+	Matal
+	Matalas
+	Matar
+	Mati'may
+	Matjar
+	Matsam
+	Matsonia
+	Matsoya
+	Mauthula
+	Mavall
+	Mawan
+	Mawaran
+	"Maxia Zeta"
+	Maximoff
+	Ma-yas
+	M'ayata
+	Mazar
+	Maztica
+	Mebsuta
+	Mechanus
+	"Med Karash"
+	Medac
+	Medamadin
+	Medgar
+	Medi'ya
+	Medraisha
+	Medsa-ham
+	Meemee'mar
+	Meereen
+	Megraz
+	Megrez
+	Meh'a
+	Mehmandasa
+	Mehrnaz
+	Mehzikiy
+	Meic
+	Meissa
+	Mekbuda
+	Melanor
+	Meldrar
+	Meleph
+	Melona
+	Melpomenia
+	Melvaunt
+	Mendoc
+	Menhit
+	Menkalinan
+	Menkar
+	Menkent
+	Menkib
+	Menok
+	Menzoberranzan
+	Merak
+	Merakai
+	Mercaptan
+	Merga
+	Meriadoc
+	Mericor
+	Meridian
+	Meridiana
+	Merlin
+	Merope
+	Mesarthim
+	Mestros
+	Metatron
+	Metellos
+	Methomyl
+	Metnan
+	Miaplacidus
+	Micromius
+	Midgard
+	Midmaylay
+	Mif
+	Mifarfir
+	Mi-gabad
+	Migor
+	Mihil
+	Mija-qa
+	Mikaram
+	Mikha'li
+	Mikus
+	Milal-sha
+	Milamber
+	Milhabmaman
+	Mili
+	Millistamu
+	Milradulya
+	Milsinimya
+	Mimosa
+	Minbar
+	Minchir
+	Mindara
+	Minelauva
+	Minitu
+	Minkar
+	Minokh
+	Minos
+	Minshara
+	Mintaka
+	Mintor
+	Minumaqa
+	Mira
+	Mirabar
+	Mirach
+	Miram
+	Miranda
+	Miratimha
+	Mirbansai
+	Mirex
+	Mirfak
+	Miroukhalu
+	Mirzam
+	Misakali
+	Misam
+	Mislen
+	Mis'yabad
+	Mithar
+	Mithren
+	Mithrim
+	Mitin
+	Mitra
+	Mius
+	Miyah
+	Miyazmam
+	Mizar
+	Mjolnir
+	M'kemas
+	Moab
+	Moctezuma
+	Mohini
+	Molbion
+	Moloch
+	Molsir
+	"Mon Calamari"
+	Monacus
+	Monakidir
+	Monboth
+	Mondas
+	Monea
+	Monocrotophos
+	Morath
+	Mordan
+	Mordor
+	Moregard
+	Moria
+	Mormegil
+	Mormo
+	Mortha
+	Mos-bukha
+	Moskva
+	Mosmadad
+	Mos-shid
+	Mosthavon
+	Mothallah
+	Mothellum
+	Mothus
+	Moyles
+	Mu
+	"Mu Andromedae"
+	"Mu Alpha"
+	"Mu Arae"
+	"Mu Beta"
+	"Mu Capricorni"
+	"Mu Cassiopeiae"
+	"Mu Centauri"
+	"Mu Ceti"
+	"Mu Chi"
+	"Mu Delta"
+	"Mu Epsilon"
+	"Mu Eridani"
+	"Mu Eta"
+	"Mu Gamma"
+	"Mu Iota"
+	"Mu Kappa"
+	"Mu Lambda"
+	"Mu Major"
+	"Mu Minor"
+	"Mu Nu"
+	"Mu Omega"
+	"Mu Omicron"
+	"Mu Ophiuchi"
+	"Mu Orionis"
+	"Mu Phi"
+	"Mu Pi"
+	"Mu Psi"
+	"Mu Rho"
+	"Mu Scorpii"
+	"Mu Sigma"
+	"Mu Tau"
+	"Mu Theta"
+	"Mu Upsilon"
+	"Mu Virginis"
+	"Mu Xi"
+	"Mu Zeta"
+	Muati
+	Muhlar
+	Muhma
+	Muihamid
+	Muliphein
+	Mullin
+	Mulmaster
+	Munin
+	Muphrid
+	Mura
+	Muratas
+	Muritan
+	Murraj
+	Murtajafou
+	Murust
+	Murzim
+	Muscida
+	Mushudamma
+	Musica
+	Muspelheim
+	Mustafar
+	Mutara
+	Muthappan
+	Muudstram
+	Muunilinst
+	Myr
+	Myrkir
+	Myrmidon
+	Myrum
+	Na
+	Na'bir
+	Naboo
+	Nabsa
+	Nabu
+	Nadalid
+	Nadarahsa
+	Naghas'ni
+	Na-hab
+	Nahabo
+	Nahir
+	Nahiza
+	Nahmehtaha
+	Nahmi
+	Nahn
+	Nahnamubi
+	Nahraham
+	Nah'zayd
+	Najaga
+	Najsa
+	Nakaza
+	Nakrifa
+	Naksatra
+	"Nal Hutta"
+	Nala
+	Nalanisa
+	Naled
+	Naliymu
+	Nama
+	Namana
+	Namardin
+	Namasmu
+	Namdil
+	Nami'fi
+	Namishana
+	Namished
+	Nammu
+	Namshub
+	Namtar
+	Nanaya
+	Nanishammu
+	Nanman
+	Nanna
+	Nanshe
+	Naos
+	Naphine
+	Naraj
+	Narasimha
+	Narayana
+	Narendra
+	Narita
+	Narn
+	Na'sammah
+	Nasay
+	Nas-dasha
+	Nashira
+	Nashujuna
+	Nasiria
+	Nasiysada
+	Nas'ra
+	Nassamamsi
+	Nas-yahhat
+	Nataraja
+	Nausicaa
+	Na'za
+	Nazfir
+	Nebulos
+	Necro
+	Neddum
+	Neelen
+	Neetris
+	Negun
+	Nekhbet
+	Nekkar
+	Nekmit
+	Nel
+	Neleus
+	Nelvaan
+	Nemaka
+	Nembas
+	Nembus
+	Nemozi
+	Nepenthe
+	Nephetyz
+	Nergal
+	Nerull
+	Nerva
+	Nervala
+	Nesme
+	Nesro
+	Nestor
+	Neta
+	Neti
+	Neverwinter
+	Nevrast
+	Newton
+	Nexon
+	Ne'ya
+	Ni
+	Niamba
+	Nibhaz
+	Niburon
+	Nicanda
+	Nicor
+	Nidaba
+	Niffra
+	Nigel
+	Nigiro
+	Nihal
+	Nijil
+	Nildili
+	Nilfheim
+	Ni-mi
+	Nimolan
+	Ninazu
+	Ningai
+	Ningal
+	Ningikuga
+	Ningirama
+	Ningub
+	Ninkarnuna
+	Ninkasi
+	Ninkilim
+	Ninkurra
+	Ninlil
+	Ninmah
+	Ninmena
+	Ninsar
+	Ninshubur
+	Ninsun
+	Ninsutu
+	Nintu
+	Nintulla
+	Ninurta
+	Nirais
+	Nirajuan
+	Nirar
+	Nirdaha
+	Nirvana
+	Nishpan
+	Nithascal
+	Nivoch
+	Noble
+	Nocobot
+	Nodox
+	Nodro
+	Nokkam
+	Nolati
+	Noldor
+	Nolyon
+	Nomotar
+	Nordak
+	Norgon
+	Norvos
+	"Nova Rigel"
+	Novanoid
+	Novaria
+	Nu
+	"Nu Andromedae"
+	"Nu Alpha"
+	"Nu Arae"
+	"Nu Beta"
+	"Nu Capricorni"
+	"Nu Cassiopeiae"
+	"Nu Centauri"
+	"Nu Ceti"
+	"Nu Chi"
+	"Nu Delta"
+	"Nu Epsilon"
+	"Nu Eridani"
+	"Nu Eta"
+	"Nu Gamma"
+	"Nu Iota"
+	"Nu Kappa"
+	"Nu Lambda"
+	"Nu Major"
+	"Nu Minor"
+	"Nu Mu"
+	"Nu Mus Da"
+	"Nu Omega"
+	"Nu Omicron"
+	"Nu Ophiuchi"
+	"Nu Orionis"
+	"Nu Phi"
+	"Nu Pi"
+	"Nu Psi"
+	"Nu Rho"
+	"Nu Scorpii"
+	"Nu Sigma"
+	"Nu Tau"
+	"Nu Theta"
+	"Nu Upsilon"
+	"Nu Virginis"
+	"Nu Xi"
+	"Nu Zeta"
+	Nubia
+	NuDawn
+	Nu'gaan
+	Nugent
+	Numenor
+	Nunbarsegunu
+	Nunki
+	Nupran
+	Nuranka
+	Nurn
+	Nusakan
+	Nusaken
+	Nusku
+	Nut
+	Nyquist
+	Nyrond
+	Nystul
+	N'zoth
+	Oasis
+	Obatta
+	Oberon
+	Oberth
+	Obetellus
+	Obnoll
+	Obraiy
+	Obrium
+	Obroa-Skai
+	Oby
+	Ocampa
+	Occidan
+	Oceanus
+	Ockrom
+	Octavia
+	Odin
+	"Odin Prime"
+	Odlamon
+	Odysseus
+	Ogat
+	Ogma
+	Ogura
+	Okab
+	Okapi
+	Okar
+	Okul
+	Olaria
+	Olbers
+	Oleald
+	Olidamara
+	Olimar
+	Olum
+	Olybrius
+	Olympus
+	Omaggus
+	Omarion
+	Omega
+	"Omega Andromedae"
+	"Omega Alpha"
+	"Omega Beta"
+	"Omega Carinae"
+	"Omega Cassiopeiae"
+	"Omega Centauri"
+	"Omega Ceti"
+	"Omega Chi"
+	"Omega Delta"
+	"Omega Epsilon"
+	"Omega Eridani"
+	"Omega Eta"
+	"Omega Gamma"
+	"Omega Iota"
+	"Omega Kappa"
+	"Omega Lambda"
+	"Omega Major"
+	"Omega Minor"
+	"Omega Mu"
+	"Omega Nu"
+	"Omega Omicron"
+	"Omega Ophiuchi"
+	"Omega Orionis"
+	"Omega Phi"
+	"Omega Pi"
+	"Omega Psi"
+	"Omega Rho"
+	"Omega Scorpii"
+	"Omega Sigma"
+	"Omega Tau"
+	"Omega Theta"
+	"Omega Upsilon"
+	"Omega Virginis"
+	"Omega Xi"
+	"Omega Zeta"
+	Omicron
+	"Omicron Andromedae"
+	"Omicron Alpha"
+	"Omicron Beta"
+	"Omicron Cassiopeiae"
+	"Omicron Centauri"
+	"Omicron Ceti"
+	"Omicron Chi"
+	"Omicron Delta"
+	"Omicron Epsilon"
+	"Omicron Eridani"
+	"Omicron Eta"
+	"Omicron Gamma"
+	"Omicron Iota"
+	"Omicron Kappa"
+	"Omicron Lambda"
+	"Omicron Major"
+	"Omicron Minor"
+	"Omicron Mu"
+	"Omicron Nu"
+	"Omicron Omega"
+	"Omicron Ophiuchi"
+	"Omicron Orionis"
+	"Omicron Phi"
+	"Omicron Pi"
+	"Omicron Psi"
+	"Omicron Rho"
+	"Omicron Scorpii"
+	"Omicron Sigma"
+	"Omicron Tau"
+	"Omicron Theta"
+	"Omicron Upsilon"
+	"Omicron Virginis"
+	"Omicron Zeta"
+	Onab
+	Onderon
+	Oneux
+	Onvak
+	Ophang
+	Ophele
+	Ophiacus
+	Ophiuchi
+	Ophium
+	Opios
+	Oplin
+	Optera
+	Optimus
+	Orassin
+	Orcas
+	"Ord Mantell"
+	"Ordo Rani"
+	Oreb
+	Oredtes
+	Orellia
+	Orellias
+	Organia
+	Orias
+	Orim
+	Orion
+	"Orkam Fung"
+	Ornara
+	Orobas
+	Orthama
+	Osellus
+	Oshamal
+	Oshimir
+	Osinar
+	Osiris
+	Osito
+	Oskara
+	Osmadin
+	Osmunis
+	Osprey
+	Ospur
+	Osseq
+	Osseyiz
+	Ossiriand
+	Osssork
+	Ossus
+	Ostravion
+	Othaha
+	Othana
+	Othi
+	Otho
+	Othriga
+	Otiluke
+	Outeria
+	Outreach
+	Ovany
+	Ovastivum
+	Oxamon
+	Oxor
+	Oza
+	Ozaggamum
+	Ozeopedis
+	Pacifica
+	Padmanabha
+	Padmavati
+	Paggol
+	Paikauhale
+	Pakhet
+	Paladin
+	Paladium
+	"Palain Seven"
+	Pallas
+	Palma
+	"Pan Tang"
+	Pandar
+	Pandaros
+	Pandemonium
+	Pandill
+	Pandora
+	Pandro
+	Pankor
+	Panthera
+	Pantolomin
+	Papsukkal
+	Parada
+	Paradron
+	Paragir
+	Paraquat
+	Parashurama
+	Parathion
+	Paridias
+	Paris
+	Parmentier
+	Parsax
+	Parvati
+	Pash
+	Pashupati
+	Path
+	Pathavon
+	Patraggor
+	Patrickus
+	Patroklos
+	Pavagh
+	"Pax Atlar"
+	Paxan
+	Paxos
+	Pazuzu
+	Peacock
+	Peccary
+	Pegasus
+	Peith
+	Pelagon
+	Peleus
+	Pelor
+	Peloris
+	Pendragon
+	Penelope
+	Pennek
+	Pennosta
+	Pentarum
+	Pentarus
+	Pentath
+	Penthara
+	Pentium
+	Pentos
+	Pequod
+	Peregrin
+	Perequim
+	Perikian
+	Pern
+	Perrenland
+	Persephone
+	Perseus
+	Pertinax
+	Pertuvis
+	Pesch
+	Peti
+	Petroni
+	Phact
+	Phaedrus
+	Phargis
+	Pharrim
+	Phaulkon
+	Pheben
+	Phecda
+	Phemmaix
+	Phenex
+	Pherkad
+	Phi
+	"Phi Andromedae"
+	"Phi Alpha"
+	"Phi Beta"
+	"Phi Capricorni"
+	"Phi Cassiopeiae"
+	"Phi Centauri"
+	"Phi Ceti"
+	"Phi Chi"
+	"Phi Delta"
+	"Phi Epsilon"
+	"Phi Eridani"
+	"Phi Eta"
+	"Phi Gamma"
+	"Phi Iota"
+	"Phi Kappa"
+	"Phi Lambda"
+	"Phi Major"
+	"Phi Minor"
+	"Phi Mu"
+	"Phi Nu"
+	"Phi Omega"
+	"Phi Omicron"
+	"Phi Ophiuchi"
+	"Phi Orionis"
+	"Phi Pi"
+	"Phi Psi"
+	"Phi Rho"
+	"Phi Sigma"
+	"Phi Tau"
+	"Phi Theta"
+	"Phi Upsilon"
+	"Phi Virginis"
+	"Phi Zeta"
+	Phin
+	Phindar
+	Phoenix
+	Pholtus
+	Phonok
+	Phorate
+	Phum
+	Phundahl
+	Phylos
+	Phyton
+	Pi
+	"Pi Andromedae"
+	"Pi Alpha"
+	"Pi Arae"
+	"Pi Beta"
+	"Pi Cassiopeiae"
+	"Pi Capricorni"
+	"Pi Centauri"
+	"Pi Ceti"
+	"Pi Chi"
+	"Pi Delta"
+	"Pi Epsilon"
+	"Pi Eridani"
+	"Pi Eta"
+	"Pi Gamma"
+	"Pi Iota"
+	"Pi Kappa"
+	"Pi Lambda"
+	"Pi Major"
+	"Pi Minor"
+	"Pi Mu"
+	"Pi Nu"
+	"Pi Omega"
+	"Pi Omicron"
+	"Pi Orionis"
+	"Pi Phi"
+	"Pi Psi"
+	"Pi Rho"
+	"Pi Scorpii"
+	"Pi Sigma"
+	"Pi Tau"
+	"Pi Theta"
+	"Pi Upsilon"
+	"Pi Virginis"
+	"Pi Xi"
+	"Pi Zeta"
+	Piautos
+	Piers
+	Pikas
+	Pike
+	Pildram
+	Pine
+	Pinnacle
+	Pinra
+	Pipirima
+	Pippen
+	Piskus
+	Pithia
+	Pithra
+	Pithria
+	P'Jem
+	Planck
+	Pleeturi
+	Pleiades
+	Pleione
+	Plexis
+	Plips
+	Ploo
+	Plov
+	Plygoria
+	Pocan
+	Poghril
+	Pokhara
+	Pol
+	"Polaris Australis"
+	Poldeukes
+	Polgara
+	"Poliban Kir"
+	Poligar
+	Polis
+	"Polis Massa"
+	Pollux
+	Polymar
+	Pomarj
+	Ponnell
+	Porabim
+	Porakas
+	Poritrin
+	Porrima
+	Poseidon
+	Pothria
+	Powell
+	Praecipua
+	Praeshays
+	Praesitlyn
+	Praetoria
+	Praveo
+	Praxillus
+	Praxis
+	Preenos
+	Prelium
+	Pretas
+	Pria
+	Priam
+	"Prima Hyadum"
+	Primus
+	Printure
+	Probus
+	Proctor
+	Prohibit
+	Propoxur
+	Propus
+	Proxus
+	Psi
+	"Psi Andromedae"
+	"Psi Alpha"
+	"Psi Beta"
+	"Psi Capricorni"
+	"Psi Cassiopeiae"
+	"Psi Centauri"
+	"Psi Ceti"
+	"Psi Chi"
+	"Psi Delta"
+	"Psi Epsilon"
+	"Psi Eridani"
+	"Psi Eta"
+	"Psi Gamma"
+	"Psi Iota"
+	"Psi Kappa"
+	"Psi Lambda"
+	"Psi Major"
+	"Psi Minor"
+	"Psi Mu"
+	"Psi Nu"
+	"Psi Omega"
+	"Psi Omicron"
+	"Psi Ophiuchi"
+	"Psi Orionis"
+	"Psi Phi"
+	"Psi Pi"
+	"Psi Rho"
+	"Psi Scorpii"
+	"Psi Sigma"
+	"Psi Tau"
+	"Psi Theta"
+	"Psi Upsilon"
+	"Psi Virginis"
+	"Psi Xi"
+	"Psi Zeta"
+	P'tah
+	P'tarth
+	Pulappli
+	Pulcharum
+	Pulcor
+	Puntrazed
+	Pusan
+	Pyca
+	Pygoria
+	Pyla
+	Pyrellia
+	Pyremius
+	Pyridine
+	Pyriminil
+	Pytham
+	Pythro
+	Qabji
+	"Qad Vhi"
+	Qafahir
+	Qahar
+	Qa-lah
+	Qalandar
+	Qalaz
+	Qamm
+	Qarfakira
+	Qarth
+	Qasmathon
+	Qastan
+	Qayam
+	Qaysarariam
+	"Qeb Daraan"
+	Qebui
+	"Qel Droma"
+	Qetesh
+	Qiameth
+	Qidanara
+	Qifitar
+	Qi-keem
+	Qintoss
+	Qirbus
+	Qohor
+	Qo'noS
+	Qorrolla
+	Qualactin
+	Quallin
+	Qualor
+	Quannaga
+	Quarell
+	Quatrale
+	Qubhi-sal
+	Quea
+	Quendor
+	Questal
+	Questor
+	Quglad
+	Quintessa
+	Quirinus
+	Qurus
+	Qvarne
+	Ra
+	Rabinoc
+	Rachelis
+	Rack'ha
+	Raddawa
+	Raderzahser
+	Radet
+	Radha
+	Radstadt
+	Rafidmanif
+	Ragoon
+	Ragrah
+	Ra'ha
+	Rahalis
+	Rah'fa
+	Rah'fasa
+	Rahivedigha
+	Rahiy
+	Rahmahmameh
+	Rahnas
+	Rah'si
+	Rahuyamay
+	Rahyamsadsa
+	Raialdya
+	Rajakha
+	Rajbil
+	Rajda
+	Rakal
+	Rakaron
+	Rakata
+	Rakosa
+	Ra'la
+	Ralah'yahsam
+	Ra-liham
+	Ralishaz
+	Raltry
+	Rama
+	Ramanuja
+	Ramatis
+	Ramfa'yasmar
+	Ramman
+	Rammas
+	Ram'rekyu
+	Ra'muhli
+	Ramyafiru
+	Ran
+	Rana
+	Ranadi
+	Ra'nagoh
+	Ranail
+	Rancora
+	Ranction
+	Rand
+	Ranfais
+	Ranganatha
+	Rantor
+	Rao
+	Raphael
+	Raprix
+	Ra'ra
+	Rariwa
+	Rary
+	"Ras Algethi"
+	Rasalas
+	Rasalgethi
+	Rasalhague
+	Raskamir
+	Rastaban
+	Ratalyamum
+	Rata'nah
+	Ratatak
+	Ratel
+	Rathadore
+	Rathi
+	Rathra
+	Ratik
+	Rator
+	Rauxes
+	Ravananugraha
+	Rawga'far
+	Raxa
+	Raxum
+	Rayakha
+	Rayhadya
+	Rayima
+	Raykaramrah
+	Ra'za
+	Raziel
+	Raznum
+	Reach
+	Reagg
+	Reaper
+	Rebe
+	Recopia
+	Redamon
+	Reddor
+	Redza-da
+	Reef'nia
+	Reef-taj
+	Regganus
+	Regina
+	Regor
+	Regultarna
+	Regulus
+	Rehemsa
+	Rekhimim
+	Rekmufaleem
+	Reltarma
+	Remulak
+	Remultar
+	Remus
+	Rendili
+	Rensizi
+	Republica
+	Resaix
+	Reshell
+	Revak
+	Revati
+	Rhea
+	Rheims
+	"Rhen Var"
+	Rhinnal
+	Rho
+	"Rho Andromedae"
+	"Rho Alpha"
+	"Rho Beta"
+	"Rho Capricorni"
+	"Rho Cassiopeiae"
+	"Rho Centauri"
+	"Rho Ceti"
+	"Rho Chi"
+	"Rho Delta"
+	"Rho Epsilon"
+	"Rho Eridani"
+	"Rho Eta"
+	"Rho Gamma"
+	"Rho Iota"
+	"Rho Kappa"
+	"Rho Lambda"
+	"Rho Major"
+	"Rho Minor"
+	"Rho Mu"
+	"Rho Nu"
+	"Rho Omega"
+	"Rho Omicron"
+	"Rho Ophiuchi"
+	"Rho Ophiuchi"
+	"Rho Orionis"
+	"Rho Phi"
+	"Rho Pi"
+	"Rho Psi"
+	"Rho Scorpii"
+	"Rho Sigma"
+	"Rho Tau"
+	"Rho Theta"
+	"Rho Upsilon"
+	"Rho Virginis"
+	"Rho Xi"
+	"Rho Zeta"
+	Rhudaur
+	Rhun
+	Rhymuss
+	Ri
+	Riadore
+	Riahqayman
+	Riak
+	Ria'met
+	Riaz'ri
+	Riccio
+	Ridathi
+	Ridha'metma
+	Ridhami
+	Ridigus
+	Ridkeel
+	Ridsilisrah
+	"Rigil Kentaurus"
+	Rihaa
+	Rihblor
+	Rijin
+	Rikhadisul
+	Rimborth
+	Rimdur
+	Rimmock
+	Rimsinamar
+	Rimtas
+	Rimworld
+	Rinax
+	"Rint Beekun"
+	Risashi
+	Riser
+	Risumedem
+	Risyao'li
+	Rivendell
+	Riverrun
+	Rixim
+	Rixx
+	Riysema
+	Roballius
+	Robilar
+	Roche
+	Rodia
+	Rodrup
+	Roganoin
+	Rohan
+	Rokain
+	Romaccus
+	Romo
+	Romonox
+	Romsir
+	Romston
+	Romulus
+	Ronara
+	Roofala
+	Roolan
+	Roon
+	Roscan
+	Roschon
+	Rossak
+	Rotanev
+	Rothyr
+	Rounyas
+	Rov
+	Rovannic
+	Rovgeddi
+	Ruah
+	Ruan
+	Rubicon
+	Rubiz
+	Ruchbah
+	Rudra
+	Ruga
+	Ruhdat'war
+	Ruh'mo
+	Ruinam
+	Ruji
+	Rukbat
+	Rukmini
+	Rumalhadra
+	Runa
+	Runara
+	Rundore
+	Ruqlar
+	"Rura Penthe"
+	Rurius
+	Ruser
+	Russom
+	Ruta
+	Ruthauri
+	Rutia
+	Ruul
+	Ruusan
+	"Rydonni Prime"
+	"Ryl Somot"
+	Ryloth
+	Rym
+	Sa
+	Saalaiha
+	Saba
+	Sabik
+	Sabra'wan
+	Sabtrok
+	Saclateni
+	Sacoria
+	Sada
+	Sadachbia
+	Sadalbari
+	Sa'dallah
+	Sadalmelik
+	Sadalsuud
+	Sadera
+	Sadir
+	Sadoc
+	Sadr
+	Saenz
+	Saets
+	Safazu
+	Saffel
+	Sagafayl
+	Sahayasanu
+	Sah'ba
+	Sahdiyanu
+	Sahsawood
+	Saiph
+	Sai-ud
+	Sajwamumad
+	Śakra
+	Sakura
+	Salabad
+	Saldar
+	Saldeuces
+	Saldropis
+	Salerno
+	Salfafa
+	Sallax
+	Salluria
+	Salm
+	Salraya
+	Salsumi
+	"Salusa Secundus"
+	Salyura
+	Sa'ma
+	Samanzul
+	Samaria
+	Samderaan
+	Samdin
+	Sameh
+	Samiharza
+	Samms
+	Samni
+	Samnivik
+	Samsim
+	Samugamal
+	Sanafir
+	San-bo
+	Sanctimum
+	Sandalphon
+	Sander
+	Sanfan
+	Sankamaa
+	Sanna
+	Sanopel
+	Santanni
+	Santedar
+	Santo
+	Santraginus
+	"SAO 105279"
+	"SAO 109507"
+	"SAO 111948"
+	"SAO 113792"
+	"SAO 113924"
+	"SAO 117049"
+	"SAO 122281"
+	"SAO 128630"
+	"SAO 131135"
+	"SAO 13166"
+	"SAO 132905"
+	"SAO 134505"
+	"SAO 159985"
+	"SAO 175590"
+	"SAO 176328"
+	"SAO 18513"
+	"SAO 189545"
+	"SAO 190262"
+	"SAO 190975"
+	"SAO 198340"
+	"SAO 199820"
+	"SAO 211401"
+	"SAO 215741"
+	"SAO 217087"
+	"SAO 220495"
+	"SAO 223883"
+	"SAO 229025"
+	"SAO 238805"
+	"SAO 23915"
+	"SAO 242560"
+	"SAO 24911"
+	"SAO 268741"
+	"SAO 271608"
+	"SAO 275470"
+	"SAO 278436"
+	"SAO 284490"
+	"SAO 28608"
+	"SAO 287987"
+	"SAO 289860"
+	"SAO 29122"
+	"SAO 293457"
+	"SAO 299601"
+	"SAO 30031"
+	"SAO 303256"
+	"SAO 306869"
+	"SAO 308074"
+	"SAO 317118"
+	"SAO 327505"
+	"SAO 327877"
+	"SAO 32823"
+	"SAO 330006"
+	"SAO 342789"
+	"SAO 34908"
+	"SAO 351618"
+	"SAO 351772"
+	"SAO 365533"
+	"SAO 369225"
+	"SAO 371471"
+	"SAO 375401"
+	"SAO 379403"
+	"SAO 385707"
+	"SAO 386823"
+	"SAO 389027"
+	"SAO 392668"
+	"SAO 399108"
+	"SAO 410892"
+	"SAO 411556"
+	"SAO 413380"
+	"SAO 42641"
+	"SAO 430564"
+	"SAO 440910"
+	"SAO 441660"
+	"SAO 442824"
+	"SAO 457720"
+	"SAO 470569"
+	"SAO 471506"
+	"SAO 479691"
+	"SAO 487207"
+	"SAO 488221"
+	"SAO 500357"
+	"SAO 502258"
+	"SAO 515629"
+	"SAO 517738"
+	"SAO 522335"
+	"SAO 529717"
+	"SAO 535163"
+	"SAO 537062"
+	"SAO 544740"
+	"SAO 553851"
+	"SAO 555877"
+	"SAO 562849"
+	"SAO 563950"
+	"SAO 571444"
+	"SAO 578733"
+	"SAO 579989"
+	"SAO 580577"
+	"SAO 581143"
+	"SAO 583186"
+	"SAO 587966"
+	"SAO 58927"
+	"SAO 58992"
+	"SAO 593418"
+	"SAO 603172"
+	"SAO 603642"
+	"SAO 606183"
+	"SAO 608209"
+	"SAO 611226"
+	"SAO 627264"
+	"SAO 629006"
+	"SAO 629576"
+	"SAO 633254"
+	"SAO 648445"
+	"SAO 650852"
+	"SAO 652797"
+	"SAO 658909"
+	"SAO 668887"
+	"SAO 675761"
+	"SAO 678357"
+	"SAO 681133"
+	"SAO 686522"
+	"SAO 69258"
+	"SAO 703300"
+	"SAO 703483"
+	"SAO 716608"
+	"SAO 729311"
+	"SAO 73655"
+	"SAO 742294"
+	"SAO 751964"
+	"SAO 761667"
+	"SAO 764834"
+	"SAO 781289"
+	"SAO 789017"
+	"SAO 821591"
+	"SAO 82337"
+	"SAO 842466"
+	"SAO 844184"
+	"SAO 844243"
+	"SAO 847303"
+	"SAO 851623"
+	"SAO 873383"
+	"SAO 874854"
+	"SAO 875865"
+	"SAO 875887"
+	"SAO 886464"
+	"SAO 88838"
+	"SAO 888419"
+	"SAO 891470"
+	"SAO 897871"
+	"SAO 94494"
+	"SAO 98801"
+	Sapad
+	Saphiban
+	Sapir
+	Saqqis
+	Saquo-Pilia
+	Sarack
+	Saraklis
+	Sa'ralia
+	Saramhizran
+	Saramore
+	Sarapin
+	Sarasvati
+	Saraswati
+	Sargas
+	Sari
+	Sarin
+	Sarpanit
+	Sarpeidon
+	Sarpeldon
+	Sarpocchus
+	Sasamogaha
+	Sasharim
+	Sastram
+	Sata
+	Sathama
+	Sati
+	Satori
+	Satrinias
+	Satugib
+	Satyabhama
+	Sa'ud
+	Sauria
+	Sauron
+	Savasic
+	Sayahnahar
+	Sayshell
+	Sazaa
+	Sa'zih
+	Scarlet
+	Sceptrum
+	Schaber
+	Scheat
+	Schedar
+	Schinik
+	Scholl
+	Schultz
+	Scipio
+	Scipiton
+	Scodd
+	Scornubel
+	Scorom
+	Scotui
+	Secarus
+	Secumber
+	"Secunda Hyadum"
+	Sedratis
+	Seerkeela
+	Seersaeli
+	Sefalla
+	Sefha'baya
+	Sefray
+	Sefsazal
+	Segathia
+	Segin
+	Seginus
+	Sein
+	Seker
+	Sekhmet
+	Selay
+	Selephiel
+	Selgaunt
+	Selkas
+	Selket
+	Selkis
+	Selnoc
+	Sem'amna
+	Semele
+	Senna
+	Sentinel
+	Sepia
+	Seradon
+	Seraph
+	Seraphim
+	Seraphina
+	Serghyar
+	Sernpidal
+	Serpess
+	Serra
+	Seshat
+	Set
+	Sethelbak
+	Setlik
+	Seuden
+	Severus
+	Shadzi
+	Shaha
+	Shahi
+	Shahiz
+	Shahwariq
+	Shakespeare
+	Shakka
+	Shakuras
+	Shala
+	Sham
+	Shamash
+	Shamrahim
+	Shamsulji
+	Shamudrahi
+	Shanidar
+	Shantil
+	Shapilar
+	Shara
+	"Shara Itzu"
+	Sharaj
+	Sharajama
+	Shariat
+	Shasalkim
+	Shashamar
+	Shasir
+	Shataulfa
+	Shaula
+	Shawken
+	Shednihara
+	Sheliak
+	Sheol
+	Sheratan
+	"Shesha Naga"
+	Shina
+	Shinya
+	Shokodo
+	Shorax
+	Shu
+	Shuckon
+	Shuderman
+	Shugar
+	Shullat
+	Shulmak
+	Shulmanu
+	Shulsaga
+	Shul-utula
+	Shulxi
+	Shumogi
+	Shu-pae
+	Shutami
+	Shutra
+	Siblia
+	Sibrigara
+	Siccon
+	Sidal
+	Sidor
+	Sidyr
+	Siet
+	Sif
+	Sigma
+	"Sigma Andromedae"
+	"Sigma Alpha"
+	"Sigma Arae"
+	"Sigma Beta"
+	"Sigma Capricorni"
+	"Sigma Cassiopeiae"
+	"Sigma Centauri"
+	"Sigma Ceti"
+	"Sigma Chi"
+	"Sigma Delta"
+	"Sigma Draconis"
+	"Sigma Epsilon"
+	"Sigma Eridani"
+	"Sigma Eta"
+	"Sigma Gamma"
+	"Sigma Iota"
+	"Sigma Kappa"
+	"Sigma Lambda"
+	"Sigma Major"
+	"Sigma Minor"
+	"Sigma Mu"
+	"Sigma Nu"
+	"Sigma Omega"
+	"Sigma Omicron"
+	"Sigma Ophiuchi"
+	"Sigma Orionis"
+	"Sigma Phi"
+	"Sigma Pi"
+	"Sigma Psi"
+	"Sigma Rho"
+	"Sigma Scorpii"
+	"Sigma Tau"
+	"Sigma Theta"
+	"Sigma Upsilon"
+	"Sigma Virginis"
+	"Sigma Xi"
+	"Sigma Zeta"
+	Sikun
+	Silber
+	Sileth
+	Silnira
+	Siluj
+	Silva
+	Silverymoon
+	Sima'gath
+	Simalilik
+	Sin
+	Sina
+	Sinafarrauf
+	Sinhai
+	Sinistra
+	Siphlim
+	Sipples
+	Sirara
+	Sirimata
+	"Sirius Tau"
+	Sirizdoth
+	Sirkemhazi
+	Sirsad
+	Sirsir
+	Sirtir
+	Sisaja
+	Sismak
+	Sita
+	Sitlet
+	Situla
+	Sivil
+	Siwenna
+	Skagaran
+	Skagarni
+	Skandia
+	Skaro
+	Skat
+	Skowbo
+	Slava
+	Sleipner
+	Slepur
+	Sliah
+	Slier
+	"Sluis Van"
+	Smyrno
+	Sobek
+	Sobek-Re
+	Sobras
+	Socawa
+	Solace
+	Solais
+	Solaris
+	Sollis
+	Soltak
+	Soma
+	Somaskanda
+	Sopdu
+	Sorrel
+	Sorrocimax
+	Sosta
+	Sotillion
+	Soval
+	Soyun
+	Spica
+	Spiram
+	"Sri Krishna"
+	"Sri Manjunatha"
+	"Sri Ramachandra"
+	Sridevi
+	Srilur
+	Srudma
+	Stakoron
+	Stameris
+	Starbuck
+	Stark
+	Starmagg
+	"Stavromula Beta"
+	Stebbnar
+	Steelious
+	Stenlar
+	Sterope
+	Sthenelos
+	Stiridon
+	"Strana Mechty"
+	Stratal
+	Strife
+	Striterax
+	Strom
+	Stronad
+	Stug
+	Sturil
+	Styx
+	Sualocin
+	Subi
+	Subra
+	Subterrel
+	Subtranius
+	Sufzanayafa
+	Suhail
+	Su'kha
+	Sukra
+	Sulafat
+	Sulbasasa
+	Sullust
+	Sum
+	Sumugan
+	Sunspear
+	Sura
+	Surata
+	Surogou
+	Surya
+	Suth
+	Suulan
+	Suuth
+	Suva
+	Swur
+	Sym
+	Synchrony
+	Synnax
+	Syrma
+	Syrul
+	Taanab
+	Taanafir
+	Tabit
+	Taboon
+	Tabri
+	Tacitus
+	Tadasca
+	Tafifduha
+	Taful'ai
+	Taggallion
+	Tagra
+	Tagus
+	Tahdilvid
+	Tahirfa
+	Taiyangshou
+	Taiyi
+	Takhalida
+	Takharam
+	Takhvan
+	Talan
+	Talandra
+	Talasea
+	Talax
+	Talaxia
+	Talitha
+	Tallasus
+	Tallus
+	Talos
+	Talravin
+	Tamar
+	Tamaraw
+	Tamen
+	Tamettidar
+	Tammuz
+	Tanaabis
+	Tana'din
+	Tanbasdiyth
+	Tanelorn
+	"Tania Australis"
+	"Tania Borealis"
+	Tanith
+	Tansy
+	Tapir
+	Ta-qir
+	"Tar Valemm"
+	Taralon
+	Taramba
+	Taramda
+	Tarandi
+	Tarazed
+	Tarella
+	Tarf
+	Targon
+	Taris
+	Tarkalia
+	Tarn
+	Tarok
+	Tarquin
+	Tarrak
+	Tarsonis
+	Tartarass
+	Tartarus
+	Tasha
+	Tashmetum
+	Tasoudmirij
+	Tatanga
+	Tatooine
+	Tau
+	"Tau Andromedae"
+	"Tau Alpha"
+	"Tau Beta"
+	"Tau Capricorni"
+	"Tau Cassiopeiae"
+	"Tau Centauri"
+	"Tau Cestus"
+	"Tau Chi"
+	"Tau Delta"
+	"Tau Epsilon"
+	"Tau Eridani"
+	"Tau Eta"
+	"Tau Gamma"
+	"Tau Iota"
+	"Tau Kappa"
+	"Tau Lambda"
+	"Tau Major"
+	"Tau Minor"
+	"Tau Mu"
+	"Tau Nu"
+	"Tau Omega"
+	"Tau Omicron"
+	"Tau Ophiuchi"
+	"Tau Orionis"
+	"Tau Phi"
+	"Tau Pi"
+	"Tau Psi"
+	"Tau Rho"
+	"Tau Scorpii"
+	"Tau Sigma"
+	"Tau Theta"
+	"Tau Upsilon"
+	"Tau Verde"
+	"Tau Virginis"
+	"Tau Xi"
+	"Tau Zeta"
+	Taunrak
+	Taurus
+	Ta'utros
+	Tauzamad
+	Tavnia
+	Tawaret
+	Taxane
+	Tayfulmu
+	Taygeta
+	Tazri
+	Taz'zultah
+	Tediss
+	Teeha
+	Teersonia
+	Tefnut
+	Tegmine
+	Tejat
+	Telana
+	Telanor
+	Telchur
+	Telemachus
+	Teleris
+	Teluridian
+	Tem
+	Tempest
+	Tenecca
+	Tenser
+	Tepasi
+	Teplan
+	Terais
+	Teranor
+	Teratia
+	Terazet
+	Terbufos
+	Terebellum
+	Terikof
+	Terlina
+	Terosa
+	Terzam
+	Tessen
+	Tethell
+	Tetholon
+	Tethys
+	Thaaram
+	Tha-haa
+	Thalis
+	Thallium
+	Thalos
+	Thanatos
+	Tharizdun
+	Thark
+	Tharooqab
+	Thebeon
+	Thebes
+	Theemin
+	Thegglan
+	Thelios
+	Thera
+	Thessalonika
+	Theta
+	"Theta Andromedae"
+	"Theta Alpha"
+	"Theta Arae"
+	"Theta Beta"
+	"Theta Carinae"
+	"Theta Capricorni"
+	"Theta Cassiopeiae"
+	"Theta Centauri"
+	"Theta Ceti"
+	"Theta Chi"
+	"Theta Cygnus"
+	"Theta Delta"
+	"Theta Epsilon"
+	"Theta Eridani"
+	"Theta Eta"
+	"Theta Gamma"
+	"Theta Iota"
+	"Theta Kappa"
+	"Theta Lambda"
+	"Theta Major"
+	"Theta Minor"
+	"Theta Mu"
+	"Theta Nu"
+	"Theta Omega"
+	"Theta Omicron"
+	"Theta Ophiuchi"
+	"Theta Orionis"
+	"Theta Phi"
+	"Theta Pi"
+	"Theta Psi"
+	"Theta Rho"
+	"Theta Scorpii"
+	"Theta Sigma"
+	"Theta Tau"
+	"Theta Upsilon"
+	"Theta Virginis"
+	"Theta Xi"
+	"Theta Zeta"
+	Thi
+	Thielbahr
+	Thindol
+	Thindor
+	Thiram
+	Thirimora
+	Thirumal
+	Thiyajimin
+	Thokos
+	Thomork
+	Thorgeld
+	Thoth
+	Thracia
+	Thracior
+	Thrad
+	Thralia
+	Thrish
+	Throthgard
+	Thuban
+	Thuba'nan
+	Thule
+	Thumidra
+	Thunar
+	Thundara
+	Thunderra
+	Thunt
+	Thyferra
+	Tiaki
+	Tiamat
+	Tianguan
+	Tianjin
+	Tianyi
+	Tiattums
+	Tibbacor
+	Tiberius
+	Tiblic
+	Tibor
+	Tibrin
+	"Tien Kwan"
+	Tiffim
+	Tif'ha
+	Tifihiraja
+	Tigira
+	Tikonov
+	Tilawadi
+	Timbol
+	Tinab
+	Tinnel
+	Tiom
+	Tiqim
+	Tir
+	Tira
+	Tiralam
+	Tiramore
+	Tirgiss
+	Tirim
+	Tiriyok
+	Tirmana
+	Tirol
+	Tishpak
+	Tissilum
+	Titan
+	Titania
+	Titawin
+	Titus
+	Tiuz
+	Ti'ya
+	Tiyeb
+	T'Lani
+	Tleilax
+	Togoria
+	Tokasha
+	Toliman
+	Toluene
+	Tombstone
+	Tonatiuh
+	Toogit
+	Toonol
+	Toprawa
+	Tora
+	Torcular
+	Torell
+	Torga
+	Torkulon
+	Torman
+	Torna
+	Toropia
+	Torovil
+	Torquas
+	Torrom
+	Torus
+	Tovu
+	Towne
+	Toximble
+	Toydaria
+	Trab
+	Trabalore
+	Trabano
+	Trabbur
+	"Tram Bodon"
+	Tranquil
+	Trauth
+	"Trax Ofko"
+	Trellberg
+	Trellin
+	Trenor
+	Triac
+	Triad
+	Trialus
+	Trijam
+	Trimble
+	Trimus
+	Trinity
+	Trinnick
+	Tripurasundari
+	Tritherion
+	Triton
+	Triumph
+	Troidom
+	Trok
+	Tronde
+	Trondheim
+	Tropallum
+	Trosdili
+	Trosgabr
+	Trostk
+	Troy
+	Trunt
+	Trusibli
+	Trus'il
+	Truskatia
+	Tuban
+	Tucker
+	Tunobo
+	Tupile
+	Turbick
+	Tureis
+	Turim
+	Turing
+	Tutu
+	Tuva
+	Tu'ziy
+	Tuzla
+	Tvastr
+	T'Vilkait
+	Twith
+	Twycross
+	Tyastedore
+	Tybalt
+	Tyche
+	Tycho
+	Tychonis
+	Tydeus
+	"Tyed Kant"
+	Tygaria
+	Tykoski
+	Tyl
+	Tymora
+	Typhon
+	Typhus
+	Tyr
+	Tyrador
+	Tyrosh
+	Tystra
+	Tython
+	Tythra
+	Ua-lidak
+	Udaloy
+	Ud-sima
+	Udune
+	Ufandi
+	Ufoa
+	Ugarasti
+	Ugret
+	Ukdah
+	Ukio
+	Ukoi
+	Ukur
+	Ulassia
+	Uldor
+	Ulkad
+	Ullus
+	Uluk
+	Ulym
+	Umani
+	Umbar
+	Umbra
+	Umera
+	Umeria
+	Umgal
+	Umik
+	Umoth
+	Unar
+	Unatra
+	Unica
+	Unif
+	Unimar
+	Unith
+	Unnabin
+	Unukalhai
+	Unur
+	Unurgunite
+	Upano
+	Upmere
+	Upsilon
+	"Upsilon Andromedae"
+	"Upsilon Alpha"
+	"Upsilon Beta"
+	"Upsilon Carinae"
+	"Upsilon Capricorni"
+	"Upsilon Cassiopeiae"
+	"Upsilon Centauri"
+	"Upsilon Ceti"
+	"Upsilon Chi"
+	"Upsilon Delta"
+	"Upsilon Epsilon"
+	"Upsilon Eridani"
+	"Upsilon Eta"
+	"Upsilon Gamma"
+	"Upsilon Iota"
+	"Upsilon Kappa"
+	"Upsilon Lambda"
+	"Upsilon Major"
+	"Upsilon Minor"
+	"Upsilon Mu"
+	"Upsilon Nu"
+	"Upsilon Omega"
+	"Upsilon Omicron"
+	"Upsilon Ophiuchi"
+	"Upsilon Orionis"
+	"Upsilon Phi"
+	"Upsilon Pi"
+	"Upsilon Psi"
+	"Upsilon Rho"
+	"Upsilon Scorpii"
+	"Upsilon Sigma"
+	"Upsilon Tau"
+	"Upsilon Theta"
+	"Upsilon Virginis"
+	"Upsilon Xi"
+	"Upsilon Zeta"
+	Urallion
+	"Uran Tokh"
+	Urchachka
+	Urdur
+	Uresia
+	Uriek
+	Urill
+	Urnst
+	Urquat
+	Urrom
+	"Ursa Major"
+	"Ursa Minor"
+	"61 Ursae Majoris"
+	Ursoria
+	Urushiol
+	Ussaldon
+	Us'ta
+	Ustir
+	Utapau
+	Uthan
+	Utharis
+	Uthark
+	Uttu
+	Utu
+	Uval
+	Uvena
+	Uzafadl
+	Uziel
+	Uzun
+	Vacca
+	Vagabond
+	Vaidheeswara
+	"Vaikuntha Chaturmurti"
+	"Vaikuntha Kamalaja"
+	Vakradil
+	Vakratunda
+	Valakis
+	Valdis
+	Valefor
+	Valencia
+	Valens
+	Valerian
+	Valerion
+	Valerius
+	Valhalla
+	Valinor
+	Valkyrie
+	Valletta
+	Valmiki
+	Valtiel
+	Valuda
+	Valus
+	Valyria
+	Vamana
+	"Van Diemen"
+	Vana
+	Vanaar
+	Vandelhelm
+	Vandor
+	Vanga
+	Vangras
+	Vaniko
+	Vanima
+	Varaha
+	Varahi
+	Varsire
+	Varsis
+	Varuna
+	Vashti
+	Vathris
+	Vatun
+	Vaydra
+	Vayu
+	Vecna
+	Veed
+	Veed'lu
+	Veerhadra
+	Vela
+	Veld
+	Veldani
+	Velderaam
+	Veldoon
+	Velos
+	Veluna
+	Velusia
+	Vemi
+	Vendel
+	Vendor
+	Venkateshwara
+	Venom
+	Venrith
+	Ventrixia
+	Vepar
+	Verazina
+	Verbobonic
+	Veridian
+	Veritate
+	Vermillion
+	Vervain
+	Vesepe
+	Vesta
+	Vestallus
+	Vesve
+	Veyer
+	Vhallas
+	Viator
+	Victoria
+	Vidiian
+	Vighnaraja
+	Vigil
+	Vigilance
+	Vijimar
+	Vikata
+	Vikeli
+	Vilas
+	Vilmor
+	Vilth
+	Vilysia
+	Vi'Maas
+	Vindemiatrix
+	Vinjim
+	Vinsoth
+	Vipaava
+	Viparia
+	Virdamon
+	Virgil
+	"61 Virginis"
+	Viriak
+	Virkon
+	Vishvarupa
+	Vista
+	Vitallius
+	Vitellius
+	Vitorius
+	Vivasvat
+	Vixon
+	Vizzard
+	Vjun
+	Vlems
+	Vlisraef
+	Vlum
+	Vohaul
+	Vokkon
+	Volan
+	Volantis
+	Voldop
+	Vollonis
+	Volmaur
+	Voltec
+	Voon
+	Voondon
+	Voquev
+	Vorad
+	Vorell
+	Vorsham
+	Voss
+	Vosstian
+	Vostok
+	Vox
+	Vraof
+	Vrio
+	Vulcan
+	Vulcanita
+	Vuma
+	Vumm
+	Vurul
+	Vyasa
+	Waahaal
+	Wadi
+	Wadia
+	Wadjet
+	Wadj-wer
+	Wafadatta
+	Wagilak
+	Waiphrid
+	Wajima
+	Walleye
+	Walmoro
+	Waltom
+	Walzirin
+	Wamadtas
+	Wamirlikya
+	Wanambis
+	Wan'hamir
+	"Wann Tsir"
+	Wanya
+	Wara'ta
+	Wardell
+	Warhoon
+	Warrifik
+	Wasat
+	Wasirimra
+	Wastri
+	Watadatha
+	Watil
+	Watrusho
+	Wa'u
+	Waya'dia
+	Wayland
+	Wazin
+	Weber
+	"Wee Jas"
+	Weerden
+	Wegmore
+	Wehtan
+	Welarn
+	Wemoll
+	Wenta
+	Wer
+	Wermeed
+	Westerfeld
+	Wetij
+	Wexellia
+	Weylan
+	Wezen
+	Whelm
+	Wicklar
+	Widek
+	Widow
+	Wiedel
+	Wiertham
+	Wila
+	Wilcam
+	Wildore
+	Wilea
+	Winooze
+	Winterfell
+	Winyor
+	Wir
+	"Wir Thosk"
+	Wistral
+	Wistril
+	Withrilli
+	Withyr
+	Witris
+	Wodan
+	Woden
+	Wodriax
+	Wolf
+	Wolgun
+	Wollaeus
+	Wooda
+	Wotan
+	Wraith
+	Wuhan
+	Wukkar
+	"Wum Jiam"
+	Wurren
+	Wyndigal
+	Wynth
+	Wysanti
+	Wyveral
+	"Xa Fel"
+	Xagobah
+	Xamidimura
+	"Xan Yae"
+	Xanadu
+	Xandebaan
+	Xandor
+	Xantar
+	Xanthium
+	Xaphan
+	Xarius
+	Xarmaton
+	Xartun
+	Xasica
+	Xaxis
+	"Xel Madak"
+	Xelol
+	Xenarius
+	Xenon
+	Xeron
+	Xerxes
+	Xi
+	"Xi Andromedae"
+	"Xi Alpha"
+	"Xi Beta"
+	"Xi Boötis"
+	"Xi Capricorni"
+	"Xi Cassiopeiae"
+	"Xi Centauri"
+	"Xi Ceti"
+	"Xi Chi"
+	"Xi Delta"
+	"Xi Epsilon"
+	"Xi Eridani"
+	"Xi Eta"
+	"Xi Gamma"
+	"Xi Iota"
+	"Xi Kappa"
+	"Xi Lambda"
+	"Xi Major"
+	"Xi Minor"
+	"Xi Mu"
+	"Xi Nu"
+	"Xi Omega"
+	"Xi Omicron"
+	"Xi Ophiuchi"
+	"Xi Orionis"
+	"Xi Phi"
+	"Xi Pi"
+	"Xi Psi"
+	"Xi Rho"
+	"Xi Scorpii"
+	"Xi Sigma"
+	"Xi Tau"
+	"Xi Theta"
+	"Xi Upsilon"
+	"Xi Virginis"
+	"Xi Zeta"
+	Xigar
+	Ximpok
+	Xindus
+	Xir
+	Xirak
+	Xolton
+	"Xu Nur"
+	Xuange
+	Xud
+	Xudra
+	Xueggu
+	Xuro
+	Xydonis
+	Xylene
+	Xylia
+	Ya
+	Ya'ara
+	Yabagau
+	Yablari
+	Yadel
+	Yadelfay
+	Yadera
+	"Yaga Minor"
+	Yag'Dhul
+	Yaha
+	Yah'fa
+	Yahfiq
+	Yahhafil
+	Yai-yala
+	Yalalikray
+	Yalara
+	Yaliya
+	Yalosia
+	Yama
+	Yamaa
+	Yamil
+	Yamma
+	Yanduz
+	Yangtze
+	Ya'ni
+	Ya'nuiq
+	Yarak
+	Yarambafa
+	Yarragana
+	Yasawood
+	Yasla
+	Yavin
+	Ya'wa
+	Yayakhay
+	Yazim
+	Yazyayara
+	Yboveth
+	Ybuwyn
+	Ydria
+	Yeats
+	Yebliya
+	Yed
+	"Yed Posterior"
+	"Yed Prior"
+	Yeedixa
+	"Yel Barrasta"
+	Yelika
+	Yelon
+	Yeltha
+	Yenlee
+	Yetoom
+	Yetoros
+	Yildun
+	Yillion
+	Yima
+	Yimello
+	Yinchor
+	Yindor
+	Yinin
+	Yiple
+	Yirba
+	Yiriam
+	Yiznasla
+	Yizshaham
+	Ylesia
+	Ymir
+	Ynessa
+	Yobhanir
+	"Yodd Bem"
+	Yomon
+	Yon
+	Yotla
+	Yrgel
+	Yssom
+	Yu'ful
+	Yuggoth
+	Yuha-zayn
+	Yulant
+	Yuli
+	Yultup
+	Yumed
+	Yump
+	Yunak
+	Yunduk
+	Yunka
+	Yuqat
+	Yurus
+	Yutani
+	Yval
+	Zaana
+	Zaarun
+	Zaasuhayyah
+	Zabeen
+	Zabunyai
+	Zadfihrti
+	Zadsan
+	Zaffa
+	Zafi-ri
+	Zagan
+	Zagyg
+	Zah'fiz
+	Zahya-dal
+	Zahzadlija
+	Zaid
+	Zakara
+	Zakhatifka
+	Zalank
+	Zalimood
+	Zalkon
+	Zalr
+	Zaltec
+	Zambari
+	Zameed
+	Zamojin
+	Za'muhra
+	Zaniah
+	Zanovar
+	Zaqar
+	Zar
+	Zara
+	Zarathrusta
+	Zariah
+	Zarim
+	Zarqon
+	Za'ta
+	Zatar
+	Zathmak
+	Zatros
+	Zaurak
+	Zavijava
+	Zayd'dadi
+	Zayn
+	Zaynahwayas
+	Zayn'tafer
+	Zea
+	Zedran
+	Zegon
+	Zeldrah
+	Zeloz
+	Zelsa
+	Zelsafabin
+	Zempek
+	Zeon
+	Zepar
+	Zepheros
+	Zephon
+	Zephyr
+	Zephys
+	Zerus
+	Zestybus
+	Zeta
+	"Zeta Andromedae"
+	"Zeta Alpha"
+	"Zeta Arae"
+	"Zeta Beta"
+	"Zeta Capricorni"
+	"Zeta Cassiopeiae"
+	"Zeta Centauri"
+	"Zeta Ceti"
+	"Zeta Chi"
+	"Zeta Delta"
+	"Zeta Eridani"
+	"Zeta Eta"
+	"Zeta Gamma"
+	"Zeta Iota"
+	"Zeta Kappa"
+	"Zeta Kelvin"
+	"Zeta Lambda"
+	"Zeta Major"
+	"Zeta Minor"
+	"Zeta Mu"
+	"Zeta Nu"
+	"Zeta Omega"
+	"Zeta Omicron"
+	"Zeta Ophiuchi"
+	"Zeta Orionis"
+	"Zeta Phi"
+	"Zeta Pi"
+	"Zeta Psi"
+	"Zeta Reticuli"
+	"Zeta Rho"
+	"Zeta Scorpii"
+	"Zeta Sigma"
+	"Zeta Tau"
+	"Zeta Theta"
+	"Zeta Upsilon"
+	"Zeta Virginis"
+	"Zeta Xi"
+	Zeus
+	Z'hadum
+	Zhang
+	Zhir
+	Zhoblar
+	Zhufor
+	Ziaba
+	Ziala
+	Ziamon
+	Zibal
+	Zibalia
+	Zief
+	Zif
+	Zifigul
+	Zihramasha
+	Zilchus
+	Zilpha
+	Zilr
+	Zimatullon
+	Zimtauri
+	Zindaria
+	Zinthor
+	Ziobir
+	Ziost
+	Zipir
+	Ziris
+	Zirq
+	Zirzla
+	Zitaxis
+	Zithri
+	Zizdartros
+	Zizdaya
+	Ziz'wa
+	Zodanga
+	Zoldar
+	Zoldiore
+	Zorak
+	Zorf
+	Zosma
+	Zowod
+	Zric
+	Zuben
+	Zubeneschamali
+	Zukov
+	Zuldat
+	"Zulei Cro"
+	Zunorna
+	Zwole
+	Zygon
+	Zymatroxis
+	Zyo
+}
+
+nebula_names = {
+	"Crab Nebula"
+	"Casper the Friendly Ghost Nebula"
+	"Temestra Badlands"
+	"Arija Patch"
+	"Tyjanock Expanse"
+	"Harriban Nebula"
+	"Erium Nebula"
+	"Najaggus Veil"
+	"Cebellus Shroud"
+	"Yothmore Shroud"
+	"Traxis Badlands"
+	"Sejanis Expanse"
+	"Kanthares Miasma"
+	"Ibannic Veil"
+	"Ultaaran Miasma"
+	"Zha'kira Patch"
+	"Zadanis Nebula"
+	"Grasping Claw Nebula"
+	"Oracle's Grave Nebula"
+	"Demon's Eye Nebula"
+	"Weeping Ghost Nebula"
+	"Forbidden Nebula"
+	"Crossroads Nebula"
+	"Whispering Garden Nebula"
+	"Dark Hopes Nebula"
+	"Shining Pearl Nebula"
+	"Twin Fangs Nebula"
+	"Void Sea Nebula"
+	"Shadow Nebula"
+	"Abbanis Nebula"
+	"Nythran Expanse"
+	"Unar Patch"
+	"Daturi Expanse"
+	"Orantes Shroud"
+	"Owl Nebula"
+	"Shiigur Nebula"
+	"Vael'Zulush Nebula"
+	"Rebenthi Dust Clouds"
+	"Jimorban Dust Clouds"
+	"Disak Hek Dust Clouds"
+	"Hirantes Dust Clouds"
+	"Kiiran Dust Clouds"
+	"De Mairan's Nebula"
+	"Coalsack Nebula"
+	"Dark Doodad Nebula"
+	"Dark Horse Nebula"
+	"Horsehead Nebula"
+	"Pipe Nebula"
+	"Snake Nebula"
+	"Barnard's Loop"
+	"Boomerang Nebula"
+	"Bubble Nebula"
+	"California Nebula"
+	"Cave Nebula"
+	"Corona Australis Nebula"
+	"Cone Nebula"
+	"Crescent Nebula"
+	"Double Helix Nebula"
+	"Eagle Nebula"
+	"Elephant's Trunk Nebula"
+	"Eta Carinae Nebula"
+	"Flame Nebula"
+	"Ring Nebula"
+	"Heart Nebula"
+	"Lagoon Nebula"
+	"Omega Nebula"
+	"Great Orion Nebula"
+	"Pistol Nebula"
+	"Rosette Nebula"
+	"Running Chicken Nebula"
+	"Soul Nebula"
+	"Tarantula Nebula"
+	"Trifid Nebula"
+	"Witch Head Nebula"
+	"Mutara Nebula"
+	"Messier 43"
+	"Messier 78"
+	"NGC 248"
+	"NGC 249"
+	"NGC 256"
+	"NGC 261"
+	"NGC 267"
+}

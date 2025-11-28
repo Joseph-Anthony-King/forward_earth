@@ -3,5 +3,5 @@ tags={
 	"Galaxy Generation"
 }
 name="Forward Earth"
-supported_version="v4.2.1"
+supported_version="v4.2.*"
 path="/home/joe/.local/share/Paradox Interactive/Stellaris/mod/forward_earth"

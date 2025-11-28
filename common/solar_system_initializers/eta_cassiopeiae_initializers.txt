@@ -293,7 +293,7 @@ eta_cassiopeiae_system_initializer = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "coa_sol_neighbor_t1
+		initializer = "coa_sol_neighbor_t1"
 	}
 }
 
@@ -872,13 +872,13 @@ coa_sol_neighbor_t1 = {
 	}
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t1_3"
+		initializer = "coa_sol_neighbor_t2"
 	}
 }
 
-# Sol Neighbor Tier 2.1 - Lalande 21185
+# Sol Neighbor Tier 2 - Lalande 21185
 #Links: 40 Eridani
-sol_neighbor_t1_3 = {
+coa_sol_neighbor_t2 = {
 	name = "NAME_Lalande_21185"
 	class = sc_m
 
@@ -920,7 +920,7 @@ sol_neighbor_t1_3 = {
 
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
-		initializer = "sol_neighbor_t3"
+		initializer = "coa_sol_system_initializer"
 	}
 }
 
