@@ -1,0 +1,19 @@
+namespace = fe
+
+### fe.100 - Set CoA robotics technologies
+country_event = {
+	id = fe.100
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { 
+			limit = {
+				any_country = { has_country_flag = human_2 
+			}
+		}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+		}
+	}
+}

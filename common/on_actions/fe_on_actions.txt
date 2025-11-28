@@ -1,0 +1,50 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {
+		fe.00 ### fe.00 - Set forwardEarth global flag
+        fe.01 ### fe.01 - Rename binary planet barycenters
+		fe.02 ### fe.02 - Spawn Sagittarius A*
+		fe.03 ### fe.03 - Spawn Trantor
+		fe.04 ### fe.04 - Spawn Terminus
+		fe.05 ### fe.05 - Spawn UNE for CoA
+		fe.06 ### fe.06 - Spawn NPC humans if there are no Earth based factions
+		fe.07 ### fe.07 - Spawn LHC and CoA for UNE
+		fe.08 ### fe.08 - Ensure homeworld for LHC and CoA is set to Earth
+		fe.09 ### fe.09 - Spawn LHC and CoA for Earth Custondianship and ICARUS
+		fe.10 ### fe.10 - Nuke Earth for ICARUS faction
+		fe.11 ### fe.11 - Modify Forward Earth planets
+		fe.12 ### fe.12 - Revert Sol and Eta Cassiopeiae to default names if unpopulated
+		fe.13 ### fe.13 - Populate Tau Ceti with primitives
+		fe.14 ### fe.14 - Spawn potential federation members
+		fe.15 ### fe.15 - Revert potential federation member names to default names if unpopulated
+	}
+}
+
+on_terraforming_complete = {
+	events = {
+		fe.20 ### fe.20 - Venus terraforming event
+		fe.22 ### fe.22 - Earth terraforming event
+		fe.25 ### fe.25 - Mars terraforming event
+        fe.26 ### fe.26 - Mercury terraforming event
+
+	}
+}
+
+on_press_begin = {
+	events = {
+		fe.22 ### fe.22 - Earth on press begin event
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		fe.21 ### fe.21 - Venus yearly pulse event
+		fe.23 ### fe.23 - Earth yearly pulse event
+	}
+}
+
+on_megastructure_upgraded = {
+	events = {
+		fe.24 ### fe.24 - Earth megastructure completed event
+	}
+}
