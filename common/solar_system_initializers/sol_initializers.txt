@@ -335,7 +335,6 @@ sol_system_initializer = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_3"
 	}
-
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_4"
@@ -1488,6 +1487,7 @@ sol_neighbor_t2_3 = {
 }
 
 # Sol Neighbor Tier 3 - 40 Eridani: League of Human Colonies
+#Links: Eta Cassiopeiae
 sol_neighbor_t3 = {
 	name = "NAME_40_Eridani"
 

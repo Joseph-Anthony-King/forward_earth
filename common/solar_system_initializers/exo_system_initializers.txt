@@ -1,0 +1,3259 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+
+### 55 Cancri System
+55_Cancri_system_initializer = {
+    name = "55 Cancri"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "55 Cancri A"
+        class = "pc_k_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 230
+        has_ring = no
+    }
+
+    planet = {
+        name = "Janssen"
+        size = 25
+        orbit_distance = 18
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Galileo"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 99
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Brahe"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 80
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Harriot"
+        size = 24
+        orbit_distance = 35
+        orbit_angle = 243
+        has_ring = no
+        class = "pc_gas_giant"
+        change_orbit = 10
+        
+        moon = {
+            name = "Harriot a"
+            orbit_distance = { min = 3 max = 5 }
+            size = { min = 4 max = 12 }
+        }
+        moon = {
+            name = "Harriot b"
+            orbit_distance = { min = 3 max = 5 }
+            size = { min = 10 max = 12 }
+        }
+        moon = {
+            name = "Harriot c"
+            orbit_distance = { min = 3 max = 5 }
+            size = { min = 6 max = 10 }
+        }
+    }
+    planet = {
+        name = "Lipperhey"
+        size = 35
+        orbit_distance = 70
+        orbit_angle = 265
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "55 Cancri B"
+        class = "pc_m_star"
+        size = 16
+        orbit_distance = 100
+        orbit_angle = 321
+        has_ring = no
+    }
+}
+
+### Antares System
+antares_initializer = {	
+	name = "NAME_Antares"
+	class = sc_m_giant
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	
+	planet = {
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 70
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 45
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 110
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 85
+		size = 7
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 105
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+### Betelgeuse System
+betelgeuse_initializer = {	
+	name = "NAME_Betelgeuse"
+	class = sc_m_giant
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	
+	planet = {
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 100
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 110
+		orbit_angle = 175
+		size = 40
+		has_ring = no
+		
+		moon = {
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 20
+			orbit_angle = 100
+			has_ring = no
+		}		
+		moon = {
+			class = "pc_barren"
+			size = 8
+			orbit_distance = 10
+			orbit_angle = 95
+			has_ring = no
+		}		
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 120
+		size = 30
+		has_ring = yes
+		
+		moon = {
+			class = "pc_barren_cold"
+			size = 8
+			orbit_distance = 20
+			orbit_angle = 95
+			has_ring = no
+		}		
+		moon = {
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 120
+			has_ring = no
+		}		
+	}
+	
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 30
+		orbit_angle = 95
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 8
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 6
+			orbit_distance = 10
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+}
+
+### Canopus System
+canopus_initializer = {	
+	name = "NAME_Canopus"
+	class = sc_a
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	planet = {
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 60
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 70
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 110
+		size = 18
+		has_ring = no
+		
+		init_effect = {
+			add_modifier = {
+				modifier = "chthonian_planet"
+				days = -1
+			}
+		}
+		
+		moon = {
+			class = "pc_molten"
+			size = 5
+			orbit_distance = 20
+			orbit_angle = 100
+			has_ring = no
+		}		
+		moon = {
+			class = "pc_molten"
+			size = 8
+			orbit_distance = 10
+			orbit_angle = 95
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_desert"
+		orbit_distance = 60
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 100
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_frozen"
+			size = 2
+			orbit_distance = 10
+			orbit_angle = 170
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren"
+			size = 5
+			orbit_distance = 10
+			orbit_angle = 100
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 30
+		orbit_angle = 70
+		size = 12
+		has_ring = no
+	}
+}
+
+### Deneb System
+deneb_system = {
+	name = "NAME_Deneb"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+
+		generate_home_system_resources = yes
+	}
+
+	flags = { empire_home_system deneb_system }
+
+    usage = misc_system_init
+
+    usage_odds = 100
+
+    max_instances = 1
+
+	planet = {
+		name = "NAME_Deneb"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 32
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		entity = "gas_giant_02_entity"
+
+		moon = {
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = "pc_continental"
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 20
+			starting_planet = yes
+			has_ring = no
+			entity = "continental_planet_01_entity"
+			deposit_blockers = none
+			modifiers = none
+		}
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 325
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = 110
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+
+		moon = {
+			name = "NAME_Helios"
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 14
+			orbit_angle = 14
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 35
+		size = 15
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 150
+		size = 20
+		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "neighbor_t1_first_colony"
+	}
+}
+
+### Deneb System - UNE start
+#Was UNE start but edited due to CoA
+une_deneb_system = {
+	name = "NAME_Deneb"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	flags = { deneb_system }
+
+	usage = misc_system_init
+
+	max_instances = 0
+
+	planet = {
+		name = "NAME_Deneb"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 60
+		orbit_angle = 45
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_DT4-298"
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 340
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_LR-2129"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 160
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		name = "NAME_GR-345"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 270
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 40
+		has_ring = no
+		entity = "gas_giant_02_entity"
+
+		moon = {
+			class = "pc_frozen"
+			size = 5
+			orbit_distance = 18
+			orbit_angle = 100
+			has_ring = no
+		}
+		moon = {
+			class = "pc_continental"
+			orbit_distance = 5
+			orbit_angle = 340
+			size = 18
+			starting_planet = yes
+			has_ring = no
+			entity = "continental_planet_01_entity"
+			deposit_blockers = none
+			modifiers = none
+			flags = { planet_unity }
+		}
+	}
+
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 20
+		orbit_angle = 325
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 20
+		orbit_angle = 110
+		size = 30
+		has_ring = no
+		entity = "gas_giant_05_entity"
+
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 14
+			orbit_angle = 14
+			has_ring = no
+		}
+	}
+
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 35
+		size = 15
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 20
+		orbit_angle = 150
+		size = 20
+		has_ring = no
+	}
+
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 2 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "deneb_neighbor_t1"
+	}
+	neighbor_system = {
+		trigger = { num_guaranteed_colonies >= 1 }
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "deneb_neighbor_t1_first_colony"
+	}
+}
+
+### Fomalhaut System
+fomalhaut_initializer = {	
+	name = "NAME_Fomalhaut"
+	class = sc_a
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 140
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 200
+	}
+
+	planet = {
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 70
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 90
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 20
+		orbit_angle = 70
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 30
+		orbit_angle = 70
+		size = 15
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+### Gliese 581 System
+Gliese_581_system_initializer = {
+    name = "Gliese 581"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Gliese 581"
+        class = "pc_m_star"
+        size = 14
+        orbit_distance = 0
+        orbit_angle = 230
+        has_ring = no
+    }
+    planet = {
+        name = "Gliese 581 e"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 265
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Gliese 581 b"
+        size = 26
+        orbit_distance = 20
+        orbit_angle = 9
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Gliese 581 c"
+        size = 25
+        orbit_distance = 15
+        orbit_angle = 99
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "Gliese 581 g"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 321
+        has_ring = no
+        class = random
+    }
+
+    planet = {
+        name = "Gliese 581 d"
+        size = 24
+        orbit_distance = 15
+        orbit_angle = 80
+        has_ring = no
+        class = random
+    }
+
+    planet = {
+        name = "Gliese 581 f"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = 243
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+}
+
+### Gliese 667 System
+Gliese_667_system_initializer = {
+	name = "Gliese 667"	
+	class = "sc_k"
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+
+	planet = {
+		name = "Gliese 667 A"
+		class = "pc_k_star"
+		orbit_distance = 25
+		orbit_angle = 20
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Gliese 667 B"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 180
+		size = 20
+		has_ring = no
+	}
+	change_orbit = 120
+	planet = {
+		name = "Gliese 667 C"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = -90
+		size = 18
+		has_ring = no
+
+        moon = {
+            name = "Gliese 667 C b"
+            class = "pc_molten"
+            orbit_distance = 15
+            orbit_angle = 15
+            size = 22
+        }
+        
+        moon = {
+            name = "Gliese 667 C h"
+            class = "pc_toxic"
+            orbit_distance = 6
+            orbit_angle = 125
+            size = 15
+        }
+        
+        moon = {
+            name = "Gliese 667 C c"
+            class = "pc_barren"
+            orbit_distance = 8
+            orbit_angle = 120
+            size = 20
+        }
+        
+        moon = {
+            name = "Gliese 667 C f"
+            class = rl_habitable_normal
+            orbit_distance = 6
+            orbit_angle = 60
+            size = 18
+        }
+        
+        moon = {
+            name = "Gliese 667 C e"
+            class = "pc_barren"
+            orbit_distance = 10
+            orbit_angle = -160
+            size = 18
+        }
+        
+        moon = {
+            name = "Gliese 667 C d"
+            class = "pc_barren_cold"
+            orbit_distance = 15
+            orbit_angle = 170
+            size = 25
+        }
+        
+        moon = {
+            name = "Gliese 667 C g"
+            class = "pc_frozen"
+            orbit_distance = 15
+            orbit_angle = 125
+            size = 24
+        }
+	}
+}
+
+### HD 40307 System
+HD_40307_system_initializer = {
+    name = "HD 40307"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "HD 40307"
+        class = "pc_k_star"
+        size = 25
+        orbit_distance = 0
+        orbit_angle = 233
+        has_ring = no
+    }
+    planet = {
+        name = "HD 40307 b"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 196
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "HD 40307 c"
+        size = 20
+        orbit_distance = 15
+        orbit_angle = 79
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "HD 40307 d"
+        size = 26
+        orbit_distance = 20
+        orbit_angle = 212
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "HD 40307 e"
+        size = 19
+        orbit_distance = 15
+        orbit_angle = 291
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HD 40307 f"
+        size = 21
+        orbit_distance = 15
+        orbit_angle = 2
+        has_ring = no
+        class = "pc_barren"
+    }
+    planet = {
+        name = "HD 40307 g"
+        size = 27
+        orbit_distance = 20
+        orbit_angle = 290
+        has_ring = no
+        class = "pc_gas_giant"
+
+        moon = {
+            name = "HD 40307g a"
+            size = { min = 9 max = 12 }
+            class = random
+            orbit_distance = 15
+            orbit_angle = { min = 10 max = 100 }
+        }
+    }
+}
+
+### HD 10180 System
+HD_10180_system_initializer = {
+	name = "HD 10180"
+	class = "sc_g"
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+	planet = {
+		name = "HD 10180"
+		class = "pc_g_star"
+		size = 30
+        orbit_distance = 0
+        orbit_angle = 78
+        has_ring = no
+	}
+
+	planet = {
+		name = "HD 10180 b"
+		size = 20
+		orbit_distance = 20
+		orbit_angle = 181
+		has_ring = no
+		class = "pc_molten"
+	}
+
+	planet = {
+		name = "HD 10180 c"
+		size = 28
+		orbit_distance = 10
+		orbit_angle = 90
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 d"
+		size = 28
+		orbit_distance = 15
+		orbit_angle = 233
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 e"
+		size = 30
+		orbit_distance = 20
+		orbit_angle = 196
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 f"
+		size = 33
+		orbit_distance = 20
+		orbit_angle = 212
+		class = "pc_gas_giant"
+	}
+
+	planet = {
+		name = "HD 10180 g"
+		size = 30
+		orbit_distance = 25
+		orbit_angle = 291
+		has_ring = no
+		class = "pc_gas_giant"
+		change_orbit = 10
+
+		moon = {
+			count = 1
+			name = "HD 10180g a "
+			orbit_distance = 3
+			size = { min = 5 max = 9 }
+		}
+
+		moon = {
+			count = 1
+			name = "HD 10180g b "
+			orbit_distance = 3
+			size = { min = 10 max = 12 }
+			class = rl_habitable_normal
+		}
+
+		moon = {
+			name = "HD 10180g c"
+			count = 1
+			orbit_distance = 3
+			size = { min = 6 max = 12 }
+		}
+	}
+
+	planet = {
+		name = "HD 10180 h"
+		size = 40
+		orbit_distance = 60
+		orbit_angle = 2
+		has_ring = yes
+		class = "pc_gas_giant"
+	}
+}
+
+### HD 219134 System
+HD_219134_system_initializer = {
+    name = "HD 219134"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "HD 219134"
+        class = "pc_k_star"
+        size = 27
+        orbit_distance = 0
+        orbit_angle = 31
+        has_ring = no
+    }
+    planet = {
+        name = "HD 219134 b"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 151
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "HD 219134 c"
+        size = 19
+        orbit_distance = 15
+        orbit_angle = 10
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "HD 219134 d"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 78
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "HD 219134 e"
+        size = 29
+        orbit_distance = 25
+        orbit_angle = 181
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "HD 219134 f"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 9
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "HD 219134 g"
+        size = 32
+        orbit_distance = 70
+        orbit_angle = 71
+        class = "pc_gas_giant"
+    }
+}
+
+### HIP 41378
+HIP_41378_system_initializer = {
+    name = "HIP 41378"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
+
+    planet = {
+        name = "HIP 41378"
+        class = star
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 31
+        has_ring = no
+    }
+    planet = {
+        name = "HIP 41378 b"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 151
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "HIP 41378 c"
+        size = 21
+        orbit_distance = 15
+        orbit_angle = 10
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 d"
+        size = 26
+        orbit_distance = 30
+        orbit_angle = 78
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 e"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 181
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "HIP 41378 f"
+        size = 28
+        orbit_distance = 50
+        orbit_angle = 9
+        has_ring = no
+        class = "pc_barren"
+    }
+
+	change_orbit = 60
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-11 System
+Kepler-11_system_initializer = {
+    name = "Kepler-11"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
+    planet = {
+        name = "Kepler-11"
+        class = "pc_g_star"
+        size = 31
+        orbit_distance = 0
+        orbit_angle = 251
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-11 b"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 122
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-11 c"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 55
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-11 d"
+        size = 20
+        orbit_distance = 15
+        orbit_angle = 344
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-11 e"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 121
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-11 f"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 33
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-11 g"
+        size = 21
+        orbit_distance = 30
+        orbit_angle = 34
+        has_ring = no
+        class = "pc_barren"
+    }
+	change_orbit = 85
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-20 System
+Kepler_20_system_initializer = {
+    name = "Kepler-20"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+
+    planet = {
+        name = "Kepler-20"
+        class = "pc_g_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 104
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-20 b"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 28
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 e"
+        size = 13
+        orbit_distance = 17
+        orbit_angle = 100
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 c"
+        size = 27
+        orbit_distance = 25
+        orbit_angle = 83
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-20 f"
+        size = 16
+        orbit_distance = 35
+        orbit_angle = 228
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-20 d"
+        size = 43
+        orbit_distance = 43
+        orbit_angle = 36
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 80
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-32 System
+Kepler_32_system_initializer = {
+    name = "Kepler-32"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-32"
+        class = "pc_m_star"
+        size = 18
+        orbit_distance = 0
+        orbit_angle = 113
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-32 f"
+        size = 12
+        orbit_distance = 20
+        orbit_angle = 113
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 e"
+        size = 15
+        orbit_distance = 25
+        orbit_angle = 315
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 b"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-32 c"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 75
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-32 d"
+        size = 25
+        orbit_distance = 40
+        orbit_angle = 339
+        class = "pc_gas_giant"
+    }
+}
+
+### Kepler-33 System
+Kepler_33_system_initializer = {
+    name = "Kepler-33"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-33"
+        class = "pc_g_star"
+        size = 36
+        orbit_distance = 0
+        orbit_angle = 235
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-33 b"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 142
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-33 c"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 329
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-33 d"
+        size = 29
+        orbit_distance = 20
+        orbit_angle = 165
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-33 e"
+        size = 27
+        orbit_distance = 20
+        orbit_angle = 95
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-33 f"
+        size = 27
+        orbit_distance = 20
+        orbit_angle = 88
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+}
+
+### Kepler-55 System
+Kepler_55_system_initializer = {
+    name = "Kepler-55"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 195
+	}
+    planet = {
+        name = "Kepler-55"
+        class = "pc_k_star"
+        size = 18
+        orbit_distance = 0
+        orbit_angle = 32
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-55 d"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 16
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 e"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 285
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 f"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 151
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-55 b"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 39
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-55 c"
+        size = 22
+        orbit_distance = 15
+        orbit_angle = 225
+        has_ring = no
+        class = "pc_barren"
+    }
+	change_orbit = 100
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-62 System
+Kepler_62_system_initializer = {
+    name = "Kepler-62"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-62"
+        class = "pc_k_star"
+        size = 24
+        orbit_distance = 0
+        orbit_angle = 22
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-62 b"
+        size = 12
+        orbit_distance = 18
+        orbit_angle = 137
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 c"
+        size = 8
+        orbit_distance = 13
+        orbit_angle = 358
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 d"
+        size = 22
+        orbit_distance = 15
+        orbit_angle = 190
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-62 e"
+        size = 18
+        orbit_distance = 35
+        orbit_angle = 349
+        has_ring = no
+        class = rl_habitable_normal
+    }
+    planet = {
+        name = "Kepler-62 f"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 309
+        has_ring = no
+        class = "pc_toxic"
+    }
+}
+
+### Kepler-80 System
+Kepler_80_system_initializer = {
+    name = "Kepler-80"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+    planet = {
+        name = "Kepler-80"
+        class = "pc_k_star"
+        size = 22
+        orbit_distance = 0
+        orbit_angle = 4
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-80 f"
+        size = 17
+        orbit_distance = 20
+        orbit_angle = 230
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-80 d"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 193
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-80 e"
+        size = 21
+        orbit_distance = 20
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-80 b"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 259
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-80 c"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 245
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+	change_orbit = 120
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-84 System
+Kepler-84_system_initializer = {
+    name = "Kepler-84"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+    planet = {
+        name = "Kepler-84"
+        class = "pc_g_star"
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 40
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-84 d"
+        size = 18
+        orbit_distance = 20
+        orbit_angle = 315
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-84 b"
+        size = 24
+        orbit_distance = 15
+        orbit_angle = 156
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-84 c"
+        size = 26
+        orbit_distance = 15
+        orbit_angle = 163
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-84 e"
+        size = 25
+        orbit_distance = 30
+        orbit_angle = 343
+        has_ring = no
+        class = random
+    }
+    planet = {
+        name = "Kepler-84 f"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 94
+        has_ring = no
+        class = random
+    }
+
+	change_orbit = 115
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-102 System
+Kepler_102_system_initializer = {
+    name = "Kepler-102"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+    planet = {
+        name = "Kepler-102"
+        class = star
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 71
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-102 b"
+        size = 10
+        orbit_distance = 20
+        orbit_angle = 291
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-102 c"
+        size = 11
+        orbit_distance = 15
+        orbit_angle = 212
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-102 d"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = 196
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-102 e"
+        size = 25
+        orbit_distance = 25
+        orbit_angle = 233
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-102 f"
+        size = 14
+        orbit_distance = 40
+        orbit_angle = 79
+        has_ring = no
+        class = "pc_barren"
+    }
+	change_orbit = 100
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-122 System
+Kepler_122_system_initializer = {
+    name = "Kepler-122"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+    planet = {
+        name = "Kepler-122"
+        class = star
+        size = 30
+        orbit_distance = 0
+        orbit_angle = 2
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-122 b"
+        size = 23
+        orbit_distance = 22
+        orbit_angle = 251
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-122 c"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 290
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "Kepler-122 d"
+        size = 22
+        orbit_distance = 22
+        orbit_angle = 122
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-122 e"
+        size = 24
+        orbit_distance = 23
+        orbit_angle = 55
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-122 f"
+        size = 17
+        orbit_distance = 25
+        orbit_angle = 344
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 108
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-154 System
+Kepler_154_system_initializer = {
+    name = "Kepler-154"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 222
+	}
+    planet = {
+        name = "Kepler-154"
+        class = star
+        size = 30
+        orbit_distance = 0
+        orbit_angle = 121
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-154 e"
+        size = 20
+        orbit_distance = 20
+        orbit_angle = 33
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-154 f"
+        size = 19
+        orbit_distance = 25
+        orbit_angle = 34
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-154 d"
+        size = 26
+        orbit_distance = 15
+        orbit_angle = 305
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-154 b"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 217
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-154 c"
+        size = 22
+        orbit_distance = 25
+        orbit_angle = 290
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+	change_orbit = 117
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-169 System
+Kepler_169_system_initializer = {
+    name = "Kepler-169"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+
+    planet = {
+        name = "Kepler-169"
+        class = "pc_k_star"
+        size = 22
+        orbit_distance = 0
+        orbit_angle = 262
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-169 b"
+        size = 16
+        orbit_distance = 20
+        orbit_angle = 136
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-169 c"
+        size = 17
+        orbit_distance = 25
+        orbit_angle = 350
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-169 d"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 198
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-169 e"
+        size = 22
+        orbit_distance = 30
+        orbit_angle = 193
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-169 f"
+        size = 26
+        orbit_distance = 50
+        orbit_angle = 298
+        has_ring = no
+        class = "pc_toxic"
+    }
+}
+
+### Kepler-186 System
+Kepler_186_system_initializer = {
+    name = "Kepler-186"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "Kepler-186"
+        class = "pc_m_star"
+        size = 25
+        orbit_distance = 0
+        orbit_angle = 222
+        has_ring = no
+    }
+
+    planet = {
+        name = "Kepler-186 c"
+        size = 17
+        orbit_distance = 20
+        orbit_angle = 310
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-186 d"
+        size = 20
+        orbit_distance = 15
+        orbit_angle = 207
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-186 b"
+        size = 16
+        orbit_distance = 15
+        orbit_angle = 253
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-186 e"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 16
+        has_ring = no
+        class = rl_habitable_normal
+    }
+    planet = {
+        name = "Kepler-186 f"
+        size = 17
+        orbit_distance = 40
+        orbit_angle = 82
+        has_ring = no
+        class = "pc_frozen"
+    }
+}
+
+### Kepler-238 System
+Kepler_238_system_initializer = {
+    name = "Kepler-238"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-238"
+        class = "pc_g_star"
+        size = 32
+        orbit_distance = 0
+        orbit_angle = 131
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-238 b"
+        size = 20
+        orbit_distance = 25
+        orbit_angle = 337
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-238 c"
+        size = 24
+        orbit_distance = 20
+        orbit_angle = 96
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-238 d"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 75
+        has_ring = no
+        class = "pc_toxic"
+    }
+
+    planet = {
+        name = "Kepler-238 e"
+        size = 32
+        orbit_distance = 20
+        orbit_angle = 133
+        class = "pc_gas_giant"
+    }
+    planet = {
+        name = "Kepler-238 f"
+        size = 26
+        orbit_distance = 25
+        orbit_angle = 233
+        has_ring = no
+        class = "pc_toxic"
+    }
+}
+
+### Kepler-292 System
+Kepler_292_system_initializer = {
+    name = "Kepler-292"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+    planet = {
+        name = "Kepler-292"
+        class = "pc_g_star"
+        size = 28
+        orbit_distance = 0
+        orbit_angle = 219
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-292 b"
+        size = 18
+        orbit_distance = 25
+        orbit_angle = 356
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "Kepler-292 c"
+        size = 21
+        orbit_distance = 15
+        orbit_angle = 136
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-292 d"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 262
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-292 e"
+        size = 28
+        orbit_distance = 20
+        orbit_angle = 58
+        has_ring = no
+        class = "pc_toxic"
+    }
+    planet = {
+        name = "Kepler-292 f"
+        size = 26
+        orbit_distance = 30
+        orbit_angle = 61
+        has_ring = no
+        class = "pc_toxic"
+    }
+	change_orbit = 110
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Kepler-296 System
+Kepler_296_system_initializer = {
+	name = "Kepler-296"
+	class = "sc_m"
+	usage = misc_system_init
+	usage_odds = 100
+	max_instances = 1
+
+	planet = {
+		name = "Kepler-296 A"
+		class = "pc_m_star"
+		size = 20
+		orbit_distance = 0
+		orbit_angle = 45
+		has_ring = no
+	}
+	planet = {
+		name = "Kepler-296 c"
+		size = 22
+		orbit_distance = 20
+		orbit_angle = 200
+		has_ring = no
+		class = "pc_toxic"
+	}
+	planet = {
+		name = "Kepler-296 b"
+		size = 20
+		orbit_distance = 15
+		orbit_angle = 303
+		has_ring = no
+		class = "pc_barren"
+	}
+	planet = {
+	        name = "Kepler-296 d"
+	       	size = 24
+	        orbit_distance = 15
+	       	orbit_angle = 246
+	        has_ring = no
+	        class = "pc_barren"
+	}
+	planet = {
+	        name = "Kepler-296 e"
+	        size = 18
+	        orbit_distance = 20
+	        orbit_angle = 82
+	        has_ring = no
+	        class = rl_habitable_normal
+	}
+	planet = {
+	        name = "Kepler-296 f"
+	        size = 21
+	        orbit_distance = 20
+		orbit_angle = 279
+	        has_ring = no
+	        class = random
+	}
+
+	planet = {
+		name = "Kepler-296 B"
+	        class = "pc_m_star"
+	        size = 10
+	        orbit_distance = 180
+	        orbit_angle = 225
+	        has_ring = no
+	}
+}
+
+### Kepler-444 System
+Kepler_444_system_initializer = {
+    name = "Kepler-444"
+    class = "sc_k"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+    planet = {
+        name = "Kepler-444 A"
+        class = "pc_k_star"
+        size = 26
+        orbit_distance = 0
+        orbit_angle = 202
+        has_ring = no
+    }
+    planet = {
+        name = "Kepler-444 b"
+        size = 6
+        orbit_distance = 30
+        orbit_angle = 94
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 c"
+        size = 7
+        orbit_distance = 10
+        orbit_angle = 210
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 d"
+        size = 8
+        orbit_distance = 12
+        orbit_angle = 323
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 e"
+        size = 8
+        orbit_distance = 12
+        orbit_angle = 143
+        has_ring = no
+        class = "pc_molten"
+    }
+    planet = {
+        name = "Kepler-444 f"
+        size = 11
+        orbit_distance = 17
+        orbit_angle = 78
+        has_ring = no
+        class = random
+    }
+    planet = {
+	orbit_distance = 100
+	name = "Kepler-444 B"
+	class = "pc_m_star"
+	size = 10
+	has_ring = no
+	
+        moon = {
+                name = "Kepler-444 C"
+                class = "pc_m_star"
+                size = 10
+                orbit_distance = 10
+                orbit_angle = 180
+                has_ring = no
+        }
+    }
+}
+
+### Kobol System
+kobol_initializer = {	
+	name = "NAME_Kobol"
+	class = sc_trinary_1
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 190
+	}
+	
+	planet = {
+		name = "NAME_Kobol_A"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 30
+		has_ring = no
+		
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	
+		planet = {
+			name = "NAME_Kobol_B"
+			class = "pc_k_star"
+			orbit_distance = 25
+			orbit_angle = 210
+			size = 25
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 10
+		has_ring = no
+		entity = "molten_planet_04_entity"
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 26
+		has_ring = no
+		entity = "gas_giant_03_entity"
+		
+		moon = {
+			class = "pc_arid"
+			size = 16
+			orbit_distance = 15
+			orbit_angle = 60
+			has_ring = no
+			entity = "arid_planet_01_entity"
+		}
+		moon = {
+			class = "pc_savannah"
+			size = 18
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "savannah_planet_04_entity"
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 180
+		size = 26
+		has_ring = no
+		entity = "gas_giant_04_entity"
+		
+		moon = {
+			class = "pc_ocean"
+			size = 19
+			orbit_distance = 20
+			orbit_angle = 90
+			has_ring = no
+			entity = "ocean_planet_01_entity"
+		}
+		moon = {
+			class = "pc_continental"
+			size = 18
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "continental_planet_01_entity"
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 90
+		size = 24
+		has_ring = yes
+		entity = "gas_giant_03_entity"
+		
+		moon = {
+			class = "pc_alpine"
+			size = 16
+			orbit_distance = 15
+			orbit_angle = 120
+			has_ring = no
+			entity = "alpine_planet_03_entity"
+		}
+		moon = {
+			class = "pc_tundra"
+			size = 18
+			orbit_distance = 5
+			orbit_angle = 180
+			has_ring = no
+			entity = "tundra_planet_04_entity"
+		}
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 10
+		orbit_angle = 280
+		size = 13
+		has_ring = yes
+		entity = "frozen_planet_02_entity"
+	}
+	
+	planet = {
+		name = "NAME_Kobol_C"
+		class = "pc_m_star"
+		orbit_distance = 75
+		orbit_angle = 180
+		size = 25
+		has_ring = no
+	
+		planet = {
+			name = "NAME_Kobol_C_one"
+			class = "pc_barren"
+			orbit_distance = 20
+			orbit_angle = 135
+			size = 8
+			has_ring = no
+			entity = "barren_planet_02_entity"
+		}
+	
+		planet = {
+			name = "NAME_Kobol_C_two"
+			class = "pc_desert"
+			orbit_distance = 15
+			orbit_angle = 2
+			size = 18
+			has_ring = no
+			entity = "desert_planet_02_entity"
+		}
+	
+		planet = {
+			name = "NAME_Kobol_C_three"
+			class = "pc_tropical"
+			orbit_distance = 15
+			orbit_angle = -4
+			size = 19
+			has_ring = no
+			entity = "tropical_planet_02_entity"
+		}
+	
+		planet = {
+			name = "NAME_Kobol_C_four"
+			class = "pc_frozen"
+			orbit_distance = 20
+			orbit_angle = 4
+			size = 12
+			has_ring = no
+			entity = "frozen_planet_02_entity"
+		}
+	}
+}
+
+### Lich System
+lich_system_initializer = {
+    name = "NAME_Lich"
+    class = "sc_pulsar"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+
+    planet = {
+        name = "NAME_Lich"
+        class = "pc_pulsar"
+        size = 10
+        orbit_distance = 0
+        orbit_angle = 180
+        has_ring = no
+    }
+
+    planet = {
+        name = "NAME_Draugr"
+        size = 10
+        orbit_distance = 25
+        orbit_angle = 120
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "NAME_Poltergeist"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 200
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "NAME_Phobetor"
+        size = 25
+        orbit_distance = 20
+        orbit_angle = 95
+        has_ring = no
+        class = "pc_barren"
+    }
+
+	change_orbit = 150
+    
+	planet = {
+		count = { min = 1 max = 3}
+		size = { min = 1 max = 5 }
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = random
+	}
+}
+
+### Mu Arae System
+mu_Arae_system_initializer = {
+    name = "NAME_Mu_Arae"
+    class = "sc_g"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+
+    planet = {
+        name = "NAME_Mu_Arae"
+        class = "pc_g_star"
+        size = 31
+        orbit_distance = 0
+        orbit_angle = 208
+        has_ring = no
+    }
+
+    planet = {
+        name = "NAME_Dulcinea"
+        size = 20
+        orbit_distance = 30
+        orbit_angle = 269
+        has_ring = no
+        class = "pc_molten"
+    }
+
+    planet = {
+        name = "NAME_Rocinante"
+        size = 28
+        orbit_distance = 40
+        orbit_angle = 20
+        has_ring = no
+        class = "pc_gas_giant"
+        change_orbit = 10
+        moon = {
+			name = "NAME_Rocinante_a"
+			size = 4
+            orbit_distance = 3
+        }
+        moon = {
+			name = "NAME_Rocinante_b"
+			size = 3
+            orbit_distance = 5
+        }
+    }
+
+    planet = {
+        name = "NAME_Quijote"
+        size = 32
+        orbit_distance = 25
+        orbit_angle = 195
+        has_ring = no
+        class = "pc_gas_giant"
+        change_orbit = 10
+
+        moon = {
+            size = { min = 3 max = 7 }
+            orbit_distance = 3
+            name = "NAME_Quijote_a"
+            class = "pc_barren_cold"
+        }
+        moon = {
+            size = { min = 10 max = 14 }
+            orbit_distance = { min = 3 max = 5 }
+            name = "NAME_Quijote_b"
+        }
+        moon = {
+            size = { min = 10 max = 12 }
+            orbit_distance = { min = 5 max = 7 }
+            name = "NAME_Quijote_c"
+        }
+    }
+
+    planet = {
+        name = "NAME_Sancho"
+        size = 33
+        orbit_distance = 100
+        orbit_angle = 210
+        class = "pc_gas_giant"
+    }
+}
+
+### Mu Cephei System
+mu_cephei_initializer = {
+	name = "NAME_Mu_Cephei"
+	class = sc_m_giant
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 120
+	}
+	
+	planet = {
+		name = "NAME_Mu_Cephei"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 100
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = 60
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 70
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 180
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 20
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 60
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+}
+
+### Rigel System
+rigel_initializer = {	
+	name = "Rigel"
+	class = sc_trinary_2
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 200
+	}
+
+	planet = {
+		name = "Rigel A"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 70
+		has_ring = no
+	
+		planet = {
+			name = "Rigel B"
+			class = "pc_a_star"
+			orbit_distance = 80
+			orbit_angle = 45
+			size = 15
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		name = "Rigel A I"
+		class = "pc_molten"
+		orbit_distance = 100
+		orbit_angle = 120
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel A II"
+		class = "pc_desert"
+		orbit_distance = 30
+		orbit_angle = 120
+		size = 18
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel A III"
+		class = "pc_toxic"
+		orbit_distance = 40
+		orbit_angle = 170
+		size = 16
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 30
+		orbit_angle = 90
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Rigel C"
+		class = "pc_a_star"
+		orbit_distance = 80
+		orbit_angle = 45
+		size = 15
+		has_ring = no
+	}
+}
+
+### Upsilon Andromedae System
+upsilon_andromedae_system_initializer = {
+    name = "NAME_Upsilon_Andromedae"
+    class = "sc_f"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "NAME_Upsilon_Andromedae_A"
+        class = "pc_f_star"
+        size = 32
+        orbit_distance = 0
+        has_ring = no
+    }
+
+    planet = {
+        name = "NAME_Saffar"
+        size = 23
+        orbit_distance = 25
+        orbit_angle = 306
+        has_ring = no
+        class = "pc_gas_giant"
+    }
+    
+    planet = {
+        name = "NAME_Samh"
+        size = 30
+        orbit_distance = 35
+        orbit_angle = 56
+        has_ring = no
+        class = "pc_gas_giant"
+        change_orbit = 8
+        moon = {
+            orbit_distance = { min = 2 max = 3 }
+            class = "pc_molten"
+        }
+        moon = {
+            size = { min = 10 max = 12 }
+            orbit_distance = 5
+        }
+        moon = {
+            size = { min = 10 max = 12 }
+            orbit_distance = 5
+        }
+        moon = {
+            size = { min = 4 max = 8 }
+            orbit_distance = { min = 3 max = 5 }
+            class = "pc_toxic"
+        }
+    }
+
+    planet = {
+        name = "NAME_Majriti"
+        size = 33
+        orbit_distance = 35
+        orbit_angle = 245
+        has_ring = no
+        class = "pc_gas_giant"
+        change_orbit = 10
+        moon = {
+            size = { min = 4 max = 6 }
+            orbit_distance = { min = 3 max = 4 }
+            class = "pc_barren_cold"
+        }
+        moon = {
+            size = { min = 10 max = 16 }
+            orbit_distance = { min = 5 max = 6 }
+        }
+        moon = {
+            size = { min = 4 max = 8 }
+            orbit_distance = { min = 3 max = 6 }
+            class = "pc_frozen"
+        }
+    }
+
+    planet = {
+        name = "NAME_Upsilon_Andromedae_A_e"
+        size = 26
+        orbit_distance = 60
+        orbit_angle = 28
+        class = "pc_gas_giant"
+    }
+
+    planet = {
+        name = "NAME_Upsilon_Andromedae_B"
+        class = "pc_m_star"
+        size = 20
+        orbit_distance = 200
+        orbit_angle = 66
+        has_ring = no
+    }
+}
+
+### Vega System
+vega_initializer = {	
+	name = "NAME_Vega"
+	class = sc_a
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 90
+	}
+
+	planet = {
+		name = "NAME_Vega"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_broken"
+		orbit_distance = 40
+		orbit_angle = 60
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = 45
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -95
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 180
+		size = 30
+		has_ring = no
+		
+		moon = {
+			class = "pc_arid"
+			size = 12
+			orbit_distance = 18
+			orbit_angle = 120
+			has_ring = no
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "low_gravity"
+					days = -1
+				}
+			}
+		}
+		moon = {
+			class = "pc_continental"
+			orbit_distance = 5
+			orbit_angle = 180
+			size = 20
+			starting_planet = yes
+			has_ring = no
+		
+			init_effect = {
+				add_modifier = {
+					modifier = "lush_planet"
+					days = -1
+				}
+			}
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 40
+		orbit_angle = 105
+		size = 30
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 8
+			orbit_distance = 20
+			orbit_angle = 120
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 200
+		size = 9
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 40
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+}
+
+### Vy Canis Majoris System
+vy_canis_majoris_initializer = {
+	name = "NAME_VY_Canis_Majoris"
+	class = sc_m_giant
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+	
+	planet = {
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 110
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 70
+		orbit_angle = 175
+		size = 8
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 60
+		size = 12
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 90
+		size = 10
+		has_ring = no
+	}
+}
+
+### Wolf 1061 System
+wolf_1061_system_initializer = {
+    name = "NAME_Wolf_1061"
+    class = "sc_m"
+    usage = misc_system_init
+    usage_odds = 100
+    max_instances = 1
+
+    planet = {
+        name = "NAME_Wolf_1061"
+        class = "pc_m_star"
+        size = 15
+        orbit_distance = 0
+        orbit_angle = 112
+        has_ring = no
+    }
+
+    change_orbit = 25
+
+    planet = {
+        name = "NAME_Wolf_1061_b"
+        size = 18
+        orbit_distance = 15
+        orbit_angle = 243
+        has_ring = no
+        class = pc_molten
+    }
+
+    planet = {
+        name = "NAME_Wolf_1061_c"
+        size = 22
+        orbit_distance = 20
+        orbit_angle = 344
+        has_ring = no
+    }
+
+    planet = {
+        name = "NAME_Wolf_1061_d"
+        size = 25
+        orbit_distance = 45
+        orbit_angle = 142
+        has_ring = no
+    }
+}
+

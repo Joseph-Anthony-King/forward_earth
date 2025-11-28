@@ -1,0 +1,187 @@
+@distance = 50
+@base_moon_distance = 10
+@jumps = 3
+
+### Terminus System
+terminus_initializer = {
+	name = "NAME_Terminus"
+	class = "sc_k"
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 100
+	}
+
+	planet = {
+		name ="NAME_Terminus"
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ocean"
+		orbit_distance = 60
+		orbit_angle = 85
+		size = 19
+		has_ring = yes
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 40
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
+
+### Trantor System
+trantor_initializer = {
+	name = "NAME_Trantor"
+	class = "sc_k"
+
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 175
+	}
+
+	planet = {
+		name = "NAME_Trantor"
+		class = pc_k_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = 70
+		size = 10
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_tundra"
+		orbit_distance = 25
+		orbit_angle = 85
+		size = 24
+		has_ring = no
+		
+		moon = {
+			class = "pc_barren"
+			size = 10
+			orbit_distance = 15
+			orbit_angle = 135
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = no
+		
+		moon = {
+			class = "pc_molten"
+			size = 9
+			orbit_distance = 13
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_arctic"
+			size = 15
+			orbit_distance = 10
+			orbit_angle = 135
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 30
+		orbit_angle = 200
+		size = 25
+		has_ring = yes
+		
+		moon = {
+			class = "pc_frozen"
+			size = 11
+			orbit_distance = 15
+			orbit_angle = 70
+			has_ring = no
+		}
+		
+		moon = {
+			class = "pc_frozen"
+			size = 9
+			orbit_distance = 8
+			orbit_angle = 135
+			has_ring = no
+		}
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 55
+		orbit_angle = -210
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 135
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = 285
+		size = 5
+		has_ring = no
+	}
+	
+	planet = {
+		class = "pc_ice_asteroid"
+		orbit_distance = 0
+		orbit_angle = -80
+		size = 5
+		has_ring = no
+	}
+}
