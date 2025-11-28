@@ -113,8 +113,8 @@ humans2 = {
 
 	planet_name = "NAME_Aurora"
 	planet_class = "pc_continental"
-	initializer = "deneb_system"
-	system_name = "NAME_Deneb"
+	initializer = "eta_cassiopeiae_system_initializer"
+	system_name = "NAME_Eta_Cassiopeiae"
 
 	graphical_culture = "mammalian_01"
 	city_graphical_culture = "mammalian_01"
