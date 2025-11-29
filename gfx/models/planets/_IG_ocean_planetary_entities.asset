@@ -1,0 +1,367 @@
+###########################
+# New ocean planets
+###########################
+# ocean 04 to 15
+# Diffuse: 2k | Normal: 2k | Specular: 2k
+# Last version : .180609
+###########################
+# ocean Planet 04
+entity = {
+	name = "ocean_planet_04_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_04_2k_diffuse.dds"
+		texture_normal = "ig_ocean_04_2k_normal.dds"
+		texture_specular = "ig_ocean_04_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_02_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 05
+entity = {
+	name = "ocean_planet_05_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_05_2k_diffuse.dds"
+		texture_normal = "ig_ocean_05_2k_normal.dds"
+		texture_specular = "ig_ocean_05_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_03_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_03_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 06
+entity = {
+	name = "ocean_planet_06_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_06_2k_diffuse.dds"
+		texture_normal = "ig_ocean_06_2k_normal.dds"
+		texture_specular = "ig_ocean_06_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 07
+entity = {
+	name = "ocean_planet_07_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_07_2k_diffuse.dds"
+		texture_normal = "ig_ocean_07_2k_normal.dds"
+		texture_specular = "ig_ocean_07_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 08
+entity = {
+	name = "ocean_planet_08_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_08_2k_diffuse.dds"
+		texture_normal = "ig_ocean_08_2k_normal.dds"
+		texture_specular = "ig_ocean_08_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_07_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_07_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_07_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 09
+entity = {
+	name = "ocean_planet_09_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_09_2k_diffuse.dds"
+		texture_normal = "ig_ocean_09_2k_normal.dds"
+		texture_specular = "ig_ocean_09_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 10
+entity = {
+	name = "ocean_planet_10_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_10_2k_diffuse.dds"
+		texture_normal = "ig_ocean_10_2k_normal.dds"
+		texture_specular = "ig_ocean_10_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_02_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_02_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 11
+entity = {
+	name = "ocean_planet_11_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_11_2k_diffuse.dds"
+		texture_normal = "ig_ocean_11_2k_normal.dds"
+		texture_specular = "ig_ocean_11_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_04_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_04_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 12
+entity = {
+	name = "ocean_planet_12_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_12_2k_diffuse.dds"
+		texture_normal = "ig_ocean_12_2k_normal.dds"
+		texture_specular = "ig_ocean_12_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 13
+entity = {
+	name = "ocean_planet_13_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_13_2k_diffuse.dds"
+		texture_normal = "ig_ocean_13_2k_normal.dds"
+		texture_specular = "ig_ocean_13_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 14
+entity = {
+	name = "ocean_planet_14_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_14_2k_diffuse.dds"
+		texture_normal = "ig_ocean_14_2k_normal.dds"
+		texture_specular = "ig_ocean_14_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_thin_05_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_thin_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}
+# ocean Planet 15
+entity = {
+	name = "ocean_planet_15_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_ocean_15_2k_diffuse.dds"
+		texture_normal = "ig_ocean_15_2k_normal.dds"
+		texture_specular = "ig_ocean_15_2k_specular.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_medium_01_4k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_medium_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_planet_class_02" } }
+	}
+}

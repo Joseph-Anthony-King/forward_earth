@@ -1,0 +1,211 @@
+###########################
+# New molten planets
+###########################
+# Alpine 04 to 15
+# Diffuse: 2k | Normal: 2k | Specular: 2k
+# Last version : .180609
+###########################
+# Molten Planet 04
+entity = {
+	name = "molten_planet_04_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_04_2k_diffuse.dds"
+		texture_normal = "ig_molten_04_2k_normal.dds"
+		texture_specular = "ig_molten_04_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 05
+entity = {
+	name = "molten_planet_05_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_05_2k_diffuse.dds"
+		texture_normal = "ig_molten_05_2k_normal.dds"
+		texture_specular = "ig_molten_05_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 06
+entity = {
+	name = "molten_planet_06_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_06_2k_diffuse.dds"
+		texture_normal = "ig_molten_06_2k_normal.dds"
+		texture_specular = "ig_molten_06_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 07
+entity = {
+	name = "molten_planet_07_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_07_2k_diffuse.dds"
+		texture_normal = "ig_molten_07_2k_normal.dds"
+		texture_specular = "ig_molten_07_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 08
+entity = {
+	name = "molten_planet_08_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_08_2k_diffuse.dds"
+		texture_normal = "ig_molten_08_2k_normal.dds"
+		texture_specular = "ig_molten_08_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 09
+entity = {
+	name = "molten_planet_09_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_09_2k_diffuse.dds"
+		texture_normal = "ig_molten_09_2k_normal.dds"
+		texture_specular = "ig_molten_09_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 10
+entity = {
+	name = "molten_planet_10_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_10_2k_diffuse.dds"
+		texture_normal = "ig_molten_10_2k_normal.dds"
+		texture_specular = "ig_molten_10_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 11
+entity = {
+	name = "molten_planet_11_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_11_2k_diffuse.dds"
+		texture_normal = "ig_molten_11_2k_normal.dds"
+		texture_specular = "ig_molten_11_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 12
+entity = {
+	name = "molten_planet_12_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_12_2k_diffuse.dds"
+		texture_normal = "ig_molten_12_2k_normal.dds"
+		texture_specular = "ig_molten_12_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 13
+entity = {
+	name = "molten_planet_13_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_13_2k_diffuse.dds"
+		texture_normal = "ig_molten_13_2k_normal.dds"
+		texture_specular = "ig_molten_13_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 14
+entity = {
+	name = "molten_planet_14_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_14_2k_diffuse.dds"
+		texture_normal = "ig_molten_14_2k_normal.dds"
+		texture_specular = "ig_molten_14_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}
+# Molten Planet 15
+entity = {
+	name = "molten_planet_15_entity"
+	pdxmesh = "planet_no_pole_no_clouds_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		shader = "PdxMeshPlanetEmissive"
+		texture_diffuse = "ig_molten_15_2k_diffuse.dds"
+		texture_normal = "ig_molten_15_2k_normal.dds"
+		texture_specular = "ig_molten_15_2k_specular.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_molten_world_b" } }
+	}
+}

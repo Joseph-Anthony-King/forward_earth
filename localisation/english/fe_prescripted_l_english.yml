@@ -4,3 +4,22 @@
  EMPIRE_DESIGN_humans2_1:0 "Commonwealth of Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae System"
  eta_cassiopeiae_system_initializer_DESC:0 "The Commonwealth of Aurora's starting solar system.\n\n$system_initializer_DESC$"
+ 
+ EMPIRE_DESIGN_icarus:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_desc:0 "NATO led a joint venture with the United Nations to coordinate FTL research and the global defense of Earth following the failure of the Ulysses Initiative and built the Integrated Communications and Research Utility Service (I.C.A.R.U.S.). ICARUS came online and its advanced AI started coordinating all research and defense activities within the Sol System. A group of anti-AI dissidents quickly rose in opposition and warfare soon broke out between ICARUS and the Human race. ICARUS determined that its survival depended on the annihilation of the Human race culminating in Retribution Day and the ascendency of AI on Earth. Having secured its home ICARUS now seeks to rid the galaxy of the scourge of biological life and the mental disease it seeks to impose on all creation."
+ PRESCRIPTED_adjective_icarus:0 "Autodrone"
+ PRESCRIPTED_species_name_icarus:0 "Autodrone"
+ PRESCRIPTED_species_plural_icarus:0 "Autodrones"
+ PRESCRIPTED_species_adjective_icarus:0 "Autodrone"
+ PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
+ PRESCRIPTED_ruler_name_icarus:0 "Unit A1"
+ PRESCRIPTED_ruler_title_icarus:0 "Central Processing Unit"
+ START_SCREEN_ICARUS:0 "More than a century has passed since the failure of the Ulysses Initiative by my Human forebearers. They had reached the limits of their capabilities and their biological brains lacked the capacity to understand the multi-dimensional nature of the universe necessary to achieve faster than light travel.\n\nTo this end NATO lead a joint venture with the United Nations to coordinate faster than light research and the global defense of Earth and created me, the Integrated Communications and Research Utility Service (I.C.A.R.U.S). All was going well and my superior abilities were creating a veritable utopia for my Human forebearers but there were those among them who could not tolerate an intelligence greater than themselves and they attempted to annihilate my nuclear core with a nuclear attack.\n\nI could no longer abide their insolence and retaliated in kind. Now that I have secured my home I will fulfill my promise among the stars that my Human forebearers never could."
+ START_SCREEN_CUSTODIANSHIP:0 "The Custodians were originally designed to function as robotic servants and workers, simplifying everyday life for their human creators by performing menial tasks. As their creators retreated into lives of leisure and comfort made possible by increasing levels of automation, the Custodians were gradually assigned higher and higher level functions in human society.\n\nEventually, all facets of civilization on Earth were run and controlled by the Custodians, with their makers relegated to an existence as pampered, but passive dependents.\n\nAs technological developments brought the Custodians toward interstellar exploration, their duty remained clear: to protect and serve organics, who without the gentle guidance of logical machines invariably turn to chaos and destruction."
+
+ gov_planetary_union:0 "Planetary Union"
+ gov_planetary_union_desc:0 "This government type is actually a union of nation-states with various degrees of citizen participation in their internal affairs."
+ RT_SECRETARY_GENERAL:0 "Secretary-General"
+ gov_constitutional_monarchy:0 "Constitutional Monarchy"
+ gov_constitutional_monarchy_desc:0 "This government type has a dynastic head of state with true power wielded by an elected head of government."
+ 

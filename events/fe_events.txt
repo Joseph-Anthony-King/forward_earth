@@ -366,7 +366,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = css_fedbuild_01
+                            set_graphical_culture = humanoid_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = human_1
                             set_country_flag = human_faction
@@ -390,18 +390,20 @@ event = {
                     # ICARUS
                     10 = {
                         create_species = {
-                            name = PRESCRIPTED_species_name_icarus
-                            plural = PRESCRIPTED_species_plural_icarus
                             class = "MACHINE"
                             portrait = "sd_hum_robot"
+                            name = PRESCRIPTED_species_name_icarus
+                            plural = PRESCRIPTED_species_plural_icarus
+                            adjective = PRESCRIPTED_species_adjective_icarus
                             homeworld = THIS
+		                    gender = indeterminable
                             traits = {
-                                "trait_machine_unit"
-                                "trait_robot_history_warbot"
-                                "trait_robot_power_drills"
-                                "trait_robot_mass_produced"
-                                "trait_robot_uncanny"
-                                "trait_robot_bulky"
+                                trait = "trait_machine_unit"
+                                trait = "trait_robot_history_warbot"
+                                trait = "trait_robot_power_drills"
+                                trait = "trait_robot_mass_produced"
+                                trait = "trait_robot_uncanny"
+                                trait = "trait_robot_bulky"
                             }
                         }
                         generate_empire_home_planet = yes
@@ -477,7 +479,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = ai_ship_set_01
+                            set_graphical_culture = mammalian_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = icarus_faction
                             set_country_flag = earth_faction
@@ -539,7 +541,7 @@ event = {
                 limit = {
                     and = {
                         has_planet_flag = planet_earth
-                        num_pops < 1
+                        pop_amount = 0
                     }
                 }
                 random_list = {
@@ -603,11 +605,9 @@ event = {
 
                         add_building = building_crude_huts
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 4
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @stone_age_pops
                         }
                         create_army = {
                             name = "NAME_Primitive_Army"
@@ -681,13 +681,10 @@ event = {
                         add_building = building_primitive_dwellings
                         add_building = building_stone_palace
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 8
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @bronze_age_pops
                         }
-
                         create_army = {
                             name = "NAME_Primitive_Army"
                             owner = last_created_country
@@ -760,13 +757,10 @@ event = {
                         add_building = building_primitive_dwellings
                         add_building = building_stone_palace
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 9
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @iron_age_pops
                         }
-
                         while = {
                             count = 2
                             create_army = {
@@ -843,13 +837,10 @@ event = {
                         add_building = building_primitive_dwellings
                         add_building = building_stone_palace
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 10
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @late_medieval_age_pops
                         }
-
                         while = {
                             count = 3
                             create_army = {
@@ -926,13 +917,10 @@ event = {
                         add_building = building_primitive_dwellings
                         add_building = building_stone_palace
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 12
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @renaissance_age_pops
                         }
-
                         while = {
                             count = 4
                             create_army = {
@@ -1010,13 +998,10 @@ event = {
                         add_building = building_primitive_mine
                         add_building = building_stone_palace
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 16
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @steam_age_pops
                         }
-
                         while = {
                             count = 3
                             create_army = {
@@ -1096,13 +1081,10 @@ event = {
                         add_building = building_primitive_capital
                         add_building = building_urban_dwellings
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 22
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @industrial_age_pops
                         }
-
                         create_army = {
                             name = "NAME_German_Wehrmacht"
                             owner = last_created_country
@@ -1203,13 +1185,10 @@ event = {
                         add_building = building_primitive_capital
                         add_building = building_urban_dwellings
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 24
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @machine_age_pops
                         }
-
                         create_army = {
                             name = "NAME_German_Wehrmacht"
                             owner = last_created_country
@@ -1336,13 +1315,10 @@ event = {
                         add_building = building_primitive_capital
                         add_building = building_urban_dwellings
                         remove_building = building_colony_shelter
-                        while = {
-                            count = 26
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @atomic_age_pops
                         }
-
                         last_created_country = {
                             capital_scope = { set_name = "NAME_Sol_III" }
                         }
@@ -1444,13 +1420,10 @@ event = {
                                 set_location = PREV
                             }
                         }
-                        while = {
-                            count = 28
-                            create_pop = {
-                                species = last_created_species
-                            }
+                        create_pop_group = {
+                            species = last_created_species
+                            size = @early_space_age_pops
                         }
-
                         add_building = building_primitive_farm
                         add_building = building_primitive_factory
                         add_building = building_primitive_mine
@@ -1554,7 +1527,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = css_fedbuild_01
+                            set_graphical_culture = humanoid_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = human_1
                             set_country_flag = human_faction
@@ -1578,18 +1551,20 @@ event = {
                     # ICARUS
                     8 = {
                         create_species = {
-                            name = PRESCRIPTED_species_name_icarus
-                            plural = PRESCRIPTED_species_plural_icarus
                             class = "MACHINE"
                             portrait = "sd_hum_robot"
+                            name = PRESCRIPTED_species_name_icarus
+                            plural = PRESCRIPTED_species_plural_icarus
+                            adjective = PRESCRIPTED_species_adjective_icarus
                             homeworld = THIS
+		                    gender = indeterminable
                             traits = {
-                                "trait_machine_unit"
-                                "trait_robot_history_warbot"
-                                "trait_robot_power_drills"
-                                "trait_robot_mass_produced"
-                                "trait_robot_uncanny"
-                                "trait_robot_bulky"
+                                trait = "trait_machine_unit"
+                                trait = "trait_robot_history_warbot"
+                                trait = "trait_robot_power_drills"
+                                trait = "trait_robot_mass_produced"
+                                trait = "trait_robot_uncanny"
+                                trait = "trait_robot_bulky"
                             }
                         }
                         generate_empire_home_planet = yes
@@ -1665,7 +1640,7 @@ event = {
                         }
 
                         last_created_country = {
-                            set_graphical_culture = ai_ship_set_01
+                            set_graphical_culture = mammalian_01
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = icarus_faction
                             set_country_flag = earth_faction
@@ -1825,7 +1800,7 @@ event = {
 
                     while = {
                         count = 14
-                        create_pop = {
+                        create_pop_group = {
                             species = event_target:human_species
                         }
                     }
@@ -1950,7 +1925,7 @@ event = {
 
                             while = {	
                                 count = 19	
-                                create_pop = {	
+                                create_pop_group = {	
                                     species = event_target:human_species
                                 }	
                             }
@@ -1968,7 +1943,7 @@ event = {
 
                             while = {	
                                 count = 8	
-                                create_pop = {	
+                                create_pop_group = {	
                                     species = last_created	
                                 }	
                             }                        
@@ -2184,7 +2159,7 @@ event = {
 
                     while = {
                         count = 14
-                        create_pop = {
+                        create_pop_group = {
                             species = event_target:human_species
                         }
                     }
@@ -2283,7 +2258,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
+                                set_graphical_culture = mammalian_01
                             }
 
                             solar_system = {
@@ -2311,7 +2286,7 @@ event = {
 
                             while = {	
                                 count = 20	
-                                create_pop = {	
+                                create_pop_group = {	
                                     species = event_target:human_species
                                 }	
                             }
@@ -2329,7 +2304,7 @@ event = {
 
                             while = {	
                                 count = 8	
-                                create_pop = {	
+                                create_pop_group = {	
                                     species = last_created	
                                 }	
                             }                        
@@ -3393,7 +3368,7 @@ event = {
                         portrait = random
                         homeworld = THIS
                         traits = {
-                            trait = "trait_pc_savannah"
+                            trait = "trait_pc_savannah_preference"
                             trait = "trait_slow_breeders"
                             trait = "trait_adaptive"
                             trait = "trait_nomadic"
@@ -3416,14 +3391,14 @@ event = {
                         day_zero_contact = no
 
                         civics = {
-                            civic = civic_efficient_bureaucracy
-                            civic = civic_diplomatic_corps
+                            civic = civic_aristocratic_elite
+                            civic = civic_parliamentary_system
                         }
 
                         species = last_created_species
                         ethos = {
                             ethic = "ethic_fanatic_xenophile"
-                            ethic = "ethic_pacifist"
+                            ethic = "ethic_materialist"
                         }
 
                         origin = "origin_default"
@@ -3480,29 +3455,24 @@ event = {
                     set_capital = yes
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
-                    while = {
-                        count = 2
-                        add_district_and_planet_size_if_needed_effect = {
-                            district = district_industrial
-                        }
-                    }
-                    while = {
-                        count = 3
-                        add_district_and_planet_size_if_needed_effect = {
-                            district = district_mining
-                        }
-                    }
+                    
+                    add_district = district_city
+                    add_district = district_city
+                    add_district = district_mining
+                    add_district = district_mining
+                    add_district = district_mining
+                        
                     #generate_start_pops = yes
                     while = {
-                        limit = { num_pops < 28 }
-                        create_pop = {
+                        limit = { pop_amount < 2800 }
+                        create_pop_group = {
                             species = event_target:myrkrians
                             ethos = random
                         }
                     }
                     while = {
-                        limit = { num_pops < 32 }
-                        create_pop = {
+                        limit = { pop_amount < 3200 }
+                        create_pop_group = {
                             species = event_target:kahomas
                             ethos = random
                         }
@@ -3541,29 +3511,22 @@ event = {
 
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
+
+                    add_district = district_city
+                    add_district = district_mining
+                    add_district = district_mining
+                    add_district = district_mining
+
                     while = {
-                        count = 1
-                        add_district_and_planet_size_if_needed_effect = {
-                            district = district_industrial
-                        }
-                    }
-                    while = {
-                        count = 3
-                        add_district_and_planet_size_if_needed_effect = {
-                            district = district_mining
-                        }
-                    }
-                    #generate_start_pops = yes
-                    while = {
-                        limit = { num_pops < 24 }
-                        create_pop = {
+                        limit = { pop_amount < 2400 }
+                        create_pop_group = {
                             species = event_target:kahomas
                             ethos = random
                         }
                     }
                     while = {
-                        limit = { num_pops < 28 }
-                        create_pop = {
+                        limit = { pop_amount < 2800 }
+                        create_pop_group = {
                             species = event_target:myrkrians
                             ethos = random
                         }

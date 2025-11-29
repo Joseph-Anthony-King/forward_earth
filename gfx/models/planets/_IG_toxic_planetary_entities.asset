@@ -1,0 +1,599 @@
+###########################
+# New toxic planets
+###########################
+# toxic 05 to 20
+# Diffuse: 2k | Normal: 2k | Specular: 2k
+# Last version : .180609
+###########################
+# Toxic planet 05
+entity = {
+	name = "toxic_planet_05_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_05_2k_diffuse.dds"
+		texture_normal = "ig_toxic_05_2k_normal.dds"
+		texture_specular = "ig_toxic_05_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 06
+entity = {
+	name = "toxic_planet_06_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_06_2k_diffuse.dds"
+		texture_normal = "ig_toxic_06_2k_normal.dds"
+		texture_specular = "ig_toxic_06_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 07
+entity = {
+	name = "toxic_planet_07_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_07_2k_diffuse.dds"
+		texture_normal = "ig_toxic_07_2k_normal.dds"
+		texture_specular = "ig_toxic_07_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 08
+entity = {
+	name = "toxic_planet_08_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_08_2k_diffuse.dds"
+		texture_normal = "ig_toxic_08_2k_normal.dds"
+		texture_specular = "ig_toxic_08_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_08_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 09
+entity = {
+	name = "toxic_planet_09_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_09_2k_diffuse.dds"
+		texture_normal = "ig_toxic_09_2k_normal.dds"
+		texture_specular = "ig_toxic_09_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_02_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 10
+entity = {
+	name = "toxic_planet_10_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_10_2k_diffuse.dds"
+		texture_normal = "ig_toxic_10_2k_normal.dds"
+		texture_specular = "ig_toxic_10_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 11
+entity = {
+	name = "toxic_planet_11_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_11_2k_diffuse.dds"
+		texture_normal = "ig_toxic_11_2k_normal.dds"
+		texture_specular = "ig_toxic_11_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_07_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 12
+entity = {
+	name = "toxic_planet_12_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_12_2k_diffuse.dds"
+		texture_normal = "ig_toxic_12_2k_normal.dds"
+		texture_specular = "ig_toxic_12_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_06_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 13
+entity = {
+	name = "toxic_planet_13_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_13_2k_diffuse.dds"
+		texture_normal = "ig_toxic_13_2k_normal.dds"
+		texture_specular = "ig_toxic_13_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_06_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 14
+entity = {
+	name = "toxic_planet_14_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_14_2k_diffuse.dds"
+		texture_normal = "ig_toxic_14_2k_normal.dds"
+		texture_specular = "ig_toxic_14_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 15
+entity = {
+	name = "toxic_planet_15_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_15_2k_diffuse.dds"
+		texture_normal = "ig_toxic_15_2k_normal.dds"
+		texture_specular = "ig_toxic_15_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_08_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 16
+entity = {
+	name = "toxic_planet_16_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_16_2k_diffuse.dds"
+		texture_normal = "ig_toxic_16_2k_normal.dds"
+		texture_specular = "ig_toxic_16_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_03_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 17
+entity = {
+	name = "toxic_planet_17_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_17_2k_diffuse.dds"
+		texture_normal = "ig_toxic_17_2k_normal.dds"
+		texture_specular = "ig_toxic_17_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_07_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 18
+entity = {
+	name = "toxic_planet_18_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_18_2k_diffuse.dds"
+		texture_normal = "ig_toxic_18_2k_normal.dds"
+		texture_specular = "ig_toxic_18_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 19
+entity = {
+	name = "toxic_planet_19_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_19_2k_diffuse.dds"
+		texture_normal = "ig_toxic_19_2k_normal.dds"
+		texture_specular = "ig_toxic_19_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_05_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_05_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
+# Toxic planet 20
+entity = {
+	name = "toxic_planet_20_entity"
+	pdxmesh = "planet_clouded_mesh"
+	meshsettings = {
+		name = "planet_geosphereShape"
+		texture_diffuse = "ig_toxic_20_2k_diffuse.dds"
+		texture_normal = "ig_toxic_20_2k_normal.dds"
+		texture_specular = "ig_toxic_20_2k_specular.dds"
+	}
+	##pole texture override
+	meshsettings = {
+		name = "polesShape"
+		texture_diffuse = "ig_pole_no_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud texture override
+	meshsettings = {
+		name = "clouds_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_04_4k_diffuse.dds"
+		texture_normal = "ig_clouds_toxic_01_2k_normal.dds"
+		texture_specular = "nospec.dds"
+	}
+	##cloud shadow texture override
+	meshsettings = {
+		name = "clouds_shadow_geosphereShape"
+		texture_diffuse = "ig_clouds_toxic_01_2k_shadow_diffuse.dds"
+		texture_normal = "nonormal.dds"
+		texture_specular = "nospec.dds"
+	}
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_a" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_toxic_world_b" } }
+	}
+}
