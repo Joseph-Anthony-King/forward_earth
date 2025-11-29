@@ -35,7 +35,7 @@ humans1 = {
 
 	origin = "origin_default"
 
-	flags = { empire_human_1 une_faction }
+	flag = empire_human_1
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -109,7 +109,7 @@ humans4 = {
 
 	origin = "origin_default"
 
-	flags = { empire_human_1 ute_faction }
+	flag = empire_human_1
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -255,7 +255,7 @@ humans1_1 = {
 
 	origin = "origin_default"
 
-	flags = { empire_human_1 une_faction }
+	flag = empire_human_1
 
 	playable = has_humanoids # scripted_triggers
 
@@ -329,7 +329,7 @@ humans4_1 = {
 
 	origin = "origin_default"
 
-	flags = { empire_human_1 ute_faction }
+	flag = empire_human_1
 
 	playable = has_humanoids # scripted_triggers
 

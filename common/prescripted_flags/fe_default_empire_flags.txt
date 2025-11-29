@@ -1,0 +1,7 @@
+empire_icarus = {
+    flags = { icarus_faction earth_faction }
+}
+
+empire_custodianship = {
+    flags = { custodian_faction human_1 earth_faction }
+}
