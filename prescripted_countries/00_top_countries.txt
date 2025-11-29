@@ -24,18 +24,92 @@ humans1 = {
 
 	playable = has_not_humanoids # scripted_triggers
 
-	room = "personality_federation_builders_room"
+	room = "personality_ruthless_capitalists_room"
 
 	authority = "auth_democratic"
-	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
-	government = gov_representative_democracy
+	civics = { "civic_efficient_bureaucracy" "civic_diplomatic_corps" }
+	government = gov_planetary_union
 
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"
 
 	origin = "origin_default"
 
-	flag = empire_human_1
+	flags = { empire_human_1 une_faction }
+
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	initializer = "sol_system_initializer"
+	system_name = "NAME_Sol"
+
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+
+	empire_flag = {
+		icon= {
+			category = "human"
+			file = "flag_human_une.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_humans1"
+		gender = female
+		portrait = "human_female_05"
+		texture = 0
+		attachment = 1
+		clothes = 0
+		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
+	}
+}
+
+# UTE with Mammalian ships
+humans4 = {
+	name = "EMPIRE_DESIGN_humans3"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	spawn_enabled = no # yes / no / always
+	ignore_portrait_duplication = yes
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans3"
+
+	species = {
+		class = "HUM"
+		portrait = "human"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN1"
+		trait = "trait_organic"
+		trait = "trait_adaptive"
+		trait = "trait_nomadic"
+		trait = "trait_wasteful"
+	}
+
+	playable = has_not_humanoids # scripted_triggers
+
+	room = "personality_federation_builders_room"
+
+	authority = "auth_democratic"
+	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
+	government = gov_worker_coop
+
+	ethic = "ethic_xenophile"
+	ethic = "ethic_fanatic_egalitarian"
+
+	origin = "origin_default"
+
+	flags = { empire_human_1 ute_faction }
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -68,7 +142,7 @@ humans1 = {
 		portrait = "human_female_05"
 		texture = 0
 		attachment = 1
-		clothes = 0
+		clothes = 3
 		trait = "trait_ruler_eye_for_talent"
 		leader_class = official
 	}
@@ -100,12 +174,12 @@ humans2 = {
 
 	room = "personality_hegemonic_imperialists_room"
 
-	authority = "auth_dictatorial"
-	civics = { "civic_nationalistic_zeal" "civic_distinguished_admiralty" }
-	government = gov_military_dictatorship
+	authority = "auth_oligarchic"
+	civics = { "civic_meritocracy" "civic_citizen_service" }
+	government = gov_citizen_stratocracy
 
-	ethic = "ethic_xenophobe"
-	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_materialist"
 
 	origin = "origin_lost_colony"
 
@@ -122,11 +196,11 @@ humans2 = {
 	empire_flag = {
 		icon= {
 			category = "human"
-			file = "flag_human_4.dds"
+			file = "flag_human_zca.dds"
 		}
 		background= {
 			category = "backgrounds"
-			file = "stripe.dds"
+			file = "circle.dds"
 		}
 		colors={
 			"red"
@@ -170,18 +244,92 @@ humans1_1 = {
 		trait = "trait_wasteful"
 	}
 
-	room = "personality_federation_builders_room"
+	room = "personality_ruthless_capitalists_room"
 
 	authority = "auth_democratic"
-	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
-	government = gov_representative_democracy
+	civics = { "civic_efficient_bureaucracy" "civic_diplomatic_corps" }
+	government = gov_planetary_union
 
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"
 
 	origin = "origin_default"
 
-	flag = empire_human_1
+	flags = { empire_human_1 une_faction }
+
+	playable = has_humanoids # scripted_triggers
+
+	planet_name = "NAME_Earth"
+	planet_class = "pc_continental"
+	initializer = "sol_system_initializer"
+	system_name = "NAME_Sol"
+
+	graphical_culture = "humanoid_01"
+	city_graphical_culture = "humanoid_01"
+
+	empire_flag = {
+		icon= {
+			category = "human"
+			file = "flag_human_une.dds"
+		}
+		background= {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors={
+			"blue"
+			"black"
+			"null"
+			"null"
+		}
+	}
+
+	ruler = {
+		name = "PRESCRIPTED_ruler_name_humans1"
+		gender = female
+		portrait = "human_female_05"
+		texture = 0
+		attachment = 1
+		clothes = 0
+ 		trait = "trait_ruler_eye_for_talent"
+		leader_class = official
+	}
+}
+
+# UTE with Humanoid ships
+humans4_1 = {
+	name = "EMPIRE_DESIGN_humans3"
+	adjective = "PRESCRIPTED_adjective_humans1"
+	spawn_enabled = no # yes / no / always
+	ignore_portrait_duplication = yes
+
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans3"
+
+	species = {
+		class = "HUM"
+		portrait = "human"
+		name = "PRESCRIPTED_species_name_humans1"
+		plural = "PRESCRIPTED_species_plural_humans1"
+		adjective = "PRESCRIPTED_species_adjective_humans1"
+		name_list = "HUMAN1"
+		trait = "trait_organic"
+		trait = "trait_adaptive"
+		trait = "trait_nomadic"
+		trait = "trait_wasteful"
+	}
+
+	room = "personality_federation_builders_room"
+
+	authority = "auth_democratic"
+	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
+	government = gov_worker_coop
+
+	ethic = "ethic_xenophile"
+	ethic = "ethic_fanatic_egalitarian"
+
+	origin = "origin_default"
+
+	flags = { empire_human_1 ute_faction }
 
 	playable = has_humanoids # scripted_triggers
 
@@ -216,7 +364,7 @@ humans1_1 = {
 		portrait = "human_female_05"
 		texture = 0
 		attachment = 1
-		clothes = 0
+		clothes = 3
  		trait = "trait_ruler_eye_for_talent"
 		leader_class = official
 	}
@@ -246,12 +394,12 @@ humans2_1 = {
 
 	room = "personality_hegemonic_imperialists_room"
 
-	authority = "auth_dictatorial"
-	civics = { "civic_nationalistic_zeal" "civic_distinguished_admiralty" }
-	government = gov_military_dictatorship
+	authority = "auth_oligarchic"
+	civics = { "civic_meritocracy" "civic_citizen_service" }
+	government = gov_citizen_stratocracy
 
-	ethic = "ethic_xenophobe"
-	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_militarist"
+	ethic = "ethic_fanatic_materialist"
 
 	origin = "origin_lost_colony"
 
@@ -270,11 +418,11 @@ humans2_1 = {
 	empire_flag = {
 		icon= {
 			category = "human"
-			file = "flag_human_4.dds"
+			file = "flag_human_zca.dds"
 		}
 		background= {
 			category = "backgrounds"
-			file = "stripe.dds"
+			file = "circle.dds"
 		}
 		colors={
 			"red"
