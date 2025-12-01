@@ -6,7 +6,7 @@ gov_planetary_union = {
 	should_force_rename = yes
 
 	possible = {
-		is_democratic_authority = yes
+		is_oligarchic_authority = yes
 	}
 
 	weight = {

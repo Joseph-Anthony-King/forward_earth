@@ -26,7 +26,7 @@ humans1 = {
 
 	room = "personality_ruthless_capitalists_room"
 
-	authority = "auth_democratic"
+	authority = "auth_oligarchic"
 	civics = { "civic_efficient_bureaucracy" "civic_diplomatic_corps" }
 	government = gov_planetary_union
 
@@ -246,7 +246,7 @@ humans1_1 = {
 
 	room = "personality_ruthless_capitalists_room"
 
-	authority = "auth_democratic"
+	authority = "auth_oligarchic"
 	civics = { "civic_efficient_bureaucracy" "civic_diplomatic_corps" }
 	government = gov_planetary_union
 

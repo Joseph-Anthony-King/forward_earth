@@ -3389,7 +3389,7 @@ event = {
                         day_zero_contact = no
 
                         civics = {
-                            civic = civic_aristocratic_elite
+                            civic = civic_efficient_bureaucracy
                             civic = civic_parliamentary_system
                         }
 
@@ -3456,8 +3456,6 @@ event = {
                     
                     add_district = district_city
                     add_district = district_city
-                    add_district = district_mining
-                    add_district = district_mining
                     add_district = district_mining
                         
                     #generate_start_pops = yes
