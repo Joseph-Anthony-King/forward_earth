@@ -3299,7 +3299,7 @@ event = {
                     last_created_country = {
                         set_graphical_culture = humanoid_01
                         create_starting_leaders = yes
-                        set_country_flag = gal_risians
+                        set_country_flag = empire_gal_risians
                         capital_scope = { set_name = "NAME_Gal_Risia" }
                         country_event = { id = game_start.9 }
                         country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
@@ -3442,7 +3442,7 @@ event = {
                     last_created_country = {
                         set_graphical_culture = reptilian_01
                         create_starting_leaders = yes
-                        set_country_flag = united_empire
+                        set_country_flag = empire_united
                         capital_scope = { set_name = "NAME_Myrk" }
                         country_event = { id = game_start.9 }
                         country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
@@ -3624,7 +3624,7 @@ event = {
                         last_created_country = {
                             create_starting_leaders = yes
                             capital_scope = { set_name = "NAME_Great_Parliament" }
-                            set_country_flag = great_parliament
+                            set_country_flag = empire_great_parliment
                             country_event = { id = game_start.9 }
                             country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
                         }

@@ -24,11 +24,4 @@ l_german:
  gov_planetary_union:0 "Planetarische Union"
  gov_planetary_union_desc:0 "Dieser Regierungstyp ist eigentlich eine Vereinigung von Nationalstaaten mit unterschiedlichem Grad an Bürgerbeteiligung in ihren inneren Angelegenheiten."
  RT_SECRETARY_GENERAL:0 "Generalsekretär"
- gov_constitutional_monarchy:0 "Konstitutionelle Monarchie"
- gov_constitutional_monarchy_desc:0 "Dieser Regierungstyp hat ein dynastisches Staatsoberhaupt mit wahrer Macht, das von einem gewählten Regierungschef ausgeübt wird."
  
- EMPIRE_DESIGN_resistance:0 "Rokanischer Widerstand"
- EMPIRE_DESIGN_resistance_desc:0 "Als die Roks von $NAME_MSI_country$ für ihr Erleuchtungsprogram ausgewählt wurden, freuten sie sich. Unter der Führung des Unternehmens breitete die Vogelspezies ihre Flügel aus und flog zu den Sternen - nur um dann festzustellen, dass dieses "Geschenk" mit versteckten Kosten verbunden war.\n\nAnstatt sich in die Schuldknechtschaft zu begeben, begannen die widerspenstigen Vögel einen unerwarteten Gegenangriff in einem kühnen Versuch, ihre Freiheit zu erlangen.\n\n$NAME_MSI_country$ gab den Roks die Technologie, um die Sterne zu erreichen, doch ihr wahres Geschenk bestand darin, einen ehemals geteilten Planeten unter einem gemeinsamen Banner der Rache zu vereinen."
-
- EMPIRE_DESIGN_broken_shackles:0 "Freie Völker des Absturzes"
- EMPIRE_DESIGN_broken_shackles_desc:0 "I'Nathra war noch keine sechzehn Jahre alt, als die Schuldeneintreiber kamen. Ihre Familie war mittellos und ihre Welt verarmt. In die Knechtschaft verkauft musste sie Unvorstellbares ertragen, und doch war ihr Wille ungebrochen und als sich die Gelegenheit bot, ergriff sie sie.\n\nSie setzte eine Meuterei an Bord des Sklavenschiffs in Gang und führte die Überlebenden des Absturzes durch diese ersten schwierigen Jahre. Es war ihre Stärke, die die Völker der Hochburg der Freiheit zusammenhielt, und es war ihre Weisheit, die die Ketten gesprengt und eine Nation geformt hatte.\n\nDa sich die Freien Völker des Absturzes nun auf die Rückkehr zu den Sternen vorbereiten, tun sie dies in dem Wissen, dass ihr Schicksal in den Händen anderer liegt."

@@ -13,19 +13,3 @@ gov_planetary_union = {
 		base = @gov_civic_weight
 	}
 }
-
-# Constitutional Monarchy
-gov_constitutional_monarchy = {
-	ruler_title = RT_PRIME_MINISTER
-	ruler_title_female = RT_PRIME_MINISTER_FEMALE
-
-	should_force_rename = no
-
-	possible = {
-		is_democratic_authority = yes
-	}
-
-	weight = {
-		base = @gov_civic_weight
-	}
-}

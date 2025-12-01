@@ -1,7 +1,19 @@
+empire_custodianship = {
+    flags = { custodian_faction human_1 earth_faction }
+}
+
+empire_gal_risians = {
+    flags = { gal_risians }
+}
+
+empire_great_parliment = {
+    flags = {great_parliament }
+}
+
 empire_icarus = {
     flags = { icarus_faction earth_faction }
 }
 
-empire_custodianship = {
-    flags = { custodian_faction human_1 earth_faction }
+empire_united = {
+    flags = { united_empire }
 }

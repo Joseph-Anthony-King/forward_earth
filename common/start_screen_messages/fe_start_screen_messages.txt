@@ -6,7 +6,6 @@ part = {
 	trigger = {
 		OR ={
 			has_government = gov_planetary_union
-			has_government = gov_constitutional_monarchy
 		}
 		NOR = {
 			has_country_flag = custom_start_screen
