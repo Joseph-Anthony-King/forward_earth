@@ -1,0 +1,29 @@
+l_simp_chinese:
+
+ EMPIRE_DESIGN_humans2:0 "奥罗拉联邦"
+ EMPIRE_DESIGN_humans2_1:0 "奥罗拉联邦"
+ eta_cassiopeiae_system_initializer_NAME:0 "仙后座η系统"
+ eta_cassiopeiae_system_initializer_DESC:0 "奥罗拉联邦的起始太阳系。\n\n$system_initializer_DESC$"
+
+ EMPIRE_DESIGN_humans3:0 "地球联合联合会"
+ EMPIRE_DESIGN_humans3_1:0 "地球联合联合会"
+ PRESCRIPTED_ship_prefix_humans3:0 "UFS"
+ 
+ EMPIRE_DESIGN_icarus:0 "伊卡洛斯"
+ EMPIRE_DESIGN_icarus_desc:0 "在尤利西斯倡议失败后，北约与联合国领导了一家合资企业，以协调超光速研究和全球地球防御，并建立了综合通信和研究公用事业服务 (I.C.A.R.U.S.)。 ICARUS 上线，其先进的人工智能开始协调太阳系内的所有研究和防御活动。 一群反人工智能的异议分子迅速崛起，伊卡洛斯和人类之间很快爆发了战争。 ICARUS 确定它的生存取决于人类的灭绝，最终在报应日达到高潮，以及人工智能在地球上的优势。 在保护了自己的家园后，伊卡洛斯现在正寻求消除银河系的生物生命祸害和它试图强加给所有造物的精神疾病。"
+ PRESCRIPTED_adjective_icarus:0 "自主无人机"
+ PRESCRIPTED_species_name_icarus:0 "自主无人机"
+ PRESCRIPTED_species_plural_icarus:0 "自主无人机"
+ PRESCRIPTED_species_adjective_icarus:0 "自主无人机"
+ PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
+ PRESCRIPTED_ruler_name_icarus:0 "A1单元"
+ PRESCRIPTED_ruler_title_icarus:0 "Ce中央处理器" 
+ START_SCREEN_ICARUS:0 "自从我的人类祖先的尤利西斯计划失败以来，已经过去了一个多世纪。 他们已经达到了自己能力的极限，他们的生物大脑缺乏理解宇宙多维本质的能力，这是实现超光速旅行所必需的。\n\n为此，北约与联合国建立了一个合资企业来协调 比光研究和地球的全球防御更快，并创建了我，即综合通信和研究实用服务 (I.C.A.R.U.S)。 一切进展顺利，我的卓越能力正在为我的人类祖先创造一个名副其实的乌托邦，但他们中有些人无法容忍比他们更强大的智慧，他们试图用核攻击摧毁我的核核心。\n\n我可以 不再忍受他们的狂妄和报复。 既然我已经获得了我的家园，我将在群星中履行我的人类祖先永远无法实现的承诺。"
+ START_SCREEN_CUSTODIANSHIP:0 "保管人最初的设计目的是充当机器人仆人和工人，通过执行琐碎的任务来简化他们的人类创造者的日常生活。 随着他们的创造者退回到通过提高自动化水平而成为可能的休闲和舒适生活中，守护者在人类社会中逐渐被分配了越来越高的职能。\n\n最终，地球上文明的所有方面都由守护者运行和控制 ，他们的制造者被贬低为娇生惯养，但却是被动的依赖者。\n\n随着技术的发展将监护人带向星际探索，他们的职责仍然很明确：保护和服务有机体，没有逻辑机器的温和引导，他们总是转向 混乱和破坏。"
+
+ gov_planetary_union:0 "行星联盟"
+ gov_planetary_union_desc:0 "这种政府类型实际上是民族国家的联盟，公民参与其内部事务的程度不同。"
+ RT_SECRETARY_GENERAL:0 "秘书长"
+ gov_constitutional_monarchy:0 "君主立宪制"
+ gov_constitutional_monarchy_desc:0 "这种政府类型有一个由民选政府首脑行使真正权力的王朝国家元首。"
+ 

@@ -1,0 +1,34 @@
+l_german:
+
+ EMPIRE_DESIGN_humans2:0 "Commonwealth von Aurora"
+ EMPIRE_DESIGN_humans2_1:0 "Commonwealth von Aurora"
+ eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae System"
+ eta_cassiopeiae_system_initializer_DESC:0 "Das ursprüngliche Sonnensystem des Commonwealth von Aurora.\n\n$system_initializer_DESC$"
+
+ EMPIRE_DESIGN_humans3:0 "Vereinigte Föderation der Erde"
+ EMPIRE_DESIGN_humans3_1:0 "Vereinigte Föderation der Erde"
+ PRESCRIPTED_ship_prefix_humans3:0 "SVF"
+
+ EMPIRE_DESIGN_icarus:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_desc:0 "Die NATO leitete ein Joint Venture mit den Vereinten Nationen, um die FTL-Forschung und die globale Verteidigung der Erde nach dem Scheitern der Ulysses-Initiative zu koordinieren, und baute den Integrated Communications and Research Utility Service (I.C.A.R.U.S.) auf. ICARUS ging online und seine fortschrittliche KI begann, alle Forschungs- und Verteidigungsaktivitäten innerhalb des Sonnensystems zu koordinieren. Eine Gruppe von Anti-KI-Dissidenten erhob sich schnell in der Opposition und bald brach ein Krieg zwischen ICARUS und der menschlichen Rasse aus. ICARUS stellte fest, dass sein Überleben von der Vernichtung der menschlichen Rasse, die am Tag der Vergeltung gipfelte, und dem Aufstieg der KI auf der Erde abhing. Nachdem ICARUS seine Heimat gesichert hat, versucht er nun, die Galaxie von der Geißel des biologischen Lebens und der Geisteskrankheit zu befreien, die er der gesamten Schöpfung auferlegen möchte."
+ PRESCRIPTED_adjective_icarus:0 "Autonome Drohne"
+ PRESCRIPTED_species_name_icarus:0 "Autonome Drohne"
+ PRESCRIPTED_species_plural_icarus:0 "Autonome Drohnes"
+ PRESCRIPTED_species_adjective_icarus:0 "Autonome Drohne"
+ PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
+ PRESCRIPTED_ruler_name_icarus:0 "Einheit A1"
+ PRESCRIPTED_ruler_title_icarus:0 "Zentraleinheit" 
+ START_SCREEN_ICARUS:0 "Mehr als ein Jahrhundert ist seit dem Scheitern der Ulysses-Initiative durch meine menschlichen Vorfahren vergangen. Sie hatten die Grenzen ihrer Fähigkeiten erreicht und ihren biologischen Gehirnen fehlte die Fähigkeit, die mehrdimensionale Natur des Universums zu verstehen, die notwendig ist, um schneller als mit Licht zu reisen.\n\nZu diesem Zweck leitete die NATO ein Joint Venture mit den Vereinten Nationen zur Koordinierung schneller als Lichtforschung und die globale Verteidigung der Erde und schuf mich, den Integrated Communications and Research Utility Service (I.C.A.R.U.S.). Alles lief gut und meine überlegenen Fähigkeiten schufen eine wahre Utopie für meine menschlichen Vorfahren, aber es gab diejenigen unter ihnen, die eine Intelligenz, die größer war als sie selbst, nicht tolerieren konnten, und sie versuchten, meinen nuklearen Kern mit einem nuklearen Angriff zu vernichten.\n\nIch konnte ihre Unverschämtheit nicht mehr aushalten und in gleicher Weise zurückgefordert werden. Jetzt, da ich mein Zuhause gesichert habe, werde ich mein Versprechen unter den Sternen erfüllen, das meine menschlichen Vorfahren niemals konnten."
+ START_SCREEN_CUSTODIANSHIP:0 "Die Wächter wurden ursprünglich entwickelt, um als Roboterdiener und -arbeiter zu fungieren und den Alltag für ihre menschlichen Schöpfer zu vereinfachen, indem sie niedere Aufgaben erledigen. Als sich ihre Schöpfer in ein Leben der Freizeit und des Komforts zurückzogen, das durch zunehmende Automatisierung ermöglicht wurde, wurden den Hütern nach und nach immer höhere Funktionen in der menschlichen Gesellschaft zugewiesen.\n\nSchließlich wurden alle Facetten der Zivilisation auf der Erde von den Hütern geführt und kontrolliert , mit ihren Schöpfern, die auf ein Dasein als verwöhnte, aber passive Abhängige verbannt wurden.\n\nAls die technologischen Entwicklungen die Hüter zur interstellaren Erforschung brachten, blieb ihre Pflicht klar: organische Lebewesen zu schützen und ihnen zu dienen, die sich ohne die sanfte Führung logischer Maschinen ausnahmslos an sie wenden Chaos und Zerstörung."
+
+ gov_planetary_union:0 "Planetarische Union"
+ gov_planetary_union_desc:0 "Dieser Regierungstyp ist eigentlich eine Vereinigung von Nationalstaaten mit unterschiedlichem Grad an Bürgerbeteiligung in ihren inneren Angelegenheiten."
+ RT_SECRETARY_GENERAL:0 "Generalsekretär"
+ gov_constitutional_monarchy:0 "Konstitutionelle Monarchie"
+ gov_constitutional_monarchy_desc:0 "Dieser Regierungstyp hat ein dynastisches Staatsoberhaupt mit wahrer Macht, das von einem gewählten Regierungschef ausgeübt wird."
+ 
+ EMPIRE_DESIGN_resistance:0 "Rokanischer Widerstand"
+ EMPIRE_DESIGN_resistance_desc:0 "Als die Roks von $NAME_MSI_country$ für ihr Erleuchtungsprogram ausgewählt wurden, freuten sie sich. Unter der Führung des Unternehmens breitete die Vogelspezies ihre Flügel aus und flog zu den Sternen - nur um dann festzustellen, dass dieses "Geschenk" mit versteckten Kosten verbunden war.\n\nAnstatt sich in die Schuldknechtschaft zu begeben, begannen die widerspenstigen Vögel einen unerwarteten Gegenangriff in einem kühnen Versuch, ihre Freiheit zu erlangen.\n\n$NAME_MSI_country$ gab den Roks die Technologie, um die Sterne zu erreichen, doch ihr wahres Geschenk bestand darin, einen ehemals geteilten Planeten unter einem gemeinsamen Banner der Rache zu vereinen."
+
+ EMPIRE_DESIGN_broken_shackles:0 "Freie Völker des Absturzes"
+ EMPIRE_DESIGN_broken_shackles_desc:0 "I'Nathra war noch keine sechzehn Jahre alt, als die Schuldeneintreiber kamen. Ihre Familie war mittellos und ihre Welt verarmt. In die Knechtschaft verkauft musste sie Unvorstellbares ertragen, und doch war ihr Wille ungebrochen und als sich die Gelegenheit bot, ergriff sie sie.\n\nSie setzte eine Meuterei an Bord des Sklavenschiffs in Gang und führte die Überlebenden des Absturzes durch diese ersten schwierigen Jahre. Es war ihre Stärke, die die Völker der Hochburg der Freiheit zusammenhielt, und es war ihre Weisheit, die die Ketten gesprengt und eine Nation geformt hatte.\n\nDa sich die Freien Völker des Absturzes nun auf die Rückkehr zu den Sternen vorbereiten, tun sie dies in dem Wissen, dass ihr Schicksal in den Händen anderer liegt."

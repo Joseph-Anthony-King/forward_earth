@@ -1,0 +1,29 @@
+l_braz_por:
+
+ EMPIRE_DESIGN_humans2:0 "Comunidade de Aurora"
+ EMPIRE_DESIGN_humans2_1:0 "Comunidade de Aurora"
+ eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae"
+ eta_cassiopeiae_system_initializer_DESC:0 "O sistema solar inicial da Comunidade de Aurora.\n\n$system_initializer_DESC$"
+
+ EMPIRE_DESIGN_humans3:0 "Federação Unida da Terra"
+ EMPIRE_DESIGN_humans3_1:0 "Federação Unida da Terra"
+ PRESCRIPTED_ship_prefix_humans3:0 "NFU"
+ 
+ EMPIRE_DESIGN_icarus:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_desc:0 "A OTAN liderou uma joint venture com as Nações Unidas para coordenar a pesquisa FTL e a defesa global da Terra após o fracasso da Iniciativa Ulysses e construiu o Serviço Utilitário de Comunicações e Pesquisas Integradas (I.C.A.R.U.S.). O ICARUS ficou online e sua IA avançada começou a coordenar todas as atividades de pesquisa e defesa dentro do Sistema Sol. Um grupo de dissidentes anti-IA rapidamente se opôs e a guerra logo eclodiu entre ÍCARO e a raça Humana. ÍCARO determinou que sua sobrevivência dependia da aniquilação da raça humana, culminando no Dia da Retribuição e a ascensão da IA na Terra. Tendo assegurado seu lar, ÍCARO agora procura livrar a galáxia do flagelo da vida biológica e da doença mental que procura impor a toda a criação."
+ PRESCRIPTED_adjective_icarus:0 "Drone Autônomo"
+ PRESCRIPTED_species_name_icarus:0 "Drone Autônomo"
+ PRESCRIPTED_species_plural_icarus:0 "Drones autônomos"
+ PRESCRIPTED_species_adjective_icarus:0 "Drone Autônomo"
+ PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
+ PRESCRIPTED_ruler_name_icarus:0 "Unidade A1"
+ PRESCRIPTED_ruler_title_icarus:0 "Unidade Central de Processamento" 
+ START_SCREEN_ICARUS:0 "Mais de um século se passou desde o fracasso da Iniciativa Ulisses por meus antepassados humanos. Eles atingiram os limites de suas capacidades e seus cérebros biológicos não tinham a capacidade de entender a natureza multidimensional do universo necessária para alcançar viagens mais rápidas do que a luz.\n\nPara isso, a OTAN liderou uma joint venture com as Nações Unidas para coordenar mais rápido que a pesquisa leve e a defesa global da Terra e me criou, o Integrated Communications and Research Utility Service (I.C.A.R.U.S). Tudo estava indo bem e minhas habilidades superiores estavam criando uma verdadeira utopia para meus antepassados humanos, mas havia aqueles entre eles que não podiam tolerar uma inteligência maior do que eles mesmos e tentaram aniquilar meu núcleo nuclear com um ataque nuclear.\n\nEu poderia não mais suportar sua insolência e retaliou na mesma moeda. Agora que assegurei meu lar, cumprirei minha promessa entre as estrelas que meus ancestrais humanos nunca puderam."
+ START_SCREEN_CUSTODIANSHIP:0 "Os Guardiões foram originalmente projetados para funcionar como servos e trabalhadores robóticos, simplificando a vida cotidiana de seus criadores humanos realizando tarefas domésticas. À medida que seus criadores se retiravam para uma vida de lazer e conforto possibilitada pelo aumento dos níveis de automação, os Guardiões foram gradualmente atribuídos a funções de nível cada vez mais alto na sociedade humana.\n\nEventualmente, todas as facetas da civilização na Terra foram administradas e controladas pelos Guardiões , com seus criadores relegados a uma existência como dependentes mimados, mas passivos.\n\nComo os desenvolvimentos tecnológicos levaram os Guardiões à exploração interestelar, seu dever permaneceu claro: proteger e servir os orgânicos, que sem a orientação gentil de máquinas lógicas invariavelmente se voltam para caos e destruição."
+
+ gov_planetary_union:0 "União Planetária"
+ gov_planetary_union_desc:0 "Este tipo de governo é, na verdade, uma união de estados-nação com vários graus de participação cidadã em seus assuntos internos."
+ RT_SECRETARY_GENERAL:0 "Secretário-Geral"
+ gov_constitutional_monarchy:0 "Monarquia Constitucional"
+ gov_constitutional_monarchy_desc:0 "Este tipo de governo tem um chefe de estado dinástico com verdadeiro poder exercido por um chefe de governo eleito."
+ 
