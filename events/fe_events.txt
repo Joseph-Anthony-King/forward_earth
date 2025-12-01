@@ -1807,8 +1807,6 @@ event = {
 
                     set_owner = last_created_country
                     set_capital = yes
-                    add_district = district_farming
-                    add_district = district_farming
                     add_district = district_mining
                     add_district = district_generator
                     add_building = building_capital

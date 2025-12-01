@@ -1236,6 +1236,55 @@ sol_neighbor_t2_2 = {
 			has_ring = no
 		}
 	}
+
+	# Small and Tiny Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 5 max = 6 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# Medium, Large, and Huge Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "kepler_186_system_initializer"
+	}
+
+	# All other galaxy sizes Kepler-186 System Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "kepler_186_system_initializer"
+	}
 }
 
 # Sol Neighbor Tier 2.3 - Tau Ceti
@@ -1483,6 +1532,11 @@ sol_neighbor_t2_3 = {
 		orbit_angle = 60
 		size = 5
 		has_ring = no
+	}
+
+	neighbor_system = {
+		hyperlane_jumps = { min = 1 max = @jumps }
+		initializer = "sol_neighbor_t3_1"
 	}
 }
 
@@ -1824,6 +1878,55 @@ sol_neighbor_t3_second_colony = {
 			has_ring = no
 		}
 	}
+
+	# Small and Tiny HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 5 max = 6 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# Medium, Large, and Huge HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# All other galaxy sizes HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
 }
 
 # Sol Neighbor Tier 3 No Guaranteed Colony - 67 Cygni
@@ -1969,6 +2072,182 @@ sol_neighbor_t3_no_guaranteed_colony = {
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t1_4"
+	}
+
+	# Small and Tiny HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = tiny
+					galaxy_size = small
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 5 max = 6 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# Medium, Large, and Huge HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = medium
+					galaxy_size = large
+					galaxy_size = huge
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+
+	# All other galaxy sizes HD 34445 Initializers
+	neighbor_system = {
+		trigger = {
+			AND = {
+				OR = {
+					galaxy_size = gigantic
+					galaxy_size = immense
+				}
+				num_ai_empires_setting > 1
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_hd_34445_system_initializer"
+	}
+}
+
+# Sol Neighbor Tier 3 Trappist-1
+sol_neighbor_t3_1 = {
+	name = "NAME_Trappist_1"
+	class = sc_m
+
+	planet = {
+		name = "NAME_Trappist_1"
+		count = 1
+		class = pc_m_star
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+	
+	# Trappist-1b
+	planet = {
+		name = "NAME_Trappist_1_b"
+		class = "pc_molten"
+		orbit_distance = 20
+		orbit_angle = 15
+		size = 16
+		has_ring = no
+	}
+	
+	# Trappist-1c
+	planet = {
+		name = "NAME_Trappist_1_c"
+		class = "pc_barren"
+		orbit_distance = 16
+		orbit_angle = 85
+		size = 16
+		has_ring = no
+	}
+
+	# Trappist-1d
+	planet = {
+		name = "NAME_Trappist_1_d"
+		class = "pc_toxic"
+		orbit_distance = 16
+		orbit_angle = 110
+		size = 12
+		has_ring = no
+	}
+
+	# Trappist-1e
+	planet = {
+		name = "NAME_Trappist_1_e"
+		class = "pc_ocean"
+		orbit_distance = 16
+		orbit_angle = 125
+		size = 15
+		has_ring = no
+	}
+
+	# Trappist-1f
+	planet = {
+		name = "NAME_Trappist_1_f"
+		class = "pc_toxic"
+		orbit_distance = 16
+		orbit_angle = 65
+		size = 16
+		has_ring = no
+	}
+
+	# Trappist-1g
+	planet = {
+		name = "NAME_Trappist_1_g"
+		class = "pc_arctic"
+		orbit_distance = 16
+		orbit_angle = -130
+		size = 18
+		has_ring = no
+	}
+
+	# Trappist-1h
+	planet = {
+		name = "NAME_Trappist_1_h"
+		class = "pc_frozen"
+		orbit_distance = 16
+		orbit_angle = 245
+		size = 12
+		has_ring = no
+	}
+
+	# Small and Tiny 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = tiny
+				galaxy_size = small
+			}
+		}
+
+		hyperlane_jumps = { min = 6 max = 7 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# Medium, Large, and Huge 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = medium
+				galaxy_size = large
+				galaxy_size = huge
+			}
+		}
+
+		hyperlane_jumps = { min = 7 max = 8 }
+		initializer = "npc_70_virginis_system_initializer"
+	}
+
+	# All other galaxy sizes 70 Virginis Initializers
+	neighbor_system = {
+		trigger = {
+			OR = {
+				galaxy_size = gigantic
+				galaxy_size = immense
+			}
+			num_ai_empires_setting > 1
+		}
+
+		hyperlane_jumps = { min = 8 max = 9 }
+		initializer = "npc_70_virginis_system_initializer"
 	}
 }
 
