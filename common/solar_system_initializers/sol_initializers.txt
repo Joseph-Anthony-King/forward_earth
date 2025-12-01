@@ -393,6 +393,7 @@ sol_neighbor_t1_first_colony = {
     		class = "pc_continental"
     		size = 18
     		has_ring = no
+    		entity = "continental_planet_01_entity"
 
     		moon = {
     			name = "NAME_Alpha_Centauri_B_IIa"
@@ -508,6 +509,7 @@ sol_neighbor_t1_first_colony = {
 			has_ring = no
 		}
 	}
+
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t2"
@@ -684,6 +686,7 @@ sol_neighbor_t1_no_guaranteed_colony = {
 			has_ring = no
 		}
 	}
+	
 	neighbor_system = {
 		hyperlane_jumps = { min = 1 max = @jumps }
 		initializer = "sol_neighbor_t2"

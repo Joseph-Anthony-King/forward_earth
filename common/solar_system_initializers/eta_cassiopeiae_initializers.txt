@@ -53,6 +53,7 @@ eta_cassiopeiae_system_initializer = {
 		orbit_angle = 45
 		size = 8
 		has_ring = no
+		entity = "molten_planet_06_entity"
 		flags = { planet_inferno }
 	}
 	
@@ -63,6 +64,7 @@ eta_cassiopeiae_system_initializer = {
 		orbit_angle = 200
 		size = 30
 		has_ring = no
+		entity = "gas_giant_05_entity"
 		flags = { planet_astraeus }
 		
 		moon = {
@@ -106,6 +108,7 @@ eta_cassiopeiae_system_initializer = {
 			has_ring = no
 			modifiers = none
 			starting_planet = yes
+			entity = "continental_planet_01_entity"
 			flags = { planet_aurora }
 			
 			init_effect = {
@@ -121,6 +124,7 @@ eta_cassiopeiae_system_initializer = {
 			size = 15
 			has_ring = no
 			modifiers = none
+			entity = "savannah_planet_11_entity"
 			flags = { planet_tithonus }
 			
 			init_effect = {
@@ -136,6 +140,7 @@ eta_cassiopeiae_system_initializer = {
 		orbit_angle = 125
 		size = 35
 		has_ring = yes
+		entity = "gas_giant_02_entity"
 		flags = { planet_anemoi }
 		
 		moon = {
@@ -194,6 +199,7 @@ eta_cassiopeiae_system_initializer = {
 		orbit_angle = 0
 		size = 25
 		has_ring = yes
+		entity = "gas_giant_neptune_entity"
 		flags = { planet_hyperion }
 		
 		moon = {
@@ -232,6 +238,7 @@ eta_cassiopeiae_system_initializer = {
 			orbit_angle = 4
 			size = 20
 			has_ring = yes
+			entity = "gas_giant_03_entity"
 			flags = { planet_olympus }
 
 			moon = {
@@ -242,6 +249,7 @@ eta_cassiopeiae_system_initializer = {
 				size = 8
 				has_ring = no
 				modifiers = none
+				entity = "frozen_planet_04_entity"
 				flags = { planet_horae }
 			}
 		}
@@ -346,6 +354,7 @@ eta_cassiopeiae_with_sol_initializer = {
 		orbit_angle = 45
 		size = 8
 		has_ring = no
+		entity = "molten_planet_06_entity"
 		flags = { planet_inferno }
 	}
 	
@@ -356,6 +365,7 @@ eta_cassiopeiae_with_sol_initializer = {
 		orbit_angle = 200
 		size = 30
 		has_ring = no
+		entity = "gas_giant_05_entity"
 		flags = { planet_astraeus }
 		
 		moon = {
@@ -399,6 +409,7 @@ eta_cassiopeiae_with_sol_initializer = {
 			has_ring = no
 			modifiers = none
 			starting_planet = yes
+			entity = "continental_planet_01_entity"
 			flags = { planet_aurora }
 		}
 
@@ -410,6 +421,7 @@ eta_cassiopeiae_with_sol_initializer = {
 			size = 15
 			has_ring = no
 			modifiers = none
+			entity = "savannah_planet_11_entity"
 			flags = { planet_tithonus }
 			
 			init_effect = {
@@ -425,6 +437,7 @@ eta_cassiopeiae_with_sol_initializer = {
 		orbit_angle = 125
 		size = 35
 		has_ring = yes
+		entity = "gas_giant_02_entity"
 		flags = { planet_anemoi }
 		
 		moon = {
@@ -483,6 +496,7 @@ eta_cassiopeiae_with_sol_initializer = {
 		orbit_angle = 0
 		size = 25
 		has_ring = yes
+		entity = "gas_giant_neptune_entity"
 		flags = { planet_hyperion }
 		
 		moon = {
@@ -521,6 +535,7 @@ eta_cassiopeiae_with_sol_initializer = {
 			orbit_angle = 4
 			size = 20
 			has_ring = yes
+			entity = "gas_giant_03_entity"
 			flags = { planet_olympus }
 
 			moon = {
@@ -531,6 +546,7 @@ eta_cassiopeiae_with_sol_initializer = {
 				size = 8
 				has_ring = no
 				modifiers = none
+				entity = "frozen_planet_04_entity"
 				flags = { planet_horae }
 			}
 		}
