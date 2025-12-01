@@ -1,0 +1,12 @@
+objectTypes = {
+	pdxmesh = {
+		name = "css_fedbuild_01_colossus_mesh"
+		file = "gfx/models/ships/css_fedbuild_colossus/css_fedbuild_colossus.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "css_fedbuild_01_colossus_idle_animation" }
+		animation = { id = "open"			type = "css_fedbuild_01_colossus_open_animation" }
+		animation = { id = "opening"		type = "css_fedbuild_01_colossus_opening_animation" }
+		animation = { id = "closing"		type = "css_fedbuild_01_colossus_closing_animation" }
+	}
+}

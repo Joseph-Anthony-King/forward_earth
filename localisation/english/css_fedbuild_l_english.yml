@@ -1,0 +1,43 @@
+﻿l_english:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+ css_fedbuild:0 "Fed. Builders"
+ css_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset."
+ 
+ css_fedbuild_colours:0 "Fed. Builders (C)"
+ css_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours."
+ 
+ css_dss_fedbuild:0 "Fed. Builders (DS)"
+ css_dss_fedbuild_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset. Downscaled ships patch."
+ 
+ css_dss_fedbuild_colours:0 "Fed. Builders (C+DS)"
+ css_dss_fedbuild_colours_desc:1 "Cheek and Gatekeeper's Federation Builder's shipset with dynamic colours. Downscaled ships patch."
+ 
+ 
+######## Ship Set Descriptions
+
+css_fedbuild_01_shipset_desc:1 "Sleek and multi-purpose, these designs were built for the exploration and diplomacy required to build and maintain an interstellar federation."
+css_fedbuild_02_shipset_desc:1 "Sleek and multi-purpose, these designs were built for the exploration and diplomacy required to build and maintain an interstellar federation. This version will match your empire's colours."
+css_fedbuild_03_shipset_desc:1 "(Downscaled Ships) Sleek and multi-purpose, these designs were built for the exploration and diplomacy required to build and maintain an interstellar federation."
+css_fedbuild_04_shipset_desc:1 "(Downscaled Ships) Sleek and multi-purpose, these designs were built for the exploration and diplomacy required to build and maintain an interstellar federation. This version will match your empire's colours."
+ 
+ 
+ 
+######## Ship Section Localisations
+ CORVETTE_CSS_FEDBUILD_01_S1PD1:1 "Kabuto-Class Picket Ship"
+ 
+ CORVETTE_CSS_FEDBUILD_01_MID_M1S1:1 "Ned Kelly-Class Frigate"
+
+ #Odds and Ends
+ tech_css_fedbuild_01:0 "Federation Builders Tech"
+ tech_css_fedbuild_01_desc:0 "Federation Builders Tech"
+ TECH_CSS_FEDBUILD:0 "Federation Builders Tech"
+ tech_css_fedbuild_02:0 "Federation Builders Tech"
+ tech_css_fedbuild_02_desc:0 "Federation Builders Tech"

@@ -1,0 +1,85 @@
+################	
+### Sections ###
+################
+
+### BOW ###
+
+entity = {
+	name = "ai_ship_set_01_SCX_Dreadnought_bow_L1M1S2_entity"
+	pdxmesh = "locator_mesh"
+	
+	#Locators for Weapons
+	locator = {
+		name = "large_gun_01"
+		position = {0 0 -20}
+		rotation = {0 0   0}
+	}
+	locator = {
+		name = "small_gun_01"
+		position = {10 0 -20}
+		rotation = { 0 0   0}
+	}
+	locator = {
+		name = "small_gun_02"
+		position = {-10 0 -20}
+		rotation = {  0 0   0}
+	}
+	locator = {
+		name = "medium_gun_01"
+		position = {0 10 -20}
+		rotation = {0  0   0}
+	}
+	
+	#Locators for Animations
+	locator = {
+		name = "xl_windup_1"
+		position = {21 0 0}
+		rotation = { 0 0 0}
+	}
+	locator = {
+		name = "xl_windup_2"
+		position = {-21 0 0}
+		rotation = {  0 0 0}
+	}
+	locator = {
+		name = "xl_windup_3"
+		position = {21 0 0}
+		rotation = { 0 0 0}
+	}
+	locator = {
+		name = "xl_windup_4"
+		position = {-21 0 0}
+		rotation = {  0 0 0}
+	}
+	locator = {
+		name = "xl_windup_5"
+		position = {21 0 0}
+		rotation = { 0 0 0}
+	}
+	locator = {
+		name = "xl_windup_6"
+		position = {-21 0 0}
+		rotation = {  0 0 0}
+	}
+	locator = {
+		name = "xl_windup_7"
+		position = {21 0 0}
+		rotation = { 0 0 0}
+	}
+	locator = {
+		name = "xl_windup_8"
+		position = {-21 0 0}
+		rotation = {  0 0 0}
+	}
+	locator = {
+		name = "xl_windup_9"
+		position = {21 0 0}
+		rotation = { 0 0 0}
+	}
+	locator = {
+		name = "xl_windup_10"
+		position = {-21 0 0}
+		rotation = {  0 0 0}
+	}
+}
+# XL weapon windup locator names: xl_windup_1-10

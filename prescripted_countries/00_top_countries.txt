@@ -116,7 +116,7 @@ humans4 = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 
-	graphical_culture = "mammalian_01"
+	graphical_culture = "machine_01"
 	city_graphical_culture = "mammalian_01"
 
 	empire_flag = {
@@ -190,8 +190,8 @@ humans2 = {
 	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "NAME_Eta_Cassiopeiae"
 
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
+	graphical_culture = "machine_01"
+	city_graphical_culture = "machine_01"
 
 	empire_flag = {
 		icon= {
@@ -264,7 +264,7 @@ humans1_1 = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 
-	graphical_culture = "humanoid_01"
+	graphical_culture = "css_fedbuild_01"
 	city_graphical_culture = "humanoid_01"
 
 	empire_flag = {
@@ -338,7 +338,7 @@ humans4_1 = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 
-	graphical_culture = "humanoid_01"
+	graphical_culture = "css_fedbuild_01"
 	city_graphical_culture = "humanoid_01"
 
 	empire_flag = {
@@ -412,8 +412,8 @@ humans2_1 = {
 	initializer = "eta_cassiopeiae_system_initializer"
 	system_name = "NAME_Eta_Cassiopeiae"
 
-	graphical_culture = "humanoid_01"
-	city_graphical_culture = "humanoid_01"
+	graphical_culture = "machine_01"
+	city_graphical_culture = "machine_01"
 
 	empire_flag = {
 		icon= {

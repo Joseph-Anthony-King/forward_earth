@@ -1,0 +1,110 @@
+objectTypes = {
+
+	#######  hq  #######	
+	pdxmesh = {
+		name = "css_fedbuild_01_nsc_hq_mesh"
+        file = "gfx/models/ships/nsc/nsc_hq/css_fedbuilder_nsc_hq.mesh"
+		scale = 5.0
+    }	
+
+	#######  battle cruiser  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_battle_cruiser_small_mesh"
+        file = "gfx/models/ships/nsc/nsc_battlecruiser/css_fedbuilder_nsc_battlecruiser.mesh"
+		scale = 0.8
+    }	
+	pdxmesh = {
+		name = "css_fedbuild_01_battle_cruiser_mesh"
+        file = "gfx/models/ships/nsc/nsc_battlecruiser/css_fedbuilder_nsc_battlecruiser.mesh"
+		scale = 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_battle_cruiser_four_mesh"
+        file = "gfx/models/ships/nsc/nsc_battlecruiser/css_fedbuilder_nsc_battlecruiser_four.mesh"
+		scale = 1.0
+    }
+
+	#######  strike cruiser  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_strike_cruiser_mesh"
+        file = "gfx/models/ships/nsc/nsc_strikecruiser/css_fedbuilder_nsc_strike_cruiser.mesh"
+		scale = 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_strike_cruiser_four_mesh"
+        file = "gfx/models/ships/nsc/nsc_strikecruiser/css_fedbuilder_nsc_strike_cruiser_four.mesh"
+		scale = 1.0
+    }
+
+	#######  exploration cruiser  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_exploration_cruiser_mesh"
+        file = "gfx/models/ships/nsc/nsc_explorationcruiser/css_fedbuilder_nsc_exploration_cruiser.mesh"
+		scale = 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_exploration_cruiser_four_mesh"
+        file = "gfx/models/ships/nsc/nsc_explorationcruiser/css_fedbuilder_nsc_exploration_cruiser_four.mesh"
+		scale = 1.0
+    }
+
+	#######  carrier #######	
+
+	pdxmesh = {
+		name = "css_fedbuild_01_carrier_mesh"
+        file = "gfx/models/ships/nsc/nsc_carrier/css_fedbuilder_nsc_carrier.mesh"
+		scale = 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_carrier_saucer_mesh"
+        file = "gfx/models/ships/nsc/nsc_carrier/css_fedbuilder_nsc_carrier_saucer.mesh"
+		scale = 1.2
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_01_carrier_hull_mesh"
+        file = "gfx/models/ships/nsc/nsc_carrier/css_fedbuilder_nsc_carrier_hull.mesh"
+		scale = 1.1
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_carrier_nacelles_mesh"
+        file = "gfx/models/ships/nsc/nsc_carrier/css_fedbuilder_nsc_carrier_nacelles.mesh"
+		scale = 1.2
+    }	
+
+	#######  escort carrier  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_escort_carrier_mesh"
+        file = "gfx/models/ships/nsc/nsc_escortcarrier/css_fedbuilder_nsc_escortcarrier.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "css_fedbuild_01_escortcarrier_idle_animation" }
+		animation = { id = "moving"			type = "css_fedbuild_01_escortcarrier_idle_animation" }
+		animation = { id = "death"			type = "css_fedbuild_01_escortcarrier_idle_animation" }			
+	}
+
+	#######  flagship  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_flagship_mesh"
+        file = "gfx/models/ships/nsc/nsc_flagship/css_fedbuilder_nsc_flagship.mesh"
+		scale = 0.75
+    }	
+
+	#######  dreadnought  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_01_dreadnought_mesh"
+        file = "gfx/models/ships/nsc/nsc_dreadnought/css_fedbuilder_nsc_dreadnought.mesh"
+		scale = 1.0
+    }	
+}

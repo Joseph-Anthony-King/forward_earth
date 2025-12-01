@@ -2162,6 +2162,11 @@ event = {
                         }
                     }
 
+                    last_created_country = {
+                        capital_scope = { set_name = "Eridani A II" }
+                        set_graphical_culture = mammalian_01
+                    }
+
                     set_owner = last_created_country
                     set_capital = yes
                     add_district = district_farming
@@ -2169,11 +2174,6 @@ event = {
                     add_district = district_mining
                     add_district = district_generator
                     add_building = building_capital
-
-                    last_created_country = {
-                        capital_scope = { set_name = "Eridani A II" }
-                        set_graphical_culture = mammalian_01
-                    }
 
                     ###log = "LHC spawned for Earth Custodianship/ICARUS..."
                 }

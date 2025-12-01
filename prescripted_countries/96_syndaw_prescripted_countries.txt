@@ -207,8 +207,8 @@ icarus = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
+	graphical_culture = "ai_ship_set_01"
+	city_graphical_culture = "ai_ship_set_01"
 
 	empire_flag={
 		icon= {
@@ -279,8 +279,8 @@ xt489 = {
 	system_name = "PRESCRIPTED_system_name_xt489"
 	initializer = ""
 
-	graphical_culture = "avian_01"
-	city_graphical_culture = "avian_01"
+	graphical_culture = "ai_ship_set_01"
+	city_graphical_culture = "ai_ship_set_01"
 
 	empire_flag={
 		icon={
@@ -523,8 +523,8 @@ icarus_machine_age = {
 	initializer = "sol_system_initializer"
 	system_name = "NAME_Sol"
 
-	graphical_culture = "mammalian_01"
-	city_graphical_culture = "mammalian_01"
+	graphical_culture = "ai_ship_set_01"
+	city_graphical_culture = "ai_ship_set_01"
 
 	empire_flag={
 		icon= {
@@ -596,8 +596,8 @@ xt489_machine_age = {
 	system_name = "PRESCRIPTED_system_name_xt489"
 	initializer = ""
 
-	graphical_culture = "avian_01"
-	city_graphical_culture = "avian_01"
+	graphical_culture = "ai_ship_set_01"
+	city_graphical_culture = "ai_ship_set_01"
 
 	empire_flag={
 		icon={

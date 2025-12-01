@@ -1,0 +1,19 @@
+entity = {
+	name = "css_fedbuild_01_empty_entity"
+	pdxmesh = "css_fedbuild_01_empty_mesh"
+}
+
+entity = {
+	name = "css_fedbuild_02_empty_entity"
+	pdxmesh = "css_fedbuild_01_empty_mesh"
+}
+
+entity = {
+	name = "css_fedbuild_03_empty_entity"
+	pdxmesh = "css_fedbuild_01_empty_mesh"
+}
+
+entity = {
+	name = "css_fedbuild_04_empty_entity"
+	pdxmesh = "css_fedbuild_01_empty_mesh"
+}
