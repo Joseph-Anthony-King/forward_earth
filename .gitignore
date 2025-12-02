@@ -1,3 +1,6 @@
 # image files
 *.dds
 *.mesh
+
+# descriptor mod files
+*.mod
