@@ -1,7 +1,5 @@
 ﻿l_japanese:
 
- EMPIRE_DESIGN_humans2:0 "オーロラ連邦"
- EMPIRE_DESIGN_humans2_1:0 "オーロラ連邦"
  eta_cassiopeiae_system_initializer_NAME:0 "カシオペヤ座イータ星系"
  eta_cassiopeiae_system_initializer_DESC:0 "オーロラ連邦の開始太陽系。\n\n$system_initializer_DESC$"
 

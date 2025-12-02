@@ -1,7 +1,5 @@
 ﻿l_russian:
 
- EMPIRE_DESIGN_humans2:0 "Содружество Авроры"
- EMPIRE_DESIGN_humans2_1:0 "Содружество Авроры"
  eta_cassiopeiae_system_initializer_NAME:0 "Система Эта Кассиопеи"
  eta_cassiopeiae_system_initializer_DESC:0 "Начальная Солнечная система Содружества Авроры.\n\n$system_initializer_DESC$"
 
