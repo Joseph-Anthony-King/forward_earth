@@ -1,0 +1,30 @@
+The 28 default files which have been overridden:
+
+- common/prescripted_flags/00_default_empire_flags.txt
+- common/random_names/base/00_random_names.txt
+- common/solar_system_initializers/sol_initializers.txt
+- common/start_screen_messages/00_start_screen_messages.txt
+- localisation/braz_por/main_3_l_braz_por.yml
+- localisation/braz_por/prescripted_l_braz_por.yml
+- localisation/english/main_3_l_english.yml
+- localisation/english/prescripted_l_english.yml
+- localisation/french/main_3_l_french.yml
+- localisation/french/prescripted_l_french.yml
+- localisation/german/main_3_l_german.yml
+- localisation/german/prescripted_l_german.yml
+- localisation/japanese/main_3_l_japanese.yml
+- localisation/japanese/prescripted_l_japanese.yml
+- localisation/korean/main_3_l_korean.yml
+- localisation/korean/prescripted_l_korean.yml
+- localisation/polish/main_3_l_polish.yml
+- localisation/polish/prescripted_l_polish.yml
+- localisation/russian/main_3_l_russian.yml
+- localisation/russian/prescripted_l_russian.yml
+- localisation/simp_chinese/main_3_l_simp_chinese.yml
+- localisation/simp_chinese/prescripted_l_simp_chinese.yml
+- localisation/spanish/main_3_l_spanish.yml
+- localisation/spanish/prescripted_l_spanish.yml
+- map/galaxy/galaxy_shapes.txt
+- prescripted_countries/00_top_countries.txt
+- prescripted_countries/94_megacorp_prescripted_countries.txt
+- prescripted_countries/96_syndaw_prescripted_countries.txt
