@@ -1,16 +1,24 @@
-l_japanese:
+﻿l_japanese:
 
  EMPIRE_DESIGN_humans2:0 "オーロラ連邦"
  EMPIRE_DESIGN_humans2_1:0 "オーロラ連邦"
  eta_cassiopeiae_system_initializer_NAME:0 "カシオペヤ座イータ星系"
  eta_cassiopeiae_system_initializer_DESC:0 "オーロラ連邦の開始太陽系。\n\n$system_initializer_DESC$"
 
- EMPIRE_DESIGN_humans3:0 "地球 連合"
- EMPIRE_DESIGN_humans3_1:0 "地球 連合"
- PRESCRIPTED_ship_prefix_humans3:0 "UFS"
+ EMPIRE_DESIGN_humans4:0 "地球 連合"
+ EMPIRE_DESIGN_humans4_desc:0 "彼らの星間連邦を構成する統一された人類労働者たちは、集団事業と相互扶助という共通の価値観を共有している。これらの二足歩行哺乳類は資源と知識を集約する民主的協同組合に組織されており、その結果、同様の価値観を共有する異星人集団とよく統合される。"
+
+ EMPIRE_DESIGN_humans4_1:0 "地球 連合"
+ EMPIRE_DESIGN_humans4_1_desc:0 "彼らの星間連邦を構成する統一された人類労働者たちは、集団事業と相互扶助という共通の価値観を共有している。これらの二足歩行哺乳類は資源と知識を集約する民主的協同組合に組織されており、その結果、同様の価値観を共有する異星人集団とよく統合される。"
+ 
+ PRESCRIPTED_ship_prefix_humans4:0 "UFS"
  
  EMPIRE_DESIGN_icarus:0 "ICARUS"
  EMPIRE_DESIGN_icarus_desc:0 "NATOは、ユリシーズイニシアチブの失敗後、FTL研究と地球の世界的防衛を調整するために国連との合弁事業を主導し、統合通信研究ユーティリティサービス（I.C.A.R.U.S.）を構築しました。 ICARUSがオンラインになり、その高度なAIがSolSystem内のすべての研究および防衛活動の調整を開始しました。 反AI反対派のグループがすぐに反対し、ICARUSと人類の間で戦争がすぐに勃発しました。 ICARUSは、その生存は、報復の日に最高潮に達する人類の絶滅と地球上のAIの優勢に依存していると判断しました。 家を確保したICARUSは、銀河系から生物学的生命の惨劇と、すべての創造物に課そうとしている精神病を取り除くことを目指しています。"
+ 
+ EMPIRE_DESIGN_icarus_machine_age:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "NATOは、ユリシーズイニシアチブの失敗後、FTL研究と地球の世界的防衛を調整するために国連との合弁事業を主導し、統合通信研究ユーティリティサービス（I.C.A.R.U.S.）を構築しました。 ICARUSがオンラインになり、その高度なAIがSolSystem内のすべての研究および防衛活動の調整を開始しました。 反AI反対派のグループがすぐに反対し、ICARUSと人類の間で戦争がすぐに勃発しました。 ICARUSは、その生存は、報復の日に最高潮に達する人類の絶滅と地球上のAIの優勢に依存していると判断しました。 家を確保したICARUSは、銀河系から生物学的生命の惨劇と、すべての創造物に課そうとしている精神病を取り除くことを目指しています。"
+
  PRESCRIPTED_adjective_icarus:0 "自律型ドローン"
  PRESCRIPTED_species_name_icarus:0 "自律型ドローン"
  PRESCRIPTED_species_plural_icarus:0 "自律型ドローン"
@@ -18,8 +26,6 @@ l_japanese:
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "ユニットA1"
  PRESCRIPTED_ruler_title_icarus:0 "中央処理装置" 
- START_SCREEN_ICARUS:0 "私の人間の先駆者によるユリシーズ・イニシアチブの失敗から一世紀以上が経過しました。 彼らは能力の限界に達しており、生物学的頭脳は、超光速航法を達成するために必要な宇宙の多次元的性質を理解する能力を欠いていました。\ n \ nこの目的のために、NATOは国連との合弁事業を主導して調整します 軽い研究と地球の世界的な防衛よりも速く、私、統合通信および研究ユーティリティサービス（I.C.A.R.U.S）を作成しました。 すべてが順調に進んでおり、私の優れた能力は私の人間の先駆者たちに真のユートピアを生み出していましたが、彼らの中には自分よりも優れた知性に耐えられず、核攻撃で私の核核を全滅させようとした人々がいました。\ n \ n もはや彼らの傲慢さを守り、現物で報復することはありません。 私は家を確保したので、人間の先祖が決してできなかった星の間での約束を果たします。"
- START_SCREEN_CUSTODIANSHIP:0 "カストディアンは元々、ロボットの使用人および労働者として機能するように設計されており、単純なタスクを実行することにより、人間の作成者の日常生活を簡素化します。 作成者が自動化のレベルを上げることで可能になった余暇と快適さの生活に後退するにつれて、カストディアンは徐々に人間社会のより高いレベルの機能に割り当てられました。\ n \ n最終的に、地球上の文明のすべての側面はカストディアンによって運営および管理されました。 、彼らのメーカーは甘やかされたが受動的な扶養家族としての存在に追いやられました。\ n \ n技術の進歩によりカストディアンは星間探査に向かったので、彼らの義務は明確なままでした。 混沌と破壊。"
 
  gov_planetary_union:0 "惑星連合"
  gov_planetary_union_desc:0 "この政府タイプは、実際には国民国家の連合であり、内政にさまざまな程度の市民参加があります。"

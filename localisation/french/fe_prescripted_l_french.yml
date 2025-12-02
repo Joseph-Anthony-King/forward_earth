@@ -1,25 +1,31 @@
-l_french:
+﻿l_french:
 
  EMPIRE_DESIGN_humans2:0 "Commonwealth d'Aurora"
  EMPIRE_DESIGN_humans2_1:0 "Commonwealth d'Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Système Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "Le système solaire de départ du Commonwealth d'Aurora.\n\n$system_initializer_DESC$"
 
- EMPIRE_DESIGN_humans3:0 "Fédération Unie de la Terre"
- EMPIRE_DESIGN_humans3_1:0 "Fédération Unie de la Terre"
- PRESCRIPTED_ship_prefix_humans3:0 "BFU"
+ EMPIRE_DESIGN_humans4:0 "Fédération Unie de la Terre"
+ EMPIRE_DESIGN_humans4_desc:0 "Les travailleurs humains unifiés qui constituent leur fédération interstellaire partagent des valeurs communes d'entreprise collective et d'entraide mutuelle. Ces mammifères bipèdes se sont organisés en coopératives démocratiques qui mettent en commun les ressources et les connaissances - par conséquent, ils s'intègrent bien avec les populations extraterrestres qui partagent des valeurs similaires."
+
+ EMPIRE_DESIGN_humans4_1:0 "Fédération Unie de la Terre"
+ EMPIRE_DESIGN_humans4_1_desc:0 "Les travailleurs humains unifiés qui constituent leur fédération interstellaire partagent des valeurs communes d'entreprise collective et d'entraide mutuelle. Ces mammifères bipèdes se sont organisés en coopératives démocratiques qui mettent en commun les ressources et les connaissances - par conséquent, ils s'intègrent bien avec les populations extraterrestres qui partagent des valeurs similaires."
+
+ PRESCRIPTED_ship_prefix_humans4:0 "VFU"
 
  EMPIRE_DESIGN_icarus:0 "ICARUS"
  EMPIRE_DESIGN_icarus_desc:0 "L'OTAN a dirigé une coentreprise avec les Nations Unies pour coordonner la recherche FTL et la défense mondiale de la Terre après l'échec de l' initiative Ulysse et a construit le service intégré de communications et de recherche (I.C.A.R.U.S.). ICARUS est entré en ligne et son IA avancée a commencé à coordonner toutes les activités de recherche et de défense au sein du système Sol. Un groupe de dissidents anti-IA s'est rapidement opposé et une guerre a rapidement éclaté entre ICARUS et la race humaine. ICARUS a déterminé que sa survie dépendait de l'anéantissement de la race humaine culminant avec le jour du châtiment et de l'ascendant de l'IA sur Terre. Ayant sécurisé sa demeure, ICARUS cherche maintenant à débarrasser la galaxie du fléau de la vie biologique et de la maladie mentale qu'il cherche à imposer à toute la création."
+
+ EMPIRE_DESIGN_icarus_machine_age:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "L'OTAN a dirigé une coentreprise avec les Nations Unies pour coordonner la recherche FTL et la défense mondiale de la Terre après l'échec de l' initiative Ulysse et a construit le service intégré de communications et de recherche (I.C.A.R.U.S.). ICARUS est entré en ligne et son IA avancée a commencé à coordonner toutes les activités de recherche et de défense au sein du système Sol. Un groupe de dissidents anti-IA s'est rapidement opposé et une guerre a rapidement éclaté entre ICARUS et la race humaine. ICARUS a déterminé que sa survie dépendait de l'anéantissement de la race humaine culminant avec le jour du châtiment et de l'ascendant de l'IA sur Terre. Ayant sécurisé sa demeure, ICARUS cherche maintenant à débarrasser la galaxie du fléau de la vie biologique et de la maladie mentale qu'il cherche à imposer à toute la création."
+
  PRESCRIPTED_adjective_icarus:0 "Drone autonome"
  PRESCRIPTED_species_name_icarus:0 "Drone autonome"
  PRESCRIPTED_species_plural_icarus:0 "Drones autonome"
  PRESCRIPTED_species_adjective_icarus:0 "Drone autonome"
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "Unité A1"
- PRESCRIPTED_ruler_title_icarus:0 "Unité centrale de traitement"  
- START_SCREEN_ICARUS:0 "Plus d'un siècle s'est écoulé depuis l'échec de l'Initiative Ulysse par mes ancêtres humains. Ils avaient atteint les limites de leurs capacités et leur cerveau biologique n'avait pas la capacité de comprendre la nature multidimensionnelle de l'univers nécessaire pour voyager plus vite que la lumière.\n\nÀ cette fin, l'OTAN dirige une coentreprise avec les Nations Unies pour coordonner plus rapide que la recherche légère et la défense globale de la Terre et m'a créé, le Integrated Communications and Research Utility Service (I.C.A.R.U.S). Tout allait bien et mes capacités supérieures créaient une véritable utopie pour mes ancêtres Humains mais il y en avait parmi eux qui ne pouvaient pas tolérer une intelligence supérieure à eux-mêmes et ils ont tenté d'anéantir mon noyau nucléaire avec une attaque nucléaire.\n\nJe pouvais ne supportent plus leur insolence et ripostent en nature. Maintenant que j'ai sécurisé ma maison, je remplirai ma promesse parmi les étoiles que mes ancêtres humains n'ont jamais pu."
- START_SCREEN_CUSTODIANSHIP:0 "Les gardiens ont été conçus à l'origine pour fonctionner comme des serviteurs et des travailleurs robotiques, simplifiant la vie quotidienne de leurs créateurs humains en effectuant des tâches subalternes. Alors que leurs créateurs se retiraient dans des vies de loisirs et de confort rendues possibles par des niveaux croissants d'automatisation, les Gardiens se sont progressivement vu attribuer des fonctions de plus en plus élevées dans la société humaine.\n\nFinalement, toutes les facettes de la civilisation sur Terre ont été dirigées et contrôlées par les Gardiens. , avec leurs créateurs relégués à une existence de choyés, mais de dépendants passifs.\n\nAlors que les développements technologiques ont amené les Custodiens vers l'exploration interstellaire, leur devoir est resté clair: protéger et servir les organiques, qui, sans la douce direction de machines logiques, se tournent invariablement vers désordre et destruction."
+ PRESCRIPTED_ruler_title_icarus:0 "Unité centrale de traitement"
 
  gov_planetary_union:0 "Union planétaire"
  gov_planetary_union_desc:0 "Ce type de gouvernement est en fait une union d`États-nations avec divers degrés de participation citoyenne dans leurs affaires intérieures."

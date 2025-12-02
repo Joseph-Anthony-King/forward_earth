@@ -1,25 +1,31 @@
-l_spanish:
+﻿l_spanish:
 
  EMPIRE_DESIGN_humans2:0 "Mancomunidad de Aurora"
  EMPIRE_DESIGN_humans2_1:0 "Mancomunidad de Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "El sistema solar inicial de la Mancomunidad de Aurora.\n\n$system_initializer_DESC$"
 
- EMPIRE_DESIGN_humans3:0 "Federación Unida de la Tierra"
- EMPIRE_DESIGN_humans3_1:0 "Federación Unida de la Tierra"
- PRESCRIPTED_ship_prefix_humans3:0 "FUS"
+ EMPIRE_DESIGN_humans4:0 "Federación Unida de la Tierra"
+ EMPIRE_DESIGN_humans4_desc:0 "Los trabajadores humanos unificados que constituyen su federación interestelar comparten valores comunes de empresa colectiva y ayuda mutua. Estos mamíferos bípedos se han organizado en cooperativas democráticas que agrupan recursos y conocimiento - como resultado, se integran bien con poblaciones alienígenas que comparten valores similares."
+
+ EMPIRE_DESIGN_humans4_1:0 "Federación Unida de la Tierra"
+ EMPIRE_DESIGN_humans4_1_desc:0 "Los trabajadores humanos unificados que constituyen su federación interestelar comparten valores comunes de empresa colectiva y ayuda mutua. Estos mamíferos bípedos se han organizado en cooperativas democráticas que agrupan recursos y conocimiento - como resultado, se integran bien con poblaciones alienígenas que comparten valores similares."
+
+ PRESCRIPTED_ship_prefix_humans4:0 "NFU"
  
  EMPIRE_DESIGN_icarus:0 "ICARUS"
  EMPIRE_DESIGN_icarus_desc:0 "La OTAN lideró una empresa conjunta con las Naciones Unidas para coordinar la investigación FTL y la defensa global de la Tierra tras el fracaso de la Iniciativa Ulysses y construyó el Servicio de Utilidad de Investigación y Comunicaciones Integradas (I.C.A.R.U.S.). ICARUS entró en línea y su IA avanzada comenzó a coordinar todas las actividades de investigación y defensa dentro del Sistema Solar. Un grupo de disidentes anti-IA rápidamente se levantó en oposición y pronto estalló la guerra entre ICARUS y la raza humana. ÍCARO determinó que su supervivencia dependía de la aniquilación de la raza humana que culminaría en el Día de la Retribución y el ascenso de la IA en la Tierra. Habiendo asegurado su hogar, ÍCARO ahora busca librar a la galaxia del flagelo de la vida biológica y la enfermedad mental que busca imponer a toda la creación."
+ 
+ EMPIRE_DESIGN_icarus_machine_age:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "La OTAN lideró una empresa conjunta con las Naciones Unidas para coordinar la investigación FTL y la defensa global de la Tierra tras el fracaso de la Iniciativa Ulysses y construyó el Servicio de Utilidad de Investigación y Comunicaciones Integradas (I.C.A.R.U.S.). ICARUS entró en línea y su IA avanzada comenzó a coordinar todas las actividades de investigación y defensa dentro del Sistema Solar. Un grupo de disidentes anti-IA rápidamente se levantó en oposición y pronto estalló la guerra entre ICARUS y la raza humana. ÍCARO determinó que su supervivencia dependía de la aniquilación de la raza humana que culminaría en el Día de la Retribución y el ascenso de la IA en la Tierra. Habiendo asegurado su hogar, ÍCARO ahora busca librar a la galaxia del flagelo de la vida biológica y la enfermedad mental que busca imponer a toda la creación."
+
  PRESCRIPTED_adjective_icarus:0 "Drone autónomo"
  PRESCRIPTED_species_name_icarus:0 "Drone autónomo"
  PRESCRIPTED_species_plural_icarus:0 "Drones Autónomos"
  PRESCRIPTED_species_adjective_icarus:0 "Drone autónomo"
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "Unidad A1"
- PRESCRIPTED_ruler_title_icarus:0 "Unidad Central de Procesamiento" 
- START_SCREEN_ICARUS:0 "Ha pasado más de un siglo desde el fracaso de la Iniciativa Ulises por parte de mis antepasados Humanos. Habían llegado al límite de sus capacidades y sus cerebros biológicos carecían de la capacidad para comprender la naturaleza multidimensional del universo necesaria para lograr viajes más rápidos que la luz.\n\nCon este fin, la OTAN lideró una empresa conjunta con las Naciones Unidas para coordinar investigación más rápida que la luz y la defensa global de la Tierra y me creó, el Servicio de Utilidad de Investigación y Comunicaciones Integradas (I.C.A.R.U.S). Todo iba bien y mis habilidades superiores estaban creando una verdadera utopía para mis antepasados humanos, pero algunos de ellos no podían tolerar una inteligencia superior a la suya e intentaron aniquilar mi núcleo nuclear con un ataque nuclear.\n\nYo pude Ya no soporto su insolencia y se desquitó en especie. Ahora que he asegurado mi hogar, cumpliré mi promesa entre las estrellas que mis antepasados humanos nunca pudieron."
- START_SCREEN_CUSTODIANSHIP:0 "Los Custodios fueron diseñados originalmente para funcionar como sirvientes y trabajadores robóticos, simplificando la vida cotidiana de sus creadores humanos al realizar tareas de baja categoría. A medida que sus creadores se retiraron a una vida de ocio y comodidad gracias a los crecientes niveles de automatización, a los Custodios se les fueron asignando funciones cada vez más altas en la sociedad humana.\n\nEventualmente, todas las facetas de la civilización en la Tierra fueron dirigidas y controladas por los Custodios. , con sus creadores relegados a una existencia como mimados, pero dependientes pasivos.\n\nA medida que los desarrollos tecnológicos llevaron a los Custodios hacia la exploración interestelar, su deber permaneció claro: proteger y servir a los orgánicos, quienes sin la gentil guía de las máquinas lógicas invariablemente recurren a caos y destrucción."
+ PRESCRIPTED_ruler_title_icarus:0 "Unidad Central de Procesamiento"
 
  gov_planetary_union:0 "Unión Planetaria"
  gov_planetary_union_desc:0 "Este tipo de gobierno es en realidad una unión de estados-nación con varios grados de participación ciudadana en sus asuntos internos."
