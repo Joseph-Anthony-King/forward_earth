@@ -1,7 +1,5 @@
 ﻿l_spanish:
 
- EMPIRE_DESIGN_humans2:0 "Mancomunidad de Aurora"
- EMPIRE_DESIGN_humans2_1:0 "Mancomunidad de Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "El sistema solar inicial de la Mancomunidad de Aurora.\n\n$system_initializer_DESC$"
 

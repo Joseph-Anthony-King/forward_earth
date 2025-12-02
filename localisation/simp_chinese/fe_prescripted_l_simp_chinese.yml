@@ -1,7 +1,5 @@
 ﻿l_simp_chinese:
 
- EMPIRE_DESIGN_humans2:0 "奥罗拉联邦"
- EMPIRE_DESIGN_humans2_1:0 "奥罗拉联邦"
  eta_cassiopeiae_system_initializer_NAME:0 "仙后座η系统"
  eta_cassiopeiae_system_initializer_DESC:0 "奥罗拉联邦的起始太阳系。\n\n$system_initializer_DESC$"
 

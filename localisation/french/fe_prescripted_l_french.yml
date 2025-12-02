@@ -1,7 +1,5 @@
 ﻿l_french:
 
- EMPIRE_DESIGN_humans2:0 "Commonwealth d'Aurora"
- EMPIRE_DESIGN_humans2_1:0 "Commonwealth d'Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Système Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "Le système solaire de départ du Commonwealth d'Aurora.\n\n$system_initializer_DESC$"
 

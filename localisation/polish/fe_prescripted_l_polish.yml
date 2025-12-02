@@ -1,7 +1,5 @@
 ﻿l_polish:
 
- EMPIRE_DESIGN_humans2:0 "Wspólnota Aurory"
- EMPIRE_DESIGN_humans2_1:0 "Wspólnota Aurory"
  eta_cassiopeiae_system_initializer_NAME:0 "System Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "Początkowy Układ Słoneczny Wspólnoty Aurory.\n\n$system_initializer_DESC$"
 
