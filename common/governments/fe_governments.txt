@@ -11,5 +11,35 @@ gov_planetary_union = {
 
 	weight = {
 		base = @gov_civic_weight
+		modifier = {
+			factor = 2
+			OR = {
+				has_valid_civic = civic_efficient_bureaucracy
+				has_valid_civic = civic_diplomatic_corps
+			}
+		}
+	}
+}
+
+# Constitutional Monarchy
+gov_constitutional_monarchy = {
+	ruler_title = RT_PRIME_MINISTER
+	ruler_title_female = RT_PRIME_MINISTER_FEMALE
+
+	should_force_rename = yes
+
+	possible = {
+		is_oligarchic_authority = yes
+	}
+
+	weight = {
+		base = @gov_civic_weight
+		modifier = {
+			factor = 2
+			OR = {
+				has_valid_civic = civic_efficient_bureaucracy
+				has_valid_civic = civic_parliamentary_system
+			}
+		}
 	}
 }

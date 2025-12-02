@@ -102,7 +102,7 @@ humans4 = {
 
 	authority = "auth_democratic"
 	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
-	government = gov_worker_coop
+	government = gov_direct_democracy
 
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"
@@ -322,7 +322,7 @@ humans4_1 = {
 
 	authority = "auth_democratic"
 	civics = { "civic_beacon_of_liberty" "civic_idealistic_foundation" }
-	government = gov_worker_coop
+	government = gov_direct_democracy
 
 	ethic = "ethic_xenophile"
 	ethic = "ethic_fanatic_egalitarian"

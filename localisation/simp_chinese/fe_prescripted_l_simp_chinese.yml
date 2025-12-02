@@ -28,4 +28,7 @@
  gov_planetary_union:0 "行星联盟"
  gov_planetary_union_desc:0 "这种政府类型实际上是民族国家的联盟，公民参与其内部事务的程度不同。"
  RT_SECRETARY_GENERAL:0 "秘书长"
+
+ gov_constitutional_monarchy:0 "宪政君主制"
+ gov_constitutional_monarchy_desc:0 "这种政府是一种受宪法法律限制的君主制，选举产生的代表与世袭君主共享权力。"
  

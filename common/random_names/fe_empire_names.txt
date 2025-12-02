@@ -20,7 +20,7 @@ empire_name_format = {
 	# Empire of Sol
 }
 
-# Democratic Generic 2
+# Democratic Generic 2k
 empire_name_format = {
 	random_weight = {
 		factor = 0
@@ -97,5 +97,107 @@ empire_name_format = {
 	format = format.dem_gen.5 # [This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>
 	noun = format.species # [This.GetSpeciesName]
 	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
+	# Human Star Empire
+}
+
+### Constitutional Monarchy
+
+# Imperial Generic 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_constitutional_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<imperial_gen> [This.Capital.System.GetName]"
+	format = format.imp_gen.1 # <imperial_gen> of [This.Capital.System.GetName]
+	noun = format.home_system # [This.Capital.System.GetName]
+	prefix_format = format_prefix.imp_gen.1 # [This.Capital.System.GetName] <imperial_gen>
+	# Empire of Sol
+}
+
+# Imperial Generic 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_constitutional_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<imperial_gen> [This.Capital.GetName]"
+	format = format.imp_gen.2 # <imperial_gen> of [This.Capital.GetName]
+	noun = format.homeworld # [This.Capital.GetName]
+	prefix_format = format_prefix.imp_gen.2 # [This.Capital.GetName] <imperial_gen>
+	# Empire of Earth
+}
+
+# Imperial Generic 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_constitutional_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <imperial_gen>"
+	format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
+	# Human Empire
+}
+
+# Imperial Generic 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_constitutional_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "<imperial_gen_desc> [This.GetSpeciesName] <imperial_gen>"
+	format = format.imp_gen.4 # <imperial_gen_desc> [This.GetSpeciesName] <imperial_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
+	# Great Human Empire
+}
+
+# Imperial Generic 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_constitutional_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	lookups = "[This.GetSpeciesName] <imperial_gen_mid_desc> <imperial_gen>"
+	format = format.imp_gen.5 # [This.GetSpeciesName] <imperial_gen_mid_desc> <imperial_gen>
+	noun = format.species # [This.GetSpeciesName]
+	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
 	# Human Star Empire
 }

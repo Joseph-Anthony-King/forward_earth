@@ -28,4 +28,7 @@
  gov_planetary_union:0 "惑星連合"
  gov_planetary_union_desc:0 "この政府タイプは、実際には国民国家の連合であり、内政にさまざまな程度の市民参加があります。"
  RT_SECRETARY_GENERAL:0 "総長"
+
+ gov_constitutional_monarchy:0 "立憲君主制"
+ gov_constitutional_monarchy_desc:0 "この政府は憲法によって制限された君主制であり、選出された代表者が世襲の君主と権力を共有します。"
  
