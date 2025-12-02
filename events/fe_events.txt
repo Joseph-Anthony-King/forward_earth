@@ -287,7 +287,7 @@ event = {
                 random_list = {
                     
                     # UNE
-                    85 = {
+                    45 = {
                         generate_empire_home_planet = yes
 
                         create_country = {
@@ -296,19 +296,19 @@ event = {
 
                             ship_prefix = "UNS"
 
-                            authority = "auth_democratic"
+                            authority = "auth_oligarchic"
 
                             day_zero_contact = no
 
                             civics = {
-                                civic = civic_beacon_of_liberty
-                                civic = civic_idealistic_foundation
+                                civic = civic_efficient_bureaucracy
+                                civic = civic_diplomatic_corps
                             }
 
                             species = event_target:human_species
                             ethos = {
-                                ethic = "ethic_xenophile"
-                                ethic = "ethic_fanatic_egalitarian"
+                                ethic = "ethic_fanatic_xenophile"
+                                ethic = "ethic_egalitarian"
                             }
 
                             flag = {
@@ -370,6 +370,109 @@ event = {
                             capital_scope = { set_name = "NAME_Earth" }
                             set_country_flag = human_1
                             set_country_flag = human_faction
+                            set_country_flag = une_faction
+                            set_country_flag = sol_starbase
+                            create_starting_leaders = yes
+                            save_global_event_target_as = UNoE_npc
+                            country_event = { id = game_start.9 }
+                            country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+                        }
+
+                        set_owner = last_created_country
+
+                        set_capital = yes
+                        generate_earth_deposits_and_blockers = yes
+                        generate_start_buildings_and_districts = yes
+                        generate_start_pops = yes
+                        clear_blockers = yes
+
+                        ###log = "UNE spawned for CoA..."
+                    }                    
+                    # UTE
+                    40 = {
+                        generate_empire_home_planet = yes
+
+                        create_country = {
+                            name = "NAME_United_Federation_of_Earth"
+                            name_list = "HUMAN1"
+
+                            ship_prefix = "UTS"
+
+                            authority = "auth_democratic"
+
+                            day_zero_contact = no
+
+                            civics = {
+                                civic = civic_beacon_of_liberty
+                                civic = civic_idealistic_foundation
+                            }
+
+                            species = event_target:human_species
+                            ethos = {
+                                ethic = "ethic_xenophile"
+                                ethic = "ethic_fanatic_egalitarian"
+                            }
+
+                            flag = {
+                                icon = {
+                                    category = "human"
+                                    file = "flag_human_9.dds"
+                                }
+                                background= {
+                                    category = "backgrounds"
+                                    file = "00_solid.dds"
+                                }
+                                colors={
+                                    "blue"
+                                    "black"
+                                    "null"
+                                    "null"
+                                }
+                            }
+                            type = default
+                            effect = {
+                                save_event_target_as = UNoE_npc
+                                add_resource = {
+                                    minerals = 200
+                                    energy = 200
+                                    food = 200
+                                    alloys = 100
+                                    consumer_goods = 100
+                                    influence = 100
+                                }
+                            }
+                        }
+
+                        create_colony = {
+                            owner = event_target:UNoE_npc
+                            species = event_target:human_species
+                            ethos = {
+                                ethic = "ethic_xenophile"
+                                ethic = "ethic_fanatic_egalitarian"
+                            }
+                        }
+
+                        solar_system = {
+                            create_starbase = {
+                                size = starbase_starport
+                                module = shipyard
+                                building = crew_quarters
+                                owner = event_target:UNoE_npc
+                                effect = {
+                                    set_starbase_module = {
+                                        slot = 1
+                                        module = trading_hub
+                                    }
+                                }
+                            }
+                        }
+
+                        last_created_country = {
+                            set_graphical_culture = humanoid_01
+                            capital_scope = { set_name = "NAME_Earth" }
+                            set_country_flag = human_1
+                            set_country_flag = human_faction
+                            set_country_flag = ute_faction
                             set_country_flag = sol_starbase
                             create_starting_leaders = yes
                             save_global_event_target_as = UNoE_npc
@@ -499,7 +602,6 @@ event = {
                         clear_blockers = yes
 
                         ###log = "ICARUS spawned as NPC..."
-
                     }
                     # Cockroaches of Earth
                     5 = {
@@ -1660,7 +1762,6 @@ event = {
                         clear_blockers = yes
 
                         ###log = "ICARUS spawned as NPC..."
-
                     }
                     # Cockroaches of Earth
                     1 = {
@@ -1797,12 +1898,10 @@ event = {
                     }
                     
                     set_owner = event_target:npc_LHC
-
-                    while = {
-                        count = 14
-                        create_pop_group = {
-                            species = event_target:human_species
-                        }
+                    
+                    create_pop_group = {
+                        size = 1600
+                        species = event_target:human_species
                     }
 
                     set_owner = last_created_country
@@ -1917,34 +2016,34 @@ event = {
                                 create_starting_leaders = yes
                                 country_event = { id = game_start.9 }
                                 country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
+
+                                create_built_robot_species = yes
+
+                                last_created_species = {
+                                    change_species_characteristics = {
+                                        add_trait = trait_auto_mod_robotic
+                                    }
+                                }
+                            }
+
+                            random_galaxy_planet = {
+                                limit = {
+                                    has_planet_flag = planet_aurora
+                                    }                
+                                }
+
+                                create_pop_group = {
+                                    size = 800
+                                    species = last_created_species
+                                } 
+                                
+                                create_pop_group = {
+                                    size = 2700
+                                    species = event_target:human_species
+                                }
                             }
                             
                             set_owner = event_target:npc_CoA
-
-                            while = {	
-                                count = 19	
-                                create_pop_group = {	
-                                    species = event_target:human_species
-                                }	
-                            }
-                            
-                            create_species = {	
-                                name = "NAME_Robot"	
-                                plural = "NAME_Robots"	
-                                class = ROBOT	
-                                namelist = MACHINE3	
-                                portrait = "default_robot"	
-                                traits = {	
-                                    trait = trait_mechanical
-                                }	
-                            }	
-
-                            while = {	
-                                count = 8	
-                                create_pop_group = {	
-                                    species = last_created	
-                                }	
-                            }                        
 
                             set_owner = last_created_country	
                             set_capital = yes
@@ -2154,12 +2253,10 @@ event = {
                     }
                     
                     set_owner = event_target:npc_LHC
-
-                    while = {
-                        count = 14
-                        create_pop_group = {
-                            species = event_target:human_species
-                        }
+                    
+                    create_pop_group = {
+                        size = 1600
+                        species = event_target:human_species
                     }
 
                     last_created_country = {
@@ -2278,34 +2375,34 @@ event = {
                                 create_starting_leaders = yes
                                 country_event = { id = game_start.9 }
                                 country_event = { id = game_start.33 days = 1 } # needs delay for system ownership to settle
-                            }
-                            
-                            set_owner = event_target:npc_CoA
 
-                            while = {	
-                                count = 20	
-                                create_pop_group = {	
+                                create_built_robot_species = yes
+
+                                last_created_species = {
+                                    change_species_characteristics = {
+                                        add_trait = trait_auto_mod_robotic
+                                    }
+                                }
+                            }
+
+                            random_galaxy_planet = {
+                                limit = {
+                                    has_planet_flag = planet_aurora
+                                    }                
+                                }
+
+                                create_pop_group = {
+                                    size = 800
+                                    species = last_created_species
+                                } 
+                                
+                                create_pop_group = {
+                                    size = 2700
                                     species = event_target:human_species
-                                }	
+                                }
                             }
                             
-                            create_species = {	
-                                name = "NAME_Robot"	
-                                plural = "NAME_Robots"	
-                                class = ROBOT	
-                                namelist = MACHINE3	
-                                portrait = "default_robot"	
-                                traits = {	
-                                    trait = trait_mechanical
-                                }	
-                            }	
-
-                            while = {	
-                                count = 8	
-                                create_pop_group = {	
-                                    species = last_created	
-                                }	
-                            }                        
+                            set_owner = event_target:npc_CoA                 
 
                             set_owner = last_created_country	
                             set_capital = yes	
@@ -3335,6 +3432,7 @@ event = {
                         plural = "NAME_Kahomas"
                         class = MAM
                         portrait = random
+                        homeworld = THIS
                         traits = {
                             trait = "trait_pc_continental_preference"
                             trait = "trait_sedentary"
@@ -3373,6 +3471,7 @@ event = {
                             trait = "trait_resilient"
                         }
                         effect = {
+                            set_species_flag = myrkrians
                             save_event_target_as = myrkrians
                         }
                     }
@@ -3453,27 +3552,21 @@ event = {
                     set_capital = yes
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
+				    clear_blockers = yes
                     
                     add_district = district_city
                     add_district = district_city
                     add_district = district_mining
-                        
-                    #generate_start_pops = yes
-                    while = {
-                        limit = { pop_amount < 2800 }
-                        create_pop_group = {
-                            species = event_target:myrkrians
-                            ethos = random
-                        }
+                    
+                    create_pop_group = {
+                        size = 4000
+                        species = event_target:myrkrians
                     }
-                    while = {
-                        limit = { pop_amount < 3200 }
-                        create_pop_group = {
-                            species = event_target:kahomas
-                            ethos = random
-                        }
+                    
+                    create_pop_group = {
+                        size = 1600
+                        species = event_target:kahomas
                     }
-                    clear_blockers = yes
 
                     ###log = "Myrk-Rians spawned..."
                 }
@@ -3512,20 +3605,15 @@ event = {
                     add_district = district_mining
                     add_district = district_mining
                     add_district = district_mining
-
-                    while = {
-                        limit = { pop_amount < 2400 }
-                        create_pop_group = {
-                            species = event_target:kahomas
-                            ethos = random
-                        }
+                    
+                    create_pop_group = {
+                        size = 2400
+                        species = event_target:kahomas
                     }
-                    while = {
-                        limit = { pop_amount < 2800 }
-                        create_pop_group = {
-                            species = event_target:myrkrians
-                            ethos = random
-                        }
+                    
+                    create_pop_group = {
+                        size = 800
+                        species = event_target:myrkrians
                     }
 
                     ###log = "Kahoa spawned..."
