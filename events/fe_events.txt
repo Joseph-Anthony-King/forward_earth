@@ -267,7 +267,7 @@ event = {
             limit = {
                 has_country_flag = human_2
             }
-
+            
             random_galaxy_planet = {
                 limit = {
                     has_planet_flag = planet_earth             
@@ -1992,23 +1992,6 @@ event = {
                                 }	
                             }
 
-                            last_created_country = {
-                                capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = mammalian_01
-                            }
-
-                            solar_system = {
-
-                                # starbase
-                                create_starbase = {
-                                    size = starbase_starport
-                                    module = shipyard
-                                    module = trading_hub
-                                    building = crew_quarters
-                                    owner = event_target:npc_CoA
-                                }
-                            }
-
                             event_target:npc_CoA = {
                                 set_country_flag = human_2
                                 set_country_flag = human_faction
@@ -2026,10 +2009,26 @@ event = {
                                 }
                             }
 
+                            last_created_country = {
+                                capital_scope = { set_name = "Aurora" }
+                                set_graphical_culture = mammalian_01
+                            }
+
+                            solar_system = {
+
+                                # starbase
+                                create_starbase = {
+                                    size = starbase_starport
+                                    module = shipyard
+                                    module = trading_hub
+                                    building = crew_quarters
+                                    owner = event_target:npc_CoA
+                                }
+                            }
+
                             random_galaxy_planet = {
                                 limit = {
-                                    has_planet_flag = planet_aurora
-                                    }                
+                                    has_planet_flag = planet_aurora               
                                 }
 
                                 create_pop_group = {
@@ -2041,32 +2040,27 @@ event = {
                                     size = 2700
                                     species = event_target:human_species
                                 }
-                            }
+                            	
+                                set_capital = yes
+
+                                generate_start_deposits_and_blockers = yes
+                                generate_start_buildings_and_districts = yes
                             
-                            set_owner = event_target:npc_CoA
+                                add_district = district_generator
+                                add_district = district_generator
+                                add_district = district_generator                           	
+                                add_building = building_robot_assembly_plant
 
-                            set_owner = last_created_country	
-                            set_capital = yes
-
-                            generate_start_deposits_and_blockers = yes
-                            generate_start_buildings_and_districts = yes
-                            
-                            add_district = district_generator
-                            add_district = district_generator
-                            add_district = district_generator                           	
-                            add_building = building_robot_assembly_plant
-
-                            create_army = {	
-                                name = "1st Colonial Gendarmerie"	
-                                owner = event_target:npc_CoA
-                                species = event_target:human_species	
-                                type = "defense_army"	
-                            }	
-                            create_army = {	
-                                name = "2nd Colonial Gendarmerie"	
-                                owner = event_target:npc_CoA
-                                species = event_target:human_species	
-                                type = "defense_army"	
+                                create_army = {	
+                                    name = "1st Colonial Gendarmerie"	
+                                    owner = event_target:npc_CoA	
+                                    type = "defense_army"	
+                                }	
+                                create_army = {	
+                                    name = "2nd Colonial Gendarmerie"	
+                                    owner = event_target:npc_CoA
+                                    type = "defense_army"	
+                                }
                             }
 
                             ###log = "CoA spawned for UNE..."
@@ -2078,9 +2072,6 @@ event = {
                     }
                 }
             }
-        }
-        else = {
-            ###log = "UNE not spawned..."
         }
     }
 }
@@ -2279,6 +2270,9 @@ event = {
                     limit = {
                         AND = {
                             NOT = { any_country = { has_country_flag = human_2 } }
+                            NOT = { any_country = { has_country_flag = custodian_faction } }
+                            NOT = { any_country = { has_country_flag = icarus_faction } }
+                            any_country = { has_country_flag = human_1 }
                             has_planet_flag = planet_aurora
                         }                
                     }
@@ -2385,10 +2379,14 @@ event = {
                                 }
                             }
 
+                            last_created_country = {
+                                capital_scope = { set_name = "Aurora" }
+                                set_graphical_culture = mammalian_01
+                            }
+
                             random_galaxy_planet = {
                                 limit = {
-                                    has_planet_flag = planet_aurora
-                                    }                
+                                    has_planet_flag = planet_aurora            
                                 }
 
                                 create_pop_group = {
@@ -2400,44 +2398,27 @@ event = {
                                     size = 2700
                                     species = event_target:human_species
                                 }
-                            }
+                            	
+                                set_capital = yes
+
+                                generate_start_deposits_and_blockers = yes
+                                generate_start_buildings_and_districts = yes
                             
-                            set_owner = event_target:npc_CoA                 
+                                add_district = district_generator
+                                add_district = district_generator
+                                add_district = district_generator                           	
+                                add_building = building_robot_assembly_plant
 
-                            set_owner = last_created_country	
-                            set_capital = yes	
-
-                            add_district = district_city	
-                            add_district = district_city	
-                            add_district = district_city	
-                            add_district = district_city	
-                            add_district = district_farming	
-                            add_district = district_farming	
-                            add_district = district_farming	
-                            add_district = district_mining	
-                            add_district = district_mining	
-                            add_district = district_generator	
-                            add_district = district_generator		
-                            add_district = district_generator	
-                            add_district = district_generator
-                            
-                            add_building = building_capital	
-                            add_building = building_research_lab_1	
-                            add_building = building_foundry_1	
-                            add_building = building_factory_1	
-                            add_building = building_robot_assembly_plant
-
-                            create_army = {	
-                                name = "1st Colonial Gendarmerie"	
-                                owner = event_target:npc_CoA
-                                species = event_target:human_species	
-                                type = "defense_army"	
-                            }	
-                            create_army = {	
-                                name = "2nd Colonial Gendarmerie"	
-                                owner = event_target:npc_CoA
-                                species = event_target:human_species	
-                                type = "defense_army"	
+                                create_army = {	
+                                    name = "1st Colonial Gendarmerie"	
+                                    owner = event_target:npc_CoA
+                                    type = "defense_army"	
+                                }	
+                                create_army = {	
+                                    name = "2nd Colonial Gendarmerie"	
+                                    owner = event_target:npc_CoA	
+                                    type = "defense_army"	
+                                }
                             }
 
                             ###log = "CoA spawned for Earth Custodianship/ICARUS..."
@@ -3299,11 +3280,11 @@ event = {
 
 ### fe.14 - Spawn potential federation members
 event = {
-	id = fe.14
-	hide_window = yes
-	is_triggered_only = yes
+    id = fe.14
+    hide_window = yes
+    is_triggered_only = yes
 
-	immediate = {
+    immediate = {
 
         random_list = {
             99 = {
@@ -3552,7 +3533,7 @@ event = {
                     set_capital = yes
                     generate_start_deposits_and_blockers = yes
                     generate_start_buildings_and_districts = yes
-				    clear_blockers = yes
+                    clear_blockers = yes
                     
                     add_district = district_city
                     add_district = district_city
@@ -3727,30 +3708,30 @@ event = {
 
                         ###log = "Great Parliament spawned..."
                     }
-                }
-
-                ### Spawn Great Parliament Wormhole  
-                random_system = {
-                    limit = {
-                        has_star_flag = kepler_186_system             
-                    }
-
-                    spawn_natural_wormhole = {
-                        bypass_type = wormhole
-                        random_pos = yes
-                        orbit_angle = 360
-                    }
-                            
+                    
+                    ### Spawn Great Parliament Wormhole  
                     random_system = {
                         limit = {
-                            has_natural_wormhole = no
+                            has_star_flag = kepler_186_system             
                         }
+
                         spawn_natural_wormhole = {
                             bypass_type = wormhole
                             random_pos = yes
                             orbit_angle = 360
                         }
-                        link_wormholes = prev
+                                
+                        random_system = {
+                            limit = {
+                                has_natural_wormhole = no
+                            }
+                            spawn_natural_wormhole = {
+                                bypass_type = wormhole
+                                random_pos = yes
+                                orbit_angle = 360
+                            }
+                            link_wormholes = prev
+                        }
                     }
                 }
             }
@@ -3947,6 +3928,34 @@ event = {
                 }                       
             }
             set_name = "NAME_70_virginis_5b"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_6
+                }                       
+            }
+            set_name = "NAME_70_virginis_6"
+        }
+
+        every_galaxy_planet = {
+            limit = {
+                AND = {
+                    NOT = {
+                        any_country = {
+                            has_country_flag = gal_risians
+                        }
+                    }
+                    has_planet_flag = planet_70_viginis_6a
+                }                       
+            }
+            set_name = "NAME_70_virginis_6a"
         }
 
         if = {

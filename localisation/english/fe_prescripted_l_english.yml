@@ -28,4 +28,7 @@
  gov_planetary_union:0 "Planetary Union"
  gov_planetary_union_desc:0 "This government type is actually a union of nation-states with various degrees of citizen participation in their internal affairs."
  RT_SECRETARY_GENERAL:0 "Secretary-General"
+
+ gov_constitutional_monarchy:0 "Constitutional Monarchy"
+ gov_constitutional_monarchy_desc:0 "This government is a monarchy limited by constitutional law, where elected representatives share power with the hereditary sovereign."
  

@@ -28,4 +28,7 @@
  gov_planetary_union:0 "Planetarische Union"
  gov_planetary_union_desc:0 "Dieser Regierungstyp ist eigentlich eine Vereinigung von Nationalstaaten mit unterschiedlichem Grad an Bürgerbeteiligung in ihren inneren Angelegenheiten."
  RT_SECRETARY_GENERAL:0 "Generalsekretär"
+
+ gov_constitutional_monarchy:0 "Konstitutionelle Monarchie"
+ gov_constitutional_monarchy_desc:0 "Diese Regierung ist eine durch Verfassungsrecht eingeschränkte Monarchie, in der gewählte Vertreter die Macht mit dem erblichen Souverän teilen."
  

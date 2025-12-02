@@ -28,4 +28,7 @@
  gov_planetary_union:0 "Unión Planetaria"
  gov_planetary_union_desc:0 "Este tipo de gobierno es en realidad una unión de estados-nación con varios grados de participación ciudadana en sus asuntos internos."
  RT_SECRETARY_GENERAL:0 "Secretario General"
+
+ gov_constitutional_monarchy:0 "Monarquía Constitucional"
+ gov_constitutional_monarchy_desc:0 "Este gobierno es una monarquía limitada por la ley constitucional, donde los representantes electos comparten el poder con el soberano hereditario."
  

@@ -28,4 +28,7 @@
  gov_planetary_union:0 "Unia Planetarna"
  gov_planetary_union_desc:0 "Ten typ rządu jest w rzeczywistości unią państw narodowych o różnym stopniu udziału obywateli w ich sprawach wewnętrznych."
  RT_SECRETARY_GENERAL:0 "Sekretarza Generalnego"
+
+ gov_constitutional_monarchy:0 "Konstytucyjna monarchia"
+ gov_constitutional_monarchy_desc:0 "Ten rząd jest monarchią ograniczoną przez prawo konstytucyjne, gdzie wybrani przedstawiciele dzielą władzę z dziedzicznym suwerenem."
  
