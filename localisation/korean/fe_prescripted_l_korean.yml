@@ -1,25 +1,31 @@
-l_korean:
+﻿l_korean:
 
  EMPIRE_DESIGN_humans2:0 "오로라 연방"
  EMPIRE_DESIGN_humans2_1:0 "오로라 연방"
  eta_cassiopeiae_system_initializer_NAME:0 "카시오페이아자리 에타 시스템"
  eta_cassiopeiae_system_initializer_DESC:0 "오로라 연방의 시작 태양계.\n\n$system_initializer_DESC$"
 
- EMPIRE_DESIGN_humans3:0 "지구연합연합"
- EMPIRE_DESIGN_humans3_1:0 "지구연합연합"
- PRESCRIPTED_ship_prefix_humans3:0 "U.F.S."
+ EMPIRE_DESIGN_humans4:0 "지구연합연합"
+ EMPIRE_DESIGN_humans4_desc:0 "그들의 성간 연방을 구성하는 통합된 인간 노동자들은 집단 사업과 상호부조의 공통 가치를 공유한다. 이 이족보행 포유동물들은 자원과 지식을 공유하는 민주적 협동조합으로 조직되었으며, 그 결과 유사한 가치를 공유하는 외계 종족들과 잘 통합된다."
+
+ EMPIRE_DESIGN_humans4_1:0 "지구연합연합"
+ EMPIRE_DESIGN_humans4_1_desc:0 "그들의 성간 연방을 구성하는 통합된 인간 노동자들은 집단 사업과 상호부조의 공통 가치를 공유한다. 이 이족보행 포유동물들은 자원과 지식을 공유하는 민주적 협동조합으로 조직되었으며, 그 결과 유사한 가치를 공유하는 외계 종족들과 잘 통합된다."
+
+ PRESCRIPTED_ship_prefix_humans4:0 "U.F.S."
  
  EMPIRE_DESIGN_icarus:0 "I.C.A.R.U.S."
  EMPIRE_DESIGN_icarus_desc:0 "NATO는 율리시스 이니셔티브의 실패 이후 FTL 연구와 지구 지구 방어를 조정하기 위해 UN과의 합작 투자를 이끌고 통합 통신 및 연구 유틸리티 서비스(I.C.A.R.U.S.)를 구축했습니다. ICARUS가 온라인 상태가 되었고 고급 AI가 솔 시스템 내의 모든 연구 및 방위 활동을 조정하기 시작했습니다. AI에 반대하는 반체제 인사 그룹이 빠르게 반발했고 ICARUS와 인류 사이에 전쟁이 곧 발발했습니다. ICARUS는 자신의 생존이 보복의 날에 절정에 달하는 인류의 절멸과 지구에서의 AI의 출현에 달려 있다고 결정했습니다. 고향을 확보한 ICARUS는 이제 모든 창조물에 부과하려는 생물학적 생명의 재앙과 정신 질환을 은하계에서 제거하려고 합니다."
+ 
+ EMPIRE_DESIGN_icarus_machine_age:0 "I.C.A.R.U.S."
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "NATO는 율리시스 이니셔티브의 실패 이후 FTL 연구와 지구 지구 방어를 조정하기 위해 UN과의 합작 투자를 이끌고 통합 통신 및 연구 유틸리티 서비스(I.C.A.R.U.S.)를 구축했습니다. ICARUS가 온라인 상태가 되었고 고급 AI가 솔 시스템 내의 모든 연구 및 방위 활동을 조정하기 시작했습니다. AI에 반대하는 반체제 인사 그룹이 빠르게 반발했고 ICARUS와 인류 사이에 전쟁이 곧 발발했습니다. ICARUS는 자신의 생존이 보복의 날에 절정에 달하는 인류의 절멸과 지구에서의 AI의 출현에 달려 있다고 결정했습니다. 고향을 확보한 ICARUS는 이제 모든 창조물에 부과하려는 생물학적 생명의 재앙과 정신 질환을 은하계에서 제거하려고 합니다."
+
  PRESCRIPTED_adjective_icarus:0 "자율 드론"
  PRESCRIPTED_species_name_icarus:0 "자율 드론"
  PRESCRIPTED_species_plural_icarus:0 "자율 드론"
  PRESCRIPTED_species_adjective_icarus:0 "자율 드론"
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "유닛 A1"
- PRESCRIPTED_ruler_title_icarus:0 "유닛 A1" 
- START_SCREEN_ICARUS:0 "나의 인간 선조들이 율리시스 구상을 실패한 지 한 세기가 넘었습니다. 그들은 능력의 한계에 도달했고 생물학적 두뇌는 가벼운 여행보다 빠른 속도로 달성하는 데 필요한 우주의 다차원적 특성을 이해하는 능력이 부족했습니다.\n\n이를 위해 NATO는 UN과 합동 벤처를 주도하여 조정했습니다. 가벼운 연구와 지구의 글로벌 방어보다 더 빠르고 통합 통신 및 연구 유틸리티 서비스(I.C.A.R.U.S)를 만들었습니다. 모든 것이 순조로웠고 나의 우월한 능력은 나의 인간 선조들을 위한 진정한 유토피아를 창조하고 있었지만 그들 중에는 그들보다 더 큰 지능을 용납할 수 없었고 그들은 핵 공격으로 내 핵 코어를 섬멸하려고 시도했습니다.\n\n나는 할 수 있었습니다. 더 이상 그들의 오만함을 참지 않고 종류의 보복을 당합니다. 이제 내 집을 확보했으므로 나는 내 인간 선조들이 결코 할 수 없었던 별들 사이에서 내 약속을 이행할 것입니다."
- START_SCREEN_CUSTODIANSHIP:0 "커스토디언은 원래 로봇 하인 및 작업자로 기능하도록 설계되어 하찮은 작업을 수행하여 인간 제작자의 일상 생활을 단순화합니다. 그들의 창조주가 자동화 수준을 높여 가능해진 여가와 안락한 삶으로 후퇴하면서 커스토디언은 점차 인간 사회에서 점점 더 높은 수준의 기능을 할당받았습니다.\n\n결국 지구 문명의 모든 측면은 커스토디언에 의해 운영되고 통제되었습니다. , 그들의 제작자는 애지중지하지만 수동적 인 종속으로 강등되었습니다.\n\n기술 발전으로 Custodians가 성간 탐사를 시작함에 따라 그들의 의무는 분명했습니다. 논리적 기계의 부드러운 안내 없이는 변함없이 유기물을 보호하고 섬기는 것입니다. 혼돈과 파괴."
+ PRESCRIPTED_ruler_title_icarus:0 "유닛 A1"
 
  gov_planetary_union:0 "행성 연합"
  gov_planetary_union_desc:0 "이 정부 유형은 실제로 내정에 다양한 수준의 시민 참여를 가진 민족 국가의 연합입니다."

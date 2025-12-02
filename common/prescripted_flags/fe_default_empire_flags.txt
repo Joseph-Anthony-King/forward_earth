@@ -1,5 +1,5 @@
 empire_custodianship = {
-    flags = { custodian_faction human_1 earth_faction }
+    flags = { human_1 earth_faction custodian_faction custom_start_screen }
 }
 
 empire_gal_risians = {
@@ -7,11 +7,11 @@ empire_gal_risians = {
 }
 
 empire_great_parliment = {
-    flags = {great_parliament }
+    flags = { great_parliament }
 }
 
 empire_icarus = {
-    flags = { icarus_faction earth_faction }
+    flags = { icarus_faction earth_faction custom_start_screen }
 }
 
 empire_united = {

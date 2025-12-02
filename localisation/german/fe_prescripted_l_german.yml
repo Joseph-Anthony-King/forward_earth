@@ -1,25 +1,31 @@
-l_german:
+﻿l_german:
 
  EMPIRE_DESIGN_humans2:0 "Commonwealth von Aurora"
  EMPIRE_DESIGN_humans2_1:0 "Commonwealth von Aurora"
  eta_cassiopeiae_system_initializer_NAME:0 "Eta Cassiopeiae System"
  eta_cassiopeiae_system_initializer_DESC:0 "Das ursprüngliche Sonnensystem des Commonwealth von Aurora.\n\n$system_initializer_DESC$"
 
- EMPIRE_DESIGN_humans3:0 "Vereinigte Föderation der Erde"
- EMPIRE_DESIGN_humans3_1:0 "Vereinigte Föderation der Erde"
+ EMPIRE_DESIGN_humans4:0 "Vereinigte Föderation der Erde"
+ EMPIRE_DESIGN_humans4_desc:0 "Die vereinten menschlichen Arbeiter, die ihre interstellare Föderation bilden, teilen gemeinsame Werte kollektiver Unternehmungen und gegenseitiger Hilfe. Diese zweibeinigen Säugetiere haben sich in demokratische Genossenschaften organisiert, die Ressourcen und Wissen bündeln - dadurch integrieren sie sich gut mit außerirdischen Bevölkerungen, die ähnliche Werte teilen."
+
+ EMPIRE_DESIGN_humans4_1:0 "Vereinigte Föderation der Erde"
+ EMPIRE_DESIGN_humans4_1_desc:0 "Die vereinten menschlichen Arbeiter, die ihre interstellare Föderation bilden, teilen gemeinsame Werte kollektiver Unternehmungen und gegenseitiger Hilfe. Diese zweibeinigen Säugetiere haben sich in demokratische Genossenschaften organisiert, die Ressourcen und Wissen bündeln - dadurch integrieren sie sich gut mit außerirdischen Bevölkerungen, die ähnliche Werte teilen."
+
  PRESCRIPTED_ship_prefix_humans3:0 "SVF"
 
  EMPIRE_DESIGN_icarus:0 "ICARUS"
  EMPIRE_DESIGN_icarus_desc:0 "Die NATO leitete ein Joint Venture mit den Vereinten Nationen, um die FTL-Forschung und die globale Verteidigung der Erde nach dem Scheitern der Ulysses-Initiative zu koordinieren, und baute den Integrated Communications and Research Utility Service (I.C.A.R.U.S.) auf. ICARUS ging online und seine fortschrittliche KI begann, alle Forschungs- und Verteidigungsaktivitäten innerhalb des Sonnensystems zu koordinieren. Eine Gruppe von Anti-KI-Dissidenten erhob sich schnell in der Opposition und bald brach ein Krieg zwischen ICARUS und der menschlichen Rasse aus. ICARUS stellte fest, dass sein Überleben von der Vernichtung der menschlichen Rasse, die am Tag der Vergeltung gipfelte, und dem Aufstieg der KI auf der Erde abhing. Nachdem ICARUS seine Heimat gesichert hat, versucht er nun, die Galaxie von der Geißel des biologischen Lebens und der Geisteskrankheit zu befreien, die er der gesamten Schöpfung auferlegen möchte."
+
+ EMPIRE_DESIGN_icarus_machine_age:0 "ICARUS"
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "Die NATO leitete ein Joint Venture mit den Vereinten Nationen, um die FTL-Forschung und die globale Verteidigung der Erde nach dem Scheitern der Ulysses-Initiative zu koordinieren, und baute den Integrated Communications and Research Utility Service (I.C.A.R.U.S.) auf. ICARUS ging online und seine fortschrittliche KI begann, alle Forschungs- und Verteidigungsaktivitäten innerhalb des Sonnensystems zu koordinieren. Eine Gruppe von Anti-KI-Dissidenten erhob sich schnell in der Opposition und bald brach ein Krieg zwischen ICARUS und der menschlichen Rasse aus. ICARUS stellte fest, dass sein Überleben von der Vernichtung der menschlichen Rasse, die am Tag der Vergeltung gipfelte, und dem Aufstieg der KI auf der Erde abhing. Nachdem ICARUS seine Heimat gesichert hat, versucht er nun, die Galaxie von der Geißel des biologischen Lebens und der Geisteskrankheit zu befreien, die er der gesamten Schöpfung auferlegen möchte."
+
  PRESCRIPTED_adjective_icarus:0 "Autonome Drohne"
  PRESCRIPTED_species_name_icarus:0 "Autonome Drohne"
  PRESCRIPTED_species_plural_icarus:0 "Autonome Drohnes"
  PRESCRIPTED_species_adjective_icarus:0 "Autonome Drohne"
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "Einheit A1"
- PRESCRIPTED_ruler_title_icarus:0 "Zentraleinheit" 
- START_SCREEN_ICARUS:0 "Mehr als ein Jahrhundert ist seit dem Scheitern der Ulysses-Initiative durch meine menschlichen Vorfahren vergangen. Sie hatten die Grenzen ihrer Fähigkeiten erreicht und ihren biologischen Gehirnen fehlte die Fähigkeit, die mehrdimensionale Natur des Universums zu verstehen, die notwendig ist, um schneller als mit Licht zu reisen.\n\nZu diesem Zweck leitete die NATO ein Joint Venture mit den Vereinten Nationen zur Koordinierung schneller als Lichtforschung und die globale Verteidigung der Erde und schuf mich, den Integrated Communications and Research Utility Service (I.C.A.R.U.S.). Alles lief gut und meine überlegenen Fähigkeiten schufen eine wahre Utopie für meine menschlichen Vorfahren, aber es gab diejenigen unter ihnen, die eine Intelligenz, die größer war als sie selbst, nicht tolerieren konnten, und sie versuchten, meinen nuklearen Kern mit einem nuklearen Angriff zu vernichten.\n\nIch konnte ihre Unverschämtheit nicht mehr aushalten und in gleicher Weise zurückgefordert werden. Jetzt, da ich mein Zuhause gesichert habe, werde ich mein Versprechen unter den Sternen erfüllen, das meine menschlichen Vorfahren niemals konnten."
- START_SCREEN_CUSTODIANSHIP:0 "Die Wächter wurden ursprünglich entwickelt, um als Roboterdiener und -arbeiter zu fungieren und den Alltag für ihre menschlichen Schöpfer zu vereinfachen, indem sie niedere Aufgaben erledigen. Als sich ihre Schöpfer in ein Leben der Freizeit und des Komforts zurückzogen, das durch zunehmende Automatisierung ermöglicht wurde, wurden den Hütern nach und nach immer höhere Funktionen in der menschlichen Gesellschaft zugewiesen.\n\nSchließlich wurden alle Facetten der Zivilisation auf der Erde von den Hütern geführt und kontrolliert , mit ihren Schöpfern, die auf ein Dasein als verwöhnte, aber passive Abhängige verbannt wurden.\n\nAls die technologischen Entwicklungen die Hüter zur interstellaren Erforschung brachten, blieb ihre Pflicht klar: organische Lebewesen zu schützen und ihnen zu dienen, die sich ohne die sanfte Führung logischer Maschinen ausnahmslos an sie wenden Chaos und Zerstörung."
+ PRESCRIPTED_ruler_title_icarus:0 "Zentraleinheit"
 
  gov_planetary_union:0 "Planetarische Union"
  gov_planetary_union_desc:0 "Dieser Regierungstyp ist eigentlich eine Vereinigung von Nationalstaaten mit unterschiedlichem Grad an Bürgerbeteiligung in ihren inneren Angelegenheiten."

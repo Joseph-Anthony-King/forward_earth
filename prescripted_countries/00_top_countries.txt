@@ -76,7 +76,7 @@ humans1 = {
 
 # UTE with Mammalian ships
 humans4 = {
-	name = "EMPIRE_DESIGN_humans3"
+	name = "EMPIRE_DESIGN_humans4"
 	adjective = "PRESCRIPTED_adjective_humans1"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
@@ -109,7 +109,7 @@ humans4 = {
 
 	origin = "origin_default"
 
-	flag = empire_human_1
+	flag = empire_human_4
 
 	planet_name = "NAME_Earth"
 	planet_class = "pc_continental"
@@ -298,7 +298,7 @@ humans1_1 = {
 
 # UTE with Humanoid ships
 humans4_1 = {
-	name = "EMPIRE_DESIGN_humans3"
+	name = "EMPIRE_DESIGN_humans4"
 	adjective = "PRESCRIPTED_adjective_humans1"
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
@@ -329,8 +329,8 @@ humans4_1 = {
 
 	origin = "origin_default"
 
-	flag = empire_human_1
-
+	flag = empire_human_4
+	
 	playable = has_humanoids # scripted_triggers
 
 	planet_name = "NAME_Earth"
