@@ -2011,7 +2011,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = mammalian_01
+                                set_graphical_culture = machine_01
                             }
 
                             solar_system = {
@@ -2347,7 +2347,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = mammalian_01
+                                set_graphical_culture = machine_01
                             }
 
                             solar_system = {
@@ -2377,11 +2377,6 @@ event = {
                                         add_trait = trait_auto_mod_robotic
                                     }
                                 }
-                            }
-
-                            last_created_country = {
-                                capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = mammalian_01
                             }
 
                             random_galaxy_planet = {

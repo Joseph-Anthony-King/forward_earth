@@ -81,7 +81,7 @@ humans4 = {
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
-	ship_prefix = "PRESCRIPTED_ship_prefix_humans3"
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans4"
 
 	species = {
 		class = "HUM"
@@ -303,7 +303,7 @@ humans4_1 = {
 	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
-	ship_prefix = "PRESCRIPTED_ship_prefix_humans3"
+	ship_prefix = "PRESCRIPTED_ship_prefix_humans4"
 
 	species = {
 		class = "HUM"
