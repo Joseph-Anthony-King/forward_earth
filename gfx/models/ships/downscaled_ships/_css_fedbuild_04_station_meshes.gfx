@@ -1,0 +1,179 @@
+objectTypes = {
+####### defence platforms ######
+
+	pdxmesh = {
+		name = "css_fedbuild_04_ion_cannon_mesh"
+        file = "gfx/models/ships/css_fedbuild_weapons/ion_cannon/css_fedbuild_ion_cannon.mesh"
+        scale = 0.4 # 1.0
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_small_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        scale = 0.4 # 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_medium_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        scale = 0.4 # 1.0
+    }	
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_large_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuilder_nsc_defence_station.mesh"
+        scale = 0.4 # 1.0
+    }	
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_section_light_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        scale = 0.4 # 1.0
+    }	
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_section_medium_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        scale = 0.4 # 1.0
+    }	
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_military_station_section_heavy_mesh"
+        file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuilder_nsc_defence_station.mesh"
+        scale = 0.4 # 1.0
+    }	
+
+
+####### stations #######
+
+	pdxmesh = {
+		name = "css_fedbuild_04_station_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s2_starhold.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_station_large_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s3_starfortress.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_station_citadel_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s4_citadel.mesh"
+        scale = 0.35 # 0.85
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_station_nsc_stronghold_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s5_stronghold.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_station_nsc_starcommand_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s6_starcommand.mesh"
+        scale = 0.35 # 0.85
+    }	
+
+	pdxmesh = {
+		name = "css_fedbuild_04_station_medium_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s1_starport.mesh"
+        scale = 0.35 # 0.85
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_04_defence_platform_mesh"
+		file = "gfx/models/ships/css_fedbuild_defenceplatform/css_fedbuild_defence_platform_core.mesh"
+        scale = 0.4 # 1.0
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_04_mining_station_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_mining_station.mesh"
+        scale = 0.3 # 0.75
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_04_research_station_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_science_station.mesh"
+        scale = 0.3 # 0.75
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_04_observation_station_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_science_station.mesh"
+        scale = 0.3 # 0.75
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_outpost_station_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_s0_outpost.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_habitat_1_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_one.mesh"
+        scale = 0.4 # 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_habitat_2_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_two.mesh"
+        scale = 0.4 # 1.0
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_habitat_3_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_habitat_level_three.mesh"
+        scale = 0.4 # 1.0
+    }	
+
+####### station sections #######
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_assemblyyard_section_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_shipyard.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_hangarbay_section_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_hangar.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_refinery_section_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_trade.mesh"
+        scale = 0.35 # 0.85
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_science_section_mesh"
+        file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_anchorage.mesh"
+        scale = 0.35 # 0.85
+	}
+	
+	pdxmesh = {
+		name = "css_fedbuild_04_starbase_turret_section_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_turret.mesh"
+        scale = 0.35 # 0.85
+	}	
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_hydroponics_section_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_trade.mesh"
+        scale = 0.35 # 0.85
+	}
+
+	pdxmesh = {
+		name = "css_fedbuild_04_orbital_station_habitat_section_mesh"
+		file = "gfx/models/ships/css_fedbuild_starbase/css_fedbuild_component_anchorage.mesh"
+        scale = 0.35 # 0.85
+	}
+	
+	
+}
+	

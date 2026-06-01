@@ -1,0 +1,119 @@
+objectTypes = {
+
+	#######	 frame	   #######
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_frame_mesh"
+		file = "gfx/models/ships/css_fedbuild_frames/css_fedbuild_frame.mesh"
+		scale = 0.4 # 1.0
+		
+		animation = { id = "idle"			type = "css_fedbuild_01_frame_idle_animation" }
+		animation = { id = "moving"			type = "css_fedbuild_01_frame_moving_animation" }
+	}
+
+	#######  corvette  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_corvette_mesh"
+        file = "gfx/models/ships/css_fedbuild_corvette/css_fedbuild_corvette.mesh"
+		scale = 0.4 # 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_corvette_two_mesh"
+        file = "gfx/models/ships/css_fedbuild_corvette/css_fedbuild_corvette_two.mesh"
+		scale = 0.4 # 1.0
+    }	
+
+	pdxmesh = {
+		name = "css_fedbuild_03_corvette_three_mesh"
+        file = "gfx/models/ships/css_fedbuild_corvette/css_fedbuild_corvette_three.mesh"
+		scale = 0.38
+    }	
+		
+	#######  destroyer  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_destroyer_mesh"
+        file = "gfx/models/ships/css_fedbuild_destroyer/css_fedbuild_destroyer.mesh"
+		scale = 0.4 # 1.0
+    }
+	
+	#######  cruiser  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_cruiser_mesh"
+        file = "gfx/models/ships/css_fedbuild_cruiser/css_fedbuild_cruiser.mesh"
+		scale = 0.35 # 0.85
+
+    }
+	
+	#######  battleship  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_wayfinder_saucer_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_wayfinder_saucer.mesh"
+		scale = 0.5 # 1.2
+    }
+
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_wayfinder_hull_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_wayfinder_hull.mesh"
+		scale = 0.5 # 1.2
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_wayfinder_nacelles_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_wayfinder_nacelles.mesh"
+		scale = 0.45 # 1.1
+    }	
+
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_sakura_saucer_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_sakura_saucer.mesh"
+		scale = 0.5 # 1.2
+    }		
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_sakura_hull_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_sakura_hull.mesh"
+		scale = 0.5 # 1.2
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_battleship_sakura_nacelles_mesh"
+        file = "gfx/models/ships/css_fedbuild_battleship/css_fedbuild_battleship_sakura_nacelles.mesh"
+		scale = 0.45 # 1.1
+    }	
+
+	#######  strike craft  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_fighter_mesh"
+        file = "gfx/models/ships/css_fedbuild_strikecraft/css_fedbuild_fighter.mesh"
+		scale = 0.4 # 1.0
+    }
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_launcher_mesh"
+        file = "gfx/models/ships/css_fedbuild_strikecraft/css_fedbuild_shuttle.mesh"
+		scale = 0.4 # 1.0
+    }
+	
+
+	#######  Titan  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_titan_mesh"
+        file = "gfx/models/ships/css_fedbuild_titan/css_fedbuild_titan.mesh"
+		scale = 0.4 # 1.0
+    }	
+	
+	#######  Juggernaut  #######	
+	
+	pdxmesh = {
+		name = "css_fedbuild_03_juggernaut_mesh"
+        file = "gfx/models/ships/css_fedbuild_juggernaut/css_fedbuild_juggernaut.mesh"
+		scale = 0.4 # 1.0
+    }	
+}
