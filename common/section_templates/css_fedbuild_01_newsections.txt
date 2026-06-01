@@ -1,3 +1,14 @@
+@section_cost_corvette = 40
+@section_cost_frigate = 60
+@section_cost_destroyer = 120
+@section_cost_cruiser = 240
+@section_cost_battleship = 640
+@section_cost_titan = 1600
+@section_cost_juggernaut = 10000
+
+## NSC
+@section_cost_battle_cruiser = 120
+
 
 ##### CORVETTE ######
 
@@ -40,7 +51,7 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = 30
+			alloys = @section_cost_corvette
 		}
 	}
 }
@@ -82,7 +93,7 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			alloys = @section_cost
+			alloys = @section_cost_frigate
 		}
 	}
 }
