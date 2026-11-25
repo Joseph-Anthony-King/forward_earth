@@ -65,11 +65,12 @@ sol_system_initializer = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
+		flags = { pd_ignore }
 		init_effect = {
 			set_planet_entity = {
 				entity = toxic_planet_venus_entity
@@ -224,11 +225,12 @@ sol_system_initializer = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -464,11 +466,12 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "NAME_Alpha_Centauri_A_II"
-			class = "pc_toxic"
+			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
+			flags = { pd_ignore }
 		}
 
 	}
@@ -493,20 +496,22 @@ sol_neighbor_t1_first_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_tundra"
+			class = "pc_pd_cold_tidally_locked"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
 			name = "NAME_Proxima_Centauri_III"
-			class = "pc_frozen"
+			class = "pc_subglacial"
 			orbit_distance = 12
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -641,11 +646,12 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "NAME_Alpha_Centauri_A_II"
-			class = "pc_toxic"
+			class = "pc_hothouse"
 			orbit_distance = 20
 			orbit_angle = 270
 			size = 18
 			has_ring = yes
+			flags = { pd_ignore }
 		}
 
 	}
@@ -670,20 +676,22 @@ sol_neighbor_t1_no_guaranteed_colony = {
 
 		planet = {
 			name = "NAME_Proxima_Centauri_II"
-			class = "pc_tundra"
+			class = "pc_pd_cold_tidally_locked"
 			orbit_distance = 12
 			orbit_angle = 4
 			size = 15
 			has_ring = no
+			flags = { pd_ignore }
 		}
 
 		planet = {
 			name = "NAME_Proxima_Centauri_III"
-			class = "pc_frozen"
+			class = "pc_subglacial"
 			orbit_distance = 12
 			orbit_angle = -6
 			size = 8
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 	
@@ -2155,11 +2163,12 @@ sol_neighbor_t3_1 = {
 	# Trappist-1c
 	planet = {
 		name = "NAME_Trappist_1_c"
-		class = "pc_barren"
+		class = "pc_pd_barren_tidally_locked"
 		orbit_distance = 16
 		orbit_angle = 85
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1d
@@ -2175,41 +2184,45 @@ sol_neighbor_t3_1 = {
 	# Trappist-1e
 	planet = {
 		name = "NAME_Trappist_1_e"
-		class = "pc_ocean"
+		class = "pc_pd_dry_tidally_locked"
 		orbit_distance = 16
 		orbit_angle = 125
 		size = 15
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1f
 	planet = {
 		name = "NAME_Trappist_1_f"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1g
 	planet = {
 		name = "NAME_Trappist_1_g"
-		class = "pc_arctic"
+		class = "pc_pd_cold_tidally_locked"
 		orbit_distance = 16
 		orbit_angle = -130
 		size = 18
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Trappist-1h
 	planet = {
 		name = "NAME_Trappist_1_h"
-		class = "pc_frozen"
+		class = "pc_subglacial"
 		orbit_distance = 16
 		orbit_angle = 245
 		size = 12
 		has_ring = no
+		flags = { pd_ignore }
 	}
 
 	# Small and Tiny 70 Virginis Initializers
@@ -2308,11 +2321,12 @@ ai_sol_system = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
+		flags = { pd_ignore }
 		init_effect = {
 			set_planet_entity = {
 				entity = toxic_planet_venus_entity
@@ -2538,11 +2552,12 @@ ai_sol_system = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -2735,12 +2750,13 @@ toxic_knights_sol_start = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
 		entity = "toxic_planet_venus_entity"
+		flags = { pd_ignore }
 
 		init_effect = {
 			set_planet_flag = toxic_terraforming_candidate
@@ -2907,11 +2923,12 @@ toxic_knights_sol_start = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -3212,11 +3229,12 @@ sol_system_fear_of_the_dark_system = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 
@@ -4094,11 +4112,12 @@ mindwarden_sol_system_init = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
+		flags = { pd_ignore }
 		init_effect = {
 			set_planet_entity = {
 				entity = toxic_planet_venus_entity
@@ -4242,11 +4261,12 @@ mindwarden_sol_system_init = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 12
 			orbit_angle = 320
 			has_ring = no
+			flags = { pd_ignore }
 		}
 	}
 

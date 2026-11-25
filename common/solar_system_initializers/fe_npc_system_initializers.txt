@@ -77,12 +77,12 @@ npc_sol_system_initializer = {
 
 	planet = {
 		name = "NAME_Venus"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 125
 		size = 17
 		has_ring = no
-		flags = { realsol_venus planet_venus }
+		flags = { realsol_venus planet_venus pd_ignore }
 		init_effect = {
 			set_planet_entity = {
 				entity = toxic_planet_venus_entity
@@ -282,13 +282,13 @@ npc_sol_system_initializer = {
 
 		moon = {
 			name = "NAME_Titan"
-			class = "pc_frozen"
+			class = "pc_hydrocarbon"
 			size = 8
 			orbit_distance = 3
 			orbit_angle = 320
 			has_ring = no
 			entity = "moon_sat_titan_entity"
-			flags = { planet_titan }
+			flags = { planet_titan pd_ignore }
 		}
 	}
 
@@ -685,12 +685,12 @@ npc_70_virginis_system_initializer = {
 
 	planet = {
 		name = "HUM2_PLANET_ValkBellom"
-		class = "pc_toxic"
+		class = "pc_hothouse"
 		orbit_distance = 25
 		orbit_angle = 320
 		size = 17
 		has_ring = no
-        flags = { planet_70_viginis_1 }
+        flags = { planet_70_viginis_1 pd_ignore }
 
 		moon = {
 			name = "HUM2_PLANET_ValkMasted"
@@ -715,14 +715,14 @@ npc_70_virginis_system_initializer = {
 
 	planet = {
 		name = "NAME_Gal_Risia"
-		class = "pc_savannah"
+		class = "pc_pd_retinal"
 		orbit_distance = 25
 		orbit_angle = 190
 		size = 18
 		has_ring = no
 		deposit_blockers = none
 		modifiers = none
-        flags = { planet_70_viginis_2 }
+        flags = { planet_70_viginis_2 pd_ignore }
 
 		init_effect = {
 			prevent_anomaly = yes
