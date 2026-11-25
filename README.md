@@ -12,7 +12,7 @@ Additionally, there is a new AI Earth faction I.C.A.R.U.S. which is pretty much 
 
 This mod also adds two additional start sizes: gigantic with 1,500 stars and immense with 2,000. This mod also includes the star names included in my [This is Alpha Ceti V!](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775) mod. This mod includes a little over 5,000 names. I used a number of franchises, the Greek alphabet, Egyptian, Sumerian and Hindi mythology and an online name generator to generate the list (sorry but I forgot to get the link).
 
-This mod took quite a bit of time and I used my programming skills to script a lot of this out.  Yet, as good as I think these scripts are my art abilities are abysmal.  I did include a new Milky Way barred spiral texture, but I’ve also included the following graphics and ship mods in order to include some additional ship models and planets.  All included ship mods support [NSC2](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077).  These mods are absolutely **awesome** and I definitely want to give credit where credit is due:
+This mod has dependencies on the following mods:
 
 - [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by [AryxErin](https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1)
 - [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by [Grumpy Gremlin](https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990)
