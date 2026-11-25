@@ -9,18 +9,17 @@ empire_name_format = {
 			has_government = "gov_planetary_union"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<democratic_gen> [This.Capital.System.GetName]"
-	format = format.dem_gen.1 # <democratic_gen> of [This.Capital.System.GetName]
-	noun = format.home_system # [This.Capital.System.GetName]
-	prefix_format = format_prefix.dem_gen.1 # [This.Capital.System.GetName] <democratic_gen>
-	# Empire of Sol
+	format = "{AofB{<democratic_gen> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <democratic_gen>}}"
 }
 
-# Democratic Generic 2k
+# Democratic Generic 2
 empire_name_format = {
 	random_weight = {
 		factor = 0
@@ -29,15 +28,14 @@ empire_name_format = {
 			has_government = "gov_planetary_union"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<democratic_gen> [This.Capital.GetName]"
-	format = format.dem_gen.2 # <democratic_gen> of [This.Capital.GetName]
-	noun = format.homeworld # [This.Capital.GetName]
-	prefix_format = format_prefix.dem_gen.2 # [This.Capital.GetName] <democratic_gen>
-	# Empire of Earth
+	format = "{AofB{<democratic_gen> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <democratic_gen>}}"
 }
 
 # Democratic Generic 3
@@ -49,15 +47,14 @@ empire_name_format = {
 			has_government = "gov_planetary_union"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>"
-	format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
-	# Human Star Empire
+	format = "{[This.GetSpeciesAdj] {<democratic_gen>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<democratic_gen>}}"
 }
 
 # Democratic Generic 4
@@ -69,15 +66,14 @@ empire_name_format = {
 			has_government = "gov_planetary_union"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<democratic_gen_desc> [This.GetSpeciesName] <democratic_gen>"
-	format = format.dem_gen.4 # <democratic_gen_desc> [This.GetSpeciesName] <democratic_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
-	# Great Human Empire
+	format = "{<democratic_gen_desc> {[This.GetSpeciesAdj] {<democratic_gen>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<democratic_gen>}}"
 }
 
 # Democratic Generic 5
@@ -89,15 +85,14 @@ empire_name_format = {
 			has_government = "gov_planetary_union"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>"
-	format = format.dem_gen.5 # [This.GetSpeciesName] <democratic_gen_mid_desc> <democratic_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.dem_gen.3 # [This.GetSpeciesName] <democratic_gen>
-	# Human Star Empire
+	format = "{[This.GetSpeciesAdj] {<democratic_gen_mid_desc> {<democratic_gen>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<democratic_gen>}}"
 }
 
 ### Constitutional Monarchy
@@ -111,15 +106,14 @@ empire_name_format = {
 			has_government = "gov_constitutional_monarchy"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<imperial_gen> [This.Capital.System.GetName]"
-	format = format.imp_gen.1 # <imperial_gen> of [This.Capital.System.GetName]
-	noun = format.home_system # [This.Capital.System.GetName]
-	prefix_format = format_prefix.imp_gen.1 # [This.Capital.System.GetName] <imperial_gen>
-	# Empire of Sol
+	format = "{AofB{<imperial_gen> [This.GetCapitalSystemNameOrRandom]}}"
+	noun = "{[This.GetCapitalSystemNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalSystemNameOrRandom] <imperial_gen>}}"
 }
 
 # Imperial Generic 2
@@ -131,15 +125,14 @@ empire_name_format = {
 			has_government = "gov_constitutional_monarchy"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<imperial_gen> [This.Capital.GetName]"
-	format = format.imp_gen.2 # <imperial_gen> of [This.Capital.GetName]
-	noun = format.homeworld # [This.Capital.GetName]
-	prefix_format = format_prefix.imp_gen.2 # [This.Capital.GetName] <imperial_gen>
-	# Empire of Earth
+	format = "{AofB{<imperial_gen> [This.GetCapitalPlanetNameOrRandom]}}"
+	noun = "{[This.GetCapitalPlanetNameOrRandom]}"
+	prefix_format = "{AofBpfx{[This.GetCapitalPlanetNameOrRandom] <imperial_gen>}}"
 }
 
 # Imperial Generic 3
@@ -151,15 +144,14 @@ empire_name_format = {
 			has_government = "gov_constitutional_monarchy"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <imperial_gen>"
-	format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
-	# Human Empire
+	format = "{[This.GetSpeciesAdj] {<imperial_gen>}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<imperial_gen>}}"
 }
 
 # Imperial Generic 4
@@ -171,15 +163,14 @@ empire_name_format = {
 			has_government = "gov_constitutional_monarchy"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "<imperial_gen_desc> [This.GetSpeciesName] <imperial_gen>"
-	format = format.imp_gen.4 # <imperial_gen_desc> [This.GetSpeciesName] <imperial_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
-	# Great Human Empire
+	format = "{<imperial_gen_desc> {[This.GetSpeciesAdj] {<imperial_gen>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<imperial_gen>}}"
 }
 
 # Imperial Generic 5
@@ -191,13 +182,12 @@ empire_name_format = {
 			has_government = "gov_constitutional_monarchy"
 			is_pirate = no
 			is_primitive = no
+			is_nomadic = no
 			NOT = { is_country_type = fallen_empire }
 			NOT = { is_country_type = awakened_fallen_empire }
 		}
 	}
-	lookups = "[This.GetSpeciesName] <imperial_gen_mid_desc> <imperial_gen>"
-	format = format.imp_gen.5 # [This.GetSpeciesName] <imperial_gen_mid_desc> <imperial_gen>
-	noun = format.species # [This.GetSpeciesName]
-	prefix_format = format.imp_gen.3 # [This.GetSpeciesName] <imperial_gen>
-	# Human Star Empire
+	format = "{[This.GetSpeciesAdj] {<imperial_gen_mid_desc> {<imperial_gen>}}}"
+	adjective = "{[This.GetSpeciesAdj]}"
+	prefix_format = "{[This.GetSpeciesAdj] {<imperial_gen>}}"
 }

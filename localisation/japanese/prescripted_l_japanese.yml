@@ -103,3 +103,8 @@
  EMPIRE_DESIGN_zrobots_machine_age_desc: "$EMPIRE_DESIGN_zrobots_desc$"
  EMPIRE_DESIGN_pyrragthul: "惑星構築者 ‐ ピラグ＝スール"
  EMPIRE_DESIGN_pyrragthul_desc: "遠くで輝く火山の地獄のきらめきは、 ある者にとっては警告ではなく希望の灯になる。 灼熱の$PRESCRIPTED_planet_name_pyrragthul$に生まれ育った$PRESCRIPTED_species_name_pyrragthul$は、 溶岩と火砕流性ガスに適応するよう身体と産業を変容させてきた。\n\nだが今、 彼らの坩堝のような故郷は、 炎よりもはるかに致命的な終焉に直面している。 恒星が不吉な膨張を始め、 赤色巨星へと変貌し、 母星をその炎で飲み込もうとしているのだ。 $PRESCRIPTED_species_name_pyrragthul$は、 視線を外方へと向けねばならなくなった。\n\n虚空の中にある冷たく生気のない惑星の中に、 彼らはチャンスを見出した。 $PRESCRIPTED_species_name_plural_pyrragthul$にとって、 凍りついた地殻は未来の炎を約束するものに過ぎない。 それは割って開き、 再び燃え上がらせるためにあるのだ。"
+ EMPIRE_DESIGN_warmongers: "ザルピル主権アレイ"
+ EMPIRE_DESIGN_warmongers_desc: "変動する超国家的なブロック間の数十年にわたる戦争の末、 惑星$PRESCRIPTED_planet_name_warmongers$の全土が$EMPIRE_DESIGN_warmongers$の支配下に入った。\n\n世界中の市民が一つの支配下に置かれたことで、 $PRESCRIPTED_adjective_warmongers$の宣伝担当者たちは、 もはや他国からの侵略の脅威を通じて政治的支配を維持することができなくなった。 彼らにとって幸いなことに、 広大で未開拓の宇宙は、 尽きることのない潜在的な敵の源を提供していた。\n\n目に見えない銀河系の脅威に対する国民の恐怖は最高潮に達し、 政権が予め用意していた解決策、 すなわち$building_golden_academy$プログラムを受け入れる準備が整った。 このプログラムは、 星々の間に潜むあらゆる危険に立ち向かい、 防衛費の支出を正当化できる、 政治的に操りやすい指導者を育成するものであった。"
+ EMPIRE_DESIGN_open_stars: "ガルマリ歓迎共同国"
+ EMPIRE_DESIGN_open_stars_desc: "$EMPIRE_DESIGN_open_stars$は、 種族、 人種、 出身を問わず、 すべての人に開かれた社会である。 市民権は共通の遺伝的背景に基づくものではなく、 他者を受け入れ、 思いやるという共有された価値観に基づくものである。 $PRESCRIPTED_adjective_open_stars$の文化において、 多様性は社会の最大の強みとして重んじられ、 その究極の目標とされている。\n\n種間コミュニケーションを早期に習得していたため、 $PRESCRIPTED_species_name_plural_open_stars$は、 彼らの母星である$PRESCRIPTED_planet_name_open_stars$に生息するすべての在来種のニーズに対して、 深い共感を寄せている。 自然保護は常に高く評価されており、 すべての生物は法的地位と敬意ある配慮に値するものとして扱われている。\n\n現在、 $PRESCRIPTED_planet_name_open_stars$上のあらゆる生命のニーズに応える活気ある民主主義を築き上げた$PRESCRIPTED_species_name_plural_open_stars$は、 より広大な銀河へとその門戸を開く準備が整っている。"
+

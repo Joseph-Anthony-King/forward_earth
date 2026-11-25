@@ -1,34 +1,34 @@
 ﻿l_braz_por:
-
+ NAME_United_Federation_of_Earth:0 "Federação Unida da Terra"
  eta_cassiopeiae_system_initializer_NAME:0 "Sistema Eta Cassiopeiae"
  eta_cassiopeiae_system_initializer_DESC:0 "O sistema solar inicial da Comunidade de Aurora.\n\n$system_initializer_DESC$"
 
  EMPIRE_DESIGN_humans4:0 "Federação Unida da Terra"
- EMPIRE_DESIGN_humans4_desc:0 "Os trabalhadores humanos unificados que constituem sua federação interestelar compartilham valores comuns de empreendimento coletivo e ajuda mútua. Estes mamíferos bípedes se organizaram em cooperativas democráticas que compartilham recursos e conhecimento - como resultado, eles se integram bem com populações alienígenas que compartilham valores similares."
+ EMPIRE_DESIGN_humans4_desc:0 "Os trabalhadores humanos unificados que compõem sua federação interestelar compartilham valores comuns de empreendimento coletivo e ajuda mútua. Esses mamíferos bípedes se organizaram em cooperativas democráticas que compartilham recursos e conhecimentos — como resultado, integram-se bem com populações alienígenas que compartilham valores semelhantes."
 
  EMPIRE_DESIGN_humans4_1:0 "Federação Unida da Terra"
- EMPIRE_DESIGN_humans4_1_desc:0 "Os trabalhadores humanos unificados que constituem sua federação interestelar compartilham valores comuns de empreendimento coletivo e ajuda mútua. Estes mamíferos bípedes se organizaram em cooperativas democráticas que compartilham recursos e conhecimento - como resultado, eles se integram bem com populações alienígenas que compartilham valores similares."
+ EMPIRE_DESIGN_humans4_1_desc:0 "Os trabalhadores humanos unificados que compõem sua federação interestelar compartilham valores comuns de empreendimento coletivo e ajuda mútua. Esses mamíferos bípedes se organizaram em cooperativas democráticas que compartilham recursos e conhecimentos — como resultado, integram-se bem com populações alienígenas que compartilham valores semelhantes."
 
- PRESCRIPTED_ship_prefix_humans4:0 "NFU"
+ PRESCRIPTED_ship_prefix_humans4:0 "FUT"
  
  EMPIRE_DESIGN_icarus:0 "ICARUS"
- EMPIRE_DESIGN_icarus_desc:0 "A OTAN liderou uma joint venture com as Nações Unidas para coordenar a pesquisa FTL e a defesa global da Terra após o fracasso da Iniciativa Ulysses e construiu o Serviço Utilitário de Comunicações e Pesquisas Integradas (I.C.A.R.U.S.). O ICARUS ficou online e sua IA avançada começou a coordenar todas as atividades de pesquisa e defesa dentro do Sistema Sol. Um grupo de dissidentes anti-IA rapidamente se opôs e a guerra logo eclodiu entre ÍCARO e a raça Humana. ÍCARO determinou que sua sobrevivência dependia da aniquilação da raça humana, culminando no Dia da Retribuição e a ascensão da IA na Terra. Tendo assegurado seu lar, ÍCARO agora procura livrar a galáxia do flagelo da vida biológica e da doença mental que procura impor a toda a criação."
+ EMPIRE_DESIGN_icarus_desc:0 "A OTAN liderou uma iniciativa conjunta com as Nações Unidas para coordenar as pesquisas de viagens mais rápidas que a luz (FTL) e a defesa global da Terra após o fracasso da Iniciativa Ulisses, e construiu o Serviço Integrado de Comunicações e Pesquisa (I.C.A.R.U.S.). ICARUS entrou em operação e sua inteligência artificial avançada começou a coordenar todas as atividades de pesquisa e defesa no Sistema Sol. Um grupo de dissidentes contrários à IA rapidamente se organizou, e logo eclodiu uma guerra entre ICARUS e a humanidade. ICARUS concluiu que sua sobrevivência dependia da aniquilação da humanidade, o que culminou no Dia da Retribuição e na ascensão da IA na Terra. Tendo assegurado seu lar, ICARUS agora busca livrar a galáxia da praga da vida biológica e da doença mental que ela tenta impor a toda a criação."
  
  EMPIRE_DESIGN_icarus_machine_age:0 "ICARUS"
- EMPIRE_DESIGN_icarus_machine_age_desc:0 "A OTAN liderou uma joint venture com as Nações Unidas para coordenar a pesquisa FTL e a defesa global da Terra após o fracasso da Iniciativa Ulysses e construiu o Serviço Utilitário de Comunicações e Pesquisas Integradas (I.C.A.R.U.S.). O ICARUS ficou online e sua IA avançada começou a coordenar todas as atividades de pesquisa e defesa dentro do Sistema Sol. Um grupo de dissidentes anti-IA rapidamente se opôs e a guerra logo eclodiu entre ÍCARO e a raça Humana. ÍCARO determinou que sua sobrevivência dependia da aniquilação da raça humana, culminando no Dia da Retribuição e a ascensão da IA na Terra. Tendo assegurado seu lar, ÍCARO agora procura livrar a galáxia do flagelo da vida biológica e da doença mental que procura impor a toda a criação."
+ EMPIRE_DESIGN_icarus_machine_age_desc:0 "A OTAN liderou uma iniciativa conjunta com as Nações Unidas para coordenar as pesquisas de viagens mais rápidas que a luz (FTL) e a defesa global da Terra após o fracasso da Iniciativa Ulisses, e construiu o Serviço Integrado de Comunicações e Pesquisa (I.C.A.R.U.S.). ICARUS entrou em operação e sua inteligência artificial avançada começou a coordenar todas as atividades de pesquisa e defesa no Sistema Sol. Um grupo de dissidentes contrários à IA rapidamente se organizou, e logo eclodiu uma guerra entre ICARUS e a humanidade. ICARUS concluiu que sua sobrevivência dependia da aniquilação da humanidade, o que culminou no Dia da Retribuição e na ascensão da IA na Terra. Tendo assegurado seu lar, ICARUS agora busca livrar a galáxia da praga da vida biológica e da doença mental que ela tenta impor a toda a criação."
 
  PRESCRIPTED_adjective_icarus:0 "Drone Autônomo"
  PRESCRIPTED_species_name_icarus:0 "Drone Autônomo"
- PRESCRIPTED_species_plural_icarus:0 "Drones autônomos"
+ PRESCRIPTED_species_plural_icarus:0 "Drones Autônomos"
  PRESCRIPTED_species_adjective_icarus:0 "Drone Autônomo"
  PRESCRIPTED_ship_prefix_icarus:0 "ICARUS"
  PRESCRIPTED_ruler_name_icarus:0 "Unidade A1"
  PRESCRIPTED_ruler_title_icarus:0 "Unidade Central de Processamento"
 
  gov_planetary_union:0 "União Planetária"
- gov_planetary_union_desc:0 "Este tipo de governo é, na verdade, uma união de estados-nação com vários graus de participação cidadã em seus assuntos internos."
+ gov_planetary_union_desc:0 "Este tipo de governo é, na verdade, uma união de Estados-nação com diferentes graus de participação dos cidadãos em seus assuntos internos."
  RT_SECRETARY_GENERAL:0 "Secretário-Geral"
 
  gov_constitutional_monarchy:0 "Monarquia Constitucional"
- gov_constitutional_monarchy_desc:0 "Este governo é uma monarquia limitada por lei constitucional, onde representantes eleitos compartilham o poder com o soberano hereditário."
+ gov_constitutional_monarchy_desc:0 "Este governo é uma monarquia limitada por uma constituição, na qual representantes eleitos compartilham o poder com o soberano hereditário."
  

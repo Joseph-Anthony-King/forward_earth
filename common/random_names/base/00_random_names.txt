@@ -1,18 +1,19 @@
 species_modification_prefix = {
+	High_
+	Meta-
 	Neo-
 	Post-
 	Super-
-	Ultra-
-	Meta-
 	Trans-
+	Ultra-
 }
 
 species_modification_postfix = {
-	Superior
-	Variatus
-	Mutatis
 	Clarus
 	Illustratum
+	Mutatis
+	Superior
+	Variatus
 }
 
 black_hole_names = {
@@ -6843,4 +6844,84 @@ nebula_names = {
 	"NGC 256"
 	"NGC 261"
 	"NGC 267"
+}
+
+
+#storm prefixes are localised in: "cosmic_storms_l_english.yml"
+cosmic_storm_name_prefixes = {
+	"STORM_PREFIX_0"
+	"STORM_PREFIX_1"
+	"STORM_PREFIX_2"
+	"STORM_PREFIX_3"
+	"STORM_PREFIX_4"
+	"STORM_PREFIX_5"
+	"STORM_PREFIX_6"
+	"STORM_PREFIX_7"
+	"STORM_PREFIX_8"
+	"STORM_PREFIX_9"
+	"STORM_PREFIX_10"
+}
+
+custom_star_names = {
+	treasure_star_names = {
+		"HIDDEN_SYSTEM_01"
+		"HIDDEN_SYSTEM_02"
+		"HIDDEN_SYSTEM_03"
+		"HIDDEN_SYSTEM_04"
+		"HIDDEN_SYSTEM_05"
+		"HIDDEN_SYSTEM_06"
+		"HIDDEN_SYSTEM_07"
+		"HIDDEN_SYSTEM_08"
+		"HIDDEN_SYSTEM_09"
+		"HIDDEN_SYSTEM_10"
+		"HIDDEN_SYSTEM_11"
+		"HIDDEN_SYSTEM_12"
+		"HIDDEN_SYSTEM_13"
+		"HIDDEN_SYSTEM_14"
+		"HIDDEN_SYSTEM_15"
+		"HIDDEN_SYSTEM_16"
+		"HIDDEN_SYSTEM_17"
+	}
+	voidworm_star_names = {
+		"VOIDWORM_SYSTEM_01"
+		"VOIDWORM_SYSTEM_02"
+		"VOIDWORM_SYSTEM_03"
+		"VOIDWORM_SYSTEM_04"
+		"VOIDWORM_SYSTEM_05"
+		"VOIDWORM_SYSTEM_06"
+		"VOIDWORM_SYSTEM_07"
+		"VOIDWORM_SYSTEM_08"
+		"VOIDWORM_SYSTEM_09"
+		"VOIDWORM_SYSTEM_10"
+		"VOIDWORM_SYSTEM_11"
+		"VOIDWORM_SYSTEM_12"
+	}
+	exiled_star_names = {
+		"EXILED_SYSTEM_01"
+		"EXILED_SYSTEM_02"
+		"EXILED_SYSTEM_03"
+		"EXILED_SYSTEM_04"
+		"EXILED_SYSTEM_05"
+		"EXILED_SYSTEM_06"
+		"EXILED_SYSTEM_07"
+		"EXILED_SYSTEM_08"
+		"EXILED_SYSTEM_09"
+		"EXILED_SYSTEM_10"
+		"EXILED_SYSTEM_11"
+		"EXILED_SYSTEM_12"
+		"EXILED_SYSTEM_13"
+		"EXILED_SYSTEM_14"
+		"EXILED_SYSTEM_15"
+	}
+}
+
+custom_planet_names = {
+	exiled_colony_names = {
+		"EXILED_COLONY_01"
+		"EXILED_COLONY_02"
+		"EXILED_COLONY_03"
+		"EXILED_COLONY_04"
+		"EXILED_COLONY_05"
+		"EXILED_COLONY_06"
+	}
 }

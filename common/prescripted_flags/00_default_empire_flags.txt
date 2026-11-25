@@ -6,6 +6,10 @@ empire_human_2 = {
 	flags = { human_2 earth_faction custom_start_screen }
 }
 
+empire_human_3 = {
+	flags = { human_3 earth_faction custom_start_screen }
+}
+
 empire_human_4 = {
 	flags = { human_1 earth_faction ute_faction custom_start_screen }
 }
@@ -80,4 +84,12 @@ empire_zrobots = {
 
 empire_pyrragthul = {
 	flags = { prescripted_pyrragthul }
+}
+
+empire_warmongers = {
+	flags = { prescripted_warmongers }
+}
+
+empire_open_stars = {
+	flags = { prescripted_open_stars }
 }

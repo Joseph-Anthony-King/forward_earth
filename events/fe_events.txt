@@ -155,8 +155,8 @@ event = {
                 }
             
                 spawn_system = {
-                    min_distance = 80
-                    max_distance = 80
+                    min_distance = 60
+                    max_distance = 100
                     initializer = trantor_initializer
                 }
                 add_extra_hyperlane_to_spawned_system_effect = yes
@@ -2011,7 +2011,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
+                                set_graphical_culture = synthetics_01
                             }
 
                             solar_system = {
@@ -2347,7 +2347,7 @@ event = {
 
                             last_created_country = {
                                 capital_scope = { set_name = "Aurora" }
-                                set_graphical_culture = machine_01
+                                set_graphical_culture = synthetics_01
                             }
 
                             solar_system = {

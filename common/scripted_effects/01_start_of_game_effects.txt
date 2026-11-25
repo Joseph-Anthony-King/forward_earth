@@ -713,7 +713,12 @@ add_research_options_for_natural_blockers = {
 	}
 	if = {
 		limit = {
-			has_deposit = d_active_volcano
+			OR = {
+				has_deposit = d_active_volcano
+				has_deposit = d_raging_lavafalls
+				has_deposit = d_rugged_landscape
+				has_deposit = d_seismic_bombing_crater
+			}
 		}
 		owner = {
 			add_research_option = tech_volcano
@@ -909,7 +914,7 @@ generate_start_deposits_and_blockers = {
 
 	if = {
 		limit = {
-			has_planet_flag = planet_unity
+			has_carrier_flag = planet_unity
 		}
 		remove_deposit = d_failing_infrastructure
 		add_deposit = d_forgotten_civilization
@@ -1281,7 +1286,7 @@ generate_start_deposits_and_blockers = {
 				add_deposit = d_marvelous_oasis
 			}
 		}
-		set_planet_flag = tasty_desert
+		set_carrier_flag = tasty_desert
 	}
 
 	if = {
@@ -1461,10 +1466,7 @@ generate_start_deposits_and_blockers = {
 	if = {
 		limit = {
 			owner = {
-				OR  = {
-					has_origin = origin_ocean_paradise
-					has_origin = origin_ocean_machines
-				}
+				is_ocean_paradise_empire = yes
 			}
 		}
 		create_ocean_paradise_planet = yes
@@ -1581,21 +1583,26 @@ generate_earth_deposits_and_blockers = {
 		limit = {
 			is_planet_class = pc_desert # Just in case players cause trouble
 		}
-		set_planet_flag = tasty_desert
+		set_carrier_flag = tasty_desert
 	}
 }
 
 generate_start_buildings_and_districts = {
 	optimize_memory
-	set_timed_planet_flag = {
+	set_timed_carrier_flag = {
 		flag = ignore_ai_building_limitations
 		days = 1
 	}
 	inline_script = "game_start/rural_districts_initializer"
 
+	# Non-Nomadic
 	inline_script = "game_start/authority_regular"
 	inline_script = "game_start/authority_hive"
 	inline_script = "game_start/authority_machine"
+	# Nomadic
+	inline_script = "game_start/authority_regular_nomad"
+	inline_script = "game_start/authority_hive_nomad"
+	inline_script = "game_start/authority_machine_nomad"
 
 	## End of Default
 	## Start of Unique District Setup
@@ -1609,25 +1616,25 @@ generate_start_buildings_and_districts = {
 	# Shipsets
 	inline_script = "game_start/shipsets"
 
-	## Ethic
-	inline_script = "game_start/ethic_spiritualist"
-	inline_script = "game_start/ethic_materialist"
-	inline_script = "game_start/ethic_pacifist"
-	inline_script = "game_start/ethic_militarist"
-	inline_script = "game_start/ethic_egalitarian"
-	inline_script = "game_start/ethic_authoritarian"
-	inline_script = "game_start/ethic_xenophile"
-	inline_script = "game_start/ethic_xenophobe"
-
 	# BioGenesis
 	inline_script = "game_start/origin_wilderness"
 
-	##Civics
-	inline_script = "game_start/civics"
-
-	## Origin
+	## Origin, default origin first, then listed in release order (newest first)
 	# Default
 	inline_script = "game_start/origin_default"
+	# Forever Cruise
+	inline_script = "game_start/origin_forever_cruise"
+	# Sacred Path
+	inline_script = "game_start/origin_sacred_path"
+	# Golden Generation
+    inline_script = "game_start/origin_golden_generation"
+	# Heirs of the Khan
+	inline_script = "game_start/origin_heirs_of_the_khan"
+	# Shadows of the Shroud
+	inline_script = "game_start/origin_shroud_forged"
+	inline_script = "game_start/origin_mindwarden"
+	# Grand Archive
+	inline_script = "game_start/origin_primal_calling"
 	# Machine Age
 	inline_script = "game_start/origin_cybernetic_creed"
 	inline_script = "game_start/origin_synthetic_fertility"
@@ -1654,13 +1661,12 @@ generate_start_buildings_and_districts = {
 	inline_script = "game_start/origin_machine"
 	# Utopia
 	inline_script = "game_start/origin_mechanist"
-	# Shroud-Forged
-	inline_script = "game_start/origin_shroud_forged"
-	# Mindwardens
-	inline_script = "game_start/origin_mindwarden"
 
-	# Tankbound civic (removes every farming districts so we want to do that at the end)
-	inline_script = "game_start/civic_tankbound"
+	##Civics
+	inline_script = "game_start/civics"
+
+	## Ethic, after origins and civics so their unique buildings take the slots first
+	inline_script = "game_start/ethics"
 
 	# Volcanic Worlds use a different district_set and deposits
 	# Keep this above game_start/rural_districts_placement
@@ -1672,6 +1678,7 @@ generate_start_buildings_and_districts = {
 	inline_script = "game_start/rural_districts_placement"
 
 	give_starting_resources_effect = yes
+	validate_planet_buildings_and_districts = yes
 }
 
 add_building_if_not_present = {
@@ -1685,6 +1692,165 @@ add_building_if_not_present = {
 	}
 }
 
+add_building_to_starting_research_unity_zone_if_not_present = {
+	if = {
+		limit = {
+			NOT = {
+				has_building = $BUILDING$
+			}
+		}
+		add_building_to_starting_research_unity_zone = {
+			BUILDING = $BUILDING$
+		}
+	}
+}
+
+add_building_to_starting_industry_zone = {
+	if = {
+		limit = {
+			owner? = {
+				has_origin = origin_cybernetic_creed
+			}
+			NOT = {
+				has_carrier_flag = ignore_creed_building_limitation
+			}
+		}
+		add_building = $BUILDING$
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_industrial
+			}
+		}
+		add_building = {
+			zone = zone_industrial
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_ark_industrial
+			}
+		}
+		add_building = {
+			zone = zone_ark_industrial
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_foundry
+			}
+		}
+		add_building = {
+			zone = zone_foundry
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_ark_foundry
+			}
+		}
+		add_building = {
+			zone = zone_ark_foundry
+			building = $BUILDING$
+		}
+	}
+	else = {
+		add_building = $BUILDING$
+	}
+}
+
+add_building_to_starting_industry_zone_if_not_present = {
+	if = {
+		limit = {
+			NOT = {
+				has_building = $BUILDING$
+			}
+		}
+		add_building_to_starting_industry_zone = {
+			BUILDING = $BUILDING$
+		}
+	}
+}
+
+add_building_to_starting_research_unity_zone = {
+	if = {
+		limit = {
+			owner? = {
+				has_origin = origin_cybernetic_creed
+			}
+			NOT = {
+				has_carrier_flag = ignore_creed_building_limitation
+			}
+		}
+		add_building = $BUILDING$
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_habitat_research_unity
+			}
+		}
+		add_building = {
+			zone = zone_habitat_research_unity
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_ark_research_unity
+			}
+		}
+		add_building = {
+			zone = zone_ark_research_unity
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_ark_research_unity_gestalt
+			}
+		}
+		add_building = {
+			zone = zone_ark_research_unity_gestalt
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_ark_sacred_path_pilgrims
+			}
+		}
+		add_building = {
+			zone = zone_ark_sacred_path_pilgrims
+			building = $BUILDING$
+		}
+	}
+	else_if = {
+		limit = {
+			has_zone = {
+				zone = zone_research_unity
+			}
+		}
+		add_building = {
+			zone = zone_research_unity
+			building = $BUILDING$
+		}
+	}
+	else = {
+		add_building = $BUILDING$
+	}
+}
+
 generate_start_pops = {
 	optimize_memory
 	# SECONDARY SPECIES STARTS: add Traits, set living standards, etc.
@@ -1694,6 +1860,7 @@ generate_start_pops = {
 				OR = {
 					has_origin = origin_syncretic_evolution
 					has_origin = origin_necrophage
+					has_origin = origin_forever_cruise
 					has_valid_civic = civic_machine_servitor
 					has_valid_civic = civic_machine_assimilator
 					has_valid_civic = civic_hive_bodysnatcher
@@ -1761,6 +1928,23 @@ generate_start_pops = {
 					size = 2400
 					species = last_created_species
 				}
+			}
+		}
+		# Forever Cruise: set citizenship type
+		# Both primary and secondary species are already generated by this point:
+		#	owner_main_species - primary species
+		#	last_created_species - secondary species
+		if = {
+			limit = {
+				owner = { has_origin = origin_forever_cruise }
+			}
+			owner_main_species = {
+				set_citizenship_type = {
+					country = prev.owner
+					type = citizenship_cruise_crew
+				}
+				set_species_flag = cruise_founding_crew
+				save_global_event_target_as = cruise_crew_species@prev.owner
 			}
 		}
 		generate_civic_secondary_pops = yes
@@ -1914,6 +2098,17 @@ generate_start_pops = {
 	}
 	if = {
 		limit = {
+			owner = { has_origin = origin_cosmic_dawn }
+		}
+		while = {
+			limit = { pop_amount < 2200 }
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	if = {
+		limit = {
 			owner = { has_origin = origin_default }
 		}
 		create_pop_group = {
@@ -1931,7 +2126,7 @@ generate_start_pops = {
 			count = 10
 			random_owned_pop_group = {
 				limit = {
-					is_same_species = root.owner.species
+					is_same_species = owner.species
 				}
 				kill_single_pop = yes
 			}
@@ -1968,12 +2163,11 @@ generate_start_pops = {
 
 	if = {
 		limit = {
-			exists = owner
-			owner = {
+			owner? = {
 				has_origin = origin_toxic_knights
 			}
 		}
-		while = { #they get the habitat
+		while = {
 			count = 11
 			random_owned_pop_group = { kill_single_pop = yes }
 		}
@@ -2045,43 +2239,6 @@ generate_start_pops = {
 		}
 	}
 
-	# Cybernetic Creed: add Unique Traits
-	if = {
-		limit = {
-			owner = {
-				has_origin = origin_cybernetic_creed
-			}
-		}
-		while = {
-			limit = {
-				any_owned_pop_group = {
-					is_robotic_species = no
-					has_ethic = ethic_spiritualist
-					has_cybernetic_creed_trait = no
-				}
-			}
-			weighted_random_owned_pop_group = {
-				limit = {
-					is_robotic_species = no
-					has_ethic = ethic_spiritualist
-					has_cybernetic_creed_trait = no
-				}
-				modify_species = {
-					species = this
-					add_trait = trait_cyborg_ritualistic_implants
-					add_traits_at_start_of_list = yes
-				}
-			}
-		}
-		owner = {
-			set_policy = {
-				policy = robot_pop_policy
-				option = robot_pops_allowed
-				cooldown = no
-			}
-		}
-	}
-
 	#Synthetic Fertility
 	if = {
 		limit = {
@@ -2089,6 +2246,17 @@ generate_start_pops = {
 		}
 		create_pop_group = {
 			size = 900
+			species = owner_main_species
+		}
+	}
+
+	#Deep Sleep
+	if = {
+		limit = {
+			owner = { is_deep_sleep_country = yes }
+		}
+		create_pop_group = {
+			size = 3000
 			species = owner_main_species
 		}
 	}
@@ -2107,6 +2275,14 @@ generate_civic_secondary_pops = {
 		}
 		owner = {
 			set_country_flag = lithoid_subspecies
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { last_created_species = { is_infernal = yes } }
+		}
+		owner = {
+			set_country_flag = infernal_subspecies
 		}
 	}
 	else = {
@@ -2221,7 +2397,7 @@ generate_civic_secondary_pops = {
 		last_created_species = {
 			if = {
 				limit = {
-					root = {
+					prev = {
 						OR = {
 							is_planet_class = pc_shattered_ring_habitable
 							is_planet_class = pc_gaia
@@ -2234,11 +2410,11 @@ generate_civic_secondary_pops = {
 				}
 			}
 			set_citizenship_type = {
-				country = root.owner
+				country = prev.owner
 				type = citizenship_limited
 			}
 			set_living_standard = {
-				country = root.owner
+				country = prev.owner
 				type = living_standard_organic_trophy
 			}
 		}
@@ -2264,7 +2440,7 @@ generate_civic_secondary_pops = {
 		last_created_species = {
 			if = {
 				limit = {
-					root = {
+					prev = {
 						OR = {
 							is_planet_class = pc_shattered_ring_habitable
 							is_planet_class = pc_gaia
@@ -2278,28 +2454,78 @@ generate_civic_secondary_pops = {
 			}
 			if = {
 				limit = {
-					root.owner = { is_machine_empire = yes }
+					prev.owner = { is_machine_empire = yes }
 				}
 				set_citizenship_type = {
-					country = root.owner
+					country = prev.owner
 					type = citizenship_full_machine
 				}
 			}
 			else = {
 				set_citizenship_type = {
-					country = root.owner
+					country = prev.owner
 					type = citizenship_full
 				}
 			}
 
 			set_living_standard = {
-				country = root.owner
+				country = prev.owner
 				type = living_standard_hive_mind
 			}
 		}
-		create_pop_group = {
-			size = 1000
-			species = last_created_species
+		while = {
+			count = @civilians_counter
+			create_pop_group = {
+				size = @civilians_gamestart
+				species = last_created_species
+			}
+		}
+	}
+
+	# Forever Cruise: set citizenship, living standard & preference; spawn Pops
+	if = {
+		limit = {
+			owner = { has_origin = origin_forever_cruise }
+		}
+		if = {
+			limit = {
+				owner = { has_valid_civic = civic_machine_servitor }
+			}
+			# Pops were already spawned by the Rogue Servitor block above; only re-tag here.
+			last_created_species = {
+				set_citizenship_type = {
+					country = prev.owner
+					type = citizenship_organic_trophy
+				}
+				set_species_flag = cruise_founding_passenger
+				save_global_event_target_as = cruise_passenger_species@prev.owner
+			}
+		}
+		else = {
+			last_created_species = {
+				set_citizenship_type = {
+					country = prev.owner
+					type = citizenship_cruise_passenger
+				}
+				set_living_standard = {
+					country = prev.owner
+					type = living_standard_cruise_passenger
+				}
+				set_population_controls = {
+					country = prev.owner
+					type = population_control_no
+					cooldown = no
+				}
+				set_species_flag = cruise_founding_passenger
+				save_global_event_target_as = cruise_passenger_species@prev.owner
+			}
+			while = {
+				count = @civilians_counter
+				create_pop_group = {
+					size = @civilians_gamestart
+					species = last_created_species
+				}
+			}
 		}
 	}
 }
@@ -2515,10 +2741,12 @@ generate_home_planet_final_pass = {
 
 void_dweller_home_planet_setup = {
 	optimize_memory
-	set_planet_flag = habitat_level_2
-	set_timed_planet_flag = {
-		flag = ignore_ai_building_limitations
-		days = 1
+	planet = {
+		set_carrier_flag = habitat_level_2
+		set_timed_carrier_flag = {
+			flag = ignore_ai_building_limitations
+			days = 1
+		}
 	}
 	owner = {
 		save_event_target_as = void_dweller_owner
@@ -2571,7 +2799,7 @@ void_dweller_home_planet_setup = {
 			random_system_planet = {
 				limit = {
 					has_deposit = no
-					is_colonizable = no
+					can_have_mineral_deposits = yes
 				}
 				add_deposit = d_minerals_4
 				set_planet_flag = mining_planet
@@ -2587,67 +2815,14 @@ void_dweller_home_planet_setup = {
 			limit = { has_star_flag = neighbor_t1_first_colony }
 			set_star_flag = ideal_habitat_t1
 			max_steps = 3
-			random_system_planet = {
-				limit = {
-					is_colonizable = yes
-					is_colony = no
-					has_planet_flag = prescripted_ideal
-				}
-				change_pc = pc_frozen
-				set_deposit = d_engineering_5
-			}
-			while = {
-				count = 3
-				random_system_planet = {
-					limit = {
-						is_star = no
-						is_colonizable = no
-						has_deposit = no
-						has_anomaly = no
-					}
-					random_list = {
-						5 = { set_deposit = d_physics_2 }
-						5 = { set_deposit = d_society_2 }
-						5 = { set_deposit = d_engineering_2 }
-						1 = { set_deposit = d_physics_3 }
-						1 = { set_deposit = d_society_3 }
-						1 = { set_deposit = d_engineering_3 }
-					}
-				}
-			}
+			convert_to_research_system_effect = yes
 		}
 		# Second pre-sripted is a resource system
 		closest_system = {
 			limit = { has_star_flag = neighbor_t2_second_colony }
 			set_star_flag = ideal_habitat_t2
 			max_steps = 6
-			random_system_planet = {
-				limit = {
-					is_colonizable = yes
-					is_colony = no
-					has_planet_flag = prescripted_ideal
-				}
-				remove_planet_flag = prescripted_ideal
-				change_pc = pc_molten
-				set_deposit = d_alloys_3
-				add_deposit = d_minerals_5
-			}
-			while = {
-				count = 3
-				random_system_planet = {
-					limit = {
-						is_star = no
-						has_deposit = no
-						has_anomaly = no
-					}
-					random_list = {
-						5 = { set_deposit = d_minerals_2 }
-						5 = { set_deposit = d_energy_2 }
-						1 = { set_deposit = d_minerals_3 }
-						1 = { set_deposit = d_energy_3 }
-					}
-				}
-			}
+			convert_to_resource_system_effect = yes
 		}
 	}
 	event_target:habitat_1_planet = {
@@ -2696,9 +2871,18 @@ void_dweller_home_planet_setup = {
 				}
 			}
 		}
-		create_pop_group = {
-			size = 2800
-			species = owner_main_species
+		if = {
+			limit = { owner = { is_tankbound_empire = yes } }
+			create_pop_group = {
+				size = 800
+				species = owner_main_species
+			}
+		}
+		else = {
+			create_pop_group = {
+				size = 2800
+				species = owner_main_species
+			}
 		}
 	}
 	else_if = { # Then we generate pops for eager explorer empires
@@ -2787,9 +2971,23 @@ void_dweller_home_planet_setup = {
 		}
 	}
 
-	set_planet_entity = {
-		entity = "habitat_phase_03_entity"
-		graphical_culture = owner
+	void_dweller_home_planet_districts_setup = yes
+}
+
+void_dweller_home_planet_districts_setup = {
+	optimize_memory
+	planet = {
+		set_timed_carrier_flag = {
+			flag = ignore_ai_building_limitations
+			days = 1
+		}
+	}
+
+	planet = {
+		set_planet_entity = {
+			entity = "habitat_phase_03_entity"
+			graphical_culture = owner
+		}
 	}
 
 	inline_script = "game_start/rural_districts_initializer"
@@ -2845,23 +3043,17 @@ void_dweller_home_planet_setup = {
 
 	# Species
 	inline_script = "game_start/species_lithoids"
+	inline_script = "game_start/species_infernals"
 	inline_script = "game_start/species_hive_void_dwellers"
 	inline_script = "game_start/species_machine_void_dwellers"
 	inline_script = "game_start/species_individual_machine_void_dwellers"
 	inline_script = "game_start/species_subspecies" ## Set subspecies flags
 
-	## Ethic
-	inline_script = "game_start/ethic_spiritualist"
-	inline_script = "game_start/ethic_materialist"
-	inline_script = "game_start/ethic_pacifist"
-	inline_script = "game_start/ethic_militarist"
-	inline_script = "game_start/ethic_egalitarian"
-	inline_script = "game_start/ethic_authoritarian"
-	inline_script = "game_start/ethic_xenophile"
-	inline_script = "game_start/ethic_xenophobe"
-
 	##Civics
 	inline_script = "game_start/civics"
+
+	## Ethic, after origins and civics so their unique buildings take the slots first
+	inline_script = "game_start/ethics"
 
 	# Apply rural districts depending on variable count
 	inline_script = "game_start/rural_districts_placement"
@@ -2869,6 +3061,588 @@ void_dweller_home_planet_setup = {
 	set_planet_size = 6
 
 	give_starting_resources_effect = yes
+}
+
+advanced_empire_base_init_effect = {
+	# scope: country
+	set_country_flag = is_advanced_start_AI
+
+	give_technology = { tech = tech_galactic_ambitions		message = no }
+	give_technology = { tech = tech_mining_1				message = no }
+	give_technology = { tech = tech_combat_computers_1		message = no }
+	give_technology = { tech = tech_planetary_unification	message = no }
+
+	add_resource = { energy		= 1000 }
+	add_resource = { minerals	= 1000 }
+	add_resource = { alloys		= 500 }
+	add_resource = { influence	= 200 }
+	add_monthly_resource_mult = {
+		resource = unity
+		value = @tier2unityreward
+		min = @tier2unitymin
+		max = @tier2unitymax
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					is_lithoid_empire = no
+					is_machine_empire = no
+				}
+				is_catalytic_empire = yes
+				has_country_flag = non_lithoid_subspecies
+				has_origin = origin_broken_shackles
+			}
+		}
+		add_resource = { food = 1000 }
+	}
+	else = {
+		add_resource = { energy = 1000 }
+	}
+	if = {
+		limit = {
+			country_uses_consumer_goods_game_start = yes
+		}
+		add_resource = { consumer_goods = 500 }
+	}
+	else = {
+		add_resource = { minerals = 500 }
+	}
+}
+
+add_advanced_empire_capital_pops_effect = {
+	# scope: colony
+	if = {
+		limit = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		while = {
+			count = 13
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		while = {
+			count = 16
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_origin = origin_mechanists
+			}
+		}
+		random_galaxy_species = {
+			limit = {
+				has_species_flag = mechanical_species@root.owner
+			}
+			save_event_target_as = mechanical_species
+		}
+		while = {
+			count = 6
+			create_pop_group = {
+				species = event_target:mechanical_species
+			}
+		}
+		while = {
+			count = 12
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				OR = {
+					has_origin = origin_syncretic_evolution
+					has_origin = origin_necrophage
+				}
+			}
+		}
+		random_galaxy_species = {
+			limit = {
+				has_species_flag = syncretic_species@root.owner
+			}
+			save_event_target_as = syncretic_species
+		}
+		while = {
+			count = 8
+			create_pop_group = {
+				species = event_target:syncretic_species
+			}
+		}
+		while = {
+			count = 10
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else = {
+		while = {
+			count = 18
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+}
+
+add_advanced_empire_colony_pops_effect = {
+	# scope: colony
+	if = {
+		limit = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		while = {
+			count = 15
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		while = {
+			count = 18
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				has_origin = origin_mechanists
+			}
+		}
+		random_galaxy_species = {
+			limit = {
+				has_species_flag = mechanical_species@root.owner
+			}
+			save_event_target_as = mechanical_species
+		}
+		while = {
+			count = 4
+			create_pop_group = {
+				species = event_target:mechanical_species
+			}
+		}
+		while = {
+			count = 7
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				OR = {
+					has_origin = origin_syncretic_evolution
+					has_origin = origin_necrophage
+				}
+			}
+		}
+		random_galaxy_species = {
+			limit = {
+				has_species_flag = syncretic_species@root.owner
+			}
+			save_event_target_as = syncretic_species
+		}
+		while = {
+			count = 4
+			create_pop_group = {
+				species = event_target:syncretic_species
+			}
+		}
+		while = {
+			count = 6
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+	else = {
+		while = {
+			count = 10
+			create_pop_group = {
+				species = owner_main_species
+			}
+		}
+	}
+}
+
+add_advanced_empire_capital_districts_effect = {
+	# scope: colony (capital, non-shattered-ring)
+	add_district_and_planet_size_if_needed_effect = { district = district_mining }
+	add_district_and_planet_size_if_needed_effect = { district = district_generator }
+	add_district_and_planet_size_if_needed_effect = { district = district_generator }
+
+	if = {
+		limit = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_nexus }
+		add_district_and_planet_size_if_needed_effect = { district = district_nexus }
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_hive }
+		add_district_and_planet_size_if_needed_effect = { district = district_hive }
+	}
+	else = {
+		add_district_and_planet_size_if_needed_effect = { district = district_city }
+		add_district_and_planet_size_if_needed_effect = { district = district_city }
+	}
+
+	if = {
+		limit = {
+			owner = {
+				country_uses_food_game_start = no
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_generator }
+		add_district_and_planet_size_if_needed_effect = { district = district_generator }
+	}
+	else = {
+		add_district_and_planet_size_if_needed_effect = { district = district_farming }
+		add_district_and_planet_size_if_needed_effect = { district = district_farming }
+	}
+
+	if = {
+		limit = {
+			owner = {
+				is_subterranean_empire = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_mining }
+		add_district_and_planet_size_if_needed_effect = { district = district_mining }
+	}
+}
+
+add_advanced_empire_shattered_ring_capital_districts_effect = {
+	# scope: colony (capital, shattered ring origin)
+	random_deposit = {
+		limit = {
+			is_deposit_type = d_decrepit_tunnels_2
+		}
+		clear_blocker = yes
+	}
+	random_deposit = {
+		limit = {
+			is_deposit_type = d_decrepit_tunnels_3
+		}
+		clear_blocker = yes
+	}
+	random_deposit = {
+		limit = {
+			is_deposit_type = d_segment_rubble_4
+		}
+		clear_blocker = yes
+	}
+	while = {
+		count = 2
+		add_district_if_possible_effect = {
+			district = district_mining
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				is_gestalt = no
+			}
+		}
+		while = {
+			count = 2
+			add_district_if_possible_effect = {
+				district = district_city
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					country_uses_food_game_start = no
+				}
+			}
+			add_district_if_possible_effect = {
+				district = district_mining
+			}
+		}
+		else = {
+			add_district_if_possible_effect = {
+				district = district_farming
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		while = {
+			count = 2
+			add_district_if_possible_effect = {
+				district = district_hive
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					country_uses_food_game_start = no
+				}
+			}
+			add_district_if_possible_effect = {
+				district = district_mining
+			}
+		}
+		else = {
+			add_district_if_possible_effect = {
+				district = district_farming
+			}
+		}
+	}
+	else = {
+		while = {
+			count = 3
+			add_district_if_possible_effect = {
+				district = district_nexus
+			}
+		}
+	}
+}
+
+add_advanced_empire_colony_districts_effect = {
+	# scope: colony (non-capital)
+	add_district_and_planet_size_if_needed_effect = { district = district_generator }
+	add_district_and_planet_size_if_needed_effect = { district = district_mining }
+
+	if = {
+		limit = {
+			owner = {
+				is_machine_empire = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_nexus }
+		add_district_and_planet_size_if_needed_effect = { district = district_generator }
+		add_district_and_planet_size_if_needed_effect = { district = district_generator }
+	}
+	else_if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_hive }
+	}
+	else = {
+		add_district_and_planet_size_if_needed_effect = { district = district_city }
+	}
+	if = {
+		limit = {
+			owner = {
+				country_uses_food_game_start = yes
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_farming }
+	}
+}
+
+add_advanced_empire_colony_buildings_effect = {
+	# scope: colony
+	set_timed_carrier_flag = {
+		flag = ignore_ai_building_limitations
+		days = 1
+	}
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					is_machine_empire = yes
+					is_individual_machine = yes
+				}
+			}
+		}
+		add_building = building_machine_assembly_plant
+	}
+	if = {
+		limit = {
+			owner = {
+				is_hive_empire = yes
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					NOT = {
+						has_origin = origin_progenitor_hive
+					}
+				}
+			}
+			add_building = building_spawning_pool
+		}
+		else = {
+			add_building = building_offspring_nest
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_mechanists
+			}
+		}
+		add_building = building_robot_assembly_plant
+	}
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_necrophage
+				is_homicidal = no #purges them instead
+				NOT = { has_ai_personality_behaviour = purger }
+			}
+		}
+		add_building = building_necrophage_elevation_chamber
+	}
+	if = {
+		limit = {
+			owner = {
+				has_origin = origin_clone_army
+			}
+		}
+		add_building = building_clone_army_clone_vat
+	}
+}
+
+create_advanced_empire_system_stations_effect = {
+	# scope: galactic_object (system)
+	# $OWNER$ = country
+	every_system_planet = {
+		limit = {
+			has_deposit_for = shipclass_mining_station
+			has_mining_station = no
+			has_any_rare_strategic_resource = no
+		}
+		create_mining_station = {
+			owner = $OWNER$
+		}
+	}
+	every_system_planet = {
+		limit = {
+			has_deposit_for = shipclass_research_station
+			has_research_station = no
+			has_any_rare_strategic_resource = no
+		}
+		create_research_station = {
+			owner = $OWNER$
+		}
+	}
+}
+
+add_advanced_empire_habitat_capital_districts_effect = {
+	# scope: colony (capital habitat, void dwellers / void machines origin)
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_mining }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_housing }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_housing }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+
+	if = {
+		limit = {
+			owner? = {
+				country_uses_food_game_start = yes
+			}
+		}
+		if = {
+			limit = {
+				has_zone = {
+					zone = zone_habitat_hydroponics
+				}
+			}
+			add_building = {
+				zone = zone_habitat_hydroponics
+				building = building_hydroponics_farm
+			}
+		}
+		else = {
+			add_zone = {
+				district = district_hab_energy
+				zone = zone_habitat_hydroponics
+			}
+		}
+	}
+}
+
+add_advanced_empire_habitat_colony_districts_effect = {
+	# scope: colony (non-capital habitat, void dwellers / void machines origin)
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_mining }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_housing }
+	add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+
+	if = {
+		limit = {
+			owner = {
+				OR = {
+					is_machine_empire = yes
+					is_individual_machine = yes
+				}
+			}
+		}
+		add_district_and_planet_size_if_needed_effect = { district = district_hab_energy }
+	}
+
+	if = {
+		limit = {
+			owner? = {
+				country_uses_food_game_start = yes
+			}
+		}
+		if = {
+			limit = {
+				has_zone = {
+					zone = zone_habitat_hydroponics
+				}
+			}
+			add_building = {
+				zone = zone_habitat_hydroponics
+				building = building_hydroponics_farm
+			}
+		}
+		else = {
+			add_zone = {
+				district = district_hab_energy
+				zone = zone_habitat_hydroponics
+			}
+		}
+	}
 }
 
 add_district_and_planet_size_if_needed_effect = {
@@ -2944,7 +3718,7 @@ give_starting_resources_effect = {
 			}
 		}
 		if = {
-				limit = { is_infernal_empire = yes }
+			limit = { is_infernal_empire = yes }
 			owner = {
 				add_resource = { food = -200 }
 				add_resource = { minerals = 50 }
@@ -2964,10 +3738,7 @@ give_starting_resources_effect = {
 		else_if = {
 			limit = {
 				owner = {
-					OR = {
-						is_regular_empire = yes
-						has_country_flag = non_lithoid_subspecies
-					}
+					country_uses_food_game_start = yes
 				}
 			}
 			owner = {
@@ -2977,10 +3748,7 @@ give_starting_resources_effect = {
 		if = {
 			limit = {
 				owner = {
-					OR = {
-						is_regular_empire = yes
-						has_subspecies_civic_or_origin = yes
-					}
+					country_uses_consumer_goods_game_start = yes
 				}
 			}
 			owner = {
@@ -2995,6 +3763,65 @@ give_starting_resources_effect = {
 			}
 			owner = {
 				add_resource = { food = 200	}
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+					is_nomadic = yes
+				}
+			}
+			owner = {
+				add_resource = {
+					energy = 1000
+					minerals = 40000
+					alloys = 500
+					trade = 2000
+					volatile_motes = 100
+					exotic_gases = 100
+					rare_crystals = 100
+				}
+				if = {
+					limit = {
+						is_gestalt = no
+					}
+					add_resource = {
+					consumer_goods = 1000
+					}
+				}
+				if = {
+					limit = {
+						country_uses_food_game_start = yes
+					}
+					add_resource = {
+						food = 2000
+					}
+				}
+				else_if = {
+					limit = {
+						is_machine_empire = yes
+					}
+					add_resource = {
+						energy = 2000
+					}
+				}
+				else_if = {
+					limit = {
+						is_lithoid_empire = yes
+					}
+					add_resource = {
+						minerals = 2000
+					}
+				}
+				else_if = {
+					limit = {
+						is_infernal_empire = yes
+					}
+					add_resource = {
+						minerals = 500
+						alloys = 500
+					}
+				}
 			}
 		}
 		owner = {
@@ -3474,7 +4301,7 @@ create_wilderness_planet = {
 		limit = {
 			is_planet_class = pc_desert # Just in case players cause trouble
 		}
-		set_planet_flag = tasty_desert
+		set_carrier_flag = tasty_desert
 	}
 }
 
@@ -3493,7 +4320,9 @@ fear_of_the_dark_binary_planets = {
 		save_global_event_target_as = fotd_seperatist_planet@prev
 		set_planet_flag = fotd_seperatist_planet@prev
 		create_fear_of_the_dark_country = yes
-		setup_fear_of_the_dark_pre_ftl = yes
+		colony = {
+			setup_fear_of_the_dark_pre_ftl = yes
+		}
 		if = {
 			limit = {
 				has_planet_flag = planet_mars
@@ -3615,6 +4444,118 @@ fruitful_start_effect = {
 }
 
 lost_colony_generate_parent_effect = {
+	event_target:lost_colony_child = {
+		if = {
+			limit = {
+				is_nomadic = yes
+			}
+			random_list = {
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_desert
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+					modifier = {
+						mult = 0
+						species = { has_trait = trait_aquatic }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_arid
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+					modifier = {
+						mult = 0
+						species = { has_trait = trait_aquatic }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_savannah
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+					modifier = {
+						mult = 0
+						species = { has_trait = trait_aquatic }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_tropical
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_continental
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_ocean
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+					modifier = {
+						mult = 10
+						species = { has_trait = trait_aquatic }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_arctic
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_tundra
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+				}
+				1 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_alpine
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+				}
+				0 = {
+					modify_species = {
+						species = species
+						ideal_planet_class = pc_volcanic
+						change_scoped_species = no
+						effect = { save_event_target_as = lost_colony_parent_species }
+					}
+					modifier = {
+						add = 50
+						species = { has_trait = trait_infernal }
+					}
+				}
+			}
+		}
+		else = {
+			species = { save_event_target_as = lost_colony_parent_species }
+		}
+	}
 	if = { # hive parent
 		limit = {
 			event_target:lost_colony_child = {
@@ -3626,7 +4567,7 @@ lost_colony_generate_parent_effect = {
 				has_overlord_dlc = yes
 			}
 			create_country = {
-				species = event_target:lost_colony_child
+				species = event_target:lost_colony_parent_species
 				name_list = event_target:lost_colony_child
 				type = default
 				origin = "origin_progenitor_hive"
@@ -3646,7 +4587,7 @@ lost_colony_generate_parent_effect = {
 		}
 		else = {
 			create_country = {
-				species = event_target:lost_colony_child
+				species = event_target:lost_colony_parent_species
 				name_list = event_target:lost_colony_child
 				type = default
 				origin = "origin_default"
@@ -3672,7 +4613,7 @@ lost_colony_generate_parent_effect = {
 			}
 		}
 		create_country = {
-			species = event_target:lost_colony_child
+			species = event_target:lost_colony_parent_species
 			name_list = event_target:lost_colony_child
 			type = default
 			origin = "origin_default"
@@ -3693,7 +4634,7 @@ lost_colony_generate_parent_effect = {
 	}
 	else = { # default parent
 		create_country = {
-			species = event_target:lost_colony_child
+			species = event_target:lost_colony_parent_species
 			name_list = event_target:lost_colony_child
 			type = default
 			origin = "origin_default"
@@ -3721,6 +4662,24 @@ lost_colony_generate_parent_effect = {
 }
 
 lost_colony_generate_parent_human_effect = {
+	# The parent always spawns on Earth (pc_continental). If the child is nomadic its
+	# species carries arkship habitability (trait_pc_ark_preference), so derive a
+	# continental-preference variant for the planet-bound parent. origin.100 cannot fix
+	# this because it intentionally skips humans (is_human_species = no).
+	if = {
+		limit = { event_target:human_lost_colony = { is_nomadic = yes } }
+		event_target:human_lost_colony = {
+			modify_species = {
+				species = species
+				ideal_planet_class = pc_continental
+				change_scoped_species = no
+				effect = { save_event_target_as = human_parent_species }
+			}
+		}
+	}
+	else = {
+		event_target:human_species = { save_event_target_as = human_parent_species }
+	}
 	if = { # hive parent
 		limit = {
 			event_target:human_lost_colony = {
@@ -3734,7 +4693,7 @@ lost_colony_generate_parent_human_effect = {
 			random_list = {
 				50 = {
 					create_country = {
-						species = event_target:human_species
+						species = event_target:human_parent_species
 						name_list = HUMAN1
 						type = default
 						origin = "origin_progenitor_hive"
@@ -3747,7 +4706,7 @@ lost_colony_generate_parent_human_effect = {
 				}
 				50 = {
 					create_country = {
-						species = event_target:human_species
+						species = event_target:human_parent_species
 						name_list = HUMAN2
 						type = default
 						origin = "origin_progenitor_hive"
@@ -3764,7 +4723,7 @@ lost_colony_generate_parent_human_effect = {
 			random_list = {
 				50 = {
 					create_country = {
-						species = event_target:human_species
+						species = event_target:human_parent_species
 						name_list = HUMAN1
 						type = default
 						origin = "origin_default"
@@ -3777,7 +4736,7 @@ lost_colony_generate_parent_human_effect = {
 				}
 				50 = {
 					create_country = {
-						species = event_target:human_species
+						species = event_target:human_parent_species
 						name_list = HUMAN2
 						type = default
 						origin = "origin_default"
@@ -3795,7 +4754,7 @@ lost_colony_generate_parent_human_effect = {
 		random_list = {
 			50 = {
 				create_country = {
-					species = event_target:human_species
+					species = event_target:human_parent_species
 					name_list = HUMAN1
 					type = default
 					origin = "origin_default"
@@ -3811,7 +4770,7 @@ lost_colony_generate_parent_human_effect = {
 			}
 			50 = {
 				create_country = {
-					species = event_target:human_species
+					species = event_target:human_parent_species
 					name_list = HUMAN2
 					type = default
 					origin = "origin_default"
@@ -3843,7 +4802,7 @@ lost_colony_generate_parent_human_effect = {
 add_district_and_planet_size_if_needed_effect_amount = {
 	optimize_memory
 	while = {
-		count < $amount$
+		count = $amount$
 		if = {
 			limit = {
 				free_district_slots >= 1
@@ -4211,5 +5170,442 @@ generate_starting_rural_districts = {
 	add_district_and_planet_size_if_needed_effect_amount = {
 		amount = 3
 		district = district_farming
+	}
+}
+
+# Nomads
+nomad_country_initial_setup_effect = {
+	# Arkship Random Event Director
+	country_event = {
+		id = arkship.1
+		random = 20
+	}
+	# Nomadic empires can ignore closed borders
+	set_faction_properties = {
+		needs_border_access = no
+	}
+	save_event_target_as = nomad_country
+	set_variable = { which = contract_completed value = 0 }
+	if = {
+		limit = {
+			has_origin = origin_forever_cruise
+		}
+		set_variable = { which = cruise_contract_completed value = 0 }
+	}
+	set_resource_converter = nomadic_operational_reserves
+
+	# Caravan Masters start with an initial Waystation & Tech
+	if = {
+		limit = {
+			is_caravan_masters_empire = yes
+		}
+		capital_scope = {
+			solar_system = {
+				create_waystation_effect = {
+					OWNER = event_target:nomad_country
+					ANGLE = 120
+				}
+			}
+		}
+		random_owned_nonprimary_starbase = {
+			limit = {
+				is_waystation_starbase = yes
+			}
+			set_starbase_module = {
+				slot = 1
+				module = waystation_energy_module
+			}
+			set_starbase_module = {
+				slot = 2
+				module = waystation_mining_module
+			}
+		}
+		add_research_option = tech_waystation_2
+	}
+
+	if = {
+		limit = {
+			is_deep_sleep_country = yes
+		}
+		capital_scope = {
+			add_blocker = { type = d_deep_sleep_cryo_pods }
+			add_blocker = { type = d_deep_sleep_cryo_pods }
+			add_blocker = { type = d_deep_sleep_cryo_pods }
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = { has_origin = origin_forever_cruise }
+		}
+		# Issue the initial contracts from your own nomad country
+		country_event = {
+			id = nomads.3010
+		}
+	}
+
+	if = {
+		# Necrophage nomads keep their two guaranteed ideal planets as pre-FTL
+		limit = {
+			has_origin = origin_necrophage
+			NOT = { has_country_flag = is_advanced_start_AI }
+		}
+		# First pre-scripted ideal: older, more developed pre-FTL
+		closest_system = {
+			limit = { has_star_flag = neighbor_t1_first_colony }
+			max_steps = 3
+			random_system_planet = {
+				limit = {
+					has_planet_flag = prescripted_ideal
+				}
+				random_list = {
+					1 = { change_pc = pc_tropical }
+					1 = { change_pc = pc_arid }
+					1 = { change_pc = pc_continental }
+					1 = { change_pc = pc_ocean }
+					1 = { change_pc = pc_tundra }
+					1 = { change_pc = pc_arctic }
+					1 = { change_pc = pc_alpine }
+					1 = { change_pc = pc_savannah }
+					1 = { change_pc = pc_desert }
+				}
+				reroll_planet = yes
+				generate_very_early_pre_ftls_on_planet = yes
+				set_name = random
+				change_colony_foundation_date = -461
+
+				while = {
+					count = 4
+					create_army = {
+						owner = last_created_country
+						type = primitive_additional_army
+						species = last_created_country
+					}
+				}
+			}
+		}
+		# Second pre-scripted ideal: even older pre-FTL
+		closest_system = {
+			limit = { has_star_flag = neighbor_t2_second_colony }
+			max_steps = 6
+			random_system_planet = {
+				limit = {
+					has_planet_flag = prescripted_ideal
+				}
+				random_list = {
+					1 = { change_pc = pc_tropical }
+					1 = { change_pc = pc_arid }
+					1 = { change_pc = pc_continental }
+					1 = { change_pc = pc_ocean }
+					1 = { change_pc = pc_tundra }
+					1 = { change_pc = pc_arctic }
+					1 = { change_pc = pc_alpine }
+					1 = { change_pc = pc_savannah }
+					1 = { change_pc = pc_desert }
+				}
+				reroll_planet = yes
+				generate_very_early_pre_ftls_on_planet = yes
+				set_name = random
+				change_colony_foundation_date = -1275
+
+				while = {
+					count = 4
+					create_army = {
+						owner = last_created_country
+						type = primitive_additional_army
+						species = last_created_country
+					}
+				}
+			}
+		}
+	}
+	else = {
+		# Change starting pre-scripted ideals into inhabitable worlds
+		# First pre-sripted is a research system
+		closest_system = {
+			limit = { has_star_flag = neighbor_t1_first_colony }
+			max_steps = 3
+			convert_to_research_system_effect = yes
+		}
+		# Second pre-sripted is a resource system
+		closest_system = {
+			limit = { has_star_flag = neighbor_t2_second_colony }
+			max_steps = 6
+			convert_to_resource_system_effect = yes
+		}
+	}
+	# Caravan Masters keeps their starting-system deposits so the civic's free Waystation has something to work with
+	if = {
+		limit = {
+			is_caravan_masters_empire = no
+		}
+		capital_scope = {
+			solar_system = {
+				every_system_planet = {
+					limit = {
+						has_deposit = d_minerals_5
+					}
+					remove_deposit = d_minerals_5
+				}
+				every_system_planet = {
+					limit = {
+						has_deposit = d_energy_5
+					}
+					remove_deposit = d_energy_5
+				}
+				every_system_planet = {
+					limit = {
+						has_harvestable_resources_trigger = yes
+					}
+					set_variable_to_random_value = { which = duration min = @arkship_harvest_resources_duration max = @arkship_harvest_resources_duration_doubled rounded = yes }
+					add_modifier = {
+						modifier = harvested_resources_mining
+						months = 1
+						time_multiplier = duration
+					}
+				}
+			}
+		}
+	}
+
+	# Grant the Arkship Readiness checklist
+	country_event = {
+		id = nomads.50
+	}
+}
+
+home_arkship_initial_setup = {
+	initialize_arkship_starbase_effect = yes
+	switch = {
+		trigger = is_ship_size
+		civilian_arkship_tier_1 = {
+			set_graphical_culture = civilian_arkship
+			owner = { set_country_flag = starting_civilian_arkship }
+		}
+		science_arkship_tier_1 = {
+			set_graphical_culture = science_arkship
+			owner = { set_country_flag = starting_science_arkship }
+		}
+		military_arkship_tier_1 = {
+			set_graphical_culture = military_arkship
+			owner = { set_country_flag = starting_military_arkship }
+		}
+	}
+	owner = {
+		create_leader = {
+			class = commander
+			name = random
+			species = owner_main_species
+			randomize_traits = no
+			traits = {
+				1 = random_common
+			}
+		}
+	}
+	fleet = {
+		set_leader = last_created_leader
+	}
+	# Add blockers
+	colony = {
+		if = {
+			limit = {
+				owner = {
+					has_civic = civic_machine_servitor
+				}
+			}
+			add_deposit = d_unsupervised_settlement
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_gestalt = no
+				}
+			}
+			add_deposit = d_decrepit_dwellings
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			add_deposit = d_collapsed_burrows
+		}
+	}
+}
+
+heirs_of_the_khan_setup_effect = {
+	set_variable = {
+		which = defeated_heirs_hunters #This one is to track how many fleets you have defeated
+		value = 0
+	}
+	set_variable = {
+		which = defeated_heirs_hunters_spawner #This one is to impact the power of the hostile fleet we spawn, these two variables might get out of sync
+		value = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				exists = event_target:marauder_heir
+			}
+		}
+		if = {
+			limit = {
+				exists = event_target:marauder_country_1
+			}
+			event_target:marauder_country_1 = {
+				save_global_event_target_as = marauder_heir
+			}
+		}
+		else = {
+			random_system = {
+				limit = {
+					is_in_cluster = resource_cluster_1 # Defined in code; see RESOURCE_CLUSTER_COUNT
+					is_fe_cluster = no
+					NOR = {
+						has_star_flag = empire_cluster
+						has_star_flag = guardians
+						has_star_flag = hostile_system
+						any_neighbor_system = {
+							OR = {
+								has_star_flag = empire_cluster
+								has_star_flag = guardians
+								has_star_flag = hostile_system
+								is_fe_cluster = yes
+							}
+						}
+					}
+				}
+				spawn_system = {
+					initializer = marauder_1_1
+				}
+				last_created_country = {
+					save_global_event_target_as = marauder_heir
+					change_country_flag = {
+						#For some reason they are not getting their flag when run through this effect.
+						icon = {
+							category = "pirate"
+							file = "flag_pirate_10.dds"
+						}
+						background = {
+							category = "backgrounds"
+							file = "00_solid.dds"
+						}
+						colors = {
+							"black"
+							"black"
+							"null"
+							"null"
+						}
+					}
+				}
+			}
+		}
+
+		establish_communications_no_message = event_target:marauder_heir
+
+		create_country = {
+			name = NAME_Hunter_Marauders
+			type = "marauder_raiders"
+			flag = random
+			auto_delete = no
+			effect = {
+				save_global_event_target_as = marauder_hunters
+				set_country_flag = heirs_marauder_hunters
+				establish_communications_no_message = prev
+				set_faction_hostility = {
+					target = prev
+					set_hostile = yes
+					set_neutral = no
+					set_friendly = no
+				}
+				create_leader = {
+					class = commander
+					species = event_target:marauder_heir.species
+					name = random
+					skill = 3
+					leader_age_min = 25
+					leader_age_max = 45
+					traits = {
+						0 = leader_trait_mercenary_warrior
+					}
+				}
+			}
+		}
+	}
+	else = {
+		establish_communications_no_message = event_target:marauder_heir
+		event_target:marauder_hunters = {
+			set_faction_hostility = {
+				target = prev
+				set_hostile = yes
+				set_neutral = no
+				set_friendly = no
+			}
+		}
+	}
+	country_event = {
+		id = nomads.501
+		days = 1
+	}
+}
+
+convert_to_research_system_effect = {
+	random_system_planet = {
+		limit = {
+			is_colony = no
+			has_planet_flag = prescripted_ideal
+		}
+		remove_planet_flag = prescripted_ideal
+		change_pc = pc_frozen
+		set_deposit = d_engineering_5
+	}
+	while = {
+		count = 3
+		random_system_planet = {
+			limit = {
+				is_star = no
+				is_colonizable = no
+				has_deposit = no
+				has_anomaly = no
+			}
+			random_list = {
+				5 = { set_deposit = d_physics_2 }
+				5 = { set_deposit = d_society_2 }
+				5 = { set_deposit = d_engineering_2 }
+				1 = { set_deposit = d_physics_3 }
+				1 = { set_deposit = d_society_3 }
+				1 = { set_deposit = d_engineering_3 }
+			}
+		}
+	}
+}
+
+convert_to_resource_system_effect = {
+	random_system_planet = {
+		limit = {
+			is_colony = no
+			has_planet_flag = prescripted_ideal
+		}
+		remove_planet_flag = prescripted_ideal
+		change_pc = pc_molten
+		set_deposit = d_alloys_3
+		add_deposit = d_minerals_5
+	}
+	while = {
+		count = 3
+		random_system_planet = {
+			limit = {
+				is_star = no
+				has_deposit = no
+				has_anomaly = no
+			}
+			random_list = {
+				5 = { set_deposit = d_minerals_2 }
+				5 = { set_deposit = d_energy_2 }
+				1 = { set_deposit = d_minerals_3 }
+				1 = { set_deposit = d_energy_3 }
+			}
+		}
 	}
 }

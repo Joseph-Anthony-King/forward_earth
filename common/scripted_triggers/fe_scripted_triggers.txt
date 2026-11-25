@@ -1,0 +1,20 @@
+# Humanoids Species Pack and Synthetic Dawn Story Pack are part of the base game as of 4.x
+has_humanoids = {
+	always = yes
+}
+
+has_not_humanoids = {
+	always = no
+}
+
+has_megacorp = {
+	host_has_dlc = "Megacorp"
+}
+
+has_synthetic_dawn_and_machine_age = {
+	host_has_dlc = "The Machine Age"
+}
+
+has_synthetic_dawn_not_machine_age = {
+	NOT = { host_has_dlc = "The Machine Age" }
+}
