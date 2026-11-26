@@ -14,7 +14,7 @@ This mod also adds two additional start sizes: gigantic with 1,500 stars and imm
 
 This mod has dependencies on the following mods:
 
-- [NSC3](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077)
+- [NSC3](https://steamcommunity.com/sharedfiles/filedetails/?id=683230077) by [CaptainX3](https://steamcommunity.com/id/captainx3/myworkshopfiles/?appid=281990&sort=score&browsefilter=myfiles&view=imagewall)
 - [AI Ship Set - Updated](https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893) by [Grumpy Gremlin](https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990)
 - [Federation Builders: Ships and Cities](https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923) by [Cheek](https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990)
 - [Machine Shipset](https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) by [AryxErin](https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1)
