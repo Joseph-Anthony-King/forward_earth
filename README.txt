@@ -19,6 +19,8 @@ This mod has dependencies on the following mods:
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [url=https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990]Grumpy Gremlin[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [url=https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990]Cheek[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url]
 [/list]
 
 This mod supports Portuguese, French, German, Japanese, Korean, Polish, Russian, Chinese (Simplified) and Spanish, please let me know if you notice any issues with the translations and I will correct them.
