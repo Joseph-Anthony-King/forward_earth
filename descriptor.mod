@@ -5,4 +5,4 @@ tags={
 name="Forward Earth - Planetary Diversity"
 picture="thumbnail.png"
 supported_version="v4.6.*"
-remote_file_id="2073000388"
+remote_file_id="2112221417"
