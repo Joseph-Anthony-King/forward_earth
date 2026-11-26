@@ -5,4 +5,3 @@ tags={
 name="Forward Earth - Vanilla"
 picture="thumbnail.png"
 supported_version="v4.6.*"
-remote_file_id="2073000388"
