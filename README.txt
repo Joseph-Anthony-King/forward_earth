@@ -15,12 +15,12 @@ This mod also adds two additional start sizes: gigantic with 1,500 stars and imm
 This mod has dependencies on the following mods:
 
 [list]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC3[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=683230077]NSC3[/url] by [url=https://steamcommunity.com/id/captainx3/myworkshopfiles/?appid=281990&sort=score&browsefilter=myfiles&view=imagewall]CaptainX3[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2061998893]AI Ship Set - Updated[/url] by [url=https://steamcommunity.com/profiles/76561198083877123/myworkshopfiles/?appid=281990]Grumpy Gremlin[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2032118923]Federation Builders: Ships and Cities[/url] by [url=https://steamcommunity.com/profiles/76561198025617306/myworkshopfiles/?appid=281990]Cheek[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491]Machine Shipset[/url] by [url=https://steamcommunity.com/id/AryxErin/myworkshopfiles/?appid=281990&browsesort=myfiles&browsefilter=myfiles&p=1]AryxErin[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=819148835]Planetary Diversity[/url] by [url=https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990&sort=score&browsefilter=myfiles&view=imagewall]Gateman[/url]
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1732437279]Planetary Diversity - Exotic Worlds[/url] by [url=https://steamcommunity.com/profiles/76561198070470089/myworkshopfiles/?appid=281990&sort=score&browsefilter=myfiles&view=imagewall]Gateman[/url]
 [/list]
 
 This mod supports Portuguese, French, German, Japanese, Korean, Polish, Russian, Chinese (Simplified) and Spanish, please let me know if you notice any issues with the translations and I will correct them.
