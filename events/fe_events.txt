@@ -256,7 +256,7 @@ event = {
     }
 }
 
-### fe.05 - Spawn UNE for CoA
+### fe.05 - Spawn UNE for CoA or GRS
 event = {
     id = fe.05
 	hide_window = yes
@@ -265,7 +265,10 @@ event = {
     immediate = {
         random_country = {
             limit = {
-                has_country_flag = human_2
+                OR = {
+                    has_country_flag = human_2
+                    has_country_flag = human_3
+                }                
             }
             
             random_galaxy_planet = {
