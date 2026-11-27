@@ -2174,7 +2174,7 @@ sol_neighbor_t3_1 = {
 	# Trappist-1d
 	planet = {
 		name = "NAME_Trappist_1_d"
-		class = "pc_toxic"
+		class = "pc_pd_barren_tidally_locked"
 		orbit_distance = 16
 		orbit_angle = 110
 		size = 12
@@ -2195,7 +2195,7 @@ sol_neighbor_t3_1 = {
 	# Trappist-1f
 	planet = {
 		name = "NAME_Trappist_1_f"
-		class = "pc_hothouse"
+		class = "pc_hydrocarbon"
 		orbit_distance = 16
 		orbit_angle = 65
 		size = 16
